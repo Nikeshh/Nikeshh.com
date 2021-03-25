@@ -5,7 +5,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="icon" href="img/favicon.png" type="image/png">
-        <title>About Us</title>
+        <title>Services</title>
 
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="css/bootstrap.css">
@@ -14,7 +14,7 @@
         <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
         <link rel="stylesheet" href="css/magnific-popup.css">
         <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <!-- Start Header Area -->
@@ -23,7 +23,7 @@
                 <nav class="navbar navbar-expand-lg navbar-light">
                     <div class="container">
                         <!-- Brand and toggle get grouped for better mobile display -->
-                        <a class="navbar-brand logo_h" href="index.html"><img src="img/logo.png" alt=""></a>
+                        <a class="navbar-brand logo_h" href="index.php"><img src="img/logo.png" alt=""></a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="icon-bar"></span>
@@ -33,27 +33,27 @@
                         <!-- Collect the nav links, forms, and other content for toggling -->
                         <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
                             <ul class="nav navbar-nav menu_nav justify-content-end">
-                                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                                <li class="nav-item active"><a class="nav-link" href="about.html">About</a></li>
-                                <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-                                <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                                <li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
+                                <li class="nav-item"><a class="nav-link" href="about.php">About</a></li>
+                                <li class="nav-item active"><a class="nav-link" href="services.php">Services</a></li>
+                                <li class="nav-item"><a class="nav-link" href="portfolio.php">Portfolio</a></li>
                                 <li class="nav-item submenu dropdown">
                                     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
                                      aria-expanded="false">Pages</a>
                                     <ul class="dropdown-menu">
-                                        <li class="nav-item"><a class="nav-link" href="elements.html">Elements</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="portfolio-details.html">Portfolio Details</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="elements.php">Elements</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="portfolio-details.php">Portfolio Details</a></li>
                                     </ul>
                                 </li>
                                 <li class="nav-item submenu dropdown">
                                     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
                                      aria-expanded="false">Blog</a>
                                     <ul class="dropdown-menu">
-                                        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="single-blog.html">Blog Details</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="blog.php">Blog</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="single-blog.php">Blog Details</a></li>
                                     </ul>
                                 </li>
-                                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                                <li class="nav-item"><a class="nav-link" href="contact.php">Contact</a></li>
                             </ul>
                         </div>
                     </div>
@@ -67,10 +67,10 @@
             <div class="banner_inner d-flex align-items-center">
                 <div class="container">
                     <div class="banner_content text-center">
-                        <h2>About Us</h2>
+                        <h2>Services</h2>
                         <div class="page_link">
-                            <a href="index.html">Home</a>
-                            <a href="about.html">About</a>
+                            <a href="index.php">Home</a>
+                            <a href="services.php">Services</a>
                         </div>
                     </div>
                 </div>
@@ -78,130 +78,53 @@
         </section>
         <!-- End Banner Area -->
 
-        <!-- Start About Us Area -->
-        <section class="about_area section_gap">
-            <div class="container">
-                <div class="row justify-content-start align-items-center">
-                    <div class="col-lg-5">
-                        <div class="about_img">
-                            <img class="" src="img/about-us.png" alt="">
-                        </div>
-                    </div>
-    
-                    <div class="offset-lg-1 col-lg-5">
-                        <div class="main_title text-left">
-                            <h2>let’s <br>
-                                Introduce about <br>
-                                myself</h2>
-                            <p>
-                                Whose given. Were gathered. There first subdue greater. Bearing you Whales heaven 
-                                midst their. Beast creepeth. Fish days.
-                            </p>
-                            <p>
-                                Is give may shall likeness made yielding spirit a itself together created after sea 
-                                is in beast beginning signs open god you're gathering whose gathered cattle let. 
-                                Creature whales fruit unto meat the life beginning all in under give two.
-                            </p>
-                            <a class="primary_btn" href="#"><span>Download CV</span></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- End About Us Area -->
-
-        <!-- Start Brand Area -->
-        <section class="brand_area section_gap_bottom">
+        <!-- Start Features Area -->
+        <section class="features_area section_gap_top">
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-lg-6">
-                        <div class="row">
-                            <div class="col-lg-4 col-md-4 col-sm-6">
-                                <div class="single-brand-item d-table">
-                                    <div class="d-table-cell text-center">
-                                        <img src="img/brands/logo1.png" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-4 col-sm-6">
-                                <div class="single-brand-item d-table">
-                                    <div class="d-table-cell text-center">
-                                        <img src="img/brands/logo2.png" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-4 col-sm-6">
-                                <div class="single-brand-item d-table">
-                                    <div class="d-table-cell text-center">
-                                        <img src="img/brands/logo3.png" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-4 col-sm-6">
-                                <div class="single-brand-item d-table">
-                                    <div class="d-table-cell text-center">
-                                        <img src="img/brands/logo4.png" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-4 col-sm-6">
-                                <div class="single-brand-item d-table">
-                                    <div class="d-table-cell text-center">
-                                        <img src="img/brands/logo5.png" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-4 col-sm-6">
-                                <div class="single-brand-item d-table">
-                                    <div class="d-table-cell text-center">
-                                        <img src="img/brands/logo6.png" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-4 col-sm-6">
-                                <div class="single-brand-item d-table">
-                                    <div class="d-table-cell text-center">
-                                        <img src="img/brands/logo7.png" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-4 col-sm-6">
-                                <div class="single-brand-item d-table">
-                                    <div class="d-table-cell text-center">
-                                        <img src="img/brands/logo8.png" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-4 col-sm-6">
-                                <div class="single-brand-item d-table">
-                                    <div class="d-table-cell text-center">
-                                        <img src="img/brands/logo9.png" alt="">
-                                    </div>
-                                </div>
-                            </div>
+                    <div class="col-lg-8 text-center">
+                        <div class="main_title">
+                            <h2>service offers </h2>
+                            <p>
+                                Is give may shall likeness made yielding spirit a itself togeth created 
+                                after sea <br> is in beast beginning signs open god you're gathering ithe
+                            </p>
                         </div>
                     </div>
-                    <div class="offset-lg-2 col-lg-4 col-md-6">
-                        <div class="client-info">
-                            <div class="d-flex mb-50">
-                                <span class="lage">10</span>
-                                <span class="smll">Years Experience Working</span>
-                            </div>
-                            <div class="call-now d-flex">
-                                <div>
-                                    <span class="fa fa-phone"></span>
-                                </div>
-                                <div class="ml-15">
-                                    <p>call us now</p>
-                                    <h3>(+1)-800-555-6789</h3>
-                                </div>
-                            </div>
+                </div>
+                <div class="row feature_inner">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="feature_item">
+                            <img src="img/services/s1.png" alt="">
+                            <h4>Wp developing</h4>
+                            <p>Creeping for female light years that lesser can't evening heaven isn't bearing tree</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="feature_item">
+                            <img src="img/services/s2.png" alt="">
+                            <h4>UI/ux design</h4>
+                            <p>Creeping for female light years that lesser can't evening heaven isn't bearing tree</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="feature_item">
+                            <img src="img/services/s3.png" alt="">
+                            <h4>Web design</h4>
+                            <p>Creeping for female light years that lesser can't evening heaven isn't bearing tree</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="feature_item">
+                            <img src="img/services/s4.png" alt="">
+                            <h4>seo optimize</h4>
+                            <p>Creeping for female light years that lesser can't evening heaven isn't bearing tree</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- End Brand Area -->
+        <!-- End Features Area -->
 
         <!-- Start Testimonial Area -->
         <div class="testimonial_area section_gap_bottom">
