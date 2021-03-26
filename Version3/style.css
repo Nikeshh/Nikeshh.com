@@ -17,7 +17,7 @@ body {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     color: #777777;
-    background: url(../img/body-bg.png) no-repeat center;
+    background: url(./img/body-bg.png) no-repeat center;
 }
 
 h1,
@@ -594,7 +594,7 @@ button:focus {
 }
 
 .subscription_box {
-    background: url(../img/subscribe-bg.png) no-repeat center;
+    background: url(./img/subscribe-bg.png) no-repeat center;
     padding: 150px 0px;
 }
 
@@ -882,7 +882,7 @@ button:focus {
     position: absolute;
     top: -25px;
     left: -50px;
-    background: url(../img/client-info-bg.png) no-repeat;
+    background: url(./img/client-info-bg.png) no-repeat;
     height: 175px;
     width: 175px;
 }
@@ -1069,7 +1069,7 @@ button:focus {
 
 .home_banner_area {
     z-index: 1;
-    background: url(../img/banner/home-banner.png) no-repeat top center;
+    background: url(./img/banner/home-banner.png) no-repeat top center;
     background-position: center;
     background-size: cover;
 }
@@ -1177,7 +1177,7 @@ button:focus {
     overflow: hidden;
     width: 100%;
     min-height: 485px;
-    background: url(../img/banner/common-banner.png) no-repeat right bottom;
+    background: url(./img/banner/common-banner.png) no-repeat right bottom;
     background-size: 90% 85%;
     width: 98%;
     z-index: 1;
@@ -1249,6 +1249,28 @@ button:focus {
 
 .banner_area .banner_inner .banner_content .page_link a:last-child:before {
     display:none;
+}
+
+#home-banner-animated {
+    animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+@-webkit-keyframes up-down {
+    0% {
+      transform: translateY(10px);
+    }
+    100% {
+      transform: translateY(-10px);
+    }
+}
+
+@keyframes up-down {
+    0% {
+      transform: translateY(10px);
+    }
+    100% {
+      transform: translateY(-10px);
+    }
 }
 
 /* End Home Banner Area */
