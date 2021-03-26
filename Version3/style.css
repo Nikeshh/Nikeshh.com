@@ -1004,6 +1004,24 @@ button:focus {
     background: #fff;
 }
 
+.linkedin-image {
+    width: 900px;
+}
+
+.github-image {
+    width: 900px;
+}
+
+@media only screen and (max-width: 768px) {
+    .linkedin-image {
+        width: 300px;
+    }
+    
+    .github-image {
+        width: 300px;
+    }
+}
+
 /* End Features Area css */
 
 /* Start Main Title Area css */
