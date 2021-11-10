@@ -7,18 +7,56 @@
     </head>
     <body>
         <div class="container">
+            <!-- Navbar -->
             <div class="navbar">
                 <img src="assets/img/logo.png" class="logo" />
                 <nav>
-                    <ul>
+                    <ul id="menuList">
                         <li><a href="">Game Controllers</a></li>
                         <li><a href="">VR Accessories</a></li>
                         <li><a href="">Media Remotes</a></li>
                         <li><a href="">Others</a></li>
                     </ul>
                 </nav>
-                <img src="assets/img/menu.png" class="menu-icon" />
+                <img src="assets/img/menu.png" class="menu-icon" onclick="togglemenu()"/>
+            </div>
+            <!-- Row -->
+            <div class="row">
+                <div class="col-1">
+                    <h2>PS4 V2 <br /> Dualshock 4</h2>
+                    <h3>Wireless Controller for PlayStation 4</h3>
+                    <p>(Compatible/Generic)</p>
+                    <h4>$32.50</h4>
+                    <button type="button">Buy Now<img src="assets/img/arrow.png" /></button>
+                </div>
+                <div class="col-2">
+                    <img src="assets/img/controller.png" alt="" class="controller">
+                    <div class="color-box"></div>
+                    <div class="add-btn">
+                        <img src="assets/img/add.png" alt="" />
+                        <p><small>Add to Cart</small></p>
+                    </div>
+                </div>
+            </div>
+            <!-- Social Links-->
+            <div class="social-links">
+                <img src="assets/img/fb.png" alt="" />
+                <img src="assets/img/tw.png" alt="" />
+                <img src="assets/img/ig.png" alt="" />
             </div>
         </div>
+
+        <script>
+            var menuList = document.getElementById("menuList");
+            menuList.style.maxHeight = "0px";
+
+            function togglemenu() {
+                if(menuList.style.maxHeight == "0px") {
+                    menuList.style.maxHeight = "130px";
+                } else {
+                    menuList.style.maxHeight = "0px";
+                }
+            }
+        </script>
     </body>
 </html>
