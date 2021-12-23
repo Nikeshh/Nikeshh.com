@@ -2050,6 +2050,32 @@ section {
     border-color: #a0aaf8;
 }
 
+.blog .blog-comments .reply-form textarea {
+    border-radius: 4px;
+    padding: 10px 10px;
+    font-size: 14px;
+}
+
+.blog .blog-comments .reply-form textarea:focus {
+    box-shadow: none;
+    border-color: #a0aaf8;
+}
+
+.blog .blog-comments .reply-form .form-group {
+    margin-bottom: 25px;
+}
+
+.blog .blog-comments .reply-form .btn-primary {
+    border-radius: 4px;
+    padding: 10px 20px;
+    border: 0;
+    background-color: #012970;
+}
+
+.blog .blog-comments .reply-form .btn-primary:hover {
+    background-color: #013289;
+}
+
 /*--------------------------------------------------------------
 # End Blog Section
 --------------------------------------------------------------*/
