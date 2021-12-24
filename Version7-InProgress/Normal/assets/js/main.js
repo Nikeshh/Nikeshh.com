@@ -25,6 +25,13 @@
     }
 
     /**
+     * Easy on scroll event listener
+     */
+    const onscroll = (el, listener) => {
+        el.addEventListener('scroll', listener)
+    }
+
+    /**
      * Mobile nav toggle
      */
     on('click', '.mobile-nav-toggle', function(e) {
@@ -57,5 +64,21 @@
     window.addEventListener('load', () => {
         aos_init();
     });
+
+    /**
+     * Back to top button
+     */
+    let backtotop = select('.back-to-top')
+    if(backtotop) {
+        const toggleBacktotop = () => {
+            if(window.scrollY > 100) {
+                backtotop.classList.add('active')
+            } else {
+                backtotop.classList.remove('active')
+            }
+        }
+        window.addEventListener('load', toggleBacktotop)
+        onscroll(document, toggleBacktotop)
+    }
 
 })();
