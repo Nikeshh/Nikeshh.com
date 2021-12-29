@@ -27,8 +27,9 @@
         <!-- Main CSS Files -->
         <link href="assets/css/style.css" rel="stylesheet">
     </head>
-    <body>
+    <body onload="loadfun()">
 
+      <div id="webpage_content">
         <!--  ============= Header ============ -->
         <header id="header" class="header fixed-top">
             <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
@@ -1133,17 +1134,27 @@
         <!-- ======== End Footer Section ======== -->
 
         <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+      </div>
+      <!-- ======== Preloading Screen ======== -->
+      <div id="loading"></div>
+      <script>
+        var load = document.getElementById("loading");
+        function onload() {
+          load.style.display = 'none';
+        }
+      </script>
+      <!-- ======== End Preloading Screen ======= -->
 
-        <!-- Vendor JS Files -->
-        <script src="assets/vendor/purecounter/purecounter.js"></script>
-        <script src="assets/vendor/aos/aos.js"></script>
-        <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-        <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-        <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-        <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-        <script src="assets/vendor/php-email-form/validate.js"></script>
+      <!-- Vendor JS Files -->
+      <script src="assets/vendor/purecounter/purecounter.js"></script>
+      <script src="assets/vendor/aos/aos.js"></script>
+      <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+      <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+      <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+      <script src="assets/vendor/php-email-form/validate.js"></script>
 
-        <!-- Main JS File -->
-        <script src="assets/js/main.js"></script>
+      <!-- Main JS File -->
+      <script src="assets/js/main.js"></script>
     </body>
 </html>
