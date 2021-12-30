@@ -4,6 +4,7 @@
 
 :root {
     scroll-behavior: smooth;
+    --purple-color: #6776f4;
 }
 
 body {
@@ -2055,7 +2056,7 @@ section {
     transition: opacity 0.3s ease;
 }
 
-/* Blog share button */
+/* Blog share */
 
 .share .social-handler {
     position: relative;
@@ -2198,7 +2199,13 @@ section {
     background: #a4c639;
     color: white;
 }
-/* End Blog share button */
+
+.share-post {
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+/* End Blog share */
 
 .blog .entry .entry-content p {
     line-height: 24px;
@@ -2375,6 +2382,64 @@ section {
     -webkit-transition: opacity 0.3s ease;
     transition: opacity 0.3s ease;
 }
+
+/* Previous Next Article */
+.previous-next-article {
+    margin-bottom: 10px;
+}
+
+.previous-next-article .previous-article {
+    margin-right: 2px;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    width: 48%;
+    float: left;
+    min-height: 1px;
+    line-height: 1;
+}
+
+.previous-next-article .previous-article span {
+    display: block;
+    font-size: 12px;
+    color: #747474;
+    margin-bottom: 7px;
+}
+
+.previous-next-article .previous-article a {
+    font-size: 15px;
+    color: #222;
+    line-height: 21px;
+    transition: color 0.2s ease;
+}
+
+.previous-next-article .next-article {
+    margin-left: 2px;
+    text-align: right;
+    font-family: 'Roboto', sans-serif;
+    width: 48%;
+    float: left;
+    min-height: 1px;
+    line-height: 1;
+}
+
+.previous-next-article .next-article span {
+    display: block;
+    font-size: 12px;
+    color: #747474;
+    margin-bottom: 7px;
+}
+
+.previous-next-article .next-article a {
+    font-size: 15px;
+    color: #222;
+    line-height: 21px;
+    transition: color 0.2s ease;
+}
+
+.previous-next-article .previous-article a:hover, .next-article a:hover {
+    color: var(--purple-color);
+}
+/* End Previous Next Article */
 
 /* Blog Author */
 .blog .author .author-header {
@@ -2749,6 +2814,42 @@ section {
 
 /*--------------------------------------------------------------
 # End Back to top Section
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Related Articles Section
+--------------------------------------------------------------*/
+
+.related_articles .section-title {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.related_articles .section-title .section-block-title {
+    font-family: 'roboto', sans-serif;
+    font-size: 14px;
+    line-height: 1;
+    margin-top: 0;
+    margin-bottom: 26px;
+    border-bottom: 2px solid #222; 
+}
+
+.related_articles .section-title .section-block-title span {
+    line-height: 17px;
+    display: inline-block;
+    padding: 7px 12px 4px;
+    background-color: #222;
+    color: #fff;
+}
+
+.related_articles .section-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*--------------------------------------------------------------
+# End Related Articles Section
 --------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
