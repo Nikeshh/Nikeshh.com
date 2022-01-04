@@ -2820,6 +2820,7 @@ section {
 # Related Articles Section
 --------------------------------------------------------------*/
 
+/* Related Articles Title */
 .related_articles .section-title {
     margin-top: 10px;
     margin-bottom: 10px;
@@ -2843,13 +2844,309 @@ section {
     color: #fff;
 }
 
+/* Related Articles Section Content */
 .related_articles .section-content {
     display: flex;
     flex-wrap: wrap;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+/* Related Articles Content */
+.related_articles .section-content .content {
+    position: relative;
+    padding-bottom: 35px;
+    width: 33.33333333%;
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 9px;
+    margin-bottom: 9px;
+    display: flex;
+    flex-direction: column;
+    border-color: #eaeaea;
+    flex-grow: 1;
+}
+
+/* Related Articles Content Image Container */
+
+
+/* Related Articles Content Meta Info */
+.related_articles .section-content .content .meta-info {
+    padding: 7px 0 0 0;
+    margin-bottom: 0;
+    z-index: 1;
+    border: 0 solid #eaeaea;
+    font-family: open sans, open sans regular, sans-serif;
+    font-size: 11px;
+    margin-bottom: 7px;
+    line-height: 1;
+    min-height: 17px;
+}
+
+.related_articles .section-content .content .meta-info .title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 20px;
+    margin: 0;
+    word-wrap: break-word;
+}
+
+.related_articles .section-content .content .meta-info .author-name {
+    vertical-align: text-top;
+    font-weight: 700;
+    display: inline-block;
+    position: relative;
+    top: 2px;
+}
+
+.related_articles .section-content .content .meta-info .post-date {
+    vertical-align: text-top;
+    color: #767676;
+    display: inline-block;
+    position: relative;
+    top: 2px;
+}
+
+/* Related Articles Next Prev */
+.next-prev-wrap {
+    margin: 20px 0 20px 0;
+    position: relative;
+    clear: both;
+}
+
+.next-prev-wrap a {
+    width: auto;
+    height: auto;
+    min-width: 25px;
+    min-height: 25px;
+    display: inline-block;
+    margin-right: 7px;
+    width: 25px;
+    height: 25px;
+    border: 1px solid #dcdcdc;
+    line-height: 24px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 7px;
+    color: #b7b7b7;
+}
+
+.next-prev-wrap .loading-disabled {
+    opacity: 0.5;
+}
+
+.next-prev-wrap .prev {
+    padding-right: 1px;
+}
+
+.next-prev-wrap .next {
+    padding-left: 2px;
 }
 
 /*--------------------------------------------------------------
 # End Related Articles Section
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Most Popular Section
+--------------------------------------------------------------*/
+
+/* Most Popular Title */
+.most_popular .section-title {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.most_popular .section-title .section-block-title {
+    font-family: 'roboto', sans-serif;
+    font-size: 14px;
+    line-height: 1;
+    margin-top: 0;
+    margin-bottom: 26px;
+    border-bottom: 2px solid #222; 
+}
+
+.most_popular .section-title .section-block-title span {
+    line-height: 17px;
+    display: inline-block;
+    padding: 7px 12px 4px;
+    background-color: #222;
+    color: #fff;
+}
+
+/* Most Popular Content */
+.most_popular .sidebar-item {
+    margin-bottom: 30px;
+}
+
+.most_popular .most-popular-posts .post-item + .post-item {
+    margin-top: 15px;
+}
+
+.most_popular .most-popular-posts img {
+    width: 80px;
+    float: left;
+}
+
+.most_popular .most-popular-posts h4 {
+    font-size: 15px;
+    margin-left: 95px;
+    font-weight: bold;
+}
+
+.most_popular .most-popular-posts h4 a {
+    color: #012970;
+    transition: 0.3s;
+}
+
+.most_popular .most-popular-posts h4 a:hover {
+    color: #4154f1;
+}
+
+.most_popular .most-popular-posts time {
+    display: block;
+    margin-left: 95px;
+    font-style: italic;
+    font-size: 14px;
+    color: #aaaaaa;
+}
+
+/* Most Popular Load More */
+.most_popular .load-more-wrap {
+    margin-top: 20px;
+    text-align: center;
+    clear: both;
+}
+
+.most_popular .load-more-wrap a {
+    color: #767676;
+}
+
+.most_popular .load-more-wrap .load-more {
+    display: inline-block;
+    font-family: open sans open sans regular, sans-serif;
+    font-size: 12px;
+    line-height: 1;
+    padding: 8px 10px;
+    border: 1px solid #c9c9c9;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.most_popular .load-more-wrap .load-more i {
+    font-size: 8px;
+    margin-left: 6px;
+    position: relative;
+    top: 0;
+    vertical-align: middle;
+}
+
+/*--------------------------------------------------------------
+# End Most Popular Section
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Recent Posts Section
+--------------------------------------------------------------*/
+
+/* Recent Posts Title */
+.recent_posts .section-title {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.recent_posts .section-title .section-block-title {
+    font-family: 'roboto', sans-serif;
+    font-size: 14px;
+    line-height: 1;
+    margin-top: 0;
+    margin-bottom: 26px;
+    border-bottom: 2px solid #222; 
+}
+
+.recent_posts .section-title .section-block-title span {
+    line-height: 17px;
+    display: inline-block;
+    padding: 7px 12px 4px;
+    background-color: #222;
+    color: #fff;
+}
+
+/* Recent Posts Content */
+.recent_posts .sidebar-item {
+    margin-bottom: 30px;
+}
+
+.recent_posts .recent-posts-posts .post-item + .post-item {
+    margin-top: 15px;
+}
+
+.recent_posts .recent-posts-posts img {
+    width: 80px;
+    float: left;
+}
+
+.recent_posts .recent-posts-posts h4 {
+    font-size: 15px;
+    margin-left: 95px;
+    font-weight: bold;
+}
+
+.recent_posts .recent-posts-posts h4 a {
+    color: #012970;
+    transition: 0.3s;
+}
+
+.recent_posts .recent-posts-posts h4 a:hover {
+    color: #4154f1;
+}
+
+.recent_posts .recent-posts-posts time {
+    display: block;
+    margin-left: 95px;
+    font-style: italic;
+    font-size: 14px;
+    color: #aaaaaa;
+}
+
+/*--------------------------------------------------------------
+# End Recent Posts Section
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Recent Comments Section
+--------------------------------------------------------------*/
+
+/* Recent Comments Title */
+.recent_comments .section-title {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.recent_comments .section-title .section-block-title {
+    font-family: 'roboto', sans-serif;
+    font-size: 14px;
+    line-height: 1;
+    margin-top: 0;
+    margin-bottom: 26px;
+    border-bottom: 2px solid #222; 
+}
+
+.recent_comments .section-title .section-block-title span {
+    line-height: 17px;
+    display: inline-block;
+    padding: 7px 12px 4px;
+    background-color: #222;
+    color: #fff;
+}
+
+/*--------------------------------------------------------------
+# End Recent Comments Section
 --------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
