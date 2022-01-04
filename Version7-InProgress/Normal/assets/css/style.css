@@ -3145,6 +3145,45 @@ section {
     color: #fff;
 }
 
+/* Recent Comments Content */
+.recent_comments .recent-comments-content {
+    margin-bottom: 0;
+    font-family: open sans, open sans regular, sans-serif;
+    font-size: 12px;
+    color: #444;
+}
+
+.recent_comments .recent-comments-content .comment-span {
+    width: 100%;
+}
+
+.recent_comments .recent-comments-content .comment-span .recentcomments {
+    margin-top: 0!important;
+    margin: 0px !important;
+    padding: 0 0 15px !important;
+    border-bottom-color: #eaeaea;
+    display: block;
+    line-height: 21px;
+}
+
+.recent_comments .recent-comments-content .comment-span .recentcomments a:last-child {
+    font-family: Open Sans !important;
+}
+
+.recent_comments .recent-comments-content .comment-span .recentcomments a {
+    display: inline !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    color: #111;
+    font-style: italic;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.recent_comments .recent-comments-content .comment-span .recentcomments a:hover {
+    color: #0257ee;
+}
+
 /*--------------------------------------------------------------
 # End Recent Comments Section
 --------------------------------------------------------------*/
