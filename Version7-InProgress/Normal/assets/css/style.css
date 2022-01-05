@@ -3270,6 +3270,78 @@ section {
     margin-top: 10px;
 }
 
+.blog-category .section-content .meta-info {
+    border-color: #eaeaea;
+    min-height: 0;
+    width: 100%;
+    padding: 13px 0 0 0;
+    z-index: 1;
+    border: 0 solid #eaeaea;
+    font-family: open sans, open sans regular, sans-serif;
+    font-size: 11px;
+    margin-bottom: 11px;
+    line-height: 1;
+}
+
+.blog-category .section-content .meta-info .entry-title {
+    font-size: 21px;
+    line-height: 25px;
+    margin: 0 0 6px;
+    word-wrap: break-word;
+}
+
+.blog-category .section-content .meta-info .author-date {
+    display: inline;
+}
+
+.blog-category .section-content .meta-info .author-date .post-author-name {
+    display: inline-block;
+    vertical-align: text-top;
+    font-weight: 700;
+    position: relative;
+    top: 2px;
+}
+
+.blog-category .section-content .meta-info .author-date .post-author-name a {
+    color: #000;
+}
+
+.blog-category .section-content .meta-info .author-date .post-author-name span {
+    display: inline-block;
+    color: #ccc;
+    margin: 0 2px;
+    font-weight: 400;
+}
+
+.blog-category .section-content .meta-info .author-date .post-date {
+    display: inline-block;
+    vertical-align: text-top;
+    color: #767676;
+    position: relative;
+    top: 2px;
+}
+
+.blog-category .section-content .meta-info .author-date .module-comments {
+    display: block;
+    vertical-align: text-top;
+    position: relative;
+    float: right;
+    font-family: open sans, open sans regular, sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 1;
+}
+
+.blog-category .section-content .meta-info .author-date .module-comments a {
+    display: inline-block;
+    color: #fff;
+    background-color: #000;
+    min-width: 17px;
+    padding: 3px 4px 4px 5px;
+    position: relative;
+}
+
 /* Blog sidebar */
 .blog-category .sidebar {
     padding: 30px;
