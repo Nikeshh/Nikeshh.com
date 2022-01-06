@@ -3271,6 +3271,10 @@ section {
     margin-top: 10px;
 }
 
+.blog-category .section-content .content {
+    margin-bottom: 20px;
+}
+
 .blog-category .section-content .image-container{
     position: relative;
     flex: 0 0 auto;
@@ -3413,6 +3417,30 @@ section {
     padding: 30px;
     margin: 0 0 60px 20px;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Must Read Title */
+.must_read .section-title {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.must_read .section-title .section-block-title {
+    font-family: 'roboto', sans-serif;
+    font-size: 14px;
+    line-height: 1;
+    margin-top: 0;
+    margin-bottom: 26px;
+    border-bottom: 2px solid #222; 
+}
+
+.must_read .section-title .section-block-title span {
+    line-height: 17px;
+    display: inline-block;
+    padding: 7px 12px 4px;
+    background-color: #222;
+    color: #fff;
 }
 
 /*--------------------------------------------------------------
