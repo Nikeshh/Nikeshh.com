@@ -3239,6 +3239,7 @@ section {
 
 .blog-category {
     padding: 40px 0 20px 0;
+    margin-bottom: 20px;
 }
 
 /* Blog Category Title */
@@ -3268,6 +3269,57 @@ section {
 /* Blog Category Content */
 .blog-category .section-content {
     margin-top: 10px;
+}
+
+.blog-category .section-content .image-container{
+    position: relative;
+    flex: 0 0 auto;
+    width: 100%;
+}
+
+.blog-category .section-content .image-container .post-category{
+    left: 0;
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    display: inline-block;
+    font-family: open sans, open sans regular, sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 1;
+    background-color: #222;
+    color: #fff;
+    margin-right: 5px;
+    padding: 3px 6px 4px;
+    vertical-align: top;
+    transition: all .2s ease;
+    -webkit-transition: all .2s ease;
+}
+
+.blog-category .section-content .image-container .image-thumb {
+    margin-bottom: 0;
+    position: relative;
+}
+
+.blog-category .section-content .image-container .image-thumb .image-wrap {
+    display: block;
+    position: relative;
+    padding-bottom: 50%;
+}
+
+.blog-category .section-content .image-container .image-thumb .image-wrap span {
+    opacity: 1 !important;
+    transition: opacity 0.3s;
+    transition-timing-function: cubic-bezier(.39,.76,.51,.56);
+}
+
+.blog-category .section-content .image-container .image-thumb .image-wrap .entry-thumb {
+    background-position: center 0%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-size: cover;
+    display: block;
 }
 
 .blog-category .section-content .meta-info {
@@ -3340,6 +3392,20 @@ section {
     min-width: 17px;
     padding: 3px 4px 4px 5px;
     position: relative;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.blog-category .section-content .meta-info .author-date .module-comments a::after {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 3px 3px 0 0;
+    border-color: #000 transparent transparent transparent;
 }
 
 /* Blog sidebar */
