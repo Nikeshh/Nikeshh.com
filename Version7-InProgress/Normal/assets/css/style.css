@@ -3192,6 +3192,12 @@ section {
 # Blog Main Section
 --------------------------------------------------------------*/
 
+.blog-main {
+    padding: 40px 0 20px 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 /* Trending Now */
 .trending_now {
     padding: 0 18px;
