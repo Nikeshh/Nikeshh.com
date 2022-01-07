@@ -3493,6 +3493,65 @@ section {
     color: #fff;
 }
 
+/* Must Read Content */
+.must_read .section-content {
+    height: auto !important;
+    overflow: initial;
+    margin-left: -20px;
+    margin-right: -20px;
+}
+
+/* Next Prev */
+.must_read .next-prev {
+    margin-top: 20px;
+    position: relative;
+    clear: both;
+}
+
+.must_read .next-prev a {
+    width: auto;
+    height: auto;
+    min-width: 25px;
+    min-height: 25px;
+    display: inline-block;
+    border: 1px solid #dcdcdc;
+    line-height: 24px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 10px;
+    color: #b7b7b7;
+    cursor: pointer;
+}
+
+.must_read .next-prev .disabled {
+    opacity: 0.5;
+}
+
+.must_read .next-prev a:hover:not(.disabled) {
+    color: #eee;
+    background-color: #4154f1;
+}
+
+.must_read .next-prev .prev-page {
+    padding-right: 1px;
+}
+
+.must_read .next-prev .prev-page .prev-icon {
+    line-height: 1;
+    text-align: center;
+    display: inline-block;
+}
+
+.must_read .next-prev .next-page {
+    padding-left: 2px;
+}
+
+.must_read .next-prev .next-page .next-icon {
+    line-height: 1;
+    text-align: center;
+    display: inline-block;
+}
+
 /*--------------------------------------------------------------
 # End Blog Category Section
 --------------------------------------------------------------*/
