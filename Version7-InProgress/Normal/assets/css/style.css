@@ -3224,6 +3224,33 @@ section {
     }
 }
 
+/* Blog Main Content */
+
+/* Stay Connected */
+/* Stay Connected Title */
+.stay_connected .section-title {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.stay_connected .section-title .section-block-title {
+    font-family: 'roboto', sans-serif;
+    font-size: 14px;
+    line-height: 1;
+    margin-top: 0;
+    margin-bottom: 26px;
+    border-bottom: 2px solid #222; 
+}
+
+.stay_connected .section-title .section-block-title span {
+    line-height: 17px;
+    display: inline-block;
+    padding: 7px 12px 4px;
+    background-color: #222;
+    color: #fff;
+}
+
 /*--------------------------------------------------------------
 # End Blog Main Section
 --------------------------------------------------------------*/
