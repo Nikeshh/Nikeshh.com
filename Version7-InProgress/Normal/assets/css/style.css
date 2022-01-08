@@ -3227,6 +3227,16 @@ section {
     color: #fff;
 }
 
+.blog-main .social-list .item {
+    width: 100%;
+    margin-bottom: 10px;
+    transition: background-color 0.20s cubic-bezier(0, 0, 0.58, 1) 0s;
+    background: transparent;
+    height: 40px;
+    position: relative;
+    overflow: hidden;
+}
+
 /*--------------------------------------------------------------
 # End Blog Main Section
 --------------------------------------------------------------*/
