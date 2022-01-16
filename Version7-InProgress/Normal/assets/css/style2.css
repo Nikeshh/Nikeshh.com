@@ -111,6 +111,71 @@ nav .container {
     background-color: #6b44e0;
 }
 
+.hamburger-menu {
+    width: 2.7rem;
+    height: 3rem;
+    z-index: 100;
+    position: relative;
+    display: none;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.hamburger-menu .bar {
+    position: relative;
+    width: 2.1rem;
+    height: 3px;
+    border-radius: 3px;
+    background-color: var(--dark-one);
+    transition: 0.5s;
+}
+
+/* For first and third lines */
+.bar::before,
+.bar::after {
+    content: "";
+    position: absolute;
+    width: 2.1rem;
+    height: 3px;
+    border-radius: 3px;
+    background-color: var(--dark-one);
+    transition: 0.5s;
+}
+
+.bar::before {
+    transform: translateY(-9px); /* For offset of -9 for first line */
+}
+
+.bar::after {
+    transform: translateY(9px); /* For offset of +9 for third line */
+}
+
+nav.open .hamburger-menu .bar {
+    background-color: transparent;
+    transform: rotate(360deg);
+}
+
+nav.open .hamburger-menu .bar::before {
+    transform: translateY(0) rotate(45deg);
+    background-color: var(--light-one);
+}
+
+nav.open .hamburger-menu .bar::after {
+    transform: translateY(0) rotate(-45deg);
+    background-color: var(--light-one);
+}
+
+nav.open .links {
+    transform: translateX(0);
+}
+
+.header-content .container.grid-2 {
+    grid-template-columns: 2.5fr 3.5fr;
+    min-height: calc(100vh - 6rem);
+    padding-bottom: 2.5rem;
+    text-align: left;
+}
+
 /* Footer */
 
 .footer {
