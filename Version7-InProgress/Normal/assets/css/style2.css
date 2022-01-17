@@ -504,6 +504,30 @@ header .circle {
 
 /* Portfolio */
 
+.portfolio {
+  position: relative;
+  width: 100%;
+  background-color: var(--light-two);
+}
+
+.background-bg {
+  position: absolute;
+  width: 100%;
+  height: 520px;
+  top: 0;
+  left: 0;
+  background-color: var(--main-color);
+}
+
+.portfolio .title,
+.portfolio .title::before {
+  color: var(--light-one);
+}
+
+.portfolio .title::after {
+  background-color: var(--light-one);
+}
+
 /* About */
 
 /* Records */
