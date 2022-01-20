@@ -8,9 +8,14 @@
         <meta name="csrf-token" content="Xsk0sFExoeuaWkJLZUzFSFoTNgOtTVsyzWYBCsV6" />
         <!-- TODO:  Check the facebook pages -->
         <meta property="fb:pages" content="167082837244270" />
+
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
         <link rel="icon" type="image/png" href="https://www.ancmedia.net/instant-blog/favicon.png">
         <title>Your Site Name - Site Title</title>
         <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
         <link href="../assets/css/instant.css" rel="stylesheet">
         <link href="../assets/css/blog-style.css" rel="stylesheet">
     </head>
@@ -20,6 +25,20 @@
                 <img class="theme-btn light" src="https://www.ancmedia.net/instant-blog/images/logo.png" alt="logo">
                 <img class="theme-btn dark" src="https://www.ancmedia.net/instant-blog/images/logo-dark.png" alt="logo">
             </a>
+            <div class="ms-auto me-4 me-md-0 order-md-2 navbar-nav">
+                <button
+                    class="nav-link theme-btn light"
+                    onclick="setTheme('light')"
+                >
+                    <i class="bi bi-brightness-alt-high nav-icon"></i>
+                </button>
+                <button
+                    class="nav-link theme-btn darl"
+                    onclick="setTheme('dark')"
+                >
+                    <i class="bi bi-cloud-moon nav-icon"></i>
+                </button>
+            </div>
         </nav>
     </body>
 </html>
