@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="Your Description" />
+        <!-- TODO: Check this csrf token -->
+        <meta name="csrf-token" content="Xsk0sFExoeuaWkJLZUzFSFoTNgOtTVsyzWYBCsV6" />
+        <!-- TODO:  Check the facebook pages -->
+        <meta property="fb:pages" content="167082837244270" />
+
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+        <link rel="icon" type="image/png" href="https://www.ancmedia.net/instant-blog/favicon.png">
+        <title>Your Site Name - Site Title</title>
+        <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+        <link href="../assets/css/instant.css" rel="stylesheet">
+        <link href="../assets/css/blog-style.css" rel="stylesheet">
+    </head>
+    <body>
+        <nav id="mainnav" class="navbar navbar-expand-md navbar-light bg-nav">
+            <a class="nav-brand" href="#">
+                <img class="theme-btn light" src="https://www.ancmedia.net/instant-blog/images/logo.png" alt="logo">
+                <img class="theme-btn dark" src="https://www.ancmedia.net/instant-blog/images/logo-dark.png" alt="logo">
+            </a>
+            <div class="ms-auto me-4 me-md-0 order-md-2 navbar-nav">
+                <button
+                    class="nav-link theme-btn light"
+                    onclick="setTheme('light')"
+                >
+                    <i class="bi bi-brightness-alt-high nav-icon"></i>
+                </button>
+                <button
+                    class="nav-link theme-btn darl"
+                    onclick="setTheme('dark')"
+                >
+                    <i class="bi bi-cloud-moon nav-icon"></i>
+                </button>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsDefault"
+                aria-controls="navbarsDefault" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggle-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarsDefault">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a 
+                            class="nav-link me-3 d-none d-md-block " 
+                            href="#"
+                            data-bs-toggle="tooltip" 
+                            data-bs-placement="bottom" 
+                            title="Home">
+                            <i class="bi bi-house-door nav-icon"></i>
+                        </a>
+                        <a 
+                            class="nav-link d-md-none" 
+                            href="#">
+                            <i class="bi bi-house-door"></i> Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a 
+                            class="nav-link me-3 d-none d-md-block " 
+                            href="#"
+                            data-bs-toggle="tooltip" 
+                            data-bs-placement="bottom" 
+                            title="Popular">
+                            <i class="bi bi-emoji-heart-eyes nav-icon"></i>
+                        </a>
+                        <a 
+                            class="nav-link d-md-none" 
+                            href="#">
+                            <i class="bi bi-emoji-heart-eyes"></i> Popular
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a 
+                            class="nav-link me-3 d-none d-md-block " 
+                            href="#"
+                            data-bs-toggle="tooltip" 
+                            data-bs-placement="bottom" 
+                            title="Categories">
+                            <i class="bi bi-bookmarks nav-icon"></i>
+                        </a>
+                        <a 
+                            class="nav-link d-md-none" 
+                            href="#"><i
+                            class="bi bi-bookmarks"></i> Categories
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a 
+                            class="nav-link me-3 d-none d-md-block " 
+                            href="#"
+                            data-bs-toggle="tooltip" 
+                            data-bs-placement="bottom" 
+                            title="Archives">
+                            <i class="bi bi-alarm nav-icon"></i>
+                        </a>
+                        <a 
+                            class="nav-link d-md-none" 
+                            href="#">
+                            <i class="bi bi-alarm"></i> Archives
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <span data-bs-toggle="modal" data-bs-target="#searchModal">
+                            <a 
+                                class="nav-link me-3 d-none d-md-block" 
+                                href="#" 
+                                data-bs-toggle="tooltip"
+                                data-bs-placement="bottom" 
+                                title="Search">
+                                <i class="bi bi-search nav-icon"></i>
+                            </a>
+                            <a class="nav-link d-md-none" href="#">
+                                <i class="bi bi-search"></i> Search
+                            </a>
+                        </span>
+                    </li>
+                    <li class="nav-item">
+                        <a 
+                            class="nav-link me-3 d-none d-md-block active" 
+                            href="#"
+                            data-bs-toggle="tooltip" 
+                            data-bs-placement="bottom" 
+                            title="Login">
+                            <i class="bi bi-file-person nav-icon"></i>
+                        </a>
+                        <a 
+                            class="nav-link d-md-none" 
+                            href="#">
+                            <i class="bi bi-file-person"></i> Register
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Modal -->
+        <div class="modal fade" id="searchModal" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content bg-dark">
+                    <div class="modal-body p-5">
+                        <div class="row">
+                            <div class="col-10">
+
+                            </div>
+                            <div class="col-2">
+                                <button 
+                                    type="button" 
+                                    class="btn btn-lg btn-dark" 
+                                    data-bs-dismiss="modal"
+                                    aria-label="Close">
+                                    <i class="bi bi-x-circle"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="jumbotron bg-none">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-12">
+                        <h1 class="display-4">Register</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container pt-5 pb-4">
+            <div class="d-md-flex flex-row">
+                <div class="col-md-4">
+                    <form class="form-horizontal" role="form" method="POST" action="">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">
+                                Name
+                            </label>
+                            <input id="name" type="text" class="form-control" name="name" value="" required autofocus>
+                        </div>
+                        <div class="mb-3">
+                            <label for="username" class="form-label">
+                                Username
+                            </label>
+                            <input id="username" type="text" class="form-control" name="username" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">
+                                E-Mail Address
+                            </label>
+                            <input id="email" type="email" class="form-control" name="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">
+                                Password
+                            </label>
+                            <input id="password" type="password" class="form-control" name="password" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="confirmpassword" class="form-label">
+                                Confirm Password
+                            </label>
+                            <input id="confirmpassword" type="password" class="form-control" name="confirmpassword" required>
+                        </div>
+                        <div class="mb-3">
+                            <button type="submit" class="btn btn-primary btnpoint">
+                                Register
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
