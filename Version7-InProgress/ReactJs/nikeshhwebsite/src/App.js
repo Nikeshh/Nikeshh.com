@@ -9,7 +9,7 @@ import CertificationsScreen from './components/CertificationsScreen';
 import ProjectsScreen from './components/ProjectsScreen';
 import BlogScreen from './components/BlogScreen';
 import LearningScreen from './components/LearningScreen';
-import NewsLetterScreen from './components/NewsLetterScreen';
+import NewsletterScreen from './components/NewsletterScreen';
 import PatreonScreen from './components/PatreonScreen';
 import BooksScreen from './components/BooksScreen';
 import ForumScreen from './components/ForumScreen';
@@ -37,7 +37,7 @@ const App = () => {
         <Route path="/projects" component={ProjectsScreen} exact />
         <Route path="/blog" component={BlogScreen} exact />
         <Route path="/learning" component={LearningScreen} exact />
-        <Route path="/newsletter" component={NewsLetterScreen} exact />
+        <Route path="/newsletter" component={NewsletterScreen} exact />
         <Route path="/patreon" component={PatreonScreen} exact />
         <Route path="/books" component={BooksScreen} exact />
         <Route path="/forum" component={ForumScreen} exact />
