@@ -1,4 +1,5 @@
 import React from "react";
+import SkillsAndServices from "./home/SkillsAndServices";
 
 const HomeScreen = () => {
     return (
@@ -101,27 +102,14 @@ const HomeScreen = () => {
                         <p>SKILLS AND SERVICES</p>
                         <h3>What am I capable of?</h3>
                     </div>
-                    <div className="row">
-                        <div className="col-lg-3">
-                            <div className="card">
-                                <div style={{ display: "flex", justifyContent: "flex-end" }}>
-                                    <i className="fa fa-star"></i>
-                                    <i className="fa fa-star"></i>
-                                    <i className="fa fa-star"></i>
-                                    <i className="fa fa-star"></i>
-                                    <i className="fa fa-star"></i>
-                                </div>
-                                <img src={"/logo192.png"} alt="skill" />
-                                <h3>Lorem ipsum</h3>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur 
-                                    adipiscing elit. Etiam at ultricies dui, eu 
-                                    mattis nisl. Etiam placerat orci eu tortor 
-                                    euismod, quis vehicula velit dictum.
-                                </p>
-                                <p style={{ display: "flex", justifyContent: "flex-end" }}>Contact Me &#8594;</p>
-                            </div>
-                        </div>
+                    <div className="row justify-content-between">
+                        <SkillsAndServices />
+                    </div>
+                    <div className="row justify-content-between">
+                        <SkillsAndServices />
+                    </div>
+                    <div className="row justify-content-between">
+                        <SkillsAndServices />
                     </div>
                 </section>
             </main>
