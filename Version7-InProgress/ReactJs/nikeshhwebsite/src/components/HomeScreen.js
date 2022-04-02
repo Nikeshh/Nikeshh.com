@@ -1,4 +1,5 @@
 import React from "react";
+import Projects from "./home/Projects";
 import SkillsAndServices from "./home/SkillsAndServices";
 
 const HomeScreen = () => {
@@ -110,6 +111,20 @@ const HomeScreen = () => {
                     </div>
                     <div className="row justify-content-between">
                         <SkillsAndServices />
+                    </div>
+                </section>
+                <section>
+                    <div>
+                        <p>PROJECTS / WORKS</p>
+                        <h3>What have I done?</h3>
+                    </div>
+                    <h4>Web Development</h4>
+                    <div className="row justify-content-between">
+                        <Projects />
+                    </div>
+                    <h4>App Development</h4>
+                    <div className="row justify-content-between">
+                        <Projects />
                     </div>
                 </section>
             </main>
