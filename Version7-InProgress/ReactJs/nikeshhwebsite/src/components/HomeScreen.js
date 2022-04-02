@@ -19,7 +19,10 @@ const HomeScreen = () => {
                     <li>Profile</li>
                 </ul>
             </div>
-            <div className="row d-flex">
+            <div className="float-end">
+                <i className="fa fa-info-circle"></i>
+            </div>
+            <div className="row">
                 <div className="col-lg-8">
                     <div>
                         <p>Hi, symbol! Welcome to my site!</p>
@@ -52,6 +55,11 @@ const HomeScreen = () => {
                 <div className="col-lg-4">
                     <img src={"/logo192.png"} alt="logo" />
                 </div>
+            </div>
+            <div>
+                <i class="fa fa-mouse-pointer"></i>
+                <span>Scroll Down</span>
+                <i className="fas fa-comment-dots float-end"></i>
             </div>
         </>
     );
