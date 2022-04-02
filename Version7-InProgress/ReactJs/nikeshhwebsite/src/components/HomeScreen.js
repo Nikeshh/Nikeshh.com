@@ -1,6 +1,7 @@
 import React from "react";
 import Projects from "./home/Projects";
 import SkillsAndServices from "./home/SkillsAndServices";
+import Testimonials from "./home/Testimonials";
 
 const HomeScreen = () => {
     return (
@@ -125,6 +126,23 @@ const HomeScreen = () => {
                     <h4>App Development</h4>
                     <div className="row justify-content-between">
                         <Projects />
+                    </div>
+                    <p>
+                        I love constructive criticism. I am open to comments and suggestions for my projects. Don’t hesitate to send me a message.
+                    </p>
+                    <button>Check here</button>
+                    <p>
+                        I follow a special style of the process to complete my projects in an efficient way.
+                    </p>
+                    <button>Check here</button>
+                </section>
+                <section>
+                    <div>
+                        <p>TESTIMONIALS</p>
+                        <h3>SEE WHAT OTHERS SAID ABOUT ME</h3>
+                    </div>
+                    <div className="row justify-content-between">
+                        <Testimonials />
                     </div>
                 </section>
             </main>
