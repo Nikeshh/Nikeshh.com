@@ -1,5 +1,6 @@
 import React from "react";
 import Projects from "./home/Projects";
+import ReadMyWritings from "./home/ReadMyWritings";
 import SkillsAndServices from "./home/SkillsAndServices";
 import Testimonials from "./home/Testimonials";
 
@@ -143,6 +144,48 @@ const HomeScreen = () => {
                     </div>
                     <div className="row justify-content-between">
                         <Testimonials />
+                    </div>
+                </section>
+                <section>
+                    <div>
+                        <p>MENTORSHIP / ONE-TO-ONE TUTORING</p>
+                        <h3>I LIKE TO HELP YOU</h3>
+                    </div>
+                    <div>
+                        <h3>Want any help or advice or tutoring? I can help you out.</h3>
+                        <p>Don’t hesitate! Just drop a message and I will get to you as soon as possible.</p>
+                        <button>Start a conversation</button>
+                    </div>
+                </section>
+                <section>
+                    <div>
+                        <p>BLOG</p>
+                        <h3>READ SOME OF MY WRITINGS</h3>
+                    </div>
+                    <div className="row justify-content-between">
+                        <ReadMyWritings />
+                    </div>
+                </section>
+                <section>
+                    <div>
+                        <p>SUPPORT</p>
+                        <h3>LIKE MY WORK?</h3>
+                        <p>IF YOU LIKE MY WORK, YOU CAN ALWAYS SUPPORT ME USING THE FOLLOWING LINKS</p>
+                    </div>
+                    <div className="row">
+                        <div className="col-lg-4">
+                            <div className="card">
+                                <h4>Patreon</h4>
+                            </div>
+                        </div>
+                        <div className="col-lg-4">
+                            <div className="card">
+                                <h4>Buy me a coffee</h4>
+                            </div>
+                        </div>
+                        <div className="col-lg-4">
+                            <button>Know More</button>
+                        </div>
                     </div>
                 </section>
             </main>
