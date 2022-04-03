@@ -1,8 +1,16 @@
 import React from "react";
+import Footer from "./util/Footer";
+import Header from "./util/Header";
 
 const ProjectsScreen = () => {
     return (
-        <h1>Projects Screen</h1>
+        <>
+            <Header />
+            <main>
+
+            </main>
+            <Footer />
+        </>
     );
 }
 
