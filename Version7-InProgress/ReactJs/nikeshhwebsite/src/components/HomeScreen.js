@@ -188,6 +188,33 @@ const HomeScreen = () => {
                         </div>
                     </div>
                 </section>
+                <section>
+                    <div>
+                        <p>SAY HELLO / HIRE ME</p>
+                        <h3>GET IN TOUCH! I LOVE TO MEET PEOPLE!</h3>
+                        <p>
+                            I LOVE TO MEET AND COLLABORATE WITH PEOPLE FROM VARIOUS DOMAINS AND EXPERTISE!
+                            I AM ALWAYS AVAILABLE FOR A COFFEE IF YOU ARE IN TORONTO, CANADA
+                            I AM ALSO AVAILABLE TO FREELANCE!
+                        </p>
+                        <div className="row">
+                            <div className="col-lg-4">
+                                <img src={"/logo192.png"} alt="logo" />
+                            </div>
+                            <div className="col-lg-8">
+                                <form>
+                                    <input type="text" id="first_name" placeholder="FIRST NAME" />
+                                    <input type="text" id="last_name" placeholder="LAST NAME" />
+                                    <input type="email" id="email" placeholder="EMAIL ID" style={{ display: "block" }} />
+                                    <input type="tel" id="phone_number" placeholder="PHONE NUMBER" />
+                                    <input type="tel" id="reason_for_contact" placeholder="REASON FOR CONTACT" />
+                                    <input type="tel" id="message" placeholder="MESSAGE" style={{ display: "block" }} />
+                                    <button>SUBMIT</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </main>
         </>
     );
