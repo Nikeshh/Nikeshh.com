@@ -1,8 +1,16 @@
 import React from "react";
+import Footer from "./util/Footer";
+import Header from "./util/Header";
 
 const SkillSingleScreen = () => {
     return (
-        <h1>Skill Single Screen</h1>
+        <>
+            <Header />
+            <main>
+                
+            </main>
+            <Footer />
+        </>
     );
 }
 
