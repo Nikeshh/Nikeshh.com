@@ -1,9 +1,9 @@
 import React from "react";
 
-const LoadingScreen = () => {
+const LearningScreen = () => {
     return (
-        <h1>Loading Screen</h1>
+        <h1>Learning Screen</h1>
     );
 }
 
-export default LoadingScreen;
+export default LearningScreen;

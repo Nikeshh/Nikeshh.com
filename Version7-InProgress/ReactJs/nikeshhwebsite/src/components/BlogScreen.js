@@ -1,9 +1,14 @@
 import React from "react";
+import Footer from "./util/Footer";
+import Header from "./util/Header";
 
-const LearningScreen = () => {
+const BlogScreen = () => {
     return (
-        <h1>Learning Screen</h1>
+        <>
+            <Header />
+            <Footer />
+        </>
     );
 }
 
-export default LearningScreen;
+export default BlogScreen;
