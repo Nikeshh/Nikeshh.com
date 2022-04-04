@@ -1,8 +1,13 @@
 import React from "react";
+import Footer from "./util/Footer";
+import Header from "./util/Header";
 
 const PatreonScreen = () => {
     return (
-        <h1>Patreon Screen</h1>
+        <>
+            <Header />
+            <Footer />
+        </>
     );
 }
 
