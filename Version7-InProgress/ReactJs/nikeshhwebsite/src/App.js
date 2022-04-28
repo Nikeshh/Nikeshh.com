@@ -8,6 +8,7 @@ import SkillSingleScreen from './components/SkillSingleScreen';
 import CertificationsScreen from './components/CertificationsScreen';
 import ProjectsScreen from './components/ProjectsScreen';
 import BlogScreen from './components/BlogScreen';
+import BlogSingleScreen from './components/BlogSingleScreen';
 import LearningScreen from './components/LearningScreen';
 import NewsletterScreen from './components/NewsletterScreen';
 import PatreonScreen from './components/PatreonScreen';
@@ -36,6 +37,7 @@ const App = () => {
         <Route path="/certifications" component={CertificationsScreen} exact />
         <Route path="/projects" component={ProjectsScreen} exact />
         <Route path="/blog" component={BlogScreen} exact />
+        <Route path="/blog/:id" component={BlogSingleScreen} exact />
         <Route path="/learning" component={LearningScreen} exact />
         <Route path="/newsletter" component={NewsletterScreen} exact />
         <Route path="/patreon" component={PatreonScreen} exact />

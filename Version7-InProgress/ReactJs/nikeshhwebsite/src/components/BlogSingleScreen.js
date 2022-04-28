@@ -2,12 +2,12 @@ import React from "react";
 import Footer from "./util/Footer";
 import Header from "./util/Header";
 
-const BlogScreen = () => {
+const BlogSingleScreen = () => {
     return (
         <>
-            <h1>Blog</h1>
+            <h1>Blog Single</h1>
         </>
     );
 }
 
-export default BlogScreen;
+export default BlogSingleScreen;
