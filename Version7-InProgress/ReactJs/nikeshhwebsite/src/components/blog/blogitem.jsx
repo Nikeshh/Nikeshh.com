@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import './style.css';
 
 const BlogItem = ({
@@ -15,7 +16,22 @@ const BlogItem = ({
 }) => {
     return (
         <div className="blogItem-wrap">
-            <h1>Hello</h1>
+            <img className="blogItem-cover" src={cover} alt='cover' />
+            <p className="chip">{category}</p>
+            <h3>{title}</h3>
+            <p className="blogItem-desc">{description}</p>
+            <footer>
+                <div className="blogItem-author">
+                    <img src={authorAvatar} alt='avatar' />
+                    <div>
+                        <h6>{authorName}</h6>
+                        <p>{createdAt}</p>
+                    </div>
+                </div>
+                <Link className="blogItem-link" to={`/blog/${id}`}>
+                    ➝
+                </Link>
+            </footer>
         </div>
     );
 };
