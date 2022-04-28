@@ -1,3 +1,6 @@
+import React from "react";
+import './style.css';
+
 const BlogItem = ({
     blog: {
         description,
@@ -12,7 +15,7 @@ const BlogItem = ({
 }) => {
     return (
         <div className="blogItem-wrap">
-
+            <h1>Hello</h1>
         </div>
     );
 };
