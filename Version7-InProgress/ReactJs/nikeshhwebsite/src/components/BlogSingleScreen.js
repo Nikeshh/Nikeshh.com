@@ -17,7 +17,7 @@ const BlogSingleScreen = () => {
 
     return (
         <>
-            <Link className="blog-goBack" to='/'>
+            <Link className="blog-goBack" to='/blog'>
                 <span> &#8592;</span> <span>Go Back</span>
             </Link>
             {blog ? (
