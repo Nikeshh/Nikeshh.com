@@ -1,8 +1,12 @@
 import React from "react";
+import Header from "./forum/Header";
+import './forum/style.css';
 
 const ForumScreen = () => {
     return (
-        <h1>Forum Screen</h1>
+        <>
+            <Header />
+        </>
     );
 }
 

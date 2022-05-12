@@ -1,0 +1,40 @@
+.header {
+    display: flex;
+}
+
+.header img {
+    height: 50px;
+    width: 50px;
+}
+
+.header .header_logo_content {
+    display: flex;
+}
+
+.header .header_logo_dropdown ul {
+    list-style: none;
+}
+
+.header_logo_dropdown {
+    display: none;
+}
+
+.header_logo_content:hover .header_logo_dropdown {
+    display: block;
+}
+
+.header .topics_content {
+    display: flex;
+}
+
+.topics_dropdown {
+    display: none;
+}
+
+.topics_content:hover .topics_dropdown {
+    display: block;
+}
+
+.header .topics_dropdown ul {
+    list-style: none;
+}
