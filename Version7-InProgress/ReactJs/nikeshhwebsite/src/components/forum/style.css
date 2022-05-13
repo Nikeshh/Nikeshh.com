@@ -29,6 +29,7 @@ a {
 /* ==================== Header ===================== */
 .header {
     display: flex;
+    box-shadow: 2px 2px;
 }
 
 .header img {
@@ -126,3 +127,58 @@ a {
 }
 
 /* Header Create Topic */
+
+/* ==================== Controls ===================== */
+
+.controls__nav {
+    display: flex;
+}
+
+/* Controls Categories */
+.controls__nav_categories {
+    display: flex;
+}
+
+.controls__nav_categories .controls__nav_categories_btn {
+    display: flex;
+}
+
+.controls__nav_dropdown {
+    display: none;
+}
+
+.controls__nav_categories:hover .controls__nav_dropdown {
+    display: block;
+}
+
+.controls__nav_categories .controls__nav_dropdown ul {
+    list-style: none;
+}
+
+/* Controls Nav Tags */
+.controls__nav_tags {
+    display: flex;
+}
+
+.controls__nav_tags_btn {
+    display: flex;
+}
+
+.controls__nav_tags_dropdown {
+    display: none;
+}
+
+.controls__nav_tags:hover .controls__nav_tags_dropdown {
+    display: block;
+}
+
+/* Controls Nav Menu */
+.controls__nav_menu {
+    display: flex;
+}
+
+.controls__nav_menu ul {
+    display: flex;
+    list-style: none;
+}
+
