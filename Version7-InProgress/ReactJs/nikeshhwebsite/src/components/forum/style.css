@@ -1,3 +1,32 @@
+/* ==================== Common Elements ==================== */
+a {
+    display: inline-flex;
+}
+
+/* Category */
+.category i {
+    margin-right: 10px;
+    margin-top: 10px;
+    border-radius: 50%;
+    background-color: #e9ecee;
+    width: 8px;
+    height: 8px;
+}
+
+/* Icon Colors */
+.bg-icon-yellow {
+    background-color: #f9bc64 !important;
+}
+
+.bg-icon-dark-blue {
+    background-color: #348aa7 !important;
+}
+
+.bg-icon-blue {
+    background-color: #4436f8 !important;
+}
+
+/* ==================== Header ===================== */
 .header {
     display: flex;
 }
@@ -7,6 +36,7 @@
     width: 50px;
 }
 
+/* Header Logo */
 .header .header_logo_content {
     display: flex;
 }
@@ -23,6 +53,7 @@
     display: block;
 }
 
+/* Header Topics */
 .header .topics_content {
     display: flex;
 }
@@ -38,3 +69,60 @@
 .header .topics_dropdown ul {
     list-style: none;
 }
+
+/* Header Latest Topics */
+.header .latest_topics_content {
+    display: flex;
+}
+
+.latest_topics_dropdown {
+    display: none;
+}
+
+.latest_topics_content:hover .latest_topics_dropdown {
+    display: block;
+}
+
+.header .latest_topics_dropdown ul {
+    list-style: none;
+}
+
+/* Header Notification */
+.header__notification_dropdown {
+    display: none;
+}
+
+.header__notification:hover .header__notification_dropdown {
+    display: block;
+}
+
+.header .header__notification_dropdown ul {
+    list-style: none;
+}
+
+.header__notification_dropdown span {
+    display: flex;
+}
+
+/* Header Account */
+.header__account {
+    display: flex;
+}
+
+.header__account .header__account_btn {
+    display: flex;
+}
+
+.header__account_dropdown {
+    display: none;
+}
+
+.header__account:hover .header__account_dropdown {
+    display: block;
+}
+
+.header__account .header__account_dropdown ul {
+    list-style: none;
+}
+
+/* Header Create Topic */

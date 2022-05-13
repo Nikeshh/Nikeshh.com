@@ -50,7 +50,7 @@ const HomeScreen = () => {
                         </div>
                     </div>
                     <div>
-                        <i class="fa fa-mouse-pointer"></i>
+                        <i className="fa fa-mouse-pointer"></i>
                         <span>Scroll Down</span>
                         <i className="fas fa-comment-dots float-end"></i>
                     </div>
