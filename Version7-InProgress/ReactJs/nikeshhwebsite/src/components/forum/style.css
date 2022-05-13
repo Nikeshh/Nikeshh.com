@@ -182,3 +182,12 @@ a {
     list-style: none;
 }
 
+/* ==================== Posts ===================== */
+
+.posts_header {
+    display: flex;
+}
+
+.posts_header > * {
+    display: flex;
+}
