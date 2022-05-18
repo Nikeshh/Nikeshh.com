@@ -1,0 +1,25 @@
+.header {
+    margin-top: 10px;
+}
+
+.header__tabs, .language {
+    list-style-type: none;
+}
+
+.header__row {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.header__row .header__logo {
+    flex: 40%;
+}
+
+.header__row .header__tabs__nav {
+    flex: 60%;
+}
+
+.header__row .header__tabs__nav .header__tabs {
+    display: flex;
+    flex-wrap: nowrap;
+}
