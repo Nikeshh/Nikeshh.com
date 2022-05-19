@@ -22,7 +22,7 @@ const Header = () => {
     return (
         <>
             <header>
-                <div className="container header">
+                <div className="header">
                     <div className="row header__row">
                         <div className="header__logo">
                             <img src={"./assets/images/logo.svg"} alt="logo" />

@@ -17,9 +17,7 @@ import Footer from "./util/Footer";
 const HomeScreen = () => {
     return (
         <>
-            <div
-                className="header__image"
-            >
+            <div className="header__image">
                 <Header />
                 <Landing />
             </div>
