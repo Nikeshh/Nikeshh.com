@@ -1,6 +1,24 @@
 import React from "react";
 
 const Header = () => {
+
+    const changeLanguage = () => {
+        document.getElementById("language__nav").classList.toggle("show__language");
+    }
+
+    window.onclick = function(event) {
+        if(!event.target.matches('.language__down__arrow')) {
+            var dropdowns = document.getElementsByClassName("language__nav");
+            var i;
+            for (i=0; i < dropdowns.length; i++) {
+                var dropdown = dropdowns[i];
+                if(dropdown.classList.contains("show__language")) {
+                    dropdown.classList.remove("show__language");
+                }
+            }
+        }
+    }
+
     return (
         <>
             <header>
@@ -22,14 +40,16 @@ const Header = () => {
                                 <li><a href="#">Support</a></li>
                                 <li><a href="#" className="header__button">Say Hello / Hire Me</a></li>
                                 <li>
-                                    <span>EN</span>
-                                    <img src={"./assets/images/Circle_arrow_down_font_awesome.svg"} alt="down_arrow" style={{width:"20px", height: "20px"}} />
-                                    <nav className="language__nav">
-                                        <ul className="language">
-                                            <li><a href="#" className="active">EN</a></li>
-                                            <li><a href="#">FR</a></li>
-                                        </ul>
-                                    </nav>
+                                    <div className="language_dropdown">
+                                        <span>EN</span>
+                                        <img className="language__down__arrow" src={"./assets/images/Circle_arrow_down_font_awesome.svg"} alt="down_arrow" style={{width:"20px", height: "20px"}} onClick={(e) => changeLanguage()} />
+                                        <nav id="language__nav" className="language__nav">
+                                            <ul className="language">
+                                                <li><a href="#" className="active">EN</a></li>
+                                                <li><a href="#">FR</a></li>
+                                            </ul>
+                                        </nav>
+                                    </div>
                                 </li>
                             </ul>
                         </nav>
