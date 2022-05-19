@@ -17,8 +17,12 @@ import Footer from "./util/Footer";
 const HomeScreen = () => {
     return (
         <>
-            <Header />
-            <Landing />
+            <div
+                className="header__image"
+            >
+                <Header />
+                <Landing />
+            </div>
             <MyStory />
             <SkillsAndServices />
             <ProjectsAndWorks />
