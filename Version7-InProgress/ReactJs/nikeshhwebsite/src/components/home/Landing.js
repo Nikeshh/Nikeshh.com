@@ -1,4 +1,6 @@
 import React from "react";
+import "./landing.css";
+import line from "../../images/line.png";
 
 const Landing = () => {
     return (
@@ -8,7 +10,7 @@ const Landing = () => {
                     <span className="first">HI. WELCOME TO MY SITE.</span>
                     <div className="landing__name">
                         <h3>I'm, Nikeshh Vijayabaskaran</h3>
-                        <img src={"./assets/images/line.png"} alt="Line" className="landing__name__line" />
+                        <img src={line} alt="Line" className="landing__name__line" />
                     </div>
                     <div className="landing__details">
                         <h6>Full-Stack Developer, Mentor, Proud Son</h6>
