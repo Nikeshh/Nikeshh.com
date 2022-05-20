@@ -1,3 +1,4 @@
+/* Header */
 .header__image {
     position: relative;
     height: 100vh; /* 100% of the view port */
@@ -129,7 +130,29 @@
 .landing .landing__name .landing__name__line {
     position: absolute;
     top: 80px;
-    left: 30px;
+    left: 100px;
+}
+
+.landing h6 {
+    font-size: 25px;
+}
+
+.landing .landing__details, .landing .landing__additional_details, .landing .landing__email_and_phone_number, .landing .social-icons {
+    margin-bottom: 30px;
+}
+
+.landing .landing__email, .landing .landing__phone_number {
+    font-weight: 700;
+}
+
+.landing .landing__email .email, .landing .landing__phone_number .phone_number {
+    font-weight: lighter;
+    font-style: italic;
+}
+
+.landing p {
+    font-style: italic;
+    margin-bottom: 10px;
 }
 
 .landing a {
@@ -137,16 +160,17 @@
 }
 
 .landing .social-icons .social-icon {
-    margin: 10px;
+    margin-left: 0px;
+    margin-right: 10px;
 }
 
 .landing .fa-brands {
     border-radius: 50%;
-    width: 70px;
-    height: 70px;
-    font-size: 30px;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
     text-align: center;
-    padding: 20px;
+    padding: 15px;
 }
 
 .landing .fa-brands:hover {
@@ -163,4 +187,18 @@
 
 .landing .fa-twitter {
     background-color: #55ACEE;
+}
+
+.landing .landing-actions button {
+    margin-right: 10px;
+    padding: 5px;
+}
+
+.landing .landing-actions button i {
+    margin-right: 10px;
+    padding: 5px;
+}
+
+.landing .landing-actions button span {
+    padding: 5px;
 }
