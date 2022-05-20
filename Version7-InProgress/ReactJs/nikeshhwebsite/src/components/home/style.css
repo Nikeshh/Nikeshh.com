@@ -210,3 +210,13 @@
 .landing .landing-actions button span {
     padding: 5px;
 }
+
+.landing::after {
+    content: "";
+    background: url('../../images/header_pattern_3.png') no-repeat;
+    position: absolute;
+    height: 169px;
+    width: 153px;
+    margin-top: 20px;
+    margin-left: -100px;
+}

@@ -35,6 +35,10 @@ const Landing = () => {
             <div className="col-md-3 landing__image">
                 <img src={"./assets/images/landing_image.png"} alt="Landing Image" width="500px" />
             </div>
+            <div>
+                <a href="#" className="social-icon"><i className="fa-solid fa-comment"></i></a>
+                <a href="#" className="social-icon"><i className="fa-solid fa-info"></i></a>
+            </div>
         </div>
     );
 }
