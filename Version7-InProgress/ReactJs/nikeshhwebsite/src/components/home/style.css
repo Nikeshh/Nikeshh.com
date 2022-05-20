@@ -111,6 +111,7 @@
 .landing__content {
     margin-left: 70px;
     margin-top: 90px;
+    position: relative;
 }
 
 .landing__content .landing, .landing__content .landing__image {
@@ -219,4 +220,38 @@
     width: 153px;
     margin-top: 20px;
     margin-left: -100px;
+}
+
+.comment_and_info {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.comment_and_info .social-icon {
+    margin-left: 0px;
+    margin-right: 10px;
+}
+
+.comment_and_info .fa-solid {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    text-align: center;
+    padding: 15px;
+}
+
+.comment_and_info .fa-solid:hover {
+    opacity: 0.7;
+}
+
+.comment_and_info .fa-comment {
+    background-color: grey;
+    color: white;
+}
+
+.comment_and_info .fa-info {
+    background-color: grey;
+    color: white;
 }
