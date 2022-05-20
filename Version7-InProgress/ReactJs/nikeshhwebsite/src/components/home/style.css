@@ -20,6 +20,10 @@
     filter: blur(3px);
 }
 
+.header {
+    margin-left: 120px;
+}
+
 .header .header__logo {
     padding-top: 10px;
 }
@@ -59,6 +63,7 @@
 
 .header__row .header__tabs__nav {
     flex: 80%;
+    margin-left: 150px;
 }
 
 .header__row .header__tabs__nav .header__tabs {
@@ -75,15 +80,18 @@
 }
 
 .header__row .header__tabs__nav .header__tabs li {
+    margin-right: 20px;
     padding: 10px;
 }
 
-.header__row .header__tabs__nav .header__tabs .active {
-    background-color: aquamarine;
+.header__row .header__tabs__nav .header__tabs a.header__button {
+    padding: 10px;
+    border-style: solid;
+    border-radius: 5px;
 }
 
-.header__row .header__tabs__nav .header__tabs .header__button {
-    background-color: rgb(61, 204, 61);
+.header__row .header__tabs__nav .header__tabs .language_dropdown .language__down__arrow {
+    margin-left: 10px;
 }
 
 .language_dropdown {
@@ -106,7 +114,7 @@
 }
 
 .landing__content .landing, .landing__content .landing__image {
-    padding: 10px;
+    padding: 30px;
 }
 
 .landing span.first {
