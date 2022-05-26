@@ -1,8 +1,17 @@
 import React from "react";
+import Header from "./util/Header";
+import Footer from "./util/Footer";
+import About from "./about/About";
 
 const AboutScreen = () => {
     return (
-        <h1>About Screen</h1>
+        <>
+             <div className="header__image">
+                <Header />
+                <About />
+            </div>
+            <Footer />
+        </>
     );
 }
 
