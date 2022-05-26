@@ -1,0 +1,22 @@
+.skillsandservices {
+    margin-left: 70px;
+    margin-top: 90px;
+    position: relative;
+}
+
+.skillsandservices .title {
+    text-transform: uppercase;
+}
+
+.skillsandservices .subtitle {
+    font-weight: 700;
+}
+
+.skillsandservices::before {
+    content: "";
+    background: url('../../images/header_pattern_3.png') no-repeat;
+    position: absolute;
+    height: 169px;
+    width: 153px;
+    right: 150px;
+}
