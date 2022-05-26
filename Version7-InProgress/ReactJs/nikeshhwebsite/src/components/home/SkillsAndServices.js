@@ -2,7 +2,7 @@ import React from "react";
 
 const SkillsAndServices = () => {
     return (
-        <h1>Skills And Services</h1>
+        <h1></h1>
     );
 }
 
