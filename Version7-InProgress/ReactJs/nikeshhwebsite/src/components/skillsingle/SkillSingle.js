@@ -5,7 +5,7 @@ import line from "../../images/line.png";
 const SkillSingle = () => {
     return (
         <div className="skillsingle container">
-            <div className="row">
+            <div className="skill_header row">
                 <div className="col-md-4">
                     <img src={"./assets/images/skillsingle.png"} alt="Skill Single" />
                 </div>
@@ -29,6 +29,9 @@ const SkillSingle = () => {
                         <img src={line} alt="Line" className="ratings_line" />
                     </div>
                 </div>
+            </div>
+            <div className="projects_and_works">
+                <h1>Projects and works</h1>
             </div>
         </div>
     );
