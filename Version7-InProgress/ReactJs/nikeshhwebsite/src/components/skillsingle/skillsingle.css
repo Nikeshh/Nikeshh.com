@@ -13,3 +13,40 @@
     top: 20px;
     width: 300px;
 }
+
+.skillsingle {
+    margin-left: 70px;
+    margin-top: 90px;
+    position: relative;
+}
+
+.skillsingle .title {
+    text-transform: uppercase;
+}
+
+.skillsingle .subtitle {
+    font-weight: 700;
+}
+
+.skillsingle .projects_and_works::before {
+    content: "";
+    background: url('../../images/header_pattern_3.png') no-repeat;
+    position: absolute;
+    height: 169px;
+    width: 153px;
+    right: 60px;
+}
+
+.skillsingle .projects_and_works .title::before {
+    content: "";
+    background: url('../../images/header_pattern_2.png') top -130px right -130px no-repeat;
+    position: absolute;
+    height: 534px;
+    width: 534px;
+    left: -400px;
+    -webkit-filter: blur(3px);
+    -moz-filter: blur(3px);
+    -o-filter: blur(3px);
+    -ms-filter: blur(3px);
+    filter: blur(3px);
+}
