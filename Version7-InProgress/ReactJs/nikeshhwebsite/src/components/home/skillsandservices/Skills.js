@@ -3,7 +3,7 @@ import React from "react";
 const Skills = () => {
     return (
         <>
-            <div className="card" style={{width: "18rem"}}>
+            <div className="card" style={{width: "18rem", borderRadius: "10px"}}>
                 <img src={"./assets/images/landing_image.png"} className="card-img-top" alt="Skill" />
                 <div className="card-body">
                     <div className="skills-title-and-ratings">
