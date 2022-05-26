@@ -7,7 +7,7 @@ const AboutScreen = () => {
     return (
         <>
              <div className="header__image">
-                <Header />
+                <Header page_name="about" />
                 <About />
             </div>
             <Footer />

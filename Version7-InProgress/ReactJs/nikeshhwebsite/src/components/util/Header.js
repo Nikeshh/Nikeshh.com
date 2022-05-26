@@ -1,7 +1,9 @@
 import React from "react";
 import "./header.css";
 
-const Header = () => {
+const Header = (props) => {
+
+    const page_name = props.page_name;
 
     const changeLanguage = () => {
         document.getElementById("language__nav").classList.toggle("show__language");
@@ -31,14 +33,14 @@ const Header = () => {
                         </div>
                         <nav className="header__tabs__nav">
                             <ul className="header__tabs">
-                                <li><a href="#" className="active">Home</a></li>
-                                <li><a href="#">About</a></li>
-                                <li><a href="#">Skills</a></li>
-                                <li><a href="#">Works</a></li>
-                                <li><a href="#">Testimonials</a></li>
-                                <li><a href="#">Mentorship</a></li>
-                                <li><a href="#">Blog</a></li>
-                                <li><a href="#">Support</a></li>
+                                <li><a href="#" className={page_name == "home" ? 'active' : ''}>Home</a></li>
+                                <li><a href="#" className={page_name == "about" ? 'active' : ''}>About</a></li>
+                                <li><a href="#" className={page_name == "skills" ? 'active' : ''}>Skills</a></li>
+                                <li><a href="#" className={page_name == "works" ? 'active' : ''}>Works</a></li>
+                                <li><a href="#" className={page_name == "testimonials" ? 'active' : ''}>Testimonials</a></li>
+                                <li><a href="#" className={page_name == "mentoship" ? 'active' : ''}>Mentorship</a></li>
+                                <li><a href="#" className={page_name == "blog" ? 'active' : ''}>Blog</a></li>
+                                <li><a href="#" className={page_name == "support" ? 'active' : ''}>Support</a></li>
                                 <li><a href="#" className="header__button">Say Hello / Hire Me</a></li>
                                 <li>
                                     <div className="language_dropdown">

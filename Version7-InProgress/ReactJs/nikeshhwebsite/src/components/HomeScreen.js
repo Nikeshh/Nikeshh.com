@@ -18,7 +18,7 @@ const HomeScreen = () => {
     return (
         <>
             <div className="header__image">
-                <Header />
+                <Header page_name="home" />
                 <Landing />
             </div>
             <MyStory />
