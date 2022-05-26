@@ -1,0 +1,9 @@
+.skillsingle .ratings_with_line {
+    position: relative;
+}
+
+.skillsingle .ratings_with_line .ratings_line {
+    position: absolute;
+    top: 20px;
+    width: 300px;
+}
