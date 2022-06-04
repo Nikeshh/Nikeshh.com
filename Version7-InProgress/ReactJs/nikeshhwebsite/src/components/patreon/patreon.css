@@ -1,0 +1,13 @@
+.patreon {
+    margin-left: 70px;
+    margin-top: 90px;
+    position: relative;
+}
+
+.patreon .title {
+    text-transform: uppercase;
+}
+
+.patreon .subtitle {
+    font-weight: 700;
+}
