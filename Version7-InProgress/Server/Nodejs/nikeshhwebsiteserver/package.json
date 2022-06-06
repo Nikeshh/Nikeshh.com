@@ -1,16 +1,15 @@
 {
   "name": "nikeshhwebsiteserver",
   "version": "1.0.0",
-  "description": "",
+  "description": "Nikeshh Website Server",
   "type": "module",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node ./index.js",
-    "server": "nodemon ./index.js"
+    "start": "node ./server.js",
+    "pro": "SET NODE_ENV=production & nodemon ./server.js",
+    "server": "nodemon ./server.js"
   },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",
@@ -23,5 +22,7 @@
   "devDependencies": {
     "@types/cors": "^2.8.12",
     "nodemon": "^2.0.15"
-  }
+  },
+  "author": "Nikeshh Vijayabaskaran",
+  "license": "ISC"
 }
