@@ -1,0 +1,13 @@
+.certifications {
+    margin-left: 70px;
+    margin-top: 90px;
+    position: relative;
+}
+
+.certifications .title {
+    text-transform: uppercase;
+}
+
+.certifications .subtitle {
+    font-weight: 700;
+}

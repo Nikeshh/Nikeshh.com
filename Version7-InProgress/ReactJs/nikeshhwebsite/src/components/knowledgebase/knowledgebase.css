@@ -1,0 +1,13 @@
+.knowledgebase {
+    margin-left: 70px;
+    margin-top: 90px;
+    position: relative;
+}
+
+.knowledgebase .title {
+    text-transform: uppercase;
+}
+
+.knowledgebase .subtitle {
+    font-weight: 700;
+}

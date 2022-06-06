@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import LoadingScreen from './components/LoadingScreen';
 import HomeScreen from './components/HomeScreen';
 import AboutScreen from './components/AboutScreen';
+import SkillsScreen from './components/SkillsScreen';
 import SkillSingleScreen from './components/SkillSingleScreen';
 import CertificationsScreen from './components/CertificationsScreen';
 import ProjectsScreen from './components/ProjectsScreen';
@@ -33,6 +34,7 @@ const App = () => {
         <Route path="/" component={LoadingScreen} exact />
         <Route path="/home" component={HomeScreen} exact />
         <Route path="/about" component={AboutScreen} exact />
+        <Route path="/skills" component={SkillsScreen} exact />
         <Route path="/skillsingle" component={SkillSingleScreen} exact />
         <Route path="/certifications" component={CertificationsScreen} exact />
         <Route path="/projects" component={ProjectsScreen} exact />
