@@ -2,8 +2,7 @@
   "name": "nikeshhwebsiteserver",
   "version": "1.0.0",
   "description": "Nikeshh Website Server",
-  "type": "module",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node ./server.js",
@@ -17,7 +16,8 @@
     "express": "^4.17.3",
     "express-async-handler": "^1.2.0",
     "jsonwebtoken": "^8.5.1",
-    "mongoose": "^6.2.4"
+    "mongoose": "^6.2.4",
+    "colors": "^1.4.0"
   },
   "devDependencies": {
     "@types/cors": "^2.8.12",
