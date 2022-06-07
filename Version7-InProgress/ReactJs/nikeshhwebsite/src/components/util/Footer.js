@@ -7,7 +7,7 @@ const Footer = () => {
             <div className="row">
                 <div className="col-md-4">
                     <div className="footer_logo">
-                        <img src={"./assets/images/logo.svg"} alt="logo" />
+                        <img src={"/assets/images/logo.svg"} alt="logo" />
                         <span>Nikeshh V</span>
                     </div>
                     <div className="social-icons">

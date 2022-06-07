@@ -28,7 +28,7 @@ const Header = (props) => {
                 <div className="header">
                     <div className="row header__row">
                         <div className="header__logo">
-                            <img src={"./assets/images/logo.svg"} alt="logo" />
+                            <img src={"/assets/images/logo.svg"} alt="logo" />
                             <span>Nikeshh V</span>
                         </div>
                         <nav className="header__tabs__nav">
@@ -45,7 +45,7 @@ const Header = (props) => {
                                 <li>
                                     <div className="language_dropdown">
                                         <span>EN</span>
-                                        <img className="language__down__arrow" src={"./assets/images/Circle_arrow_down_font_awesome.svg"} alt="down_arrow" style={{width:"20px", height: "20px"}} onClick={(e) => changeLanguage()} />
+                                        <img className="language__down__arrow" src={"/assets/images/Circle_arrow_down_font_awesome.svg"} alt="down_arrow" style={{width:"20px", height: "20px"}} onClick={(e) => changeLanguage()} />
                                         <nav id="language__nav" className="language__nav">
                                             <ul className="language">
                                                 <li><a href="#" className="active">EN</a></li>
