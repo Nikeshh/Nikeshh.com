@@ -12,3 +12,26 @@
     border: 1px solid;
     box-shadow: 5px 10px #888888;
 }
+
+.blog-content {
+    margin-top: 30px;
+}
+
+.blog-content .blog-content-header {
+    display: flex;
+}
+
+.blog-content .blog-content-header > ul {
+    list-style: none;
+    display: flex;
+}
+
+.blog-content .blog-content-featured-header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #000;
+}
+
+.blog-content .blog-content-featured-header .right {
+    display: flex;
+}
