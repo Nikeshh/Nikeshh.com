@@ -45,3 +45,18 @@
 .sub-feature {
     margin-bottom: 10px;
 }
+
+.blog-content-featured, .blog-content-latest-posts-and-popular-posts {
+    margin-bottom: 30px;
+}
+
+.latest-posts-title, .popular-posts-title, .blog-content-detailed-title {
+    border-bottom: 1px solid #000;
+    margin-bottom: 20px;
+}
+
+.popular-post-number {
+    font-weight: 700;
+    font-size: 100px;
+    font-style: italic;
+}
