@@ -1,13 +1,28 @@
 .knowledgebase {
     margin-left: 70px;
     margin-top: 90px;
+    margin-right: 70px;
     position: relative;
 }
 
-.knowledgebase .title {
-    text-transform: uppercase;
+.knowledgebase-header {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid;
+    box-shadow: 5px 10px #888888;
+    margin-bottom: 30px;
 }
 
-.knowledgebase .subtitle {
-    font-weight: 700;
+.knowledgebase-content-header > ul {
+    list-style: none;
+    display: flex;
+}
+
+.knowledgebase-content-header ul > li {
+    padding: 5px;
+}
+
+.knowledge-content-subheader .underline {
+    border-bottom: 1px solid #000;
 }
