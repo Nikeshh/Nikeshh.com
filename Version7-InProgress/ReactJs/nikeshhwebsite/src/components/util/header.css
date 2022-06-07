@@ -2,7 +2,6 @@
 
 .header__image {
     position: relative;
-    height: 100vh; /* 100% of the view port */
     width: 100%;
     background: url('../../images/header_pattern_1.svg') top -100px right -100px / 500px no-repeat;
 }
