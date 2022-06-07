@@ -1,13 +1,14 @@
 .blog {
     margin-left: 70px;
     margin-top: 90px;
+    margin-right: 70px;
     position: relative;
 }
 
-.blog .title {
-    text-transform: uppercase;
-}
-
-.blog .subtitle {
-    font-weight: 700;
+.blog-header {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid;
+    box-shadow: 5px 10px #888888;
 }
