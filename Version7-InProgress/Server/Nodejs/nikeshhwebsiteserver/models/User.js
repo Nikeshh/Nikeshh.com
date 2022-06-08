@@ -53,7 +53,7 @@ const userSchema = new mongoose.Schema({
     activationLink: {
         type: String,
     },
-    passwordResetLink: String,
+    passwordResetToken: String,
     passwordResetExpires: Date,
     activated: {
         type: Boolean,
@@ -95,7 +95,7 @@ userSchema.methods.createAccountActivationLink = function () {
 // Create password reset link based on the password reset token generated
 userSchema.methods.createPasswordResetLink = function () {
     const resetToken = crypto.randomBytes(32).toString('hex');  
-    this.passwordResetLink = crypto.createHash('sha256').update(resetToken).digest('hex');
+    this.passwordResetToken = crypto.createHash('sha256').update(resetToken).digest('hex');
     this.passwordResetExpires = Date.now() + 10 * 60 * 1000;
     return resetToken;
 };
