@@ -11,3 +11,17 @@
 .projects .subtitle {
     font-weight: 700;
 }
+
+.works {
+    margin-left: 70px;
+    margin-top: 90px;
+    position: relative;
+}
+
+.works .title {
+    text-transform: uppercase;
+}
+
+.works .subtitle {
+    font-weight: 700;
+}
