@@ -1,3 +1,4 @@
+const bcrypt = require('bcryptjs/dist/bcrypt');
 const mongoose = require('mongoose');
 const shortid = require('shortid');
 const validator = require('validator');
@@ -43,6 +44,12 @@ const userSchema = new mongoose.Schema({
         minlength: [8, 'Must be greater than 8'],
         select: false
     },
+    passwordConfirm: {
+        type: String,
+        required: [true, 'Please provide a password confirm'],
+        minlength: [8, 'Must be greater than 8'],
+        select: false
+    },
     activationLink: {
         type: String,
     },
@@ -60,6 +67,17 @@ const userSchema = new mongoose.Schema({
         type: Date,
         default: Date.now()
     }
+});
+
+// Encrypt the password and presave it
+userSchema.pre('save', async function (next) {
+    if(!this.isModified('password')) {
+        // only run if password is modified
+        return next();
+    }
+    this.password = await bcrypt.hash(this.password, 12); // hashing password
+    this.passwordConfirm = undefined; // delete passwordConfirm field
+    next();
 });
 
 const User = mongoose.model('User', userSchema);
