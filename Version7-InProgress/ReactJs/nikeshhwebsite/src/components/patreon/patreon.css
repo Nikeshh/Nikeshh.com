@@ -11,3 +11,8 @@
 .patreon .subtitle {
     font-weight: 700;
 }
+
+.patreon .links > img {
+    display: inline-block;
+    width: 300px;
+}
