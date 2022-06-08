@@ -53,7 +53,7 @@ const userSchema = new mongoose.Schema({
     activationLink: {
         type: String,
     },
-    passwordResetToken: String,
+    passwordResetLink: String,
     passwordResetExpires: Date,
     activated: {
         type: Boolean,
@@ -79,6 +79,26 @@ userSchema.pre('save', async function (next) {
     this.passwordConfirm = undefined; // delete passwordConfirm field
     next();
 });
+
+// Compare password
+userSchema.methods.correctPassword = async function (candidate_password, user_password) {
+    return await bcrypt.compare(candidate_password, user_password);
+};
+
+// Create activation link based on the activation token generated
+userSchema.methods.createAccountActivationLink = function () {
+    const activationToken = crypto.randomBytes(32).toString('hex');
+    this.activationLink = crypto.createHash('sha256').update(activationToken).digest('hex');
+    return activationToken;
+};
+
+// Create password reset link based on the password reset token generated
+userSchema.methods.createPasswordResetLink = function () {
+    const resetToken = crypto.randomBytes(32).toString('hex');  
+    this.passwordResetLink = crypto.createHash('sha256').update(resetToken).digest('hex');
+    this.passwordResetExpires = Date.now() + 10 * 60 * 1000;
+    return resetToken;
+};
 
 const User = mongoose.model('User', userSchema);
 module.exports = User;
