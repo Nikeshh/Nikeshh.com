@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Khula:700');
+
 .loading {
     position: relative;
 }
@@ -6,13 +9,205 @@
     position: relative;
     display: inline-block;
     font-size: 40px;
+    font-weight: 700;
     text-transform: uppercase;
     animation: rotateLetter 2s infinite;
     animation-delay: calc(.2s * var(--i));
+}
+
+.loading span:not(:last-child) {
+    margin-right: 20px;
 }
 
 @keyframes rotateLetter {
     0%, 80% {
         transform: rotateY(360deg);
     }
+}
+
+.hey_shadows {
+    text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary), 12px 12px var(--color-quinary);
+    font-family: bungee, sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: calc(2rem + 5vw);
+    text-align: center;
+    margin: 0;
+    color: var(--color-primary);
+    letter-spacing: 0.4rem;
+    animation: shadows 1.2s ease-in infinite, move 1.2s ease-in infinite
+}
+
+@keyframes shadows {
+    0% {
+        text-shadow: none;
+    }
+    10% {
+        text-shadow: 3px 3px 0 var(--color-secondary);
+    }
+    20% {
+        text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary);
+    }
+    30% {
+        text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary);
+    }
+    40% {
+        text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary), 12px 12px 0 var(--color-quinary);
+    }
+    50% {
+        text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary), 12px 12px 0 var(--color-quinary);
+    }
+    60% {
+        text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary), 12px 12px 0 var(--color-quinary);
+    }
+    70% {
+        text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary);
+    }
+    80% {
+        text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary);
+    }
+    90% {
+        text-shadow: 3px 3px 0 var(--color-secondary);
+    }
+    100% {
+        text-shadow: none;
+    }
+}
+
+@keyframes move {
+    0% {
+        transform: translate(0px, 0px);
+    }
+    40% {
+        transform: translate(-12px, -12px);
+    }
+    50% {
+        transform: translate(-12px, -12px);
+    }
+    60% {
+        transform: translate(-12px, -12px);
+    }
+    100% {
+        transform: translate(0px, 0px);
+    }
+}
+
+.always_be {
+    position: relative;
+    color: #333;
+    font-family: tahoma;
+    font-size: 3rem;
+    font-weight: 100;
+    line-height: 1.5;
+    text-transform: uppercase;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 550px;
+}
+
+.always_be span {
+    font-size: 40px;
+    margin-left: 40px;
+}
+
+.always_be .message {
+    position: absolute;
+    background-color: yellow;
+    color: #333;
+    display: block;
+    font-weight: 900;
+    overflow: hidden;
+    padding-left: 0.5rem;
+    top: 0.2rem;
+    left: 270px;
+    animation: openclose 5s ease-in-out infinite;
+}
+
+.always_be .word1, .always_be .word2, .always_be .word3 {
+    font-family: tahoma;
+}
+
+@keyframes openclose {
+    0% {
+        top: 0.2rem;
+        width: 0;
+    }
+    5% {
+        width: 0;
+    }
+    15% {
+        width: 230px;
+    }
+    30% {
+        top: 0.2rem;
+        width: 230px;
+    }
+    33% {
+        top: 0.2rem;
+        width: 0;
+    }
+    35% {
+        top: 0.2rem;
+        width: 0;
+    }
+    38% {
+        top: -4.5rem;
+    }
+    48% {
+        top: -4.5rem;
+        width: 190px;
+    }
+    62% {
+        top: -4.5rem;
+        width: 190px;
+    }
+    66% {
+        top: -4.5rem;
+        width: 0;
+        text-indent: 0;
+    }
+    71% {
+        top: -9rem;
+        width: 0;
+        text-indent: 5px;
+    }
+    86% {
+        top: -9rem;
+        width: 285px;
+    }
+    95% {
+        top: -9rem;
+        width: 285px;
+    }
+    98% {
+        top: -9rem;
+        width: 0;
+        text-indent: 5px;
+    }
+    100% {
+        top: 0;
+        width: 0;
+        text-indent: 0;
+    }
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.console-container {
+    font-family: Khula;
+    font-size: 4rem;
+    text-align: center;
+    height: 200px;
+    width: 600px;
+    display: block;
+    position: relative;
+    margin: auto;
+}
+
+.console-underscore {
+    display: inline-block;
+    top: -0.14em;
+    left: 10px;
 }
