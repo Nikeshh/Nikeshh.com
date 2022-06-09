@@ -64,7 +64,7 @@ const Loading = () => {
         <>
             <img src={"/assets/images/loading.gif"} alt="loading_animation" />
             <div>
-                <h1 className="name" data-shadow="Nikeshh">Nikeshh</h1>
+                <h1 className="name" data-shadow="Nikeshh.V">Nikeshh.V</h1>
             </div>
             <div className="console-container">
                 <span id="text"></span>
