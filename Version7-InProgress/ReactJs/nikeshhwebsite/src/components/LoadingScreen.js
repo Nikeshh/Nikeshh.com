@@ -1,10 +1,10 @@
 import React from "react";
+import Loading from "./loading/Loading";
 
 const LoadingScreen = () => {
     return (
         <>
-            <img src={"/logo192.png"} alt="loading_animation" />
-            <h1>ME LOADING...</h1>
+            <Loading />
         </>
     );
 }
