@@ -63,7 +63,9 @@ const Loading = () => {
     return (
         <>
             <img src={"/assets/images/loading.gif"} alt="loading_animation" />
-            <h1 data-shadow="Nikeshh">NIKESHH</h1>
+            <div>
+                <h1 className="name" data-shadow="Nikeshh">Nikeshh</h1>
+            </div>
             <div className="console-container">
                 <span id="text"></span>
                 <div className="console-underscore" id="console-underscore">
