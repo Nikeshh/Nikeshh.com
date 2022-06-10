@@ -13,7 +13,7 @@ const Certifications = () => {
                 </ul>
                 <div className="row">
                     <div className="col-lg-6">
-                        <img src={"./assets/images/landing_image.png"} alt="Certification Image" width="500px" />
+                        <img src={"./assets/images/loading.gif"} alt="Certification Image" width="500px" />
                         <div className="certificate_number">
                             <p>1</p>
                         </div>
@@ -41,7 +41,7 @@ const Certifications = () => {
                 </div>
                 <div className="row">
                     <div className="col-lg-6">
-                        <img src={"./assets/images/landing_image.png"} alt="Certification Image" width="500px" />
+                        <img src={"./assets/images/loading.gif"} alt="Certification Image" width="500px" />
                         <div className="certificate_number">
                             <p>2</p>
                         </div>
@@ -77,7 +77,7 @@ const Certifications = () => {
                 </ul>
                 <div className="row">
                     <div className="col-lg-6">
-                        <img src={"./assets/images/landing_image.png"} alt="Certification Image" width="500px" />
+                        <img src={"./assets/images/loading.gif"} alt="Certification Image" width="500px" />
                         <div className="award_number">
                             <p>1</p>
                         </div>
@@ -105,7 +105,7 @@ const Certifications = () => {
                 </div>
                 <div className="row">
                     <div className="col-lg-6">
-                        <img src={"./assets/images/landing_image.png"} alt="Certification Image" width="500px" />
+                        <img src={"./assets/images/loading.gif"} alt="Certification Image" width="500px" />
                         <div className="award_number">
                             <p>2</p>
                         </div>

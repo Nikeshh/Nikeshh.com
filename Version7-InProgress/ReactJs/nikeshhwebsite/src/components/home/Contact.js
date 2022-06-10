@@ -11,7 +11,7 @@ const Contact = () => {
             <p>I am also available to freelance.</p>
             <div className="row">
                 <div className="col-md-4">
-                    <img src={"./assets/images/landing_image.png"} alt="Landing Image" width="500px" />
+                    <img src={"./assets/images/loading.gif"} alt="Landing Image" width="500px" />
                 </div>
                 <div className="col-md-8">
                     <div className="card" style={{ width: "50rem", height: "30rem", borderTopLeftRadius: "80px" }}>

@@ -8,7 +8,7 @@ const MyStory = () => {
             <h3 className="subtitle">My Story</h3>
             <div className="row">
                 <div className="col-md-4">
-                    <img src={"./assets/images/landing_image.png"} alt="My Story" width="500px" />
+                    <img src={"./assets/images/loading.gif"} alt="My Story" width="500px" />
                 </div>
                 <div className="col-md-4">
                     <p>

@@ -18,7 +18,7 @@ const Blog = () => {
                             <button>Create a account</button>
                         </div>
                         <div className="col-lg-5">
-                            <img src={"./assets/images/landing_image.png"} alt="Landing Image" width="500px" />
+                            <img src={"./assets/images/loading.gif"} alt="Landing Image" width="500px" />
                         </div>
                     </div>
                 </div>

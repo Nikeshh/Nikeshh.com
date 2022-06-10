@@ -4,7 +4,7 @@ const Skills = () => {
     return (
         <>
             <div className="card" style={{width: "18rem", borderRadius: "10px"}}>
-                <img src={"./assets/images/landing_image.png"} className="card-img-top" alt="Skill" />
+                <img src={"./assets/images/loading.gif"} className="card-img-top" alt="Skill" />
                 <div className="card-body">
                     <div className="skills-title-and-ratings">
                         <h5 className="card-text">Web Services</h5>

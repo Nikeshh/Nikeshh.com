@@ -36,7 +36,7 @@ const Landing = () => {
                     </div>
                 </div>
                 <div className="col-md-3 landing__image">
-                    <img src={"./assets/images/landing_image.png"} alt="Landing Image" width="500px" />
+                    <img src={"./assets/images/loading.gif"} alt="Landing Image" width="500px" />
                 </div>
             </div>
             <div className="comment_and_info">

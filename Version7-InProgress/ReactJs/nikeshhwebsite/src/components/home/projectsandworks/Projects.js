@@ -9,7 +9,7 @@ const Projects = (props) => {
                     <div className="col">
                         <div className="card project" style={{width: "18rem", borderRadius: "10px"}}>
                             <i class="favorite fa-brands fa-gratipay fa-xl"></i>
-                            <img src={"./assets/images/landing_image.png"} className="card-img-top" alt="Project" style={{ padding: "50px" }} />
+                            <img src={"./assets/images/loading.gif"} className="card-img-top" alt="Project" style={{ padding: "50px" }} />
                             <div className="card-body">
                                 <h4>Project Title</h4>
                                 <p className="card-text">Engrossed listening. Park gate sell they west hard for the.</p>
@@ -19,7 +19,7 @@ const Projects = (props) => {
                     <div className="col">
                         <div className="card project" style={{width: "18rem", borderRadius: "10px"}}>
                             <i class="favorite fa-brands fa-gratipay fa-xl"></i>
-                            <img src={"./assets/images/landing_image.png"} className="card-img-top" alt="Project" style={{ padding: "50px" }} />
+                            <img src={"./assets/images/loading.gif"} className="card-img-top" alt="Project" style={{ padding: "50px" }} />
                             <div className="card-body">
                                 <h4>Project Title</h4>
                                 <p className="card-text">Engrossed listening. Park gate sell they west hard for the.</p>

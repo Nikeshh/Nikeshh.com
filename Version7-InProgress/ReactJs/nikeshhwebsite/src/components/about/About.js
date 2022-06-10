@@ -8,7 +8,7 @@ const About = () => {
             <h3 className="subtitle">My Story</h3>
             <div className="row">
                 <div className="col-md-6">
-                    <img src={"./assets/images/landing_image.png"} alt="Landing Image" width="500px" />
+                    <img src={"./assets/images/loading.gif"} alt="Landing Image" width="500px" />
                 </div>
                 <div className="col-md-6">
                     <p>
@@ -53,7 +53,7 @@ const About = () => {
                     </p>
                 </div>
                 <div className="col-md-6">
-                    <img src={"./assets/images/landing_image.png"} alt="Landing Image" width="500px" />
+                    <img src={"./assets/images/loading.gif"} alt="Landing Image" width="500px" />
                 </div>
             </div>
         </div>
