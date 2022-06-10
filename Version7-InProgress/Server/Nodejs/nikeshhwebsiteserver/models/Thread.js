@@ -6,6 +6,15 @@ const threadSchema = new mongoose.Schema({
         type: String,
         default: shortid.generate
     },
+    title: String,
+    postdate: {
+        type: Date,
+        default: Date.now
+    },
+    author: {
+        type: String,
+        default: 'Nikeshh Vijayabaskaran'
+    }
 });
 
 const Thread = mongoose.model('Thread', threadSchema);
