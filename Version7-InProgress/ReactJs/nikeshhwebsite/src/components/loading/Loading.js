@@ -61,7 +61,7 @@ const Loading = () => {
     }, []);
 
     return (
-        <>
+        <div className="loading_screen">
             <img src={"/assets/images/loading.gif"} alt="loading_animation" />
             <div>
                 <h1 className="name" data-shadow="Nikeshh.V">Nikeshh.V</h1>
@@ -91,7 +91,7 @@ const Loading = () => {
                     <div className="word3">creating</div>
                 </div>
             </h1>
-        </>
+        </div>
     );
 }
 
