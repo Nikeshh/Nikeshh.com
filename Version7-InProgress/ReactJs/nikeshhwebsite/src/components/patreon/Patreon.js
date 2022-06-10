@@ -8,9 +8,9 @@ const Patreon = () => {
             <h3 className="subtitle">Like my work?</h3>
             <h2>If you like my work.</h2>
             <h2>You can always support me using the following links.</h2>
-            <div className="links">
-                <img src={"./assets/images/patreon.png"} className="patreon" alt="patreon" />
-                <img src={"./assets/images/buymeacoffee.png"} className="buymeacoffee" alt="buymeacoffee" />
+            <div className="patreon_links">
+                <img src={"./assets/images/patreon.png"} className="patreon" alt="patreon" width="300px" />
+                <img src={"./assets/images/buymeacoffee.png"} className="buymeacoffee" alt="buymeacoffee" width="300px" />
             </div>
             <div className="why_support">
                 <p><i className="fa fa-eye"></i>Why Support</p>

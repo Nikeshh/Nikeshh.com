@@ -3,14 +3,16 @@ import "./about.css";
 
 const About = () => {
     return (
-        <div className="about">
-            <span className="title">Deep Dive Into My Life</span>
-            <h3 className="subtitle">My Story</h3>
-            <div className="row">
-                <div className="col-md-6">
+        <div className="about container">
+            <div style={{ marginBottom: '100px'}}>
+                <span className="title">Deep Dive Into My Life</span>
+                <h3 className="subtitle">My Story</h3>
+            </div>
+            <div className="row" style={{ marginBottom: '100px' }}>
+                <div className="col-lg-6">
                     <img src={"./assets/images/loading.gif"} alt="Landing Image" width="500px" />
                 </div>
-                <div className="col-md-6">
+                <div className="col-lg-6">
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                         Etiam at ultricies dui, eu mattis nisl. Etiam placerat orci 
@@ -32,7 +34,7 @@ const About = () => {
                 </div>
             </div>
             <div className="row">
-                <div className="col-md-6">
+                <div className="col-lg-6">
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                         Etiam at ultricies dui, eu mattis nisl. Etiam placerat orci 
@@ -52,7 +54,7 @@ const About = () => {
                         conubia nostra, per inceptos himenaeos. 
                     </p>
                 </div>
-                <div className="col-md-6">
+                <div className="col-lg-6">
                     <img src={"./assets/images/loading.gif"} alt="Landing Image" width="500px" />
                 </div>
             </div>
