@@ -31,6 +31,16 @@
     color: black;
 }
 
+.header_nav li a.active::after {
+    content: "";
+    background: url('../../images/line.png') no-repeat;
+    background-size: 70px !important;
+    position: absolute;
+    display: block;
+    height: 70px;
+    width: 70px;
+}
+
 .header .say_hello_or_hire {
     padding: 10px;
     border-style: solid;
