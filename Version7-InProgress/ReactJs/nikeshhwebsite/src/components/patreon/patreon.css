@@ -1,0 +1,17 @@
+.patreon {
+    position: relative;
+}
+
+.patreon .title {
+    text-transform: uppercase;
+}
+
+.patreon .subtitle {
+    font-weight: 700;
+}
+
+.patreon .like_my_work_line {
+    position: absolute;
+    left: 40%;
+    top: 40%;
+}

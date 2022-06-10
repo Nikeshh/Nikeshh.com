@@ -1,13 +1,19 @@
 import React from "react";
+import line from "../../images/line.png";
 import "./patreon.css";
 
 const Patreon = () => {
     return (
-        <div className="patreon">
-            <span className="title">Support</span>
-            <h3 className="subtitle">Like my work?</h3>
-            <h2>If you like my work.</h2>
-            <h2>You can always support me using the following links.</h2>
+        <div className="patreon container" style={{ marginTop: '30px' }}>
+            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', marginBottom: '30px' }}>
+                <span className="title">Support</span>
+                <h3 className="subtitle">Like my work?</h3>
+            </div>
+            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', marginBottom: '30px', position: 'relative' }}>
+                <h2>If you like my work.</h2>
+                <img src={line} alt="Line" className="like_my_work_line" />
+                <h2>You can always support me using the following links.</h2>
+            </div>
             <div className="patreon_links">
                 <img src={"./assets/images/patreon.png"} className="patreon" alt="patreon" width="300px" style={{ borderRadius: '20px' }} />
                 <img src={"./assets/images/buymeacoffee.png"} className="buymeacoffee" alt="buymeacoffee" width="300px" />
