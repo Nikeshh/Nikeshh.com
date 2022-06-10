@@ -6,6 +6,16 @@ const blogSchema = new mongoose.Schema({
         type: String,
         default: shortid.generate
     },
+    _id: ObjectId,
+    Title: String,
+    PostTime: Date.now,
+    nLikes: Number,
+    NumComments: Number,
+    Author: {
+        userId: Number,
+        ProfilePic: String,
+        Name: String
+    }
 });
 
 const Blog = mongoose.model('Blog', blogSchema);
