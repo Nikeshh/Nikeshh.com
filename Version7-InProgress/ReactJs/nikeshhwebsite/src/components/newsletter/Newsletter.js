@@ -4,18 +4,22 @@ import line from "../../images/line.png";
 
 const Newsletter = () => {
     return (
-        <div className="newsletter">
+        <div className="newsletter_main">
             <div className="newsletter_signup">
-                <span className="title">Newsletter</span>
-                <h3 className="subtitle">I Write On Topics Like Technology, Coding, Product Development Etc</h3>
-                <div className="row">
-                    <div className="col-lg-4">
-                        <h3>Newsletter Signup</h3>
-                    </div>
-                    <div className="col-lg-8">
-                        <div style={{ display: 'flex' }}>
-                            <input type="email" id="email_id" name="email_id" placeholder="Your email id" />
-                            <i className="fa fa-arrow-right"></i>
+                <div className="newsletter_signup_header">
+                    <span className="title">Newsletter</span>
+                    <h3 className="subtitle">I Write On Topics Like Technology, Coding, Product Development Etc</h3>
+                </div>
+                <div className="newsletter_signup_content">
+                    <div className="row">
+                        <div className="col-lg-4 title">
+                            <h3>Newsletter Signup</h3>
+                        </div>
+                        <div className="col-lg-8 email">
+                            <div style={{ display: 'flex' }}>
+                                <input type="email" id="email_id" name="email_id" placeholder="Your email id" />
+                                <i className="fa fa-arrow-right"></i>
+                            </div>
                         </div>
                     </div>
                 </div>
