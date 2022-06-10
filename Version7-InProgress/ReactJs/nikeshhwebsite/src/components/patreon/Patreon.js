@@ -9,7 +9,7 @@ const Patreon = () => {
             <h2>If you like my work.</h2>
             <h2>You can always support me using the following links.</h2>
             <div className="patreon_links">
-                <img src={"./assets/images/patreon.png"} className="patreon" alt="patreon" width="300px" />
+                <img src={"./assets/images/patreon.png"} className="patreon" alt="patreon" width="300px" style={{ borderRadius: '20px' }} />
                 <img src={"./assets/images/buymeacoffee.png"} className="buymeacoffee" alt="buymeacoffee" width="300px" />
             </div>
             <div className="why_support">
