@@ -62,25 +62,27 @@ const Loading = () => {
 
     return (
         <div className="loading_screen">
-            <img src={"/assets/images/loading.gif"} alt="loading_animation" />
-            <div>
-                <h1 className="name" data-shadow="Nikeshh.V">Nikeshh.V</h1>
-            </div>
-            <div className="console-container">
-                <span id="text"></span>
-                <div className="console-underscore" id="console-underscore">
-                    &#95;
+            <div className="loading_screen_content">
+                <img src={"/assets/images/loading.gif"} alt="loading_animation" />
+                <div>
+                    <h1 className="name" data-shadow="Nikeshh.V">Nikeshh.V</h1>
                 </div>
-            </div>
-            <div className="loading">
-                <span style={{ "--i":1 }}>L</span>
-                <span style={{ "--i":2 }}>o</span>
-                <span style={{ "--i":3 }}>a</span>
-                <span style={{ "--i":4 }}>d</span>
-                <span style={{ "--i":5 }}>i</span>
-                <span style={{ "--i":6 }}>n</span>
-                <span style={{ "--i":7 }}>g</span>
-                <span style={{ "--i":8 }}>.</span>
+                <div className="console-container">
+                    <span id="text"></span>
+                    <div className="console-underscore" id="console-underscore">
+                        &#95;
+                    </div>
+                </div>
+                <div className="loading">
+                    <span style={{ "--i":1 }}>L</span>
+                    <span style={{ "--i":2 }}>o</span>
+                    <span style={{ "--i":3 }}>a</span>
+                    <span style={{ "--i":4 }}>d</span>
+                    <span style={{ "--i":5 }}>i</span>
+                    <span style={{ "--i":6 }}>n</span>
+                    <span style={{ "--i":7 }}>g</span>
+                    <span style={{ "--i":8 }}>.</span>
+                </div>
             </div>
             <h2 className="hey_shadows">hey</h2>
             <h1 className="always_be">

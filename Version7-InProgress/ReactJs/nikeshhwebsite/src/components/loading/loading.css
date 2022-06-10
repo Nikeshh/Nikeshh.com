@@ -4,12 +4,18 @@
 
 .loading_screen {
     position: relative;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: auto;
-    height: 100vh;
+}
+
+.loading_screen_content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .loading {
@@ -37,11 +43,14 @@
 }
 
 .hey_shadows {
+    position: absolute;
+    top: 0;
+    right: 0;
     text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary), 12px 12px var(--color-quinary);
     font-family: bungee, sans-serif;
     font-weight: 400;
     text-transform: uppercase;
-    font-size: calc(2rem + 5vw);
+    font-size: calc(2rem + 2vw);
     text-align: center;
     margin: 0;
     color: var(--color-primary);
@@ -104,7 +113,9 @@
 }
 
 .always_be {
-    position: relative;
+    position: absolute;
+    top: 0;
+    left: 0;
     color: #333;
     font-family: tahoma;
     font-size: 3rem;
@@ -118,7 +129,7 @@
 
 .always_be span {
     font-size: 40px;
-    margin-left: 40px;
+    margin-left: 10px;
 }
 
 .always_be .message {
@@ -130,7 +141,7 @@
     overflow: hidden;
     padding-left: 0.5rem;
     top: 0.2rem;
-    left: 270px;
+    left: 240px;
     animation: openclose 5s ease-in-out infinite;
 }
 
