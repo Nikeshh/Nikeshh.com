@@ -1,13 +1,60 @@
 .newsletter {
-    margin-left: 70px;
-    margin-top: 90px;
-    position: relative;
+
 }
 
-.newsletter .title {
-    text-transform: uppercase;
+.newsletter_signup {
+    margin: 10px;
+    height: 100vh;
 }
 
-.newsletter .subtitle {
+.newsletter_downloads {
+}
+
+.newsletter_downloads_header {
+    margin-bottom: 50px;
+}
+
+.newsletter_downloads_header > h2 {
+    font-weight: 600;
+}
+
+.newsletter_downloads_content {
+    margin-top: 10px;
+}
+
+.newsletter_downloads_content .content_number {
+    font-size: 100px;
     font-weight: 700;
+    color: gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.newsletter_downloads_content .content_metadata {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.newsletter_downloads_content .content_actions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.newsletter_downloads_content .content_actions button {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 5px;
+    background-color: #F1A501;
+    color: white;
+    border-color: #F1A501;
+    box-shadow: 7px 5px 5px #FFB619;
+}
+
+.newsletter_downloads_content .content_actions button:not(:last-child) {
+    margin-right: 20px;
 }
