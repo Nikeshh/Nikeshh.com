@@ -1,12 +1,12 @@
 const mongoose = require('mongoose');
 const shortid = require('shortid');
 
-const postSchema = new mongoose.Schema({
-    postId: {
+const blogSchema = new mongoose.Schema({
+    blogId: {
         type: String,
         default: shortid.generate
     },
 });
 
-const Post = mongoose.model('Post', postSchema);
-module.exports = Post;
+const Blog = mongoose.model('Blog', blogSchema);
+module.exports = Blog;
