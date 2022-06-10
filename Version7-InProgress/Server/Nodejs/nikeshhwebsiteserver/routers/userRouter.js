@@ -16,10 +16,4 @@ router
 // Update a particular user
 // Delete a particular user
 
-// Login
-// Register
-// Forgot Password
-// Confirm Activation Link
-// Reset Password
-
 module.exports = router;

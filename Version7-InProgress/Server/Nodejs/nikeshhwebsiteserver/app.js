@@ -10,6 +10,8 @@ const path = require('path');
 // Import routes
 const userRouter = require('./routers/userRouter');
 const authRouter = require('./routers/authRouter');
+const blogRouter = require('./routers/blogRouter');
+const forumRouter = require('./routers/forumRouter');
 
 const globalErrorHandler = require('./middlewares/globalErrorHandler');
 app.use("/uploads", express.static(__dirname + "/uploads"));
@@ -49,6 +51,8 @@ app.use((req, res, next) => {
 // Routes
 app.use('/api/users', userRouter);
 app.use('/api/auth', authRouter);
+app.use('/api/blog', blogRouter);
+app.use('/api/forum', forumRouter);
 
 // Landing page
 app.get('/', (req, res) => {
