@@ -1,13 +1,9 @@
 .newsletter {
-
+    padding: 10px;
 }
 
 .newsletter_signup {
-    margin: 10px;
     height: 100vh;
-}
-
-.newsletter_downloads {
 }
 
 .newsletter_downloads_header {
@@ -18,7 +14,7 @@
     font-weight: 600;
 }
 
-.newsletter_downloads_content {
+.newsletter_downloads_contents, .newsletter_downloads_content {
     margin-top: 10px;
 }
 
