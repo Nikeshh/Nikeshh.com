@@ -35,7 +35,7 @@ const Newsletter = () => {
                             <p>01</p>
                         </div>
                         <div className="col-lg-4 content_metadata">
-                            <h3 style={{ fontWeight: "500" }}>Orgaize the Content Moderators</h3>
+                            <h3 style={{ fontWeight: "500" }}>Organize the Content Moderators</h3>
                             <h6 style={{ fontWeight: "300" }}>Eric Ravensoft in UI / UX Design</h6>
                             <p style={{ fontWeight: "200" }}>MAR 20 &bull; 5 MIN READ</p>
                         </div>
@@ -51,7 +51,7 @@ const Newsletter = () => {
                             <p>02</p>
                         </div>
                         <div className="col-lg-4 content_metadata">
-                            <h3 style={{ fontWeight: "500" }}>Orgaize the Content Moderators</h3>
+                            <h3 style={{ fontWeight: "500" }}>Organize the Content Moderators</h3>
                             <h6 style={{ fontWeight: "300" }}>Eric Ravensoft in UI / UX Design</h6>
                             <p style={{ fontWeight: "200" }}>MAR 20 &bull; 5 MIN READ</p>
                         </div>
@@ -67,7 +67,7 @@ const Newsletter = () => {
                             <p>03</p>
                         </div>
                         <div className="col-lg-4 content_metadata">
-                            <h3 style={{ fontWeight: "500" }}>Orgaize the Content Moderators</h3>
+                            <h3 style={{ fontWeight: "500" }}>Organize the Content Moderators</h3>
                             <h6 style={{ fontWeight: "300" }}>Eric Ravensoft in UI / UX Design</h6>
                             <p style={{ fontWeight: "200" }}>MAR 20 &bull; 5 MIN READ</p>
                         </div>
@@ -83,7 +83,7 @@ const Newsletter = () => {
                             <p>04</p>
                         </div>
                         <div className="col-lg-4 content_metadata">
-                            <h3 style={{ fontWeight: "500" }}>Orgaize the Content Moderators</h3>
+                            <h3 style={{ fontWeight: "500" }}>Organize the Content Moderators</h3>
                             <h6 style={{ fontWeight: "300" }}>Eric Ravensoft in UI / UX Design</h6>
                             <p style={{ fontWeight: "200" }}>MAR 20 &bull; 5 MIN READ</p>
                         </div>
@@ -99,7 +99,7 @@ const Newsletter = () => {
                             <p>05</p>
                         </div>
                         <div className="col-lg-4 content_metadata">
-                            <h3 style={{ fontWeight: "500" }}>Orgaize the Content Moderators</h3>
+                            <h3 style={{ fontWeight: "500" }}>Organize the Content Moderators</h3>
                             <h6 style={{ fontWeight: "300" }}>Eric Ravensoft in UI / UX Design</h6>
                             <p style={{ fontWeight: "200" }}>MAR 20 &bull; 5 MIN READ</p>
                         </div>

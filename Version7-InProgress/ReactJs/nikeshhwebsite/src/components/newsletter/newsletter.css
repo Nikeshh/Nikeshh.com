@@ -4,6 +4,36 @@
 
 .newsletter_signup {
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.newsletter_signup .newsletter_signup_header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 30%;
+}
+
+.newsletter_signup .newsletter_signup_header .title {
+    text-transform: uppercase;
+}
+
+.newsletter_signup .newsletter_signup_header .subtitle {
+    font-weight: 700;
+}
+
+.newsletter_signup .newsletter_signup_content {
+    flex: 70%;
+}
+
+.newsletter_signup .newsletter_signup_content .title {
+
+}
+
+.newsletter_signup .newsletter_signup_content .subtitle {
+    
 }
 
 .newsletter_downloads_header {
