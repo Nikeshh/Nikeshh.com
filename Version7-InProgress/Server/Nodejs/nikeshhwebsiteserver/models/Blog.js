@@ -15,6 +15,10 @@ const blogSchema = new mongoose.Schema({
         userId: Number,
         ProfilePic: String,
         Name: String
+    },
+    createdOn: {
+        type: Date,
+        default: Date.now()
     }
 });
 

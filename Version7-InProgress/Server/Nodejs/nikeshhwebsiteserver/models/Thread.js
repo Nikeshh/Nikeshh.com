@@ -14,6 +14,10 @@ const threadSchema = new mongoose.Schema({
     author: {
         type: String,
         default: 'Nikeshh Vijayabaskaran'
+    },
+    createdOn: {
+        type: Date,
+        default: Date.now()
     }
 });
 

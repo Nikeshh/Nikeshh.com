@@ -15,7 +15,11 @@ const postSchema = new mongoose.Schema({
         type: String,
         default: 'Nikeshh Vijayabaskaran'
     },
-    post: String
+    post: String,
+    createdOn: {
+        type: Date,
+        default: Date.now()
+    }
 });
 
 const Post = mongoose.model('Post', postSchema);
