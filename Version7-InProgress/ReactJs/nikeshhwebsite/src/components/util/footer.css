@@ -2,8 +2,12 @@
     position: relative;
 }
 
-.footer .footer_logo span {
-    font-size: 30px;
+.footer li {
+    list-style: none;
+}
+
+.footer a {
+    text-decoration: none;
 }
 
 .footer .social-icons a {
@@ -35,16 +39,6 @@
     background-color: #55ACEE;
 }
 
-.footer::before {
-    content: "";
-    background: url('../../images/header_pattern_2.png') top -130px right -130px no-repeat;
-    position: absolute;
-    height: 200px;
-    width: 200px;
-    right: -70px;
-    -webkit-filter: blur(3px);
-    -moz-filter: blur(3px);
-    -o-filter: blur(3px);
-    -ms-filter: blur(3px);
-    filter: blur(3px);
+.footer .social-icons .social-icon:not(:last-child) {
+    margin-right: 10px;
 }
