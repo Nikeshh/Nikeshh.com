@@ -25,6 +25,7 @@ import MerchandiseScreen from './components/MerchandiseScreen';
 import LoginScreen from './components/LoginScreen';
 import RegisterScreen from './components/RegisterScreen';
 import NotFoundScreen from './components/NotFoundScreen';
+import TestScreen from './components/TestScreen';
 import PrivateRouter from "./util/private_router.js";
 
 const App = () => {
@@ -54,6 +55,7 @@ const App = () => {
         <Route path="/merchandise" component={MerchandiseScreen} exact />
         <Route path="/login" component={LoginScreen} exact />
         <Route path="/register" component={RegisterScreen} exact />
+        <Route path="/test" component={TestScreen} exact />
         <Route path="*" component={NotFoundScreen} />
       </Switch>
     </Router>
