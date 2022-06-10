@@ -6,6 +6,16 @@ const postSchema = new mongoose.Schema({
         type: String,
         default: shortid.generate
     },
+    thread: ObjectId,
+    date: {
+        type: Date,
+        default: Date.now
+    },
+    author: {
+        type: String,
+        default: 'Nikeshh Vijayabaskaran'
+    },
+    post: String
 });
 
 const Post = mongoose.model('Post', postSchema);
