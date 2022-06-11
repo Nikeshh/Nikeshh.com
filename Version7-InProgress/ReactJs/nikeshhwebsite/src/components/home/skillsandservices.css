@@ -1,0 +1,11 @@
+.skillsandservices {
+    margin-top: 40px;
+}
+
+.skillsandservices .title {
+    text-transform: uppercase;
+}
+
+.skillsandservices .subtitle {
+    font-weight: 700;
+}

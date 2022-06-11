@@ -1,0 +1,11 @@
+.projectsandworks {
+    margin-top: 100px;
+}
+
+.projectsandworks .title {
+    text-transform: uppercase;
+}
+
+.projectsandworks .subtitle {
+    font-weight: 700;
+}

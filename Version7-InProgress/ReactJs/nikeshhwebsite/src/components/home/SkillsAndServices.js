@@ -1,44 +1,46 @@
 import React from "react";
 import "./skillsandservices.css";
-import Skills from "./skillsandservices/Skills";
+import Skill from "./skillsandservices/Skill";
 
 const SkillsAndServices = () => {
     return (
         <div className="skillsandservices">
-            <span className="title">Skills And Services</span>
-            <h3 className="subtitle">What Am I Capable Of?</h3>
+            <div style={{ marginBottom: '100px' }}>
+                <span className="title">Skills And Services</span>
+                <h3 className="subtitle">What Am I Capable Of?</h3>
+            </div>
             <div className="container">
                 <div className="row">
                     <div className="col">
-                        <Skills />
+                        <Skill />
                     </div>
                     <div className="col">
-                        <Skills />
+                        <Skill />
                     </div>
                     <div className="col">
-                        <Skills />
-                    </div>
-                </div>
-                <div className="row" style={{ marginTop: "20px" }}>
-                    <div className="col">
-                        <Skills />
-                    </div>
-                    <div className="col">
-                        <Skills />
-                    </div>
-                    <div className="col">
-                        <Skills />
+                        <Skill />
                     </div>
                 </div>
-                <div className="row" style={{ marginTop: "20px" }}>
+                <div className="row" style={{ marginTop: "30px" }}>
                     <div className="col">
-                        <Skills />
+                        <Skill />
                     </div>
                     <div className="col">
-                        <Skills />
+                        <Skill />
                     </div>
                     <div className="col">
-                        <Skills />
+                        <Skill />
+                    </div>
+                </div>
+                <div className="row" style={{ marginTop: "30px" }}>
+                    <div className="col">
+                        <Skill />
+                    </div>
+                    <div className="col">
+                        <Skill />
+                    </div>
+                    <div className="col">
+                        <Skill />
                     </div>
                 </div>
             </div>

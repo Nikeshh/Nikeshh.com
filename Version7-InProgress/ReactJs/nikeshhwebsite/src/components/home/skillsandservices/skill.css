@@ -1,0 +1,17 @@
+.skill .skill_action {
+    background-color: rgb(236, 204, 236);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 30px;
+    color: purple;
+}
+
+.skill .skill_action > i {
+    margin-right: 5px;
+}
+
+.skill .skill_action:not(:last-child) {
+    margin-right: 9px;
+}
