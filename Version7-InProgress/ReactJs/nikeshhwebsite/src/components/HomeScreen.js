@@ -19,7 +19,7 @@ const HomeScreen = () => {
         <>
             <div style={{ height: '100vh', position: 'relative' }}>
                 <Header page_name="home" />
-                <div style={{ position: 'absolute', top: '50%', transform: 'translateY(-50%)' }}>
+                <div style={{ position: 'absolute', top: '50%', transform: 'translateY(-50%)', marginTop: '40px' }}>
                     <Landing />
                 </div>
                 <div className="comment_and_info">
