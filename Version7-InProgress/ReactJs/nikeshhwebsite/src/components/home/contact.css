@@ -1,0 +1,11 @@
+.contact {
+    margin-top: 100px;
+}
+
+.contact .title {
+    text-transform: uppercase;
+}
+
+.contact .subtitle {
+    font-weight: 700;
+}

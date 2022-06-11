@@ -1,0 +1,11 @@
+.newsletter {
+    margin-top: 100px;
+}
+
+.newsletter .title {
+    text-transform: uppercase;
+}
+
+.newsletter .subtitle {
+    font-weight: 700;
+}

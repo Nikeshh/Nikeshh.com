@@ -1,0 +1,11 @@
+.support {
+    margin-top: 100px;
+}
+
+.support .title {
+    text-transform: uppercase;
+}
+
+.support .subtitle {
+    font-weight: 700;
+}
