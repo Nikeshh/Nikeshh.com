@@ -17,20 +17,22 @@ import Footer from "./util/Footer";
 const HomeScreen = () => {
     return (
         <>
-            <Header page_name="home" />
-            <div className="container">
-                <Landing />
-                <MyStory />
-                <SkillsAndServices />
-                <ProjectsAndWorks />
-                <NotesAndAction />
-                <Testimonials />
-                <Mentorship />
-                <Blog />
-                <Support />
-                <Newsletter />
-                <Contact />
+            <div style={{ height: '100vh', position: 'relative' }}>
+                <Header page_name="home" />
+                <div style={{ position: 'absolute', top: '50%', transform: 'translateY(-50%)' }}>
+                    <Landing />
+                </div>
             </div>
+            <MyStory />
+            <SkillsAndServices />
+            <ProjectsAndWorks />
+            <NotesAndAction />
+            <Testimonials />
+            <Mentorship />
+            <Blog />
+            <Support />
+            <Newsletter />
+            <Contact />
             <Footer />
         </>
     );

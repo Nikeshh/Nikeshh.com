@@ -4,7 +4,7 @@ import line from "../../images/line.png";
 
 const Landing = () => {
     return (
-        <>
+        <div className="container">
             <div className="row">
                 <div className="col-lg-7">
                     <span>HI. WELCOME TO MY SITE.</span>
@@ -43,7 +43,7 @@ const Landing = () => {
                 <a href="#" className="social-icon"><i className="fa-solid fa-comment"></i></a>
                 <a href="#" className="social-icon"><i className="fa-solid fa-info"></i></a>
             </div>
-        </>
+        </div>
     );
 }
 
