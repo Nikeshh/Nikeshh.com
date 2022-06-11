@@ -14,7 +14,8 @@ const Landing = () => {
                     </div>
                     <div className="sub_line">
                         <h6 style={{ fontSize: '30px' }}>Full-Stack Developer x Data Scientist</h6>
-                        <h6 style={{ fontSize: '30px' }}>Mentor, Proud Son, Hardcore coder and Creative most approachable teammate</h6>
+                        <h6 style={{ marginBottom: '15px', fontFamily: "'Montserrat', sans-serif" }}>[Artificial Intelligence and Blockchain Enthusiast]</h6>
+                        <h6 style={{ fontSize: '30px',  }}>Mentor, Proud Son, Hardcore coder and Creative most approachable teammate</h6>
                     </div>
                     <div className="sub_detail">
                         <p>I design, code and rebuild the software from scratch that can <b><i>scale 100x</i></b>, and I love what I do every day.</p>
