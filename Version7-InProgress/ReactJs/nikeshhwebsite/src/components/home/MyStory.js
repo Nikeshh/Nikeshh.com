@@ -4,13 +4,15 @@ import "./mystory.css";
 const MyStory = () => {
     return (
         <div className="mystory">
-            <span className="title">Deep Dive Into My Life</span>
-            <h3 className="subtitle">My Story</h3>
-            <div className="row">
-                <div className="col-md-4">
-                    <img src={"./assets/images/loading.gif"} alt="My Story" width="500px" />
+            <div style={{ marginBottom: '100px'}}>
+                <span className="title">Deep Dive Into My Life</span>
+                <h3 className="subtitle">My Story</h3>
+            </div>
+            <div className="row" style={{ marginBottom: '100px' }}>
+                <div className="col-lg-6">
+                    <img src={"./assets/images/loading.gif"} alt="Landing Image" width="500px" />
                 </div>
-                <div className="col-md-4">
+                <div className="col-lg-6">
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                         Etiam at ultricies dui, eu mattis nisl. Etiam placerat orci 
@@ -27,9 +29,9 @@ const MyStory = () => {
                         Phasellus quis tempor leo, in ultrices tortor. 
                         In vitae ante molestie, vestibulum orci ac, fringilla velit. 
                         Class aptent taciti sociosqu ad litora torquent per 
-                        conubia nostra, per inceptos himenaeos.
+                        conubia nostra, per inceptos himenaeos. 
                     </p>
-                    <button className="btn btn-warning"><span>Want More Of My Life? Read More</span></button>
+                    <button style={{ padding: '10px', borderRadius: '10px' }}>Want More Of My Life? Read More</button>
                 </div>
             </div>
         </div>

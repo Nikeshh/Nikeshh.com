@@ -1,127 +1,10 @@
-/* Landing */
-
-.landing__content {
-    margin-left: 70px;
-    margin-top: 90px;
-    position: relative;
-}
-
-.landing__content .landing, .landing__content .landing__image {
-    padding: 30px;
-}
-
-.landing span.first {
-    color: red;
-    font-weight: 700;
-    margin-bottom: 20px;
-    display: block;
-}
-
-.landing .landing__name {
-    position: relative;
-    margin-bottom: 50px;
-}
-
-.landing .landing__name h3 {
-    font-size: 70px;
-    font-weight: 700;
-    display: block;
-}
-
-.landing .landing__name .landing__name__line {
-    position: absolute;
-    top: 80px;
-    left: 100px;
-}
-
-.landing h6 {
-    font-size: 25px;
-}
-
-.landing .landing__details, .landing .landing__additional_details, .landing .landing__email_and_phone_number, .landing .social-icons {
-    margin-bottom: 30px;
-}
-
-.landing .landing__email, .landing .landing__phone_number {
-    font-weight: 700;
-}
-
-.landing .landing__email .email, .landing .landing__phone_number .phone_number {
-    font-weight: lighter;
-    font-style: italic;
-}
-
-.landing p {
-    font-style: italic;
-    margin-bottom: 10px;
-}
-
-.landing a {
-    color: white;
-}
-
-.landing .social-icons .social-icon {
-    margin-left: 0px;
-    margin-right: 10px;
-}
-
-.landing .fa-brands {
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    font-size: 20px;
-    text-align: center;
-    padding: 15px;
-}
-
-.landing .fa-brands:hover {
-    opacity: 0.7;
-}
-
-.landing .fa-facebook-f {
-    background-color: #3B5998;
-}
-
-.landing .fa-instagram {
-    background-color: #125688;
-}
-
-.landing .fa-twitter {
-    background-color: #55ACEE;
-}
-
-.landing .landing-actions button {
-    margin-right: 10px;
-    padding: 5px;
-}
-
-.landing .landing-actions button i {
-    margin-right: 10px;
-    padding: 5px;
-}
-
-.landing .landing-actions button span {
-    padding: 5px;
-}
-
-.landing::after {
-    content: "";
-    background: url('../../images/header_pattern_3.png') no-repeat;
-    position: absolute;
-    height: 169px;
-    width: 153px;
-    margin-top: 20px;
-    margin-left: -100px;
-}
-
 .comment_and_info {
     position: fixed;
-    bottom: 0;
-    right: 0;
+    bottom: 20px;
+    right: 20px;
 }
 
-.comment_and_info .social-icon {
-    margin-left: 0px;
+.comment_and_info .social-icon:not(:last-child) {
     margin-right: 10px;
 }
 
@@ -139,11 +22,11 @@
 }
 
 .comment_and_info .fa-comment {
-    background-color: grey;
+    background-color: rgb(29, 161, 242);
     color: white;
 }
 
 .comment_and_info .fa-info {
-    background-color: grey;
+    background-color: rgb(29, 161, 242);
     color: white;
 }

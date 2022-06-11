@@ -18,17 +18,19 @@ const HomeScreen = () => {
     return (
         <>
             <Header page_name="home" />
-            <Landing />
-            <MyStory />
-            <SkillsAndServices />
-            <ProjectsAndWorks />
-            <NotesAndAction />
-            <Testimonials />
-            <Mentorship />
-            <Blog />
-            <Support />
-            <Newsletter />
-            <Contact />
+            <div className="container">
+                <Landing />
+                <MyStory />
+                <SkillsAndServices />
+                <ProjectsAndWorks />
+                <NotesAndAction />
+                <Testimonials />
+                <Mentorship />
+                <Blog />
+                <Support />
+                <Newsletter />
+                <Contact />
+            </div>
             <Footer />
         </>
     );
