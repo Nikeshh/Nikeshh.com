@@ -15,3 +15,26 @@
     left: 40%;
     top: 40%;
 }
+
+.patreon .why_support_tag {
+    background-color: rgb(236, 204, 236);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 30px;
+    color: purple;
+}
+
+.patreon .why_support_tag > i {
+    margin-right: 5px;
+}
+
+.patreon .why_support_tag_icon {
+    background-color: rgb(236, 204, 236);
+    padding: 10px;
+    border-radius: 100%;
+    box-shadow: 10px 10px 10px purple;
+    color: purple;
+    margin-bottom: 20px;
+}
