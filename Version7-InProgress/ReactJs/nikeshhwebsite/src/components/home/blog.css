@@ -1,0 +1,11 @@
+.blog_home {
+    margin-top: 100px;
+}
+
+.blog_home .title {
+    text-transform: uppercase;
+}
+
+.blog_home .subtitle {
+    font-weight: 700;
+}

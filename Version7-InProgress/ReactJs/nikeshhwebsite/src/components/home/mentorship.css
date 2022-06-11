@@ -1,0 +1,11 @@
+.mentorship {
+    margin-top: 100px;
+}
+
+.mentorship .title {
+    text-transform: uppercase;
+}
+
+.mentorship .subtitle {
+    font-weight: 700;
+}
