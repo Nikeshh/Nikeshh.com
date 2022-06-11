@@ -23,16 +23,18 @@ const HomeScreen = () => {
                     <Landing />
                 </div>
             </div>
-            <MyStory />
-            <SkillsAndServices />
-            <ProjectsAndWorks />
-            <NotesAndAction />
-            <Testimonials />
-            <Mentorship />
-            <Blog />
-            <Support />
-            <Newsletter />
-            <Contact />
+            <div className="container">
+                <MyStory />
+                <SkillsAndServices />
+                <ProjectsAndWorks />
+                <NotesAndAction />
+                <Testimonials />
+                <Mentorship />
+                <Blog />
+                <Support />
+                <Newsletter />
+                <Contact />
+            </div>
             <Footer />
         </>
     );
