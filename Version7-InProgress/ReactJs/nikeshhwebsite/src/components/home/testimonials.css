@@ -1,0 +1,11 @@
+.testimonails {
+    margin-top: 100px;
+}
+
+.testimonails .title {
+    text-transform: uppercase;
+}
+
+.testimonails .subtitle {
+    font-weight: 700;
+}
