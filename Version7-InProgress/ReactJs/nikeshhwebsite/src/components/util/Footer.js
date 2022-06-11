@@ -47,7 +47,7 @@ const Footer = () => {
                 </div>
             </div>
             <div style={{ textAlign: "center", marginTop: '10px' }}>
-                <p style={{ fontStyle: 'italic' }}>Copyright 2022. Made with &#9829; by Nikeshh Vijayabaskaran.</p>
+                <p style={{ fontStyle: 'italic' }}>Copyright 2022. Handcrafted with &#9829; by Nikeshh Vijayabaskaran.</p>
             </div>
         </div>
     );
