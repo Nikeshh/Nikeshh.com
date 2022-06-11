@@ -55,7 +55,7 @@ const Patreon = () => {
                         </p>
                     </div>
                 </div>
-                <div className="row">
+                <div className="row" style={{ marginBottom: '100px' }}>
                     <div className="col-lg-4">
                         <i className="why_support_tag_icon fa fa-share"></i>
                         <h4>Data in real-time</h4>
