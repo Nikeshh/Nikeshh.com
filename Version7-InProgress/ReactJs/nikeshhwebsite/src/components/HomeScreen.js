@@ -22,6 +22,10 @@ const HomeScreen = () => {
                 <div style={{ position: 'absolute', top: '50%', transform: 'translateY(-50%)' }}>
                     <Landing />
                 </div>
+                <div className="comment_and_info">
+                    <a href="#" className="social-icon"><i className="fa-solid fa-comment"></i></a>
+                    <a href="#" className="social-icon"><i className="fa-solid fa-info"></i></a>
+                </div>
             </div>
             <div className="container">
                 <MyStory />

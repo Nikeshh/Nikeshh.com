@@ -1,14 +1,40 @@
-.comment_and_info {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+.landing_page_line {
+    position: absolute;
+    top: 50%;
+    left: 20%;
 }
 
-.comment_and_info .social-icon:not(:last-child) {
+.sub_line {
+    font-family: 'Dancing Script', cursive;
+    margin-top: 30px;
+}
+
+.sub_detail {
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 30px;
+}
+
+.landing-actions > button, .landing-actions > button > i  {
     margin-right: 10px;
 }
 
-.comment_and_info .fa-solid {
+.landing-actions > button span {
+    letter-spacing: 2px;
+}
+
+.landing-actions span {
+    font-family: 'Shadows Into Light', cursive;
+}
+
+.landing .social-icons a {
+    color: white;
+}
+
+.landing .social-icons .fa-brands {
     border-radius: 50%;
     width: 50px;
     height: 50px;
@@ -17,16 +43,22 @@
     padding: 15px;
 }
 
-.comment_and_info .fa-solid:hover {
+.landing .social-icons .fa-brands:hover {
     opacity: 0.7;
 }
 
-.comment_and_info .fa-comment {
-    background-color: rgb(29, 161, 242);
-    color: white;
+.landing .social-icons .fa-facebook-f {
+    background-color: #3B5998;
 }
 
-.comment_and_info .fa-info {
-    background-color: rgb(29, 161, 242);
-    color: white;
+.landing .social-icons .fa-instagram {
+    background-color: #125688;
+}
+
+.landing .social-icons .fa-twitter {
+    background-color: #55ACEE;
+}
+
+.landing .social-icons .social-icon:not(:last-child) {
+    margin-right: 10px;
 }

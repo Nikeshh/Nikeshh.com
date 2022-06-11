@@ -40,6 +40,7 @@ const Header = (props) => {
                         <li><a href="#" className={page_name == "blog" ? 'active' : ''}>Blog</a></li>
                         <li><a href="#" className={page_name == "support" ? 'active' : ''}>Support</a></li>
                         <li><a href="#" className="say_hello_or_hire">Say Hello / Hire Me</a></li>
+                        <li><a href="#" className={page_name == "color_mode" ? 'active' : ''}>Light</a></li>
                         <li>
                             <div className="language_dropdown">
                                 <span id="language_and_down_arrow" onClick={(e) => changeLanguage(e)}>EN &#709;</span>
