@@ -6,10 +6,8 @@ import Newsletter from "./newsletter/Newsletter";
 const NewsletterScreen = () => {
     return (
         <>
-            <div className="header__image"  style={{ marginBottom: "300px" }}>
-                <Header page_name="newsletter" />
-                <Newsletter />
-            </div>
+            <Header page_name="newsletter" />
+            <Newsletter />
             <Footer />
         </>
     );

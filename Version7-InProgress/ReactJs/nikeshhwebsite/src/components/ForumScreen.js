@@ -6,10 +6,8 @@ import Forum from "./forum/Forum";
 const ForumScreen = () => {
     return (
         <>
-            <div className="header__image"  style={{ marginBottom: "300px" }}>
-                <ForumHeader page_name="forum" />
-                <Forum />
-            </div>
+            <ForumHeader page_name="forum" />
+            <Forum />
             <Footer />
         </>
     );

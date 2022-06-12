@@ -6,10 +6,8 @@ import Header from "./util/Header";
 const SkillSingleScreen = () => {
     return (
         <>
-            <div className="header__image"  style={{ marginBottom: "1500px" }}>
-                <Header page_name="skillsingle" />
-                <SkillSingle />
-            </div>
+            <Header page_name="skillsingle" />
+            <SkillSingle />
             <Footer />
         </>
     );

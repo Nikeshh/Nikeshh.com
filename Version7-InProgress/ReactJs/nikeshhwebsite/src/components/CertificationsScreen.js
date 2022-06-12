@@ -6,10 +6,8 @@ import Certifications from "./certifications/Certifications";
 const CertificationsScreen = () => {
     return (
         <>
-            <div className="header__image"  style={{ marginBottom: "300px" }}>
-                <Header page_name="certifications" />
-                <Certifications />
-            </div>
+            <Header page_name="certifications" />
+            <Certifications />
             <Footer />
         </>
     );

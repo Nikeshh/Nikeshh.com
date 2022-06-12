@@ -8,7 +8,8 @@ const Blog = () => {
                 <div className="col-md-12">
                     <div className="row">
                         <div className="col-lg-7">
-                            <h1>Welcome To Nikeshh Blog,<br></br>A Tech And Lifestyle Blog</h1>
+                            <h1>Welcome To Nikeshh Blog,</h1>
+                            <h1>A Tech And Lifestyle Blog</h1>
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                                 Etiam at ultricies dui, eu mattis nisl. Etiam placerat orci 

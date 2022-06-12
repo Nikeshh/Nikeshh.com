@@ -6,10 +6,8 @@ import LearnHub from "./learnhub/LearnHub";
 const LearnHubScreen = () => {
     return (
         <>
-            <div className="header__image"  style={{ marginBottom: "300px" }}>
-                <Header page_name="learnhub" />
-                <LearnHub />
-            </div>
+            <Header page_name="learnhub" />
+            <LearnHub />
             <Footer />
         </>
     );
