@@ -4,6 +4,7 @@ import "./certifications.css";
 const Certifications = () => {
     return (
         <>
+            {/* https://codepen.io/chris22smith/pen/PbBwjp */}
             <div className="certifications container">
                 <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
                     <h2 style={{ marginBottom: '30px' }}>Certifications</h2>

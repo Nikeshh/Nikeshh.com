@@ -5,25 +5,30 @@ const LearnHub = () => {
     return (
         <div className="learnhub">
             <div className="learnhub-header">
-                <div className="col-md-12">
-                    <div className="row">
-                        <div className="col-lg-7">
-                            <h1>Welcome To Nikeshh Learn<br></br>Hub</h1>
-                            <p>
-                                This hub contains the content I have learned, and it also
-                                includes various tutorials, complete builds, master lessons 
-                                and much more. I love sharing. Gear up for learning. 
-                            </p>
+                <div className="row">
+                    <div className="col-lg-7" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+                        <h1 style={{ fontFamily: "'Dancing Script', cursive", fontWeight: '700' }}>Welcome To Nikeshh Learn Hub</h1>
+                        <h1 style={{ fontWeight: '700' }}>A Better Learning Portal</h1>
+                        <p style={{ fontFamily: "'Montserrat', sans-serif" }}>
+                            This hub contains the content I have learned, and it also includes various tutorials, 
+                            complete builds, master lessons and much more. I love sharing. Gear up for learning.
+                        </p>
+                        <div style={{ padding: '5px', display: 'block' }}>
                             <button>
                                 Search
                                 <i className="fa fa-search"></i>
                             </button>
-                            <p>Suggestions: <span style={{ textDecoration: 'underline' }}>Data Structures</span> <span style={{ textDecoration: 'underline' }}>Discrete Mathematics</span></p>
-                            <button>Learn More</button>
                         </div>
-                        <div className="col-lg-5">
-                            <img src={"./assets/images/loading.gif"} alt="Landing Image" width="500px" />
+                        <p style={{ fontFamily: "'Montserrat', sans-serif" }}>
+                            Suggestions: <span style={{ textDecoration: 'underline' }}>Data Structures</span> <span style={{ textDecoration: 'underline' }}>Discrete Mathematics</span>
+                        </p>
+                        <div>
+                            <button className="btn btn-warning" style={{ marginRight: '10px' }}>Learn More</button>
+                            <button className="btn btn-warning">Create a account</button>
                         </div>
+                    </div>
+                    <div className="col-lg-5" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+                        <img src={"./assets/images/loading.gif"} alt="Landing Image" width="500px" />
                     </div>
                 </div>
             </div>
