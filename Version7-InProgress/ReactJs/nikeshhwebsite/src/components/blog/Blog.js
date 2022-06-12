@@ -183,36 +183,38 @@ const Blog = () => {
                         </div>
                     </div>
                 </div>
-                <div className="blog-content-detailed">
+                <div className="blog-content-detailed" style={{ marginTop: '100px' }}>
                     <div className="blog-content-detailed-title">
                         <h3>Web Development</h3>
                     </div>
-                    <div className="row">
-                        <div className="col-lg-6">
-                            <BlogCard />
+                    <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
+                        <div className="row" style={{ marginTop: '50px' }}>
+                            <div className="col-lg-6">
+                                <BlogCard />
+                            </div>
+                            <div className="col-lg-6">
+                                <BlogCard />
+                            </div>
                         </div>
-                        <div className="col-lg-6">
-                            <BlogCard />
+                        <div className="row" style={{ marginTop: '50px' }}>
+                            <div className="col-lg-6">
+                                <BlogCard />
+                            </div>
+                            <div className="col-lg-6">
+                                <BlogCard />
+                            </div>
+                        </div>
+                        <div className="row" style={{ marginTop: '50px' }}>
+                            <div className="col-lg-6">
+                                <BlogCard />
+                            </div>
+                            <div className="col-lg-6">
+                                <BlogCard />
+                            </div>
                         </div>
                     </div>
-                    <div className="row">
-                        <div className="col-lg-6">
-                            <BlogCard />
-                        </div>
-                        <div className="col-lg-6">
-                            <BlogCard />
-                        </div>
-                    </div>
-                    <div className="row">
-                        <div className="col-lg-6">
-                            <BlogCard />
-                        </div>
-                        <div className="col-lg-6">
-                            <BlogCard />
-                        </div>
-                    </div>
-                    <div>
-                        <button>Load More</button>
+                    <div style={{ marginTop: '50px', display: 'flex', justifyContent: 'center', }}>
+                        <button className="btn btn-warning">Load More</button>
                     </div>
                 </div>
             </div>
