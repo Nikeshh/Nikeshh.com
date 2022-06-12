@@ -29,6 +29,8 @@ const Landing = () => {
                         <a href="#" className="social-icon"><i className="fa-brands fa-facebook-f"></i></a>
                         <a href="#" className="social-icon"><i className="fa-brands fa-instagram"></i></a>
                         <a href="#" className="social-icon"><i className="fa-brands fa-twitter"></i></a>
+                        <a href="#" className="social-icon"><i className="fa-brands fa-linkedin"></i></a>
+                        <a href="#" className="social-icon"><i className="fa-brands fa-github"></i></a>
                     </div>
                     <div className="landing-actions" style={{ marginTop: '30px' }}>
                         <button className="btn btn-warning"><i className="fa-solid fa-paper-plane"></i><span>Hire Me</span></button>
