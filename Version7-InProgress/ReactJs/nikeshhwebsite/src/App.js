@@ -34,7 +34,7 @@ const App = () => {
         <Route path="/" component={LoadingScreen} exact />
         <Route path="/home" component={HomeScreen} exact />
         <Route path="/about" component={AboutScreen} exact />
-        <Route path="/skills" component={SkillsScreen} exact /> {/* Need to do */}
+        <Route path="/skills" component={SkillsScreen} exact />
         <Route path="/skillsingle" component={SkillSingleScreen} exact />
         <Route path="/certifications" component={CertificationsScreen} exact />
         <Route path="/projects" component={ProjectsScreen} exact />
