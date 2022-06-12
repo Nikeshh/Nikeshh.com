@@ -36,7 +36,7 @@ const HomeScreen = () => {
                 <Mentorship />
                 <Blog /> {/* Need to do */}
                 <Support />
-                <Newsletter />
+                <Newsletter /> {/* Need to do */}
                 <Contact />
             </div>
             <Footer />

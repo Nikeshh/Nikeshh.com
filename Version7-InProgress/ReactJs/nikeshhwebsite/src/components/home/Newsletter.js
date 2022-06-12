@@ -18,7 +18,6 @@ const Newsletter = () => {
                     <h3>Newsletter Signup</h3>
                 </div>
                 <div className="col-md-8">
-                    <h3>A input box will come here</h3>
                 </div>
             </div>
         </div>
