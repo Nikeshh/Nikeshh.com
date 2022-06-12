@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const NotFoundScreen = () => {
     return(
-        <>
+        <div style={{ height: '100vh', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
             <div className="container my-5">
                 <div className="row justify-content-center align-items-center">
                     <h4 className="text-center mb-2 mb-sm-5">Page Not Found</h4>
@@ -19,7 +19,7 @@ const NotFoundScreen = () => {
                     </button>
                 </div>
             </div>
-        </>
+        </div>
     );
 }
 

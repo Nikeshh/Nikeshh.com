@@ -1,11 +1,11 @@
-.knowledgebase {
+.learnhub {
     margin-left: 70px;
     margin-top: 90px;
     margin-right: 70px;
     position: relative;
 }
 
-.knowledgebase-header {
+.learnhub-header {
     height: 100%;
     width: 100%;
     border-radius: 10px;
@@ -14,15 +14,15 @@
     margin-bottom: 30px;
 }
 
-.knowledgebase-content-header > ul {
+.learnhub-content-header > ul {
     list-style: none;
     display: flex;
 }
 
-.knowledgebase-content-header ul > li {
+.learnhub-content-header ul > li {
     padding: 5px;
 }
 
-.knowledge-content-subheader .underline {
+.learn-content-subheader .underline {
     border-bottom: 1px solid #000;
 }

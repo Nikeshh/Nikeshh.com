@@ -1,10 +1,10 @@
 import React from "react";
-import "./knowledgebase.css";
+import "./learnhub.css";
 
-const KnowledgeBase = () => {
+const LearnHub = () => {
     return (
-        <div className="knowledgebase">
-            <div className="knowledgebase-header">
+        <div className="learnhub">
+            <div className="learnhub-header">
                 <div className="col-md-12">
                     <div className="row">
                         <div className="col-lg-7">
@@ -27,8 +27,8 @@ const KnowledgeBase = () => {
                     </div>
                 </div>
             </div>
-            <div className="knowledgebase-content">
-                <div className="knowledgebase-content-header">
+            <div className="learnhub-content">
+                <div className="learnhub-content-header">
                     <ul>
                         <li>HOME</li>
                         <li>TUTORIALS</li>
@@ -39,16 +39,16 @@ const KnowledgeBase = () => {
                         <li>REGISTER</li>
                     </ul>
                 </div>
-                <div className="knowledge-content-subheader">
+                <div className="learn-content-subheader">
                     <p>CONTENT</p>
                     <div className="underline"><h3>I HOPE THE BELOW CONTENT WILL HELP YOU OUT</h3></div>
                 </div>
-                <div className="single-knowledge">
-                    <div className="knowledge-title-with-tags">
-                        <div className="knowledge-title">
+                <div className="single-learn">
+                    <div className="learn-title-with-tags">
+                        <div className="learn-title">
                             <h3>TUTORIALS</h3>
                         </div>
-                        <div className="knowledge-tags">
+                        <div className="learn-tags">
                             <ul>
                                 <li><i className="fa fa-star"></i>All</li>
                                 <li>Web Development</li>
@@ -56,7 +56,7 @@ const KnowledgeBase = () => {
                             </ul>
                         </div>
                     </div>
-                    <div className="knowledge">
+                    <div className="learn">
                         <div className="row">
                             <div className="col-lg-4">
                                 <div className="card" style={{ width: '22rem' }}>
@@ -80,7 +80,7 @@ const KnowledgeBase = () => {
                                                 <span>5.2K Likes</span>
                                             </div>
                                         </div>
-                                        <div className="knowledge-tags">
+                                        <div className="learn-tags">
                                             <ul>
                                                 <li><i className="fa fa-star"></i>All</li>
                                                 <li>Web</li>
@@ -117,7 +117,7 @@ const KnowledgeBase = () => {
                                                 <span>5.2K Likes</span>
                                             </div>
                                         </div>
-                                        <div className="knowledge-tags">
+                                        <div className="learn-tags">
                                             <ul>
                                                 <li><i className="fa fa-star"></i>All</li>
                                                 <li>Web</li>
@@ -154,7 +154,7 @@ const KnowledgeBase = () => {
                                                 <span>5.2K Likes</span>
                                             </div>
                                         </div>
-                                        <div className="knowledge-tags">
+                                        <div className="learn-tags">
                                             <ul>
                                                 <li><i className="fa fa-star"></i>All</li>
                                                 <li>Web</li>
@@ -193,7 +193,7 @@ const KnowledgeBase = () => {
                                                 <span>5.2K Likes</span>
                                             </div>
                                         </div>
-                                        <div className="knowledge-tags">
+                                        <div className="learn-tags">
                                             <ul>
                                                 <li><i className="fa fa-star"></i>All</li>
                                                 <li>Web</li>
@@ -230,7 +230,7 @@ const KnowledgeBase = () => {
                                                 <span>5.2K Likes</span>
                                             </div>
                                         </div>
-                                        <div className="knowledge-tags">
+                                        <div className="learn-tags">
                                             <ul>
                                                 <li><i className="fa fa-star"></i>All</li>
                                                 <li>Web</li>
@@ -267,7 +267,7 @@ const KnowledgeBase = () => {
                                                 <span>5.2K Likes</span>
                                             </div>
                                         </div>
-                                        <div className="knowledge-tags">
+                                        <div className="learn-tags">
                                             <ul>
                                                 <li><i className="fa fa-star"></i>All</li>
                                                 <li>Web</li>
@@ -306,7 +306,7 @@ const KnowledgeBase = () => {
                                                 <span>5.2K Likes</span>
                                             </div>
                                         </div>
-                                        <div className="knowledge-tags">
+                                        <div className="learn-tags">
                                             <ul>
                                                 <li><i className="fa fa-star"></i>All</li>
                                                 <li>Web</li>
@@ -343,7 +343,7 @@ const KnowledgeBase = () => {
                                                 <span>5.2K Likes</span>
                                             </div>
                                         </div>
-                                        <div className="knowledge-tags">
+                                        <div className="learn-tags">
                                             <ul>
                                                 <li><i className="fa fa-star"></i>All</li>
                                                 <li>Web</li>
@@ -380,7 +380,7 @@ const KnowledgeBase = () => {
                                                 <span>5.2K Likes</span>
                                             </div>
                                         </div>
-                                        <div className="knowledge-tags">
+                                        <div className="learn-tags">
                                             <ul>
                                                 <li><i className="fa fa-star"></i>All</li>
                                                 <li>Web</li>
@@ -398,12 +398,12 @@ const KnowledgeBase = () => {
                         </div>
                     </div>
                 </div>
-                <div className="single-knowledge">
-                    <div className="knowledge-title-with-tags">
-                        <div className="knowledge-title">
+                <div className="single-learn">
+                    <div className="learn-title-with-tags">
+                        <div className="learn-title">
                             <h3>FULL BUILDS</h3>
                         </div>
-                        <div className="knowledge-tags">
+                        <div className="learn-tags">
                             <ul>
                                 <li><i className="fa fa-star"></i>All</li>
                                 <li>Web Development</li>
@@ -411,7 +411,7 @@ const KnowledgeBase = () => {
                             </ul>
                         </div>
                     </div>
-                    <div className="knowledge">
+                    <div className="learn">
                         <div className="row">
                             <div className="col-lg-4">
                                 <div className="card" style={{ width: '22rem' }}>
@@ -435,7 +435,7 @@ const KnowledgeBase = () => {
                                                 <span>5.2K Likes</span>
                                             </div>
                                         </div>
-                                        <div className="knowledge-tags">
+                                        <div className="learn-tags">
                                             <ul>
                                                 <li><i className="fa fa-star"></i>All</li>
                                                 <li>Web</li>
@@ -472,7 +472,7 @@ const KnowledgeBase = () => {
                                                 <span>5.2K Likes</span>
                                             </div>
                                         </div>
-                                        <div className="knowledge-tags">
+                                        <div className="learn-tags">
                                             <ul>
                                                 <li><i className="fa fa-star"></i>All</li>
                                                 <li>Web</li>
@@ -509,7 +509,7 @@ const KnowledgeBase = () => {
                                                 <span>5.2K Likes</span>
                                             </div>
                                         </div>
-                                        <div className="knowledge-tags">
+                                        <div className="learn-tags">
                                             <ul>
                                                 <li><i className="fa fa-star"></i>All</li>
                                                 <li>Web</li>
@@ -548,7 +548,7 @@ const KnowledgeBase = () => {
                                                 <span>5.2K Likes</span>
                                             </div>
                                         </div>
-                                        <div className="knowledge-tags">
+                                        <div className="learn-tags">
                                             <ul>
                                                 <li><i className="fa fa-star"></i>All</li>
                                                 <li>Web</li>
@@ -585,7 +585,7 @@ const KnowledgeBase = () => {
                                                 <span>5.2K Likes</span>
                                             </div>
                                         </div>
-                                        <div className="knowledge-tags">
+                                        <div className="learn-tags">
                                             <ul>
                                                 <li><i className="fa fa-star"></i>All</li>
                                                 <li>Web</li>
@@ -622,7 +622,7 @@ const KnowledgeBase = () => {
                                                 <span>5.2K Likes</span>
                                             </div>
                                         </div>
-                                        <div className="knowledge-tags">
+                                        <div className="learn-tags">
                                             <ul>
                                                 <li><i className="fa fa-star"></i>All</li>
                                                 <li>Web</li>
@@ -661,7 +661,7 @@ const KnowledgeBase = () => {
                                                 <span>5.2K Likes</span>
                                             </div>
                                         </div>
-                                        <div className="knowledge-tags">
+                                        <div className="learn-tags">
                                             <ul>
                                                 <li><i className="fa fa-star"></i>All</li>
                                                 <li>Web</li>
@@ -698,7 +698,7 @@ const KnowledgeBase = () => {
                                                 <span>5.2K Likes</span>
                                             </div>
                                         </div>
-                                        <div className="knowledge-tags">
+                                        <div className="learn-tags">
                                             <ul>
                                                 <li><i className="fa fa-star"></i>All</li>
                                                 <li>Web</li>
@@ -735,7 +735,7 @@ const KnowledgeBase = () => {
                                                 <span>5.2K Likes</span>
                                             </div>
                                         </div>
-                                        <div className="knowledge-tags">
+                                        <div className="learn-tags">
                                             <ul>
                                                 <li><i className="fa fa-star"></i>All</li>
                                                 <li>Web</li>
@@ -758,4 +758,4 @@ const KnowledgeBase = () => {
     );
 }
 
-export default KnowledgeBase;
+export default LearnHub;

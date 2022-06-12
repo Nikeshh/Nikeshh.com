@@ -1,18 +1,18 @@
 import React from "react";
 import Header from "./util/Header";
 import Footer from "./util/Footer";
-import KnowledgeBase from "./knowledgebase/KnowledgeBase";
+import LearnHub from "./learnhub/LearnHub";
 
-const KnowledgeBaseScreen = () => {
+const LearnHubScreen = () => {
     return (
         <>
             <div className="header__image"  style={{ marginBottom: "300px" }}>
-                <Header page_name="knowledgebase" />
-                <KnowledgeBase />
+                <Header page_name="learnhub" />
+                <LearnHub />
             </div>
             <Footer />
         </>
     );
 }
 
-export default KnowledgeBaseScreen;
+export default LearnHubScreen;

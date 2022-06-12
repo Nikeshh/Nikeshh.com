@@ -10,7 +10,6 @@ import CertificationsScreen from './components/CertificationsScreen';
 import ProjectsScreen from './components/ProjectsScreen';
 import BlogScreen from './components/BlogScreen';
 import BlogSingleScreen from './components/BlogSingleScreen';
-import LearningScreen from './components/LearningScreen';
 import NewsletterScreen from './components/NewsletterScreen';
 import PatreonScreen from './components/PatreonScreen';
 import BooksScreen from './components/BooksScreen';
@@ -18,7 +17,7 @@ import ForumScreen from './components/ForumScreen';
 import RoadmapScreen from './components/RoadmapScreen';
 import CommunityScreen from './components/CommunityScreen';
 import CoursesScreen from './components/CoursesScreen';
-import KnowledgeBaseScreen from './components/KnowledgeBaseScreen';
+import LearnHubScreen from './components/LearnHubScreen';
 import SubscriptionScreen from './components/SubscriptionScreen';
 import AffiliateScreen from './components/AffiliateScreen';
 import MerchandiseScreen from './components/MerchandiseScreen';
@@ -35,13 +34,12 @@ const App = () => {
         <Route path="/" component={LoadingScreen} exact />
         <Route path="/home" component={HomeScreen} exact />
         <Route path="/about" component={AboutScreen} exact />
-        <Route path="/skills" component={SkillsScreen} exact />
+        <Route path="/skills" component={SkillsScreen} exact /> {/* Need to do */}
         <Route path="/skillsingle" component={SkillSingleScreen} exact />
         <Route path="/certifications" component={CertificationsScreen} exact />
         <Route path="/projects" component={ProjectsScreen} exact />
         <Route path="/blog" component={BlogScreen} exact />
         <Route path="/blog/:id" component={BlogSingleScreen} exact />
-        <Route path="/learning" component={LearningScreen} exact />
         <Route path="/newsletter" component={NewsletterScreen} exact />
         <Route path="/patreon" component={PatreonScreen} exact />
         <Route path="/books" component={BooksScreen} exact />
@@ -49,7 +47,7 @@ const App = () => {
         <Route path="/roadmap" component={RoadmapScreen} exact />
         <PrivateRouter path="/community" component={CommunityScreen} />
         <PrivateRouter path="/courses" component={CoursesScreen} />
-        <Route path="/knowledgebase" component={KnowledgeBaseScreen} exact />
+        <Route path="/learnhub" component={LearnHubScreen} exact />
         <Route path="/subscription" component={SubscriptionScreen} exact />
         <Route path="/affiliate" component={AffiliateScreen} exact />
         <Route path="/merchandise" component={MerchandiseScreen} exact />
