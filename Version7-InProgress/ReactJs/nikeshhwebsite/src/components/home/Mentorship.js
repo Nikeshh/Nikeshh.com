@@ -18,7 +18,6 @@ const Mentorship = () => {
                 </p>
                 <div className="button_with_line" style={{ marginTop: '50px', position: 'relative' }}>
                     <button className="btn btn-warning"><span>Start a conversation</span></button>
-                    <img src={line} alt="Line" style={{ position: 'absolute', left: '30%', top: '80%' }} width="300px" />
                 </div>
             </div>
         </div>

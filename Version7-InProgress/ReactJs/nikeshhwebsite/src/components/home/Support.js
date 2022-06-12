@@ -19,7 +19,6 @@ const Support = () => {
                     <button className="btn btn-warning">
                         <span>Know More</span>
                     </button>
-                    <img src={line} alt="Line" className="line" style={{ position: 'absolute', left: '10%', top: '80%' }} width="300px" />
                 </div>
             </div>
         </div>

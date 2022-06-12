@@ -32,11 +32,11 @@ const HomeScreen = () => {
                 <SkillsAndServices />
                 <ProjectsAndWorks />
                 <NotesAndAction />
-                <Testimonials /> {/* Need to do */}
+                <Testimonials /> {/* https://codepen.io/shamim539/pen/mvwzdd */}
                 <Mentorship />
-                <Blog /> {/* Need to do */}
+                <Blog /> {/* https://codepen.io/JavaScriptJunkie/pen/WgRBxw */}
                 <Support />
-                <Newsletter /> {/* Need to do */}
+                <Newsletter />
                 <Contact />
             </div>
             <Footer />
