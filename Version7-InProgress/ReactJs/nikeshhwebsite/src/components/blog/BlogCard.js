@@ -28,7 +28,7 @@ const BlogCard = () => {
                         Lorem ipsum dolor sit amet, consectetur 
                         adipiscing elit. Etiam at ultricies dui…
                     </p>
-                    <p style={{ backgrounColor: '#FFF1DA', padding: '10px', borderRadius: '5px', border: '1px solid #D66464', fontFamily: "'Dancing Script', cursive", fontWeight: '700', letterSpacing: '5px' }}>Read More</p>
+                    <p style={{ backgrounColor: '#FFF1DA', padding: '10px', borderRadius: '5px', border: '1px solid #D66464', fontFamily: "'Dancing Script', cursive", fontWeight: '700', letterSpacing: '5px', marginTop: '10px', display: 'inline-block' }}>Read More</p>
                 </div>
             </div>
         </>
