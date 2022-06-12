@@ -16,42 +16,16 @@
     flex: 30%;
 }
 
+.newsletter_signup .newsletter_signup_content {
+    flex: 70%;
+}
+
 .newsletter_signup .newsletter_signup_header .title {
     text-transform: uppercase;
 }
 
 .newsletter_signup .newsletter_signup_header .subtitle {
     font-weight: 700;
-}
-
-.newsletter_signup .newsletter_signup_content {
-    flex: 70%;
-}
-
-.newsletter_signup .newsletter_signup_content .title {
-    padding-left: 100px;
-    padding-top: 100px;
-    padding-bottom: 100px;
-}
-
-.newsletter_signup .newsletter_signup_content .title > h3 {
-    font-weight: 300;
-    font-size: 40px;
-    letter-spacing: 6px;
-}
-
-.newsletter_signup .newsletter_signup_content .email_container {
-    padding-left: 100px;
-    padding-top: 100px;
-    padding-bottom: 100px;
-}
-
-.newsletter_signup .newsletter_signup_content .email {
-    padding: 30px;
-    background-color: #DFD7F9;
-    border-radius: 5px;
-    border-top-left-radius: 60px;
-    width: 70%;
 }
 
 .newsletter_downloads_header {

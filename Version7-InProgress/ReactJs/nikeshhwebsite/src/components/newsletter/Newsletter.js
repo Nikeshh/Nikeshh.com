@@ -12,20 +12,13 @@ const Newsletter = () => {
                 </div>
                 <div className="newsletter_signup_content">
                     <div className="row">
-                        <div className="col-lg-4 title_container">
-                            <div className="title">
-                                <h3>Newsletter Signup</h3>
-                            </div>
+                        <div className="col-md-4" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+                            <h3 style={{ fontWeight: '300', letterSpacing: '3px' }}>Newsletter Signup</h3>
                         </div>
-                        <div className="col-lg-8 email_container">
-                            <div class="input-group mb-3 email">
-                                <div class="input-group-prepend">
-                                    <i class="fa-solid fa-message"></i>
-                                </div>
-                                <input type="email" class="form-control" placeholder="Your email id" aria-label="Email id" />
-                                <div class="input-group-append">
-                                    <i class="fa-solid fa-arrow-right"></i>
-                                </div>
+                        <div className="col-md-8" style={{ paddingLeft: '200px', paddinRight: '200px' }}>
+                            <div style={{ backgroundColor: '#DFD7F9', padding: '50px', borderTopLeftRadius: '50px', borderTopRightRadius: '10px', borderBottomLeftRadius: '10px', borderBottomRightRadius: '10px', position: 'relative' }}>
+                                <input type="email" id="email_id" name="email_id" placeholder="Your email id" className="form-control"></input>
+                                <i class="fa-solid fa-circle-arrow-right fa-2xl" style={{ position: 'absolute', bottom: '15%', right: '1%' }}></i>
                             </div>
                         </div>
                     </div>
