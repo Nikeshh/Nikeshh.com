@@ -56,7 +56,7 @@ const Blog = () => {
                                 <BlogCard />
                             </div>
                         </div>
-                        <div className="col-lg-8">
+                        <div className="col-lg-8" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center'}}>
                             <div className="row sub-feature">
                                 <div className="col-lg-4">
                                     <img src={"./assets/images/loading.gif"} alt="Sub Featued Image" width="300px" />
@@ -70,7 +70,7 @@ const Blog = () => {
                                         vehicula velit dictum. 
                                     </p>
                                     <h5>Eric Ravensoft in One Zero</h5>
-                                    <p>MAR 20 . 5 MIN READ</p>
+                                    <p>MAR 20 &middot; 5 MIN READ</p>
                                 </div>
                             </div>
                             <div className="row sub-feature">
@@ -86,12 +86,12 @@ const Blog = () => {
                                         vehicula velit dictum. 
                                     </p>
                                     <h5>Eric Ravensoft in One Zero</h5>
-                                    <p>MAR 20 . 5 MIN READ</p>
+                                    <p>MAR 20 &middot; 5 MIN READ</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div className="row" style={{ marginTop: '20px' }}>
+                    <div className="row" style={{ marginTop: '50px' }}>
                         <div className="col-lg-4">
                             <div className="main-feature">
                                 <BlogCard />
@@ -109,20 +109,20 @@ const Blog = () => {
                         </div>
                     </div>
                 </div>
-                <div className="blog-content-latest-posts-and-popular-posts">
+                <div className="blog-content-latest-posts-and-popular-posts" style={{ marginTop: '50px' }}>
                     <div className="row">
                         <div className="latest-posts col-lg-8">
                             <div className="latest-posts-title"><h3>Latest Posts</h3></div>
-                            <div className="row">
+                            <div className="row" style={{ display: 'flex', justifyContent: 'space-around' }}>
                                 <BlogCard />
                                 <BlogCard />
                             </div>
-                            <div className="row">
+                            <div className="row" style={{ display: 'flex', justifyContent: 'space-around', marginTop: '50px' }}>
                                 <BlogCard />
                                 <BlogCard />
                             </div>
-                            <div>
-                                <button>Load More</button>
+                            <div style={{ marginTop: '50px', display: 'flex', justifyContent: 'center', }}>
+                                <button className="btn btn-warning">Load More</button>
                             </div>
                         </div>
                         <div className="popular-posts col-lg-4">
@@ -134,7 +134,7 @@ const Blog = () => {
                                 <div className="col-lg-8">
                                     <h3>Organize the Content Moderators</h3>
                                     <p>Eric Ravensoft in UI / UX Design</p>
-                                    <p>MAR 20 . 5 MIN READ</p>
+                                    <p>MAR 20 &middot; 5 MIN READ</p>
                                 </div>
                             </div>
                             <div className="row">
@@ -144,7 +144,7 @@ const Blog = () => {
                                 <div className="col-lg-8">
                                     <h3>Organize the Content Moderators</h3>
                                     <p>Eric Ravensoft in UI / UX Design</p>
-                                    <p>MAR 20 . 5 MIN READ</p>
+                                    <p>MAR 20 &middot; 5 MIN READ</p>
                                 </div>
                             </div>
                             <div className="row">
@@ -154,7 +154,7 @@ const Blog = () => {
                                 <div className="col-lg-8">
                                     <h3>Organize the Content Moderators</h3>
                                     <p>Eric Ravensoft in UI / UX Design</p>
-                                    <p>MAR 20 . 5 MIN READ</p>
+                                    <p>MAR 20 &middot; 5 MIN READ</p>
                                 </div>
                             </div>
                             <div className="row">
@@ -164,7 +164,7 @@ const Blog = () => {
                                 <div className="col-lg-8">
                                     <h3>Organize the Content Moderators</h3>
                                     <p>Eric Ravensoft in UI / UX Design</p>
-                                    <p>MAR 20 . 5 MIN READ</p>
+                                    <p>MAR 20 &middot; 5 MIN READ</p>
                                 </div>
                             </div>
                             <div className="row">
@@ -174,11 +174,11 @@ const Blog = () => {
                                 <div className="col-lg-8">
                                     <h3>Organize the Content Moderators</h3>
                                     <p>Eric Ravensoft in UI / UX Design</p>
-                                    <p>MAR 20 . 5 MIN READ</p>
+                                    <p>MAR 20 &middot; 5 MIN READ</p>
                                 </div>
                             </div>
-                            <div>
-                                <button>Load More</button>
+                            <div style={{ marginTop: '50px', display: 'flex', justifyContent: 'center', }}>
+                                <button className="btn btn-warning">Load More</button>
                             </div>
                         </div>
                     </div>
