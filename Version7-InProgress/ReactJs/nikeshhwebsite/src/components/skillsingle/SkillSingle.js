@@ -5,7 +5,7 @@ import Projects from "../home/projectsandworks/Projects";
 
 const SkillSingle = () => {
     return (
-        <div className="skillsingle container">
+        <div className="skillsingle container" style={{ marginTop: '40px' }}>
             <div className="row">
                 <div className="col-lg-6" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
                     <img src={"./assets/images/skillsingle.png"} alt="Skill Single" />
@@ -40,8 +40,8 @@ const SkillSingle = () => {
                 <p>THE ABOUT PROJECTS IS ONLY BASED ON WEB DEVELOPMENT.</p>
                 <button className="btn btn-warning"><span>CLICK HERE TO SEE OTHER PROJECTS</span></button>
             </div>
-            <div style={{ marginTop: '100px' }}>
-                <h1>Read more about web development here</h1>
+            <div style={{ textAlign: 'center', marginTop: '100px' }}>
+                <h1 style={{ fontFamily: "'Dancing Script', cursive", fontWeight: '700' }}>Read more about web development here</h1>
             </div>
         </div>
     );
