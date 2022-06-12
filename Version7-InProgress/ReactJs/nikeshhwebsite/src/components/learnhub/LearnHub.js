@@ -1,5 +1,6 @@
 import React from "react";
 import "./learnhub.css";
+import LearnHubCard from "./LearnHubCard";
 
 const LearnHub = () => {
     return (
@@ -13,11 +14,9 @@ const LearnHub = () => {
                             This hub contains the content I have learned, and it also includes various tutorials, 
                             complete builds, master lessons and much more. I love sharing. Gear up for learning.
                         </p>
-                        <div style={{ padding: '5px', display: 'block' }}>
-                            <button>
-                                Search
-                                <i className="fa fa-search"></i>
-                            </button>
+                        <div style={{ marginBottom: '10px' }}>
+                            <input type="text" placeholder="Search..." style={{ padding: '10px', borderRadius: '5px', marginRight: '5px' }} />
+                            <i className="fa fa-search" style={{ padding: '15px', border: '1px solid black', borderRadius: '5px' }}></i>
                         </div>
                         <p style={{ fontFamily: "'Montserrat', sans-serif" }}>
                             Suggestions: <span style={{ textDecoration: 'underline' }}>Data Structures</span> <span style={{ textDecoration: 'underline' }}>Discrete Mathematics</span>
@@ -32,728 +31,105 @@ const LearnHub = () => {
                     </div>
                 </div>
             </div>
-            <div className="learnhub-content">
+            <div className="learnhub-content" style={{ marginTop: '100px' }}>
                 <div className="learnhub-content-header">
                     <ul>
-                        <li>HOME</li>
-                        <li>TUTORIALS</li>
-                        <li>MASTER LESSONS</li>
-                        <li>FULL BUILDS</li>
-                        <li>MORE</li>
-                        <li>LOGIN</li>
-                        <li>REGISTER</li>
+                        <li>Home</li>
+                        <li>Tutorials</li>
+                        <li>Master Lessons</li>
+                        <li>Full Builds</li>
+                        <li>...</li>
                     </ul>
+                    <div style={{ marginRight: '10px' }}>
+                        <button className="btn btn-warning" style={{ marginRight: '10px' }}>Login</button>
+                        <button className="btn btn-warning" style={{ marginRight: '10px' }}>Register</button>
+                        <button className="btn btn-warning"><input type="text" placeholder="Search..." style={{ padding: '5px', borderRadius: '5px', borderStyle: 'dashed' }} /><i className="fa fa-search" style={{ marginLeft: '10px' }}></i></button>
+                    </div>
                 </div>
-                <div className="learn-content-subheader">
-                    <p>CONTENT</p>
-                    <div className="underline"><h3>I HOPE THE BELOW CONTENT WILL HELP YOU OUT</h3></div>
-                </div>
-                <div className="single-learn">
+                <div className="single-learn" style={{ marginTop: '50px' }}>
                     <div className="learn-title-with-tags">
-                        <div className="learn-title">
-                            <h3>TUTORIALS</h3>
-                        </div>
-                        <div className="learn-tags">
-                            <ul>
-                                <li><i className="fa fa-star"></i>All</li>
-                                <li>Web Development</li>
-                                <li>App Development</li>
-                            </ul>
+                        <h3 className="left" style={{ fontFamily: "'Montserrat', sans-serif", fontWeight: '700' }}>Tutorials</h3>
+                        <div style={{ display: 'flex' }}>
+                            <p style={{ marginRight: '10px', fontWeight: '700' }}>WEB DEVELOPMENT</p>
+                            <p style={{ marginRight: '10px', fontWeight: '700' }}>APP DEVELOPMENT</p>
                         </div>
                     </div>
                     <div className="learn">
                         <div className="row">
                             <div className="col-lg-4">
-                                <div className="card" style={{ width: '22rem' }}>
-                                    <img className="card-img-top" src={"./assets/images/loading.gif"} alt="Main Featued Image" />
-                                    <div className="card-body">
-                                        <div className="metadata">
-                                            <div className="post-date">
-                                                <i class="fa fa-calendar" aria-hidden="true"></i>
-                                                <span>20 MAR 2022</span>
-                                            </div>
-                                            <div className="author">
-                                                <i class="fa fa-user" aria-hidden="true"></i>
-                                                <span>Nikeshh</span>
-                                            </div>
-                                            <div className="post-read-time">
-                                                <i class="fa fa-eye" aria-hidden="true"></i>
-                                                <span>5 min read</span>
-                                            </div>
-                                            <div className="post-likes">
-                                                <i class="fa fa-eye" aria-hidden="true"></i>
-                                                <span>5.2K Likes</span>
-                                            </div>
-                                        </div>
-                                        <div className="learn-tags">
-                                            <ul>
-                                                <li><i className="fa fa-star"></i>All</li>
-                                                <li>Web</li>
-                                            </ul>
-                                        </div>
-                                        <h4>Data Structures and Algorithms</h4>
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur 
-                                            adipiscing elit. Etiam at ultricies dui…
-                                        </p>
-                                        <p>View</p>
-                                    </div>
-                                </div>
+                                <LearnHubCard />
                             </div>
                             <div className="col-lg-4">
-                                <div className="card" style={{ width: '22rem' }}>
-                                    <img className="card-img-top" src={"./assets/images/loading.gif"} alt="Main Featued Image" />
-                                    <div className="card-body">
-                                        <div className="metadata">
-                                            <div className="post-date">
-                                                <i class="fa fa-calendar" aria-hidden="true"></i>
-                                                <span>20 MAR 2022</span>
-                                            </div>
-                                            <div className="author">
-                                                <i class="fa fa-user" aria-hidden="true"></i>
-                                                <span>Nikeshh</span>
-                                            </div>
-                                            <div className="post-read-time">
-                                                <i class="fa fa-eye" aria-hidden="true"></i>
-                                                <span>5 min read</span>
-                                            </div>
-                                            <div className="post-likes">
-                                                <i class="fa fa-eye" aria-hidden="true"></i>
-                                                <span>5.2K Likes</span>
-                                            </div>
-                                        </div>
-                                        <div className="learn-tags">
-                                            <ul>
-                                                <li><i className="fa fa-star"></i>All</li>
-                                                <li>Web</li>
-                                            </ul>
-                                        </div>
-                                        <h4>Data Structures and Algorithms</h4>
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur 
-                                            adipiscing elit. Etiam at ultricies dui…
-                                        </p>
-                                        <p>View</p>
-                                    </div>
-                                </div>
+                                <LearnHubCard />
                             </div>
                             <div className="col-lg-4">
-                                <div className="card" style={{ width: '22rem' }}>
-                                    <img className="card-img-top" src={"./assets/images/loading.gif"} alt="Main Featued Image" />
-                                    <div className="card-body">
-                                        <div className="metadata">
-                                            <div className="post-date">
-                                                <i class="fa fa-calendar" aria-hidden="true"></i>
-                                                <span>20 MAR 2022</span>
-                                            </div>
-                                            <div className="author">
-                                                <i class="fa fa-user" aria-hidden="true"></i>
-                                                <span>Nikeshh</span>
-                                            </div>
-                                            <div className="post-read-time">
-                                                <i class="fa fa-eye" aria-hidden="true"></i>
-                                                <span>5 min read</span>
-                                            </div>
-                                            <div className="post-likes">
-                                                <i class="fa fa-eye" aria-hidden="true"></i>
-                                                <span>5.2K Likes</span>
-                                            </div>
-                                        </div>
-                                        <div className="learn-tags">
-                                            <ul>
-                                                <li><i className="fa fa-star"></i>All</li>
-                                                <li>Web</li>
-                                            </ul>
-                                        </div>
-                                        <h4>Data Structures and Algorithms</h4>
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur 
-                                            adipiscing elit. Etiam at ultricies dui…
-                                        </p>
-                                        <p>View</p>
-                                    </div>
-                                </div>
+                                <LearnHubCard />
                             </div>
                         </div>
-                        <div className="row">
+                        <div className="row" style={{ marginTop: '50px' }}>
                             <div className="col-lg-4">
-                                <div className="card" style={{ width: '22rem' }}>
-                                    <img className="card-img-top" src={"./assets/images/loading.gif"} alt="Main Featued Image" />
-                                    <div className="card-body">
-                                        <div className="metadata">
-                                            <div className="post-date">
-                                                <i class="fa fa-calendar" aria-hidden="true"></i>
-                                                <span>20 MAR 2022</span>
-                                            </div>
-                                            <div className="author">
-                                                <i class="fa fa-user" aria-hidden="true"></i>
-                                                <span>Nikeshh</span>
-                                            </div>
-                                            <div className="post-read-time">
-                                                <i class="fa fa-eye" aria-hidden="true"></i>
-                                                <span>5 min read</span>
-                                            </div>
-                                            <div className="post-likes">
-                                                <i class="fa fa-eye" aria-hidden="true"></i>
-                                                <span>5.2K Likes</span>
-                                            </div>
-                                        </div>
-                                        <div className="learn-tags">
-                                            <ul>
-                                                <li><i className="fa fa-star"></i>All</li>
-                                                <li>Web</li>
-                                            </ul>
-                                        </div>
-                                        <h4>Data Structures and Algorithms</h4>
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur 
-                                            adipiscing elit. Etiam at ultricies dui…
-                                        </p>
-                                        <p>View</p>
-                                    </div>
-                                </div>
+                                <LearnHubCard />
                             </div>
                             <div className="col-lg-4">
-                                <div className="card" style={{ width: '22rem' }}>
-                                    <img className="card-img-top" src={"./assets/images/loading.gif"} alt="Main Featued Image" />
-                                    <div className="card-body">
-                                        <div className="metadata">
-                                            <div className="post-date">
-                                                <i class="fa fa-calendar" aria-hidden="true"></i>
-                                                <span>20 MAR 2022</span>
-                                            </div>
-                                            <div className="author">
-                                                <i class="fa fa-user" aria-hidden="true"></i>
-                                                <span>Nikeshh</span>
-                                            </div>
-                                            <div className="post-read-time">
-                                                <i class="fa fa-eye" aria-hidden="true"></i>
-                                                <span>5 min read</span>
-                                            </div>
-                                            <div className="post-likes">
-                                                <i class="fa fa-eye" aria-hidden="true"></i>
-                                                <span>5.2K Likes</span>
-                                            </div>
-                                        </div>
-                                        <div className="learn-tags">
-                                            <ul>
-                                                <li><i className="fa fa-star"></i>All</li>
-                                                <li>Web</li>
-                                            </ul>
-                                        </div>
-                                        <h4>Data Structures and Algorithms</h4>
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur 
-                                            adipiscing elit. Etiam at ultricies dui…
-                                        </p>
-                                        <p>View</p>
-                                    </div>
-                                </div>
+                                <LearnHubCard />
                             </div>
                             <div className="col-lg-4">
-                                <div className="card" style={{ width: '22rem' }}>
-                                    <img className="card-img-top" src={"./assets/images/loading.gif"} alt="Main Featued Image" />
-                                    <div className="card-body">
-                                        <div className="metadata">
-                                            <div className="post-date">
-                                                <i class="fa fa-calendar" aria-hidden="true"></i>
-                                                <span>20 MAR 2022</span>
-                                            </div>
-                                            <div className="author">
-                                                <i class="fa fa-user" aria-hidden="true"></i>
-                                                <span>Nikeshh</span>
-                                            </div>
-                                            <div className="post-read-time">
-                                                <i class="fa fa-eye" aria-hidden="true"></i>
-                                                <span>5 min read</span>
-                                            </div>
-                                            <div className="post-likes">
-                                                <i class="fa fa-eye" aria-hidden="true"></i>
-                                                <span>5.2K Likes</span>
-                                            </div>
-                                        </div>
-                                        <div className="learn-tags">
-                                            <ul>
-                                                <li><i className="fa fa-star"></i>All</li>
-                                                <li>Web</li>
-                                            </ul>
-                                        </div>
-                                        <h4>Data Structures and Algorithms</h4>
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur 
-                                            adipiscing elit. Etiam at ultricies dui…
-                                        </p>
-                                        <p>View</p>
-                                    </div>
-                                </div>
+                                <LearnHubCard />
                             </div>
                         </div>
-                        <div className="row">
+                        <div className="row" style={{ marginTop: '50px' }}>
                             <div className="col-lg-4">
-                                <div className="card" style={{ width: '22rem' }}>
-                                    <img className="card-img-top" src={"./assets/images/loading.gif"} alt="Main Featued Image" />
-                                    <div className="card-body">
-                                        <div className="metadata">
-                                            <div className="post-date">
-                                                <i class="fa fa-calendar" aria-hidden="true"></i>
-                                                <span>20 MAR 2022</span>
-                                            </div>
-                                            <div className="author">
-                                                <i class="fa fa-user" aria-hidden="true"></i>
-                                                <span>Nikeshh</span>
-                                            </div>
-                                            <div className="post-read-time">
-                                                <i class="fa fa-eye" aria-hidden="true"></i>
-                                                <span>5 min read</span>
-                                            </div>
-                                            <div className="post-likes">
-                                                <i class="fa fa-eye" aria-hidden="true"></i>
-                                                <span>5.2K Likes</span>
-                                            </div>
-                                        </div>
-                                        <div className="learn-tags">
-                                            <ul>
-                                                <li><i className="fa fa-star"></i>All</li>
-                                                <li>Web</li>
-                                            </ul>
-                                        </div>
-                                        <h4>Data Structures and Algorithms</h4>
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur 
-                                            adipiscing elit. Etiam at ultricies dui…
-                                        </p>
-                                        <p>View</p>
-                                    </div>
-                                </div>
+                                <LearnHubCard />
                             </div>
                             <div className="col-lg-4">
-                                <div className="card" style={{ width: '22rem' }}>
-                                    <img className="card-img-top" src={"./assets/images/loading.gif"} alt="Main Featued Image" />
-                                    <div className="card-body">
-                                        <div className="metadata">
-                                            <div className="post-date">
-                                                <i class="fa fa-calendar" aria-hidden="true"></i>
-                                                <span>20 MAR 2022</span>
-                                            </div>
-                                            <div className="author">
-                                                <i class="fa fa-user" aria-hidden="true"></i>
-                                                <span>Nikeshh</span>
-                                            </div>
-                                            <div className="post-read-time">
-                                                <i class="fa fa-eye" aria-hidden="true"></i>
-                                                <span>5 min read</span>
-                                            </div>
-                                            <div className="post-likes">
-                                                <i class="fa fa-eye" aria-hidden="true"></i>
-                                                <span>5.2K Likes</span>
-                                            </div>
-                                        </div>
-                                        <div className="learn-tags">
-                                            <ul>
-                                                <li><i className="fa fa-star"></i>All</li>
-                                                <li>Web</li>
-                                            </ul>
-                                        </div>
-                                        <h4>Data Structures and Algorithms</h4>
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur 
-                                            adipiscing elit. Etiam at ultricies dui…
-                                        </p>
-                                        <p>View</p>
-                                    </div>
-                                </div>
+                                <LearnHubCard />
                             </div>
                             <div className="col-lg-4">
-                                <div className="card" style={{ width: '22rem' }}>
-                                    <img className="card-img-top" src={"./assets/images/loading.gif"} alt="Main Featued Image" />
-                                    <div className="card-body">
-                                        <div className="metadata">
-                                            <div className="post-date">
-                                                <i class="fa fa-calendar" aria-hidden="true"></i>
-                                                <span>20 MAR 2022</span>
-                                            </div>
-                                            <div className="author">
-                                                <i class="fa fa-user" aria-hidden="true"></i>
-                                                <span>Nikeshh</span>
-                                            </div>
-                                            <div className="post-read-time">
-                                                <i class="fa fa-eye" aria-hidden="true"></i>
-                                                <span>5 min read</span>
-                                            </div>
-                                            <div className="post-likes">
-                                                <i class="fa fa-eye" aria-hidden="true"></i>
-                                                <span>5.2K Likes</span>
-                                            </div>
-                                        </div>
-                                        <div className="learn-tags">
-                                            <ul>
-                                                <li><i className="fa fa-star"></i>All</li>
-                                                <li>Web</li>
-                                            </ul>
-                                        </div>
-                                        <h4>Data Structures and Algorithms</h4>
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur 
-                                            adipiscing elit. Etiam at ultricies dui…
-                                        </p>
-                                        <p>View</p>
-                                    </div>
-                                </div>
+                                <LearnHubCard />
                             </div>
                         </div>
                     </div>
                 </div>
-                <div className="single-learn">
+                <div className="single-learn" style={{ marginTop: '50px' }}>
                     <div className="learn-title-with-tags">
-                        <div className="learn-title">
-                            <h3>FULL BUILDS</h3>
-                        </div>
-                        <div className="learn-tags">
-                            <ul>
-                                <li><i className="fa fa-star"></i>All</li>
-                                <li>Web Development</li>
-                                <li>App Development</li>
-                            </ul>
+                        <h3 className="left" style={{ fontFamily: "'Montserrat', sans-serif", fontWeight: '700' }}>Full Builds</h3>
+                        <div style={{ display: 'flex' }}>
+                            <p style={{ marginRight: '10px', fontWeight: '700' }}>WEB DEVELOPMENT</p>
+                            <p style={{ marginRight: '10px', fontWeight: '700' }}>APP DEVELOPMENT</p>
                         </div>
                     </div>
                     <div className="learn">
                         <div className="row">
                             <div className="col-lg-4">
-                                <div className="card" style={{ width: '22rem' }}>
-                                    <img className="card-img-top" src={"./assets/images/loading.gif"} alt="Main Featued Image" />
-                                    <div className="card-body">
-                                        <div className="metadata">
-                                            <div className="post-date">
-                                                <i class="fa fa-calendar" aria-hidden="true"></i>
-                                                <span>20 MAR 2022</span>
-                                            </div>
-                                            <div className="author">
-                                                <i class="fa fa-user" aria-hidden="true"></i>
-                                                <span>Nikeshh</span>
-                                            </div>
-                                            <div className="post-read-time">
-                                                <i class="fa fa-eye" aria-hidden="true"></i>
-                                                <span>5 min read</span>
-                                            </div>
-                                            <div className="post-likes">
-                                                <i class="fa fa-eye" aria-hidden="true"></i>
-                                                <span>5.2K Likes</span>
-                                            </div>
-                                        </div>
-                                        <div className="learn-tags">
-                                            <ul>
-                                                <li><i className="fa fa-star"></i>All</li>
-                                                <li>Web</li>
-                                            </ul>
-                                        </div>
-                                        <h4>Data Structures and Algorithms</h4>
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur 
-                                            adipiscing elit. Etiam at ultricies dui…
-                                        </p>
-                                        <p>View</p>
-                                    </div>
-                                </div>
+                                <LearnHubCard />
                             </div>
                             <div className="col-lg-4">
-                                <div className="card" style={{ width: '22rem' }}>
-                                    <img className="card-img-top" src={"./assets/images/loading.gif"} alt="Main Featued Image" />
-                                    <div className="card-body">
-                                        <div className="metadata">
-                                            <div className="post-date">
-                                                <i class="fa fa-calendar" aria-hidden="true"></i>
-                                                <span>20 MAR 2022</span>
-                                            </div>
-                                            <div className="author">
-                                                <i class="fa fa-user" aria-hidden="true"></i>
-                                                <span>Nikeshh</span>
-                                            </div>
-                                            <div className="post-read-time">
-                                                <i class="fa fa-eye" aria-hidden="true"></i>
-                                                <span>5 min read</span>
-                                            </div>
-                                            <div className="post-likes">
-                                                <i class="fa fa-eye" aria-hidden="true"></i>
-                                                <span>5.2K Likes</span>
-                                            </div>
-                                        </div>
-                                        <div className="learn-tags">
-                                            <ul>
-                                                <li><i className="fa fa-star"></i>All</li>
-                                                <li>Web</li>
-                                            </ul>
-                                        </div>
-                                        <h4>Data Structures and Algorithms</h4>
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur 
-                                            adipiscing elit. Etiam at ultricies dui…
-                                        </p>
-                                        <p>View</p>
-                                    </div>
-                                </div>
+                                <LearnHubCard />
                             </div>
                             <div className="col-lg-4">
-                                <div className="card" style={{ width: '22rem' }}>
-                                    <img className="card-img-top" src={"./assets/images/loading.gif"} alt="Main Featued Image" />
-                                    <div className="card-body">
-                                        <div className="metadata">
-                                            <div className="post-date">
-                                                <i class="fa fa-calendar" aria-hidden="true"></i>
-                                                <span>20 MAR 2022</span>
-                                            </div>
-                                            <div className="author">
-                                                <i class="fa fa-user" aria-hidden="true"></i>
-                                                <span>Nikeshh</span>
-                                            </div>
-                                            <div className="post-read-time">
-                                                <i class="fa fa-eye" aria-hidden="true"></i>
-                                                <span>5 min read</span>
-                                            </div>
-                                            <div className="post-likes">
-                                                <i class="fa fa-eye" aria-hidden="true"></i>
-                                                <span>5.2K Likes</span>
-                                            </div>
-                                        </div>
-                                        <div className="learn-tags">
-                                            <ul>
-                                                <li><i className="fa fa-star"></i>All</li>
-                                                <li>Web</li>
-                                            </ul>
-                                        </div>
-                                        <h4>Data Structures and Algorithms</h4>
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur 
-                                            adipiscing elit. Etiam at ultricies dui…
-                                        </p>
-                                        <p>View</p>
-                                    </div>
-                                </div>
+                                <LearnHubCard />
                             </div>
                         </div>
-                        <div className="row">
+                        <div className="row" style={{ marginTop: '50px' }}>
                             <div className="col-lg-4">
-                                <div className="card" style={{ width: '22rem' }}>
-                                    <img className="card-img-top" src={"./assets/images/loading.gif"} alt="Main Featued Image" />
-                                    <div className="card-body">
-                                        <div className="metadata">
-                                            <div className="post-date">
-                                                <i class="fa fa-calendar" aria-hidden="true"></i>
-                                                <span>20 MAR 2022</span>
-                                            </div>
-                                            <div className="author">
-                                                <i class="fa fa-user" aria-hidden="true"></i>
-                                                <span>Nikeshh</span>
-                                            </div>
-                                            <div className="post-read-time">
-                                                <i class="fa fa-eye" aria-hidden="true"></i>
-                                                <span>5 min read</span>
-                                            </div>
-                                            <div className="post-likes">
-                                                <i class="fa fa-eye" aria-hidden="true"></i>
-                                                <span>5.2K Likes</span>
-                                            </div>
-                                        </div>
-                                        <div className="learn-tags">
-                                            <ul>
-                                                <li><i className="fa fa-star"></i>All</li>
-                                                <li>Web</li>
-                                            </ul>
-                                        </div>
-                                        <h4>Data Structures and Algorithms</h4>
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur 
-                                            adipiscing elit. Etiam at ultricies dui…
-                                        </p>
-                                        <p>View</p>
-                                    </div>
-                                </div>
+                                <LearnHubCard />
                             </div>
                             <div className="col-lg-4">
-                                <div className="card" style={{ width: '22rem' }}>
-                                    <img className="card-img-top" src={"./assets/images/loading.gif"} alt="Main Featued Image" />
-                                    <div className="card-body">
-                                        <div className="metadata">
-                                            <div className="post-date">
-                                                <i class="fa fa-calendar" aria-hidden="true"></i>
-                                                <span>20 MAR 2022</span>
-                                            </div>
-                                            <div className="author">
-                                                <i class="fa fa-user" aria-hidden="true"></i>
-                                                <span>Nikeshh</span>
-                                            </div>
-                                            <div className="post-read-time">
-                                                <i class="fa fa-eye" aria-hidden="true"></i>
-                                                <span>5 min read</span>
-                                            </div>
-                                            <div className="post-likes">
-                                                <i class="fa fa-eye" aria-hidden="true"></i>
-                                                <span>5.2K Likes</span>
-                                            </div>
-                                        </div>
-                                        <div className="learn-tags">
-                                            <ul>
-                                                <li><i className="fa fa-star"></i>All</li>
-                                                <li>Web</li>
-                                            </ul>
-                                        </div>
-                                        <h4>Data Structures and Algorithms</h4>
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur 
-                                            adipiscing elit. Etiam at ultricies dui…
-                                        </p>
-                                        <p>View</p>
-                                    </div>
-                                </div>
+                                <LearnHubCard />
                             </div>
                             <div className="col-lg-4">
-                                <div className="card" style={{ width: '22rem' }}>
-                                    <img className="card-img-top" src={"./assets/images/loading.gif"} alt="Main Featued Image" />
-                                    <div className="card-body">
-                                        <div className="metadata">
-                                            <div className="post-date">
-                                                <i class="fa fa-calendar" aria-hidden="true"></i>
-                                                <span>20 MAR 2022</span>
-                                            </div>
-                                            <div className="author">
-                                                <i class="fa fa-user" aria-hidden="true"></i>
-                                                <span>Nikeshh</span>
-                                            </div>
-                                            <div className="post-read-time">
-                                                <i class="fa fa-eye" aria-hidden="true"></i>
-                                                <span>5 min read</span>
-                                            </div>
-                                            <div className="post-likes">
-                                                <i class="fa fa-eye" aria-hidden="true"></i>
-                                                <span>5.2K Likes</span>
-                                            </div>
-                                        </div>
-                                        <div className="learn-tags">
-                                            <ul>
-                                                <li><i className="fa fa-star"></i>All</li>
-                                                <li>Web</li>
-                                            </ul>
-                                        </div>
-                                        <h4>Data Structures and Algorithms</h4>
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur 
-                                            adipiscing elit. Etiam at ultricies dui…
-                                        </p>
-                                        <p>View</p>
-                                    </div>
-                                </div>
+                                <LearnHubCard />
                             </div>
                         </div>
-                        <div className="row">
+                        <div className="row" style={{ marginTop: '50px' }}>
                             <div className="col-lg-4">
-                                <div className="card" style={{ width: '22rem' }}>
-                                    <img className="card-img-top" src={"./assets/images/loading.gif"} alt="Main Featued Image" />
-                                    <div className="card-body">
-                                        <div className="metadata">
-                                            <div className="post-date">
-                                                <i class="fa fa-calendar" aria-hidden="true"></i>
-                                                <span>20 MAR 2022</span>
-                                            </div>
-                                            <div className="author">
-                                                <i class="fa fa-user" aria-hidden="true"></i>
-                                                <span>Nikeshh</span>
-                                            </div>
-                                            <div className="post-read-time">
-                                                <i class="fa fa-eye" aria-hidden="true"></i>
-                                                <span>5 min read</span>
-                                            </div>
-                                            <div className="post-likes">
-                                                <i class="fa fa-eye" aria-hidden="true"></i>
-                                                <span>5.2K Likes</span>
-                                            </div>
-                                        </div>
-                                        <div className="learn-tags">
-                                            <ul>
-                                                <li><i className="fa fa-star"></i>All</li>
-                                                <li>Web</li>
-                                            </ul>
-                                        </div>
-                                        <h4>Data Structures and Algorithms</h4>
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur 
-                                            adipiscing elit. Etiam at ultricies dui…
-                                        </p>
-                                        <p>View</p>
-                                    </div>
-                                </div>
+                                <LearnHubCard />
                             </div>
                             <div className="col-lg-4">
-                                <div className="card" style={{ width: '22rem' }}>
-                                    <img className="card-img-top" src={"./assets/images/loading.gif"} alt="Main Featued Image" />
-                                    <div className="card-body">
-                                        <div className="metadata">
-                                            <div className="post-date">
-                                                <i class="fa fa-calendar" aria-hidden="true"></i>
-                                                <span>20 MAR 2022</span>
-                                            </div>
-                                            <div className="author">
-                                                <i class="fa fa-user" aria-hidden="true"></i>
-                                                <span>Nikeshh</span>
-                                            </div>
-                                            <div className="post-read-time">
-                                                <i class="fa fa-eye" aria-hidden="true"></i>
-                                                <span>5 min read</span>
-                                            </div>
-                                            <div className="post-likes">
-                                                <i class="fa fa-eye" aria-hidden="true"></i>
-                                                <span>5.2K Likes</span>
-                                            </div>
-                                        </div>
-                                        <div className="learn-tags">
-                                            <ul>
-                                                <li><i className="fa fa-star"></i>All</li>
-                                                <li>Web</li>
-                                            </ul>
-                                        </div>
-                                        <h4>Data Structures and Algorithms</h4>
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur 
-                                            adipiscing elit. Etiam at ultricies dui…
-                                        </p>
-                                        <p>View</p>
-                                    </div>
-                                </div>
+                                <LearnHubCard />
                             </div>
                             <div className="col-lg-4">
-                                <div className="card" style={{ width: '22rem' }}>
-                                    <img className="card-img-top" src={"./assets/images/loading.gif"} alt="Main Featued Image" />
-                                    <div className="card-body">
-                                        <div className="metadata">
-                                            <div className="post-date">
-                                                <i class="fa fa-calendar" aria-hidden="true"></i>
-                                                <span>20 MAR 2022</span>
-                                            </div>
-                                            <div className="author">
-                                                <i class="fa fa-user" aria-hidden="true"></i>
-                                                <span>Nikeshh</span>
-                                            </div>
-                                            <div className="post-read-time">
-                                                <i class="fa fa-eye" aria-hidden="true"></i>
-                                                <span>5 min read</span>
-                                            </div>
-                                            <div className="post-likes">
-                                                <i class="fa fa-eye" aria-hidden="true"></i>
-                                                <span>5.2K Likes</span>
-                                            </div>
-                                        </div>
-                                        <div className="learn-tags">
-                                            <ul>
-                                                <li><i className="fa fa-star"></i>All</li>
-                                                <li>Web</li>
-                                            </ul>
-                                        </div>
-                                        <h4>Data Structures and Algorithms</h4>
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur 
-                                            adipiscing elit. Etiam at ultricies dui…
-                                        </p>
-                                        <p>View</p>
-                                    </div>
-                                </div>
+                                <LearnHubCard />
                             </div>
                         </div>
                     </div>

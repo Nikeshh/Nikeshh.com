@@ -14,15 +14,30 @@
     padding: 100px;
 }
 
-.learnhub-content-header > ul {
+.learnhub-content .learnhub-content-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.learnhub-content .learnhub-content-header > ul {
     list-style: none;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.learnhub-content-header ul > li {
-    padding: 5px;
+.learnhub-content .learnhub-content-header > ul > li {
+    margin-right: 20px;
+    text-transform: uppercase;
+    background-color: #FFF1DA;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #D66464;
 }
 
-.learn-content-subheader .underline {
+.learnhub-content .single-learn .learn-title-with-tags {
+    display: flex;
+    justify-content: space-between;
     border-bottom: 1px solid #000;
+    margin-bottom: 30px;
 }
