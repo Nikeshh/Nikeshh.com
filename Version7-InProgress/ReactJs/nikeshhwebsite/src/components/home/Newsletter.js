@@ -9,8 +9,8 @@ const Newsletter = () => {
                     <span className="title">Newsletter</span>
                     <h3 className="subtitle">I WRITE ON TOPICS LIKE TECHNOLOGY, CODING, PRODUCT DEVELOPMENT ETC</h3>
                 </div>
-                <div className="col-md-4">
-                    <button className="btn btn-warning"><i className="fa-solid fa-download"></i><span>DOWNLOAD NEWSLETTERS</span></button>
+                <div className="col-md-4" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
+                    <button className="btn btn-warning"><span>DOWNLOAD NEWSLETTERS</span></button>
                 </div>
             </div>
             <div className="row">
