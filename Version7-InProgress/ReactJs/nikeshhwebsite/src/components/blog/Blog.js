@@ -50,7 +50,7 @@ const Blog = () => {
                         <div className="col-lg-4">
                             <div className="main-feature">
                                 <div className="card" style={{ width: '22rem' }}>
-                                    <img className="card-img-top" src={"./assets/images/featured.png"} alt="Main Featued Image" />
+                                    <img className="card-img-top" src={"./assets/images/loading.gif"} alt="Main Featued Image" />
                                     <div className="card-body">
                                         <div className="metadata">
                                             <div className="post-date">
@@ -79,7 +79,7 @@ const Blog = () => {
                         <div className="col-lg-8">
                             <div className="row sub-feature">
                                 <div className="col-lg-4">
-                                    <img src={"./assets/images/featured.png"} alt="Sub Featued Image" width="300px" />
+                                    <img src={"./assets/images/loading.gif"} alt="Sub Featued Image" width="300px" />
                                 </div>
                                 <div className="col-lg-8">
                                     <h3>How a Limitless Internet Binds Us</h3>
@@ -95,7 +95,7 @@ const Blog = () => {
                             </div>
                             <div className="row sub-feature">
                                 <div className="col-lg-4">
-                                    <img src={"./assets/images/featured.png"} alt="Sub Featued Image" width="300px" />
+                                    <img src={"./assets/images/loading.gif"} alt="Sub Featued Image" width="300px" />
                                 </div>
                                 <div className="col-lg-8">
                                     <h3>How a Limitless Internet Binds Us</h3>
@@ -115,7 +115,7 @@ const Blog = () => {
                         <div className="col-lg-4">
                             <div className="main-feature">
                                 <div className="card" style={{ width: '22rem' }}>
-                                    <img className="card-img-top" src={"./assets/images/featured.png"} alt="Main Featued Image" />
+                                    <img className="card-img-top" src={"./assets/images/loading.gif"} alt="Main Featued Image" />
                                     <div className="card-body">
                                         <div className="metadata">
                                             <div className="post-date">
@@ -144,7 +144,7 @@ const Blog = () => {
                         <div className="col-lg-4">
                             <div className="main-feature">
                                 <div className="card" style={{ width: '22rem' }}>
-                                    <img className="card-img-top" src={"./assets/images/featured.png"} alt="Main Featued Image" />
+                                    <img className="card-img-top" src={"./assets/images/loading.gif"} alt="Main Featued Image" />
                                     <div className="card-body">
                                         <div className="metadata">
                                             <div className="post-date">
@@ -173,7 +173,7 @@ const Blog = () => {
                         <div className="col-lg-4">
                             <div className="main-feature">
                                 <div className="card" style={{ width: '22rem' }}>
-                                    <img className="card-img-top" src={"./assets/images/featured.png"} alt="Main Featued Image" />
+                                    <img className="card-img-top" src={"./assets/images/loading.gif"} alt="Main Featued Image" />
                                     <div className="card-body">
                                         <div className="metadata">
                                             <div className="post-date">
@@ -207,7 +207,7 @@ const Blog = () => {
                             <div className="latest-posts-title"><h3>Latest Posts</h3></div>
                             <div className="row">
                                 <div className="card" style={{ width: '22rem' }}>
-                                    <img className="card-img-top" src={"./assets/images/featured.png"} alt="Main Featued Image" />
+                                    <img className="card-img-top" src={"./assets/images/loading.gif"} alt="Main Featued Image" />
                                     <div className="card-body">
                                         <div className="metadata">
                                             <div className="post-date">
@@ -232,7 +232,7 @@ const Blog = () => {
                                     </div>
                                 </div>
                                 <div className="card" style={{ width: '22rem' }}>
-                                    <img className="card-img-top" src={"./assets/images/featured.png"} alt="Main Featued Image" />
+                                    <img className="card-img-top" src={"./assets/images/loading.gif"} alt="Main Featued Image" />
                                     <div className="card-body">
                                         <div className="metadata">
                                             <div className="post-date">
@@ -259,7 +259,7 @@ const Blog = () => {
                             </div>
                             <div className="row">
                                 <div className="card" style={{ width: '22rem' }}>
-                                    <img className="card-img-top" src={"./assets/images/featured.png"} alt="Main Featued Image" />
+                                    <img className="card-img-top" src={"./assets/images/loading.gif"} alt="Main Featued Image" />
                                     <div className="card-body">
                                         <div className="metadata">
                                             <div className="post-date">
@@ -284,7 +284,7 @@ const Blog = () => {
                                     </div>
                                 </div>
                                 <div className="card" style={{ width: '22rem' }}>
-                                    <img className="card-img-top" src={"./assets/images/featured.png"} alt="Main Featued Image" />
+                                    <img className="card-img-top" src={"./assets/images/loading.gif"} alt="Main Featued Image" />
                                     <div className="card-body">
                                         <div className="metadata">
                                             <div className="post-date">
@@ -378,7 +378,7 @@ const Blog = () => {
                     <div className="row">
                         <div className="col-lg-6">
                             <div className="card" style={{ width: '22rem' }}>
-                                <img className="card-img-top" src={"./assets/images/featured.png"} alt="Main Featued Image" />
+                                <img className="card-img-top" src={"./assets/images/loading.gif"} alt="Main Featued Image" />
                                 <div className="card-body">
                                     <div className="metadata">
                                         <div className="post-date">
@@ -405,63 +405,7 @@ const Blog = () => {
                         </div>
                         <div className="col-lg-6">
                             <div className="card" style={{ width: '22rem' }}>
-                                <img className="card-img-top" src={"./assets/images/featured.png"} alt="Main Featued Image" />
-                                <div className="card-body">
-                                    <div className="metadata">
-                                        <div className="post-date">
-                                            <i class="fa fa-calendar" aria-hidden="true"></i>
-                                            <span>20 MAR 2022</span>
-                                        </div>
-                                        <div className="author">
-                                            <i class="fa fa-user" aria-hidden="true"></i>
-                                            <span>Nikeshh</span>
-                                        </div>
-                                        <div className="post-read-time">
-                                            <i class="fa fa-eye" aria-hidden="true"></i>
-                                            <span>5 min read</span>
-                                        </div>
-                                    </div>
-                                    <h4>Google Just Showed Us the Future Of Gaming</h4>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur 
-                                        adipiscing elit. Etiam at ultricies dui…
-                                    </p>
-                                    <p>Read More</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="row">
-                        <div className="col-lg-6">
-                            <div className="card" style={{ width: '22rem' }}>
-                                <img className="card-img-top" src={"./assets/images/featured.png"} alt="Main Featued Image" />
-                                <div className="card-body">
-                                    <div className="metadata">
-                                        <div className="post-date">
-                                            <i class="fa fa-calendar" aria-hidden="true"></i>
-                                            <span>20 MAR 2022</span>
-                                        </div>
-                                        <div className="author">
-                                            <i class="fa fa-user" aria-hidden="true"></i>
-                                            <span>Nikeshh</span>
-                                        </div>
-                                        <div className="post-read-time">
-                                            <i class="fa fa-eye" aria-hidden="true"></i>
-                                            <span>5 min read</span>
-                                        </div>
-                                    </div>
-                                    <h4>Google Just Showed Us the Future Of Gaming</h4>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur 
-                                        adipiscing elit. Etiam at ultricies dui…
-                                    </p>
-                                    <p>Read More</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-6">
-                            <div className="card" style={{ width: '22rem' }}>
-                                <img className="card-img-top" src={"./assets/images/featured.png"} alt="Main Featued Image" />
+                                <img className="card-img-top" src={"./assets/images/loading.gif"} alt="Main Featued Image" />
                                 <div className="card-body">
                                     <div className="metadata">
                                         <div className="post-date">
@@ -490,7 +434,7 @@ const Blog = () => {
                     <div className="row">
                         <div className="col-lg-6">
                             <div className="card" style={{ width: '22rem' }}>
-                                <img className="card-img-top" src={"./assets/images/featured.png"} alt="Main Featued Image" />
+                                <img className="card-img-top" src={"./assets/images/loading.gif"} alt="Main Featued Image" />
                                 <div className="card-body">
                                     <div className="metadata">
                                         <div className="post-date">
@@ -517,7 +461,63 @@ const Blog = () => {
                         </div>
                         <div className="col-lg-6">
                             <div className="card" style={{ width: '22rem' }}>
-                                <img className="card-img-top" src={"./assets/images/featured.png"} alt="Main Featued Image" />
+                                <img className="card-img-top" src={"./assets/images/loading.gif"} alt="Main Featued Image" />
+                                <div className="card-body">
+                                    <div className="metadata">
+                                        <div className="post-date">
+                                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                                            <span>20 MAR 2022</span>
+                                        </div>
+                                        <div className="author">
+                                            <i class="fa fa-user" aria-hidden="true"></i>
+                                            <span>Nikeshh</span>
+                                        </div>
+                                        <div className="post-read-time">
+                                            <i class="fa fa-eye" aria-hidden="true"></i>
+                                            <span>5 min read</span>
+                                        </div>
+                                    </div>
+                                    <h4>Google Just Showed Us the Future Of Gaming</h4>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur 
+                                        adipiscing elit. Etiam at ultricies dui…
+                                    </p>
+                                    <p>Read More</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="col-lg-6">
+                            <div className="card" style={{ width: '22rem' }}>
+                                <img className="card-img-top" src={"./assets/images/loading.gif"} alt="Main Featued Image" />
+                                <div className="card-body">
+                                    <div className="metadata">
+                                        <div className="post-date">
+                                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                                            <span>20 MAR 2022</span>
+                                        </div>
+                                        <div className="author">
+                                            <i class="fa fa-user" aria-hidden="true"></i>
+                                            <span>Nikeshh</span>
+                                        </div>
+                                        <div className="post-read-time">
+                                            <i class="fa fa-eye" aria-hidden="true"></i>
+                                            <span>5 min read</span>
+                                        </div>
+                                    </div>
+                                    <h4>Google Just Showed Us the Future Of Gaming</h4>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur 
+                                        adipiscing elit. Etiam at ultricies dui…
+                                    </p>
+                                    <p>Read More</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-lg-6">
+                            <div className="card" style={{ width: '22rem' }}>
+                                <img className="card-img-top" src={"./assets/images/loading.gif"} alt="Main Featued Image" />
                                 <div className="card-body">
                                     <div className="metadata">
                                         <div className="post-date">
