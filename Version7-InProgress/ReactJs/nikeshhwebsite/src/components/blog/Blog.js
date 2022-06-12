@@ -1,30 +1,31 @@
 import React from "react";
 import "./blog.css";
+import BlogCard from "./BlogCard";
 
 const Blog = () => {
     return (
         <div className="blog">
             <div className="blog-header">
-                <div className="col-md-12">
-                    <div className="row">
-                        <div className="col-lg-7">
-                            <h1>Welcome To Nikeshh Blog,</h1>
-                            <h1>A Tech And Lifestyle Blog</h1>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                                Etiam at ultricies dui, eu mattis nisl. Etiam placerat orci 
-                                eu tortor euismod, quis vehicula velit dictum.
-                            </p>
-                            <button>Learn More</button>
-                            <button>Create a account</button>
+                <div className="row">
+                    <div className="col-lg-7" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+                        <h1 style={{ fontFamily: "'Dancing Script', cursive", fontWeight: '700' }}>Welcome To Nikeshh Blog</h1>
+                        <h1 style={{ fontWeight: '700' }}>A Tech And Lifestyle Blog</h1>
+                        <p style={{ fontFamily: "'Montserrat', sans-serif" }}>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Etiam at ultricies dui, eu mattis nisl. Etiam placerat orci 
+                            eu tortor euismod, quis vehicula velit dictum.
+                        </p>
+                        <div>
+                            <button className="btn btn-warning" style={{ marginRight: '10px' }}>Learn More</button>
+                            <button className="btn btn-warning">Create a account</button>
                         </div>
-                        <div className="col-lg-5">
-                            <img src={"./assets/images/loading.gif"} alt="Landing Image" width="500px" />
-                        </div>
+                    </div>
+                    <div className="col-lg-5" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+                        <img src={"./assets/images/loading.gif"} alt="Landing Image" width="500px" />
                     </div>
                 </div>
             </div>
-            <div className="blog-content">
+            <div className="blog-content" style={{ marginTop: '100px' }}>
                 <div className="blog-content-header">
                     <ul>
                         <li>Home</li>
@@ -33,48 +34,26 @@ const Blog = () => {
                         <li>Typography</li>
                         <li>Freelance Business</li>
                         <li>...</li>
-                        <li>Login</li>
-                        <li>Register</li>
                     </ul>
-                    <button>Search<i className="fa fa-search"></i></button>
+                    <div style={{ marginRight: '10px' }}>
+                        <button className="btn btn-warning" style={{ marginRight: '10px' }}>Login</button>
+                        <button className="btn btn-warning" style={{ marginRight: '10px' }}>Register</button>
+                        <button className="btn btn-warning"><input type="text" placeholder="Search..." style={{ padding: '5px', borderRadius: '5px', borderStyle: 'dashed' }} /><i className="fa fa-search" style={{ marginLeft: '10px' }}></i></button>
+                    </div>
                 </div>
-                <div className="blog-content-featured">
+                <div className="blog-content-featured" style={{ marginTop: '50px' }}>
                     <div className="blog-content-featured-header">
-                        <h3 className="left">Featured For Members</h3>
-                        <div className="right">
-                            <p className="right">UI/UX DESIGN</p>
-                            <p className="right">WEB DEVELOPMENT</p>
-                            <p className="right">TYPOGRAPHY</p>
+                        <h3 className="left" style={{ fontFamily: "'Montserrat', sans-serif", fontWeight: '700' }}>Featured For Members</h3>
+                        <div style={{ display: 'flex' }}>
+                            <p style={{ marginRight: '10px', fontWeight: '700' }}>UI/UX DESIGN</p>
+                            <p style={{ marginRight: '10px', fontWeight: '700' }}>WEB DEVELOPMENT</p>
+                            <p style={{ marginRight: '10px', fontWeight: '700' }}>TYPOGRAPHY</p>
                         </div>
                     </div>
                     <div className="row">
                         <div className="col-lg-4">
                             <div className="main-feature">
-                                <div className="card" style={{ width: '22rem' }}>
-                                    <img className="card-img-top" src={"./assets/images/loading.gif"} alt="Main Featued Image" />
-                                    <div className="card-body">
-                                        <div className="metadata">
-                                            <div className="post-date">
-                                                <i class="fa fa-calendar" aria-hidden="true"></i>
-                                                <span>20 MAR 2022</span>
-                                            </div>
-                                            <div className="author">
-                                                <i class="fa fa-user" aria-hidden="true"></i>
-                                                <span>Nikeshh</span>
-                                            </div>
-                                            <div className="post-read-time">
-                                                <i class="fa fa-eye" aria-hidden="true"></i>
-                                                <span>5 min read</span>
-                                            </div>
-                                        </div>
-                                        <h4>Google Just Showed Us the Future Of Gaming</h4>
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur 
-                                            adipiscing elit. Etiam at ultricies dui…
-                                        </p>
-                                        <p>Read More</p>
-                                    </div>
-                                </div>
+                                <BlogCard />
                             </div>
                         </div>
                         <div className="col-lg-8">
@@ -115,89 +94,17 @@ const Blog = () => {
                     <div className="row" style={{ marginTop: '20px' }}>
                         <div className="col-lg-4">
                             <div className="main-feature">
-                                <div className="card" style={{ width: '22rem' }}>
-                                    <img className="card-img-top" src={"./assets/images/loading.gif"} alt="Main Featued Image" />
-                                    <div className="card-body">
-                                        <div className="metadata">
-                                            <div className="post-date">
-                                                <i class="fa fa-calendar" aria-hidden="true"></i>
-                                                <span>20 MAR 2022</span>
-                                            </div>
-                                            <div className="author">
-                                                <i class="fa fa-user" aria-hidden="true"></i>
-                                                <span>Nikeshh</span>
-                                            </div>
-                                            <div className="post-read-time">
-                                                <i class="fa fa-eye" aria-hidden="true"></i>
-                                                <span>5 min read</span>
-                                            </div>
-                                        </div>
-                                        <h4>Google Just Showed Us the Future Of Gaming</h4>
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur 
-                                            adipiscing elit. Etiam at ultricies dui…
-                                        </p>
-                                        <p>Read More</p>
-                                    </div>
-                                </div>
+                                <BlogCard />
                             </div>
                         </div>
                         <div className="col-lg-4">
                             <div className="main-feature">
-                                <div className="card" style={{ width: '22rem' }}>
-                                    <img className="card-img-top" src={"./assets/images/loading.gif"} alt="Main Featued Image" />
-                                    <div className="card-body">
-                                        <div className="metadata">
-                                            <div className="post-date">
-                                                <i class="fa fa-calendar" aria-hidden="true"></i>
-                                                <span>20 MAR 2022</span>
-                                            </div>
-                                            <div className="author">
-                                                <i class="fa fa-user" aria-hidden="true"></i>
-                                                <span>Nikeshh</span>
-                                            </div>
-                                            <div className="post-read-time">
-                                                <i class="fa fa-eye" aria-hidden="true"></i>
-                                                <span>5 min read</span>
-                                            </div>
-                                        </div>
-                                        <h4>Google Just Showed Us the Future Of Gaming</h4>
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur 
-                                            adipiscing elit. Etiam at ultricies dui…
-                                        </p>
-                                        <p>Read More</p>
-                                    </div>
-                                </div>
+                                <BlogCard />
                             </div>
                         </div>
                         <div className="col-lg-4">
                             <div className="main-feature">
-                                <div className="card" style={{ width: '22rem' }}>
-                                    <img className="card-img-top" src={"./assets/images/loading.gif"} alt="Main Featued Image" />
-                                    <div className="card-body">
-                                        <div className="metadata">
-                                            <div className="post-date">
-                                                <i class="fa fa-calendar" aria-hidden="true"></i>
-                                                <span>20 MAR 2022</span>
-                                            </div>
-                                            <div className="author">
-                                                <i class="fa fa-user" aria-hidden="true"></i>
-                                                <span>Nikeshh</span>
-                                            </div>
-                                            <div className="post-read-time">
-                                                <i class="fa fa-eye" aria-hidden="true"></i>
-                                                <span>5 min read</span>
-                                            </div>
-                                        </div>
-                                        <h4>Google Just Showed Us the Future Of Gaming</h4>
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur 
-                                            adipiscing elit. Etiam at ultricies dui…
-                                        </p>
-                                        <p>Read More</p>
-                                    </div>
-                                </div>
+                                <BlogCard />
                             </div>
                         </div>
                     </div>
@@ -207,108 +114,12 @@ const Blog = () => {
                         <div className="latest-posts col-lg-8">
                             <div className="latest-posts-title"><h3>Latest Posts</h3></div>
                             <div className="row">
-                                <div className="card" style={{ width: '22rem' }}>
-                                    <img className="card-img-top" src={"./assets/images/loading.gif"} alt="Main Featued Image" />
-                                    <div className="card-body">
-                                        <div className="metadata">
-                                            <div className="post-date">
-                                                <i class="fa fa-calendar" aria-hidden="true"></i>
-                                                <span>20 MAR 2022</span>
-                                            </div>
-                                            <div className="author">
-                                                <i class="fa fa-user" aria-hidden="true"></i>
-                                                <span>Nikeshh</span>
-                                            </div>
-                                            <div className="post-read-time">
-                                                <i class="fa fa-eye" aria-hidden="true"></i>
-                                                <span>5 min read</span>
-                                            </div>
-                                        </div>
-                                        <h4>Google Just Showed Us the Future Of Gaming</h4>
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur 
-                                            adipiscing elit. Etiam at ultricies dui…
-                                        </p>
-                                        <p>Read More</p>
-                                    </div>
-                                </div>
-                                <div className="card" style={{ width: '22rem' }}>
-                                    <img className="card-img-top" src={"./assets/images/loading.gif"} alt="Main Featued Image" />
-                                    <div className="card-body">
-                                        <div className="metadata">
-                                            <div className="post-date">
-                                                <i class="fa fa-calendar" aria-hidden="true"></i>
-                                                <span>20 MAR 2022</span>
-                                            </div>
-                                            <div className="author">
-                                                <i class="fa fa-user" aria-hidden="true"></i>
-                                                <span>Nikeshh</span>
-                                            </div>
-                                            <div className="post-read-time">
-                                                <i class="fa fa-eye" aria-hidden="true"></i>
-                                                <span>5 min read</span>
-                                            </div>
-                                        </div>
-                                        <h4>Google Just Showed Us the Future Of Gaming</h4>
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur 
-                                            adipiscing elit. Etiam at ultricies dui…
-                                        </p>
-                                        <p>Read More</p>
-                                    </div>
-                                </div>
+                                <BlogCard />
+                                <BlogCard />
                             </div>
                             <div className="row">
-                                <div className="card" style={{ width: '22rem' }}>
-                                    <img className="card-img-top" src={"./assets/images/loading.gif"} alt="Main Featued Image" />
-                                    <div className="card-body">
-                                        <div className="metadata">
-                                            <div className="post-date">
-                                                <i class="fa fa-calendar" aria-hidden="true"></i>
-                                                <span>20 MAR 2022</span>
-                                            </div>
-                                            <div className="author">
-                                                <i class="fa fa-user" aria-hidden="true"></i>
-                                                <span>Nikeshh</span>
-                                            </div>
-                                            <div className="post-read-time">
-                                                <i class="fa fa-eye" aria-hidden="true"></i>
-                                                <span>5 min read</span>
-                                            </div>
-                                        </div>
-                                        <h4>Google Just Showed Us the Future Of Gaming</h4>
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur 
-                                            adipiscing elit. Etiam at ultricies dui…
-                                        </p>
-                                        <p>Read More</p>
-                                    </div>
-                                </div>
-                                <div className="card" style={{ width: '22rem' }}>
-                                    <img className="card-img-top" src={"./assets/images/loading.gif"} alt="Main Featued Image" />
-                                    <div className="card-body">
-                                        <div className="metadata">
-                                            <div className="post-date">
-                                                <i class="fa fa-calendar" aria-hidden="true"></i>
-                                                <span>20 MAR 2022</span>
-                                            </div>
-                                            <div className="author">
-                                                <i class="fa fa-user" aria-hidden="true"></i>
-                                                <span>Nikeshh</span>
-                                            </div>
-                                            <div className="post-read-time">
-                                                <i class="fa fa-eye" aria-hidden="true"></i>
-                                                <span>5 min read</span>
-                                            </div>
-                                        </div>
-                                        <h4>Google Just Showed Us the Future Of Gaming</h4>
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur 
-                                            adipiscing elit. Etiam at ultricies dui…
-                                        </p>
-                                        <p>Read More</p>
-                                    </div>
-                                </div>
+                                <BlogCard />
+                                <BlogCard />
                             </div>
                             <div>
                                 <button>Load More</button>
@@ -378,170 +189,26 @@ const Blog = () => {
                     </div>
                     <div className="row">
                         <div className="col-lg-6">
-                            <div className="card" style={{ width: '22rem' }}>
-                                <img className="card-img-top" src={"./assets/images/loading.gif"} alt="Main Featued Image" />
-                                <div className="card-body">
-                                    <div className="metadata">
-                                        <div className="post-date">
-                                            <i class="fa fa-calendar" aria-hidden="true"></i>
-                                            <span>20 MAR 2022</span>
-                                        </div>
-                                        <div className="author">
-                                            <i class="fa fa-user" aria-hidden="true"></i>
-                                            <span>Nikeshh</span>
-                                        </div>
-                                        <div className="post-read-time">
-                                            <i class="fa fa-eye" aria-hidden="true"></i>
-                                            <span>5 min read</span>
-                                        </div>
-                                    </div>
-                                    <h4>Google Just Showed Us the Future Of Gaming</h4>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur 
-                                        adipiscing elit. Etiam at ultricies dui…
-                                    </p>
-                                    <p>Read More</p>
-                                </div>
-                            </div>
+                            <BlogCard />
                         </div>
                         <div className="col-lg-6">
-                            <div className="card" style={{ width: '22rem' }}>
-                                <img className="card-img-top" src={"./assets/images/loading.gif"} alt="Main Featued Image" />
-                                <div className="card-body">
-                                    <div className="metadata">
-                                        <div className="post-date">
-                                            <i class="fa fa-calendar" aria-hidden="true"></i>
-                                            <span>20 MAR 2022</span>
-                                        </div>
-                                        <div className="author">
-                                            <i class="fa fa-user" aria-hidden="true"></i>
-                                            <span>Nikeshh</span>
-                                        </div>
-                                        <div className="post-read-time">
-                                            <i class="fa fa-eye" aria-hidden="true"></i>
-                                            <span>5 min read</span>
-                                        </div>
-                                    </div>
-                                    <h4>Google Just Showed Us the Future Of Gaming</h4>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur 
-                                        adipiscing elit. Etiam at ultricies dui…
-                                    </p>
-                                    <p>Read More</p>
-                                </div>
-                            </div>
+                            <BlogCard />
                         </div>
                     </div>
                     <div className="row">
                         <div className="col-lg-6">
-                            <div className="card" style={{ width: '22rem' }}>
-                                <img className="card-img-top" src={"./assets/images/loading.gif"} alt="Main Featued Image" />
-                                <div className="card-body">
-                                    <div className="metadata">
-                                        <div className="post-date">
-                                            <i class="fa fa-calendar" aria-hidden="true"></i>
-                                            <span>20 MAR 2022</span>
-                                        </div>
-                                        <div className="author">
-                                            <i class="fa fa-user" aria-hidden="true"></i>
-                                            <span>Nikeshh</span>
-                                        </div>
-                                        <div className="post-read-time">
-                                            <i class="fa fa-eye" aria-hidden="true"></i>
-                                            <span>5 min read</span>
-                                        </div>
-                                    </div>
-                                    <h4>Google Just Showed Us the Future Of Gaming</h4>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur 
-                                        adipiscing elit. Etiam at ultricies dui…
-                                    </p>
-                                    <p>Read More</p>
-                                </div>
-                            </div>
+                            <BlogCard />
                         </div>
                         <div className="col-lg-6">
-                            <div className="card" style={{ width: '22rem' }}>
-                                <img className="card-img-top" src={"./assets/images/loading.gif"} alt="Main Featued Image" />
-                                <div className="card-body">
-                                    <div className="metadata">
-                                        <div className="post-date">
-                                            <i class="fa fa-calendar" aria-hidden="true"></i>
-                                            <span>20 MAR 2022</span>
-                                        </div>
-                                        <div className="author">
-                                            <i class="fa fa-user" aria-hidden="true"></i>
-                                            <span>Nikeshh</span>
-                                        </div>
-                                        <div className="post-read-time">
-                                            <i class="fa fa-eye" aria-hidden="true"></i>
-                                            <span>5 min read</span>
-                                        </div>
-                                    </div>
-                                    <h4>Google Just Showed Us the Future Of Gaming</h4>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur 
-                                        adipiscing elit. Etiam at ultricies dui…
-                                    </p>
-                                    <p>Read More</p>
-                                </div>
-                            </div>
+                            <BlogCard />
                         </div>
                     </div>
                     <div className="row">
                         <div className="col-lg-6">
-                            <div className="card" style={{ width: '22rem' }}>
-                                <img className="card-img-top" src={"./assets/images/loading.gif"} alt="Main Featued Image" />
-                                <div className="card-body">
-                                    <div className="metadata">
-                                        <div className="post-date">
-                                            <i class="fa fa-calendar" aria-hidden="true"></i>
-                                            <span>20 MAR 2022</span>
-                                        </div>
-                                        <div className="author">
-                                            <i class="fa fa-user" aria-hidden="true"></i>
-                                            <span>Nikeshh</span>
-                                        </div>
-                                        <div className="post-read-time">
-                                            <i class="fa fa-eye" aria-hidden="true"></i>
-                                            <span>5 min read</span>
-                                        </div>
-                                    </div>
-                                    <h4>Google Just Showed Us the Future Of Gaming</h4>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur 
-                                        adipiscing elit. Etiam at ultricies dui…
-                                    </p>
-                                    <p>Read More</p>
-                                </div>
-                            </div>
+                            <BlogCard />
                         </div>
                         <div className="col-lg-6">
-                            <div className="card" style={{ width: '22rem' }}>
-                                <img className="card-img-top" src={"./assets/images/loading.gif"} alt="Main Featued Image" />
-                                <div className="card-body">
-                                    <div className="metadata">
-                                        <div className="post-date">
-                                            <i class="fa fa-calendar" aria-hidden="true"></i>
-                                            <span>20 MAR 2022</span>
-                                        </div>
-                                        <div className="author">
-                                            <i class="fa fa-user" aria-hidden="true"></i>
-                                            <span>Nikeshh</span>
-                                        </div>
-                                        <div className="post-read-time">
-                                            <i class="fa fa-eye" aria-hidden="true"></i>
-                                            <span>5 min read</span>
-                                        </div>
-                                    </div>
-                                    <h4>Google Just Showed Us the Future Of Gaming</h4>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur 
-                                        adipiscing elit. Etiam at ultricies dui…
-                                    </p>
-                                    <p>Read More</p>
-                                </div>
-                            </div>
+                            <BlogCard />
                         </div>
                     </div>
                     <div>

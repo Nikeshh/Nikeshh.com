@@ -28,7 +28,7 @@ const Certifications = () => {
                     </div>
                     <div className="col-lg-6">
                         <h3 style={{ fontFamily: "'Dancing Script', cursive", fontWeight: '700' }}>Certificate Title</h3>
-                        <p style={{ fontFamily: "'Montserrat', sans-serif" , marginTop: '30px'}}>
+                        <p style={{ fontFamily: "'Montserrat', sans-serif" , marginTop: '30px' }}>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                             Etiam at ultricies dui, eu mattis nisl. Etiam placerat orci 
                             eu tortor euismod, quis vehicula velit dictum. 
