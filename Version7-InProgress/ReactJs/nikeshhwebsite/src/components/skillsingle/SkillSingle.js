@@ -2,6 +2,7 @@ import React from "react";
 import './skillsingle.css';
 import "../home/projectsandworks.css";
 import Projects from "../home/projectsandworks/Projects";
+import BlogCard from "../home/blog/BlogCard";
 
 const SkillSingle = () => {
     return (
@@ -42,6 +43,12 @@ const SkillSingle = () => {
             </div>
             <div style={{ textAlign: 'center', marginTop: '100px' }}>
                 <h1 style={{ fontFamily: "'Dancing Script', cursive", fontWeight: '700' }}>Read more about web development here</h1>
+            </div>
+            <div className="row" style={{ marginTop: '100px' }}>
+                <BlogCard />
+            </div>
+            <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'center', marginTop: '50px' }}>
+                <button className="btn btn-warning">View More</button>
             </div>
         </div>
     );
