@@ -46,6 +46,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <!-- Swiper -->
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css'>
+    <!-- Owl Carousel -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css'>
+    <!-- Animate -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css'>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -78,6 +83,40 @@
             clickable: true,
           }
         });
+      }
+    </script>
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- Owl Carousel -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js'></script>
+    <script>
+      window.onload = function loadOwlCarousel() {
+        if ($('.testimonial-carousel').length) {
+          $('.testimonial-carousel').owlCarousel({
+            animateOut: 'slideOutDown',
+            animateIn: 'zoomIn',
+            loop: true,
+            margin: 0,
+            nav: true,
+            smartSpeed: 300,
+            autoplay: 7000,
+            navText: [ '<span class="arrow-left"></span>', '<span class="arrow-right"></span>' ],
+            responsive: {
+              0:{
+                items:1
+              },
+              600:{
+                items:1
+              },
+              800:{
+                items:1
+              },
+              1024:{
+                items:1
+              }
+            }
+          });  		
+        }
       }
     </script>
   </body>
