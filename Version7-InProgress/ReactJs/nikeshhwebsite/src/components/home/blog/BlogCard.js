@@ -24,7 +24,7 @@ const BlogCard = () => {
                     }}
                     pagination={true}
                 >
-                    <div class="blog-slider__wrp swiper-wrapper">
+                    <div class="swiper-wrapper">
                         <div class="blog-slider__item swiper-slide">
                             <div class="blog-slider__img">
                                 <img src="https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1535759872/kuldar-kalvik-799168-unsplash.webp" alt="" />
