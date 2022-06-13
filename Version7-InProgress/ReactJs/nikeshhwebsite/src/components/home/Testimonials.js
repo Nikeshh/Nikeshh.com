@@ -6,15 +6,54 @@ const Testimonials = () => {
         <div className="testimonails">
             <span className="title">Testimonials</span>
             <h3 className="subtitle">See What Others Said About Me</h3>
-            <div className="testimonial-carousel owl-carousel owl-theme">
+            <div className="testimonial-carousel owl-carousel owl-theme" style={{ marginTop: '70px' }}>
                 <div className="testimonial-block">
-                    <h1>First Block</h1>
+                    <div className="inner-box">
+                        <div className="text">
+                            Why is this important? Because clients want to know the businesses they depend on for advice, are well managed in their own right.  Not only that but this event gives you the chance to give your back-office team
+                        </div>
+                        <div className="info-box">
+                            <div className="thumb">
+                                <img src="http://t.commonsupport.com/adro/images/resource/thumb-1.jpg" alt="" />
+                            </div>
+                            <h4 className="testimonial_author_name">Mahfuz Riad</h4>
+                            <span className="designation">
+                                Ui Designer & CEO
+                            </span>
+                        </div>
+                    </div>
                 </div>
                 <div className="testimonial-block">
-                    <h1>Second Block</h1>
+                    <div className="inner-box">
+                        <div className="text">
+                            Why is this important? Because clients want to know the businesses they depend on for advice, are well managed in their own right.  Not only that but this event gives you the chance to give your back-office team
+                        </div>
+                        <div className="info-box">
+                            <div className="thumb">
+                                <img src="http://t.commonsupport.com/adro/images/resource/thumb-1.jpg" alt="" />
+                            </div>
+                            <h4 className="testimonial_author_name">Mahfuz Riad</h4>
+                            <span className="designation">
+                                Ui Designer & CEO
+                            </span>
+                        </div>
+                    </div>
                 </div>
                 <div className="testimonial-block">
-                    <h1>Third Block</h1>
+                    <div className="inner-box">
+                        <div className="text">
+                            Why is this important? Because clients want to know the businesses they depend on for advice, are well managed in their own right.  Not only that but this event gives you the chance to give your back-office team
+                        </div>
+                        <div className="info-box">
+                            <div className="thumb">
+                                <img src="http://t.commonsupport.com/adro/images/resource/thumb-1.jpg" alt="" />
+                            </div>
+                            <h4 className="testimonial_author_name">Mahfuz Riad</h4>
+                            <span className="designation">
+                                Ui Designer & CEO
+                            </span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

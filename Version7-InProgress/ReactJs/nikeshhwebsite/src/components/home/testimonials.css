@@ -9,3 +9,31 @@
 .testimonails .subtitle {
     font-weight: 700;
 }
+
+.testimonial-carousel {
+    position: relative;
+    max-width: 1100px;
+    margin: 0 -50px;
+}
+
+.testimonial-block {
+    position: relative;
+    padding: 50px;
+}
+
+.testimonial-block .inner-box {
+    padding: 80px 105px;
+    background-color: #ffff;
+    box-shadow: 0 0 50px rgba(226, 222, 232, 0.75);
+}
+
+.testimonial-block .text {
+    position: relative;
+    display: block;
+    font-size: 18px;
+    line-height: 32px;
+    color: #282331;
+    font-weight: 400;
+    margin-bottom: 50px;
+    font-family: "Muli", sans-serif;
+}
