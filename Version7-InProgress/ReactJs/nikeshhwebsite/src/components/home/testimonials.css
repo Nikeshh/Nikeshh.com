@@ -37,3 +37,110 @@
     margin-bottom: 50px;
     font-family: "Muli", sans-serif;
 }
+
+.testimonial-block .info-box {
+    position: relative;
+    padding-left: 115px;
+    padding-top: 10px;
+}
+
+.testimonial-block .info-box .thumb {
+    height: 82px;
+    width: 82px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.testimonial-block .info-box .thumb img {
+    border: 6px solid #e5e6fa;
+    border-radius: 50%;
+    box-shadow: 0 45px 45px rgba(147, 147, 147, 0.35);
+    overflow: hidden;
+    display: block;
+    width: 100%;
+}
+
+.testimonial-block .info-box .testimonial_author_name {
+    position: relative;
+    display: block;
+    font-size: 21px;
+    line-height: 1.2em;
+    color: #382c4d;
+    font-weight: 700;
+    margin-bottom: 10px;
+    font-family: "Niramit", sans-serif;
+}
+
+.testimonial-block .info-box .designation {
+    position: relative;
+    display: block;
+    font-size: 16px;
+    line-height: 24px;
+    color: #8053f7;
+    font-weight: 400;
+    font-family: "Muli", sans-serif;
+}
+
+.testimonial-carousel .owl-nav {
+    position: absolute;
+    right: 75px;
+    bottom: 70px;
+}
+
+.testimonial-carousel .owl-next, .testimonial-carousel .owl-prev {
+    position: relative;
+    display: inline-block;
+    height: 75px;
+    width: 75px;
+    line-height: 75px;
+    text-align: center;
+    transition: all 300ms ease;
+}
+
+.testimonial-carousel .owl-next:hover, .testimonial-carousel .owl-prev:hover {
+    box-shadow: 0 24px 24px rgba(187, 187, 187, 0.75);
+}
+
+.arrow-left {
+    position: relative;
+    display: inline-block;
+    height: 9px;
+    width: 43px;
+    background-image: url(http://t.commonsupport.com/adro/images/icons/arrow-left-2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.arrow-right {
+    position: relative;
+    display: inline-block;
+    height: 9px;
+    width: 43px;
+    background-image: url(http://t.commonsupport.com/adro/images/icons/arrow-right-2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@media only screen and (max-width: 767px) {
+    .testimonial-block {
+        padding: 0;
+    }
+
+    .testimonial-block .inner-box {
+        box-shadow: none;
+        border: 2px solid #f1f1f1;
+    }
+
+    .testimonial-carousel .owl-nav {
+        position: relative;
+        left: 0;
+        bottom: 0;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .testimonial-carousel .owl-next, .testimonial-carousel .owl-prev {
+        border: 2px solid #f1f1f1;
+    }
+}
