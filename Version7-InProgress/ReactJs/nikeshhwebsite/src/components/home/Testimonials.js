@@ -6,6 +6,7 @@ const Testimonials = () => {
         <div className="testimonails">
             <span className="title">Testimonials</span>
             <h3 className="subtitle">See What Others Said About Me</h3>
+            <h3>Testimonial will come here</h3>
         </div>
     );
 }
