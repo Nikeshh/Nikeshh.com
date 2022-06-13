@@ -32,9 +32,9 @@ const HomeScreen = () => {
                 <SkillsAndServices />
                 <ProjectsAndWorks />
                 <NotesAndAction />
-                <Testimonials /> {/* https://codepen.io/shamim539/pen/mvwzdd */}
+                <Testimonials />
                 <Mentorship />
-                <Blog /> {/* https://codepen.io/JavaScriptJunkie/pen/WgRBxw */}
+                <Blog />
                 <Support />
                 <Newsletter />
                 <Contact />
