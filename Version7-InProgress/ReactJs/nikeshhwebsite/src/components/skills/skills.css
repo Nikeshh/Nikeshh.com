@@ -1,13 +1,3 @@
 .skills {
-    margin-left: 70px;
-    margin-top: 90px;
     position: relative;
-}
-
-.skills .title {
-    text-transform: uppercase;
-}
-
-.skills .subtitle {
-    font-weight: 700;
 }
