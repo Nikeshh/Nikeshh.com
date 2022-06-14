@@ -1,14 +1,15 @@
 import React from "react";
 import "./blogsingle.css";
+import NewsletterBox from "../home/newsletter/NewsletterBox";
 
 const BlogSingle = () => {
     return (
         <div className="blogsingle">
             <div className="blog_image" style={{ marginLeft: '300px', marginRight: '300px', marginBottom: '30px' }}>
                 <img src={"/assets/images/featured.png"} alt="Blog Image" style={{ width: '100%' }} />
-                <div className="blog_image_text">Palatial, palatable Portugal: a long weekend in Porto and the Douro</div>
+                <div className="blog_image_text" style={{ fontFamily: "'Dancing Script', cursive", fontWeight: '700', letterSpacing: '2px'  }}>Palatial, palatable Portugal: a long weekend in Porto and the Douro</div>
             </div>
-            <p>
+            <p style={{ fontFamily: "'Montserrat', sans-serif" }}>
                 Lorem Ipsum
                 “Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…”
                 “There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain…”
@@ -29,10 +30,10 @@ const BlogSingle = () => {
                 Where can I get some?
                 There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don’t look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn’t anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
             </p>
-            <div style={{ marginLeft: '300px', marginRight: '300px', marginBottom: '30px' }}>
+            <div style={{ marginLeft: '300px', marginRight: '300px', marginBottom: '50px', marginTop: '50px' }}>
                 <img src={"/assets/images/featured.png"} alt="Blog Image" style={{ width: '100%' }} />
             </div>
-            <p>
+            <p style={{ fontFamily: "'Montserrat', sans-serif" }}>
                 Lorem Ipsum
                 “Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…”
                 “There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain…”
@@ -53,27 +54,8 @@ const BlogSingle = () => {
                 Where can I get some?
                 There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don’t look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn’t anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
             </p>
-            <div className="newsletter">
-                <div className="row">
-                    <div className="col-lg-8">
-                        <p>NEWSLETTER</p>
-                        <h3>I Write On Topics Like Technology,<br></br>Coding, Product Development Etc</h3>
-                    </div>
-                    <div className="col-lg-4">
-                        <button>DOWNLOAD NEWSLETTERS</button>
-                    </div>
-                </div>
-                <div className="row">
-                    <div className="col-lg-4">
-                        <h3>Newsletter Signup</h3>
-                    </div>
-                    <div className="col-lg-8">
-                        <div>
-                            <input type="email" id="email" name="email" placeholder="Your email id"></input>
-                            <i className="fa fa-arrow-right"></i>
-                        </div>
-                    </div>
-                </div>
+            <div className="container">
+                <NewsletterBox />
             </div>
         </div>
     );
