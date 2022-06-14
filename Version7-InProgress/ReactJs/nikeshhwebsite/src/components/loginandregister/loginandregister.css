@@ -1,0 +1,35 @@
+.sign-in-form,
+.sign-up-form,
+.forgot-password-form {
+    display: none;
+}
+
+.sign-in-form.active,
+.sign-up-form.active,
+.forgot-password-form.active {
+    display: block;
+}
+
+.wrapper {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+    transition: all 0.3s ease-out;
+}
+
+.right {
+    background: radial-gradient(82.76% 57.9% at 72.85% 4.95%, var(--color-p) 0%, var(--color-dark) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-white);
+    padding: 3rem;
+}
