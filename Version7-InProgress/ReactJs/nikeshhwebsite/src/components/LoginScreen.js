@@ -7,7 +7,7 @@ const LoginScreen = () => {
             <div className="left">
                 <div className="sign-in-form active">
                     <h1>Sign in to Your Brand</h1>
-                    <div className="social-icons">
+                    <div className="social-buttons">
                         <a href="javascript:;" title="Sign up via Google"><img src={"/assets/images/google.svg"} alt="Google" /></a>
                         <a href="javascript:;" title="Sign up via Apple"><img src={"/assets/images/apple.svg"} alt="Apple" /></a>
                         <a href="javascript:;" title="Sign up via Facebook"><img src={"/assets/images/facebook.svg"} alt="Facebook" /></a>
@@ -44,7 +44,7 @@ const LoginScreen = () => {
                 </div>
                 <div className="sign-up-form">
                     <h1>Sign up to Your Brand</h1>
-                    <div className="social-icons">
+                    <div className="social-buttons">
                         <a href="javascript:;" title="Sign up via Google"><img src={"/assets/images/google.svg"} alt="Google" /></a>
                         <a href="javascript:;" title="Sign up via Apple"><img src={"/assets/images/apple.svg"} alt="Apple" /></a>
                         <a href="javascript:;" title="Sign up via Facebook"><img src={"/assets/images/facebook.svg"} alt="Facebook" /></a>
