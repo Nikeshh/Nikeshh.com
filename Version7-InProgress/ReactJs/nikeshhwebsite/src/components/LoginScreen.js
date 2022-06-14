@@ -6,7 +6,7 @@ const LoginScreen = () => {
         <div className="wrapper">
             <div className="left">
                 <div className="sign-in-form active">
-                    <h1>Sign in to Your Brand</h1>
+                    <h1 className="form_header">Sign in to Your Brand</h1>
                     <div className="social-buttons">
                         <a href="javascript:;" title="Sign up via Google"><img src={"/assets/images/google.svg"} alt="Google" /></a>
                         <a href="javascript:;" title="Sign up via Apple"><img src={"/assets/images/apple.svg"} alt="Apple" /></a>
@@ -35,7 +35,7 @@ const LoginScreen = () => {
                             </div>
                         </div>
                         <div class="form-group">
-                            <button>SIGN IN</button>
+                            <button className="form_button">SIGN IN</button>
                         </div>
                         <div class="create-aacount">
                             Not registered yet? <a href="javascript:;" class="text-underline sign-up-form-btn"> Create an Account</a>
@@ -43,7 +43,7 @@ const LoginScreen = () => {
                     </form>
                 </div>
                 <div className="sign-up-form">
-                    <h1>Sign up to Your Brand</h1>
+                    <h1 className="form_header">Sign up to Your Brand</h1>
                     <div className="social-buttons">
                         <a href="javascript:;" title="Sign up via Google"><img src={"/assets/images/google.svg"} alt="Google" /></a>
                         <a href="javascript:;" title="Sign up via Apple"><img src={"/assets/images/apple.svg"} alt="Apple" /></a>
@@ -66,7 +66,7 @@ const LoginScreen = () => {
                             <input type="password" placeholder="password" />
                         </div>
                         <div class="form-group">
-                            <button>SIGN UP</button>
+                            <button className="form_button">SIGN UP</button>
                         </div>
                         <div class="create-account">
                             Already registered? <a href="javascript:;" class="text-underline sign-in-form-btn">Sign In</a>
@@ -74,14 +74,14 @@ const LoginScreen = () => {
                     </form>
                 </div>
                 <div className="forgot-password-form">
-                    <h1>Forgot Password?</h1>
+                    <h1 className="form_header">Forgot Password?</h1>
                     <form action="">
                         <div class="form-group">
                             <label for="">E-mail</label>
                             <input type="email" placeholder="@mail.com" />
                         </div>
                         <div class="form-group">
-                            <button>RESET PASSWORD</button>
+                            <button className="form_button">RESET PASSWORD</button>
                         </div>
                         <div class="create-account">
                             <a href="javascript:;" class="go-to-sign-in">Go Back</a>
