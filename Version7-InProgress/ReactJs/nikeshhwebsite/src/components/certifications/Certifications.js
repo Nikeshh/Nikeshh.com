@@ -150,6 +150,9 @@ const Certifications = () => {
                         </div>
                     </div>
                 </div>
+                <div className="certificate_frame">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/71829/mona-lisa.jpg" alt="Mona Lisa" />
+                </div>
             </div>
         </>
     );
