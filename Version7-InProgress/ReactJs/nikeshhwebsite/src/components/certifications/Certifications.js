@@ -4,7 +4,6 @@ import "./certifications.css";
 const Certifications = () => {
     return (
         <>
-            {/* https://codepen.io/chris22smith/pen/PbBwjp */}
             <div className="certifications container">
                 <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
                     <h2 style={{ marginBottom: '30px' }}>Certifications</h2>
@@ -22,12 +21,14 @@ const Certifications = () => {
                 </div>
                 <div className="row" style={{ marginTop: '100px' }}>
                     <div className="col-lg-6" style={{ position: 'relative' }}>
-                        <img src={"./assets/images/loading.gif"} alt="Certification Image" width="500px" />
-                        <div className="certificate_number" style={{ position: 'absolute', top: '10px', left: '50px' }}>
+                        <div className="certificate_frame">
+                            <img src={"./assets/images/loading.gif"} alt="Certification Image" width="500px" />
+                        </div>
+                        <div className="certificate_number" style={{ position: 'absolute', top: '0', left: '80px' }}>
                             <h1 style={{ fontFamily: "'Montserrat', sans-serif", fontWeight: '700', fontSize: '100px' }}>1</h1>
                         </div>
                     </div>
-                    <div className="col-lg-6">
+                    <div className="col-lg-6" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
                         <h3 style={{ fontFamily: "'Dancing Script', cursive", fontWeight: '700' }}>Certificate Title</h3>
                         <p style={{ fontFamily: "'Montserrat', sans-serif" , marginTop: '30px' }}>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -50,12 +51,14 @@ const Certifications = () => {
                 </div>
                 <div className="row" style={{ marginTop: '100px' }}>
                     <div className="col-lg-6" style={{ position: 'relative' }}>
-                        <img src={"./assets/images/loading.gif"} alt="Certification Image" width="500px" />
-                        <div className="certificate_number" style={{ position: 'absolute', top: '10px', left: '50px' }}>
+                        <div className="certificate_frame">
+                            <img src={"./assets/images/loading.gif"} alt="Certification Image" width="500px" />
+                        </div>
+                        <div className="certificate_number" style={{ position: 'absolute', top: '0', left: '80px' }}>
                             <h1 style={{ fontFamily: "'Montserrat', sans-serif", fontWeight: '700', fontSize: '100px' }}>2</h1>
                         </div>
                     </div>
-                    <div className="col-lg-6">
+                    <div className="col-lg-6" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
                         <h3 style={{ fontFamily: "'Dancing Script', cursive", fontWeight: '700' }}>Certificate Title</h3>
                         <p style={{ fontFamily: "'Montserrat', sans-serif" , marginTop: '30px'}}>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -100,7 +103,7 @@ const Certifications = () => {
                             <h1 style={{ fontFamily: "'Montserrat', sans-serif", fontWeight: '700', fontSize: '100px' }}>1</h1>
                         </div>
                     </div>
-                    <div className="col-lg-6">
+                    <div className="col-lg-6" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
                         <h3 style={{ fontFamily: "'Dancing Script', cursive", fontWeight: '700' }}>Certificate Title</h3>
                         <p style={{ fontFamily: "'Montserrat', sans-serif" , marginTop: '30px'}}>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -121,7 +124,7 @@ const Certifications = () => {
                         </div>
                     </div>
                 </div>
-                <div className="row" style={{ marginTop: '100px' }}>
+                <div className="row" style={{ marginTop: '100px', marginBottom: '100px' }}>
                     <div className="col-lg-6" style={{ position: 'relative' }}>
                         <img src={"./assets/images/loading.gif"} alt="Certification Image" width="500px" />
                         <img src={"./assets/images/trophy.gif"} alt="Trophy" height="50px" style={{ position: 'absolute', left: '50px' }} />
@@ -129,7 +132,7 @@ const Certifications = () => {
                             <h1 style={{ fontFamily: "'Montserrat', sans-serif", fontWeight: '700', fontSize: '100px' }}>2</h1>
                         </div>
                     </div>
-                    <div className="col-lg-6">
+                    <div className="col-lg-6" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
                         <h3 style={{ fontFamily: "'Dancing Script', cursive", fontWeight: '700' }}>Certificate Title</h3>
                         <p style={{ fontFamily: "'Montserrat', sans-serif" , marginTop: '30px'}}>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -149,9 +152,6 @@ const Certifications = () => {
                             <button className="btn btn-warning" style={{ fontFamily: "'Shadows Into Light', cursive", letterSpacing: '5px', fontWeight: '700' }}>Tutorials</button>
                         </div>
                     </div>
-                </div>
-                <div className="certificate_frame">
-                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/71829/mona-lisa.jpg" alt="Mona Lisa" />
                 </div>
             </div>
         </>
