@@ -3,3 +3,12 @@
     margin-top: 90px;
     position: relative;
 }
+
+.tag_marker {
+    display: inline-block;
+    height: 10px;
+    width: 30px;
+    border-radius: 4px;
+    background-color: blue;
+    margin-right: 10px;
+}
