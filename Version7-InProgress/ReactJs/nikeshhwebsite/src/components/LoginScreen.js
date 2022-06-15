@@ -37,7 +37,7 @@ const LoginScreen = () => {
                         <div className="form-group">
                             <button className="form_button">SIGN IN</button>
                         </div>
-                        <div className="create-aacount">
+                        <div className="create-account">
                             Not registered yet? <a href="#" className="text-underline sign-up-form-btn"> Create an Account</a>
                         </div>
                     </form>
@@ -68,7 +68,7 @@ const LoginScreen = () => {
                         <div className="form-group">
                             <button className="form_button">SIGN UP</button>
                         </div>
-                        <div className="create-account">
+                        <div className="sign-in">
                             Already registered? <a href="#" className="text-underline sign-in-form-btn">Sign In</a>
                         </div>
                     </form>
@@ -83,7 +83,7 @@ const LoginScreen = () => {
                         <div className="form-group">
                             <button className="form_button">RESET PASSWORD</button>
                         </div>
-                        <div className="create-account">
+                        <div className="go-back">
                             <a href="#" className="go-to-sign-in">Go Back</a>
                         </div>
                     </form>
