@@ -78,3 +78,28 @@
 .form_button:hover {
     background-color: var(--color-dark);
 }
+
+.seperator {
+    position: relative;
+}
+
+.seperator::before {
+    content: "";
+    position: absolute;
+    top: 38%;
+    left: 0;
+    z-index: 1;
+    height: 1px;
+    width: 100%;
+    background-color: var(--color-mid-gray);
+}
+
+.seperator span {
+    background-color: var(--color-white);
+    padding: 0 1rem;
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+    color: var(--color-mid-gray);
+    margin-bottom: 0.5rem;
+}
