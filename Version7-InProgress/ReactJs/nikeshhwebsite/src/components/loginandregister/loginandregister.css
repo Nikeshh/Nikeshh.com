@@ -220,3 +220,8 @@ label {
 .dark-mode-btn.active img {
     filter: invert(91%) sepia(31%) saturate(1482%) hue-rotate(328deg) brightness(102%) contrast(101%);
 }
+
+.dark-mode-on .left {
+    background-color: var(--color-dark);
+    color: var(--color-white);
+}
