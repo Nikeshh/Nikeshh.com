@@ -4,12 +4,18 @@ import "./forum.css";
 import ForumCard from "./ForumCard";
 
 const Forum = () => {
+
+    const toggleForumSidebar = () => {
+        var bodyClasses = document.body.classList;
+        bodyClasses.toggle("forum-sidebar-on");
+    }
+
     return (
         <div className="forum">
             <div className="container-fluid">
                 <div className="row">
-                    <div className="col-3">
-                        <i className="fa fa-arrow-left p-3 my-3" style={{ border: '1px solid #000000', borderRadius: '50%' }}></i>
+                    <div id="forum-left" className="col-3">
+                        <i className="fa fa-arrow-left p-3 my-3" style={{ border: '1px solid #000000', borderRadius: '50%' }} onClick={(e) => toggleForumSidebar()}></i>
                         <ul style={{ listStyle: 'none', padding: '0' }}>
                             <li><i className="fa fa-home" style={{ marginRight: '10px' }}></i>Home</li>
                             <li><i className="fa fa-home" style={{ marginRight: '10px' }}></i>Your threads</li> 
@@ -19,12 +25,16 @@ const Forum = () => {
                             Subscribe to get information, the latest news and other
                             interesting offers
                         </p>
-                        <div>
-                            <input type="email" id="your_email" name="your_email" placeholder="Your email" />
-                            <button>Subscribe</button>
+                        <div className="row">
+                            <div className="col-8">
+                                <input type="email" id="your_email" name="your_email" placeholder="Your email" className="form-control" />
+                            </div>
+                            <div className="col-4">
+                                <button className="p-2" style={{ borderRadius: '4px' }}>Subscribe</button>
+                            </div>
                         </div>
                     </div>
-                    <div className="col-9">
+                    <div id="forum-right" className="col-9">
                         <p>
                             <span style={{ textDecoration: 'underline', color: 'blue' }}>#Popular</span> <span style={{ textDecoration: 'underline', color: 'blue' }}>#Hot</span> <span style={{ textDecoration: 'underline', color: 'blue' }}>#Trend</span> <span style={{ textDecoration: 'underline', color: 'blue' }}>#Entertain</span> ...
                         </p>

@@ -12,3 +12,7 @@
     background-color: blue;
     margin-right: 10px;
 }
+
+.forum-sidebar-on #forum-left {
+    display: none;
+}
