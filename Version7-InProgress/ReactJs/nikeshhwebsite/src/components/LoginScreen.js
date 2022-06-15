@@ -3,7 +3,7 @@ import './loginandregister/loginandregister.css';
 
 const LoginScreen = () => {
     return (
-        <div className="wrapper">
+        <div className="wrapper loginregister">
             <div className="left">
                 <div className="sign-in-form active">
                     <h1 className="form_header">Sign in to Your Brand</h1>
