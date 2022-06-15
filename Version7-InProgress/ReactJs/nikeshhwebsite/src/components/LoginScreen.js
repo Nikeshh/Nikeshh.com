@@ -2,10 +2,39 @@ import React from "react";
 import './loginandregister/loginandregister.css';
 
 const LoginScreen = () => {
+
+    const toggleForgotPassword = () => {
+        var signInFormClasses = document.getElementById("sign-in-form").classList;
+        signInFormClasses.remove("active");
+        var forgotPassFormClasses = document.getElementById("forgot-password-form").classList;
+        forgotPassFormClasses.add("active");
+    }
+
+    const toggleGoToSignIn = () => {
+        var signInFormClasses = document.getElementById("sign-in-form").classList;
+        signInFormClasses.add("active");
+        var forgotPassFormClasses = document.getElementById("forgot-password-form").classList;
+        forgotPassFormClasses.remove("active");
+    }
+
+    const toggleSignUpFormBtn = () => {
+        var signInFormClasses = document.getElementById("sign-in-form").classList;
+        signInFormClasses.remove("active");
+        var signUpFormClasses = document.getElementById("sign-up-form").classList;
+        signUpFormClasses.add("active");
+    }
+
+    const toggleSignInFormBtn = () => {
+        var signInFormClasses = document.getElementById("sign-in-form").classList;
+        signInFormClasses.add("active");
+        var signUpFormClasses = document.getElementById("sign-up-form").classList;
+        signUpFormClasses.remove("active");
+    }
+
     return (
         <div className="wrapper loginregister">
             <div className="left">
-                <div className="sign-in-form active">
+                <div id="sign-in-form" className="sign-in-form active">
                     <h1 className="form_header">Sign in to Your Brand</h1>
                     <div className="social-buttons">
                         <a href="#" title="Sign up via Google"><img src={"/assets/images/google.svg"} alt="Google" /></a>
@@ -31,18 +60,18 @@ const LoginScreen = () => {
                                 <label for="remember_me">Remember me</label>
                             </div>
                             <div className="forgot">
-                                <a href="#" className="forgot-pass-link">Forgot Password?</a>
+                                <a href="#" className="forgot-pass-link" onClick={(e) => toggleForgotPassword()}>Forgot Password?</a>
                             </div>
                         </div>
                         <div className="form-group">
                             <button className="form_button">SIGN IN</button>
                         </div>
                         <div className="create-account">
-                            Not registered yet? <a href="#" className="text-underline sign-up-form-btn"> Create an Account</a>
+                            Not registered yet? <a href="#" className="text-underline sign-up-form-btn" onClick={(e) => toggleSignUpFormBtn()}> Create an Account</a>
                         </div>
                     </form>
                 </div>
-                <div className="sign-up-form">
+                <div id="sign-up-form" className="sign-up-form">
                     <h1 className="form_header">Sign up to Your Brand</h1>
                     <div className="social-buttons">
                         <a href="#" title="Sign up via Google"><img src={"/assets/images/google.svg"} alt="Google" /></a>
@@ -69,11 +98,11 @@ const LoginScreen = () => {
                             <button className="form_button">SIGN UP</button>
                         </div>
                         <div className="sign-in">
-                            Already registered? <a href="#" className="text-underline sign-in-form-btn">Sign In</a>
+                            Already registered? <a href="#" className="text-underline sign-in-form-btn" onClick={(e) => toggleSignInFormBtn()}>Sign In</a>
                         </div>
                     </form>
                 </div>
-                <div className="forgot-password-form">
+                <div id="forgot-password-form" className="forgot-password-form">
                     <h1 className="form_header">Forgot Password?</h1>
                     <form action="">
                         <div className="form-group">
@@ -84,7 +113,7 @@ const LoginScreen = () => {
                             <button className="form_button">RESET PASSWORD</button>
                         </div>
                         <div className="go-back">
-                            <a href="#" className="go-to-sign-in">Go Back</a>
+                            <a href="#" className="go-to-sign-in" onClick={(e) => toggleGoToSignIn()}>Go Back</a>
                         </div>
                     </form>
                 </div>
