@@ -11,7 +11,7 @@ const ForumCard = () => {
                             <div className="col-sm-3 col-md-1">
                                 <img src={"/assets/images/avatar.png"} alt="Avatar" />
                             </div>
-                            <div className="col-sm-6 col-md-4 d-flex flex-column justify-content-center" style={{ lineHeight: '1px' }}>
+                            <div className="col-sm-6 col-md-4 d-flex flex-column justify-content-center p-3" style={{ lineHeight: '1px' }}>
                                 <p>David Lee</p>
                                 <p>4 min ago</p>
                             </div>
