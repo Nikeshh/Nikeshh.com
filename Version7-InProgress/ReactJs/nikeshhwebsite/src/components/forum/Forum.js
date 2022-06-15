@@ -9,12 +9,13 @@ const Forum = () => {
             <div className="container-fluid">
                 <div className="row">
                     <div className="col-3">
-                        <ul>
-                            <li><i className="fa fa-home"></i>Home</li>
-                            <li><i className="fa fa-home"></i>Your threads</li> 
-                            <li><i className="fa fa-home"></i>Saved</li> 
+                        <i className="fa fa-arrow-left p-3 my-3" style={{ border: '1px solid #000000', borderRadius: '50%' }}></i>
+                        <ul style={{ listStyle: 'none', padding: '0' }}>
+                            <li><i className="fa fa-home" style={{ marginRight: '10px' }}></i>Home</li>
+                            <li><i className="fa fa-home" style={{ marginRight: '10px' }}></i>Your threads</li> 
+                            <li><i className="fa fa-home" style={{ marginRight: '10px' }}></i>Saved</li> 
                         </ul>
-                        <p>
+                        <p style={{ fontFamily: "'Montserrat', sans-serif" }}>
                             Subscribe to get information, the latest news and other
                             interesting offers
                         </p>
