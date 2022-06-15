@@ -1,21 +1,9 @@
-.projects {
-    margin-left: 70px;
-    margin-top: 90px;
-    position: relative;
-}
-
 .projects .title {
     text-transform: uppercase;
 }
 
 .projects .subtitle {
     font-weight: 700;
-}
-
-.works {
-    margin-left: 70px;
-    margin-top: 90px;
-    position: relative;
 }
 
 .works .title {
