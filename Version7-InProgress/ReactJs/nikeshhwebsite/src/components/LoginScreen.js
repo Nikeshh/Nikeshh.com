@@ -31,6 +31,13 @@ const LoginScreen = () => {
         signUpFormClasses.remove("active");
     }
 
+    const toggleDarkMode = (e) => {
+        var darkModeBtnClasses = document.getElementById("dark-mode-btn").classList;
+        darkModeBtnClasses.toggle("active");
+        var bodyClasses = document.body.classList;
+        bodyClasses.toggle("dark-mode-on");
+    }
+
     return (
         <div className="wrapper loginregister">
             <div className="left">
@@ -117,6 +124,9 @@ const LoginScreen = () => {
                         </div>
                     </form>
                 </div>
+                <a href="#" id="dark-mode-btn" className="dark-mode-btn" onClick={(e) => toggleDarkMode(e)}>
+                    <img src={"./assets/images/dark_mode.svg"} alt="Dark Mode" />
+                </a>
             </div>
             <div className="right">
                 <img src={"/assets/images/loginandregister.svg"} alt="Login and Register" />
