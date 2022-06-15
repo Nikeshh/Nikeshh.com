@@ -13,6 +13,14 @@
     margin-right: 10px;
 }
 
+#forum-left-back {
+    display: none;
+}
+
+.forum-sidebar-on #forum-left-back {
+    display: block;
+}
+
 .forum-sidebar-on #forum-left {
     display: none;
 }
