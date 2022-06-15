@@ -14,7 +14,7 @@ const Forum = () => {
         <div className="forum">
             <div className="container-fluid">
                 <div className="row">
-                    <div id="forum-left-back" className="col-3">
+                    <div id="forum-left-back" className="col-1">
                         <i className="fa fa-arrow-right p-3 my-3" style={{ border: '1px solid #000000', borderRadius: '50%' }} onClick={(e) => toggleForumSidebar()}></i>
                     </div>
                     <div id="forum-left" className="col-3">
