@@ -19,8 +19,10 @@
 
 .forum-sidebar-on #forum-left-back {
     display: block;
+    transition: all 300ms ease;
 }
 
 .forum-sidebar-on #forum-left {
     display: none;
+    transition: all 300ms ease;
 }
