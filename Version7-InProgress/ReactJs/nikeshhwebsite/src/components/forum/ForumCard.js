@@ -8,10 +8,10 @@ const ForumCard = () => {
                     <div className="col-9">
                         <h3 style={{ fontWeight: '700' }}>C++ Thread Scheduling</h3>
                         <div className="row">
-                            <div className="col-1">
-                                <img src={"/assets/images/avatar.png"} alt="Avatar" width="50px"/>
+                            <div className="col-sm-3 col-md-1">
+                                <img src={"/assets/images/avatar.png"} alt="Avatar" />
                             </div>
-                            <div className="col-4 d-flex flex-column justify-content-center" style={{ lineHeight: '1px' }}>
+                            <div className="col-sm-6 col-md-4 d-flex flex-column justify-content-center" style={{ lineHeight: '1px' }}>
                                 <p>David Lee</p>
                                 <p>4 min ago</p>
                             </div>
