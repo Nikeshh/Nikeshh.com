@@ -22,3 +22,25 @@
     background-color: #d7f2c2;
     color: #7bd235;
 }
+
+.projects .avatar, .works .avatar {
+    width: 2.75rem;
+    height: 2.75rem;
+    border-radius: 50%;
+    position: relative;
+    font-weight: 700;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects .avatar-blue, .works .avatar-blue {
+    background-color: #c8d9f1;
+    color: #467fcf;
+}
+
+.projects .avatar-pink, .works .avatar-pink {
+    background-color: #fcd3e1;
+    color: #f66d9b;
+}
