@@ -113,7 +113,22 @@
         (function($) {
           "use strict";
 
-          $("#projects").DataTable({
+          $("#projectsTable").DataTable({
+            aaStoring: [],
+            responsive: true,
+            columnDefs: [
+              {
+                responsivePriority: 1,
+                targets: 0
+              },
+              {
+                responsivePriority: 2,
+                targets: -1
+              }
+            ]
+          });
+
+          $("#worksTable").DataTable({
             aaStoring: [],
             responsive: true,
             columnDefs: [

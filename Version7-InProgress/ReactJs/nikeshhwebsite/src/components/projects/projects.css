@@ -1,32 +1,24 @@
-.projects .title {
+.projects .title, .works .title {
     text-transform: uppercase;
 }
 
-.projects .subtitle {
+.projects .subtitle, .works .subtitle {
     font-weight: 700;
 }
 
-.projects .dropdown-menu {
+.projects .dropdown-menu, .works .dropdown-menu {
     padding: 0.25rem 0;
 }
 
-.projects .dropdown-item {
+.projects .dropdown-item, .works .dropdown-item {
     padding: 0.5rem 1rem;
 }
 
-.projects .badge {
+.projects .badge, .works .badge {
     padding: 0.5em 0.75em;
 }
 
-.projects .badge-success-alt {
+.projects .badge-success-alt, .works .badge-success-alt {
     background-color: #d7f2c2;
     color: #7bd235;
-}
-
-.works .title {
-    text-transform: uppercase;
-}
-
-.works .subtitle {
-    font-weight: 700;
 }
