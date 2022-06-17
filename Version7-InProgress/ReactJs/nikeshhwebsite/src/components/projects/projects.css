@@ -44,3 +44,7 @@
     background-color: #fcd3e1;
     color: #f66d9b;
 }
+
+.projects .table, .works .table {
+    border-spacing: 0 0.85rem !important;
+}
