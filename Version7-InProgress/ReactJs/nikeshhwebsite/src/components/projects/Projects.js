@@ -9,41 +9,39 @@ const Projects = () => {
                     <div className="col-4">
                         <h1>Filter</h1>
                     </div>
-                    <div className="col-8">
+                    <div className="container col-8">
                         <div className="projects">
                             <span className="title">Projects / Works</span>
                             <h3 className="subtitle">What Have I Done?</h3>
-                            <div className="projects_content">
-                                <table class="table">
-                                    <thead class="thead-dark">
-                                        <tr>
-                                            <th scope="col">#</th>
-                                            <th scope="col">First</th>
-                                            <th scope="col">Last</th>
-                                            <th scope="col">Handle</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <th scope="row">1</th>
-                                            <td>Mark</td>
-                                            <td>Otto</td>
-                                            <td>@mdo</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">2</th>
-                                            <td>Jacob</td>
-                                            <td>Thornton</td>
-                                            <td>@fat</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">3</th>
-                                            <td>Larry</td>
-                                            <td>the Bird</td>
-                                            <td>@twitter</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                            <div className="row py-5">
+                                <div className="col-12">
+                                    <table id="projects" className="table table-hover responsive nowrap" style={{ width: "100%" }}>
+                                        <thead>
+                                            <tr>
+                                                <th>Client Name</th>
+                                                <th>Phone Number</th>
+                                                <th>Profession</th>
+                                                <th>Date of Birth</th>
+                                                <th>App Access</th>
+                                                <th>Actions</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Client name</td>
+                                                <td>(784) 667 8768</td>
+                                                <td>Designer</td>
+                                                <td>09/04/1996</td>
+                                                <td>
+                                                    Enabled
+                                                </td>
+                                                <td>
+                                                    Dropdown
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
                             </div>
                         </div>
                     </div>
