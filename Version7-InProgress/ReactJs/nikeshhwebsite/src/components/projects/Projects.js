@@ -28,10 +28,56 @@ const Projects = () => {
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td>Client name</td>
+                                                <td>
+                                                    <a href="#">
+                                                        <div className="d-flex align-items-center">
+                                                            <div className="avatar avatar-blue mr-3">
+                                                                EB
+                                                            </div>
+                                                            <div>
+                                                                <p className="fw-bold mb-0">Ethan Black</p>
+                                                                <p className="text-muted mb-0">ethan-black@example.com</p>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </td>
                                                 <td>(784) 667 8768</td>
                                                 <td>Designer</td>
                                                 <td>09/04/1996</td>
+                                                <td>
+                                                    <div className="badge badge-success badge-success-alt">
+                                                        Enabled
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div className="dropdown">
+                                                        <button className="btn btn-sm btn-icon" type="button" id="projectsAction" data-toggle="dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                            <i className="bx bx-dots-horizontal-rounded" data-toggle="tooltip" data-placement="top" title="Actions"></i>
+                                                        </button>
+                                                        <div className="dropdown-menu" aria-labelledby="projectsAction">
+                                                            <a className="dropdown-item" href="#"><i className="bx bxs-pencil mr-2"></i> Edit Profile</a>
+                                                            <a className="dropdown-item text-danger" href="#"><i className="bx bxs-trash mr-2"></i> Remove</a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <a href="#">
+                                                        <div className="d-flex align-items-center">
+                                                            <div className="avatar avatar-pink mr-3">
+                                                                JR
+                                                            </div>
+                                                            <div>
+                                                                <p className="fw-bold mb-0">Julie Richards</p>
+                                                                <p className="text-muted mb-0">julie_89@example.com</p>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td>(937) 874 6878</td>
+                                                <td>Investment Banker</td>
+                                                <td>13/01/1989</td>
                                                 <td>
                                                     <div className="badge badge-success badge-success-alt">
                                                         Enabled
