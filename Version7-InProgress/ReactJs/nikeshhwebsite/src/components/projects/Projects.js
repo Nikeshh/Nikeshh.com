@@ -36,7 +36,15 @@ const Projects = () => {
                                                     Enabled
                                                 </td>
                                                 <td>
-                                                    Dropdown
+                                                    <div className="dropdown">
+                                                        <button className="btn btn-sm btn-icon" type="button" id="projectsAction" data-toggle="dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                            <i className="bx bx-dots-horizontal-rounded" data-toggle="tooltip" data-placement="top" title="Actions"></i>
+                                                        </button>
+                                                        <div className="dropdown-menu" aria-labelledby="projectsAction">
+                                                            <a className="dropdown-item" href="#"><i className="bx bxs-pencil mr-2"></i> Edit Profile</a>
+                                                            <a className="dropdown-item text-danger" href="#"><i className="bx bxs-trash mr-2"></i> Remove</a>
+                                                        </div>
+                                                    </div>
                                                 </td>
                                             </tr>
                                         </tbody>
