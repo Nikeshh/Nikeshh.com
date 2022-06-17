@@ -33,7 +33,9 @@ const Projects = () => {
                                                 <td>Designer</td>
                                                 <td>09/04/1996</td>
                                                 <td>
-                                                    Enabled
+                                                    <div className="badge badge-success badge-success-alt">
+                                                        Enabled
+                                                    </div>
                                                 </td>
                                                 <td>
                                                     <div className="dropdown">
