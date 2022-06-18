@@ -7,7 +7,7 @@ const Landing = () => {
         <div className="landing container" style={{ margin: '200px', width: '100%' }}>
             <div className="row">
                 <div className="col-lg-7">
-                    <span style={{ color: 'red', fontWeight: '700' }}>Hey.</span>
+                    <p className="hey_shadows">hey.</p>
                     <div style={{ position: 'relative' }}>
                         <h3 style={{ fontSize: '100px', fontWeight: '700' }}>I'm, Nikeshh Vijayabaskaran</h3>
                         <img src={line} alt="Line" className="landing_page_line" />

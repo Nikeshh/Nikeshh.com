@@ -84,7 +84,6 @@ const Loading = () => {
                     <span style={{ "--i":8 }}>.</span>
                 </div>
             </div>
-            <h2 className="hey_shadows">hey</h2>
             <h1 className="always_be">
                 <span>always be</span>
                 <div className="message">
