@@ -15,67 +15,69 @@ const Test = () => {
                     </div>
                     <span className="open-close"><i class='bx bx-chevron-right'></i></span>
                 </header>
-                <div className="search">
-                    <input type="text" placeholder="Search..." />
-                    <i class='bx bx-search-alt-2'></i>
-                </div>
-                <div className="top_list">
-                    <ul>
-                        <li>
-                            <a href="#">
-                                <i class='bx bx-home' ></i>
-                                Dashboard
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class='bx bx-bar-chart-alt-2' ></i>
-                                Revenue
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class='bx bx-bell' ></i>
-                                Notifications
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class='bx bx-signal-5' ></i>
-                                Analytics
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class='bx bx-like' ></i>
-                                Likes
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class='bx bx-wallet' ></i>
-                                Wallets
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div className="bottom_list">
-                    <ul>
-                        <li>
-                            <a href="#">
-                                <i class='bx bx-log-out-circle'></i>
-                                Logout
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class='bx bx-sun'></i>
-                                <i class='bx bx-moon'></i>
-                                DarkMode
-                                <span className="toggle"></span>
-                            </a>
-                        </li>
-                    </ul>
+                <div className="menu-bar">
+                    <div className="menu">
+                        <div className="search">
+                            <i class='bx bx-search-alt-2'></i>
+                            <input type="text" placeholder="Search..." />
+                        </div>
+                        <ul className="menu-links">
+                            <li className="nav-link">
+                                <a href="#">
+                                    <i class='bx bx-home' ></i>
+                                    Dashboard
+                                </a>
+                            </li>
+                            <li className="nav-link">
+                                <a href="#">
+                                    <i class='bx bx-bar-chart-alt-2' ></i>
+                                    Revenue
+                                </a>
+                            </li>
+                            <li className="nav-link">
+                                <a href="#">
+                                    <i class='bx bx-bell' ></i>
+                                    Notifications
+                                </a>
+                            </li>
+                            <li className="nav-link">
+                                <a href="#">
+                                    <i class='bx bx-signal-5' ></i>
+                                    Analytics
+                                </a>
+                            </li>
+                            <li className="nav-link">
+                                <a href="#">
+                                    <i class='bx bx-like' ></i>
+                                    Likes
+                                </a>
+                            </li>
+                            <li className="nav-link">
+                                <a href="#">
+                                    <i class='bx bx-wallet' ></i>
+                                    Wallets
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div className="bottom-content">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <i class='bx bx-log-out-circle'></i>
+                                    Logout
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class='bx bx-sun'></i>
+                                    <i class='bx bx-moon'></i>
+                                    DarkMode
+                                    <span className="toggle"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </nav>
             <div className="home">
