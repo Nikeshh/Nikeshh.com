@@ -1,0 +1,33 @@
+.sidebar_filter {
+    width: 60px;
+    background-color: aliceblue;
+    border-radius: 10px;
+}
+
+.sidebar_filter ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.sidebar_filter ul li {
+    padding: 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.sidebar_filter ul li:hover {
+    background-color: blueviolet;
+}
+
+.showorremove {
+    display: none;
+    transition: all 0.4s ease;
+}
+
+.addBackgroundColor {
+    background-color: blueviolet;
+}

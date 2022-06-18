@@ -1,13 +1,44 @@
 import React from "react";
 import "./projects.css";
+import "./sidebarfilter.css";
 
 const Projects = () => {
+
+    const toggleSearchControl = (e) => {
+        document.getElementById("Search").classList.toggle("addBackgroundColor");
+        document.getElementById("search-control").classList.toggle("showorremove");
+    }
+
+    const toggleTagsControl = (e) => {
+        document.getElementById("Tags").classList.toggle("addBackgroundColor");
+        document.getElementById("tags-control").classList.toggle("showorremove");
+    }
+
     return (
         <>
             <div className="container">
                 <div className="row my-5">
-                    <div className="col-3">
-                        <h1>Filter</h1>
+                    <div className="col-3" style={{ display: 'flex' }}>
+                        <div className="sidebar_filter">
+                            <ul className="filter">
+                                <div style={{ position: 'relative', marginBottom: '30px' }}>
+                                    <li id="Search" data-placement="top" title="Search" onClick={(e) => toggleSearchControl(e)}>
+                                        <i class='bx bx-search-alt-2'></i>
+                                    </li>
+                                    <div id="search-control" className="showorremove" style={{ position: 'absolute', left: '60px', top: '0px' }}>
+                                        <input type="text" placeholder="Search..." style={{ padding: '10px', borderRadius: '5px' }} />
+                                    </div>
+                                </div>
+                                <div style={{ position: 'relative' }}>
+                                    <li id="Tags" data-placement="top" title="Tags" onClick={(e) => toggleTagsControl(e)}>
+                                        <i class='bx bx-grid'></i>
+                                    </li>
+                                    <div id="tags-control" className="showorremove" style={{ position: 'absolute', left: '60px', top: '0px' }}>
+                                        <input type="text" placeholder="Search..." style={{ padding: '10px', borderRadius: '5px' }} />
+                                    </div>
+                                </div>
+                            </ul>
+                        </div>
                     </div>
                     <div className="container col-9">
                         <div className="projects">
