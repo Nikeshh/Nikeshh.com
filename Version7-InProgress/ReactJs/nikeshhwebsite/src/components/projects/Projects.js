@@ -6,10 +6,10 @@ const Projects = () => {
         <>
             <div className="container">
                 <div className="row my-5">
-                    <div className="col-4">
+                    <div className="col-3">
                         <h1>Filter</h1>
                     </div>
-                    <div className="container col-8">
+                    <div className="container col-9">
                         <div className="projects">
                             <span className="title">Projects</span>
                             <h3 className="subtitle">What Have I Done?</h3>
@@ -103,10 +103,10 @@ const Projects = () => {
                     </div>
                 </div>
                 <div className="row my-5">
-                    <div className="col-4">
+                    <div className="col-3">
                         <h1>Filter</h1>
                     </div>
-                    <div className="container col-8">
+                    <div className="container col-9">
                         <div className="works">
                             <span className="title">Works</span>
                             <h3 className="subtitle">What Else Have I Done?</h3>
