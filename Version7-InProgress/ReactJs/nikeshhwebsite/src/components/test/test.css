@@ -25,6 +25,14 @@
     min-height: 100vh;
 }
 
+.test ul {
+    list-style: none;
+}
+
+.test ul li a {
+    text-decoration: none;
+}
+
 .sidebar {
     background-color: var(--sidebar-color);
     height: 100%;
@@ -34,9 +42,31 @@
     left: 0;
 }
 
+.sidebar header {
+    position: relative;
+}
+
 .sidebar .logo-with-text .logo {
     width: 40px;
     border-radius: 6px;
+}
+
+.open-close {
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    color: var(--toggle-color);
+    padding: 2px;
+    position: absolute;
+    top: 50%;
+    right: -25px;
+    transform: translateX(-50%);
+    z-index: 1;
+    width: 25px;
+    height: 25px;
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .home {
