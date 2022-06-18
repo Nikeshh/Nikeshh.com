@@ -6,7 +6,6 @@ import Projects from "./projects/Projects";
 const ProjectsScreen = () => {
     return (
         <>
-            {/* https://codepen.io/iamsahilvhora/pen/oRJgYZ */}
             <Header page_name="projects" />
             <Projects />
             <Footer />
