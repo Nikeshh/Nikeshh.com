@@ -12,8 +12,8 @@ const MyStory = () => {
                 <div className="col-sm-12 col-lg-6">
                     <img src={"./assets/images/loading.gif"} alt="Landing Image" style={{ width: '100%' }} />
                 </div>
-                <div className="col-sm-12 col-lg-6">
-                    <p>
+                <div className="col-sm-12 col-lg-6" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
+                    <p style={{ textAlign: 'justify' }}>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                         Etiam at ultricies dui, eu mattis nisl. Etiam placerat orci 
                         eu tortor euismod, quis vehicula velit dictum. 

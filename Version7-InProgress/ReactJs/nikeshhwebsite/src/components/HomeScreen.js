@@ -19,10 +19,6 @@ const HomeScreen = () => {
         <>
             <Header page_name="home" />
             <Landing />
-            <div className="comment_and_info">
-                <a href="#" className="social-icon"><i className="fa-solid fa-comment"></i></a>
-                <a href="#" className="social-icon"><i className="fa-solid fa-info"></i></a>
-            </div>
             <div className="container">
                 <MyStory />
                 <SkillsAndServices />
@@ -36,6 +32,10 @@ const HomeScreen = () => {
                 <Contact />
             </div>
             <Footer />
+            <div className="comment_and_info">
+                <a href="#" className="social-icon"><i className="fa-solid fa-comment"></i></a>
+                <a href="#" className="social-icon"><i className="fa-solid fa-info"></i></a>
+            </div>
         </>
     );
 }
