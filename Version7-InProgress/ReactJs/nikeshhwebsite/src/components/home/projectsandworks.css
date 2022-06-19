@@ -9,3 +9,9 @@
 .projectsandworks .subtitle {
     font-weight: 700;
 }
+
+@media screen and (max-width: 500px) {
+    .project {
+        margin-top: 30px;
+    }
+}

@@ -11,35 +11,35 @@ const SkillsAndServices = () => {
             </div>
             <div className="container">
                 <div className="row">
-                    <div className="col">
+                    <div className="col" style={{ display:'flex', justifyContent: 'center' }}>
                         <Skill />
                     </div>
-                    <div className="col">
+                    <div className="col" style={{ display:'flex', justifyContent: 'center' }}>
                         <Skill />
                     </div>
-                    <div className="col">
-                        <Skill />
-                    </div>
-                </div>
-                <div className="row" style={{ marginTop: "30px" }}>
-                    <div className="col">
-                        <Skill />
-                    </div>
-                    <div className="col">
-                        <Skill />
-                    </div>
-                    <div className="col">
+                    <div className="col" style={{ display:'flex', justifyContent: 'center' }}>
                         <Skill />
                     </div>
                 </div>
                 <div className="row" style={{ marginTop: "30px" }}>
-                    <div className="col">
+                    <div className="col" style={{ display:'flex', justifyContent: 'center' }}>
                         <Skill />
                     </div>
-                    <div className="col">
+                    <div className="col" style={{ display:'flex', justifyContent: 'center' }}>
                         <Skill />
                     </div>
-                    <div className="col">
+                    <div className="col" style={{ display:'flex', justifyContent: 'center' }}>
+                        <Skill />
+                    </div>
+                </div>
+                <div className="row" style={{ marginTop: "30px" }}>
+                    <div className="col" style={{ display:'flex', justifyContent: 'center' }}>
+                        <Skill />
+                    </div>
+                    <div className="col" style={{ display:'flex', justifyContent: 'center' }}>
+                        <Skill />
+                    </div>
+                    <div className="col" style={{ display:'flex', justifyContent: 'center' }}>
                         <Skill />
                     </div>
                 </div>

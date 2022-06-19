@@ -9,3 +9,9 @@
 .skillsandservices .subtitle {
     font-weight: 700;
 }
+
+@media screen and (max-width: 500px) {
+    .skill {
+        margin-top: 10px;
+    }
+}
