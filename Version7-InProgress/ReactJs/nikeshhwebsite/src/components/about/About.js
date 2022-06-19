@@ -13,7 +13,7 @@ const About = () => {
                     <img src={"./assets/images/loading.gif"} alt="Landing Image" style={{ width: '100%' }} className="image" />
                 </div>
                 <div className="col-lg-6 content" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
-                    <p>
+                    <p style={{ textAlign: 'justify' }}>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                         Etiam at ultricies dui, eu mattis nisl. Etiam placerat orci 
                         eu tortor euismod, quis vehicula velit dictum. 
@@ -35,7 +35,7 @@ const About = () => {
             </div>
             <div className="row second-about-row">
                 <div className="col-lg-6 content" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
-                    <p>
+                    <p style={{ textAlign: 'justify' }}>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                         Etiam at ultricies dui, eu mattis nisl. Etiam placerat orci 
                         eu tortor euismod, quis vehicula velit dictum. 
