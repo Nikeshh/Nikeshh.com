@@ -43,3 +43,16 @@
 .footer .social-icons .social-icon:not(:last-child) {
     margin-right: 10px;
 }
+
+@media screen and (max-width:768px) {
+    .footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .footer .info-website {
+        display: flex;
+        justify-content: center;
+    }
+}

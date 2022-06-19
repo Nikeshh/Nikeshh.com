@@ -40,7 +40,7 @@ const Footer = () => {
                         <li>Terms and conditions</li>
                     </ul>
                 </div>
-                <div className="col-md-2">
+                <div className="info-website col-md-2">
                     <button style={{ backgroundColor: '#FF946D', borderRadius: '10px', padding: '5px' }}>
                         <span>Info about this website development</span>
                     </button>
