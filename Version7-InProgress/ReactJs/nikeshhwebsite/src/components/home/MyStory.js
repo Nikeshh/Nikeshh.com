@@ -9,10 +9,10 @@ const MyStory = () => {
                 <h3 className="subtitle">My Story</h3>
             </div>
             <div className="row" style={{ marginBottom: '100px' }}>
-                <div className="col-lg-6">
+                <div className="col-sm-12 col-lg-6">
                     <img src={"./assets/images/loading.gif"} alt="Landing Image" width="500px" />
                 </div>
-                <div className="col-lg-6">
+                <div className="col-sm-12 col-lg-6">
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                         Etiam at ultricies dui, eu mattis nisl. Etiam placerat orci 

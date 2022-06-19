@@ -74,7 +74,7 @@
     <!-- Owl Carousel -->
     <script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js'></script>
     <script>
-      window.onload = function loadOwlCarousel() {
+      window.addEventListener("load", function(event) {
         (function($) {
           "use strict";
           if ($('.testimonial-carousel').length) {
@@ -105,11 +105,11 @@
           }
           
         })(window.jQuery);
-      }
+      }, false);
     </script>
     <!-- Data Tables -->
     <script>
-      window.onload = function loadDataTables() {
+      window.addEventListener("load", function(event) {
         (function($) {
           "use strict";
 
@@ -154,7 +154,7 @@
           $('.filter li').tooltip();
 
         })(window.jQuery);
-      }
+      }, false);
     </script>
   </body>
 </html>
