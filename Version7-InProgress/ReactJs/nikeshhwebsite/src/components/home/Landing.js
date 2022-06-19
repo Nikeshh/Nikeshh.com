@@ -4,7 +4,7 @@ import line from "../../images/line.png";
 
 const Landing = () => {
     return (
-        <div className="landing container" style={{ margin: '200px', width: '100%' }}>
+        <div className="landing container">
             <div className="row">
                 <div className="col-lg-7">
                     <p className="hey_shadows">hey.</p>

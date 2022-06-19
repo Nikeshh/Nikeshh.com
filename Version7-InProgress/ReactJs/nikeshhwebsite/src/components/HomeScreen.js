@@ -17,15 +17,11 @@ import Footer from "./util/Footer";
 const HomeScreen = () => {
     return (
         <>
-            <div style={{ height: '100vh', position: 'relative' }}>
-                <Header page_name="home" />
-                <div style={{ position: 'absolute', top: '50%', transform: 'translateY(-50%)', marginTop: '40px' }}>
-                    <Landing />
-                </div>
-                <div className="comment_and_info">
-                    <a href="#" className="social-icon"><i className="fa-solid fa-comment"></i></a>
-                    <a href="#" className="social-icon"><i className="fa-solid fa-info"></i></a>
-                </div>
+            <Header page_name="home" />
+            <Landing />
+            <div className="comment_and_info">
+                <a href="#" className="social-icon"><i className="fa-solid fa-comment"></i></a>
+                <a href="#" className="social-icon"><i className="fa-solid fa-info"></i></a>
             </div>
             <div className="container">
                 <MyStory />
