@@ -10,7 +10,7 @@ const MyStory = () => {
             </div>
             <div className="row" style={{ marginBottom: '100px' }}>
                 <div className="col-sm-12 col-lg-6">
-                    <img src={"./assets/images/loading.gif"} alt="Landing Image" width="500px" />
+                    <img src={"./assets/images/loading.gif"} alt="Landing Image" style={{ width: '100%' }} />
                 </div>
                 <div className="col-sm-12 col-lg-6">
                     <p>

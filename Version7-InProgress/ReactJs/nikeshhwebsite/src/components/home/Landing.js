@@ -42,7 +42,7 @@ const Landing = () => {
                     </div>
                 </div>
                 <div className="col-lg-5" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                    <img src={"./assets/images/loading.gif"} alt="Landing Image" width="500px" />
+                    <img src={"./assets/images/loading.gif"} alt="Landing Image" style={{ width: '100%' }} />
                 </div>
             </div>
         </div>

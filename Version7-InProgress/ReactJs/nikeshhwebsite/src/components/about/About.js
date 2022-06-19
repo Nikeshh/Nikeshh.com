@@ -10,7 +10,7 @@ const About = () => {
             </div>
             <div className="row" style={{ marginBottom: '100px' }}>
                 <div className="col-lg-6">
-                    <img src={"./assets/images/loading.gif"} alt="Landing Image" width="500px" />
+                    <img src={"./assets/images/loading.gif"} alt="Landing Image" style={{ width: '100%' }} />
                 </div>
                 <div className="col-lg-6" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
                     <p>
@@ -55,7 +55,7 @@ const About = () => {
                     </p>
                 </div>
                 <div className="col-lg-6">
-                    <img src={"./assets/images/loading.gif"} alt="Landing Image" width="500px" />
+                    <img src={"./assets/images/loading.gif"} alt="Landing Image" style={{ width: '100%' }} />
                 </div>
             </div>
         </div>

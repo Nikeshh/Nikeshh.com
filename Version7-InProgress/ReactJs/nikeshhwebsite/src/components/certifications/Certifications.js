@@ -22,7 +22,7 @@ const Certifications = () => {
                 <div className="row" style={{ marginTop: '100px' }}>
                     <div className="col-lg-6" style={{ position: 'relative' }}>
                         <div className="certificate_frame">
-                            <img src={"./assets/images/loading.gif"} alt="Certification Image" width="500px" />
+                            <img src={"./assets/images/loading.gif"} alt="Certification Image" style={{ width: '100%' }} />
                         </div>
                         <div className="certificate_number" style={{ position: 'absolute', top: '0', left: '80px' }}>
                             <h1 style={{ fontFamily: "'Montserrat', sans-serif", fontWeight: '700', fontSize: '100px' }}>1</h1>
@@ -52,7 +52,7 @@ const Certifications = () => {
                 <div className="row" style={{ marginTop: '100px' }}>
                     <div className="col-lg-6" style={{ position: 'relative' }}>
                         <div className="certificate_frame">
-                            <img src={"./assets/images/loading.gif"} alt="Certification Image" width="500px" />
+                            <img src={"./assets/images/loading.gif"} alt="Certification Image" style={{ width: '100%' }} />
                         </div>
                         <div className="certificate_number" style={{ position: 'absolute', top: '0', left: '80px' }}>
                             <h1 style={{ fontFamily: "'Montserrat', sans-serif", fontWeight: '700', fontSize: '100px' }}>2</h1>
@@ -97,7 +97,7 @@ const Certifications = () => {
                 </div>
                 <div className="row" style={{ marginTop: '100px' }}>
                     <div className="col-lg-6" style={{ position: 'relative' }}>
-                        <img src={"./assets/images/loading.gif"} alt="Certification Image" width="500px" />
+                        <img src={"./assets/images/loading.gif"} alt="Certification Image" style={{ width: '100%' }} />
                         <img src={"./assets/images/trophy.gif"} alt="Trophy" height="50px" style={{ position: 'absolute', left: '50px' }} />
                         <div className="certificate_number" style={{ position: 'absolute', top: '30px', left: '60px' }}>
                             <h1 style={{ fontFamily: "'Montserrat', sans-serif", fontWeight: '700', fontSize: '100px' }}>1</h1>
@@ -126,7 +126,7 @@ const Certifications = () => {
                 </div>
                 <div className="row" style={{ marginTop: '100px', marginBottom: '100px' }}>
                     <div className="col-lg-6" style={{ position: 'relative' }}>
-                        <img src={"./assets/images/loading.gif"} alt="Certification Image" width="500px" />
+                        <img src={"./assets/images/loading.gif"} alt="Certification Image" style={{ width: '100%' }} />
                         <img src={"./assets/images/trophy.gif"} alt="Trophy" height="50px" style={{ position: 'absolute', left: '50px' }} />
                         <div className="certificate_number" style={{ position: 'absolute', top: '30px', left: '60px' }}>
                             <h1 style={{ fontFamily: "'Montserrat', sans-serif", fontWeight: '700', fontSize: '100px' }}>2</h1>
