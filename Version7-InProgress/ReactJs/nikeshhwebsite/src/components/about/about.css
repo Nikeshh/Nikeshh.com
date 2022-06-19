@@ -9,3 +9,13 @@
 .about .subtitle {
     font-weight: 700;
 }
+
+@media screen and (max-width:768px) {
+    .second-about-row .image {
+        order: 2;
+    }
+
+    .second-about-row .content {
+        order: 1;
+    }
+}

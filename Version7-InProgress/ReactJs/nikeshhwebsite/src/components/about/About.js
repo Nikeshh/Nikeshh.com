@@ -8,11 +8,11 @@ const About = () => {
                 <span className="title">Deep Dive Into My Life</span>
                 <h3 className="subtitle">My Story</h3>
             </div>
-            <div className="row" style={{ marginBottom: '100px' }}>
+            <div className="row first-about-row" style={{ marginBottom: '100px' }}>
                 <div className="col-lg-6">
-                    <img src={"./assets/images/loading.gif"} alt="Landing Image" style={{ width: '100%' }} />
+                    <img src={"./assets/images/loading.gif"} alt="Landing Image" style={{ width: '100%' }} className="image" />
                 </div>
-                <div className="col-lg-6" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
+                <div className="col-lg-6 content" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                         Etiam at ultricies dui, eu mattis nisl. Etiam placerat orci 
@@ -33,8 +33,8 @@ const About = () => {
                     </p>
                 </div>
             </div>
-            <div className="row">
-                <div className="col-lg-6" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
+            <div className="row second-about-row">
+                <div className="col-lg-6 content" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                         Etiam at ultricies dui, eu mattis nisl. Etiam placerat orci 
@@ -55,7 +55,7 @@ const About = () => {
                     </p>
                 </div>
                 <div className="col-lg-6">
-                    <img src={"./assets/images/loading.gif"} alt="Landing Image" style={{ width: '100%' }} />
+                    <img src={"./assets/images/loading.gif"} alt="Landing Image" style={{ width: '100%' }} className="image" />
                 </div>
             </div>
         </div>
