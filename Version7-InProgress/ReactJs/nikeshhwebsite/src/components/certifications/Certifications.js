@@ -28,7 +28,7 @@ const Certifications = () => {
                             <h1 style={{ fontFamily: "'Montserrat', sans-serif", fontWeight: '700', fontSize: '100px' }}>1</h1>
                         </div>
                     </div>
-                    <div className="col-lg-6" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', marginTop: '30px' }}>
+                    <div className="col-lg-6 certificate_content" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
                         <h3 style={{ fontFamily: "'Dancing Script', cursive", fontWeight: '700' }}>Certificate Title</h3>
                         <p style={{ fontFamily: "'Montserrat', sans-serif" , marginTop: '30px' }}>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -58,7 +58,7 @@ const Certifications = () => {
                             <h1 style={{ fontFamily: "'Montserrat', sans-serif", fontWeight: '700', fontSize: '100px' }}>2</h1>
                         </div>
                     </div>
-                    <div className="col-lg-6" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', marginTop: '30px' }}>
+                    <div className="col-lg-6 certificate_content" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
                         <h3 style={{ fontFamily: "'Dancing Script', cursive", fontWeight: '700' }}>Certificate Title</h3>
                         <p style={{ fontFamily: "'Montserrat', sans-serif" , marginTop: '30px'}}>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -103,7 +103,7 @@ const Certifications = () => {
                             <h1 style={{ fontFamily: "'Montserrat', sans-serif", fontWeight: '700', fontSize: '100px' }}>1</h1>
                         </div>
                     </div>
-                    <div className="col-lg-6" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', marginTop: '30px' }}>
+                    <div className="col-lg-6 award_content" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
                         <h3 style={{ fontFamily: "'Dancing Script', cursive", fontWeight: '700' }}>Award Title</h3>
                         <p style={{ fontFamily: "'Montserrat', sans-serif" , marginTop: '30px'}}>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -132,7 +132,7 @@ const Certifications = () => {
                             <h1 style={{ fontFamily: "'Montserrat', sans-serif", fontWeight: '700', fontSize: '100px' }}>2</h1>
                         </div>
                     </div>
-                    <div className="col-lg-6" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', marginTop: '30px' }}>
+                    <div className="col-lg-6 award_content" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
                         <h3 style={{ fontFamily: "'Dancing Script', cursive", fontWeight: '700' }}>Award Title</h3>
                         <p style={{ fontFamily: "'Montserrat', sans-serif" , marginTop: '30px'}}>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
