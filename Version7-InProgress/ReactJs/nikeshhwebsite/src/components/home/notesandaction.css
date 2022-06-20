@@ -1,0 +1,5 @@
+@media (max-width: 768px) {
+    .notesandaction .row .notes:nth-child(2) {
+        margin-top: 30px;
+    }
+}
