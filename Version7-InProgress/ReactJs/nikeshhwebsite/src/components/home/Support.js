@@ -8,7 +8,7 @@ const Support = () => {
             <span className="title">Support</span>
             <h3 className="subtitle">Like My Work?</h3>
             <div className="content" style={{ marginTop: '20px', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
-                <h3 style={{ fontFamily: "'Dancing Script', cursive", fontWeight: '700', letterSpacing: '10px' }}>If you like my work</h3>
+                <h3 style={{ fontFamily: "'Dancing Script', cursive", fontWeight: '700', letterSpacing: '5px' }}>If you like my work</h3>
                 <img src={line} alt="Line" className="line" width="300px" />
                 <h3 style={{ fontFamily: "'Montserrat', sans-serif", marginTop: '20px' }}>You can always support me using the following links</h3>
                 <div style={{ marginTop: '40px', marginBottom: '40px' }}>

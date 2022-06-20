@@ -9,3 +9,13 @@
 .support .subtitle {
     font-weight: 700;
 }
+
+@media (max-width: 768px) {
+    .support .line {
+        display: none;
+    }
+    
+    .support .patreon {
+        margin-bottom: 20px;
+    }
+}
