@@ -51,12 +51,10 @@ const Blog = () => {
                         </div>
                     </div>
                     <div className="row">
-                        <div className="col-lg-4">
-                            <div className="main-feature">
-                                <BlogCard />
-                            </div>
+                        <div className="col-xs-12 col-md-5" style={{ padding: '20px' }}>
+                            <BlogCard />
                         </div>
-                        <div className="col-lg-8" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center'}}>
+                        <div className="col-xs-12 col-md-7" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', padding: '20px' }}>
                             <div className="row sub-feature">
                                 <div className="col-lg-4">
                                     <img src={"./assets/images/loading.gif"} alt="Sub Featued Image" width="300px" />
@@ -92,40 +90,34 @@ const Blog = () => {
                         </div>
                     </div>
                     <div className="row" style={{ marginTop: '50px' }}>
-                        <div className="col-lg-4">
-                            <div className="main-feature">
-                                <BlogCard />
-                            </div>
+                        <div className="col-lg-4" style={{ padding: '20px' }}>
+                            <BlogCard />
                         </div>
-                        <div className="col-lg-4">
-                            <div className="main-feature">
-                                <BlogCard />
-                            </div>
+                        <div className="col-lg-4" style={{ padding: '20px' }}>
+                            <BlogCard />
                         </div>
-                        <div className="col-lg-4">
-                            <div className="main-feature">
-                                <BlogCard />
-                            </div>
+                        <div className="col-lg-4" style={{ padding: '20px' }}>
+                            <BlogCard />
                         </div>
                     </div>
                 </div>
                 <div className="blog-content-latest-posts-and-popular-posts" style={{ marginTop: '50px' }}>
                     <div className="row">
-                        <div className="latest-posts col-lg-8">
+                        <div className="col-md-8">
                             <div className="latest-posts-title"><h3>Latest Posts</h3></div>
-                            <div className="row" style={{ display: 'flex', justifyContent: 'space-around' }}>
-                                <BlogCard />
-                                <BlogCard />
+                            <div className="row" style={{ display: 'flex', justifyContent: 'space-around', padding: '20px' }}>
+                                <div className="col-md-6" style={{ marginBottom: '10px' }}><BlogCard /></div>
+                                <div className="col-md-6"><BlogCard /></div>
                             </div>
-                            <div className="row" style={{ display: 'flex', justifyContent: 'space-around', marginTop: '50px' }}>
-                                <BlogCard />
-                                <BlogCard />
+                            <div className="row" style={{ display: 'flex', justifyContent: 'space-around', marginTop: '50px', padding: '20px' }}>
+                                <div className="col-md-6" style={{ marginBottom: '10px' }}><BlogCard /></div>
+                                <div className="col-md-6"><BlogCard /></div>
                             </div>
-                            <div style={{ marginTop: '50px', display: 'flex', justifyContent: 'center', }}>
+                            <div style={{ marginTop: '50px', display: 'flex', justifyContent: 'center', marginBottom: '30px'}}>
                                 <button className="btn btn-warning">Load More</button>
                             </div>
                         </div>
-                        <div className="popular-posts col-lg-4">
+                        <div className="col-md-4">
                             <div className="popular-posts-title"><h3>Popular Posts</h3></div>
                             <div className="row">
                                 <div className="col-lg-4">
@@ -189,26 +181,26 @@ const Blog = () => {
                     </div>
                     <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
                         <div className="row" style={{ marginTop: '50px' }}>
-                            <div className="col-lg-6">
+                            <div className="col-lg-6" style={{ padding: '20px' }}>
                                 <BlogCard />
                             </div>
-                            <div className="col-lg-6">
-                                <BlogCard />
-                            </div>
-                        </div>
-                        <div className="row" style={{ marginTop: '50px' }}>
-                            <div className="col-lg-6">
-                                <BlogCard />
-                            </div>
-                            <div className="col-lg-6">
+                            <div className="col-lg-6" style={{ padding: '20px' }}>
                                 <BlogCard />
                             </div>
                         </div>
                         <div className="row" style={{ marginTop: '50px' }}>
-                            <div className="col-lg-6">
+                            <div className="col-lg-6" style={{ padding: '20px' }}>
                                 <BlogCard />
                             </div>
-                            <div className="col-lg-6">
+                            <div className="col-lg-6" style={{ padding: '20px' }}>
+                                <BlogCard />
+                            </div>
+                        </div>
+                        <div className="row" style={{ marginTop: '50px' }}>
+                            <div className="col-lg-6" style={{ padding: '20px' }}>
+                                <BlogCard />
+                            </div>
+                            <div className="col-lg-6" style={{ padding: '20px' }}>
                                 <BlogCard />
                             </div>
                         </div>
