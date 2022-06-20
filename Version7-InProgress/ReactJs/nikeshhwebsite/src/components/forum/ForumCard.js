@@ -36,7 +36,7 @@ const ForumCard = () => {
                 <div className="row my-4">
                     <div className="col-4">
                         <i className="fa fa-save fa-2xl" style={{ display: 'inline-block', marginRight: '10px' }}></i>
-                        <button style={{ borderRadius: '5px', padding: '10px' }}>Comment</button>
+                        <button style={{ borderRadius: '5px', padding: '10px' }} className="my-2">Comment</button>
                     </div>
                 </div>
             </div>

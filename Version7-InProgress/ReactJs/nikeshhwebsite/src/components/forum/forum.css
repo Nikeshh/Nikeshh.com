@@ -4,6 +4,14 @@
     position: relative;
 }
 
+@media screen and (max-width:768px) {
+    .forum {
+        margin-left: 10px;
+        margin-top: 20px;
+        margin-right: 10px;
+    }
+}
+
 .tag_marker {
     display: inline-block;
     height: 10px;
