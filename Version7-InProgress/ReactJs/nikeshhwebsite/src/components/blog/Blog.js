@@ -7,7 +7,7 @@ const Blog = () => {
         <div className="blog">
             <div className="blog-header">
                 <div className="row">
-                    <div className="col-lg-7" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+                    <div className="col-xs-12 col-md-7" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
                         <h1 style={{ fontFamily: "'Dancing Script', cursive", fontWeight: '700' }}>Welcome To Nikeshh Blog</h1>
                         <h1 style={{ fontWeight: '700' }}>A Tech And Lifestyle Blog</h1>
                         <p style={{ fontFamily: "'Montserrat', sans-serif" }}>
@@ -20,7 +20,7 @@ const Blog = () => {
                             <button className="btn btn-warning">Create a account</button>
                         </div>
                     </div>
-                    <div className="col-lg-5" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+                    <div className="col-xs-12 col-md-5" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
                         <img src={"./assets/images/loading.gif"} alt="Landing Image" style={{ width: '100%' }} />
                     </div>
                 </div>
