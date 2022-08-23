@@ -664,6 +664,69 @@ h2.title-head span {
     line-height: 32px;
 }
 
+#projects {
+    background: #f3f5f9;
+    padding-top: 144px;
+}
+
+#projects .owl-carousel .owl-item img {
+    width: auto;
+}
+
+#projects .white-box {
+    background: #fff;
+    padding: 25px 30px;
+    display: inline-block;
+    margin: 25px 15px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.05);
+}
+
+#projects .owl-carousel .owl-nav button.owl-next {
+    height: 70px;
+    width: 70px;
+    background: url(../images/right-arrow.png) 50% 50% no-repeat;
+    right: -25px;
+    position: relative;
+}
+
+#projects .owl-carousel .owl-nav button.owl-next:hover {
+    background: url(../images/right-arrow-hover.png) 50% 50% no-repeat;
+}
+
+#projects .owl-carousel .owl-nav button span {
+    display: none;
+}
+
+#projects .owl-carousel .owl-nav button.owl-prev {
+    height: 70px;
+    width: 70px;
+    background: url(../images/left-arrow.png) 50% 50% no-repeat;
+}
+
+#projects .owl-carousel .owl-nav button.owl-prev:hover {
+    background: url(../images/left-arrow-hover.png) 50% 50% no-repeat;
+}
+
+#projects .owl-nav {
+    position: absolute;
+    top: -120px;
+    right: 0px;
+}
+
+#projects .white-box h5 {
+    font-size: 18px;
+    color: #222222;
+    line-height: 27px;
+    font-weight: 600;
+    margin-bottom: 0px;
+}
+
+#projects .white-box p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 32px;
+}
 #contact {
     background: #f3f5f9;
     padding-top: 120px;
