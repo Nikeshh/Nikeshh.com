@@ -262,13 +262,27 @@ ul.navbar-nav.mr-auto li.nav-item {
     left: -20px;
 }
 
-#howitworks {
+.header_social {
+    margin: 25px 0px 30px;
+}
+
+.header_social a {
+    padding: 0 20px;
+}
+
+.header_social a {
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    font-size: 30px;
+}
+
+#aboutme {
     padding: 120px 0px;
     position: relative;
     background: #f3f5f9;
 }
 
-#howitworks h2 {
+#aboutme h2 {
     font-family: "Proxima Nova Rg";
     font-style: normal;
     font-weight: 700;
@@ -280,7 +294,7 @@ ul.navbar-nav.mr-auto li.nav-item {
     margin-bottom: 24px;
 }
 
-#howitworks h2 span img {
+#aboutme h2 span img {
     width: auto;
     height: auto;
     position: absolute;
@@ -288,7 +302,7 @@ ul.navbar-nav.mr-auto li.nav-item {
     top: 13px;
 }
 
-#howitworks p {
+#aboutme p {
     font-family: "Nunito Sans", sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -299,7 +313,7 @@ ul.navbar-nav.mr-auto li.nav-item {
     padding: 0px 10%;
 }
 
-#howitworks h3 {
+#aboutme h3 {
     font-family: "Proxima Nova Rg";
     font-style: normal;
     font-weight: 700;
@@ -311,12 +325,12 @@ ul.navbar-nav.mr-auto li.nav-item {
     margin-bottom: 24px;
 }
 
-#howitworks img {
+#aboutme img {
     width: 220px;
     height: 220px;
 }
 
-#howitworks .card {
+#aboutme .card {
     border: none;
     display: flex;
     align-items: center;
@@ -324,27 +338,27 @@ ul.navbar-nav.mr-auto li.nav-item {
     background: #f3f5f9;
 }
 
-#howitworks img.bottom_side_img {
+#aboutme img.bottom_side_img {
     width: auto;
     height: auto;
     position: absolute;
 }
 
-#howitworks img.top_side_img {
+#aboutme img.top_side_img {
     width: auto;
     height: auto;
     position: absolute;
     right: 0;
 }
 
-#why-karking {
+#skills {
     background: #eef1f6 url(../images/rect.png) 50% 50% no-repeat;
     background-size: contain;
     padding: 120px 0px;
     position: relative;
 }
 
-#why-karking .nav-tabs {
+#skills .nav-tabs {
     border: none;
     display: inline-block;
     margin-top: 45px;
@@ -354,11 +368,11 @@ ul.navbar-nav.mr-auto li.nav-item {
     border-radius: 12px;
 }
 
-#why-karking .nav-tabs li {
+#skills .nav-tabs li {
     display: inline-block;
 }
 
-#why-karking .nav-tabs button.active {
+#skills .nav-tabs button.active {
     width: 300px;
     height: 79px;
     font-weight: 600;
@@ -375,7 +389,7 @@ ul.navbar-nav.mr-auto li.nav-item {
     border: none;
 }
 
-#why-karking .card {
+#skills .card {
     padding: 22px 25px;
     border: none;
     border-radius: 10px;
@@ -383,11 +397,11 @@ ul.navbar-nav.mr-auto li.nav-item {
     margin-bottom: 16px;
 }
 
-#why-karking .card.bg-none {
+#skills .card.bg-none {
     background: #eef1f6;
 }
 
-#why-karking .card h6 {
+#skills .card h6 {
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
@@ -395,14 +409,14 @@ ul.navbar-nav.mr-auto li.nav-item {
     margin-bottom: 10px;
 }
 
-#why-karking .card p {
+#skills .card p {
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     color: #262b39;
 }
 
-#why-karking .nav-tabs button {
+#skills .nav-tabs button {
     width: 300px;
     height: 79px;
     font-weight: 600;
@@ -417,7 +431,7 @@ ul.navbar-nav.mr-auto li.nav-item {
     border: none;
 }
 
-#why-karking a.btn-primary-fill::after {
+#skills a.btn-primary-fill::after {
     content: "";
     background: url(../images/Vector\8png) 50% 50% no-repeat;
     position: absolute;
@@ -428,7 +442,7 @@ ul.navbar-nav.mr-auto li.nav-item {
     background-size: contain;
 }
 
-#why-karking a.btn-primary-fill {
+#skills a.btn-primary-fill {
     width: 215px;
     height: 61px;
     background: #7d5cdd;
@@ -451,7 +465,126 @@ ul.navbar-nav.mr-auto li.nav-item {
     position: relative;
 }
 
-#why-karking a.btn-primary-fill:hover {
+#skills a.btn-primary-fill:hover {
+    background: #7551df;
+    color: #fff;
+}
+
+#what-i-do {
+    background: #eef1f6 url(../images/rect.png) 50% 50% no-repeat;
+    background-size: contain;
+    padding: 120px 0px;
+    position: relative;
+}
+
+#what-i-do .nav-tabs {
+    border: none;
+    display: inline-block;
+    margin-top: 45px;
+    margin-bottom: 90px;
+    width: 605px;
+    background: #f2f6ff;
+    border-radius: 12px;
+}
+
+#what-i-do .nav-tabs li {
+    display: inline-block;
+}
+
+#what-i-do .nav-tabs button.active {
+    width: 300px;
+    height: 79px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #eef9fc;
+    display: inline-block;
+    background: #7d5cdd;
+    border-radius: 12px;
+    margin: 0px;
+    padding: 0px;
+    z-index: 99999;
+    position: relative;
+    border: none;
+}
+
+#what-i-do .card {
+    padding: 22px 25px;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 0px;
+    margin-bottom: 16px;
+}
+
+#what-i-do .card.bg-none {
+    background: #eef1f6;
+}
+
+#what-i-do .card h6 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    color: #4f4f4f;
+    margin-bottom: 10px;
+}
+
+#what-i-do .card p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: #262b39;
+}
+
+#what-i-do .nav-tabs button {
+    width: 300px;
+    height: 79px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #7d5cdd;
+    display: inline-block;
+    background: #f2f6ff;
+    border-radius: 12px;
+    margin: 0px;
+    padding: 0px;
+    border: none;
+}
+
+#what-i-do a.btn-primary-fill::after {
+    content: "";
+    background: url(../images/Vector\8png) 50% 50% no-repeat;
+    position: absolute;
+    width: 55.29px;
+    height: 54.08px;
+    right: -40%;
+    top: -35px;
+    background-size: contain;
+}
+
+#what-i-do a.btn-primary-fill {
+    width: 215px;
+    height: 61px;
+    background: #7d5cdd;
+    border-radius: 12px;
+    font-family: "Proxima Nova Rg";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #eef9fc;
+    flex-direction: row;
+    justify-content: center;
+    text-decoration: none;
+    margin-right: 0;
+    transition: 0.3s;
+    margin-left: 20px;
+    position: relative;
+}
+
+#what-i-do a.btn-primary-fill:hover {
     background: #7551df;
     color: #fff;
 }
@@ -467,16 +600,16 @@ h2.title-head span {
     display: none;
 }
 
-#about-us {
+#testimonials {
     background: #f3f5f9;
     padding-top: 144px;
 }
 
-#about-us .owl-carousel .owl-item img {
+#testimonials .owl-carousel .owl-item img {
     width: auto;
 }
 
-#about-us .white-box {
+#testimonials .white-box {
     background: #fff;
     padding: 25px 30px;
     display: inline-block;
@@ -485,7 +618,7 @@ h2.title-head span {
     box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.05);
 }
 
-#about-us .owl-carousel .owl-nav button.owl-next {
+#testimonials .owl-carousel .owl-nav button.owl-next {
     height: 70px;
     width: 70px;
     background: url(../images/right-arrow.png) 50% 50% no-repeat;
@@ -493,31 +626,31 @@ h2.title-head span {
     position: relative;
 }
 
-#about-us .owl-carousel .owl-nav button.owl-next:hover {
+#testimonials .owl-carousel .owl-nav button.owl-next:hover {
     background: url(../images/right-arrow-hover.png) 50% 50% no-repeat;
 }
 
-#about-us .owl-carousel .owl-nav button span {
+#testimonials .owl-carousel .owl-nav button span {
     display: none;
 }
 
-#about-us .owl-carousel .owl-nav button.owl-prev {
+#testimonials .owl-carousel .owl-nav button.owl-prev {
     height: 70px;
     width: 70px;
     background: url(../images/left-arrow.png) 50% 50% no-repeat;
 }
 
-#about-us .owl-carousel .owl-nav button.owl-prev:hover {
+#testimonials .owl-carousel .owl-nav button.owl-prev:hover {
     background: url(../images/left-arrow-hover.png) 50% 50% no-repeat;
 }
 
-#about-us .owl-nav {
+#testimonials .owl-nav {
     position: absolute;
     top: -120px;
     right: 0px;
 }
 
-#about-us .white-box h5 {
+#testimonials .white-box h5 {
     font-size: 18px;
     color: #222222;
     line-height: 27px;
@@ -525,65 +658,65 @@ h2.title-head span {
     margin-bottom: 0px;
 }
 
-#about-us .white-box p {
+#testimonials .white-box p {
     font-weight: 500;
     font-size: 16px;
     line-height: 32px;
 }
 
-#get-in-touch {
+#contact {
     background: #f3f5f9;
     padding-top: 120px;
     padding-bottom: 50px;
 }
 
-#get-in-touch p {
+#contact p {
     font-size: 18px;
     color: #262b39;
     line-height: 26px;
 }
 
-#get-in-touch .media {
+#contact .media {
     margin: 15px 0px;
     display: inline-block;
 }
 
-#get-in-touch .media p {
+#contact .media p {
     font-size: 14px;
     line-height: 18px;
     color: #000000;
     margin-bottom: 0px;
 }
 
-#get-in-touch .media p a {
+#contact .media p a {
     color: #000000;
 }
 
-#get-in-touch .arrow-top {
+#contact .arrow-top {
     margin-top: -50px;
     margin-left: -50px;
 }
 
-#get-in-touch .white-box {
+#contact .white-box {
     background: #fff;
     background: #ffffff;
     border-radius: 24px;
     padding: 32px;
 }
 
-#get-in-touch .white-box h4 {
+#contact .white-box h4 {
     font-size: 24px;
     color: #170f49;
     line-height: 34px;
     font-weight: 700;
 }
 
-#get-in-touch p {
+#contact p {
     font-size: 18px;
     color: #262b39;
 }
 
-#get-in-touch .white-box label {
+#contact .white-box label {
     color: #170f49;
     font-size: 18px;
     line-height: 20px;
@@ -591,7 +724,7 @@ h2.title-head span {
     margin-bottom: 10px;
 }
 
-#get-in-touch .white-box input {
+#contact .white-box input {
     background: #ffffff;
     border: 1px solid #eff0f7;
     box-shadow: 0px 2px 6px rgba(19, 18, 66, 0.07);
@@ -603,7 +736,7 @@ h2.title-head span {
     padding-right: 53px;
 }
 
-#get-in-touch .white-box textarea {
+#contact .white-box textarea {
     background: #ffffff;
     border: 1px solid #eff0f7;
     height: 140px;
@@ -613,17 +746,17 @@ h2.title-head span {
     padding: 10px;
 }
 
-#get-in-touch .form-row {
+#contact .form-row {
     padding: 10px 0px;
 }
 
-#get-in-touch .white-box span {
+#contact .white-box span {
     position: absolute;
     top: 43%;
     right: 12%;
 }
 
-#get-in-touch button {
+#contact button {
     background: #7d5cdd;
     box-shadow: 0px 3px 12px rgba(74, 58, 255, 0.18);
     border-radius: 56px;

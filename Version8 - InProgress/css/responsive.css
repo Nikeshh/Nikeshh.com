@@ -137,21 +137,21 @@
         margin-bottom: 20px;
     }
 
-    #howitworks {
+    /*#aboutme {
         padding: 40px 0px;
         padding-left: 5px;
         padding-right: 5px;
     }
 
-    #howitworks h3 {
+    #aboutme h3 {
         text-align: left;
         margin: 0px;
     }
 
-    #howitworks p {
+    #aboutme p {
         text-align: left;
         padding: 10px 0px;
-    }
+    }*/
 
     .visible-xs {
         display: block;
@@ -161,7 +161,7 @@
         display: none;
     }
 
-    #howitworks .card {
+    /*#aboutme .card {
         margin: 15px 0px;
         width: 100%;
         padding: 10px 10px;
@@ -172,79 +172,114 @@
         margin-bottom: 0px !important;
     }
 
-    #howitworks img.bottom_side_img {
+    #aboutme img.bottom_side_img {
         width: auto;
         height: auto;
         position: absolute;
         display: none;
-    }
+    }*/
 
-    #why-karking .card {
+    #skills .card {
         background: transparent;
     }
 
-    #why-karking a.btn-primary-fill::after {
+    #skills a.btn-primary-fill::after {
         display: none;
     }
 
-    #why-karking a.btn-primary-fill {
+    #skills a.btn-primary-fill {
         width: 100%;
         margin: 0;
     }
 
-    #howitworks p {
+    #what-i-do .card {
+        background: transparent;
+    }
+
+    #what-i-do a.btn-primary-fill::after {
+        display: none;
+    }
+
+    #what-i-do a.btn-primary-fill {
+        width: 100%;
+        margin: 0;
+    }
+
+    /*#aboutme p {
         margin-bottom: 0px;
         font-size: 14px;
         text-align: center;
     }
 
-    #howitworks .card p {
+    #aboutme .card p {
         margin-bottom: 0px;
         padding: 0px 22px;
         font-size: 14px;
         text-align: left;
     }
 
-    #howitworks .card p br {
+    #aboutme .card p br {
         display: none;
     }
 
-    #howitworks h3 {
+    #aboutme h3 {
         padding: 0px 22px;
         font-size: 16px;
         margin-top: 0px;
     }
 
-    #howitworks img {
+    #aboutme img {
         width: 129px;
         height: 129px;
         margin-left: 18px;
         margin-top: 5px;
-    }
+    }*/
 
     .xs-space {
         padding: 0px 15px !important;
     }
 
-    #why-karking {
+    #skills {
         padding: 50px 0px;
     }
 
-    #why-karking .nav-tabs {
+    #skills .nav-tabs {
         width: 100%;
     }
 
-    #why-karking .nav-tabs li {
+    #skills .nav-tabs li {
         width: 49%;
         float: left;
     }
 
-    #why-karking .nav-tabs button {
+    #skills .nav-tabs button {
         width: 100% !important;
     }
 
-    #why-karking .nav-tabs button.active,
-    #why-karking .nav-tabs button {
+    #skills .nav-tabs button.active,
+    #skills .nav-tabs button {
+        height: 58px;
+    }
+
+    #what-i-do {
+        padding: 50px 0px;
+    }
+
+    #what-i-do .nav-tabs {
+        width: 100%;
+    }
+
+    #what-i-do .nav-tabs li {
+        width: 49%;
+        float: left;
+    }
+
+    #what-i-do .nav-tabs button {
+        width: 100% !important;
+    }
+
+    #what-i-do .nav-tabs button.active,
+    #what-i-do .nav-tabs button {
         height: 58px;
     }
 
@@ -420,11 +455,19 @@
         width: auto;
     }
 
-    #why-karking .nav-tabs li {
+    #skills .nav-tabs li {
         width: 49%;
     }
 
-    #why-karking .nav-tabs button {
+    #skills .nav-tabs button {
+        width: 100% !important;
+    }
+
+    #what-i-do .nav-tabs li {
+        width: 49%;
+    }
+
+    #what-i-do .nav-tabs button {
         width: 100% !important;
     }
 
