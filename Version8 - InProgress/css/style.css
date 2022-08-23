@@ -1,0 +1,897 @@
+/*** genrel css***/
+input[type="text"],
+textarea,
+input[type="submit"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    outline: none;
+    border-radius: 0px;
+    outline: 0;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+button {
+    outline: 0;
+}
+
+::-webkit-input-placeholder {
+}
+
+.panel {
+    float: left;
+    width: 100%;
+    border-radius: 0px;
+    padding: 0px;
+    margin: 0px;
+    box-shadow: none;
+    background: none;
+    border: none;
+}
+
+.flush {
+    padding: 0px;
+}
+
+.flush-left {
+    padding-left: 0px;
+}
+
+.flush-right {
+    padding-right: 0px;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+section {
+    float: left;
+    width: 100%;
+}
+
+.row-eq-height {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.tableRow {
+    display: table;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.tableCell {
+    display: table-cell;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+}
+
+@font-face {
+    font-family: "fontawesome-webfont";
+    src: url("../fonts/fontawesome-webfont.eot");
+    src: url("../fonts/fontawesome-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff2") format("woff2"), url("../fonts/fontawesome-webfont.woff") format("woff"),
+        url("../fonts/fontawesome-webfont.ttf") format("truetype"), url("../fonts/fontawesome-webfont.svg#fontawesome-webfont") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Proxima Nova Rg";
+    src: url("../fonts/ProximaNova-Regular.eot");
+    src: url("../fonts/ProximaNova-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Regular.woff2") format("woff2"), url("../fonts/ProximaNova-Regular.woff") format("woff"),
+        url("../fonts/ProximaNova-Regular.ttf") format("truetype"), url("../fonts/ProximaNova-Regular.svg#ProximaNova-Regular") format("svg");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.container {
+    max-width: 1200px;
+    width: 1200px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Proxima Nova Rg";
+    color: #000;
+}
+
+p,
+label {
+    font-family: "Nunito Sans", sans-serif;
+}
+
+body {
+    font-family: "Nunito Sans", sans-serif;
+    color: #000;
+}
+
+.btn-success,
+.btn-info,
+.btn-primary {
+    display: inline-block;
+}
+
+.bg-light {
+    background-color: transparent !important;
+}
+
+nav.navbar.navbar-expand-lg.navbar-light.bg-light {
+    padding: 0px;
+    margin: 0px;
+}
+
+img {
+    max-width: 100%;
+}
+
+header {
+    padding: 40px 0px;
+    background: #eef1f6;
+}
+
+header ul li {
+}
+
+ul.navbar-nav.ml-auto li.nav-item {
+    padding-right: 64px;
+}
+
+ul.navbar-nav.mr-auto li.nav-item {
+    padding-left: 64px;
+}
+
+.navbar ul li a.nav-link {
+    font-family: "Nunito Sans", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #262b39 !important;
+}
+
+#banner {
+    padding: 40px 0px;
+    background: #eef1f6;
+    position: relative;
+}
+
+#banner img.bottom_side_img {
+    display: none;
+}
+
+#banner h1 {
+    font-family: "Proxima Nova Rg";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 140%;
+    color: #4f4f4f;
+    margin: 0px 0px;
+    margin-top: 50px;
+}
+
+#banner p {
+    font-family: "Nunito Sans", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    color: #262b39;
+    margin-top: 36px;
+    margin-bottom: 46px;
+}
+
+#banner a.btn-primary-fill {
+    width: 204px;
+    height: 75px;
+    background: #7d5cdd;
+    border-radius: 12px;
+    font-family: "Proxima Nova Rg";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #eef9fc;
+    flex-direction: row;
+    justify-content: center;
+    text-decoration: none;
+    margin-right: 20px;
+    transition: 0.3s;
+}
+
+#banner a.btn-primary-fill:hover {
+    background: #7551df;
+    color: #fff;
+}
+
+#banner a.btn-primary-nofill {
+    box-sizing: border-box;
+    width: 304px;
+    height: 75px;
+    background: #eef1f6;
+    border: 2px solid #7d5cdd;
+    border-radius: 12px;
+    font-family: "Proxima Nova Rg";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #7d5cdd;
+    flex-direction: row;
+    justify-content: center;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+#banner a.btn-primary-nofill:hover {
+    background: #7d5cdd;
+    color: #fff;
+}
+
+#banner .align {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+#banner img.propts_blue {
+    position: absolute;
+    bottom: 20%;
+    left: -20px;
+}
+
+#howitworks {
+    padding: 120px 0px;
+    position: relative;
+    background: #f3f5f9;
+}
+
+#howitworks h2 {
+    font-family: "Proxima Nova Rg";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 140%;
+    text-align: center;
+    color: #4f4f4f;
+    margin-top: 0px;
+    margin-bottom: 24px;
+}
+
+#howitworks h2 span img {
+    width: auto;
+    height: auto;
+    position: absolute;
+    margin-left: -55px;
+    top: 13px;
+}
+
+#howitworks p {
+    font-family: "Nunito Sans", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    text-align: center;
+    color: #262b39;
+    padding: 0px 10%;
+}
+
+#howitworks h3 {
+    font-family: "Proxima Nova Rg";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 140%;
+    text-align: center;
+    color: #4f4f4f;
+    margin-top: 36px;
+    margin-bottom: 24px;
+}
+
+#howitworks img {
+    width: 220px;
+    height: 220px;
+}
+
+#howitworks .card {
+    border: none;
+    display: flex;
+    align-items: center;
+    margin-top: 90px;
+    background: #f3f5f9;
+}
+
+#howitworks img.bottom_side_img {
+    width: auto;
+    height: auto;
+    position: absolute;
+}
+
+#howitworks img.top_side_img {
+    width: auto;
+    height: auto;
+    position: absolute;
+    right: 0;
+}
+
+#why-karking {
+    background: #eef1f6 url(../images/rect.png) 50% 50% no-repeat;
+    background-size: contain;
+    padding: 120px 0px;
+    position: relative;
+}
+
+#why-karking .nav-tabs {
+    border: none;
+    display: inline-block;
+    margin-top: 45px;
+    margin-bottom: 90px;
+    width: 605px;
+    background: #f2f6ff;
+    border-radius: 12px;
+}
+
+#why-karking .nav-tabs li {
+    display: inline-block;
+}
+
+#why-karking .nav-tabs button.active {
+    width: 300px;
+    height: 79px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #eef9fc;
+    display: inline-block;
+    background: #7d5cdd;
+    border-radius: 12px;
+    margin: 0px;
+    padding: 0px;
+    z-index: 99999;
+    position: relative;
+    border: none;
+}
+
+#why-karking .card {
+    padding: 22px 25px;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 0px;
+    margin-bottom: 16px;
+}
+
+#why-karking .card.bg-none {
+    background: #eef1f6;
+}
+
+#why-karking .card h6 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    color: #4f4f4f;
+    margin-bottom: 10px;
+}
+
+#why-karking .card p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: #262b39;
+}
+
+#why-karking .nav-tabs button {
+    width: 300px;
+    height: 79px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #7d5cdd;
+    display: inline-block;
+    background: #f2f6ff;
+    border-radius: 12px;
+    margin: 0px;
+    padding: 0px;
+    border: none;
+}
+
+#why-karking a.btn-primary-fill::after {
+    content: "";
+    background: url(../images/Vector\8png) 50% 50% no-repeat;
+    position: absolute;
+    width: 55.29px;
+    height: 54.08px;
+    right: -40%;
+    top: -35px;
+    background-size: contain;
+}
+
+#why-karking a.btn-primary-fill {
+    width: 215px;
+    height: 61px;
+    background: #7d5cdd;
+    border-radius: 12px;
+    font-family: "Proxima Nova Rg";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #eef9fc;
+    flex-direction: row;
+    justify-content: center;
+    text-decoration: none;
+    margin-right: 0;
+    transition: 0.3s;
+    margin-left: 20px;
+    position: relative;
+}
+
+#why-karking a.btn-primary-fill:hover {
+    background: #7551df;
+    color: #fff;
+}
+
+h2.title-head {
+    font-size: 32px;
+    color: #4f4f4f;
+    line-height: 44px;
+    font-weight: 700;
+}
+
+h2.title-head span {
+    display: none;
+}
+
+#about-us {
+    background: #f3f5f9;
+    padding-top: 144px;
+}
+
+#about-us .owl-carousel .owl-item img {
+    width: auto;
+}
+
+#about-us .white-box {
+    background: #fff;
+    padding: 25px 30px;
+    display: inline-block;
+    margin: 25px 15px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.05);
+}
+
+#about-us .owl-carousel .owl-nav button.owl-next {
+    height: 70px;
+    width: 70px;
+    background: url(../images/right-arrow.png) 50% 50% no-repeat;
+    right: -25px;
+    position: relative;
+}
+
+#about-us .owl-carousel .owl-nav button.owl-next:hover {
+    background: url(../images/right-arrow-hover.png) 50% 50% no-repeat;
+}
+
+#about-us .owl-carousel .owl-nav button span {
+    display: none;
+}
+
+#about-us .owl-carousel .owl-nav button.owl-prev {
+    height: 70px;
+    width: 70px;
+    background: url(../images/left-arrow.png) 50% 50% no-repeat;
+}
+
+#about-us .owl-carousel .owl-nav button.owl-prev:hover {
+    background: url(../images/left-arrow-hover.png) 50% 50% no-repeat;
+}
+
+#about-us .owl-nav {
+    position: absolute;
+    top: -120px;
+    right: 0px;
+}
+
+#about-us .white-box h5 {
+    font-size: 18px;
+    color: #222222;
+    line-height: 27px;
+    font-weight: 600;
+    margin-bottom: 0px;
+}
+
+#about-us .white-box p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 32px;
+}
+
+#get-in-touch {
+    background: #f3f5f9;
+    padding-top: 120px;
+    padding-bottom: 50px;
+}
+
+#get-in-touch p {
+    font-size: 18px;
+    color: #262b39;
+    line-height: 26px;
+}
+
+#get-in-touch .media {
+    margin: 15px 0px;
+    display: inline-block;
+}
+
+#get-in-touch .media p {
+    font-size: 14px;
+    line-height: 18px;
+    color: #000000;
+    margin-bottom: 0px;
+}
+
+#get-in-touch .media p a {
+    color: #000000;
+}
+
+#get-in-touch .arrow-top {
+    margin-top: -50px;
+    margin-left: -50px;
+}
+
+#get-in-touch .white-box {
+    background: #fff;
+    background: #ffffff;
+    border-radius: 24px;
+    padding: 32px;
+}
+
+#get-in-touch .white-box h4 {
+    font-size: 24px;
+    color: #170f49;
+    line-height: 34px;
+    font-weight: 700;
+}
+
+#get-in-touch p {
+    font-size: 18px;
+    color: #262b39;
+}
+
+#get-in-touch .white-box label {
+    color: #170f49;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+#get-in-touch .white-box input {
+    background: #ffffff;
+    border: 1px solid #eff0f7;
+    box-shadow: 0px 2px 6px rgba(19, 18, 66, 0.07);
+    border-radius: 46px;
+    padding: 0px;
+    padding-left: 20px;
+    margin-bottom: 15px;
+    height: 66px;
+    padding-right: 53px;
+}
+
+#get-in-touch .white-box textarea {
+    background: #ffffff;
+    border: 1px solid #eff0f7;
+    height: 140px;
+    box-shadow: 0px 4px 12px rgba(19, 18, 66, 0.14);
+    border-radius: 12px;
+    resize: none;
+    padding: 10px;
+}
+
+#get-in-touch .form-row {
+    padding: 10px 0px;
+}
+
+#get-in-touch .white-box span {
+    position: absolute;
+    top: 43%;
+    right: 12%;
+}
+
+#get-in-touch button {
+    background: #7d5cdd;
+    box-shadow: 0px 3px 12px rgba(74, 58, 255, 0.18);
+    border-radius: 56px;
+    display: inline-block;
+    line-height: 60px;
+    font-size: 18px;
+    padding: 0px 40px;
+    border: none;
+    font-weight: 700;
+    color: #fff;
+}
+
+#footer {
+    background: #7d5cdd;
+    padding-top: 75px;
+}
+
+#footer ul li {
+    list-style: none;
+    display: inline-block;
+    width: 100%;
+    padding: 5px 0px;
+}
+
+#footer ul li a {
+    line-height: 36px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #fff;
+}
+
+#footer h5 {
+    font-size: 20px;
+    line-height: 36px;
+    font-weight: 700;
+    color: #fff;
+}
+
+@font-face {
+    font-family: "FontAwesome";
+    src: url("../fonts/fontawesome-webfont.eot");
+    src: url("../fonts/fontawesome-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff2") format("woff2"), url("../fonts/fontawesome-webfont.woff") format("woff"),
+        url("../fonts/fontawesome-webfont.ttf") format("truetype"), url("../fonts/fontawesome-webfont.svg#fontawesome-webfont") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+#footer ul.social li {
+    width: auto;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+#footer ul.social li:last-child {
+    padding-right: 0px;
+}
+
+#footer h3 {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 36px;
+    color: #fff;
+}
+
+#footer p {
+    color: #e0e0e0;
+    line-height: 14px;
+    line-height: 22px;
+}
+
+#footer .btn-img img {
+    /* height:43px; */
+    margin-right: 10px;
+}
+
+#footer ul li.nav-item {
+    padding: 0px;
+}
+
+#footer .nav-tabs {
+    background: #eef9fc;
+    border-radius: 8px;
+    width: 100%;
+    border: none;
+}
+
+#footer .nav-tabs li button {
+    display: inline-block;
+    border-radius: 8px;
+    width: 100%;
+    font-weight: bold;
+    color: #56c4e6;
+    font-size: 16px;
+    margin: 0px;
+    padding: 11px 0px;
+}
+
+#footer .tab-content {
+    padding: 10px 0px;
+}
+
+#footer .tab-content form {
+    border: 2px solid #fff;
+    width: 100%;
+    outline: 0;
+    border-radius: 6px;
+}
+
+#footer input::-webkit-input-placeholder {
+    color: #fff;
+}
+
+#footer .tab-content form input {
+    outline: 0;
+    border: none;
+    background: none;
+    height: 46px;
+    padding-left: 36px;
+    width: 100%;
+    color: #fff;
+}
+
+#footer .tab-content form button {
+    border-radius: 6px;
+    background: #56c4e6;
+    color: #fff;
+    font-size: 16px;
+    line-height: 40px;
+    margin-right: 5px;
+    width: 100%;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    margin-top: 2px;
+    position: relative;
+    right: 2px;
+}
+
+#footer .nav-tabs li button.active {
+    background: #56c4e6;
+    border: none;
+    color: #fff;
+    height: 48px;
+}
+
+#footer p.copyright {
+    margin-top: 35px;
+    padding-top: 25px;
+    border-top: 1px solid #fff;
+    font-size: 12px;
+    margin-bottom: 38px;
+}
+
+#footer .tab-content form span {
+    position: absolute;
+    top: 8px;
+    left: 25px;
+}
+
+#footer .tab-content form span i.fa {
+    color: #fff;
+    margin-top: 5px;
+}
+
+.visible-xs {
+    display: none;
+}
+
+p.show_OnLink {
+    display: none;
+}
+
+p.show_OnLink.active {
+    display: inline-block;
+}
+
+span.hr {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+
+#content {
+    padding: 90px 0px;
+    background: #eef1f6;
+    position: relative;
+}
+
+#content h2 {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 140%;
+    color: #4F4F4F;    
+    margin: 0px 0px;
+}
+
+#content p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    color: #262B39;
+    margin-top: 24px;
+}
+
+#user-terms {
+    padding: 70px 0px;
+    background: #F3F5F9;
+    position: relative;
+}
+
+#user-terms h2 {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 140%;
+    color: #4F4F4F;    
+    margin: 0px 0px;
+}
+
+#user-terms ul {
+    padding-left: 25px;
+}
+
+#user-terms ul li {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    color: #262B39;
+    margin-top: 24px;
+}
+
+#landlord-terms {
+    /* padding: 90px 0px; */
+    padding-top: 102px;
+    padding-bottom: 193px;
+    background: #eef1f6;
+    position: relative;
+}
+
+#landlord-terms h2 {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 140%;
+    color: #4F4F4F;    
+    margin: 0px 0px;
+}
+
+#landlord-terms ul {
+    padding-left: 40px;
+}
+
+#landlord-terms ul li {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    color: #262B39;
+    margin-top: 20px;
+    list-style: none;
+    position: relative;
+}
+
+#landlord-terms ul li::after {
+    content: '';
+    background: url(../images/teenyicons_tick-circle-outline.png) top left no-repeat;
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    top: -2px;
+    left: -3.5%;
+}

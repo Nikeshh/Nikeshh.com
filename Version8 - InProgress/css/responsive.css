@@ -1,0 +1,442 @@
+@media only screen and (max-width: 767px) {
+    .flush-xs {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+
+    .navbar-toggler {
+        line-height: 1;
+        padding: 0;
+        border-radius: 0;
+    }
+    .navbar-toggler.menu-icon {
+        width: 40px;
+        padding: 0;
+        cursor: pointer;
+        position: relative;
+        border: 0px;
+    }
+    .navbar-toggler.menu-icon span {
+        width: 100%;
+        height: 4px;
+        display: block;
+        background-color: #005dba;
+        margin: 6px 0;
+        -webkit-transition: 0.5s;
+        transition: 0.5s;
+    }
+    .navbar-toggler.menu-icon.active span {
+        position: absolute;
+        top: calc(50% - 8px);
+    }
+    .navbar-toggler.menu-icon.active span:nth-child(1) {
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+    .navbar-toggler.menu-icon.active span:nth-child(3) {
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    }
+    .navbar-toggler.menu-icon.active span:nth-child(2) {
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        display: none;
+    }
+
+    .visible-xs {
+        display: inline-block;
+    }
+
+    .navbar-light .navbar-brand {
+        width: 75%;
+    }
+
+    .navbar-light .navbar-brand img {
+        max-height: 100px;
+    }
+
+    #banner h1 {
+        font-size: 26px;
+    }
+
+    #banner img.propts_blue {
+        display: none;
+    }
+
+    .max-banner {
+        max-width: 100%;
+    }
+
+    #banner a.btn-primary-fill,
+    #banner a.btn-primary-nofill {
+        width: 100%;
+        font-size: 16px;
+        height: 48px;
+    }
+
+    .container {
+        max-width: 100% !important;
+        width: 100% !important;
+    }
+
+    #banner .align {
+        display: inline-block;
+        width: 100%;
+        font-size: 14px;
+    }
+
+    header {
+        padding: 20px 0px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    div#navbarSupportedContent {
+        padding-top: 20px;
+        text-align: center;
+    }
+
+    .navbar-light .navbar-toggler {
+        padding: 5px;
+        border: none;
+    }
+
+    ul.navbar-nav.mr-auto li.nav-item {
+        padding-left: 0px;
+    }
+
+    ul.navbar-nav.ml-auto li.nav-item {
+        padding-right: 0px;
+    }
+
+    #banner h1 {
+        margin-top: 5px;
+        text-align: center;
+    }
+
+    #banner img.bottom_side_img {
+        float: right;
+        display: inline-block;
+    }
+
+    #banner p {
+        text-align: center;
+    }
+
+    #banner {
+        padding-top: 20px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    #banner a.btn-primary-fill {
+        margin-bottom: 15px;
+    }
+
+    #banner a.btn-primary-nofill {
+        margin-bottom: 20px;
+    }
+
+    #howitworks {
+        padding: 40px 0px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    #howitworks h3 {
+        text-align: left;
+        margin: 0px;
+    }
+
+    #howitworks p {
+        text-align: left;
+        padding: 10px 0px;
+    }
+
+    .visible-xs {
+        display: block;
+    }
+
+    .hidden-xs {
+        display: none;
+    }
+
+    #howitworks .card {
+        margin: 15px 0px;
+        width: 100%;
+        padding: 10px 10px;
+        width: 100%;
+        display: inline-block;
+        border-radius: 12px;
+        background: #fff;
+        margin-bottom: 0px !important;
+    }
+
+    #howitworks img.bottom_side_img {
+        width: auto;
+        height: auto;
+        position: absolute;
+        display: none;
+    }
+
+    #why-karking .card {
+        background: transparent;
+    }
+
+    #why-karking a.btn-primary-fill::after {
+        display: none;
+    }
+
+    #why-karking a.btn-primary-fill {
+        width: 100%;
+        margin: 0;
+    }
+
+    #howitworks p {
+        margin-bottom: 0px;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    #howitworks .card p {
+        margin-bottom: 0px;
+        padding: 0px 22px;
+        font-size: 14px;
+        text-align: left;
+    }
+
+    #howitworks .card p br {
+        display: none;
+    }
+
+    #howitworks h3 {
+        padding: 0px 22px;
+        font-size: 16px;
+        margin-top: 0px;
+    }
+
+    #howitworks img {
+        width: 129px;
+        height: 129px;
+        margin-left: 18px;
+        margin-top: 5px;
+    }
+
+    .xs-space {
+        padding: 0px 15px !important;
+    }
+
+    #why-karking {
+        padding: 50px 0px;
+    }
+
+    #why-karking .nav-tabs {
+        width: 100%;
+    }
+
+    #why-karking .nav-tabs li {
+        width: 49%;
+        float: left;
+    }
+
+    #why-karking .nav-tabs button {
+        width: 100% !important;
+    }
+
+    #why-karking .nav-tabs button.active,
+    #why-karking .nav-tabs button {
+        height: 58px;
+    }
+
+    #about-us {
+        padding-top: 50px;
+    }
+
+    #about-us .owl-nav {
+        display: none;
+    }
+
+    h2.title-head {
+        text-align: center;
+        font-size: 20px;
+        line-height: 28px;
+        position: relative;
+        margin-bottom: 0px;
+    }
+
+    #about-us h2.title-head {
+        margin-bottom: 15px;
+    }
+
+    #get-in-touch p.sub_p {
+        margin-bottom: 56px;
+    }
+
+    #get-in-touch h2.title-head {
+        margin-bottom: 19px;
+    }
+
+    h2.title-head span {
+        display: inline-block;
+        position: absolute;
+        left: 47px;
+        top: 11px;
+    }
+
+    .xs-center {
+        text-align: center !important;
+    }
+
+    #get-in-touch {
+        padding: 50px 0px;
+    }
+
+    #get-in-touch .media {
+        padding: 0px 20px;
+        margin-bottom: 40px;
+    }
+
+    #get-in-touch .media p {
+        font-size: 14px;
+        line-height: 20px;
+        color: #000000;
+        margin-bottom: 0px;
+    }
+
+    #get-in-touch .form-row p {
+        text-align: left;
+    }
+
+    #get-in-touch button {
+        float: left;
+    }
+
+    #get-in-touch p br {
+        display: none;
+    }
+
+    #get-in-touch .arrow-top {
+        display: none;
+    }
+
+    .media-body p {
+        text-align: left !important;
+    }
+
+    #get-in-touch .white-box {
+        margin-top: 50px;
+    }
+
+    #footer .btn-img img {
+        height: 51px;
+        margin-right: 10px;
+        margin-bottom: 25px;
+    }
+
+    #footer .nav-tabs {
+        margin-top: 28px;
+        margin-bottom: 19px;
+    }
+
+    #footer .tab-content {
+        margin-bottom: 20px;
+    }
+
+    #content {
+        padding-top: 25px;
+    }
+
+    #landlord-terms ul li::after {
+        top: 2px;
+        left: -40px;
+    }
+
+    #content h2, #user-terms h2, #landlord-terms h2 {
+        font-size: 20px;
+    }
+
+    #content p, #user-terms ul li, #landlord-terms ul li {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .nav-link,
+    .navbar-expand-md .navbar-nav .nav-link,
+    .header a {
+        font-size: 13px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .hidden-sm {
+        display: none;
+    }
+
+    .navbar ul li a.nav-link {
+        text-align: center;
+    }
+
+    ul.navbar-nav.ml-auto li.nav-item {
+        padding-right: 0px;
+        padding-left: 0px;
+        text-align: center;
+    }
+
+    ul.navbar-nav.mr-auto li.nav-item {
+        padding-left: 0px;
+    }
+
+    .visible-sm {
+        display: block;
+    }
+
+    .header .nav-item {
+        margin: 0px 5px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+    h4 {
+        font-size: 20px;
+    }
+
+    h5 {
+        font-size: 18px;
+    }
+
+    .newsletter .btn {
+        margin-top: 30px;
+    }
+
+    .container {
+        max-width: 720px;
+        width: auto;
+    }
+
+    #why-karking .nav-tabs li {
+        width: 49%;
+    }
+
+    #why-karking .nav-tabs button {
+        width: 100% !important;
+    }
+
+    #footer ul,
+    #footer h5 {
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1169px) {
+    .container {
+        max-width: 100%;
+        width: auto;
+    }
+}
