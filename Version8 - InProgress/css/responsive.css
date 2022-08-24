@@ -283,11 +283,19 @@
         height: 58px;
     }
 
-    #about-us {
+    #projects {
         padding-top: 50px;
     }
 
-    #about-us .owl-nav {
+    #projects .owl-nav {
+        display: none;
+    }
+
+    #testimonials {
+        padding-top: 50px;
+    }
+
+    #testimonials .owl-nav {
         display: none;
     }
 
@@ -299,15 +307,19 @@
         margin-bottom: 0px;
     }
 
-    #about-us h2.title-head {
+    #projects h2.title-head {
         margin-bottom: 15px;
     }
 
-    #get-in-touch p.sub_p {
+    #testimonials h2.title-head {
+        margin-bottom: 15px;
+    }
+
+    #contact p.sub_p {
         margin-bottom: 56px;
     }
 
-    #get-in-touch h2.title-head {
+    #contact h2.title-head {
         margin-bottom: 19px;
     }
 
@@ -322,35 +334,35 @@
         text-align: center !important;
     }
 
-    #get-in-touch {
+    #contact {
         padding: 50px 0px;
     }
 
-    #get-in-touch .media {
+    #contact .media {
         padding: 0px 20px;
         margin-bottom: 40px;
     }
 
-    #get-in-touch .media p {
+    #contact .media p {
         font-size: 14px;
         line-height: 20px;
         color: #000000;
         margin-bottom: 0px;
     }
 
-    #get-in-touch .form-row p {
+    #contact .form-row p {
         text-align: left;
     }
 
-    #get-in-touch button {
+    #contact button {
         float: left;
     }
 
-    #get-in-touch p br {
+    #contact p br {
         display: none;
     }
 
-    #get-in-touch .arrow-top {
+    #contact .arrow-top {
         display: none;
     }
 
@@ -358,7 +370,7 @@
         text-align: left !important;
     }
 
-    #get-in-touch .white-box {
+    #contact .white-box {
         margin-top: 50px;
     }
 
