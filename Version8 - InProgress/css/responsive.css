@@ -1,3 +1,11 @@
+@media only screen and (min-width: 767px) {
+    .max-banner {
+        position: absolute;
+        left: 30%; 
+        top: 10%;
+    }
+}
+
 @media only screen and (max-width: 767px) {
     .flush-xs {
         padding-right: 0px;
