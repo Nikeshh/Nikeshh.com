@@ -1092,3 +1092,7 @@ span.hr {
     top: -2px;
     left: -3.5%;
 }
+
+.skill-icon {
+    max-width: 100px;
+}
