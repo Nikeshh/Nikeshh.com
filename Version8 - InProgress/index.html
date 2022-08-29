@@ -366,7 +366,10 @@
                     <div class="col-lg-6 text-center col-12 col-sm-12">
                         <ul class="nav nav-tabs" id="projectsTab" role="tablist">
                             <li class="nav-item" role="presentation">
-                                <button class="nav-link active" id="all-tab" data-toggle="tab" data-target="#all" type="button" role="tab" aria-controls="all" aria-selected="true">All</button>
+                                <button class="nav-link active" id="highlights-tab" data-toggle="tab" data-target="#highlights" type="button" role="tab" aria-controls="highlights" aria-selected="true">Highlights</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="others-tab" data-toggle="tab" data-target="#others" type="button" role="tab" aria-controls="others" aria-selected="true">Others</button>
                             </li>
                         </ul>
                     </div>
@@ -374,8 +377,36 @@
                 <div class="row">
                     <div class="col-lg-12 col-12 col-sm-12">
                         <div class="tab-content" id="projectsTabContent">
-                            <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all-tab">
-                                <div class="owl-carousel theme projects">
+                            <div class="tab-pane fade show active" id="highlights" role="tabpanel" aria-labelledby="highlights-tab">
+                                <div class="owl-carousel theme projects highlights">
+                                    <div class="item">
+                                        <div class="white-box">
+                                            <h3>Foodbooze (Mobile App, Website, Analytics) - Complete Food Delivery or Food Ecommerce Solution</h3>
+                                            <p>
+                                                Developed a full-fledged food delivery application suite which includes a point-of-sale system, user food ordering application (Flutter), restaurant management system (React.JS), delivery application (Flutter) and custom data analytics system (Flask with Neural Network Machine learning model) to monitor and analyze the data to find insights based on the food data and to flag or detect the ones who alienate the system.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="white-box">
+                                            <h3>Stream Lens</h3>
+                                            <p>
+                                                Created a data stream monitoring tool to monitor the streaming payload or data sent over Kafka or Kinesis, or EventHub, focusing on capturing and deserialization the data and understanding the metrics and functions like partition count, topics, broker details, node details, network error rate, network request rate, consumer max lag, free memory and swap space usage, log flush latency, offline partition count, consumer message rate, requests per second and more of Kafka emitted metrics, host-level metrics and JVM garbage collection metrics.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="white-box">
+                                            <h3>POS (POINT OF SALE) SYSTEM</h3>
+                                            <p>
+                                                POS (Point Of Sale) System developed for JustShawarma, Bangalore. Just Shawarma is a QSR chain in Bangalore.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade show" id="others" role="tabpanel" aria-labelledby="others-tab">
+                                <div class="owl-carousel theme projects others">
                                     <div class="item">
                                         <div class="white-box">
                                             <h3>RTRIX</h3>

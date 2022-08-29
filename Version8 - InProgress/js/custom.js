@@ -30,7 +30,27 @@
         $("p.show_OnLink").toggleClass("active");
     });
 
-    $(".projects").owlCarousel({
+    $(".highlights").owlCarousel({
+        loop: true,
+        margin: 0,
+        nav: true,
+        left: true,
+        autoplay: false,
+        nav: true,
+        responsive: {
+            0: {
+                items: 1.2,
+            },
+            600: {
+                items: 2,
+            },
+            1000: {
+                items: 3,
+            },
+        },
+    });
+
+    $(".others").owlCarousel({
         loop: true,
         margin: 0,
         nav: true,
