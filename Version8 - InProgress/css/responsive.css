@@ -256,10 +256,10 @@
         width: 100%;
     }
 
-    #skills .nav-tabs li {
+    /*#skills .nav-tabs li {
         width: 49%;
         float: left;
-    }
+    }*/
 
     #skills .nav-tabs button {
         width: 100% !important;
