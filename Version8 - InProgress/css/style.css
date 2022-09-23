@@ -353,7 +353,7 @@ ul.navbar-nav.mr-auto li.nav-item {
 }
 
 #skills {
-    background: #eef1f6 url(../images/rect.png) 50% 50% no-repeat;
+    background: #eef1f6 50% 50% no-repeat;
     background-size: contain;
     padding: 120px 0px;
     position: relative;
