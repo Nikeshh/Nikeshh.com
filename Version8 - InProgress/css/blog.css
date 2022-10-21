@@ -376,6 +376,15 @@ header .btn-group {
   margin-bottom: 3rem;
   text-align: center;
 }
+
+.blog .tags {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.blog .tags > button {
+  margin: 5px;
+}
   
 .blog-card-group { 
   margin-bottom: 3rem; 
@@ -818,6 +827,10 @@ footer .wrapper { text-align: center; }
     display: grid;
     grid-template-columns: 5fr 2fr;
     gap: 60px;
+  }
+
+  .main .container-max {
+    grid-template-columns: 5fr;
   }
   
   /**
