@@ -1,9 +1,6 @@
-
 /* Theme */
-
+/* Light theme colors */
 .light-theme {
-  /* Light theme colors */
-
   --background-primary: hsl(0, 0%, 100%);
   --background-secondary: hsl(0, 0%, 97%);
 
@@ -17,9 +14,8 @@
   --accent: hsl(229, 76%, 66%);
 }
   
+/* Dark theme colors */
 .dark-theme {
-  /* Dark theme colors */
-
   --background-primary: hsl(218, 23%, 23%);
   --background-secondary: hsl(220, 26%, 14%);
 
@@ -362,6 +358,10 @@ header .btn-group {
   
 .hero .right { 
   display: none; 
+}
+
+.hero .container p {
+  color: var(--foreground-primary);
 }
   
 /* Blog Section */ 
@@ -989,5 +989,21 @@ footer .wrapper { text-align: center; }
   */
   .footer-title { font-size: 1.125rem; }
   .footer-link { margin-bottom: 0.3rem; }
+
+  .header_social {
+    margin: 25px 0px 30px;
+  }
+
+  .header_social a {
+      padding: 0 20px;
+      text-decoration: none;
+      transition: all 0.3s ease-in-out;
+      font-size: 30px;
+      color: var(--foreground-primary);
+  }
+
+  .header_social a:hover {
+    color: blue;
+  }
   
 }
