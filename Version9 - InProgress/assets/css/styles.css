@@ -23,6 +23,7 @@ html {
 /* Section 1 */
 .section-1 {
   width: 100%;
+  display: none;
 }
 
 /* End Section 1 */
