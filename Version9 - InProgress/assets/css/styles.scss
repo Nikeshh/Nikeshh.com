@@ -169,7 +169,6 @@ html {
                         font-weight: 200;
                         padding: 1rem;
                         text-align: justify;
-                        text-justify: inter-word;
                     }
                 }
             }
@@ -264,6 +263,11 @@ html {
         .tabs {
             display: flex;
             flex-direction: row;
+            gap: 1rem;
+
+            .tab-item[role="active"] {
+                color: blue;
+            }
         }
 
         .content {
@@ -278,7 +282,7 @@ html {
                 }
 
                 .tag {
-
+                    color: black;
                 }
 
                 .title {

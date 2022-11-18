@@ -140,7 +140,6 @@ html {
   font-weight: 200;
   padding: 1rem;
   text-align: justify;
-  text-justify: inter-word;
 }
 
 /* End Section 2 */
@@ -218,6 +217,10 @@ html {
 .section-4 .wrapper .tabs {
   display: flex;
   flex-direction: row;
+  gap: 1rem;
+}
+.section-4 .wrapper .tabs .tab-item[role=active] {
+  color: blue;
 }
 .section-4 .wrapper .content {
   display: flex;
@@ -227,6 +230,9 @@ html {
 .section-4 .wrapper .content .content-item img {
   width: 20rem;
   height: 20rem;
+}
+.section-4 .wrapper .content .content-item .tag {
+  color: black;
 }
 .section-4 .wrapper .see-more {
   padding-top: 1rem;
