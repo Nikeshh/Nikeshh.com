@@ -63,12 +63,16 @@ html {
 /* Section 2 */
 .section-2 {
   width: 100%;
-  display: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .section-2 .wrapper {
   width: 120rem;
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 .section-2 .wrapper .left {
   flex-grow: 1;
