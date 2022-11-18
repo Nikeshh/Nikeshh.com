@@ -193,12 +193,27 @@ html {
 /* Section 4 */
 .section-4 {
   width: 100%;
-  display: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
 }
 .section-4 .wrapper {
   width: 120rem;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  position: relative;
+}
+.section-4 .wrapper .tag {
+  text-transform: uppercase;
+  color: red;
+  font-weight: 500;
+}
+.section-4 .wrapper .heading {
+  font-weight: 400;
 }
 .section-4 .wrapper .tabs {
   display: flex;
@@ -213,6 +228,10 @@ html {
   width: 20rem;
   height: 20rem;
 }
+.section-4 .wrapper .see-more {
+  padding-top: 1rem;
+}
+
 /* End Section 4 */
 /* Section 5 */
 .section-5 {

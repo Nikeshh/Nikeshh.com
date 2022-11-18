@@ -237,19 +237,28 @@ html {
 /* Section 4 */
 .section-4 {
     width: 100%;
-    display: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
 
     .wrapper {
         width: 120rem;
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        position: relative;
 
         .tag {
-
+            text-transform: uppercase;
+            color: red;
+            font-weight: 500;
         }
 
         .heading {
-
+            font-weight: 400;
         }
 
         .tabs {
@@ -279,6 +288,7 @@ html {
         }
 
         .see-more {
+            padding-top: 1rem;
         }
     }
 }
