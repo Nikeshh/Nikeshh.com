@@ -58,7 +58,22 @@ html {
         }
 
         .banner {
+            display: flex;
+            flex-direction: row;
 
+            .left {
+                img {
+                    width: 20rem;
+                    height: 20rem;
+                }
+            }
+
+            .right {
+                .social-icons {
+                    display: flex;
+                    flex-direction: row;
+                }
+            }
         }
     }
 }

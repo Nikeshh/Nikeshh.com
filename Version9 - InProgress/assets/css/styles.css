@@ -45,6 +45,19 @@ html {
   border: solid #000 0.1rem;
   padding: 1rem;
 }
+.section-1 .wrapper .banner {
+  display: flex;
+  flex-direction: row;
+}
+.section-1 .wrapper .banner .left img {
+  width: 20rem;
+  height: 20rem;
+}
+.section-1 .wrapper .banner .right .social-icons {
+  display: flex;
+  flex-direction: row;
+}
+
 /* End Section 1 */
 /* Section 2 */
 .section-2 {
