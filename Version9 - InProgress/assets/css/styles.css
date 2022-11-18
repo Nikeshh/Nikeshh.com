@@ -275,15 +275,30 @@ html {
 /* Section 5 */
 .section-5 {
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
   display: none;
 }
 .section-5 .wrapper {
   width: 120rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  position: relative;
 }
 .section-5 .wrapper .heading-and-controls {
   display: flex;
   flex-direction: row;
+  width: 100%;
   justify-content: space-between;
+}
+.section-5 .wrapper .heading-and-controls .heading {
+  font-weight: 500;
+  font-size: 3rem;
 }
 .section-5 .wrapper .heading-and-controls .controls {
   display: flex;
@@ -293,7 +308,7 @@ html {
 .section-5 .wrapper .heading-and-controls .controls .left-arrow {
   border-radius: 50%;
   background-color: #f54e6e;
-  padding: 1rem;
+  padding: 1.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -301,7 +316,7 @@ html {
 .section-5 .wrapper .heading-and-controls .controls .right-arrow {
   border-radius: 50%;
   background-color: #f54e6e;
-  padding: 1rem;
+  padding: 1.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -309,44 +324,64 @@ html {
 .section-5 .wrapper .testimonials {
   display: flex;
   flex-direction: row;
-  gap: 1rem;
+  gap: 2rem;
 }
 .section-5 .wrapper .testimonials .testimonial {
   display: flex;
   flex-direction: row;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
 }
 .section-5 .wrapper .testimonials .testimonial .left img {
   width: 20rem;
-  height: 20rem;
+  height: 100%;
+  border-radius: 1rem;
 }
 .section-5 .wrapper .testimonials .testimonial .right {
   display: flex;
   flex-direction: column;
+  padding: 2rem;
+  gap: 1rem;
+}
+.section-5 .wrapper .testimonials .testimonial .right .heading {
+  font-size: 2rem;
+  font-weight: 500;
+}
+.section-5 .wrapper .testimonials .testimonial .right .description {
+  font-size: 1rem;
+  font-weight: 300;
 }
 .section-5 .wrapper .testimonials .testimonial .right .profile-details {
   display: flex;
   flex-direction: row;
+  margin-top: auto;
 }
-.section-5 .wrapper .testimonials .testimonial .right .profile-details .left {
+.section-5 .wrapper .testimonials .testimonial .right .profile-details .left-inner {
   justify-content: center;
   align-items: center;
+  margin-right: 1rem;
 }
-.section-5 .wrapper .testimonials .testimonial .right .profile-details .left img {
+.section-5 .wrapper .testimonials .testimonial .right .profile-details .left-inner img {
   height: 5rem;
   width: 5rem;
   border-radius: 50%;
 }
-.section-5 .wrapper .testimonials .testimonial .right .profile-details .middle {
+.section-5 .wrapper .testimonials .testimonial .right .profile-details .middle-inner {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: left;
 }
-.section-5 .wrapper .testimonials .testimonial .right .profile-details .right {
-  justify-content: center;
-  align-items: flex-end;
+.section-5 .wrapper .testimonials .testimonial .right .profile-details .middle-inner .name {
+  font-size: 1.5rem;
 }
-.section-5 .wrapper .testimonials .testimonial .right .profile-details .right .stars {
+.section-5 .wrapper .testimonials .testimonial .right .profile-details .middle-inner .designation {
+  font-style: italic;
+}
+.section-5 .wrapper .testimonials .testimonial .right .profile-details .right-inner {
+  margin-top: auto;
+}
+.section-5 .wrapper .testimonials .testimonial .right .profile-details .right-inner .stars {
   display: flex;
   flex-direction: row;
 }

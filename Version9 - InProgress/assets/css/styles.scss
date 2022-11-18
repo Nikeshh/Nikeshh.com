@@ -330,18 +330,30 @@ html {
 /* Section 5 */
 .section-5 {
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
     display: none;
 
     .wrapper {
         width: 120rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        position: relative;
         
         .heading-and-controls {
             display: flex;
             flex-direction: row;
+            width: 100%;
             justify-content: space-between;
 
             .heading {
-
+                font-weight: 500;
+                font-size: 3rem;
             }
 
             .controls {
@@ -352,7 +364,7 @@ html {
                 .left-arrow {
                     border-radius: 50%;
                     background-color: #f54e6e;
-                    padding: 1rem;
+                    padding: 1.5rem;
                     display: flex;
                     justify-content: center;
                     align-items: center;
@@ -361,7 +373,7 @@ html {
                 .right-arrow {
                     border-radius: 50%;
                     background-color: #f54e6e;
-                    padding: 1rem;
+                    padding: 1.5rem;
                     display: flex;
                     justify-content: center;
                     align-items: center;
@@ -373,38 +385,48 @@ html {
         .testimonials {
             display: flex;
             flex-direction: row;
-            gap: 1rem;
+            gap: 2rem;
 
             .testimonial {
                 display: flex;
                 flex-direction: row;
+                box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+                border-top-left-radius: 1rem;
+                border-bottom-left-radius: 1rem;
 
                 .left {
                     img {
                         width: 20rem;
-                        height: 20rem;
+                        height: 100%;
+                        border-radius: 1rem;
                     }
                 }
 
                 .right {
                     display: flex;
                     flex-direction: column;
+                    padding: 2rem;
+                    gap: 1rem;
 
                     .heading {
-
+                        font-size: 2rem;
+                        font-weight: 500;
                     }
 
                     .description {
-
+                        font-size: 1rem;
+                        font-weight: 300;
                     }
 
                     .profile-details {
                         display: flex;
                         flex-direction: row;
+                        margin-top: auto;
 
-                        .left {
+                        .left-inner {
                             justify-content: center;
                             align-items: center;
+                            margin-right: 1rem;
 
                             img {
                                 height: 5rem;
@@ -413,16 +435,22 @@ html {
                             }
                         }
 
-                        .middle {
+                        .middle-inner {
                             display: flex;
                             flex-direction: column;
                             justify-content: center;
-                            align-items: left;
+
+                            .name {
+                                font-size: 1.5rem;
+                            }
+
+                            .designation {
+                                font-style: italic;
+                            }
                         }
 
-                        .right {
-                            justify-content: center;
-                            align-items: flex-end;
+                        .right-inner {
+                            margin-top: auto;
 
                             .stars {
                                 display: flex;
