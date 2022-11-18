@@ -23,6 +23,7 @@ html {
 /* Section 1 */
 .section-1 {
   width: 100%;
+  display: none;
 }
 .section-1 .wrapper {
   width: 120rem;
@@ -117,7 +118,6 @@ html {
 /* Section 3 */
 .section-3 {
   width: 100%;
-  display: none;
 }
 
 /* End Section 3 */
