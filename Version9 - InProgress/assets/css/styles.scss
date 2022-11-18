@@ -87,6 +87,7 @@ html {
     justify-content: center;
     align-items: center;
     padding: 2rem;
+    display: none;
 
     .wrapper {
         width: 120rem;
@@ -180,25 +181,52 @@ html {
 /* Section 3 */
 .section-3 {
     width: 100%;
-    display: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
 
     .wrapper {
         width: 120rem;
         display: flex;
         flex-direction: row;
+        justify-content: center;
+        gap: 20rem;
+        position: relative;
 
         .left {
+            .tag {
+                text-transform: uppercase;
+                color: red;
+                font-weight: 500;
+                padding-bottom: 1rem;
+            }
 
+            .heading {
+                font-size: 3rem;
+                font-weight: 400;
+                margin-bottom: 3rem;
+            }
+
+            .sub-heading {
+                font-weight: 500;
+            }
         }
 
         .middle {
-
+            position: absolute;
+            z-index: 999;
+            box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+            padding: 3rem;
+            background-color: white;
+            bottom: 2rem;
+            width: 40rem;
         }
 
         .right {
             img {
-                height: 20rem;
-                width: 20rem;
+                height: 30rem;
+                width: 30rem;
             }
         }
     }

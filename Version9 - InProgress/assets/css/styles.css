@@ -67,6 +67,7 @@ html {
   justify-content: center;
   align-items: center;
   padding: 2rem;
+  display: none;
 }
 .section-2 .wrapper {
   width: 120rem;
@@ -146,16 +147,45 @@ html {
 /* Section 3 */
 .section-3 {
   width: 100%;
-  display: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
 }
 .section-3 .wrapper {
   width: 120rem;
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  gap: 20rem;
+  position: relative;
+}
+.section-3 .wrapper .left .tag {
+  text-transform: uppercase;
+  color: red;
+  font-weight: 500;
+  padding-bottom: 1rem;
+}
+.section-3 .wrapper .left .heading {
+  font-size: 3rem;
+  font-weight: 400;
+  margin-bottom: 3rem;
+}
+.section-3 .wrapper .left .sub-heading {
+  font-weight: 500;
+}
+.section-3 .wrapper .middle {
+  position: absolute;
+  z-index: 999;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  padding: 3rem;
+  background-color: white;
+  bottom: 2rem;
+  width: 40rem;
 }
 .section-3 .wrapper .right img {
-  height: 20rem;
-  width: 20rem;
+  height: 30rem;
+  width: 30rem;
 }
 
 /* End Section 3 */
