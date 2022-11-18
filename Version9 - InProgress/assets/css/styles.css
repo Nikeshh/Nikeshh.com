@@ -23,10 +23,10 @@ html {
 /* Section 1 */
 .section-1 {
   width: 100%;
+  height: 100vh;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  display: none;
 }
 .section-1 .wrapper {
   width: 120rem;
@@ -114,7 +114,6 @@ html {
   justify-content: center;
   align-items: center;
   padding: 2rem;
-  display: none;
 }
 .section-2 .wrapper {
   width: 120rem;
@@ -197,7 +196,6 @@ html {
   justify-content: center;
   align-items: center;
   padding: 2rem;
-  display: none;
 }
 .section-3 .wrapper {
   width: 120rem;
@@ -243,7 +241,6 @@ html {
   justify-content: center;
   align-items: center;
   padding: 2rem;
-  display: none;
 }
 .section-4 .wrapper {
   width: 120rem;
@@ -326,7 +323,6 @@ html {
   justify-content: center;
   align-items: center;
   padding: 2rem;
-  display: none;
 }
 .section-5 .wrapper {
   width: 120rem;
@@ -445,7 +441,6 @@ html {
   color: white;
   background-color: #2e8b9d;
   background: linear-gradient(0deg, #2e8b9d 75%, #fff 25%);
-  display: none;
 }
 .section-6 .section-6-1 {
   width: 120rem;
