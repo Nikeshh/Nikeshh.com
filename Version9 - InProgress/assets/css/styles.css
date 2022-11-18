@@ -23,13 +23,53 @@ html {
 /* Section 1 */
 .section-1 {
   width: 100%;
+  display: none;
 }
 
 /* End Section 1 */
 /* Section 2 */
 .section-2 {
   width: 100%;
-  display: none;
+}
+.section-2 .wrapper {
+  width: 120rem;
+  display: flex;
+  flex-direction: row;
+}
+.section-2 .wrapper .left {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+.section-2 .wrapper .left .tag {
+  text-transform: uppercase;
+}
+.section-2 .wrapper .left .heading {
+  font-size: 3rem;
+}
+.section-2 .wrapper .left .controls {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+.section-2 .wrapper .left .controls .left-arrow {
+  border-radius: 50%;
+  background-color: #f54e6e;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section-2 .wrapper .left .controls .right-arrow {
+  border-radius: 50%;
+  background-color: #f54e6e;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section-2 .wrapper .right {
+  flex-grow: 3;
 }
 
 /* End Section 2 */
