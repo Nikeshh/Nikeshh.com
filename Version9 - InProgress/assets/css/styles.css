@@ -23,13 +23,33 @@ html {
 /* Section 1 */
 .section-1 {
   width: 100%;
-  display: none;
 }
-
+.section-1 .wrapper {
+  width: 120rem;
+}
+.section-1 .wrapper .navbar {
+  height: 8rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.section-1 .wrapper .navbar .left img {
+  width: 5rem;
+  height: 5rem;
+}
+.section-1 .wrapper .navbar .middle .nav-bar-list {
+  display: flex;
+  flex-direction: row;
+}
+.section-1 .wrapper .navbar .right .action-btn {
+  border: solid #000 0.1rem;
+  padding: 1rem;
+}
 /* End Section 1 */
 /* Section 2 */
 .section-2 {
   width: 100%;
+  display: none;
 }
 .section-2 .wrapper {
   width: 120rem;
@@ -70,6 +90,14 @@ html {
 }
 .section-2 .wrapper .right {
   flex-grow: 3;
+}
+.section-2 .wrapper .right .carousel {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+.section-2 .wrapper .right .carousel .carousel-item img {
+  width: 15rem;
 }
 
 /* End Section 2 */

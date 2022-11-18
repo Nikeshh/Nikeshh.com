@@ -25,13 +25,49 @@ html {
 /* Section 1 */
 .section-1 {
     width: 100%;
-    display: none;
+
+    .wrapper {
+        width: 120rem;
+
+        .navbar {
+            height: 8rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            .left {
+                img {
+                    width: 5rem;
+                    height: 5rem;
+                }
+            }
+
+            .middle {
+                .nav-bar-list {
+                    display: flex;
+                    flex-direction: row;
+                }
+            }
+
+            .right {
+                .action-btn {
+                    border: solid #000 0.1rem;
+                    padding: 1rem;
+                }
+            }
+        }
+
+        .banner {
+
+        }
+    }
 }
 /* End Section 1 */
 
 /* Section 2 */
 .section-2 {
     width: 100%;
+    display: none;
 
     .wrapper {
         width: 120rem;
@@ -79,6 +115,16 @@ html {
 
         .right {
             flex-grow: 3;
+            
+            .carousel {
+                display: flex;
+                flex-direction: row;
+                gap: 2rem;
+
+                .carousel-item img {
+                    width: 15rem;
+                }
+            }
         }
     }
 }
