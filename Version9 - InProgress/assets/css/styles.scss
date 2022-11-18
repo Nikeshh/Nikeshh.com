@@ -240,6 +240,7 @@ html {
     justify-content: center;
     align-items: center;
     padding: 2rem;
+    display: none;
 
     .wrapper {
         width: 120rem;
@@ -273,20 +274,48 @@ html {
         .content {
             display: flex;
             flex-direction: row;
-            gap: 2rem;
+            gap: 3rem;
+            margin-top: 3rem;
 
             .content-item {
+                box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+                border-top-left-radius: 1rem;
+                border-bottom-right-radius: 1rem;
+                position: relative;
+
                 img {
+                    border-top-left-radius: 1rem;
                     width: 20rem;
                     height: 20rem;
                 }
 
-                .tag {
-                    color: black;
+                .tag-wrapper {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    position: absolute;
+                    top: 18.5rem;
+                    z-index: 999;
+
+                    .tag {
+                        color: black;
+                        padding: 1rem;
+                        border-radius: 3rem;
+                        width: fit-content;
+                        box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+                        background-color: white;
+                    }
                 }
 
-                .title {
 
+                .title {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 2rem;
+                    font-size: 1.5rem;
                 }
             }
         }

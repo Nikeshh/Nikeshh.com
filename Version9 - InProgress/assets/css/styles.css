@@ -196,6 +196,7 @@ html {
   justify-content: center;
   align-items: center;
   padding: 2rem;
+  display: none;
 }
 .section-4 .wrapper {
   width: 120rem;
@@ -225,14 +226,46 @@ html {
 .section-4 .wrapper .content {
   display: flex;
   flex-direction: row;
-  gap: 2rem;
+  gap: 3rem;
+  margin-top: 3rem;
+}
+.section-4 .wrapper .content .content-item {
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  border-top-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  position: relative;
 }
 .section-4 .wrapper .content .content-item img {
+  border-top-left-radius: 1rem;
   width: 20rem;
   height: 20rem;
 }
-.section-4 .wrapper .content .content-item .tag {
+.section-4 .wrapper .content .content-item .tag-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 18.5rem;
+  z-index: 999;
+}
+.section-4 .wrapper .content .content-item .tag-wrapper .tag {
   color: black;
+  padding: 1rem;
+  border-radius: 3rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  background-color: white;
+}
+.section-4 .wrapper .content .content-item .title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  font-size: 1.5rem;
 }
 .section-4 .wrapper .see-more {
   padding-top: 1rem;
