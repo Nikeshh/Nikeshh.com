@@ -177,6 +177,7 @@ html {
 /* Section 4 */
 .section-4 {
     width: 100%;
+    display: none;
 
     .wrapper {
         width: 120rem;
@@ -227,12 +228,116 @@ html {
 .section-5 {
     width: 100%;
     display: none;
+
+    .wrapper {
+        width: 120rem;
+        
+        .heading-and-controls {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            .heading {
+
+            }
+
+            .controls {
+                display: flex;
+                flex-direction: row;
+                gap: 1rem;
+
+                .left-arrow {
+                    border-radius: 50%;
+                    background-color: #f54e6e;
+                    padding: 1rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .right-arrow {
+                    border-radius: 50%;
+                    background-color: #f54e6e;
+                    padding: 1rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+            }
+        }
+
+        .testimonials {
+            display: flex;
+            flex-direction: row;
+            gap: 1rem;
+
+            .testimonial {
+                display: flex;
+                flex-direction: row;
+
+                .left {
+                    img {
+                        width: 20rem;
+                        height: 20rem;
+                    }
+                }
+
+                .right {
+                    display: flex;
+                    flex-direction: column;
+
+                    .heading {
+
+                    }
+
+                    .description {
+
+                    }
+
+                    .profile-details {
+                        display: flex;
+                        flex-direction: row;
+
+                        .left {
+                            justify-content: center;
+                            align-items: center;
+
+                            img {
+                                height: 5rem;
+                                width: 5rem;
+                                border-radius: 50%;
+                            }
+                        }
+
+                        .middle {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: left;
+                        }
+
+                        .right {
+                            justify-content: center;
+                            align-items: flex-end;
+
+                            .stars {
+                                display: flex;
+                                flex-direction: row;
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+
+    }
 }
 /* End Section 5 */
 
 /* Section 6 */
 .section-6 {
     width: 100%;
-    display: none;
 }
 /* End Section 6 */

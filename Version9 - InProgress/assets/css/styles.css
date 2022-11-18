@@ -134,6 +134,7 @@ html {
 /* Section 4 */
 .section-4 {
   width: 100%;
+  display: none;
 }
 .section-4 .wrapper {
   width: 120rem;
@@ -159,12 +160,84 @@ html {
   width: 100%;
   display: none;
 }
+.section-5 .wrapper {
+  width: 120rem;
+}
+.section-5 .wrapper .heading-and-controls {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.section-5 .wrapper .heading-and-controls .controls {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+.section-5 .wrapper .heading-and-controls .controls .left-arrow {
+  border-radius: 50%;
+  background-color: #f54e6e;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section-5 .wrapper .heading-and-controls .controls .right-arrow {
+  border-radius: 50%;
+  background-color: #f54e6e;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section-5 .wrapper .testimonials {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+.section-5 .wrapper .testimonials .testimonial {
+  display: flex;
+  flex-direction: row;
+}
+.section-5 .wrapper .testimonials .testimonial .left img {
+  width: 20rem;
+  height: 20rem;
+}
+.section-5 .wrapper .testimonials .testimonial .right {
+  display: flex;
+  flex-direction: column;
+}
+.section-5 .wrapper .testimonials .testimonial .right .profile-details {
+  display: flex;
+  flex-direction: row;
+}
+.section-5 .wrapper .testimonials .testimonial .right .profile-details .left {
+  justify-content: center;
+  align-items: center;
+}
+.section-5 .wrapper .testimonials .testimonial .right .profile-details .left img {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+}
+.section-5 .wrapper .testimonials .testimonial .right .profile-details .middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+}
+.section-5 .wrapper .testimonials .testimonial .right .profile-details .right {
+  justify-content: center;
+  align-items: flex-end;
+}
+.section-5 .wrapper .testimonials .testimonial .right .profile-details .right .stars {
+  display: flex;
+  flex-direction: row;
+}
 
 /* End Section 5 */
 /* Section 6 */
 .section-6 {
   width: 100%;
-  display: none;
 }
 
 /* End Section 6 *//*# sourceMappingURL=styles.css.map */
