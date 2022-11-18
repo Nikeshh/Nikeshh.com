@@ -149,6 +149,7 @@ html {
 /* Section 3 */
 .section-3 {
     width: 100%;
+    display: none;
 
     .wrapper {
         width: 120rem;
@@ -176,7 +177,49 @@ html {
 /* Section 4 */
 .section-4 {
     width: 100%;
-    display: none;
+
+    .wrapper {
+        width: 120rem;
+        display: flex;
+        flex-direction: column;
+
+        .tag {
+
+        }
+
+        .heading {
+
+        }
+
+        .tabs {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: row;
+            gap: 2rem;
+
+            .content-item {
+                img {
+                    width: 20rem;
+                    height: 20rem;
+                }
+
+                .tag {
+
+                }
+
+                .title {
+
+                }
+            }
+        }
+
+        .see-more {
+        }
+    }
 }
 /* End Section 4 */
 

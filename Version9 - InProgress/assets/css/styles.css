@@ -118,6 +118,7 @@ html {
 /* Section 3 */
 .section-3 {
   width: 100%;
+  display: none;
 }
 .section-3 .wrapper {
   width: 120rem;
@@ -133,9 +134,25 @@ html {
 /* Section 4 */
 .section-4 {
   width: 100%;
-  display: none;
 }
-
+.section-4 .wrapper {
+  width: 120rem;
+  display: flex;
+  flex-direction: column;
+}
+.section-4 .wrapper .tabs {
+  display: flex;
+  flex-direction: row;
+}
+.section-4 .wrapper .content {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+.section-4 .wrapper .content .content-item img {
+  width: 20rem;
+  height: 20rem;
+}
 /* End Section 4 */
 /* Section 5 */
 .section-5 {
