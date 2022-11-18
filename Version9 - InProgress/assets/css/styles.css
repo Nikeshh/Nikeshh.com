@@ -389,12 +389,53 @@ html {
 /* End Section 5 */
 /* Section 6 */
 .section-6 {
+  margin-top: 5rem;
   width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: #2e8b9d;
+  background: linear-gradient(0deg, #2e8b9d 75%, #fff 25%);
   display: none;
 }
-.section-6 .footer {
+.section-6 .section-6-1 {
+  width: 120rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 1rem;
+  background-color: white;
+  color: black;
+}
+.section-6 .section-6-1 .heading {
+  font-weight: 700;
+}
+.section-6 .section-6-1 .sub-heading {
+  font-weight: 500;
+}
+.section-6 .section-6-1 .actions {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+.section-6 .section-6-1 .actions .hire-me-btn {
+  padding: 1rem;
+  background-color: #2e8b9d;
+  border-radius: 1rem;
+  color: white;
+}
+.section-6 .section-6-1 .actions .call-btn {
+  padding: 1rem;
+  border: solid 1px #2e8b9d;
+  border-radius: 1rem;
+  color: #2e8b9d;
+}
+.section-6 .section-6-2 {
   width: 120rem;
   display: flex;
   flex-direction: column;
@@ -402,25 +443,58 @@ html {
   align-items: center;
   padding: 5rem;
 }
-.section-6 .footer .footer-top {
+.section-6 .section-6-2 .footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.section-6 .section-6-2 .footer .footer-top {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 10rem;
 }
-.section-6 .footer .footer-top .company-details img {
-  width: 20rem;
-  height: 20rem;
+.section-6 .section-6-2 .footer .footer-top .company-details {
+  flex: 3;
 }
-.section-6 .footer .footer-bottom {
-  display: flex;
+.section-6 .section-6-2 .footer .footer-top .company-details img {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
 }
-.section-6 .footer .footer-bottom .policies {
-  display: flex;
+.section-6 .section-6-2 .footer .footer-top .footer-items {
+  flex: 1;
 }
-.section-6 .footer .footer-bottom .social-icons {
+.section-6 .section-6-2 .footer .footer-top .footer-items .social-icons {
   display: flex;
+  flex-direction: row;
+}
+.section-6 .section-6-2 .footer .footer-top .footer-items form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.section-6 .section-6-2 .footer .divider {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  height: 0.1rem;
+  background-color: grey;
+}
+.section-6 .section-6-2 .footer .footer-bottom {
+  display: flex;
+  gap: 1rem;
+}
+.section-6 .section-6-2 .footer .footer-bottom .policies {
+  display: flex;
+  gap: 0.5rem;
+}
+.section-6 .section-6-2 .footer .footer-bottom .social-icons {
+  display: flex;
+  gap: 0.5rem;
 }
 
 /* End Section 6 *//*# sourceMappingURL=styles.css.map */
