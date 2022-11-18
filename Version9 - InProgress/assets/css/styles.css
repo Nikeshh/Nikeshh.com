@@ -119,6 +119,15 @@ html {
 .section-3 {
   width: 100%;
 }
+.section-3 .wrapper {
+  width: 120rem;
+  display: flex;
+  flex-direction: row;
+}
+.section-3 .wrapper .right img {
+  height: 20rem;
+  width: 20rem;
+}
 
 /* End Section 3 */
 /* Section 4 */

@@ -149,6 +149,27 @@ html {
 /* Section 3 */
 .section-3 {
     width: 100%;
+
+    .wrapper {
+        width: 120rem;
+        display: flex;
+        flex-direction: row;
+
+        .left {
+
+        }
+
+        .middle {
+
+        }
+
+        .right {
+            img {
+                height: 20rem;
+                width: 20rem;
+            }
+        }
+    }
 }
 /* End Section 3 */
 
