@@ -72,7 +72,6 @@ html {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
 }
 .section-2 .wrapper .left {
   flex-grow: 1;
