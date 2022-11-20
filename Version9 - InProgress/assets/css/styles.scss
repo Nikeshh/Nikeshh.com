@@ -74,8 +74,6 @@ html {
 
         .banner {
             width: 100%;
-            top: 25%;
-            position: absolute;
             text-align: center;
             display: flex;
             flex-direction: row;
@@ -497,6 +495,7 @@ html {
                         }
 
                         .right-inner {
+                            margin-left: auto;
                             margin-top: auto;
 
                             .stars {

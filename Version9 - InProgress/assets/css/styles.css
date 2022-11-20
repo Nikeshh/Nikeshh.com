@@ -62,8 +62,6 @@ html {
 }
 .section-1 .wrapper .banner {
   width: 100%;
-  top: 25%;
-  position: absolute;
   text-align: center;
   display: flex;
   flex-direction: row;
@@ -423,6 +421,7 @@ html {
   font-style: italic;
 }
 .section-5 .wrapper .testimonials .testimonial .right .profile-details .right-inner {
+  margin-left: auto;
   margin-top: auto;
 }
 .section-5 .wrapper .testimonials .testimonial .right .profile-details .right-inner .stars {
