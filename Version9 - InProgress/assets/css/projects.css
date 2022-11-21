@@ -77,9 +77,77 @@ html {
   display: flex;
   flex-direction: column;
 }
+.projects .right .header-wrapper {
+  padding: 2rem;
+  height: 8rem;
+}
+.projects .right .header-wrapper .header-controls {
+  display: flex;
+  justify-content: space-between;
+}
+.projects .right .header-wrapper .header-controls .first-section {
+  display: flex;
+}
+.projects .right .header-wrapper .header-controls .second-section {
+  display: flex;
+}
+.projects .right .header-wrapper .header-controls .third-section {
+  display: flex;
+}
+.projects .right .header-wrapper .header-controls .vertical-bar {
+  border-left: thin solid #000;
+}
 .projects .right .divider {
   width: 100%;
   height: 0.1rem;
   background-color: #000;
 }
+.projects .right .content {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+}
+.projects .right .content .left-inner {
+  width: calc(100% - 30rem);
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+}
+.projects .right .content .left-inner .insurances {
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+}
+.projects .right .content .left-inner .insurances .insurance {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 1rem;
+}
+.projects .right .content .left-inner .statistics {
+  background-color: #fff;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 1rem;
+  width: 100%;
+}
+.projects .right .content .right-inner {
+  width: 30rem;
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+}
+.projects .right .content .right-inner .agents {
+  background-color: #fff;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 1rem;
+  width: 100%;
+}
+.projects .right .content .right-inner .transactions {
+  background-color: #fff;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 1rem;
+  width: 100%;
+}
+
 /* End Projects *//*# sourceMappingURL=projects.css.map */

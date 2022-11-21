@@ -92,8 +92,30 @@ html {
         display: flex;
         flex-direction: column;
 
-        .header-controls {
+        .header-wrapper {
+            padding: 2rem;
+            height: 8rem;
+            
+            .header-controls {
+                display: flex;
+                justify-content: space-between;
 
+                .first-section {
+                    display: flex;
+                }
+
+                .second-section {
+                    display: flex;
+                }
+
+                .third-section {
+                    display: flex;
+                }
+
+                .vertical-bar {
+                    border-left: thin solid #000;
+                }
+            }
         }
 
         .divider {
@@ -103,27 +125,59 @@ html {
         }
 
         .content {
-            .left {
+            display: flex;
+            flex-direction: row;
+            padding: 1rem;
+
+            .left-inner {
+                width: calc(100% - 30rem);
+                display: flex;
+                flex-direction: column;
+                padding: 3rem;
+
                 .insurances {
+                    width: 100%;
+                    display: flex;
+                    gap: 1rem;
 
+                    .insurance {
+                        display: flex;
+                        flex-direction: column;
+                        background-color: #fff;
+                        box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+                        border-radius: 1rem;
+                    }
                 }
-                
-                .statistics {
 
+                .statistics {
+                    background-color: #fff;
+                    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+                    border-radius: 1rem;
+                    width: 100%;
                 }
             }
 
-            .right {
-                .agents {
+            .right-inner {
+                width: 30rem;
+                display: flex;
+                flex-direction: column;
+                padding: 3rem;
 
+                .agents {
+                    background-color: #fff;
+                    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+                    border-radius: 1rem;
+                    width: 100%;
                 }
 
                 .transactions {
-
+                    background-color: #fff;
+                    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+                    border-radius: 1rem;
+                    width: 100%;
                 }
             }
         }
-
 
     }
 
