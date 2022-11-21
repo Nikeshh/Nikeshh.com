@@ -157,10 +157,10 @@ html {
 }
 .projects .right .content .left-inner .statistics {
   width: 100%;
-}
-.projects .right .content .left-inner .statistics .statistics-graph {
   display: flex;
   flex-direction: column;
+}
+.projects .right .content .left-inner .statistics .statistics-graph {
   background-color: #fff;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
   border-radius: 1rem;
