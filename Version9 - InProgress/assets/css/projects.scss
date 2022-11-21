@@ -150,10 +150,15 @@ html {
                 }
 
                 .statistics {
-                    background-color: #fff;
-                    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-                    border-radius: 1rem;
                     width: 100%;
+
+                    .statistics-graph {
+                        display: flex;
+                        flex-direction: column;
+                        background-color: #fff;
+                        box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+                        border-radius: 1rem;
+                    }
                 }
             }
 
@@ -168,6 +173,15 @@ html {
                     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
                     border-radius: 1rem;
                     width: 100%;
+
+                    .agent-icons{
+                        display: flex;
+                        
+                        img {
+                            width: 1rem;
+                            height: 1rem;
+                        }
+                    }
                 }
 
                 .transactions {
@@ -175,6 +189,31 @@ html {
                     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
                     border-radius: 1rem;
                     width: 100%;
+
+                    .actions {
+                        display: flex;
+
+                        .buttons {
+                            display: flex;
+                        }
+                    }
+
+                    .table-icon {
+
+                    }
+
+                    .table-content {
+                        display: flex;
+
+                        .data {
+                            display: flex;
+                            flex-direction: column;
+                        }
+                    }
+
+                    .table-tag {
+
+                    }
                 }
             }
         }
