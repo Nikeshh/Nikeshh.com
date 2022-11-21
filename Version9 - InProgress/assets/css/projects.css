@@ -49,6 +49,11 @@ html {
 .projects .left .menu .menu-item {
   display: flex;
 }
+.projects .left .menu .divider {
+  width: 100%;
+  height: 0.1rem;
+  background-color: #000;
+}
 .projects .left .controls {
   margin-top: auto;
   display: flex;
@@ -69,6 +74,12 @@ html {
   width: calc(100% - 30rem);
   background-color: #e4e4e4;
   color: #000;
+  display: flex;
+  flex-direction: column;
 }
-
+.projects .right .divider {
+  width: 100%;
+  height: 0.1rem;
+  background-color: #000;
+}
 /* End Projects *//*# sourceMappingURL=projects.css.map */

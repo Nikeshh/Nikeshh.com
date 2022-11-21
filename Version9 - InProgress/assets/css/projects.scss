@@ -55,6 +55,12 @@ html {
             .menu-item {
                 display: flex;
             }
+
+            .divider {
+                width: 100%;
+                height: .1rem;
+                background-color: #000;
+            }
         }
 
         .controls {
@@ -83,6 +89,42 @@ html {
         width: calc(100% - 30rem);
         background-color: #e4e4e4;
         color: #000;
+        display: flex;
+        flex-direction: column;
+
+        .header-controls {
+
+        }
+
+        .divider {
+            width: 100%;
+            height: .1rem;
+            background-color: #000;
+        }
+
+        .content {
+            .left {
+                .insurances {
+
+                }
+                
+                .statistics {
+
+                }
+            }
+
+            .right {
+                .agents {
+
+                }
+
+                .transactions {
+
+                }
+            }
+        }
+
+
     }
 
 }
