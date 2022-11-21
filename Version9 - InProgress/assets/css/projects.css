@@ -32,6 +32,22 @@ html {
   background-color: #f4f4f7;
   color: #000;
   z-index: 999;
+  display: flex;
+  flex-direction: column;
+}
+.projects .left .header {
+  display: flex;
+}
+.projects .left .header img {
+  height: 4rem;
+  width: 4rem;
+}
+.projects .left .menu {
+  display: flex;
+  flex-direction: column;
+}
+.projects .left .menu .menu-item {
+  display: flex;
 }
 .projects .right {
   width: calc(100% - 30rem);

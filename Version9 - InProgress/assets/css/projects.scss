@@ -36,6 +36,27 @@ html {
         background-color: #f4f4f7;
         color: #000;
         z-index: 999;
+        display: flex;
+        flex-direction: column;
+
+        .header {
+            display: flex;
+
+            img {
+                height: 4rem;
+                width: 4rem;
+            }
+        }
+
+        .menu {
+            display: flex;
+            flex-direction: column;
+
+            .menu-item {
+                display: flex;
+            }
+        }
+
     }
 
     .right {
