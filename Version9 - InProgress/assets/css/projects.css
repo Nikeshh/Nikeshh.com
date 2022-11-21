@@ -49,6 +49,22 @@ html {
 .projects .left .menu .menu-item {
   display: flex;
 }
+.projects .left .controls {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+}
+.projects .left .controls .profile {
+  display: flex;
+}
+.projects .left .controls .profile img {
+  width: 4rem;
+  height: 4rem;
+}
+.projects .left .controls .profile .profile-details {
+  display: flex;
+  flex-direction: column;
+}
 .projects .right {
   width: calc(100% - 30rem);
   background-color: #e4e4e4;

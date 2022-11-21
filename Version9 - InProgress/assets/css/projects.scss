@@ -57,6 +57,26 @@ html {
             }
         }
 
+        .controls {
+            margin-top: auto;
+            display: flex;
+            flex-direction: column;
+
+            .profile {
+                display: flex;
+
+                img {
+                    width: 4rem;
+                    height: 4rem;
+                }
+
+                .profile-details {
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+        }
+
     }
 
     .right {
