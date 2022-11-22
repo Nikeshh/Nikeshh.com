@@ -21,4 +21,23 @@ html {
 
 /* End Core */
 /* Blog */
+.blog {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+.blog .left {
+  width: 10rem;
+  height: 100%;
+  border-right: 0.1rem solid #808080;
+}
+.blog .middle {
+  width: calc(100% - 50rem);
+  height: 100%;
+  border-right: 0.1rem solid #808080;
+}
+.blog .right {
+  width: 40rem;
+}
+
 /* End of blog *//*# sourceMappingURL=blog.css.map */
