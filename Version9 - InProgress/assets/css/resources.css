@@ -21,4 +21,21 @@ html {
 
 /* End Core */
 /* Resources */
+.resources {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+}
+.resources .left {
+  width: 20rem;
+  height: 100%;
+  background-color: #000000;
+}
+.resources .right {
+  width: calc(100% - 20rem);
+  height: 100%;
+  background-color: white;
+}
+
 /* End of resources *//*# sourceMappingURL=resources.css.map */
