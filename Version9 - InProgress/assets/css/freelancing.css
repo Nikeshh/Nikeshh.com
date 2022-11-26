@@ -58,6 +58,49 @@ img {
 .freelancing .right {
   width: calc(100% - 7rem);
   height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.freelancing .right .header {
+  height: 8rem;
+  width: 100%;
+  border-bottom: 0.1rem solid #808080; /* Helper */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem 0 1rem;
+}
+.freelancing .right .header .header-left {
+  margin-right: auto;
+}
+.freelancing .right .header .header-right {
+  margin-left: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.freelancing .right .header .header-right .search-and-history {
+  display: flex;
+  flex-direction: row;
+}
+.freelancing .right .header .header-right .notifications {
+  display: flex;
+  flex-direction: row;
+}
+.freelancing .right .lets-find-your-dream-job {
+  height: 20rem;
+  width: 100%;
+  border-bottom: 0.1rem solid #808080; /* Helper */
+  display: flex;
+  flex-direction: row;
+}
+.freelancing .right .jobs {
+  height: calc(100% - 28rem);
+  width: 100%;
+  display: flex;
+  flex-direction: row;
 }
 
 /* End of Profile *//*# sourceMappingURL=freelancing.css.map */
