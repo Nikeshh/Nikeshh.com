@@ -137,9 +137,42 @@ img {
   display: flex;
   flex-direction: column;
 }
+.blog .right .profile-details {
+  display: flex;
+  flex-direction: row;
+}
+.blog .right .premium-membership {
+  display: flex;
+  flex-direction: column;
+}
 .blog .right .divider {
   width: 100%;
   height: 0.1rem;
   background-color: #000;
 }
+.blog .right .continue-reading {
+  display: flex;
+  flex-direction: column;
+}
+.blog .right .continue-reading .article .progress-bar {
+  height: 0.7rem;
+  width: 100%;
+  border-radius: 1rem;
+  border: 0.1rem solid black;
+}
+.blog .right .continue-reading .article .progress-bar-90 {
+  width: 90%;
+  height: 100%;
+  background-color: black;
+}
+.blog .right .more-interesting-topic {
+  display: flex;
+  flex-direction: column;
+}
+.blog .right .more-interesting-topic .topics {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
 /* End of blog *//*# sourceMappingURL=blog.css.map */

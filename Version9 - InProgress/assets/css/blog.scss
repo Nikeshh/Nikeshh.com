@@ -167,11 +167,13 @@ img {
     flex-direction: column;
 
     .profile-details {
-
+      display: flex;
+      flex-direction: row;
     }
 
     .premium-membership {
-
+      display: flex;
+      flex-direction: column;
     }
 
     .divider {
@@ -181,11 +183,34 @@ img {
     }
 
     .continue-reading {
+      display: flex;
+      flex-direction: column;
 
+      .article {
+        .progress-bar {
+          height: 0.7rem;
+          width: 100%;
+          border-radius: 1rem;
+          border: .1rem solid black;
+        }
+
+        .progress-bar-90 {
+          width: 90%;
+          height: 100%;
+          background-color: black;
+        }
+      }
     }
 
     .more-interesting-topic {
-      
+      display: flex;
+      flex-direction: column;
+
+      .topics {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
     }
   }
 }
