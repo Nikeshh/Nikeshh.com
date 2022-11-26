@@ -111,7 +111,42 @@ img {
       width: 100%;
       border-bottom: .1rem solid #808080; /* Helper */
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
+
+      .lets-find-your-dream-job-first-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+      .lets-find-your-dream-job-second-row {
+        display: flex;
+        flex-direction: row;
+
+        .search-field {
+
+        }
+
+        .vertical-divider {
+          width: .1rem;
+          background-color: black;
+          height: 100%;
+          float: left;
+        }
+
+        .location-field {
+
+        }
+
+        .salary-range-field {
+
+        }
+
+        .lets-find-your-dream-job-second-row-controls {
+          display: flex;
+          flex-direction: row;
+        }
+      }
     }
 
     .jobs {

@@ -94,6 +94,25 @@ img {
   width: 100%;
   border-bottom: 0.1rem solid #808080; /* Helper */
   display: flex;
+  flex-direction: column;
+}
+.freelancing .right .lets-find-your-dream-job .lets-find-your-dream-job-first-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.freelancing .right .lets-find-your-dream-job .lets-find-your-dream-job-second-row {
+  display: flex;
+  flex-direction: row;
+}
+.freelancing .right .lets-find-your-dream-job .lets-find-your-dream-job-second-row .vertical-divider {
+  width: 0.1rem;
+  background-color: black;
+  height: 100%;
+  float: left;
+}
+.freelancing .right .lets-find-your-dream-job .lets-find-your-dream-job-second-row .lets-find-your-dream-job-second-row-controls {
+  display: flex;
   flex-direction: row;
 }
 .freelancing .right .jobs {
