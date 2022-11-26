@@ -120,11 +120,35 @@ img {
   width: 100%;
   display: flex;
   flex-direction: row;
+  padding: 5rem;
 }
 .freelancing .right .jobs .jobs-left {
   flex: 3;
   display: flex;
   flex-direction: column;
+  padding: 0 5rem 0 5rem;
+}
+.freelancing .right .jobs .jobs-left .job-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.freelancing .right .jobs .jobs-left .job-row .job {
+  display: flex;
+  flex-direction: column;
+}
+.freelancing .right .jobs .jobs-left .job-row .job .job-details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.freelancing .right .jobs .jobs-left .job-row .job .job-description {
+  display: flex;
+  flex-direction: row;
+}
+.freelancing .right .jobs .jobs-left .job-row .job .job-controls {
+  display: flex;
+  flex-direction: row;
 }
 .freelancing .right .jobs .jobs-right {
   flex: 1;
