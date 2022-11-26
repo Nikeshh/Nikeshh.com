@@ -154,6 +154,68 @@ img {
       width: 100%;
       display: flex;
       flex-direction: row;
+
+      .jobs-left {
+        flex: 3;
+        display: flex;
+        flex-direction: column;
+
+        .job-row {
+
+        }
+      }
+
+      .jobs-right {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+
+        .job-filter {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+        }
+
+        .job-type {
+          display: flex;
+          flex-direction: column;
+
+          .job-type-header {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+          }
+
+          .job-type-item {
+            display: flex;
+            flex-direction: row;
+
+            div {
+              margin-left: auto;
+            }
+          }
+        }
+
+        .experience {
+          display: flex;
+          flex-direction: column;
+
+          .experience-header {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+          }
+
+          .experience-item {
+            display: flex;
+            flex-direction: row;
+
+            div {
+              margin-left: auto;
+            }
+          }
+        }
+      }
     }
   }
 }

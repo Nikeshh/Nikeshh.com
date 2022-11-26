@@ -121,5 +121,52 @@ img {
   display: flex;
   flex-direction: row;
 }
+.freelancing .right .jobs .jobs-left {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+}
+.freelancing .right .jobs .jobs-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.freelancing .right .jobs .jobs-right .job-filter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.freelancing .right .jobs .jobs-right .job-type {
+  display: flex;
+  flex-direction: column;
+}
+.freelancing .right .jobs .jobs-right .job-type .job-type-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.freelancing .right .jobs .jobs-right .job-type .job-type-item {
+  display: flex;
+  flex-direction: row;
+}
+.freelancing .right .jobs .jobs-right .job-type .job-type-item div {
+  margin-left: auto;
+}
+.freelancing .right .jobs .jobs-right .experience {
+  display: flex;
+  flex-direction: column;
+}
+.freelancing .right .jobs .jobs-right .experience .experience-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.freelancing .right .jobs .jobs-right .experience .experience-item {
+  display: flex;
+  flex-direction: row;
+}
+.freelancing .right .jobs .jobs-right .experience .experience-item div {
+  margin-left: auto;
+}
 
 /* End of Profile *//*# sourceMappingURL=freelancing.css.map */
