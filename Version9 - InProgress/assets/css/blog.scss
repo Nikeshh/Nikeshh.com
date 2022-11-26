@@ -74,6 +74,17 @@ img {
     .first-row {
       display: flex;
       flex-direction: row;
+      justify-content: space-between;
+
+      .search {
+        display: flex;
+        flex-direction: row;
+      }
+
+      .controls {
+        display: flex;
+        flex-direction: row;
+      }
     }
 
     .divider {
@@ -83,16 +94,99 @@ img {
     .second-row {
       display: flex;
       flex-direction: column;
+
+      .header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+      .article-of-the-day {
+        display: flex;
+        flex-direction: row;
+
+        .left-article-of-the-day {
+          display: flex;
+          flex-direction: column;
+        }
+
+        .right-article-of-the-day {
+          width: 100%;
+          height: 100%;
+        }
+      }
     }
 
     .third-row {
       display: flex;
       flex-direction: column;
+
+      .heading {
+        font-size: 3rem;
+      }
+
+      .tags {
+        display: flex;
+        flex-direction: row;
+
+        .tag {
+
+        }
+      }
+      
+      .articles {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .article {
+          display: flex;
+          flex-direction: column;
+
+          .author-details {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            .dot {
+              height: .3rem;
+              width: .3rem;
+              background-color: #bbb;
+              border-radius: 50%;
+              display: inline-block;
+            }
+          }
+        }
+      }
     }
   }
 
   .right {
     width: 40rem;
+    display: flex;
+    flex-direction: column;
+
+    .profile-details {
+
+    }
+
+    .premium-membership {
+
+    }
+
+    .divider {
+      width: 100%;
+      height: .1rem;
+      background-color: #000;
+    }
+
+    .continue-reading {
+
+    }
+
+    .more-interesting-topic {
+      
+    }
   }
 }
 
