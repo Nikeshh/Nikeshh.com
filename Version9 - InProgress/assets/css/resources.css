@@ -94,9 +94,91 @@ img {
   display: flex;
   flex-direction: column;
 }
+.resources .middle .section-3 {
+  display: flex;
+  flex-direction: column;
+}
+.resources .middle .section-3 .section-3-inner {
+  display: flex;
+  flex-direction: row;
+}
+.resources .middle .section-3 .section-3-inner .left-inner {
+  display: flex;
+  flex-direction: row;
+}
+.resources .middle .section-3 .section-3-inner .right-inner {
+  margin-left: auto;
+}
+.resources .middle .section-4 {
+  display: flex;
+  flex-direction: column;
+}
+.resources .middle .section-4 .section-4-row {
+  display: flex;
+  flex-direction: row;
+}
+.resources .middle .section-4 .section-4-row .content {
+  display: flex;
+  flex-direction: column;
+}
+.resources .middle .section-4 .section-4-row .content .content-first-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.resources .middle .section-4 .section-4-row .content .content-first-row .profile-details {
+  display: flex;
+  flex-direction: row;
+}
+.resources .middle .section-4 .section-4-row .content .content-second-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 .resources .right {
   width: 40rem;
   border-left: 0.1rem solid #808080; /* Need to remove */
+  display: flex;
+  flex-direction: column;
 }
-
+.resources .right .second-row {
+  display: flex;
+  flex-direction: column;
+}
+.resources .right .second-row .profile-details {
+  display: flex;
+  flex-direction: column;
+}
+.resources .right .second-row .divider {
+  border-bottom: 0.1rem solid #808080;
+}
+.resources .right .second-row .abilities-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.resources .right .second-row .abilities-wrapper .heading {
+  display: flex;
+  flex-direction: row;
+}
+.resources .right .second-row .abilities-wrapper .abilities {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.resources .right .second-row .abilities-wrapper .abilities .ability:not(:last-child):after {
+  content: ",";
+}
+.resources .right .second-row .choose-time {
+  display: flex;
+  flex-direction: column;
+}
+.resources .right .second-row .choose-time .heading {
+  display: flex;
+  flex-direction: row;
+}
+.resources .right .second-row .choose-time .times {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
 /* End of resources *//*# sourceMappingURL=resources.css.map */
