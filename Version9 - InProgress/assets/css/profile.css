@@ -213,5 +213,45 @@ img {
   display: flex;
   flex-direction: column;
 }
+.profile .right .content .right-inner .expense-statistics {
+  display: flex;
+  flex-direction: column;
+}
+.profile .right .content .right-inner .expense-statistics .heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.profile .right .content .right-inner .expense-statistics .heading .week {
+  display: flex;
+  flex-direction: row;
+}
+.profile .right .content .right-inner .send-money-to {
+  display: flex;
+  flex-direction: column;
+}
+.profile .right .content .right-inner .send-money-to .heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.profile .right .content .right-inner .send-money-to .divider {
+  border-bottom: 0.1rem solid #808080;
+}
+.profile .right .content .right-inner .send-money-to .profiles {
+  display: flex;
+  flex-direction: row;
+}
+.profile .right .content .right-inner .scheduled-payments {
+  display: flex;
+  flex-direction: row;
+}
+.profile .right .content .right-inner .scheduled-payments .payment {
+  display: flex;
+  flex-direction: column;
+}
+.profile .right .content .right-inner .scheduled-payments .payment .details {
+  margin-top: auto;
+}
 
 /* End of Profile *//*# sourceMappingURL=profile.css.map */
