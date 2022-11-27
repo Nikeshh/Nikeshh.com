@@ -94,7 +94,194 @@ img {
 /* Profile */
 
 .profile {
-    
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100vh;
+
+  .left {
+    width: 30rem;
+    height: 100%;
+    border-right: .1rem solid #808080;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .logo {
+
+    }
+
+    .profile-details {
+
+    }
+
+    .earnings {
+
+    }
+
+    .menu {
+      display: flex;
+      flex-direction: column;
+
+      .menu-item {
+        display: flex;
+        flex-direction: row;
+      }
+    }
+
+    .sign-out {
+      display: flex;
+      flex-direction: row;
+      margin-top: auto;
+    }
+  }
+
+  .right {
+    width: calc(100% - 30rem);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .heading {
+
+    }
+
+    .content {
+      display: flex;
+      flex-direction: row;
+
+      .left-inner {
+        display: flex;
+        flex-direction: column;
+
+        .card {
+          display: flex;
+          flex-direction: column;
+
+          .card-first-row {
+            display: flex;
+            flex-direction: row;
+
+            p {
+              margin-left: auto;
+            }
+
+            label {
+              margin-left: auto;
+            }
+          }
+
+          .card-second-row {
+
+          }
+
+          .card-third-row {
+            display: flex;
+            flex-direction: row;
+
+            .card-third-row-left {
+              display: flex;
+              flex-direction: row;
+              margin-right: auto;
+            }
+
+            .card-third-row-right {
+              display: flex;
+              flex-direction: row;
+              margin-left: auto;
+            }
+          }
+        }
+
+        .internet-payment-limit {
+          display: flex;
+          flex-direction: column;
+
+          .details {
+            display: flex;
+            flex-direction: row;
+          }
+
+          .progress-bar {
+            height: 0.7rem;
+            width: 100%;
+            border-radius: 1rem;
+            border: .1rem solid black;
+          }
+  
+          .progress-bar-80 {
+            width: 80%;
+            height: 100%;
+            background-color: black;
+          }
+        }
+
+        .income-and-spendings {
+          display: flex;
+          flex-direction: row;
+
+          .income {
+            .graph {
+              
+            }
+
+            .income-details {
+              display: flex;
+              flex-direction: column;
+            }
+          }
+
+          .spendings {
+            .graph {
+              
+            }
+
+            .spendings-details {
+              display: flex;
+              flex-direction: column;
+            }
+          }
+        }
+
+        .latest-spendings {
+          display: flex;
+          flex-direction: column;
+
+          .heading {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+          }
+
+          .datas {
+            display: flex;
+            flex-direction: column;
+
+            .data-item {
+              display: flex;
+              flex-direction: row;
+
+              .data-item-left {
+                display: flex;
+                flex-direction: row;
+              }
+
+              .data-item-right {
+                display: flex;
+                flex-direction: row;
+              }
+            }
+          }
+        }
+      }
+  
+      .right-inner {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+
+  }
 }
 
 /* End of Profile */
