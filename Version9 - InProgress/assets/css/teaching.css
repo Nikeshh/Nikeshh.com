@@ -139,6 +139,33 @@ img {
   display: flex;
   flex-direction: column;
 }
+.teaching .right .statements-wrapper .statements .statements-left .goals {
+  display: flex;
+  flex-direction: column;
+}
+.teaching .right .statements-wrapper .statements .statements-left .goals .second-row {
+  display: flex;
+  flex-direction: column;
+}
+.teaching .right .statements-wrapper .statements .statements-left .goals .third-row .progress-bar {
+  height: 0.7rem;
+  width: 100%;
+  border-radius: 1rem;
+  border: 0.1rem solid black;
+}
+.teaching .right .statements-wrapper .statements .statements-left .goals .third-row .progress-bar-80 {
+  width: 80%;
+  height: 100%;
+  background-color: black;
+}
+.teaching .right .statements-wrapper .statements .statements-left .menus {
+  display: flex;
+  flex-direction: column;
+}
+.teaching .right .statements-wrapper .statements .statements-left .menus .menu-item {
+  display: flex;
+  flex-direction: row;
+}
 .teaching .right .statements-wrapper .statements .statements-right {
   display: flex;
   flex-direction: column;
@@ -152,6 +179,10 @@ img {
   flex-direction: row;
 }
 .teaching .right .headings-wrapper .headings .headings-left {
+  display: flex;
+  flex-direction: column;
+}
+.teaching .right .headings-wrapper .headings .headings-middle {
   display: flex;
   flex-direction: column;
 }

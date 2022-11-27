@@ -193,6 +193,45 @@ img {
         .statements-left {
           display: flex;
           flex-direction: column;
+
+          .goals {
+            display: flex;
+            flex-direction: column;
+
+            .first-row {
+
+            }
+
+            .second-row {
+              display: flex;
+              flex-direction: column;
+            }
+
+            .third-row {
+              .progress-bar {
+                height: 0.7rem;
+                width: 100%;
+                border-radius: 1rem;
+                border: .1rem solid black;
+              }
+      
+              .progress-bar-80 {
+                width: 80%;
+                height: 100%;
+                background-color: black;
+              }
+            }
+          }
+
+          .menus {
+            display: flex;
+            flex-direction: column;
+
+            .menu-item {
+              display: flex;
+              flex-direction: row;
+            }
+          }
         }
   
         .statements-right {
@@ -215,6 +254,11 @@ img {
         flex-direction: row;
 
         .headings-left {
+          display: flex;
+          flex-direction: column;
+        }
+
+        .headings-middle {
           display: flex;
           flex-direction: column;
         }
