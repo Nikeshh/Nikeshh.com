@@ -30,11 +30,39 @@ img {
   width: 100%;
   height: 100vh;
   display: flex;
+  flex-direction: row;
 }
 .teaching .left {
   width: 30rem;
   height: 100%;
   border-right: 0.1rem solid #808080;
+  display: flex;
+  flex-direction: column;
+}
+.teaching .left .title {
+  display: flex;
+  flex-direction: row;
+}
+.teaching .left .profile-details {
+  display: flex;
+  flex-direction: row;
+}
+.teaching .left .menu {
+  display: flex;
+  flex-direction: column;
+}
+.teaching .left .menu .menu-item {
+  display: flex;
+  flex-direction: row;
+}
+.teaching .left .invite-friends {
+  display: flex;
+  flex-direction: column;
+}
+.teaching .left .settings {
+  display: flex;
+  flex-direction: row;
+  margin-top: auto;
 }
 .teaching .middle {
   width: calc(100% - 110rem);
