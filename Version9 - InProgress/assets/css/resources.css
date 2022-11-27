@@ -19,6 +19,11 @@ html {
   font-size: 62.5%;
 }
 
+img {
+  width: 5rem;
+  height: 5rem;
+}
+
 /* End Core */
 /* Resources */
 .resources {
@@ -31,11 +36,63 @@ html {
   width: 8rem;
   height: 100%;
   background-color: #000000;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.resources .left .second-set {
+  display: flex;
+  flex-direction: column;
+}
+.resources .left .third-set {
+  margin-top: auto;
 }
 .resources .middle {
   width: calc(100% - 48rem);
   height: 100%;
   background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+.resources .middle .section-1 {
+  display: flex;
+  flex-direction: row;
+}
+.resources .middle .section-1 .tabs {
+  display: flex;
+  flex-direction: row;
+  margin-right: auto;
+}
+.resources .middle .section-1 .date {
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+}
+.resources .middle .section-2 {
+  display: flex;
+  flex-direction: column;
+}
+.resources .middle .section-2 .heading {
+  display: flex;
+  flex-direction: row;
+}
+.resources .middle .section-2 .heading .heading-left {
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+}
+.resources .middle .section-2 .heading .heading-right {
+  margin-left: auto;
+}
+.resources .middle .section-2 .content {
+  display: flex;
+  flex-direction: row;
+}
+.resources .middle .section-2 .content .populars-and-latest {
+  display: flex;
+  flex-direction: column;
 }
 .resources .right {
   width: 40rem;
