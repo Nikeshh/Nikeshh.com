@@ -119,6 +119,45 @@ img {
 }
 .teaching .right {
   width: 80rem;
+  display: flex;
+  flex-direction: column;
+}
+.teaching .right .controls {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.teaching .right .statements-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.teaching .right .statements-wrapper .statements {
+  display: flex;
+  flex-direction: row;
+}
+.teaching .right .statements-wrapper .statements .statements-left {
+  display: flex;
+  flex-direction: column;
+}
+.teaching .right .statements-wrapper .statements .statements-right {
+  display: flex;
+  flex-direction: column;
+}
+.teaching .right .headings-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.teaching .right .headings-wrapper .headings {
+  display: flex;
+  flex-direction: row;
+}
+.teaching .right .headings-wrapper .headings .headings-left {
+  display: flex;
+  flex-direction: column;
+}
+.teaching .right .headings-wrapper .headings .headings-right {
+  display: flex;
+  flex-direction: column;
 }
 
 /* End of Teaching *//*# sourceMappingURL=teaching.css.map */
