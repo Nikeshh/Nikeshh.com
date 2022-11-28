@@ -26,4 +26,76 @@ img {
 
 /* End Core */
 /* Consulting */
+.consulting {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+}
+.consulting .left {
+  width: 30rem;
+  height: 100%;
+  border-right: 0.1rem solid #808080;
+  display: flex;
+  flex-direction: column;
+}
+.consulting .left .profile-details {
+  display: flex;
+  flex-direction: row;
+}
+.consulting .left .profile-details .details {
+  display: flex;
+  flex-direction: column;
+}
+.consulting .left .menu {
+  display: flex;
+  flex-direction: column;
+}
+.consulting .left .menu .menu-item {
+  display: flex;
+  flex-direction: row;
+}
+.consulting .left .divider {
+  border-bottom: 0.1rem solid #808080;
+}
+.consulting .left .posts {
+  display: flex;
+  flex-direction: column;
+}
+.consulting .left .posts .header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.consulting .left .posts .posts-data {
+  display: flex;
+  flex-direction: column;
+}
+.consulting .left .posts .posts-data .data-item {
+  display: flex;
+  flex-direction: row;
+}
+.consulting .left .favorite-users {
+  display: flex;
+  flex-direction: column;
+}
+.consulting .left .favorite-users .header {
+  display: flex;
+  flex-direction: row;
+}
+.consulting .left .invite-new-member {
+  margin-top: auto;
+  display: flex;
+  flex-direction: row;
+}
+.consulting .middle {
+  width: calc(100% - 70rem);
+  height: 100%;
+}
+.consulting .right {
+  width: 40rem;
+  height: 100%;
+  border-left: 0.1rem solid #808080;
+}
+
 /* End of Consulting *//*# sourceMappingURL=consulting.css.map */
