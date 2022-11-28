@@ -26,4 +26,7 @@ img {
 
 /* End Core */
 /* Freelancing Management */
+.freelancing-management .right .divider {
+  border-bottom: 0.1rem solid #808080;
+}
 /* End of Freelancing Management *//*# sourceMappingURL=freelancing-management.css.map */
