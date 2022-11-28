@@ -26,6 +26,121 @@ img {
 
 /* End Core */
 /* Freelancing Management */
+.freelancing-management {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  width: 100%;
+}
+.freelancing-management .left {
+  display: flex;
+  flex-direction: column;
+  width: 10rem;
+  height: 100%;
+  border-right: 0.1rem solid #808080;
+}
+.freelancing-management .left .menu {
+  display: flex;
+  flex-direction: column;
+}
+.freelancing-management .left .controls {
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+}
+.freelancing-management .middle {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 50rem);
+  height: 100%;
+  border-right: 0.1rem solid #808080;
+}
+.freelancing-management .middle .first-row {
+  display: flex;
+  flex-direction: row;
+}
+.freelancing-management .middle .first-row .first-row-left {
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+}
+.freelancing-management .middle .first-row .first-row-right {
+  margin-left: auto;
+}
+.freelancing-management .middle .second-row {
+  display: flex;
+  flex-direction: row;
+}
+.freelancing-management .middle .second-row .second-row-left {
+  display: flex;
+  flex-direction: row;
+}
+.freelancing-management .middle .second-row .second-row-right {
+  display: flex;
+  flex-direction: row;
+}
+.freelancing-management .middle .second-row .second-row-right .item {
+  display: flex;
+  flex-direction: column;
+}
+.freelancing-management .middle .second-row .second-row-right .item .item-dropdown {
+  display: flex;
+  flex-direction: row;
+}
+.freelancing-management .middle .third-row {
+  display: flex;
+  flex-direction: row;
+}
+.freelancing-management .middle .third-row .project {
+  display: flex;
+  flex-direction: column;
+}
+.freelancing-management .middle .third-row .project .profiles {
+  display: flex;
+  flex-direction: row;
+}
+.freelancing-management .middle .third-row .project .controls {
+  display: flex;
+  flex-direction: row;
+}
+.freelancing-management .middle .third-row .project .controls .controls-left {
+  margin-right: auto;
+}
+.freelancing-management .middle .third-row .project .controls .controls-right {
+  margin-left: auto;
+  display: flex;
+  flex-direction: row;
+}
+.freelancing-management .middle .fourth-row {
+  display: flex;
+  flex-direction: row;
+}
+.freelancing-management .middle .fourth-row .project {
+  display: flex;
+  flex-direction: column;
+}
+.freelancing-management .middle .fourth-row .project .profiles {
+  display: flex;
+  flex-direction: row;
+}
+.freelancing-management .middle .fourth-row .project .controls {
+  display: flex;
+  flex-direction: row;
+}
+.freelancing-management .middle .fourth-row .project .controls .controls-left {
+  margin-right: auto;
+}
+.freelancing-management .middle .fourth-row .project .controls .controls-right {
+  margin-left: auto;
+  display: flex;
+  flex-direction: row;
+}
+.freelancing-management .right {
+  display: flex;
+  flex-direction: column;
+  width: 40rem;
+  height: 100%;
+}
 .freelancing-management .right .divider {
   border-bottom: 0.1rem solid #808080;
 }

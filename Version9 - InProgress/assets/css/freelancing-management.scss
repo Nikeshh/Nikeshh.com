@@ -31,63 +31,175 @@ img {
 /* Freelancing Management */
 
 .freelancing-management {
-    .left {
-      .company-details {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  width: 100%;
 
-      }
+  .left {
+    display: flex;
+    flex-direction: column;
+    width: 10rem;
+    height: 100%;
+    border-right: .1rem solid #808080;
 
-      .menu {
-        .menu-item {
+    .company-details {
 
-        }
-      }
-
-      .controls {
-        .control-item {
-
-        }
-      }
     }
 
-    .middle {
-      .first-row {
-
-      }
-
-      .second-row {
-
-      }
-
-      .third-row {
-
-      }
-
-      .fourth-row {
+    .menu {
+      display: flex;
+      flex-direction: column;
+      .menu-item {
 
       }
     }
 
-    .right {
-      .controls {
+    .controls {
+      display: flex;
+      flex-direction: column;
+      margin-top: auto;
+
+      .control-item {
 
       }
+    }
+  }
 
-      .profile-details {
+  .middle {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 50rem);
+    height: 100%;
+    border-right: .1rem solid #808080;
 
+    .first-row {
+      display: flex;
+      flex-direction: row;
+
+      .first-row-left {
+        margin-right: auto;
+        display: flex;
+        flex-direction: row;
       }
+
+      .first-row-right {
+        margin-left: auto;
+      }
+    }
+
+    .second-row {
+      display: flex;
+      flex-direction: row;
+
+      .second-row-left {
+        display: flex;
+        flex-direction: row;
+      }
+
+      .second-row-right {
+        display: flex;
+        flex-direction: row;
+
+        .item {
+          display: flex;
+          flex-direction: column;
+
+          .item-dropdown {
+            display: flex;
+            flex-direction: row;
+          }
+        }
+      }
+    }
+
+    .third-row {
+      display: flex;
+      flex-direction: row;
       
-      .divider {
-        border-bottom: .1rem solid #808080;
-      }
+      .project {
+        display: flex;
+        flex-direction: column;
 
-      .stats {
+        .profiles {
+          display: flex;
+          flex-direction: row;
+        }
 
-      }
+        .controls {
+          display: flex;
+          flex-direction: row;
 
-      .activity-feed {
+          .controls-left {
+            margin-right: auto;
+          }
 
+          .controls-right {
+            margin-left: auto;
+            display: flex;
+            flex-direction: row;
+          }
+        }
       }
     }
+
+    .fourth-row {
+      display: flex;
+      flex-direction: row;
+      
+      .project {
+        display: flex;
+        flex-direction: column;
+
+        .profiles {
+          display: flex;
+          flex-direction: row;
+        }
+
+        .controls {
+          display: flex;
+          flex-direction: row;
+
+          .controls-left {
+            margin-right: auto;
+          }
+
+          .controls-right {
+            margin-left: auto;
+            display: flex;
+            flex-direction: row;
+          }
+        }
+      }
+    }
+  }
+
+  .right {
+    display: flex;
+    flex-direction: column;
+    width: 40rem;
+    height: 100%;
+
+    .controls {
+
+    }
+
+    .profile-details {
+
+    }
+    
+    .divider {
+      border-bottom: .1rem solid #808080;
+    }
+
+    .stats {
+
+    }
+
+    .activity-feed {
+
+    }
+  }
 }
 
 /* End of Freelancing Management */
