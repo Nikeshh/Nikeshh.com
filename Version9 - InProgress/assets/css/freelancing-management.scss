@@ -181,11 +181,13 @@ img {
     height: 100%;
 
     .controls {
-
+      display: flex;
+      flex-direction: row;
     }
 
     .profile-details {
-
+      display: flex;
+      flex-direction: row;
     }
     
     .divider {
@@ -193,11 +195,59 @@ img {
     }
 
     .stats {
+      display: flex;
+      flex-direction: column;
 
+      .first-row {
+        display: flex;
+        flex-direction: row;
+
+        .total-projects,
+        .completed {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+
+      .second-row {
+        display: flex;
+        flex-direction: row;
+
+        .in-progress,
+        .out-of-scheduled {
+          display: flex;
+          flex-direction: column;
+        }
+      }
     }
 
     .activity-feed {
+      display: flex;
+      flex-direction: column;
 
+      .messages {
+        display: flex;
+        flex-direction: column;
+
+        .message-chat {
+          .message-left {
+            display: flex;
+            flex-direction: row;
+            margin-right: auto;
+          }
+
+          .message-right {
+            display: flex;
+            flex-direction: row;
+            margin-left: auto;
+          }
+        }
+
+        .message-send {
+          display: flex;
+          flex-direction: row;
+        }
+      }
     }
   }
 }

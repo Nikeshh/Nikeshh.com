@@ -141,7 +141,60 @@ img {
   width: 40rem;
   height: 100%;
 }
+.freelancing-management .right .controls {
+  display: flex;
+  flex-direction: row;
+}
+.freelancing-management .right .profile-details {
+  display: flex;
+  flex-direction: row;
+}
 .freelancing-management .right .divider {
   border-bottom: 0.1rem solid #808080;
 }
+.freelancing-management .right .stats {
+  display: flex;
+  flex-direction: column;
+}
+.freelancing-management .right .stats .first-row {
+  display: flex;
+  flex-direction: row;
+}
+.freelancing-management .right .stats .first-row .total-projects,
+.freelancing-management .right .stats .first-row .completed {
+  display: flex;
+  flex-direction: column;
+}
+.freelancing-management .right .stats .second-row {
+  display: flex;
+  flex-direction: row;
+}
+.freelancing-management .right .stats .second-row .in-progress,
+.freelancing-management .right .stats .second-row .out-of-scheduled {
+  display: flex;
+  flex-direction: column;
+}
+.freelancing-management .right .activity-feed {
+  display: flex;
+  flex-direction: column;
+}
+.freelancing-management .right .activity-feed .messages {
+  display: flex;
+  flex-direction: column;
+}
+.freelancing-management .right .activity-feed .messages .message-chat .message-left {
+  display: flex;
+  flex-direction: row;
+  margin-right: auto;
+}
+.freelancing-management .right .activity-feed .messages .message-chat .message-right {
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+}
+.freelancing-management .right .activity-feed .messages .message-send {
+  display: flex;
+  flex-direction: row;
+}
+
 /* End of Freelancing Management *//*# sourceMappingURL=freelancing-management.css.map */
