@@ -92,10 +92,115 @@ img {
   width: calc(100% - 70rem);
   height: 100%;
 }
+.consulting .middle .profiles {
+  display: flex;
+  flex-direction: row;
+}
+.consulting .middle .thirty-days-performance {
+  display: flex;
+  flex-direction: column;
+}
+.consulting .middle .thirty-days-performance .thirty-days-performance-inner {
+  display: flex;
+  flex-direction: row;
+}
+.consulting .middle .thirty-days-performance .thirty-days-performance-inner .views,
+.consulting .middle .thirty-days-performance .thirty-days-performance-inner .follows,
+.consulting .middle .thirty-days-performance .thirty-days-performance-inner .likes {
+  display: flex;
+  flex-direction: column;
+}
+.consulting .middle .analytics-and-event-distribution {
+  display: flex;
+  flex-direction: row;
+}
+.consulting .middle .analytics-and-event-distribution .analytics {
+  display: flex;
+  flex-direction: column;
+}
+.consulting .middle .analytics-and-event-distribution .analytics .second-row {
+  display: flex;
+  flex-direction: row;
+}
+.consulting .middle .analytics-and-event-distribution .event-distribution {
+  display: flex;
+  flex-direction: column;
+}
+.consulting .middle .analytics-and-event-distribution .event-distribution .event-distribution-options {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.consulting .middle .statistics {
+  display: flex;
+  flex-direction: column;
+}
+.consulting .middle .statistics .statistics-inner {
+  display: flex;
+  flex-direction: row;
+}
+.consulting .middle .statistics .statistics-inner .statistics-item {
+  display: flex;
+  flex-direction: row;
+}
+.consulting .middle .statistics .statistics-inner .statistics-item .statistics-item-left {
+  display: flex;
+  flex-direction: column;
+}
+.consulting .middle .statistics .statistics-inner .statistics-item .vertical-divider {
+  width: 0.1rem;
+  background-color: black;
+  height: 100%;
+  float: left;
+}
 .consulting .right {
   width: 40rem;
   height: 100%;
   border-left: 0.1rem solid #808080;
+  display: flex;
+  flex-direction: column;
+}
+.consulting .right .first-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.consulting .right .first-row .first-row-left {
+  display: flex;
+  flex-direction: column;
+}
+.consulting .right .first-row .first-row-right {
+  display: flex;
+  flex-direction: row;
+}
+.consulting .right .second-row {
+  display: flex;
+  flex-direction: column;
+}
+.consulting .right .third-row {
+  display: flex;
+  flex-direction: row;
+}
+.consulting .right .third-row .third-row-item {
+  display: flex;
+  flex-direction: column;
+}
+.consulting .right .fourth-row {
+  display: flex;
+  flex-direction: row;
+}
+.consulting .right .fifth-row {
+  display: flex;
+  flex-direction: row;
+}
+.consulting .right .fifth-row .fifth-row-item {
+  display: flex;
+  flex-direction: column;
+}
+.consulting .right .sixth-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 /* End of Consulting *//*# sourceMappingURL=consulting.css.map */
