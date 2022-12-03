@@ -38,23 +38,37 @@ img {
   border-right: 0.1rem solid #808080;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  padding: 3rem 0 3rem 0;
+  font-size: 1.4rem;
 }
 .blog .left .brand-details {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  flex: 1;
 }
 .blog .left .menu {
   display: flex;
   flex-direction: column;
+  flex: 2;
+  gap: 1rem;
+}
+.blog .left .menu .menu-item {
+  border-radius: 0.4rem;
+  padding: 1rem 1.5rem 1rem 1.5rem;
+}
+.blog .left .menu .menu-active {
+  color: #ffffff;
+  background-color: #000;
 }
 .blog .left .controls {
   display: flex;
   flex-direction: column;
   margin-top: auto;
+  flex: 1;
+  justify-content: flex-end;
+  gap: 1rem;
 }
 .blog .middle {
   width: calc(100% - 50rem);

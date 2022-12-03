@@ -42,25 +42,41 @@ img {
     border-right: .1rem solid #808080;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    padding: 3rem 0 3rem 0;
+    font-size: 1.4rem;
 
     .brand-details {
       display: flex;
       flex-direction: column;
-      justify-content: center;
       align-items: center;
+      flex: 1;
     }
 
     .menu {
       display: flex;
       flex-direction: column;
+      flex: 2;
+      gap: 1rem;
+
+      .menu-item {
+        border-radius: .4rem;
+        padding: 1rem 1.5rem 1rem 1.5rem;
+      }
+
+      .menu-active {
+        color: #ffffff;
+        background-color: #000;
+      }
     }
 
     .controls {
       display: flex;
       flex-direction: column;
       margin-top: auto;
+      flex: 1;
+      justify-content: flex-end;
+      gap: 1rem;
     }
   }
 
