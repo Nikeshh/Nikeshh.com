@@ -94,6 +94,7 @@ img {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        align-items: center;
         padding-bottom: 2rem;
         border-bottom: .1rem solid #808080;
 
@@ -320,23 +321,80 @@ img {
 
   .right {
     width: 40rem;
+    height: 100%;
     display: flex;
     flex-direction: column;
+    padding: 2rem 3rem;
 
     .profile-details {
       display: flex;
       flex-direction: row;
+      gap: 1rem;
+
+      .first-column {
+        
+      }
+
+      .second-column {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+      }
+
+      .third-column {
+
+      }
     }
 
     .premium-membership {
+      width: 100%;
+      height: 20rem;
       display: flex;
       flex-direction: column;
+      background: 
+        linear-gradient(
+          to top, transparent, #b1b1b1 100%
+        ),
+      gray repeating-linear-gradient(
+          45deg, transparent, transparent 35px,
+          rgba(255, 255, 255, 0.5) 35px, 
+          rgba(255, 255, 255, 0.5) 70px
+        );
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+      border-radius: .5rem;
+      gap: 2rem;
+      text-align: center;
+      margin-top: 3rem;
+
+      .avatar {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+      }
+
+      h3 {
+        font-size: 2rem;
+        font-weight: 300;
+      }
+
+      .learn-more-btn {
+        width: fit-content;
+        background-color: white;
+        color: black;
+        padding: 1rem 1.5rem;
+        border-radius: 2rem;
+      }
     }
 
     .divider {
       width: 100%;
       height: .1rem;
       background-color: #000;
+      margin: 2rem 0;
     }
 
     .continue-reading {
