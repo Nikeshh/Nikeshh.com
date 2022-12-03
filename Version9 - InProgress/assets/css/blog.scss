@@ -112,6 +112,27 @@ img {
         .controls {
           display: flex;
           flex-direction: row;
+          gap: 1rem;
+          font-size: 1.7rem;
+
+          .notifications {
+            position: relative;
+
+            .tag {
+              position: absolute;
+              border-radius: 50%;
+              padding: .3rem;
+              color: white;
+              background-color: red;
+              font-size: .5rem;
+              top: 0%;
+              right: 0%;
+            }
+          }
+
+          .collections {
+
+          }
         }
       }
     }

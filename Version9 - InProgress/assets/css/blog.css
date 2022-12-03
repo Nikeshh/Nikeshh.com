@@ -101,6 +101,21 @@ img {
 .blog .middle .first-row .search-and-controls-wrapper .controls {
   display: flex;
   flex-direction: row;
+  gap: 1rem;
+  font-size: 1.7rem;
+}
+.blog .middle .first-row .search-and-controls-wrapper .controls .notifications {
+  position: relative;
+}
+.blog .middle .first-row .search-and-controls-wrapper .controls .notifications .tag {
+  position: absolute;
+  border-radius: 50%;
+  padding: 0.3rem;
+  color: white;
+  background-color: red;
+  font-size: 0.5rem;
+  top: 0%;
+  right: 0%;
 }
 .blog .middle .second-row {
   display: flex;
