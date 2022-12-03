@@ -323,9 +323,33 @@ img {
 .blog .right .continue-reading {
   display: flex;
   flex-direction: column;
+  gap: 1rem;
+}
+.blog .right .continue-reading .heading {
+  font-size: 2rem;
+  font-weight: 400;
+}
+.blog .right .continue-reading .article {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  height: 30rem;
+}
+.blog .right .continue-reading .article .image > img {
+  width: 100%;
+  height: 20rem;
+  border-radius: 1.1rem;
+}
+.blog .right .continue-reading .article .header {
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+.blog .right .continue-reading .article .sub-header {
+  font-weight: 300;
 }
 .blog .right .continue-reading .article .progress-bar {
-  height: 0.7rem;
+  height: 0.9rem;
   width: 100%;
   border-radius: 1rem;
   border: 0.1rem solid black;
@@ -335,14 +359,46 @@ img {
   height: 100%;
   background-color: black;
 }
+.blog .right .continue-reading .continue-btn {
+  width: 100%;
+  padding: 1.2rem;
+  color: white;
+  background-color: #000;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
 .blog .right .more-interesting-topic {
   display: flex;
   flex-direction: column;
+  gap: 1rem;
+}
+.blog .right .more-interesting-topic .heading {
+  font-size: 2rem;
+  font-weight: 400;
 }
 .blog .right .more-interesting-topic .topics {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  gap: 0.7rem;
+  padding: 0 0 1rem 0;
+}
+.blog .right .more-interesting-topic .topics .topic {
+  margin-right: 0rem;
+  padding: 0.7rem 1.5rem;
+  border-radius: 2rem;
+  color: #000;
+  border: 0.1rem solid #000;
+}
+.blog .right .more-interesting-topic .topics .topic:not(:last-child) {
+  margin-right: 1rem;
+}
+.blog .right .more-interesting-topic .topics .topic-active {
+  color: white;
+  background-color: #000;
 }
 
 /* End of blog *//*# sourceMappingURL=blog.css.map */
