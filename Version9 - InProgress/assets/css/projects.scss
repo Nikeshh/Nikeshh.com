@@ -192,12 +192,16 @@ html {
                     gap: 1rem;
                     font-size: 2rem;
                     align-items: center;
+                    flex: 2;
                 }
 
                 .second-section {
                     display: flex;
                     gap: 1rem;
                     align-items: center;
+                    flex: 2;
+                    border-left: thin solid #000;
+                    padding-left: 2rem;
 
                     .counter {
                         display: flex;
@@ -255,10 +259,44 @@ html {
 
                 .third-section {
                     display: flex;
-                }
-
-                .vertical-bar {
+                    flex: 2;
                     border-left: thin solid #000;
+                    padding-left: 2rem;
+                    gap: 2rem;
+                    align-items: center;
+
+                    .search {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        padding: 1rem 3rem;
+                        background-color: white;
+                        color: gray;
+                        border-radius: 3rem;
+                        gap: 1rem;
+                        font-size: 1.5rem;
+                        font-weight: 200;
+                    }
+
+                    .notifications {
+                        font-size: 1.5rem;
+                        color: gray;
+                        padding: 1.5rem;
+                        border: .1rem dashed gray;
+                        border-radius: 50%;
+                        position: relative;
+
+                        .counter {
+                            position: absolute;
+                            padding: .4rem;
+                            color: white;
+                            border-radius: 50%;
+                            background-color: #f4484a;
+                            top: 0;
+                            right: 0;
+                            font-size: .7rem;
+                        }
+                    }
                 }
             }
 
@@ -266,10 +304,10 @@ html {
                 width: 100%;
                 height: .1rem;
                 background-color: #000;
-                margin-top: 1rem;
+                margin-top: 3rem;
             }
         }
-        
+
         .content {
             display: flex;
             flex-direction: row;
