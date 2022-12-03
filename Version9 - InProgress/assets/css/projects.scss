@@ -122,9 +122,20 @@ html {
             margin-top: auto;
             display: flex;
             flex-direction: column;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+            border-radius: 1.5rem;
+            padding: 2rem;
 
             .profile {
                 display: flex;
+                flex-direction: row;
+                gap: 1rem;
+                justify-content: center;
+                align-items: center;
 
                 img {
                     width: 4rem;
@@ -134,7 +145,28 @@ html {
                 .profile-details {
                     display: flex;
                     flex-direction: column;
+
+                    .name {
+                        font-size: 1.4rem;
+                        font-weight: 400;
+                    }
+
+                    .designation {
+                        font-weight: 200;
+                    }
                 }
+            }
+
+            .logout-btn {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                background-color: #fde6e3;
+                color: #f5644a;
+                border-radius: 0.8rem;
+                width: 100%;
+                padding: 1rem 1rem;
             }
         }
 
