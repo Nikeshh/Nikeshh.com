@@ -212,7 +212,7 @@ img {
   display: flex;
   flex-direction: row;
   margin-top: 2rem;
-  gap: 1rem;
+  gap: 2rem;
 }
 .consulting .middle .analytics-and-event-distribution .header {
   font-size: 2rem;
@@ -263,19 +263,51 @@ img {
   border-left: 0.1rem solid #808080;
   display: flex;
   flex-direction: column;
+  padding: 2rem 2rem;
 }
 .consulting .right .first-row {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-bottom: 3rem;
 }
 .consulting .right .first-row .first-row-left {
   display: flex;
   flex-direction: column;
+  gap: 0.6rem;
+}
+.consulting .right .first-row .first-row-left .name {
+  font-size: 2rem;
+  font-weight: 500;
+}
+.consulting .right .first-row .first-row-left .status {
+  font-weight: 300;
 }
 .consulting .right .first-row .first-row-right {
   display: flex;
   flex-direction: row;
+  gap: 1rem;
+  font-size: 2rem;
+}
+.consulting .right .first-row .first-row-right .messages {
+  border-radius: 1rem;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+}
+.consulting .right .first-row .first-row-right .notifications {
+  border-radius: 1rem;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  position: relative;
+}
+.consulting .right .first-row .first-row-right .notifications .tag {
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  font-size: 0.5rem;
+  border-radius: 50%;
+  background-color: #4f46bb;
+  padding: 0.5rem;
 }
 .consulting .right .second-row {
   display: flex;
