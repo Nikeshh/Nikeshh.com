@@ -38,10 +38,14 @@ img {
   border-right: 0.1rem solid #808080;
   display: flex;
   flex-direction: column;
+  padding: 2rem 2rem;
+  gap: 5rem;
 }
 .consulting .left .profile-details {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  gap: 1rem;
 }
 .consulting .left .profile-details .details {
   display: flex;
@@ -50,30 +54,61 @@ img {
 .consulting .left .menu {
   display: flex;
   flex-direction: column;
+  gap: 1.5rem;
+  font-size: 1.2rem;
+  color: #808080;
 }
 .consulting .left .menu .menu-item {
   display: flex;
   flex-direction: row;
+  gap: 1rem;
+}
+.consulting .left .menu .menu-item-active {
+  color: black;
 }
 .consulting .left .divider {
-  border-bottom: 0.1rem solid #808080;
+  border-bottom: 0.1rem dashed #808080;
 }
 .consulting .left .posts {
   display: flex;
   flex-direction: column;
+  font-size: 1.2rem;
+  gap: 2rem;
+  color: #808080;
 }
 .consulting .left .posts .header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
+.consulting .left .posts .header .header-left {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  color: #000;
+}
+.consulting .left .posts .header .header-right {
+  color: #808080;
+  padding: 0.5rem;
+  border: 0.1rem solid #808080;
+  border-radius: 50%;
+  font-size: 0.9rem;
+}
 .consulting .left .posts .posts-data {
   display: flex;
   flex-direction: column;
+  gap: 2rem;
 }
 .consulting .left .posts .posts-data .data-item {
   display: flex;
   flex-direction: row;
+  gap: 1rem;
+}
+.consulting .left .posts .posts-data .data-item .count {
+  margin-left: auto;
+  border: 0.1rem solid #808080;
+  padding: 0.2rem 1.2rem;
+  border-radius: 2rem;
 }
 .consulting .left .favorite-users {
   display: flex;
@@ -87,10 +122,12 @@ img {
   margin-top: auto;
   display: flex;
   flex-direction: row;
+  margin-top: auto;
 }
 .consulting .middle {
   width: calc(100% - 70rem);
   height: 100%;
+  background-color: #fafafa;
 }
 .consulting .middle .profiles {
   display: flex;

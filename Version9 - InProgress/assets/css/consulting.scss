@@ -42,10 +42,14 @@ img {
       border-right: .1rem solid #808080;
       display: flex;
       flex-direction: column;
+      padding: 2rem 2rem;
+      gap: 5rem;
 
       .profile-details {
         display: flex;
         flex-direction: row;
+        align-items: center;
+        gap: 1rem;
 
         .details {
           display: flex;
@@ -56,20 +60,31 @@ img {
       .menu {
         display: flex;
         flex-direction: column;
+        gap: 1.5rem;
+        font-size: 1.2rem;
+        color: #808080;
 
         .menu-item {
           display: flex;
           flex-direction: row;
+          gap: 1rem;
+        }
+
+        .menu-item-active {
+          color: black;
         }
       }
 
       .divider {
-        border-bottom: .1rem solid #808080;
+        border-bottom: .1rem dashed #808080;
       }
 
       .posts {
         display: flex;
         flex-direction: column;
+        font-size: 1.2rem;
+        gap: 2rem;
+        color: #808080;
 
         .header {
           display: flex;
@@ -77,20 +92,37 @@ img {
           justify-content: space-between;
 
           .header-left {
+            display: flex;
+            flex-direction: row;
+            gap: 1rem;
+            color: #000;
           }
 
           .header-right {
-
+            color: #808080;
+            padding: .5rem;
+            border: .1rem solid #808080;
+            border-radius: 50%;
+            font-size: 0.9rem;
           }
         }
 
         .posts-data {
           display: flex;
           flex-direction: column;
+          gap: 2rem;
 
           .data-item {
             display: flex;
             flex-direction: row;
+            gap: 1rem;
+
+            .count {
+              margin-left: auto;
+              border: .1rem solid #808080;
+              padding: .2rem 1.2rem;
+              border-radius: 2rem;
+            }
           }
         }
       }
@@ -117,12 +149,14 @@ img {
         margin-top: auto;
         display: flex;
         flex-direction: row;
+        margin-top: auto;
       }
     }
 
     .middle {
       width: calc(100% - 70rem);
       height: 100%;
+      background-color: #fafafa;
 
       .profiles {
         display: flex;
