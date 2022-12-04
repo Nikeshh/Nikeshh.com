@@ -412,16 +412,49 @@ img {
       .third-row {
         display: flex;
         flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+        font-size: 1.6rem;
 
         .third-row-item {
           display: flex;
           flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          gap: 1rem;
+
+          .item-number {
+            font-size: 2rem;
+          }
+
+          .item-title {
+            font-weight: 300;
+            font-size: 1.2rem;
+          }
         }
       }
 
       .fourth-row {
         display: flex;
         flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+
+        .view-profile-btn {
+          color: white;
+          border-radius: .7rem;
+          background-color: #4f46bb;
+          padding: 1rem 2rem;
+        }
+
+        .edit-profile-btn {
+          color: black;
+          border: .1rem solid #808080;
+          border-radius: .7rem;
+          padding: 1rem 2rem;
+        }
       }
 
       .fifth-row {

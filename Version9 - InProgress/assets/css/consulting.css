@@ -328,14 +328,43 @@ img {
 .consulting .right .third-row {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  font-size: 1.6rem;
 }
 .consulting .right .third-row .third-row-item {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.consulting .right .third-row .third-row-item .item-number {
+  font-size: 2rem;
+}
+.consulting .right .third-row .third-row-item .item-title {
+  font-weight: 300;
+  font-size: 1.2rem;
 }
 .consulting .right .fourth-row {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.consulting .right .fourth-row .view-profile-btn {
+  color: white;
+  border-radius: 0.7rem;
+  background-color: #4f46bb;
+  padding: 1rem 2rem;
+}
+.consulting .right .fourth-row .edit-profile-btn {
+  color: black;
+  border: 0.1rem solid #808080;
+  border-radius: 0.7rem;
+  padding: 1rem 2rem;
 }
 .consulting .right .fifth-row {
   display: flex;
