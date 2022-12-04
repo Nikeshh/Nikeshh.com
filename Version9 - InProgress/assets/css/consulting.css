@@ -264,6 +264,7 @@ img {
   display: flex;
   flex-direction: column;
   padding: 2rem 2rem;
+  gap: 3rem;
 }
 .consulting .right .first-row {
   display: flex;
@@ -308,10 +309,21 @@ img {
   border-radius: 50%;
   background-color: #4f46bb;
   padding: 0.5rem;
+  color: white;
 }
 .consulting .right .second-row {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.7rem;
+}
+.consulting .right .second-row .title {
+  font-size: 2rem;
+}
+.consulting .right .second-row .designation {
+  font-weight: 300;
+  font-size: 1.4rem;
 }
 .consulting .right .third-row {
   display: flex;

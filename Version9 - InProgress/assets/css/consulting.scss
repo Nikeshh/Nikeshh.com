@@ -337,6 +337,7 @@ img {
       display: flex;
       flex-direction: column;
       padding: 2rem 2rem;
+      gap: 3rem;
 
       .first-row {
         display: flex;
@@ -385,6 +386,7 @@ img {
               border-radius: 50%;
               background-color: #4f46bb;
               padding: .5rem;
+              color: white;
             }
           }
         }
@@ -393,6 +395,18 @@ img {
       .second-row {
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: .7rem;
+
+        .title {
+          font-size: 2rem;
+        }
+
+        .designation {
+          font-weight: 300;
+          font-size: 1.4rem;
+        }
       }
 
       .third-row {
