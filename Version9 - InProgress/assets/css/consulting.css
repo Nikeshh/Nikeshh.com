@@ -369,8 +369,9 @@ img {
 .consulting .right .fifth-row {
   display: flex;
   flex-direction: row;
-  padding: 1rem 3rem;
-  justify-content: space-between;
+  padding: 1rem 1rem;
+  gap: 1rem;
+  justify-content: center;
 }
 .consulting .right .fifth-row .fifth-row-item {
   display: flex;
@@ -409,6 +410,25 @@ img {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  padding: 1rem 1rem;
+  width: 100%;
+  gap: 0.2rem;
+  justify-content: center;
+  align-items: center;
+}
+.consulting .right .sixth-row img {
+  width: 30%;
+  height: 10rem;
+}
+.consulting .right .sixth-row img:nth-child(1) {
+  border-top-left-radius: 1rem;
+}
+.consulting .right .sixth-row img:not(:first-child):not(:last-child) {
+  border-top-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+.consulting .right .sixth-row img:last-child {
+  border-bottom-right-radius: 1rem;
 }
 
 /* End of Consulting *//*# sourceMappingURL=consulting.css.map */
