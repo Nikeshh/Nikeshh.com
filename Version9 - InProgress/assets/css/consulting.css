@@ -172,20 +172,51 @@ img {
 .consulting .middle .thirty-days-performance {
   display: flex;
   flex-direction: column;
+  margin-top: 2rem;
+  gap: 1rem;
+}
+.consulting .middle .thirty-days-performance .header {
+  font-size: 2rem;
+  font-weight: 600;
 }
 .consulting .middle .thirty-days-performance .thirty-days-performance-inner {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  gap: 1rem;
 }
 .consulting .middle .thirty-days-performance .thirty-days-performance-inner .views,
 .consulting .middle .thirty-days-performance .thirty-days-performance-inner .follows,
 .consulting .middle .thirty-days-performance .thirty-days-performance-inner .likes {
   display: flex;
   flex-direction: column;
+  border-radius: 1rem;
+  gap: 1rem;
+  background-color: #4f46bb;
+  padding: 1rem 0rem 1rem 1rem;
+  color: white;
+  width: 100%;
+}
+.consulting .middle .thirty-days-performance .thirty-days-performance-inner .views .title,
+.consulting .middle .thirty-days-performance .thirty-days-performance-inner .follows .title,
+.consulting .middle .thirty-days-performance .thirty-days-performance-inner .likes .title {
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.consulting .middle .thirty-days-performance .thirty-days-performance-inner .views .count,
+.consulting .middle .thirty-days-performance .thirty-days-performance-inner .follows .count,
+.consulting .middle .thirty-days-performance .thirty-days-performance-inner .likes .count {
+  font-weight: 500;
 }
 .consulting .middle .analytics-and-event-distribution {
   display: flex;
   flex-direction: row;
+  margin-top: 2rem;
+  gap: 1rem;
+}
+.consulting .middle .analytics-and-event-distribution .header {
+  font-size: 2rem;
+  font-weight: 600;
 }
 .consulting .middle .analytics-and-event-distribution .analytics {
   display: flex;

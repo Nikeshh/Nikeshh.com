@@ -199,20 +199,40 @@ img {
       .thirty-days-performance {
         display: flex;
         flex-direction: column;
+        margin-top: 2rem;
+        gap: 1rem;
 
         .header {
-
+          font-size: 2rem;
+          font-weight: 600;
         }
 
         .thirty-days-performance-inner {
           display: flex;
           flex-direction: row;
+          justify-content: space-between;
+          gap: 1rem;
 
           .views,
           .follows,
           .likes {
             display: flex;
             flex-direction: column;
+            border-radius: 1rem;
+            gap: 1rem;
+            background-color: #4f46bb;
+            padding: 1rem 0rem 1rem 1rem;
+            color: white;
+            width: 100%;
+
+            .title {
+              font-weight: 300;
+              text-transform: uppercase;
+            }
+
+            .count {
+              font-weight: 500;
+            }
           }
         }
       }
@@ -220,6 +240,13 @@ img {
       .analytics-and-event-distribution {
         display: flex;
         flex-direction: row;
+        margin-top: 2rem;
+        gap: 1rem;
+
+        .header {
+          font-size: 2rem;
+          font-weight: 600;
+        }
 
         .analytics {
           display: flex;
