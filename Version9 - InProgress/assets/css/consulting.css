@@ -143,10 +143,31 @@ img {
   width: calc(100% - 70rem);
   height: 100%;
   background-color: #fafafa;
+  padding: 2rem 5rem;
 }
 .consulting .middle .profiles {
   display: flex;
   flex-direction: row;
+  gap: 2rem;
+}
+.consulting .middle .profiles .profile {
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.consulting .middle .profiles .profile .image-with-plus {
+  position: relative;
+}
+.consulting .middle .profiles .profile .image-with-plus .add {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border-radius: 50%;
+  background-color: #5046ba;
+  color: white;
+  padding: 0.2rem;
 }
 .consulting .middle .thirty-days-performance {
   display: flex;

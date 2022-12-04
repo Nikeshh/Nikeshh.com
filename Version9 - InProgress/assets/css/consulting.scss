@@ -166,10 +166,34 @@ img {
       width: calc(100% - 70rem);
       height: 100%;
       background-color: #fafafa;
+      padding: 2rem 5rem;
 
       .profiles {
         display: flex;
         flex-direction: row;
+        gap: 2rem;
+
+        .profile {
+          border-radius: 50%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+
+          .image-with-plus {
+            position: relative;
+            
+            .add {
+              position: absolute;
+              right: 0;
+              bottom: 0;
+              border-radius: 50%;
+              background-color: #5046ba;
+              color: white;
+              padding: .2rem;
+            }
+          }
+        }
       }
 
       .thirty-days-performance {
