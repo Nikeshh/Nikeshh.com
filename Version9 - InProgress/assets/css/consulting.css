@@ -67,7 +67,7 @@ img {
   color: black;
 }
 .consulting .left .divider {
-  border-bottom: 0.1rem dashed #808080;
+  border-bottom: 0.1rem solid #808080;
 }
 .consulting .left .posts {
   display: flex;
@@ -113,16 +113,31 @@ img {
 .consulting .left .favorite-users {
   display: flex;
   flex-direction: column;
+  font-size: 1.2rem;
+  color: #808080;
 }
 .consulting .left .favorite-users .header {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+}
+.consulting .left .favorite-users .header .header-left {
+  display: flex;
+  gap: 1rem;
+  color: #000;
+}
+.consulting .left .favorite-users .header .header-right {
+  border-radius: 50%;
+  padding: 0.5rem;
+  border: 0.1rem solid #808080;
+  font-size: 0.9rem;
 }
 .consulting .left .invite-new-member {
   margin-top: auto;
   display: flex;
   flex-direction: row;
-  margin-top: auto;
+  font-size: 1.2rem;
+  gap: 1rem;
 }
 .consulting .middle {
   width: calc(100% - 70rem);
