@@ -41,7 +41,9 @@ img {
     flex-direction: column;
     width: 10rem;
     height: 100%;
-    border-right: .1rem solid #808080;
+    padding: 2rem 0;
+    align-items: center;
+    gap: 3rem;
 
     .company-details {
 
@@ -50,8 +52,16 @@ img {
     .menu {
       display: flex;
       flex-direction: column;
+      font-size: 2.6rem;
+      gap: 3rem;
+      color: #808080;
+
       .menu-item {
 
+      }
+
+      .menu-item-active {
+        color: black;
       }
     }
 
@@ -59,6 +69,9 @@ img {
       display: flex;
       flex-direction: column;
       margin-top: auto;
+      font-size: 2.6rem;
+      gap: 3rem;
+      color: #808080;
 
       .control-item {
 
@@ -71,103 +84,128 @@ img {
     flex-direction: column;
     width: calc(100% - 50rem);
     height: 100%;
-    border-right: .1rem solid #808080;
 
     .first-row {
       display: flex;
       flex-direction: row;
+      padding: 2rem 2rem;
 
       .first-row-left {
         margin-right: auto;
         display: flex;
         flex-direction: row;
+        font-size: 2rem;
+        gap: 2rem;
+        color: #808080;
+
+        .active {
+          color: black;
+        }
       }
 
       .first-row-right {
         margin-left: auto;
+
+        .start-a-new-project-btn {
+          padding: 1.5rem 2rem;
+          border-radius: 3rem;
+          background-color: #3aaeaf;
+          color: white;
+          box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+        }
       }
     }
 
-    .second-row {
-      display: flex;
-      flex-direction: row;
+    .blue-wrapper {
+      background-color: #f7fafc;
+      width: 100%;
+      height: 100%;
+      border-top-left-radius: 2rem;
+      border-top-right-radius: 2rem;
+      padding: 3rem;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 
-      .second-row-left {
+      .second-row {
         display: flex;
         flex-direction: row;
+  
+        .second-row-left {
+          display: flex;
+          flex-direction: row;
+        }
+  
+        .second-row-right {
+          display: flex;
+          flex-direction: row;
+  
+          .item {
+            display: flex;
+            flex-direction: column;
+  
+            .item-dropdown {
+              display: flex;
+              flex-direction: row;
+            }
+          }
+        }
       }
-
-      .second-row-right {
+  
+      .third-row {
         display: flex;
         flex-direction: row;
-
-        .item {
+        
+        .project {
           display: flex;
           flex-direction: column;
-
-          .item-dropdown {
+  
+          .profiles {
             display: flex;
             flex-direction: row;
+          }
+  
+          .controls {
+            display: flex;
+            flex-direction: row;
+  
+            .controls-left {
+              margin-right: auto;
+            }
+  
+            .controls-right {
+              margin-left: auto;
+              display: flex;
+              flex-direction: row;
+            }
           }
         }
       }
-    }
-
-    .third-row {
-      display: flex;
-      flex-direction: row;
-      
-      .project {
+  
+      .fourth-row {
         display: flex;
-        flex-direction: column;
-
-        .profiles {
+        flex-direction: row;
+        
+        .project {
           display: flex;
-          flex-direction: row;
-        }
-
-        .controls {
-          display: flex;
-          flex-direction: row;
-
-          .controls-left {
-            margin-right: auto;
-          }
-
-          .controls-right {
-            margin-left: auto;
+          flex-direction: column;
+  
+          .profiles {
             display: flex;
             flex-direction: row;
           }
-        }
-      }
-    }
-
-    .fourth-row {
-      display: flex;
-      flex-direction: row;
-      
-      .project {
-        display: flex;
-        flex-direction: column;
-
-        .profiles {
-          display: flex;
-          flex-direction: row;
-        }
-
-        .controls {
-          display: flex;
-          flex-direction: row;
-
-          .controls-left {
-            margin-right: auto;
-          }
-
-          .controls-right {
-            margin-left: auto;
+  
+          .controls {
             display: flex;
             flex-direction: row;
+  
+            .controls-left {
+              margin-right: auto;
+            }
+  
+            .controls-right {
+              margin-left: auto;
+              display: flex;
+              flex-direction: row;
+            }
           }
         }
       }
