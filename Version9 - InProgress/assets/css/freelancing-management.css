@@ -173,61 +173,166 @@ img {
   flex-direction: column;
   width: 40rem;
   height: 100%;
+  padding: 2rem 2rem;
+  gap: 6rem;
 }
 .freelancing-management .right .controls {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.freelancing-management .right .controls .control-item {
+  padding: 1rem;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
 }
 .freelancing-management .right .profile-details {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+}
+.freelancing-management .right .profile-details .profile-details-title {
+  font-size: 3rem;
+  font-weight: 300;
+}
+.freelancing-management .right .profile-details .profile-details-image {
+  margin-left: auto;
+  width: 7rem;
+  height: 7rem;
+}
+.freelancing-management .right .profile-details .profile-details-icon {
+  margin-left: auto;
 }
 .freelancing-management .right .divider {
-  border-bottom: 0.1rem solid #808080;
+  border-bottom: 0.1rem solid #fbfbfb;
 }
 .freelancing-management .right .stats {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  gap: 3rem;
 }
 .freelancing-management .right .stats .first-row {
   display: flex;
   flex-direction: row;
+  gap: 3rem;
 }
 .freelancing-management .right .stats .first-row .total-projects,
 .freelancing-management .right .stats .first-row .completed {
   display: flex;
   flex-direction: column;
+  gap: 0.7rem;
+}
+.freelancing-management .right .stats .first-row .total-projects .title {
+  font-size: 1.2rem;
+  color: #808080;
+}
+.freelancing-management .right .stats .first-row .total-projects .count {
+  font-size: 2.3rem;
+  font-weight: 600;
+  padding-left: 0.7rem;
+  border-left: 0.3rem solid #a090c0;
+}
+.freelancing-management .right .stats .first-row .completed .title {
+  font-size: 1.2rem;
+  color: #808080;
+}
+.freelancing-management .right .stats .first-row .completed .count {
+  font-size: 2.3rem;
+  font-weight: 600;
+  padding-left: 0.7rem;
+  border-left: 0.3rem solid #76c6c5;
 }
 .freelancing-management .right .stats .second-row {
   display: flex;
   flex-direction: row;
+  gap: 3rem;
 }
 .freelancing-management .right .stats .second-row .in-progress,
-.freelancing-management .right .stats .second-row .out-of-scheduled {
+.freelancing-management .right .stats .second-row .out-of-schedule {
   display: flex;
   flex-direction: column;
+  gap: 0.7rem;
+}
+.freelancing-management .right .stats .second-row .in-progress .title {
+  font-size: 1.2rem;
+  color: #808080;
+}
+.freelancing-management .right .stats .second-row .in-progress .count {
+  font-size: 2.3rem;
+  font-weight: 600;
+  padding-left: 0.7rem;
+  border-left: 0.3rem solid #f1c59a;
+}
+.freelancing-management .right .stats .second-row .out-of-schedule .title {
+  font-size: 1.2rem;
+  color: #808080;
+}
+.freelancing-management .right .stats .second-row .out-of-schedule .count {
+  font-size: 2.3rem;
+  font-weight: 600;
+  padding-left: 0.7rem;
+  border-left: 0.3rem solid #f78788;
 }
 .freelancing-management .right .activity-feed {
   display: flex;
   flex-direction: column;
+  gap: 3rem;
+}
+.freelancing-management .right .activity-feed .activity-feed-title {
+  font-weight: 300;
+  font-size: 3rem;
 }
 .freelancing-management .right .activity-feed .messages {
   display: flex;
   flex-direction: column;
+  gap: 2.5rem;
+}
+.freelancing-management .right .activity-feed .messages .message-chat {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 .freelancing-management .right .activity-feed .messages .message-chat .message-left {
   display: flex;
   flex-direction: row;
   margin-right: auto;
+  gap: 1rem;
+  align-items: center;
+}
+.freelancing-management .right .activity-feed .messages .message-chat .message-left img {
+  border-radius: 50%;
+}
+.freelancing-management .right .activity-feed .messages .message-chat .message-left p {
+  padding: 2rem;
+  border-radius: 2rem;
+  background-color: #f7fafc;
 }
 .freelancing-management .right .activity-feed .messages .message-chat .message-right {
   display: flex;
   flex-direction: row;
   margin-left: auto;
+  padding: 2rem;
+  border-radius: 2rem;
+  background-color: #fce6a1;
 }
 .freelancing-management .right .activity-feed .messages .message-send {
   display: flex;
   flex-direction: row;
+  padding: 1.5rem;
+  width: 100%;
+  border-radius: 3rem;
+  border: 0.1rem solid #d1cece;
+}
+.freelancing-management .right .activity-feed .messages .message-send .message-send-input {
+  color: #808080;
+  flex: 2;
+}
+.freelancing-management .right .activity-feed .messages .message-send .message-send-smilie {
+  flex: 1;
 }
 
 /* End of Freelancing Management *//*# sourceMappingURL=freelancing-management.css.map */
