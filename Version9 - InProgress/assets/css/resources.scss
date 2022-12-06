@@ -71,7 +71,7 @@ img {
         display: flex;
         flex-direction: column;
         padding: 2rem 3rem;
-        gap: 8rem;
+        gap: 6rem;
 
         .section-1 {
             display: flex;
@@ -138,7 +138,7 @@ img {
                 flex-direction: row;
                 width: 100%;
                 gap: .5rem;
-                height: 15rem;
+                height: 20rem;
 
                 .populars-and-latest {
                     display: flex;
@@ -160,6 +160,7 @@ img {
                         justify-content: center;
                         align-items: center;
                         flex: 1;
+                        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
                     }
 
                     .latest {
@@ -172,6 +173,7 @@ img {
                         justify-content: center;
                         align-items: center;
                         flex: 1;
+                        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
                     }
                 }
 
@@ -179,6 +181,7 @@ img {
                     flex: 3;
                     height: 100%;
                     border-radius: 1.5rem;
+                    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
                 }
 
                 .more {
@@ -190,6 +193,7 @@ img {
                     border-radius: 2rem;
                     color: #808080;
                     background-color: #f5f7f9;
+                    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
                 }
             }
         }
@@ -242,42 +246,95 @@ img {
         .section-4 {
             display: flex;
             flex-direction: column;
+            gap: 1.5rem;
+            width: 100%;
 
             .section-4-row {
                 display: flex;
                 flex-direction: row;
+                gap: 1.5rem;
 
                 .content {
                     display: flex;
                     flex-direction: column;
+                    background-color: #f4f6f7;
+                    border-radius: .7rem;
+                    padding: 2rem 2.5rem;
+                    flex: 1;
+                    gap: 3rem;
 
                     .content-first-row {
                         display: flex;
-                        flex-direction: row;
                         justify-content: space-between;
+                        align-items: center;
 
                         .profile-details {
                             display: flex;
-                            flex-direction: row;
+                            gap: .5rem;
+
+                            .details {
+                                display: flex;
+                                flex-direction: column;
+                                gap: .5rem;
+                                justify-content: center;
+
+                                p:nth-child(1) {
+                                    color: black;
+                                    font-weight: 500;
+                                }
+
+                                p:nth-child(2) {
+                                    color: #808080;
+                                    font-weight: 400;
+                                }
+                            }
                         }
 
                         .rate {
+                            margin-left: auto;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+
+                            .amount {
+                                font-weight: 600;
+                                font-size: 2rem;
+                            }
                         }
                     }
 
                     .content-second-row {
                         display: flex;
                         flex-direction: row;
-                        justify-content: space-between;
 
                         .features {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 1rem;
 
+                            .feature {
+                                display: flex;
+                                gap: .3rem;
+                            }
                         }
 
                         .details-btn {
-
+                            margin-left: auto;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            border-radius: .5rem;
+                            color: white;
+                            background-color: #000000;
+                            padding: 1rem 2rem;
                         }
                     }
+                }
+
+                .content-active {
+                    background-color: #c2e4ff;
+                    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
                 }
             }
         }
