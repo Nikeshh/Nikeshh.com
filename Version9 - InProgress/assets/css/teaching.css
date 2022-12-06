@@ -38,31 +38,77 @@ img {
   border-right: 0.1rem solid #808080;
   display: flex;
   flex-direction: column;
+  padding: 3rem;
+  gap: 5rem;
 }
 .teaching .left .title {
   display: flex;
   flex-direction: row;
+  font-size: 3rem;
+  font-weight: 700;
+}
+.teaching .left .title .dot {
+  color: #f55440;
 }
 .teaching .left .profile-details {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  gap: 2rem;
 }
 .teaching .left .menu {
   display: flex;
   flex-direction: column;
+  color: #808080;
+  font-size: 2rem;
+  gap: 3rem;
 }
 .teaching .left .menu .menu-item {
   display: flex;
   flex-direction: row;
+  margin-top: auto;
+  gap: 2rem;
+  font-size: 2rem;
+  color: #808080;
+}
+.teaching .left .menu .menu-item-active {
+  color: #000000;
 }
 .teaching .left .invite-friends {
   display: flex;
   flex-direction: column;
+  position: relative;
+  padding: 6rem 2rem 2rem 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  justify-content: center;
+  align-items: center;
+  gap: 0.7rem;
+}
+.teaching .left .invite-friends img {
+  position: absolute;
+  width: 7rem;
+  height: 7rem;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+.teaching .left .invite-friends p {
+  color: #808080;
+}
+.teaching .left .invite-friends .get-the-link-btn {
+  padding: 1rem 2rem;
+  background-color: #f67a50;
+  color: white;
+  border-radius: 1rem;
 }
 .teaching .left .settings {
   display: flex;
   flex-direction: row;
   margin-top: auto;
+  gap: 2rem;
+  font-size: 2rem;
+  color: #808080;
 }
 .teaching .middle {
   width: calc(100% - 110rem);

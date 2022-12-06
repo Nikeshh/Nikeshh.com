@@ -42,36 +42,94 @@ img {
     border-right: .1rem solid #808080;
     display: flex;
     flex-direction: column;
+    padding: 3rem;
+    gap: 5rem;
 
     .title {
       display: flex;
       flex-direction: row;
+      font-size: 3rem;
+      font-weight: 700;
+
+      .dot {
+        color: #f55440;
+      }
     }
 
     .profile-details {
       display: flex;
       flex-direction: row;
+      align-items: center;
+      gap: 2rem;
+
+      img {
+
+      }
+
+      .details {
+      }
     }
 
     .menu {
       display: flex;
       flex-direction: column;
+      color: #808080;
+      font-size: 2rem;
+      gap: 3rem;
 
       .menu-item {
         display: flex;
         flex-direction: row;
+        margin-top: auto;
+        gap: 2rem;
+        font-size: 2rem;
+        color: #808080;
+      }
+
+      .menu-item-active {
+        color: #000000;
       }
     }
 
     .invite-friends {
       display: flex;
       flex-direction: column;
+      position: relative;
+      padding: 6rem 2rem 2rem 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+      justify-content: center;
+      align-items: center;
+      gap: .7rem;
+
+      img {
+        position: absolute;
+        width: 7rem;
+        height: 7rem;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+      }
+
+      p {
+        color: #808080;
+      }
+
+      .get-the-link-btn {
+        padding: 1rem 2rem;
+        background-color: #f67a50;
+        color: white;
+        border-radius: 1rem;
+      }
     }
 
     .settings {
       display: flex;
       flex-direction: row;
       margin-top: auto;
+      gap: 2rem;
+      font-size: 2rem;
+      color: #808080;
     }
   }
 
