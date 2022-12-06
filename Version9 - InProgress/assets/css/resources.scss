@@ -342,40 +342,74 @@ img {
 
     .right {
         width: 40rem;
-        border-left: .1rem solid #808080; /* Need to remove */
         display: flex;
         flex-direction: column;
+        padding: 2rem;
+        gap: 2rem;
         
         .first-row {
-
+            border-radius: 2rem;
+            flex: 1;
+            background-color: #f5f7f9;
         }
 
         .second-row {
             display: flex;
             flex-direction: column;
+            flex: 2;
+            border-radius: 2rem;
+            background-color: #f5f7f9;
+            padding: 1rem 2rem;
+            gap: 2rem;
 
             .profile-details {
                 display: flex;
                 flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-top: 3rem;
+                gap: 1rem;
+
+                img {
+                    width: 10rem;
+                    height: 10rem;
+                }
+
+                h3 {
+                    font-weight: 600;
+                    font-size: 2rem;
+                }
+
+                p {
+                    font-weight: 500;
+                    color: #808080;
+                }
             }
 
             .divider {
                 border-bottom: .1rem solid #808080;
+                width: 100%;
             }
 
             .abilities-wrapper {
                 display: flex;
                 flex-direction: column;
+                gap: 1rem;
 
                 .heading {
                     display: flex;
                     flex-direction: row;
+                    gap: 1rem;
+                    font-size: 1.5rem;
+                    align-items: center;
                 }
 
                 .abilities {
                     display: flex;
                     flex-direction: row;
                     flex-wrap: wrap;
+                    margin-left: 2.5rem;
+                    color: #808080;
 
                     .ability {
 
@@ -383,6 +417,7 @@ img {
 
                     .ability:not(:last-child):after {
                         content: ",";
+                        margin-right: .5rem;
                     }
                 }
             }
@@ -390,21 +425,46 @@ img {
             .choose-time {
                 display: flex;
                 flex-direction: column;
+                gap: 1rem;
 
                 .heading {
                     display: flex;
                     flex-direction: row;
+                    gap: 1rem;
+                    font-size: 1.5rem;
+                    align-items: center;
                 }
 
                 .times {
                     display: flex;
                     flex-direction: row;
                     flex-wrap: wrap;
+                    margin-left: 2.5rem;
+                    color: #808080;
+                    gap: .5rem;
+                    color: black;
+
+                    .time {
+                        background-color: #eaedef;
+                        border-radius: .5rem;
+                        padding: 1rem;
+                    }
+
+                    .time-active {
+                        background-color: #beb5fe;
+                    }
                 }
             }
 
             .book-btn {
-
+                width: 100%;
+                padding: 2rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: white;
+                background-color: #000000;
+                border-radius: 1rem;
             }
         }
     }
