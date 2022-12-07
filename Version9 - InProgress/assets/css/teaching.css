@@ -443,6 +443,13 @@ img {
   padding: 2rem 0.5rem;
   align-items: center;
 }
+.teaching .right .statements-wrapper .statements .statements-right .no-of-students {
+  font-size: 4rem;
+}
+.teaching .right .statements-wrapper .statements .statements-right .title {
+  margin-top: 0.5rem;
+  color: #aaaaad;
+}
 .teaching .right .statements-wrapper .statements .statements-right .join-now {
   border-radius: 0.5rem;
   background-color: #2d42af;
@@ -452,6 +459,71 @@ img {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-top: 1rem;
+  padding: 2rem 0rem;
+  gap: 1rem;
+}
+.teaching .right .statements-wrapper .statements .statements-right .join-now .join-now-tag {
+  color: #eac994;
+}
+.teaching .right .statements-wrapper .statements .statements-right .join-now .join-now-title {
+  font-size: 1.5rem;
+}
+.teaching .right .statements-wrapper .statements .statements-right .join-now .join-now-btn {
+  background-color: #caf3fe;
+  color: #7086c2;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+}
+.teaching .right .statements-wrapper .statements .statements-right .circular-progress-bar {
+  margin-top: 1rem;
+}
+.teaching .right .statements-wrapper .statements .statements-right .discover-more {
+  margin-top: 1rem;
+  color: #cdc7bb;
+}
+.teaching .right .statements-wrapper .statements .statements-right .members {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  border: 0.5rem solid white;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.teaching .right .statements-wrapper .statements .statements-right .members .member {
+  width: 5rem;
+  height: 5rem;
+  border: 0.5rem solid white;
+  border-radius: 50%;
+  position: relative;
+}
+.teaching .right .statements-wrapper .statements .statements-right .members :nth-child(5) {
+  z-index: 4;
+  right: 8rem;
+}
+.teaching .right .statements-wrapper .statements .statements-right .members :nth-child(4) {
+  z-index: 3;
+  right: 6rem;
+}
+.teaching .right .statements-wrapper .statements .statements-right .members :nth-child(3) {
+  z-index: 2;
+  right: 4rem;
+}
+.teaching .right .statements-wrapper .statements .statements-right .members :nth-child(2) {
+  z-index: 1;
+  right: 2rem;
+}
+.teaching .right .statements-wrapper .statements .statements-right .members :nth-child(1) {
+  z-index: 0;
+  right: 0rem;
+}
+.teaching .right .statements-wrapper .statements .statements-right .members .number-of-members {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #def0f9;
+  border-radius: 50%;
 }
 .teaching .right .headings-wrapper {
   display: flex;
