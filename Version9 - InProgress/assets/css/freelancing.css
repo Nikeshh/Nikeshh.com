@@ -39,10 +39,18 @@ img {
   flex-direction: column;
   align-items: center;
   padding: 2rem 1rem;
+  background-color: #ffffff;
 }
 .freelancing .left .logo {
   border-radius: 50%;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 2rem;
+  padding: 1.4rem;
+  background-color: #3d80f0;
 }
 .freelancing .left .menu {
   display: flex;
@@ -52,6 +60,17 @@ img {
   font-size: 2rem;
   color: #c8c8c8;
 }
+.freelancing .left .menu .menu-item {
+  border-radius: 1rem;
+  padding: 0.7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.freelancing .left .menu .menu-item-active {
+  background-color: #e1ecfe;
+  color: #7dadfc;
+}
 .freelancing .left .controls {
   margin-top: auto;
   display: flex;
@@ -59,6 +78,9 @@ img {
   gap: 3rem;
   font-size: 2rem;
   color: #c8c8c8;
+}
+.freelancing .left .controls .logout-control {
+  color: #f44141;
 }
 .freelancing .right {
   width: calc(100% - 7rem);
@@ -75,7 +97,7 @@ img {
   justify-content: center;
   align-items: center;
   padding: 0 1rem 0 1rem;
-  background-color: white;
+  background-color: #ffffff;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 }
 .freelancing .right .header .header-left {
