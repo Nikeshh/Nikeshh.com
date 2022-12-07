@@ -111,12 +111,17 @@ img {
       flex-direction: row;
       justify-content: center;
       align-items: center;
-      padding: 0 1rem 0 1rem;
+      padding: 2rem 3rem;
       background-color: #ffffff;
       box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 
       .header-left {
         margin-right: auto;
+        
+        h1 {
+          font-weight: 400;
+          font-size: 2.5rem;
+        }
       }
       
       .header-right {
@@ -125,6 +130,7 @@ img {
         flex-direction: row;
         justify-content: center;
         align-items: center;
+        gap: 3rem;
 
         .search-and-history {
           display: flex;
@@ -134,10 +140,28 @@ img {
         .notifications {
           display: flex;
           flex-direction: row;
+          font-size: 2.5rem;
+          color: #9fa0a2;
+          position: relative;
+
+          .tag {
+            position: absolute;
+            right: 0;
+            top: 0;
+            border-radius: 50%;
+            background-color: #f40205;
+            color: black;
+            font-size: 1rem;
+            padding: .3rem;
+            color: white;
+          }
         }
 
         .profile {
-
+          img {
+            width: 4rem;
+            height: 4rem;
+          }
         }
       }
     }
