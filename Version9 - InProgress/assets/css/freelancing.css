@@ -240,10 +240,9 @@ img {
 }
 .freelancing .right .jobs {
   height: calc(100% - 28rem);
-  width: 100%;
   display: flex;
   flex-direction: row;
-  padding: 5rem;
+  margin: 3rem 3rem 3rem 0rem;
 }
 .freelancing .right .jobs .jobs-left {
   flex: 3;
@@ -277,43 +276,97 @@ img {
   flex: 1;
   display: flex;
   flex-direction: column;
+  gap: 2rem;
 }
 .freelancing .right .jobs .jobs-right .job-filter {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 1.3rem;
+}
+.freelancing .right .jobs .jobs-right .job-filter h1 {
+  font-weight: 400;
+}
+.freelancing .right .jobs .jobs-right .job-filter p {
+  color: #3c70f9;
+  font-size: 1.2rem;
 }
 .freelancing .right .jobs .jobs-right .job-type {
   display: flex;
   flex-direction: column;
+  padding: 2rem;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 1.3rem;
+  gap: 1rem;
 }
 .freelancing .right .jobs .jobs-right .job-type .job-type-header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.freelancing .right .jobs .jobs-right .job-type .job-type-header h1 {
+  font-weight: 400;
+}
+.freelancing .right .jobs .jobs-right .job-type .job-type-header p {
+  color: #3c70f9;
+  font-size: 1.2rem;
 }
 .freelancing .right .jobs .jobs-right .job-type .job-type-item {
   display: flex;
   flex-direction: row;
+  gap: 1rem;
+  font-size: 1.4rem;
 }
-.freelancing .right .jobs .jobs-right .job-type .job-type-item div {
+.freelancing .right .jobs .jobs-right .job-type .job-type-item .item-jobs {
   margin-left: auto;
+  color: #a8a8c4;
+}
+.freelancing .right .jobs .jobs-right .job-type .job-type-item:has(input[type=checkbox]:checked) p,
+.freelancing .right .jobs .jobs-right .job-type .job-type-item:has(input[type=checkbox]:checked) .item-jobs {
+  font-weight: 600;
 }
 .freelancing .right .jobs .jobs-right .experience {
   display: flex;
   flex-direction: column;
+  padding: 2rem;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 1.3rem;
+  gap: 1rem;
 }
 .freelancing .right .jobs .jobs-right .experience .experience-header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.freelancing .right .jobs .jobs-right .experience .experience-header h1 {
+  font-weight: 400;
+}
+.freelancing .right .jobs .jobs-right .experience .experience-header p {
+  color: #3c70f9;
+  font-size: 1.2rem;
 }
 .freelancing .right .jobs .jobs-right .experience .experience-item {
   display: flex;
   flex-direction: row;
+  gap: 1rem;
+  font-size: 1.4rem;
 }
-.freelancing .right .jobs .jobs-right .experience .experience-item div {
+.freelancing .right .jobs .jobs-right .experience .experience-item .item-experience {
   margin-left: auto;
+  color: #a8a8c4;
+}
+.freelancing .right .jobs .jobs-right .experience .experience-item:has(input[type=checkbox]:checked) p,
+.freelancing .right .jobs .jobs-right .experience .experience-item:has(input[type=checkbox]:checked) .item-experience {
+  font-weight: 600;
 }
 
 /* End of Profile *//*# sourceMappingURL=freelancing.css.map */

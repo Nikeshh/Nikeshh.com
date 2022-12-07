@@ -275,10 +275,9 @@ img {
 
     .jobs {
       height: calc(100% - 28rem);
-      width: 100%;
       display: flex;
       flex-direction: row;
-      padding: 5rem;
+      margin: 3rem 3rem 3rem 0rem;
 
       .jobs-left {
         flex: 3;
@@ -318,49 +317,116 @@ img {
         flex: 1;
         display: flex;
         flex-direction: column;
+        gap: 2rem;
 
         .job-filter {
           display: flex;
           flex-direction: row;
           justify-content: space-between;
+          align-items: center;
+          padding: 2rem;
+          background-color: white;
+          border-radius: 1.3rem;
+
+          h1 {
+            font-weight: 400;
+          }
+
+          p {
+            color: #3c70f9;
+            font-size: 1.2rem;
+          }
         }
 
         .job-type {
           display: flex;
           flex-direction: column;
+          padding: 2rem;
+          padding: 2rem;
+          background-color: white;
+          border-radius: 1.3rem;
+          gap: 1rem;
 
           .job-type-header {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+
+            h1 {
+              font-weight: 400;
+            }
+
+            p {
+              color: #3c70f9;
+              font-size: 1.2rem;
+            }
           }
 
           .job-type-item {
             display: flex;
             flex-direction: row;
+            gap: 1rem;
+            font-size: 1.4rem;
 
-            div {
+            .item-jobs {
               margin-left: auto;
+              color: #a8a8c4;
             }
+          }
+
+          .job-type-item:has(input[type="checkbox"]:checked) {
+            p,
+            .item-jobs {
+              font-weight: 600;
+            }
+            
           }
         }
 
         .experience {
           display: flex;
           flex-direction: column;
+          padding: 2rem;
+          padding: 2rem;
+          background-color: white;
+          border-radius: 1.3rem;
+          gap: 1rem;
 
           .experience-header {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+
+            h1 {
+              font-weight: 400;
+            }
+
+            p {
+              color: #3c70f9;
+              font-size: 1.2rem;
+            }
           }
 
           .experience-item {
             display: flex;
             flex-direction: row;
+            gap: 1rem;
+            font-size: 1.4rem;
 
-            div {
+            .item-experience {
               margin-left: auto;
+              color: #a8a8c4;
+            }
+          }
+
+          .experience-item:has(input[type="checkbox"]:checked) {
+            p,
+            .item-experience {
+              font-weight: 600;
             }
           }
         }
