@@ -249,28 +249,88 @@ img {
   display: flex;
   flex-direction: column;
   padding: 0 5rem 0 5rem;
+  gap: 3rem;
 }
 .freelancing .right .jobs .jobs-left .job-row {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  gap: 2rem;
 }
 .freelancing .right .jobs .jobs-left .job-row .job {
   display: flex;
   flex-direction: column;
+  width: 100%;
+  border-radius: 1rem;
+  padding: 2rem;
+  gap: 2rem;
+  background-color: white;
 }
 .freelancing .right .jobs .jobs-left .job-row .job .job-details {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  gap: 2rem;
+  align-items: center;
+}
+.freelancing .right .jobs .jobs-left .job-row .job .job-details .job-details-logo {
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: #edeff9;
+  font-size: 3rem;
+}
+.freelancing .right .jobs .jobs-left .job-row .job .job-details .title-and-location {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.freelancing .right .jobs .jobs-left .job-row .job .job-details .title-and-location h3 {
+  font-weight: 400;
+}
+.freelancing .right .jobs .jobs-left .job-row .job .job-details .title-and-location p {
+  color: #9f9f9f;
+}
+.freelancing .right .jobs .jobs-left .job-row .job .job-details .download-job-details {
+  margin-left: auto;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: #edeff9;
+  color: #6090fa;
 }
 .freelancing .right .jobs .jobs-left .job-row .job .job-description {
-  display: flex;
-  flex-direction: row;
+  color: #9f9f9f;
+  font-size: 1.2rem;
+  font-weight: 300;
 }
 .freelancing .right .jobs .jobs-left .job-row .job .job-controls {
   display: flex;
   flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+}
+.freelancing .right .jobs .jobs-left .job-row .job .job-controls .dollar-sign {
+  border-radius: 50%;
+  border: 0.1rem solid #689cfb;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  color: #689cfb;
+  padding: 0.5rem;
+}
+.freelancing .right .jobs .jobs-left .job-row .job .job-controls p {
+  font-size: 1.2rem;
+}
+.freelancing .right .jobs .jobs-left .job-row .job .job-controls .apply-job-btn {
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  background-color: #3063f9;
+  color: white;
+  margin-left: auto;
+}
+.freelancing .right .jobs .jobs-left .job-row .job-active {
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 }
 .freelancing .right .jobs .jobs-right {
   flex: 1;
