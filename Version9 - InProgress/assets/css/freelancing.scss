@@ -135,6 +135,27 @@ img {
         .search-and-history {
           display: flex;
           flex-direction: row;
+          background-color: #f8f9fd;
+          padding: .5rem;
+          border-radius: 2rem;
+
+          .search-btn {
+            background-color: #dbe7fc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem 1.5rem;
+            border-radius: 2rem;
+            color: #4c87f9;
+          }
+
+          .history-btn {
+            color: #b4b5ce;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem 1.5rem;
+          }
         }
 
         .notifications {

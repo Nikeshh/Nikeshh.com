@@ -118,6 +118,25 @@ img {
 .freelancing .right .header .header-right .search-and-history {
   display: flex;
   flex-direction: row;
+  background-color: #f8f9fd;
+  padding: 0.5rem;
+  border-radius: 2rem;
+}
+.freelancing .right .header .header-right .search-and-history .search-btn {
+  background-color: #dbe7fc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  border-radius: 2rem;
+  color: #4c87f9;
+}
+.freelancing .right .header .header-right .search-and-history .history-btn {
+  color: #b4b5ce;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 1.5rem;
 }
 .freelancing .right .header .header-right .notifications {
   display: flex;
