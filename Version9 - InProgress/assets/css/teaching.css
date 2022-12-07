@@ -330,57 +330,128 @@ img {
 }
 .teaching .right {
   width: 80rem;
+  height: 100%;
   display: flex;
   flex-direction: column;
   background-color: #fbfaf6;
+  padding: 3rem 4rem;
+  gap: 3rem;
 }
 .teaching .right .controls {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
+.teaching .right .controls .notifications {
+  padding: 1rem;
+  border-radius: 50%;
+  background-color: white;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+  font-size: 1.5rem;
+}
+.teaching .right .controls .notifications .tag {
+  position: absolute;
+  padding: 0.2rem;
+  color: white;
+  background-color: #d55c4e;
+  top: 10%;
+  right: 10%;
+  border-radius: 50%;
+  font-size: 0.7rem;
+}
+.teaching .right .controls .search {
+  display: flex;
+  gap: 2rem;
+  font-size: 1.5rem;
+  justify-content: center;
+  align-items: center;
+}
+.teaching .right .controls .search input {
+  background-color: #fdfbf9;
+}
 .teaching .right .statements-wrapper {
   display: flex;
   flex-direction: column;
+  gap: 2rem;
+}
+.teaching .right .statements-wrapper .header {
+  font-size: 2rem;
+  font-weight: 500;
 }
 .teaching .right .statements-wrapper .statements {
   display: flex;
   flex-direction: row;
+  gap: 3rem;
+  width: 100%;
 }
 .teaching .right .statements-wrapper .statements .statements-left {
   display: flex;
   flex-direction: column;
+  width: 100%;
+  border-radius: 1.5rem;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  padding: 2rem 3rem;
+  gap: 3rem;
 }
 .teaching .right .statements-wrapper .statements .statements-left .goals {
   display: flex;
   flex-direction: column;
+  gap: 1rem;
+}
+.teaching .right .statements-wrapper .statements .statements-left .goals .first-row {
+  font-size: 5rem;
 }
 .teaching .right .statements-wrapper .statements .statements-left .goals .second-row {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  font-size: 1.5rem;
 }
 .teaching .right .statements-wrapper .statements .statements-left .goals .third-row .progress-bar {
-  height: 0.7rem;
+  height: 0.9rem;
   width: 100%;
   border-radius: 1rem;
-  border: 0.1rem solid black;
+  background-color: gray;
 }
 .teaching .right .statements-wrapper .statements .statements-left .goals .third-row .progress-bar-80 {
   width: 80%;
-  height: 100%;
-  background-color: black;
+  height: 0.9rem;
+  border-radius: 1rem;
+  background-color: #b7e3ef;
 }
 .teaching .right .statements-wrapper .statements .statements-left .menus {
   display: flex;
   flex-direction: column;
+  gap: 2rem;
 }
 .teaching .right .statements-wrapper .statements .statements-left .menus .menu-item {
   display: flex;
   flex-direction: row;
+  gap: 2rem;
+  align-items: center;
+}
+.teaching .right .statements-wrapper .statements .statements-left .menus .menu-item .menu-item-right {
+  margin-left: auto;
 }
 .teaching .right .statements-wrapper .statements .statements-right {
   display: flex;
   flex-direction: column;
+  width: 100%;
+  border-radius: 1.5rem;
+  background-color: white;
+  padding: 2rem 0.5rem;
+  align-items: center;
+}
+.teaching .right .statements-wrapper .statements .statements-right .join-now {
+  border-radius: 0.5rem;
+  background-color: #2d42af;
+  color: white;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .teaching .right .headings-wrapper {
   display: flex;
