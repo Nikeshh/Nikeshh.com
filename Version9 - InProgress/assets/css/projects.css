@@ -27,6 +27,11 @@ html {
   color: #fff !important;
 }
 
+img {
+  width: 5rem;
+  height: 5rem;
+}
+
 /* End Core */
 /* Projects */
 .projects {
@@ -272,12 +277,14 @@ html {
   display: flex;
   flex-direction: row;
   padding: 1rem;
+  gap: 6rem;
 }
 .projects .right .content .left-inner {
-  width: calc(100% - 30rem);
+  width: calc(100% - 40rem);
   display: flex;
   flex-direction: column;
   padding: 3rem;
+  gap: 2rem;
 }
 .projects .right .content .left-inner .insurances {
   width: 100%;
@@ -342,29 +349,81 @@ html {
   border-radius: 1rem;
 }
 .projects .right .content .right-inner {
-  width: 30rem;
+  width: 40rem;
   display: flex;
   flex-direction: column;
   padding: 3rem;
+  gap: 3rem;
 }
 .projects .right .content .right-inner .agents {
   background-color: #fff;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
   border-radius: 1rem;
   width: 100%;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.projects .right .content .right-inner .agents .heading {
+  padding: 1rem;
+  border: 0.1rem dashed #808080;
+  border-radius: 1rem;
+  font-weight: 600;
+  font-size: 1.7rem;
+}
+.projects .right .content .right-inner .agents .sub-heading {
+  font-weight: 300;
+  font-size: 1rem;
 }
 .projects .right .content .right-inner .agents .agent-icons {
+  margin-top: 1rem;
   display: flex;
+  align-items: center;
+  border: 0.5rem solid white;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 }
-.projects .right .content .right-inner .agents .agent-icons img {
-  width: 1rem;
-  height: 1rem;
+.projects .right .content .right-inner .agents .agent-icons .agent {
+  width: 5rem;
+  height: 5rem;
+  border: 0.5rem solid white;
+  border-radius: 50%;
+  position: relative;
+}
+.projects .right .content .right-inner .agents .agent-icons :nth-child(4) {
+  z-index: 3;
+  right: 6rem;
+}
+.projects .right .content .right-inner .agents .agent-icons :nth-child(3) {
+  z-index: 2;
+  right: 4rem;
+}
+.projects .right .content .right-inner .agents .agent-icons :nth-child(2) {
+  z-index: 1;
+  right: 2rem;
+}
+.projects .right .content .right-inner .agents .agent-icons :nth-child(1) {
+  z-index: 0;
+  right: 0rem;
+}
+.projects .right .content .right-inner .agents .agent-icons .other-agents {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2f5afa;
+  border-radius: 50%;
+  color: white;
 }
 .projects .right .content .right-inner .transactions {
   background-color: #fff;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
   border-radius: 1rem;
   width: 100%;
+  padding: 2rem;
 }
 .projects .right .content .right-inner .transactions .actions {
   display: flex;
