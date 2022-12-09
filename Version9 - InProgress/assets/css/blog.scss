@@ -54,11 +54,24 @@ html {
 }
 /* End Core */
 
+/* Colors */
+
+.light-gray {
+    color: #d0c9c9;
+}
+
+.dark-gray {
+    color: #808080;
+}
+
+/* End of Colors */
+
 /* Blog */
 
 .blog {
 
     .section-1 {
+        display: none;
         width: 100%;
         height: 140vh;
         background-color: var(--primary-background-color);
