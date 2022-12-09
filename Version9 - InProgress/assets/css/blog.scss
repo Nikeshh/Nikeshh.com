@@ -3,6 +3,31 @@
   1 rem = 16px
 */
 
+/* Theme */
+
+:root {
+    --primary-background-color: #ffffff;
+    --primary-color: #0d0b52;
+    --secondary-color: #3458b9;
+    --font-color: #424242;
+    --bg-color: #ffffff;
+    --heading-color: #292922;
+    --white-color: #ffffff;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --primary-background-color: #000013;
+        --primary-color: #325b97;
+        --secondary-color: #9cafeb;
+        --font-color: #e1e1ff;
+        --bg-color: #000013;
+        --heading-color: #818cab;
+    }
+}
+
+/* End of Theme */
+
 /* Core */
 * {
     margin: 0;
@@ -25,7 +50,7 @@ html {
 .section-1 {
     width: 100%;
     height: 140vh;
-    background-color: black;
+    background-color: var(--primary-background-color);
 }
 
 /* End of Blog */
