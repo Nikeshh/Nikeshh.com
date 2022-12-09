@@ -9,6 +9,7 @@ window.onload = function() {
 const theme = {
   dark: {
     '--primary-background-color': '#000013',
+    '--secondary-background-color': '#ffffff',
     '--primary-color': '#325b97',
     '--secondary-color': '#9cafeb',
     '--font-color': '#e1e1ff',
@@ -17,6 +18,7 @@ const theme = {
   },
   light: {
     '--primary-background-color': '#ffffff',
+    '--secondary-background-color': '#ffffff',
     '--primary-color': '#0d0b52',
     '--secondary-color': '#3458b9',
     '--font-color': '#424242',
@@ -37,6 +39,7 @@ function toggleTheme(e) {
 
 function useTheme(themeChoice) {
   document.documentElement.style.setProperty('--primary-background-color', theme[themeChoice]['--primary-background-color']);
+  document.documentElement.style.setProperty('--secondary-background-color', theme[themeChoice]['--secondary-background-color']);
   document.documentElement.style.setProperty('--primary-color', theme[themeChoice]['--primary-color']);
   document.documentElement.style.setProperty('--secondary-color',theme[themeChoice]['--secondary-color']);
   document.documentElement.style.setProperty('--font-color', theme[themeChoice]['--font-color']);

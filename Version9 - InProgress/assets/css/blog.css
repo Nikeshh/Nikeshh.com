@@ -48,4 +48,10 @@ html {
   background-color: var(--primary-background-color);
 }
 
+.section-2 {
+  width: 100%;
+  height: 70vh;
+  background-color: var(--secondary-background-color);
+}
+
 /* End of Blog *//*# sourceMappingURL=blog.css.map */
