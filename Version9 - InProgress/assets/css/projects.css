@@ -1,7 +1,4 @@
-/*
-  Notes:
-  1 rem = 16px
-*/
+@import url("./core.css");
 /* Theme */
 /* Not used right now */
 :root {
@@ -28,37 +25,5 @@
   }
 }
 /* End of Theme */
-/* Core */
-* {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-  list-style-type: none;
-  outline: none;
-  font-family: "Roboto", sans-serif;
-}
-
-html {
-  width: 100%;
-  height: 100%;
-  margin: 0px;
-  padding: 0px;
-  overflow-x: hidden;
-  font-size: 62.5%;
-}
-
-/* End Core */
-/* Colors */
-.light-gray {
-  color: #d0c9c9;
-}
-
-.dark-gray {
-  color: #808080;
-}
-
-/* End of Colors */
 /* Projects */
 /* End of Projects *//*# sourceMappingURL=projects.css.map */
