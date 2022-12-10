@@ -1,0 +1,64 @@
+/*
+  Notes:
+  1 rem = 16px
+*/
+/* Theme */
+/* Not used right now */
+:root {
+  --primary-background-color: #ffffff;
+  --primary-color: #0d0b52;
+  --secondary-color: #3458b9;
+  --primary-text-color: #000013;
+  --font-color: #424242;
+  --bg-color: #ffffff;
+  --heading-color: #292922;
+  --white-color: #ffffff;
+}
+
+/* Not used right now */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary-background-color: #000013;
+    --primary-color: #325b97;
+    --secondary-color: #9cafeb;
+    --primary-text-color: #ffffff;
+    --font-color: #e1e1ff;
+    --bg-color: #000013;
+    --heading-color: #818cab;
+  }
+}
+/* End of Theme */
+/* Core */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  outline: none;
+  font-family: "Roboto", sans-serif;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  font-size: 62.5%;
+}
+
+/* End Core */
+/* Colors */
+.light-gray {
+  color: #d0c9c9;
+}
+
+.dark-gray {
+  color: #808080;
+}
+
+/* End of Colors */
+/* Projects */
+/* End of Projects *//*# sourceMappingURL=projects.css.map */
