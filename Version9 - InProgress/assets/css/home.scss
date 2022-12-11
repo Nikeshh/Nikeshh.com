@@ -46,6 +46,12 @@
                 height: 5rem;
                 border-radius: 50%;
             }
+
+            .nav-item-dropdown {
+                display: none;
+                position: absolute;
+                opacity: 0;
+            }
         }
 
         .banner {
