@@ -47,6 +47,14 @@
   height: 5rem;
   border-radius: 50%;
 }
+.home .section-1 .header .nav-item {
+  font-family: "Nunito Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 140%;
+  color: #262b39;
+}
 .home .section-1 .header .nav-item-dropdown {
   display: none;
   position: absolute;
