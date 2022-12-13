@@ -1,4 +1,10 @@
 @import url("./core.css");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap");
+body,
+button {
+  font-family: "Inter", sans-serif;
+}
+
 /* Theme */
 /* Not used right now */
 :root {
@@ -10,6 +16,8 @@
   --bg-color: #ffffff;
   --heading-color: #292922;
   --white-color: #ffffff;
+  --offcanvas-width: 270px;
+  --topNavbarHeight: 56px;
 }
 
 /* Not used right now */
@@ -29,65 +37,42 @@
 .projects {
   height: 100vh;
   width: 100%;
-  /* medium and up screens */
 }
-@media (max-width: 767px) {
-  .projects .carousel-inner .carousel-item > div {
+.projects .sidebar-nav {
+  width: var(--offcanvas-width);
+}
+.projects .sidebar-link {
+  display: flex;
+  align-items: center;
+}
+.projects .sidebar-link .right-icon {
+  display: inline-flex;
+}
+.projects .sidebar-link[aria-expanded=true] .right-icon {
+  transform: rotate(180deg);
+}
+@media (min-width: 992px) {
+  .projects {
+    /* this is to remove the backdrop */
+  }
+  .projects body {
+    overflow: auto !important;
+  }
+  .projects .navbar {
+    height: var(--topNavbarHeight);
+  }
+  .projects main {
+    margin-left: var(--offcanvas-width);
+  }
+  .projects .offcanvas-backdrop::before {
     display: none;
   }
-  .projects .carousel-inner .carousel-item > div:first-child {
-    display: block;
+  .projects .sidebar-nav {
+    transform: none;
+    visibility: visible !important;
+    height: calc(100% - var(--topNavbarHeight));
+    top: var(--topNavbarHeight);
   }
-}
-.projects .carousel-inner .carousel-item.active,
-.projects .carousel-inner .carousel-item-next,
-.projects .carousel-inner .carousel-item-prev {
-  display: flex;
-}
-.projects .carousel-control-prev-icon {
-  margin-left: -10rem;
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
-}
-.projects .carousel-control-next-icon {
-  margin-right: -10rem;
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
-}
-.projects .carousel-item > * {
-  margin-right: 1rem;
-}
-.projects .carousel-fade .carousel-inner .item {
-  opacity: 0;
-  transition-property: opacity;
-}
-.projects .carousel-fade .carousel-inner .active {
-  opacity: 1;
-}
-.projects .carousel-fade .carousel-inner .active.left,
-.projects .carousel-fade .carousel-inner .active.right {
-  left: 0;
-  opacity: 0;
-  z-index: 1;
-}
-.projects .carousel-fade .carousel-inner .next.left,
-.projects .carousel-fade .carousel-inner .prev.right {
-  opacity: 1;
-}
-.projects .carousel-fade .carousel-control {
-  z-index: 2;
-}
-@media (min-width: 768px) {
-  .projects .carousel-inner .carousel-item-end.active,
-.projects .carousel-inner .carousel-item-next {
-    transform: translateX(25%);
-  }
-  .projects .carousel-inner .carousel-item-start.active,
-.projects .carousel-inner .carousel-item-prev {
-    transform: translateX(-25%);
-  }
-}
-.projects .carousel-inner .carousel-item-end,
-.projects .carousel-inner .carousel-item-start {
-  transform: translateX(0);
 }
 
 /* End of Projects *//*# sourceMappingURL=projects.css.map */
