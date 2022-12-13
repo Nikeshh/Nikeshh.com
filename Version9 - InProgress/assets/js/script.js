@@ -13,3 +13,19 @@ function closeDropdown() {
     navItemDropdown.style.display = 'none';
     navItemDropdown.style.opacity = '0';
 }*/
+
+let items = document.querySelectorAll('.carousel .carousel-item')
+items.forEach(async (el) => {
+    const minPerSlide = 1;
+    let next = el.nextElementSibling;
+    for (var i=1; i<minPerSlide; i++) {
+        if (!next) {
+            // wrap carousel by using first child
+        	next = items[0];
+      	}
+        await new Promise(r => setTimeout(r, 2000));
+        let cloneChild = next.cloneNode(true);
+        el.appendChild(cloneChild.children[0]);
+        next = next.nextElementSibling;
+    }
+});
