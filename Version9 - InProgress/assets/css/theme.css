@@ -10,6 +10,8 @@
     --bg-color: #ffffff;
     --heading-color: #292922;
     --white-color: #ffffff;
+    --offcanvas-width: 270px;
+    --topNavbarHeight: 56px;
 }
 
 /* Not used right now */
@@ -22,6 +24,8 @@
         --font-color: #e1e1ff;
         --bg-color: #000013;
         --heading-color: #818cab;
+        --offcanvas-width: 270px;
+        --topNavbarHeight: 56px;
     }
 }
 
