@@ -12,10 +12,8 @@
   width: var(--offcanvas-width);
 }
 @media (min-width: 992px) {
-  .community .sidebar-nav {
-    transform: none;
-    visibility: visible !important;
-    height: 100%;
+  .community .modal-backdrop.show {
+    opacity: 0;
   }
 }
 

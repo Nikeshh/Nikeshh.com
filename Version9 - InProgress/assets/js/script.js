@@ -29,3 +29,11 @@ items.forEach(async (el) => {
         next = next.nextElementSibling;
     }
 });
+
+$(window).on('load', function() {
+    if ($(window).width() >= 992) {
+        var sidebar = document.getElementById('sidebar');
+        var sidebarOffCanvas = new bootstrap.Offcanvas(sidebar);
+        sidebarOffCanvas.show();
+    }
+});

@@ -14,7 +14,7 @@
     <!-- Community -->
     <div class="community">
         <!-- Sidebar - Offcanvas -->
-        <div class="offcanvas offcanvas-start sidebar-nav" tabindex="-1" id="sidebar">
+        <div class="offcanvas offcanvas-start sidebar-nav" tabindex="-1" id="sidebar" aria-labelledby="sidebarLabel">
             <div class="offcanvas-header">
                 <div class="d-flex align-items-center gap-2">
                     <h3 class="offcanvas-title fw-bold" id="offcanvasTitle">
@@ -22,7 +22,7 @@
                     </h3>
                     <img src="./assets/images/logo.png" alt="Logo" class="logo img-fluid img-thumbnail rounded-circle">
                 </div>
-                <button type="button" class="btn-close text-reset" data-bs-dismiss="#sidebar" aria-label="Close"></button>
+                <button type="button" class="btn-close text-reset" data-bs-toggle="offcanvas" data-bs-target="#sidebar" aria-controls="sidebar" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body p-0">
                 <div class="navbar">
@@ -85,6 +85,8 @@
         </div>
     </div>
     
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <!-- Website JS -->
     <script src="./assets/js/script.js"></script>
     <!-- Theme JS -->

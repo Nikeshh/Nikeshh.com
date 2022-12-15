@@ -16,11 +16,8 @@
     }
 
     @media (min-width: 992px) {
-        .sidebar-nav {
-            -webkit-transform: none;
-            transform: none;
-            visibility: visible !important;
-            height: 100%;
+        .modal-backdrop.show {
+            opacity: .0;
         }
     }
 }
