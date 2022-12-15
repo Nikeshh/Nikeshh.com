@@ -18,6 +18,7 @@
     .top-navbar {
         padding: 2.5rem 1rem;
         margin-left: var(--offcanvas-width);
+        height: var(--topNavbarHeight);
     }
 
     @media (min-width: 992px) {
@@ -27,6 +28,7 @@
 
         main {
             margin-left: var(--offcanvas-width);
+            margin-top: var(--topNavbarHeight);
         }
     }
 }
