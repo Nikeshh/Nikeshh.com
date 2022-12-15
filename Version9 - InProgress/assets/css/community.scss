@@ -15,9 +15,18 @@
         width: var(--offcanvas-width);
     }
 
+    .top-navbar {
+        padding: 2.5rem 1rem;
+        margin-left: var(--offcanvas-width);
+    }
+
     @media (min-width: 992px) {
         .modal-backdrop.show {
             opacity: .0;
+        }
+
+        main {
+            margin-left: var(--offcanvas-width);
         }
     }
 }

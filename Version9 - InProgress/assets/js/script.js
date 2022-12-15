@@ -32,8 +32,18 @@ items.forEach(async (el) => {
 
 $(window).on('load', function() {
     if ($(window).width() >= 992) {
+        /* Show sidebar offcanvas always */
         var sidebar = document.getElementById('sidebar');
         var sidebarOffCanvas = new bootstrap.Offcanvas(sidebar);
         sidebarOffCanvas.show();
+
+        /* Show sidebar offcanvas even when clicked outside the sidebar */
+        let offcanvasEl = $("#sidebar");
+        let offcanvasAllowClose = false;
+        offcanvasEl.find("button, a").on("click", () => offcanvasAllowClose = true);
+        offcanvasEl.on("hide.bs.offcanvas", (ev) => {
+            if (offcanvasAllowClose) return;
+            ev.preventDefault();
+        });
     }
 });

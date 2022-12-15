@@ -11,9 +11,16 @@
 .community .sidebar-nav {
   width: var(--offcanvas-width);
 }
+.community .top-navbar {
+  padding: 2.5rem 1rem;
+  margin-left: var(--offcanvas-width);
+}
 @media (min-width: 992px) {
   .community .modal-backdrop.show {
     opacity: 0;
+  }
+  .community main {
+    margin-left: var(--offcanvas-width);
   }
 }
 
