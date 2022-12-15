@@ -48,5 +48,16 @@ $(window).on('load', function() {
             if (offcanvasAllowClose) return;
             ev.preventDefault();
         });
+
+        $(window).scroll(function (event) {
+            var scroll = $(window).scrollTop();
+            if(scroll > 56) {
+                $('.top-navbar').addClass("navbar-dark");
+                $('.top-navbar').addClass("bg-dark");
+            } else {
+                $('.top-navbar').removeClass("navbar-dark");
+                $('.top-navbar').removeClass("bg-dark");
+            }
+        });
     }
 });
