@@ -37,6 +37,9 @@ $(window).on('load', function() {
         var sidebarOffCanvas = new bootstrap.Offcanvas(sidebar);
         sidebarOffCanvas.show();
 
+        /* Hide modal backdrop */
+        $('.modal-backdrop').remove();
+
         /* Show sidebar offcanvas even when clicked outside the sidebar */
         let offcanvasEl = $("#sidebar");
         let offcanvasAllowClose = false;
