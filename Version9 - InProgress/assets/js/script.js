@@ -15,48 +15,51 @@ function closeDropdown() {
 }*/
 
 let items = document.querySelectorAll('.carousel .carousel-item')
-items.forEach(async (el) => {
-    const minPerSlide = 1;
-    let next = el.nextElementSibling;
-    for (var i=1; i<minPerSlide; i++) {
-        if (!next) {
+		items.forEach((el) => {
+			const minPerSlide = 4
+			let next = el.nextElementSibling
+			for (var i=1; i<minPerSlide; i++) {
+				if (!next) {
             // wrap carousel by using first child
-        	next = items[0];
-      	}
-        await new Promise(r => setTimeout(r, 2000));
-        let cloneChild = next.cloneNode(true);
-        el.appendChild(cloneChild.children[0]);
-        next = next.nextElementSibling;
+            next = items[0]
+        }
+        let cloneChild = next.cloneNode(true)
+        el.appendChild(cloneChild.children[0])
+        next = next.nextElementSibling
     }
-});
+})
 
-$(window).on('load', function() {
-    if ($(window).width() >= 992) {
+window.addEventListener("load", (event) => {
+    if (window.innerWidth >= 992) {
         /* Show sidebar offcanvas always */
         var sidebar = document.getElementById('sidebar');
         var sidebarOffCanvas = new bootstrap.Offcanvas(sidebar);
         sidebarOffCanvas.show();
 
         /* Hide modal backdrop */
-        $('.modal-backdrop').remove();
+        const modalBackdrops = document.getElementsByClassName("modal-backdrop");
+        for (let i = 0; i < modalBackdrops.length; i++) {
+            modalBackdrops[i].remove();
+        }
 
         /* Show sidebar offcanvas even when clicked outside the sidebar */
-        let offcanvasEl = $("#sidebar");
+        let offcanvasEl = document.getElementById("sidebar");
         let offcanvasAllowClose = false;
-        offcanvasEl.find("button, a").on("click", () => offcanvasAllowClose = true);
-        offcanvasEl.on("hide.bs.offcanvas", (ev) => {
+        document.querySelector("#sidebar button").addEventListener("click", () => offcanvasAllowClose = true);
+        document.querySelector("#sidebar a").addEventListener("click", () => offcanvasAllowClose = true);
+        offcanvasEl.addEventListener("hide.bs.offcanvas", function(ev) {
             if (offcanvasAllowClose) return;
-            ev.preventDefault();
+            ev.preventDefault();        
         });
 
-        $(window).scroll(function (event) {
-            var scroll = $(window).scrollTop();
+        window.addEventListener("scroll", function(ev) {
+            var scroll = window.pageYOffset;
             if(scroll > 56) {
-                $('.top-navbar').addClass("navbar-dark");
-                $('.top-navbar').addClass("bg-dark");
+                document.getElementById('top-navbar').classList.add("navbar-dark");
+                document.getElementById('top-navbar').classList.add("bg-dark");
             } else {
-                $('.top-navbar').removeClass("navbar-dark");
-                $('.top-navbar').removeClass("bg-dark");
+                document.getElementById('top-navbar').classList.remove("navbar-dark");
+                document.getElementById('top-navbar').classList.remove("bg-dark");
             }
         });
     }
