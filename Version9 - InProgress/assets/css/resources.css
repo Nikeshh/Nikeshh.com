@@ -10,6 +10,23 @@ html {
 
 .resources {
   width: 100%;
+  /* CUSTOMIZE THE CAROUSEL
+  -------------------------------------------------- */
+  /* Carousel base class */
+  /* Since positioning the image, we need to help out the caption */
+  /* Declare heights because of positioning of img element */
+  /* MARKETING CONTENT
+  -------------------------------------------------- */
+  /* Center align the text within the three columns below the carousel */
+  /* rtl:begin:ignore */
+  /* rtl:end:ignore */
+  /* features
+  ------------------------- */
+  /* Thin out the marketing headings */
+  /* rtl:begin:remove */
+  /* rtl:end:remove */
+  /* RESPONSIVE CSS
+  -------------------------------------------------- */
 }
 .resources .bd-placeholder-img {
   font-size: 1.125rem;
@@ -135,6 +152,51 @@ html {
   .resources #sidebar-mobile {
     display: flex;
     visibility: visible;
+  }
+}
+.resources .main-content {
+  overflow-y: scroll;
+}
+.resources .carousel {
+  margin-bottom: 4rem;
+}
+.resources .carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+.resources .carousel-item {
+  height: 32rem;
+}
+.resources .marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.resources .marketing .col-lg-4 p {
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
+}
+.resources .feature-divider {
+  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+}
+.resources .feature-heading {
+  letter-spacing: -0.05rem;
+}
+@media (min-width: 40em) {
+  .resources {
+    /* Bump up size of carousel content */
+  }
+  .resources .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+  .resources .feature-heading {
+    font-size: 50px;
+  }
+}
+@media (min-width: 62em) {
+  .resources .feature-heading {
+    margin-top: 7rem;
   }
 }
 
