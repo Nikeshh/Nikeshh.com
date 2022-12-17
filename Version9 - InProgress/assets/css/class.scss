@@ -1,33 +1,5 @@
 @import url("./core.css");
-
-/* Theme */
-
-/* Not used right now */
-:root {
-    --primary-background-color: #ffffff;
-    --primary-color: #0d0b52;
-    --secondary-color: #3458b9;
-    --primary-text-color: #000013;
-    --font-color: #424242;
-    --bg-color: #ffffff;
-    --heading-color: #292922;
-    --white-color: #ffffff;
-}
-
-/* Not used right now */
-@media (prefers-color-scheme: dark) {
-    :root {
-        --primary-background-color: #000013;
-        --primary-color: #325b97;
-        --secondary-color: #9cafeb;
-        --primary-text-color: #ffffff;
-        --font-color: #e1e1ff;
-        --bg-color: #000013;
-        --heading-color: #818cab;
-    }
-}
-
-/* End of Theme */
+@import url("./theme.css");
 
 /* Class */
 

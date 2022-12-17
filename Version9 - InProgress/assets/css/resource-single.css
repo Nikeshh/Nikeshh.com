@@ -1,81 +1,81 @@
 @import url("./core.css");
 @import url("./theme.css");
-/* Freelancing */
-.freelancing {
+/* Resource - Single */
+.resource {
   width: 100%;
   /* Hide scroll bars */
   /* Form control */
 }
-.freelancing html {
+.resource html {
   overflow: scroll;
   overflow-x: hidden;
   overflow-y: hidden;
 }
-.freelancing ::-webkit-scrollbar {
+.resource ::-webkit-scrollbar {
   width: 0; /* Remove scrollbar space */
   background: transparent; /* Optional: just make scrollbar invisible */
 }
-.freelancing .logo {
+.resource .logo {
   max-width: 6rem;
 }
-.freelancing .sidebar-nav {
+.resource .sidebar-nav {
   width: var(--offcanvas-width);
 }
-.freelancing .top-navbar {
+.resource .top-navbar {
   padding: 1.5rem 1rem;
   height: var(--topNavbarHeight);
 }
-.freelancing main {
+.resource main {
   margin-top: calc(var(--topNavbarHeight) + 20px);
   margin-bottom: calc(var(--topNavbarHeight) + 20px);
 }
-.freelancing .form-control:focus {
+.resource .form-control:focus {
   box-shadow: none;
 }
-.freelancing .form-control-underlined {
+.resource .form-control-underlined {
   border-width: 0;
   border-bottom-width: 1px;
   border-radius: 0;
   padding-left: 0;
 }
-.freelancing .form-control::-moz-placeholder {
+.resource .form-control::-moz-placeholder {
   font-size: 0.95rem;
   color: #aaa;
   font-style: italic;
 }
-.freelancing .form-control:-ms-input-placeholder {
+.resource .form-control:-ms-input-placeholder {
   font-size: 0.95rem;
   color: #aaa;
   font-style: italic;
 }
-.freelancing .form-control::placeholder {
+.resource .form-control::placeholder {
   font-size: 0.95rem;
   color: #aaa;
   font-style: italic;
 }
 @media (min-width: 992px) {
-  .freelancing {
+  .resource {
     /* this is to remove the backdrop */
   }
-  .freelancing .sidebar-nav {
+  .resource .sidebar-nav {
     transform: none;
     visibility: visible !important;
   }
-  .freelancing .top-navbar {
+  .resource .top-navbar {
     margin-left: var(--offcanvas-width);
   }
-  .freelancing main {
+  .resource main {
     margin-left: var(--offcanvas-width);
     margin-top: var(--topNavbarHeight);
     margin-bottom: var(--topNavbarHeight);
     height: calc(100vh - var(--topNavbarHeight) - var(--topNavbarHeight));
   }
-  .freelancing .offcanvas-backdrop::before {
+  .resource .offcanvas-backdrop::before {
     display: none;
   }
-  .freelancing .modal-backdrop.show {
+  .resource .modal-backdrop.show {
     opacity: 0;
   }
 }
 
-/* End of Resources *//*# sourceMappingURL=freelancing.css.map */
+/* End of Resource - Single *//*# sourceMappingURL=resource-single.css.map */

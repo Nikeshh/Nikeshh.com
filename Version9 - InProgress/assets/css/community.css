@@ -3,8 +3,17 @@
 /* Community */
 .community {
   width: 100%;
-  /* Carousel */
-  /* medium and up screens */
+  /* Hide scroll bars */
+  /* Form control */
+}
+.community html {
+  overflow: scroll;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+.community ::-webkit-scrollbar {
+  width: 0; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
 }
 .community .logo {
   max-width: 6rem;
@@ -13,45 +22,60 @@
   width: var(--offcanvas-width);
 }
 .community .top-navbar {
-  padding: 2.5rem 1rem;
-  margin-left: var(--offcanvas-width);
+  padding: 1.5rem 1rem;
   height: var(--topNavbarHeight);
 }
+.community main {
+  margin-top: calc(var(--topNavbarHeight) + 20px);
+  margin-bottom: calc(var(--topNavbarHeight) + 20px);
+}
+.community .form-control:focus {
+  box-shadow: none;
+}
+.community .form-control-underlined {
+  border-width: 0;
+  border-bottom-width: 1px;
+  border-radius: 0;
+  padding-left: 0;
+}
+.community .form-control::-moz-placeholder {
+  font-size: 0.95rem;
+  color: #aaa;
+  font-style: italic;
+}
+.community .form-control:-ms-input-placeholder {
+  font-size: 0.95rem;
+  color: #aaa;
+  font-style: italic;
+}
+.community .form-control::placeholder {
+  font-size: 0.95rem;
+  color: #aaa;
+  font-style: italic;
+}
 @media (min-width: 992px) {
-  .community .modal-backdrop.show {
-    opacity: 0;
+  .community {
+    /* this is to remove the backdrop */
+  }
+  .community .sidebar-nav {
+    transform: none;
+    visibility: visible !important;
+  }
+  .community .top-navbar {
+    margin-left: var(--offcanvas-width);
   }
   .community main {
     margin-left: var(--offcanvas-width);
     margin-top: var(--topNavbarHeight);
+    margin-bottom: var(--topNavbarHeight);
+    height: calc(100vh - var(--topNavbarHeight) - var(--topNavbarHeight));
   }
-}
-@media (max-width: 767px) {
-  .community .carousel-inner .carousel-item > div {
+  .community .offcanvas-backdrop::before {
     display: none;
   }
-  .community .carousel-inner .carousel-item > div:first-child {
-    display: block;
+  .community .modal-backdrop.show {
+    opacity: 0;
   }
-}
-.community .carousel-inner .carousel-item.active,
-.community .carousel-inner .carousel-item-next,
-.community .carousel-inner .carousel-item-prev {
-  display: flex;
-}
-@media (min-width: 768px) {
-  .community .carousel-inner .carousel-item-end.active,
-.community .carousel-inner .carousel-item-next {
-    transform: translateX(25%);
-  }
-  .community .carousel-inner .carousel-item-start.active,
-.community .carousel-inner .carousel-item-prev {
-    transform: translateX(-25%);
-  }
-}
-.community .carousel-inner .carousel-item-end,
-.community .carousel-inner .carousel-item-start {
-  transform: translateX(0);
 }
 
 /* End of Community *//*# sourceMappingURL=community.css.map */

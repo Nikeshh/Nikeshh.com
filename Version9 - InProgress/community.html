@@ -14,8 +14,8 @@
     <!-- Community -->
     <div class="community">
         <!-- Navbar -->
-        <nav id="top-navbar" class="top-navbar navbar navbar-expand-lg fixed-top">
-            <div class="container-fluid">
+        <nav id="top-navbar" class="top-navbar navbar navbar-expand-lg navbar-light fixed-top">
+            <div class="container-fluid pb-3 border-bottom">
                <button
                     class="navbar-toggler"
                     type="button"
@@ -25,10 +25,11 @@
                 >
                     <span class="navbar-toggler-icon" data-bs-target="#sidebar"></span>
                </button>
+               <i class="fa-solid fa-arrow-left-long"></i>
                <a
-                class="navbar-brand me-auto ms-lg-0 ms-3 fw-light"
+                class="navbar-brand me-auto ms-lg-2 ms-3 fw-light"
                 href="#">
-                    Welcome to my community
+                    Course Title
                 </a>
                 <button
                     class="navbar-toggler"
@@ -64,7 +65,7 @@
                             data-bs-toggle="dropdown"
                             aria-expanded="false"
                           >
-                            Community
+                            Courses
                           </a>
                           <ul class="dropdown-menu dropdown-menu-end">
                             <li><a class="dropdown-item" href="#">Action</a></li>
@@ -102,12 +103,11 @@
         <div class="offcanvas offcanvas-start sidebar-nav" tabindex="-1" id="sidebar" aria-labelledby="sidebarLabel">
             <div class="offcanvas-header">
                 <div class="d-flex align-items-center gap-2">
-                    <h3 class="offcanvas-title fw-bold" id="offcanvasTitle">
-                        Community
-                    </h3>
                     <img src="./assets/images/logo.png" alt="Logo" class="logo img-fluid img-thumbnail rounded-circle">
+                    <h3 class="offcanvas-title fw-bold" id="offcanvasTitle">
+                        Nikeshh Courses
+                    </h3>
                 </div>
-                <button type="button" class="btn-close text-reset" data-bs-toggle="offcanvas" data-bs-target="#sidebar" aria-controls="sidebar" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body p-0">
                 <div class="navbar">
@@ -118,31 +118,19 @@
                         <li>
                             <a href="#" class="nav-link px-3 active">
                                 <span class="me-2"><i class="bi bi-speedometer2"></i></span>
-                                <span>Home</span>
+                                <span>My Courses</span>
                             </a>
                         </li>
                         <li>
                             <a href="#" class="nav-link px-3 active">
                                 <span class="me-2"><i class="bi bi-speedometer2"></i></span>
-                                <span>Favorites</span>
+                                <span>Purchases</span>
                             </a>
                         </li>
                         <li>
                             <a href="#" class="nav-link px-3 active">
                                 <span class="me-2"><i class="bi bi-speedometer2"></i></span>
                                 <span>Categories</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="nav-link px-3 active">
-                                <span class="me-2"><i class="bi bi-speedometer2"></i></span>
-                                <span>Events</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="nav-link px-3 active">
-                                <span class="me-2"><i class="bi bi-speedometer2"></i></span>
-                                <span>Groups</span>
                             </a>
                         </li>
                     </div>
@@ -169,220 +157,9 @@
             </div>
         </div>
         <!-- Main -->
-        <main class="p-3">
-            <div class="container-fluid">
-                <div class="top-groups border-bottom">
-                    <div class="row">
-                        <div class="text-muted small fw-bold text-uppercase">
-                            Top Groups
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="container text-center my-3">
-                            <div class="row mx-auto my-auto justify-content-center">
-                                <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
-                                    <div class="carousel-inner" role="listbox">
-                                        <div class="carousel-item active">
-                                            <div class="col-md-3">
-                                                <div class="card">
-                                                    <div class="card-img">
-                                                        <img src="https://via.placeholder.com/700x500.png/CB997E/333333?text=1" class="img-fluid">
-                                                    </div>
-                                                    <div class="card-img-overlay">Slide 1</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="carousel-item">
-                                            <div class="col-md-3">
-                                                <div class="card">
-                                                    <div class="card-img">
-                                                        <img src="https://via.placeholder.com/700x500.png/DDBEA9/333333?text=2" class="img-fluid">
-                                                    </div>
-                                                    <div class="card-img-overlay">Slide 2</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="carousel-item">
-                                            <div class="col-md-3">
-                                                <div class="card">
-                                                    <div class="card-img">
-                                                        <img src="https://via.placeholder.com/700x500.png/FFE8D6/333333?text=3" class="img-fluid">
-                                                    </div>
-                                                    <div class="card-img-overlay">Slide 3</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="carousel-item">
-                                            <div class="col-md-3">
-                                                <div class="card">
-                                                    <div class="card-img">
-                                                        <img src="https://via.placeholder.com/700x500.png/B7B7A4/333333?text=4" class="img-fluid">
-                                                    </div>
-                                                    <div class="card-img-overlay">Slide 4</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="carousel-item">
-                                            <div class="col-md-3">
-                                                <div class="card">
-                                                    <div class="card-img">
-                                                        <img src="https://via.placeholder.com/700x500.png/A5A58D/333333?text=5" class="img-fluid">
-                                                    </div>
-                                                    <div class="card-img-overlay">Slide 5</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="carousel-item">
-                                            <div class="col-md-3">
-                                                <div class="card">
-                                                    <div class="card-img">
-                                                        <img src="https://via.placeholder.com/700x500.png/6B705C/eeeeee?text=6" class="img-fluid">
-                                                    </div>
-                                                    <div class="card-img-overlay">Slide 6</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <a class="carousel-control-prev bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="prev">
-                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    </a>
-                                    <a class="carousel-control-next bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="next">
-                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    </a>
-                                </div>
-                            </div>		
-                        </div>
-                    </div>
-                </div>
-                <div class="groups mt-3">
-                    <div class="row">
-                        <div class="col-10">
-                            <div class="row gap-2" style="margin-left: 0;">
-                                <div class="col-2 border border-primary rounded-3 d-flex justify-content-center align-items-center text-primary">
-                                    All
-                                </div>
-                                <div class="col-2 border border-secondary rounded-3 d-flex justify-content-center align-items-center text-secondary">
-                                    Arts & Culture
-                                </div>
-                                <div class="col-2 border border-secondary rounded-3 d-flex justify-content-center align-items-center text-secondary">
-                                    Books
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-2 d-flex justify-content-end">
-                            <a href="#">See More</a>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-6 col-6 d-flex flex-column justify-content-center">
-                            <div class="row">
-                                <img src="./assets/images/banner.png" alt="Group Image" class="img-fluid w-100 rounded-3">
-                            </div>
-                            <div class="row">
-                                <div class="col-8 d-flex flex-column justify-content-center">
-                                    <h3>Title</h3>
-                                    <p>Description</p>
-                                </div>
-                                <div class="col-4 d-flex justify-content-center align-items-center">
-                                    <button type="button" class="btn btn-info">Join</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6">
-                            <div class="row">
-                                <div class="col-6">
-                                    <div class="row">
-                                        <img src="./assets/images/banner.png" alt="Group Image" class="img-fluid w-100 rounded-3">
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-8 d-flex flex-column justify-content-center">
-                                            <h3>Title</h3>
-                                            <p>Description</p>
-                                        </div>
-                                        <div class="col-4 d-flex justify-content-center align-items-center">
-                                            <button type="button" class="btn btn-info">Join</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-6">
-                                    <div class="row">
-                                        <img src="./assets/images/banner.png" alt="Group Image" class="img-fluid w-100 rounded-3">
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-8 d-flex flex-column justify-content-center">
-                                            <h3>Title</h3>
-                                            <p>Description</p>
-                                        </div>
-                                        <div class="col-4 d-flex justify-content-center align-items-center">
-                                            <button type="button" class="btn btn-info">Join</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-3">
-                            <div class="row">
-                                <img src="./assets/images/banner.png" alt="Group Image" class="img-fluid w-100 rounded-3">
-                            </div>
-                            <div class="row">
-                                <div class="col-8 d-flex flex-column justify-content-center">
-                                    <h3>Title</h3>
-                                    <p>Description</p>
-                                </div>
-                                <div class="col-4 d-flex justify-content-center align-items-center">
-                                    <button type="button" class="btn btn-info">Join</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-3">
-                            <div class="row">
-                                <img src="./assets/images/banner.png" alt="Group Image" class="img-fluid w-100 rounded-3">
-                            </div>
-                            <div class="row">
-                                <div class="col-8 d-flex flex-column justify-content-center">
-                                    <h3>Title</h3>
-                                    <p>Description</p>
-                                </div>
-                                <div class="col-4 d-flex justify-content-center align-items-center">
-                                    <button type="button" class="btn btn-info">Join</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-3">
-                            <div class="row">
-                                <img src="./assets/images/banner.png" alt="Group Image" class="img-fluid w-100 rounded-3">
-                            </div>
-                            <div class="row">
-                                <div class="col-8 d-flex flex-column justify-content-center">
-                                    <h3>Title</h3>
-                                    <p>Description</p>
-                                </div>
-                                <div class="col-4 d-flex justify-content-center align-items-center">
-                                    <button type="button" class="btn btn-info">Join</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-3">
-                            <div class="row">
-                                <img src="./assets/images/banner.png" alt="Group Image" class="img-fluid w-100 rounded-3">
-                            </div>
-                            <div class="row">
-                                <div class="col-8 d-flex flex-column justify-content-center">
-                                    <h3>Title</h3>
-                                    <p>Description</p>
-                                </div>
-                                <div class="col-4 d-flex justify-content-center align-items-center">
-                                    <button type="button" class="btn btn-info">Join</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <main class="ps-5 pe-5">
+          <div class="row shadow bg-white rounded h-100 overflow-scroll p-4 gap-5 gap-md-0">
+          </div>
         </main>
     </div>
     

@@ -6,6 +6,17 @@
 .community {
   width: 100%;
 
+  /* Hide scroll bars */
+  html {
+    overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+  ::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+  }
+
   .logo {
     max-width: 6rem;
   }
@@ -15,54 +26,57 @@
   }
 
   .top-navbar {
-    padding: 2.5rem 1rem;
-    margin-left: var(--offcanvas-width);
+    padding: 1.5rem 1rem;
     height: var(--topNavbarHeight);
   }
 
+  main {
+    margin-top: calc(var(--topNavbarHeight) + 20px);
+    margin-bottom: calc(var(--topNavbarHeight) + 20px);
+  }
+
+  /* Form control */
+  .form-control:focus {
+    box-shadow: none;
+  }
+  .form-control-underlined {
+    border-width: 0;
+    border-bottom-width: 1px;
+    border-radius: 0;
+    padding-left: 0;
+  }
+  .form-control::placeholder {
+    font-size: 0.95rem;
+    color: #aaa;
+    font-style: italic;
+  }
+
   @media (min-width: 992px) {
-    .modal-backdrop.show {
-      opacity: 0;
+    .sidebar-nav {
+        -webkit-transform: none;
+        transform: none;
+        visibility: visible !important;
+    }
+
+    .top-navbar {
+        margin-left: var(--offcanvas-width);
     }
 
     main {
-      margin-left: var(--offcanvas-width);
-      margin-top: var(--topNavbarHeight);
-    }
-  }
-
-  /* Carousel */
-  @media (max-width: 767px) {
-    .carousel-inner .carousel-item > div {
-      display: none;
-    }
-    .carousel-inner .carousel-item > div:first-child {
-      display: block;
-    }
-  }
-
-  .carousel-inner .carousel-item.active,
-  .carousel-inner .carousel-item-next,
-  .carousel-inner .carousel-item-prev {
-    display: flex;
-  }
-
-  /* medium and up screens */
-  @media (min-width: 768px) {
-    .carousel-inner .carousel-item-end.active,
-    .carousel-inner .carousel-item-next {
-      transform: translateX(25%);
+        margin-left: var(--offcanvas-width);
+        margin-top: var(--topNavbarHeight);
+        margin-bottom: var(--topNavbarHeight);
+        height: calc(100vh - var(--topNavbarHeight) - var(--topNavbarHeight));
     }
 
-    .carousel-inner .carousel-item-start.active,
-    .carousel-inner .carousel-item-prev {
-      transform: translateX(-25%);
+    /* this is to remove the backdrop */
+    .offcanvas-backdrop::before {
+        display: none;
     }
-  }
 
-  .carousel-inner .carousel-item-end,
-  .carousel-inner .carousel-item-start {
-    transform: translateX(0);
+    .modal-backdrop.show {
+      opacity: 0;
+    }
   }
 }
 

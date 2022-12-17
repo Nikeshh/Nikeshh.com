@@ -1,81 +1,81 @@
 @import url("./core.css");
 @import url("./theme.css");
-/* Freelancing */
-.freelancing {
+/* Community - Single */
+.community-single {
   width: 100%;
   /* Hide scroll bars */
   /* Form control */
 }
-.freelancing html {
+.community-single html {
   overflow: scroll;
   overflow-x: hidden;
   overflow-y: hidden;
 }
-.freelancing ::-webkit-scrollbar {
+.community-single ::-webkit-scrollbar {
   width: 0; /* Remove scrollbar space */
   background: transparent; /* Optional: just make scrollbar invisible */
 }
-.freelancing .logo {
+.community-single .logo {
   max-width: 6rem;
 }
-.freelancing .sidebar-nav {
+.community-single .sidebar-nav {
   width: var(--offcanvas-width);
 }
-.freelancing .top-navbar {
+.community-single .top-navbar {
   padding: 1.5rem 1rem;
   height: var(--topNavbarHeight);
 }
-.freelancing main {
+.community-single main {
   margin-top: calc(var(--topNavbarHeight) + 20px);
   margin-bottom: calc(var(--topNavbarHeight) + 20px);
 }
-.freelancing .form-control:focus {
+.community-single .form-control:focus {
   box-shadow: none;
 }
-.freelancing .form-control-underlined {
+.community-single .form-control-underlined {
   border-width: 0;
   border-bottom-width: 1px;
   border-radius: 0;
   padding-left: 0;
 }
-.freelancing .form-control::-moz-placeholder {
+.community-single .form-control::-moz-placeholder {
   font-size: 0.95rem;
   color: #aaa;
   font-style: italic;
 }
-.freelancing .form-control:-ms-input-placeholder {
+.community-single .form-control:-ms-input-placeholder {
   font-size: 0.95rem;
   color: #aaa;
   font-style: italic;
 }
-.freelancing .form-control::placeholder {
+.community-single .form-control::placeholder {
   font-size: 0.95rem;
   color: #aaa;
   font-style: italic;
 }
 @media (min-width: 992px) {
-  .freelancing {
+  .community-single {
     /* this is to remove the backdrop */
   }
-  .freelancing .sidebar-nav {
+  .community-single .sidebar-nav {
     transform: none;
     visibility: visible !important;
   }
-  .freelancing .top-navbar {
+  .community-single .top-navbar {
     margin-left: var(--offcanvas-width);
   }
-  .freelancing main {
+  .community-single main {
     margin-left: var(--offcanvas-width);
     margin-top: var(--topNavbarHeight);
     margin-bottom: var(--topNavbarHeight);
     height: calc(100vh - var(--topNavbarHeight) - var(--topNavbarHeight));
   }
-  .freelancing .offcanvas-backdrop::before {
+  .community-single .offcanvas-backdrop::before {
     display: none;
   }
-  .freelancing .modal-backdrop.show {
+  .community-single .modal-backdrop.show {
     opacity: 0;
   }
 }
 
-/* End of Resources *//*# sourceMappingURL=freelancing.css.map */
+/* End of Community *//*# sourceMappingURL=community-single.css.map */

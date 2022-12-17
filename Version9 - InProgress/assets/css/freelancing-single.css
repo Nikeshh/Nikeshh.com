@@ -1,81 +1,81 @@
 @import url("./core.css");
 @import url("./theme.css");
-/* Freelancing */
-.freelancing {
+/* Freelancing - Single */
+.freelancing-single {
   width: 100%;
   /* Hide scroll bars */
   /* Form control */
 }
-.freelancing html {
+.freelancing-single html {
   overflow: scroll;
   overflow-x: hidden;
   overflow-y: hidden;
 }
-.freelancing ::-webkit-scrollbar {
+.freelancing-single ::-webkit-scrollbar {
   width: 0; /* Remove scrollbar space */
   background: transparent; /* Optional: just make scrollbar invisible */
 }
-.freelancing .logo {
+.freelancing-single .logo {
   max-width: 6rem;
 }
-.freelancing .sidebar-nav {
+.freelancing-single .sidebar-nav {
   width: var(--offcanvas-width);
 }
-.freelancing .top-navbar {
+.freelancing-single .top-navbar {
   padding: 1.5rem 1rem;
   height: var(--topNavbarHeight);
 }
-.freelancing main {
+.freelancing-single main {
   margin-top: calc(var(--topNavbarHeight) + 20px);
   margin-bottom: calc(var(--topNavbarHeight) + 20px);
 }
-.freelancing .form-control:focus {
+.freelancing-single .form-control:focus {
   box-shadow: none;
 }
-.freelancing .form-control-underlined {
+.freelancing-single .form-control-underlined {
   border-width: 0;
   border-bottom-width: 1px;
   border-radius: 0;
   padding-left: 0;
 }
-.freelancing .form-control::-moz-placeholder {
+.freelancing-single .form-control::-moz-placeholder {
   font-size: 0.95rem;
   color: #aaa;
   font-style: italic;
 }
-.freelancing .form-control:-ms-input-placeholder {
+.freelancing-single .form-control:-ms-input-placeholder {
   font-size: 0.95rem;
   color: #aaa;
   font-style: italic;
 }
-.freelancing .form-control::placeholder {
+.freelancing-single .form-control::placeholder {
   font-size: 0.95rem;
   color: #aaa;
   font-style: italic;
 }
 @media (min-width: 992px) {
-  .freelancing {
+  .freelancing-single {
     /* this is to remove the backdrop */
   }
-  .freelancing .sidebar-nav {
+  .freelancing-single .sidebar-nav {
     transform: none;
     visibility: visible !important;
   }
-  .freelancing .top-navbar {
+  .freelancing-single .top-navbar {
     margin-left: var(--offcanvas-width);
   }
-  .freelancing main {
+  .freelancing-single main {
     margin-left: var(--offcanvas-width);
     margin-top: var(--topNavbarHeight);
     margin-bottom: var(--topNavbarHeight);
     height: calc(100vh - var(--topNavbarHeight) - var(--topNavbarHeight));
   }
-  .freelancing .offcanvas-backdrop::before {
+  .freelancing-single .offcanvas-backdrop::before {
     display: none;
   }
-  .freelancing .modal-backdrop.show {
+  .freelancing-single .modal-backdrop.show {
     opacity: 0;
   }
 }
 
-/* End of Resources *//*# sourceMappingURL=freelancing.css.map */
+/* End of Resources *//*# sourceMappingURL=freelancing-single.css.map */
