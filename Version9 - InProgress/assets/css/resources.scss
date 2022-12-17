@@ -126,21 +126,21 @@ html {
 
   .form-control-dark:focus {
     border-color: #fff;
-    box-shadow: 0 0 0 .25rem rgba(255, 255, 255, .25);
+    box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.25);
   }
 
   .text-bg-dark {
-    color: #fff!important;
-    background-color: RGBA(33,37,41,var(--bs-bg-opacity,1))!important;
+    color: #fff !important;
+    background-color: RGBA(33, 37, 41, var(--bs-bg-opacity, 1)) !important;
   }
-  
+
   .text-small {
     font-size: 85%;
   }
-  
+
   .dropdown-toggle {
     outline: 0;
-  }  
+  }
 
   #sidebar-mobile {
     display: none;
@@ -152,7 +152,7 @@ html {
     visibility: visible;
   }
 
-  @media screen and (max-width : 720px){
+  @media screen and (max-width: 720px) {
     #sidebar {
       display: none;
       visibility: hidden;
@@ -175,6 +175,7 @@ html {
   .carousel {
     margin-bottom: 4rem;
   }
+  
   /* Since positioning the image, we need to help out the caption */
   .carousel-caption {
     bottom: 3rem;
@@ -183,9 +184,9 @@ html {
 
   /* Declare heights because of positioning of img element */
   .carousel-item {
-    height: 32rem;
+    height: fit-content;
+    max-height: 32rem;
   }
-
 
   /* MARKETING CONTENT
   -------------------------------------------------- */
@@ -197,14 +198,12 @@ html {
   }
   /* rtl:begin:ignore */
   .marketing .col-lg-4 p {
-    margin-right: .75rem;
-    margin-left: .75rem;
+    margin-right: 0.75rem;
+    margin-left: 0.75rem;
   }
   /* rtl:end:ignore */
 
-
-  /* features
-  ------------------------- */
+  /* Features ------------------------- */
 
   .feature-divider {
     margin: 5rem 0; /* Space out the Bootstrap <hr> more */
@@ -213,7 +212,7 @@ html {
   /* Thin out the marketing headings */
   /* rtl:begin:remove */
   .feature-heading {
-    letter-spacing: -.05rem;
+    letter-spacing: -0.05rem;
   }
 
   /* rtl:end:remove */

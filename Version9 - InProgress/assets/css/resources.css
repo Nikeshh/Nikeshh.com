@@ -20,8 +20,7 @@ html {
   /* Center align the text within the three columns below the carousel */
   /* rtl:begin:ignore */
   /* rtl:end:ignore */
-  /* features
-  ------------------------- */
+  /* Features ------------------------- */
   /* Thin out the marketing headings */
   /* rtl:begin:remove */
   /* rtl:end:remove */
@@ -165,7 +164,10 @@ html {
   z-index: 10;
 }
 .resources .carousel-item {
-  height: 32rem;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  max-height: 32rem;
 }
 .resources .marketing .col-lg-4 {
   margin-bottom: 1.5rem;
