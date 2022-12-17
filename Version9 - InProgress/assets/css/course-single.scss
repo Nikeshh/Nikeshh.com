@@ -1,9 +1,9 @@
 @import url("./core.css");
 @import url("./theme.css");
 
-/* Courses */
+/* Course - Single */
 
-.courses {
+.course-single {
   width: 100%;
 
   /* Hide scroll bars */
@@ -34,15 +34,9 @@
     margin-top: calc(var(--topNavbarHeight) + 20px);
     margin-bottom: calc(var(--topNavbarHeight) + 20px);
 
-    .course {
-      .course-thumbnail {
-        max-width: 15rem;
-      }
-    }
-
-    .course:hover {
-      border-radius: .25rem !important;
-      box-shadow: 0 .5rem 1rem rgba(0,0,0,.15) !important;
+    .course-image {
+      max-width: 100%;
+      max-height: 50%;
     }
   }
 
@@ -91,4 +85,4 @@
   }
 }
 
-/* End of Courses */
+/* End of Course - Single */

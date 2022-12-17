@@ -1,89 +1,81 @@
 @import url("./core.css");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap");
-
-body,
-button {
-  font-family: "Inter", sans-serif;
-}
-
-/* Theme */
-
-/* Not used right now */
-:root {
-  --primary-background-color: #ffffff;
-  --primary-color: #0d0b52;
-  --secondary-color: #3458b9;
-  --primary-text-color: #000013;
-  --font-color: #424242;
-  --bg-color: #ffffff;
-  --heading-color: #292922;
-  --white-color: #ffffff;
-  --offcanvas-width: 270px;
-  --topNavbarHeight: 56px;
-}
-
-/* Not used right now */
-@media (prefers-color-scheme: dark) {
-  :root {
-    --primary-background-color: #000013;
-    --primary-color: #325b97;
-    --secondary-color: #9cafeb;
-    --primary-text-color: #ffffff;
-    --font-color: #e1e1ff;
-    --bg-color: #000013;
-    --heading-color: #818cab;
-  }
-}
-
-/* End of Theme */
+@import url("./theme.css");
 
 /* Project */
 
 .project {
-  height: 100vh;
   width: 100%;
+
+  /* Hide scroll bars */
+  html {
+    overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+  ::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+  }
+
+  .logo {
+    max-width: 6rem;
+  }
 
   .sidebar-nav {
     width: var(--offcanvas-width);
   }
 
-  .sidebar-link {
-    display: flex;
-    align-items: center;
+  .top-navbar {
+    padding: 1.5rem 1rem;
+    height: var(--topNavbarHeight);
   }
 
-  .sidebar-link .right-icon {
-    display: inline-flex;
+  main {
+    margin-top: calc(var(--topNavbarHeight) + 20px);
+    margin-bottom: calc(var(--topNavbarHeight) + 20px);
   }
 
-  .sidebar-link[aria-expanded="true"] .right-icon {
-    transform: rotate(180deg);
+  /* Form control */
+  .form-control:focus {
+    box-shadow: none;
+  }
+  .form-control-underlined {
+    border-width: 0;
+    border-bottom-width: 1px;
+    border-radius: 0;
+    padding-left: 0;
+  }
+  .form-control::placeholder {
+    font-size: 0.95rem;
+    color: #aaa;
+    font-style: italic;
   }
 
   @media (min-width: 992px) {
-    body {
-      overflow: auto !important;
+    .sidebar-nav {
+        -webkit-transform: none;
+        transform: none;
+        visibility: visible !important;
     }
 
-    .navbar {
-        height: var(--topNavbarHeight);
+    .top-navbar {
+        margin-left: var(--offcanvas-width);
     }
 
     main {
-      margin-left: var(--offcanvas-width);
+        margin-left: var(--offcanvas-width);
+        margin-top: var(--topNavbarHeight);
+        margin-bottom: var(--topNavbarHeight);
+        height: calc(100vh - var(--topNavbarHeight) - var(--topNavbarHeight));
     }
 
     /* this is to remove the backdrop */
     .offcanvas-backdrop::before {
-      display: none;
+        display: none;
     }
 
-    .sidebar-nav {
-      -webkit-transform: none;
-      transform: none;
-      visibility: visible !important;
-      height: calc(100% - var(--topNavbarHeight));
-      top: var(--topNavbarHeight);
+    .modal-backdrop.show {
+      opacity: 0;
     }
   }
 }

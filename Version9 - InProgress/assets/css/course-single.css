@@ -1,81 +1,85 @@
 @import url("./core.css");
 @import url("./theme.css");
-/* Project */
-.project {
+/* Course - Single */
+.course-single {
   width: 100%;
   /* Hide scroll bars */
   /* Form control */
 }
-.project html {
+.course-single html {
   overflow: scroll;
   overflow-x: hidden;
   overflow-y: hidden;
 }
-.project ::-webkit-scrollbar {
+.course-single ::-webkit-scrollbar {
   width: 0; /* Remove scrollbar space */
   background: transparent; /* Optional: just make scrollbar invisible */
 }
-.project .logo {
+.course-single .logo {
   max-width: 6rem;
 }
-.project .sidebar-nav {
+.course-single .sidebar-nav {
   width: var(--offcanvas-width);
 }
-.project .top-navbar {
+.course-single .top-navbar {
   padding: 1.5rem 1rem;
   height: var(--topNavbarHeight);
 }
-.project main {
+.course-single main {
   margin-top: calc(var(--topNavbarHeight) + 20px);
   margin-bottom: calc(var(--topNavbarHeight) + 20px);
 }
-.project .form-control:focus {
+.course-single main .course-image {
+  max-width: 100%;
+  max-height: 50%;
+}
+.course-single .form-control:focus {
   box-shadow: none;
 }
-.project .form-control-underlined {
+.course-single .form-control-underlined {
   border-width: 0;
   border-bottom-width: 1px;
   border-radius: 0;
   padding-left: 0;
 }
-.project .form-control::-moz-placeholder {
+.course-single .form-control::-moz-placeholder {
   font-size: 0.95rem;
   color: #aaa;
   font-style: italic;
 }
-.project .form-control:-ms-input-placeholder {
+.course-single .form-control:-ms-input-placeholder {
   font-size: 0.95rem;
   color: #aaa;
   font-style: italic;
 }
-.project .form-control::placeholder {
+.course-single .form-control::placeholder {
   font-size: 0.95rem;
   color: #aaa;
   font-style: italic;
 }
 @media (min-width: 992px) {
-  .project {
+  .course-single {
     /* this is to remove the backdrop */
   }
-  .project .sidebar-nav {
+  .course-single .sidebar-nav {
     transform: none;
     visibility: visible !important;
   }
-  .project .top-navbar {
+  .course-single .top-navbar {
     margin-left: var(--offcanvas-width);
   }
-  .project main {
+  .course-single main {
     margin-left: var(--offcanvas-width);
     margin-top: var(--topNavbarHeight);
     margin-bottom: var(--topNavbarHeight);
     height: calc(100vh - var(--topNavbarHeight) - var(--topNavbarHeight));
   }
-  .project .offcanvas-backdrop::before {
+  .course-single .offcanvas-backdrop::before {
     display: none;
   }
-  .project .modal-backdrop.show {
+  .course-single .modal-backdrop.show {
     opacity: 0;
   }
 }
 
-/* End of Project *//*# sourceMappingURL=project-single.css.map */
+/* End of Course - Single *//*# sourceMappingURL=course-single.css.map */

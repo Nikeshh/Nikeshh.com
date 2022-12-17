@@ -1,29 +1,88 @@
 @import url("./core.css");
-/* Theme */
-/* Not used right now */
-:root {
-  --primary-background-color: #ffffff;
-  --primary-color: #0d0b52;
-  --secondary-color: #3458b9;
-  --primary-text-color: #000013;
-  --font-color: #424242;
-  --bg-color: #ffffff;
-  --heading-color: #292922;
-  --white-color: #ffffff;
+@import url("./theme.css");
+/* Courses */
+.courses {
+  width: 100%;
+  /* Hide scroll bars */
+  /* Form control */
 }
-
-/* Not used right now */
-@media (prefers-color-scheme: dark) {
-  :root {
-    --primary-background-color: #000013;
-    --primary-color: #325b97;
-    --secondary-color: #9cafeb;
-    --primary-text-color: #ffffff;
-    --font-color: #e1e1ff;
-    --bg-color: #000013;
-    --heading-color: #818cab;
+.courses html {
+  overflow: scroll;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+.courses ::-webkit-scrollbar {
+  width: 0; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
+}
+.courses .logo {
+  max-width: 6rem;
+}
+.courses .sidebar-nav {
+  width: var(--offcanvas-width);
+}
+.courses .top-navbar {
+  padding: 1.5rem 1rem;
+  height: var(--topNavbarHeight);
+}
+.courses main {
+  margin-top: calc(var(--topNavbarHeight) + 20px);
+  margin-bottom: calc(var(--topNavbarHeight) + 20px);
+}
+.courses main .course .course-thumbnail {
+  max-width: 15rem;
+}
+.courses main .course:hover {
+  border-radius: 0.25rem !important;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+.courses .form-control:focus {
+  box-shadow: none;
+}
+.courses .form-control-underlined {
+  border-width: 0;
+  border-bottom-width: 1px;
+  border-radius: 0;
+  padding-left: 0;
+}
+.courses .form-control::-moz-placeholder {
+  font-size: 0.95rem;
+  color: #aaa;
+  font-style: italic;
+}
+.courses .form-control:-ms-input-placeholder {
+  font-size: 0.95rem;
+  color: #aaa;
+  font-style: italic;
+}
+.courses .form-control::placeholder {
+  font-size: 0.95rem;
+  color: #aaa;
+  font-style: italic;
+}
+@media (min-width: 992px) {
+  .courses {
+    /* this is to remove the backdrop */
+  }
+  .courses .sidebar-nav {
+    transform: none;
+    visibility: visible !important;
+  }
+  .courses .top-navbar {
+    margin-left: var(--offcanvas-width);
+  }
+  .courses main {
+    margin-left: var(--offcanvas-width);
+    margin-top: var(--topNavbarHeight);
+    margin-bottom: var(--topNavbarHeight);
+    height: calc(100vh - var(--topNavbarHeight) - var(--topNavbarHeight));
+  }
+  .courses .offcanvas-backdrop::before {
+    display: none;
+  }
+  .courses .modal-backdrop.show {
+    opacity: 0;
   }
 }
-/* End of Theme */
-/* Courses */
+
 /* End of Courses *//*# sourceMappingURL=courses.css.map */

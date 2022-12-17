@@ -4,67 +4,66 @@
 /* Community */
 
 .community {
-    width: 100%;
+  width: 100%;
 
-    .logo {
-        max-width: 6rem;
+  .logo {
+    max-width: 6rem;
+  }
+
+  .sidebar-nav {
+    width: var(--offcanvas-width);
+  }
+
+  .top-navbar {
+    padding: 2.5rem 1rem;
+    margin-left: var(--offcanvas-width);
+    height: var(--topNavbarHeight);
+  }
+
+  @media (min-width: 992px) {
+    .modal-backdrop.show {
+      opacity: 0;
     }
 
-    .sidebar-nav {
-        width: var(--offcanvas-width);
+    main {
+      margin-left: var(--offcanvas-width);
+      margin-top: var(--topNavbarHeight);
+    }
+  }
+
+  /* Carousel */
+  @media (max-width: 767px) {
+    .carousel-inner .carousel-item > div {
+      display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+      display: block;
+    }
+  }
+
+  .carousel-inner .carousel-item.active,
+  .carousel-inner .carousel-item-next,
+  .carousel-inner .carousel-item-prev {
+    display: flex;
+  }
+
+  /* medium and up screens */
+  @media (min-width: 768px) {
+    .carousel-inner .carousel-item-end.active,
+    .carousel-inner .carousel-item-next {
+      transform: translateX(25%);
     }
 
-    .top-navbar {
-        padding: 2.5rem 1rem;
-        margin-left: var(--offcanvas-width);
-        height: var(--topNavbarHeight);
+    .carousel-inner .carousel-item-start.active,
+    .carousel-inner .carousel-item-prev {
+      transform: translateX(-25%);
     }
+  }
 
-    @media (min-width: 992px) {
-        .modal-backdrop.show {
-            opacity: .0;
-        }
-
-        main {
-            margin-left: var(--offcanvas-width);
-            margin-top: var(--topNavbarHeight);
-        }
-    }
-
-    /* Carousel */
-    @media (max-width: 767px) {
-		.carousel-inner .carousel-item > div {
-			display: none;
-		}
-		.carousel-inner .carousel-item > div:first-child {
-			display: block;
-		}
-	}
-
-	.carousel-inner .carousel-item.active,
-	.carousel-inner .carousel-item-next,
-	.carousel-inner .carousel-item-prev {
-		display: flex;
-	}
-
-	/* medium and up screens */
-	@media (min-width: 768px) {
-
-		.carousel-inner .carousel-item-end.active,
-		.carousel-inner .carousel-item-next {
-			transform: translateX(25%);
-		}
-
-		.carousel-inner .carousel-item-start.active, 
-		.carousel-inner .carousel-item-prev {
-			transform: translateX(-25%);
-		}
-	}
-
-	.carousel-inner .carousel-item-end,
-	.carousel-inner .carousel-item-start { 
-		transform: translateX(0);
-	}
+  .carousel-inner .carousel-item-end,
+  .carousel-inner .carousel-item-start {
+    transform: translateX(0);
+  }
 }
 
 /* End of Community */
