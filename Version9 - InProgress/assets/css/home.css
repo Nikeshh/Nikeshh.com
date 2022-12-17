@@ -28,9 +28,4 @@
 .home .section-3 {
   display: none;
 }
-.home .section-3 .header > * {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-}
 /* End of Home *//*# sourceMappingURL=home.css.map */
