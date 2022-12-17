@@ -46,12 +46,14 @@
 
     /* Section 7 - Contact Me */
     .section-7 {
-        
+        .contact-form-thumbnail {
+            max-width: 20%;
+        }
     }
 
     /* Section 8 - Footer */
     .section-8 {
-        
+        display: none;
     }
 }
 

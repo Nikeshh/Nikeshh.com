@@ -37,4 +37,11 @@
 .home .section-6 {
   display: none;
 }
+.home .section-7 .contact-form-thumbnail {
+  max-width: 20%;
+}
+.home .section-8 {
+  display: none;
+}
+
 /* End of Home *//*# sourceMappingURL=home.css.map */
