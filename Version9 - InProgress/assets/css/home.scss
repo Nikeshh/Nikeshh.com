@@ -12,6 +12,7 @@
     .section-1 {
         width: 100%;
         height: 100vh;
+        display: none;
 
         .banner-image {
             max-width: 50%;
@@ -20,11 +21,14 @@
 
     /* Section 2 - About Me */
     .section-2 {
+        display: none;
     }
 
     /* Section 3 - Blog */
     .section-3 {
-        
+        .header > * {
+            width: fit-content;
+        }
     }
 
     /* Section 4 - Projects */
