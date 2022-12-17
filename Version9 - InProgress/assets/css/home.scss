@@ -1,6 +1,3 @@
-@import url("./core.css");
-@import url("./theme.css");
-
 /* Home */
 
 .home {
@@ -12,7 +9,6 @@
     .section-1 {
         width: 100%;
         height: 100vh;
-        display: none;
 
         .banner-image {
             max-width: 50%;
@@ -21,27 +17,22 @@
 
     /* Section 2 - About Me */
     .section-2 {
-        display: none;
     }
 
     /* Section 3 - Blog */
     .section-3 {
-        display: none;
     }
 
     /* Section 4 - Projects */
     .section-4 {
-        display: none;
     }
     
     /* Section 5 - Testimonials */
     .section-5 {
-        display: none;
     }
 
     /* Section 6 - Skills */
     .section-6 {
-        display: none;
     }
 
     /* Section 7 - Contact Me */
@@ -53,7 +44,6 @@
 
     /* Section 8 - Footer */
     .section-8 {
-        display: none;
     }
 }
 

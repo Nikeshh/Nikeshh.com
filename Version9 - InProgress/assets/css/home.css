@@ -1,5 +1,3 @@
-@import url("./core.css");
-@import url("./theme.css");
 /* Home */
 .home {
   width: 100%;
@@ -17,31 +15,11 @@
 .home .section-1 {
   width: 100%;
   height: 100vh;
-  display: none;
 }
 .home .section-1 .banner-image {
   max-width: 50%;
 }
-.home .section-2 {
-  display: none;
-}
-.home .section-3 {
-  display: none;
-}
-.home .section-4 {
-  display: none;
-}
-.home .section-5 {
-  display: none;
-}
-.home .section-6 {
-  display: none;
-}
 .home .section-7 .contact-form-thumbnail {
   max-width: 20%;
 }
-.home .section-8 {
-  display: none;
-}
-
 /* End of Home *//*# sourceMappingURL=home.css.map */
