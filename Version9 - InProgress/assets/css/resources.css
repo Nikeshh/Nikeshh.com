@@ -102,6 +102,23 @@ html {
 .resources .scrollarea {
   overflow-y: auto;
 }
+.resources .form-control-dark {
+  border-color: var(--bs-gray);
+}
+.resources .form-control-dark:focus {
+  border-color: #fff;
+  box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.25);
+}
+.resources .text-bg-dark {
+  color: #fff !important;
+  background-color: RGBA(33, 37, 41, var(--bs-bg-opacity, 1)) !important;
+}
+.resources .text-small {
+  font-size: 85%;
+}
+.resources .dropdown-toggle {
+  outline: 0;
+}
 .resources #sidebar-mobile {
   display: none;
   visibility: hidden;
