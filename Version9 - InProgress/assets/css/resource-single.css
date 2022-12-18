@@ -168,6 +168,9 @@ html {
 .resource-single .main-content .resource-details .resource-content {
   height: calc(100vh - 10rem - 5rem);
 }
+.resource-single .main-content .comments .comment {
+  background-color: #CBC3E3;
+}
 .resource-single .carousel {
   margin-bottom: 4rem;
 }
