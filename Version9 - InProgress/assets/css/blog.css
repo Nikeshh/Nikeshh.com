@@ -185,7 +185,8 @@ html {
   margin-left: 0.75rem;
 }
 .blog .feature-divider {
-  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+  margin: 5rem 0;
+  /* Space out the Bootstrap <hr> more */
 }
 .blog .feature-heading {
   letter-spacing: -0.05rem;
