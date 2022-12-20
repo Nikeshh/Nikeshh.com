@@ -1,81 +1,205 @@
-@import url("./core.css");
-@import url("./theme.css");
 /* Projects */
+body {
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+}
+
+html {
+  height: -webkit-fill-available;
+}
+
 .projects {
   width: 100%;
-  /* Hide scroll bars */
-  /* Form control */
+  /* CUSTOMIZE THE CAROUSEL
+  -------------------------------------------------- */
+  /* Carousel base class */
+  /* Since positioning the image, we need to help out the caption */
+  /* Declare heights because of positioning of img element */
+  /* MARKETING CONTENT
+  -------------------------------------------------- */
+  /* Center align the text within the three columns below the carousel */
+  /* rtl:begin:ignore */
+  /* rtl:end:ignore */
+  /* Features ------------------------- */
+  /* Thin out the marketing headings */
+  /* rtl:begin:remove */
+  /* rtl:end:remove */
+  /* RESPONSIVE CSS
+  -------------------------------------------------- */
 }
-.projects html {
-  overflow: scroll;
-  overflow-x: hidden;
+.projects .bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+      user-select: none;
+}
+@media (min-width: 768px) {
+  .projects .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+.projects .b-example-divider {
+  height: 3rem;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: solid rgba(0, 0, 0, 0.15);
+  border-width: 1px 0;
+  box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, 0.1), inset 0 0.125em 0.5em rgba(0, 0, 0, 0.15);
+}
+.projects .b-example-vr {
+  flex-shrink: 0;
+  width: 1.5rem;
+  height: 100vh;
+}
+.projects .bi {
+  vertical-align: -0.125em;
+  fill: currentColor;
+}
+.projects .nav-scroller {
+  position: relative;
+  z-index: 2;
+  height: 2.75rem;
   overflow-y: hidden;
 }
-.projects ::-webkit-scrollbar {
-  width: 0; /* Remove scrollbar space */
-  background: transparent; /* Optional: just make scrollbar invisible */
-}
-.projects .logo {
-  max-width: 6rem;
-}
-.projects .sidebar-nav {
-  width: var(--offcanvas-width);
-}
-.projects .top-navbar {
-  padding: 1.5rem 1rem;
-  height: var(--topNavbarHeight);
+.projects .nav-scroller .nav {
+  display: flex;
+  flex-wrap: nowrap;
+  padding-bottom: 1rem;
+  margin-top: -1px;
+  overflow-x: auto;
+  text-align: center;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
 }
 .projects main {
-  margin-top: calc(var(--topNavbarHeight) + 20px);
-  margin-bottom: calc(var(--topNavbarHeight) + 20px);
+  height: 100vh;
+  height: -webkit-fill-available;
+  max-height: 100vh;
+  overflow-x: auto;
+  overflow-y: hidden;
 }
-.projects .form-control:focus {
-  box-shadow: none;
+.projects .dropdown-toggle {
+  outline: 0;
 }
-.projects .form-control-underlined {
-  border-width: 0;
-  border-bottom-width: 1px;
-  border-radius: 0;
-  padding-left: 0;
+.projects .btn-toggle {
+  padding: 0.25rem 0.5rem;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.65);
+  background-color: transparent;
 }
-.projects .form-control::-moz-placeholder {
-  font-size: 0.95rem;
-  color: #aaa;
-  font-style: italic;
+.projects .btn-toggle:hover,
+.projects .btn-toggle:focus {
+  color: rgba(0, 0, 0, 0.85);
+  background-color: #d2f4ea;
 }
-.projects .form-control:-ms-input-placeholder {
-  font-size: 0.95rem;
-  color: #aaa;
-  font-style: italic;
+.projects .btn-toggle::before {
+  width: 1.25em;
+  line-height: 0;
+  content: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='rgba%280,0,0,.5%29' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 14l6-6-6-6'/%3e%3c/svg%3e");
+  transition: transform 0.35s ease;
+  transform-origin: 0.5em 50%;
 }
-.projects .form-control::placeholder {
-  font-size: 0.95rem;
-  color: #aaa;
-  font-style: italic;
+.projects .btn-toggle[aria-expanded=true] {
+  color: rgba(0, 0, 0, 0.85);
 }
-@media (min-width: 992px) {
-  .projects {
-    /* this is to remove the backdrop */
-  }
-  .projects .sidebar-nav {
-    transform: none;
-    visibility: visible !important;
-  }
-  .projects .top-navbar {
-    margin-left: var(--offcanvas-width);
-  }
-  .projects main {
-    margin-left: var(--offcanvas-width);
-    margin-top: var(--topNavbarHeight);
-    margin-bottom: var(--topNavbarHeight);
-    height: calc(100vh - var(--topNavbarHeight) - var(--topNavbarHeight));
-  }
-  .projects .offcanvas-backdrop::before {
+.projects .btn-toggle[aria-expanded=true]::before {
+  transform: rotate(90deg);
+}
+.projects .btn-toggle-nav a {
+  padding: 0.1875rem 0.5rem;
+  margin-top: 0.125rem;
+  margin-left: 1.25rem;
+}
+.projects .btn-toggle-nav a:hover,
+.projects .btn-toggle-nav a:focus {
+  background-color: #d2f4ea;
+}
+.projects .scrollarea {
+  overflow-y: auto;
+}
+.projects .form-control-dark {
+  border-color: var(--bs-gray);
+}
+.projects .form-control-dark:focus {
+  border-color: #fff;
+  box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.25);
+}
+.projects .text-bg-dark {
+  color: #fff !important;
+  background-color: RGBA(33, 37, 41, var(--bs-bg-opacity, 1)) !important;
+}
+.projects .text-small {
+  font-size: 85%;
+}
+.projects .dropdown-toggle {
+  outline: 0;
+}
+.projects #sidebar-mobile {
+  display: none;
+  visibility: hidden;
+}
+.projects #sidebar {
+  display: flex;
+  visibility: visible;
+}
+@media screen and (max-width: 720px) {
+  .projects #sidebar {
     display: none;
+    visibility: hidden;
   }
-  .projects .modal-backdrop.show {
-    opacity: 0;
+  .projects #sidebar-mobile {
+    display: flex;
+    visibility: visible;
+  }
+}
+.projects .main-content {
+  overflow-y: scroll;
+}
+.projects .carousel {
+  margin-bottom: 4rem;
+}
+.projects .carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+.projects .carousel-item {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  max-height: 32rem;
+}
+.projects .marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.projects .marketing .col-lg-4 p {
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
+}
+.projects .feature-divider {
+  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+}
+.projects .feature-heading {
+  letter-spacing: -0.05rem;
+}
+@media (min-width: 40em) {
+  .projects {
+    /* Bump up size of carousel content */
+  }
+  .projects .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+  .projects .feature-heading {
+    font-size: 50px;
+  }
+}
+@media (min-width: 62em) {
+  .projects .feature-heading {
+    margin-top: 7rem;
   }
 }
 
-/* End of Projects *//*# sourceMappingURL=projects.css.map */
+/* End of projects *//*# sourceMappingURL=projects.css.map */
