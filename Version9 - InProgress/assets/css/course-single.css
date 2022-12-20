@@ -1,84 +1,208 @@
-@import url("./core.css");
-@import url("./theme.css");
 /* Course - Single */
+body {
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+}
+
+html {
+  height: -webkit-fill-available;
+}
+
 .course-single {
   width: 100%;
-  /* Hide scroll bars */
-  /* Form control */
+  /* CUSTOMIZE THE CAROUSEL
+  -------------------------------------------------- */
+  /* Carousel base class */
+  /* Since positioning the image, we need to help out the caption */
+  /* Declare heights because of positioning of img element */
+  /* MARKETING CONTENT
+  -------------------------------------------------- */
+  /* Center align the text within the three columns below the carousel */
+  /* rtl:begin:ignore */
+  /* rtl:end:ignore */
+  /* Features ------------------------- */
+  /* Thin out the marketing headings */
+  /* rtl:begin:remove */
+  /* rtl:end:remove */
+  /* RESPONSIVE CSS
+  -------------------------------------------------- */
 }
-.course-single html {
-  overflow: scroll;
-  overflow-x: hidden;
+.course-single .bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+      user-select: none;
+}
+@media (min-width: 768px) {
+  .course-single .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+.course-single .b-example-divider {
+  height: 3rem;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: solid rgba(0, 0, 0, 0.15);
+  border-width: 1px 0;
+  box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, 0.1), inset 0 0.125em 0.5em rgba(0, 0, 0, 0.15);
+}
+.course-single .b-example-vr {
+  flex-shrink: 0;
+  width: 1.5rem;
+  height: 100vh;
+}
+.course-single .bi {
+  vertical-align: -0.125em;
+  fill: currentColor;
+}
+.course-single .nav-scroller {
+  position: relative;
+  z-index: 2;
+  height: 2.75rem;
   overflow-y: hidden;
 }
-.course-single ::-webkit-scrollbar {
-  width: 0; /* Remove scrollbar space */
-  background: transparent; /* Optional: just make scrollbar invisible */
-}
-.course-single .logo {
-  max-width: 6rem;
-}
-.course-single .sidebar-nav {
-  width: var(--offcanvas-width);
-}
-.course-single .top-navbar {
-  padding: 1.5rem 1rem;
-  height: var(--topNavbarHeight);
+.course-single .nav-scroller .nav {
+  display: flex;
+  flex-wrap: nowrap;
+  padding-bottom: 1rem;
+  margin-top: -1px;
+  overflow-x: auto;
+  text-align: center;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
 }
 .course-single main {
-  margin-top: calc(var(--topNavbarHeight) + 20px);
-  margin-bottom: calc(var(--topNavbarHeight) + 20px);
+  height: 100vh;
+  height: -webkit-fill-available;
+  max-height: 100vh;
+  overflow-x: auto;
+  overflow-y: hidden;
 }
-.course-single main .course-image {
-  max-width: 100%;
-  max-height: 50%;
+.course-single .course:hover {
+  border-radius: 0.25rem !important;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
 }
-.course-single .form-control:focus {
-  box-shadow: none;
+.course-single .dropdown-toggle {
+  outline: 0;
 }
-.course-single .form-control-underlined {
-  border-width: 0;
-  border-bottom-width: 1px;
-  border-radius: 0;
-  padding-left: 0;
+.course-single .btn-toggle {
+  padding: 0.25rem 0.5rem;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.65);
+  background-color: transparent;
 }
-.course-single .form-control::-moz-placeholder {
-  font-size: 0.95rem;
-  color: #aaa;
-  font-style: italic;
+.course-single .btn-toggle:hover,
+.course-single .btn-toggle:focus {
+  color: rgba(0, 0, 0, 0.85);
+  background-color: #d2f4ea;
 }
-.course-single .form-control:-ms-input-placeholder {
-  font-size: 0.95rem;
-  color: #aaa;
-  font-style: italic;
+.course-single .btn-toggle::before {
+  width: 1.25em;
+  line-height: 0;
+  content: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='rgba%280,0,0,.5%29' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 14l6-6-6-6'/%3e%3c/svg%3e");
+  transition: transform 0.35s ease;
+  transform-origin: 0.5em 50%;
 }
-.course-single .form-control::placeholder {
-  font-size: 0.95rem;
-  color: #aaa;
-  font-style: italic;
+.course-single .btn-toggle[aria-expanded=true] {
+  color: rgba(0, 0, 0, 0.85);
 }
-@media (min-width: 992px) {
-  .course-single {
-    /* this is to remove the backdrop */
-  }
-  .course-single .sidebar-nav {
-    transform: none;
-    visibility: visible !important;
-  }
-  .course-single .top-navbar {
-    margin-left: var(--offcanvas-width);
-  }
-  .course-single main {
-    margin-left: var(--offcanvas-width);
-    margin-top: var(--topNavbarHeight);
-    margin-bottom: var(--topNavbarHeight);
-    height: calc(100vh - var(--topNavbarHeight) - var(--topNavbarHeight));
-  }
-  .course-single .offcanvas-backdrop::before {
+.course-single .btn-toggle[aria-expanded=true]::before {
+  transform: rotate(90deg);
+}
+.course-single .btn-toggle-nav a {
+  padding: 0.1875rem 0.5rem;
+  margin-top: 0.125rem;
+  margin-left: 1.25rem;
+}
+.course-single .btn-toggle-nav a:hover,
+.course-single .btn-toggle-nav a:focus {
+  background-color: #d2f4ea;
+}
+.course-single .scrollarea {
+  overflow-y: auto;
+}
+.course-single .form-control-dark {
+  border-color: var(--bs-gray);
+}
+.course-single .form-control-dark:focus {
+  border-color: #fff;
+  box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.25);
+}
+.course-single .text-bg-dark {
+  color: #fff !important;
+  background-color: RGBA(33, 37, 41, var(--bs-bg-opacity, 1)) !important;
+}
+.course-single .text-small {
+  font-size: 85%;
+}
+.course-single .dropdown-toggle {
+  outline: 0;
+}
+.course-single #sidebar-mobile {
+  display: none;
+  visibility: hidden;
+}
+.course-single #sidebar {
+  display: flex;
+  visibility: visible;
+}
+@media screen and (max-width: 720px) {
+  .course-single #sidebar {
     display: none;
+    visibility: hidden;
   }
-  .course-single .modal-backdrop.show {
-    opacity: 0;
+  .course-single #sidebar-mobile {
+    display: flex;
+    visibility: visible;
+  }
+}
+.course-single .main-content {
+  overflow-y: scroll;
+}
+.course-single .carousel {
+  margin-bottom: 4rem;
+}
+.course-single .carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+.course-single .carousel-item {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  max-height: 32rem;
+}
+.course-single .marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.course-single .marketing .col-lg-4 p {
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
+}
+.course-single .feature-divider {
+  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+}
+.course-single .feature-heading {
+  letter-spacing: -0.05rem;
+}
+@media (min-width: 40em) {
+  .course-single {
+    /* Bump up size of carousel content */
+  }
+  .course-single .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+  .course-single .feature-heading {
+    font-size: 50px;
+  }
+}
+@media (min-width: 62em) {
+  .course-single .feature-heading {
+    margin-top: 7rem;
   }
 }
 
