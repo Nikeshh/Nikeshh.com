@@ -1,4 +1,10 @@
-@import url("./core.css");
-@import url("./theme.css");
 /* Newsletter */
+.newsletter {
+  width: 100%;
+  scroll-behavior: smooth;
+  /* Section 1 - Introduction */
+  /* Section 2 - Details */
+  /* Section 3 - Testimonials */
+  /* Section 4 - Footer */
+}
 /* End of Newsletter *//*# sourceMappingURL=newsletter.css.map */

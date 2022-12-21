@@ -1,1 +1,1 @@
-{"version":3,"sources":["newsletter.scss"],"names":[],"mappings":"AAAQ,yBAAA;AACA,0BAAA;AAER,eAAA;AAKA,sBAAA","file":"newsletter.css"}
+{"version":3,"sources":["newsletter.scss","newsletter.css"],"names":[],"mappings":"AAAA,eAAA;AAEA;EACI,WAAA;EACA,uBAAA;EAEA,6BAAA;EAIA,wBAAA;EAIA,6BAAA;EAIA,uBAAA;ACVJ;ADeA,sBAAA","file":"newsletter.css"}
