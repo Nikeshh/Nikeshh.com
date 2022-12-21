@@ -146,7 +146,36 @@
     .section-5 {}
 
     /* Section 6 - Skills */
-    .section-6 {}
+    .section-6 {
+        ul {
+            list-style: none;
+            text-align: center;
+            
+            li {
+                padding: 1rem 0rem;
+
+                &.control:hover {
+                    border: 1px solid purple;
+                    border-radius: .5rem;
+                    box-shadow: 0 5px 4px rgba(0, 0, 0, .5);
+                }
+            }
+
+            li:not(.control) {
+                border: 1px solid black;
+                border-radius: .5rem;
+            }
+
+            li:not(.control).active {
+                background-color: purple;
+                color: white;
+            }
+
+            li:not(.control):hover {
+                box-shadow: 0 5px 4px rgba(0, 0, 0, .5);
+            }
+        }
+    }
 
     /* Section 7 - Contact Me */
     .section-7 {}
