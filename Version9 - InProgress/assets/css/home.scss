@@ -6,35 +6,85 @@
 
     /* Section 1 - Header and Banner */
     .section-1 {
+        .social-menu {
+            margin: 2rem 0rem;
+            padding: 0rem;
+
+            ul {
+                display: flex;
+                gap: 1rem;
+                padding: 0rem;
+
+                li {
+                    list-style: none;
+
+                    .fab {
+                        font-size: 30px;
+                        line-height: 60px;
+                        transition: .3s;
+                        color: #000;
+                    }
+
+                    .fab:hover {
+                        color: #fff;
+                    }
+
+                    a {
+                        position: relative;
+                        display: block;
+                        width: 60px;
+                        height: 60px;
+                        border-radius: 50%;
+                        background-color: #fff;
+                        text-align: center;
+                        transition: .6s;
+                        box-shadow: 0 5px 4px rgba(0, 0, 0, .5);
+                    }
+
+                    a:hover {
+                        transform: translate(0, -10%);
+                    }
+                }
+
+                li:nth-child(1) a:hover {
+                    background-color: rgba(0, 0, 0, 0.829);
+                }
+
+                li:nth-child(2) a:hover {
+                    background-color: #E4405F;
+                }
+
+                li:nth-child(3) a:hover {
+                    background-color: #0077b5;
+                }
+
+                li:nth-child(4) a:hover {
+                    background-color: #000;
+                }
+            }
+        }
     }
 
     /* Section 2 - About Me */
-    .section-2 {
-    }
+    .section-2 {}
 
     /* Section 3 - Blog */
-    .section-3 {
-    }
+    .section-3 {}
 
     /* Section 4 - Projects */
-    .section-4 {
-    }
-    
+    .section-4 {}
+
     /* Section 5 - Testimonials */
-    .section-5 {
-    }
+    .section-5 {}
 
     /* Section 6 - Skills */
-    .section-6 {
-    }
+    .section-6 {}
 
     /* Section 7 - Contact Me */
-    .section-7 {
-    }
+    .section-7 {}
 
     /* Section 8 - Footer */
-    .section-8 {
-    }
+    .section-8 {}
 }
 
 /* End of Home */
