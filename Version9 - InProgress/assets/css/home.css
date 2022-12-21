@@ -121,14 +121,20 @@
 .home .section-6 ul li {
   padding: 1rem 0rem;
 }
-.home .section-6 ul li.control:hover {
+.home .section-6 ul li.control:first-child:hover {
   border: 1px solid purple;
+  border-radius: 0.5rem;
+  box-shadow: 0 5px 4px rgba(0, 0, 0, 0.5);
+}
+.home .section-6 ul li.control:last-child:hover {
+  border: 1px solid blue;
   border-radius: 0.5rem;
   box-shadow: 0 5px 4px rgba(0, 0, 0, 0.5);
 }
 .home .section-6 ul li:not(.control) {
   border: 1px solid black;
   border-radius: 0.5rem;
+  margin-top: 0.3rem;
 }
 .home .section-6 ul li:not(.control).active {
   background-color: purple;
