@@ -100,6 +100,9 @@
   background-color: white;
   border-color: green;
 }
+.home .section-4 {
+  /* TODO: Need to modify - Refer section-1 */
+}
 .home .section-4 .links {
   margin: 2rem 0rem;
   padding: 0rem;
@@ -149,12 +152,6 @@
 }
 .home .section-4 .links ul li:nth-child(2) a:hover {
   background-color: #E4405F;
-}
-.home .section-4 .links ul li:nth-child(3) a:hover {
-  background-color: #0077b5;
-}
-.home .section-4 .links ul li:nth-child(4) a:hover {
-  background-color: #000;
 }
 .home .section-6 ul {
   list-style: none;

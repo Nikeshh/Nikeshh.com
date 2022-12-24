@@ -113,6 +113,7 @@
 
     /* Section 4 - Projects */
     .section-4 {
+        /* TODO: Need to modify - Refer section-1 */
         .links {
             margin: 2rem 0rem;
             padding: 0rem;
@@ -162,21 +163,11 @@
                         transform: translate(0, -10%);
                     }
                 }
-
                 li:nth-child(1) a:hover {
                     background-color: rgba(0, 0, 0, 0.829);
                 }
-
                 li:nth-child(2) a:hover {
                     background-color: #E4405F;
-                }
-
-                li:nth-child(3) a:hover {
-                    background-color: #0077b5;
-                }
-
-                li:nth-child(4) a:hover {
-                    background-color: #000;
                 }
             }
         }
