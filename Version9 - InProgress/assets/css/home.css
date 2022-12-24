@@ -58,6 +58,14 @@
 .home .section-1 .social-links ul li:nth-child(4) a:hover {
   background-color: #000;
 }
+.home .section-1 .banner-content > p {
+  font-family: "Nunito Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  color: #262b39;
+}
 .home .section-4 .links {
   margin: 2rem 0rem;
   padding: 0rem;
