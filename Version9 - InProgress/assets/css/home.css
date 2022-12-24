@@ -95,6 +95,11 @@
   line-height: 140%;
   color: #262b39;
 }
+.home .section-2 .about-me-control:hover {
+  color: green;
+  background-color: white;
+  border-color: green;
+}
 .home .section-4 .links {
   margin: 2rem 0rem;
   padding: 0rem;

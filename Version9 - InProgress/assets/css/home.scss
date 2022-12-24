@@ -100,7 +100,13 @@
     }
 
     /* Section 2 - About Me */
-    .section-2 {}
+    .section-2 {
+        .about-me-control:hover {
+            color: green;
+            background-color: white;
+            border-color: green;
+        }
+    }
 
     /* Section 3 - Blog */
     .section-3 {}
