@@ -30,6 +30,7 @@ html {
   /*
   * Blog posts
   */
+  /* Comments */
 }
 .blog-single .bd-placeholder-img {
   font-size: 1.125rem;
@@ -304,6 +305,9 @@ html {
 .blog-single .blog-post-meta {
   margin-bottom: 1.25rem;
   color: #727272;
+}
+.blog-single .comments .comment {
+  background-color: #CBC3E3;
 }
 
 /* End of Blog - Single *//*# sourceMappingURL=blog-single.css.map */
