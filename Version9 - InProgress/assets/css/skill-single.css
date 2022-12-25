@@ -26,6 +26,7 @@ html {
   /* rtl:end:remove */
   /* RESPONSIVE CSS
   -------------------------------------------------- */
+  /* Skill level bar */
 }
 .skill-single .bd-placeholder-img {
   font-size: 1.125rem;
@@ -215,6 +216,53 @@ html {
   .skill-single .feature-heading {
     margin-top: 7rem;
   }
+}
+.skill-single .skill-level {
+  height: 1em;
+  margin: 10px 0px;
+  min-width: 400px;
+}
+.skill-single .skill-level span {
+  background: linear-gradient(#093, #3f9, #093);
+  border-radius: 2px;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  width: 30px;
+  height: 8px;
+  display: inline-block;
+  margin: 0 1px;
+}
+.skill-single .show-0 span:nth-child(n+1) {
+  background: gray;
+}
+.skill-single .show-1 span:nth-child(n+2) {
+  background: gray;
+}
+.skill-single .show-2 span:nth-child(n+3) {
+  background: gray;
+}
+.skill-single .show-3 span:nth-child(n+4) {
+  background: gray;
+}
+.skill-single .show-4 span:nth-child(n+5) {
+  background: gray;
+}
+.skill-single .show-5 span:nth-child(n+6) {
+  background: gray;
+}
+.skill-single .show-6 span:nth-child(n+7) {
+  background: gray;
+}
+.skill-single .show-7 span:nth-child(n+8) {
+  background: gray;
+}
+.skill-single .show-8 span:nth-child(n+9) {
+  background: gray;
+}
+.skill-single .show-9 span:nth-child(n+10) {
+  background: gray;
+}
+.skill-single .show-10 span:nth-child(n+11) {
+  background: gray;
 }
 
 /* End of Skill - Single *//*# sourceMappingURL=skill-single.css.map */
