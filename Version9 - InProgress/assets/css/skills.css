@@ -201,5 +201,22 @@ html {
     margin-top: 7rem;
   }
 }
+.skills .skills-main-content .nav-tabs {
+  border-bottom: 0px !important;
+}
+.skills .skills-main-content .nav-tabs .nav-link {
+  border-radius: 0.5rem;
+  margin-bottom: 0px !important;
+}
+.skills .skills-main-content .nav-tabs .nav-link.active,
+.skills .skills-main-content .nav-tabs .nav-link:hover {
+  color: white;
+  background-color: purple;
+  box-shadow: 0 5px 4px rgba(0, 0, 0, 0.5);
+}
+.skills .skills-main-content ul li {
+  border: 1px solid black;
+  border-radius: 0.5rem;
+}
 
 /* End of Skills *//*# sourceMappingURL=skills.css.map */

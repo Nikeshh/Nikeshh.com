@@ -238,6 +238,31 @@ html {
       margin-top: 7rem;
     }
   }
+
+  .skills-main-content {
+    .nav-tabs {
+        border-bottom: 0px !important;
+
+        .nav-link {
+            border-radius: .5rem;
+            margin-bottom: 0px !important;
+        }
+
+        .nav-link.active,
+        .nav-link:hover {
+            color: white;
+            background-color: purple;
+            box-shadow: 0 5px 4px rgba(0, 0, 0, .5);
+        }
+    }
+
+    ul {
+        li{
+            border: 1px solid black;
+            border-radius: .5rem;
+        }
+    }
+  }
 }
 
 /* End of Skills */
