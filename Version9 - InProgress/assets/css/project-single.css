@@ -157,15 +157,15 @@ html {
   width: 100%;
   height: 100%;
 }
-.project-single .main-content .resource-details {
+.project-single .main-content .project-details {
   height: calc(100vh - 10rem);
-  /* Scroll bar inside resource details will get disappear */
+  /* Scroll bar inside project details will get disappear */
 }
-.project-single .main-content .resource-details ::-webkit-scrollbar {
+.project-single .main-content .project-details ::-webkit-scrollbar {
   width: 0; /* Remove scrollbar space */
   background: transparent; /* Optional: just make scrollbar invisible */
 }
-.project-single .main-content .resource-details .resource-content {
+.project-single .main-content .project-details .project-content {
   height: calc(100vh - 10rem - 5rem);
 }
 .project-single .main-content .comments .comment {
