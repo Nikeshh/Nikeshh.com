@@ -195,6 +195,7 @@
             .nav-link:hover {
                 color: white;
                 background-color: purple;
+                box-shadow: 0 5px 4px rgba(0, 0, 0, .5);
             }
         }
 
@@ -202,10 +203,6 @@
             li{
                 border: 1px solid black;
                 border-radius: .5rem;
-
-                :hover {
-                    box-shadow: 0 5px 4px rgba(0, 0, 0, .5);
-                }
             }
         }
     }

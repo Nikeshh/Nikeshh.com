@@ -168,12 +168,10 @@
 .home .section-6 .nav-tabs .nav-link:hover {
   color: white;
   background-color: purple;
+  box-shadow: 0 5px 4px rgba(0, 0, 0, 0.5);
 }
 .home .section-6 ul li {
   border: 1px solid black;
   border-radius: 0.5rem;
-}
-.home .section-6 ul li :hover {
-  box-shadow: 0 5px 4px rgba(0, 0, 0, 0.5);
 }
 /* End of Home *//*# sourceMappingURL=home.css.map */
