@@ -211,7 +211,90 @@
     .section-7 {}
 
     /* Section 8 - Footer */
-    .section-8 {}
+    .section-8 {
+        .social-links {
+            margin: 2rem 0rem;
+            padding: 0rem;
+
+            ul {
+                display: flex;
+                gap: 1rem;
+                padding: 0rem;
+
+                li {
+                    list-style: none;
+
+                    .fab {
+                        font-size: 20px;
+                        line-height: 40px;
+                        transition: .3s;
+                    }
+
+                    .fab:hover {
+                        color: #fff;
+                    }
+
+                    a {
+                        position: relative;
+                        display: block;
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                        background-color: #fff;
+                        text-align: center;
+                        transition: .6s;
+                        box-shadow: 0 5px 4px rgba(0, 0, 0, .5);
+                    }
+
+                    a:hover {
+                        transform: translate(0, -10%);
+                    }
+                }
+                li:nth-child(1) a {
+                    color: rgba(0, 0, 0, 0.829);
+                }
+                li:nth-child(2) a {
+                    color: #0072b1;
+                }
+                li:nth-child(3) a {
+                    color: #8a3ab9;
+                }
+                li:nth-child(4) a {
+                    color: #3b5998;
+                }
+                li:nth-child(5) a {
+                    color: #1DA1F2;
+                }
+                li:nth-child(6) a {
+                    color: #000;
+                }
+                li:nth-child(7) a {
+                    color: #000;
+                }
+                li:nth-child(1) a:hover {
+                    background-color: rgba(0, 0, 0, 0.829);
+                }
+                li:nth-child(2) a:hover {
+                    background-color: #0072b1;
+                }
+                li:nth-child(3) a:hover {
+                    background-color: #8a3ab9;
+                }
+                li:nth-child(4) a:hover {
+                    background-color: #3b5998;
+                }
+                li:nth-child(5) a:hover {
+                    background-color: #1DA1F2;
+                }
+                li:nth-child(6) a:hover {
+                    background-color: #000;
+                }
+                li:nth-child(7) a:hover {
+                    background-color: #000;
+                }
+            }
+        }
+    }
 }
 
 /* End of Home */
