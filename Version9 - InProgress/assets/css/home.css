@@ -157,33 +157,23 @@
 .home .section-4 .links ul li:nth-child(2) a:hover {
   background-color: #E4405F;
 }
-.home .section-6 ul {
-  list-style: none;
-  text-align: center;
+.home .section-6 .nav-tabs {
+  border-bottom: 0px !important;
+}
+.home .section-6 .nav-tabs .nav-link {
+  border-radius: 0.5rem;
+  margin-bottom: 0px !important;
+}
+.home .section-6 .nav-tabs .nav-link.active,
+.home .section-6 .nav-tabs .nav-link:hover {
+  color: white;
+  background-color: purple;
 }
 .home .section-6 ul li {
-  padding: 1rem 0rem;
-}
-.home .section-6 ul li.control:first-child:hover {
-  border: 1px solid purple;
-  border-radius: 0.5rem;
-  box-shadow: 0 5px 4px rgba(0, 0, 0, 0.5);
-}
-.home .section-6 ul li.control:last-child:hover {
-  border: 1px solid blue;
-  border-radius: 0.5rem;
-  box-shadow: 0 5px 4px rgba(0, 0, 0, 0.5);
-}
-.home .section-6 ul li:not(.control) {
   border: 1px solid black;
   border-radius: 0.5rem;
-  margin-top: 0.3rem;
 }
-.home .section-6 ul li:not(.control).active {
-  background-color: purple;
-  color: white;
-}
-.home .section-6 ul li:not(.control):hover {
+.home .section-6 ul li :hover {
   box-shadow: 0 5px 4px rgba(0, 0, 0, 0.5);
 }
 /* End of Home *//*# sourceMappingURL=home.css.map */

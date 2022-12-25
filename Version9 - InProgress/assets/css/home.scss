@@ -183,39 +183,29 @@
 
     /* Section 6 - Skills */
     .section-6 {
-        ul {
-            list-style: none;
-            text-align: center;
-            
-            li {
-                padding: 1rem 0rem;
+        .nav-tabs {
+            border-bottom: 0px !important;
 
-                &.control:first-child:hover {
-                    border: 1px solid purple;
-                    border-radius: .5rem;
-                    box-shadow: 0 5px 4px rgba(0, 0, 0, .5);
-                }
-
-                &.control:last-child:hover {
-                    border: 1px solid blue;
-                    border-radius: .5rem;
-                    box-shadow: 0 5px 4px rgba(0, 0, 0, .5);
-                }
+            .nav-link {
+                border-radius: .5rem;
+                margin-bottom: 0px !important;
             }
 
-            li:not(.control) {
+            .nav-link.active,
+            .nav-link:hover {
+                color: white;
+                background-color: purple;
+            }
+        }
+
+        ul {
+            li{
                 border: 1px solid black;
                 border-radius: .5rem;
-                margin-top: .3rem;
-            }
 
-            li:not(.control).active {
-                background-color: purple;
-                color: white;
-            }
-
-            li:not(.control):hover {
-                box-shadow: 0 5px 4px rgba(0, 0, 0, .5);
+                :hover {
+                    box-shadow: 0 5px 4px rgba(0, 0, 0, .5);
+                }
             }
         }
     }
