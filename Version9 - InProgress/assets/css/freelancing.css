@@ -201,5 +201,22 @@ html {
     margin-top: 7rem;
   }
 }
+.freelancing .freelancing-main-content .nav-tabs {
+  border-bottom: 0px !important;
+}
+.freelancing .freelancing-main-content .nav-tabs .nav-link {
+  border-radius: 0.5rem;
+  margin-bottom: 0px !important;
+}
+.freelancing .freelancing-main-content .nav-tabs .nav-link.active,
+.freelancing .freelancing-main-content .nav-tabs .nav-link:hover {
+  color: white;
+  background-color: purple;
+  box-shadow: 0 5px 4px rgba(0, 0, 0, 0.5);
+}
+.freelancing .freelancing-main-content ul li {
+  border: 1px solid black;
+  border-radius: 0.5rem;
+}
 
 /* End of Freelancing *//*# sourceMappingURL=freelancing.css.map */
