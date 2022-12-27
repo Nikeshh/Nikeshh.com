@@ -17,24 +17,31 @@
         <!-- Section 1 - Header and Introduction -->
         <div class="section-1">
             <div class="container">
-                <nav class="navbar navbar-expand-lg navbar-light" aria-label="Navbar Offcanvas">
-                    <a class="navbar-brand" href="#">Responsive offcanvas navbar</a>
+                <nav class="navbar navbar-expand-lg border-bottom" aria-label="Navbar Offcanvas">
+                    <a class="navbar-brand d-flex align-items-center" href="#">
+                        <img src="./assets/images/logo.png" alt="Avatar Logo" style="width:40px;"
+                        class="img-fluid img-thumbnail rounded-pill">
+                        <span class="ms-2 fs-4">Nikeshh Vijayabaskaran</span>
+                    </a>
                     <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                         <div class="offcanvas-header">
-                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                            <a class="navbar-brand d-flex align-items-center" href="#">
+                                <img src="./assets/images/logo.png" alt="Avatar Logo" style="width:40px;"
+                                class="img-fluid img-thumbnail rounded-pill">
+                                <span class="ms-2 fs-4">Nikeshh Vijayabaskaran</span>
+                            </a>
                             <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                         </div>
                         <div class="offcanvas-body">
-                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                                <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Link</a>
-                                </li>
-                                <li class="nav-item dropdown">
+                            <ul class="navbar-nav nav-pills justify-content-end flex-grow-1 pe-3 gap-md-2">
+                                <li class="nav-item"><a class="nav-link active ps-3 pe-3" aria-current="page" href="#">Home</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link ps-3 pe-3">About</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link ps-3 pe-3">Blog</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link ps-3 pe-3">Projects</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link ps-3 pe-3">Skills</a></li>
+                                <li class="nav-item dropdown ps-3 pe-3">
                                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        Dropdown
+                                        Others
                                     </a>
                                     <ul class="dropdown-menu">
                                         <li><a class="dropdown-item" href="#">Action</a></li>
@@ -45,43 +52,14 @@
                                         <li><a class="dropdown-item" href="#">Something else here</a></li>
                                     </ul>
                                 </li>
+                                <li class="nav-item"><a href="#" class="nav-link ps-3 pe-3">Contact Me</a></li>
                             </ul>
-                            <form class="d-flex mt-3 mt-lg-0" role="search">
-                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                                <button class="btn btn-outline-success" type="submit">Search</button>
-                            </form>
                         </div>
                     </div>
                     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                 </nav>
-                <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-                    <a href="/"
-                        class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-                        <img src="./assets/images/logo.png" alt="Avatar Logo" style="width:40px;"
-                            class="img-fluid img-thumbnail rounded-pill">
-                        <span class="ms-2 fs-4">Nikeshh</span>
-                    </a>
-
-                    <ul class="nav nav-pills">
-                        <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Projects</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Skills</a></li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button"
-                                data-bs-toggle="dropdown">Others</a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Link</a></li>
-                                <li><a class="dropdown-item" href="#">Another link</a></li>
-                                <li><a class="dropdown-item" href="#">A third link</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item"><a href="#" class="nav-link">Contact Me</a></li>
-                    </ul>
-                </header>
                 <div class="px-4 py-5">
                     <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
                         <div class="col-10 col-sm-8 col-lg-6">
@@ -91,8 +69,8 @@
                         <div class="col-lg-6">
                             <p class="border rounded-pill px-3 py-2 border-primary" style="width: fit-content">NEWSLETTER</p>
                             <h1 class="display-5 fw-bold lh-1 mb-3">Subscribe to Nikeshh's Newsletter to know more about tech, automation etc</h1>
-                            <p>I wont spam you. You can read my content whenever you are free.</p>
-                            <p>I sent newsletter weekly once.</p>
+                            <p class="fst-italic fw-light">I wont spam you. You can read my content whenever you are free.</p>
+                            <p class="fst-italic fw-bold">I send newsletter weekly once.</p>
                             <div class="d-grid gap-2 d-md-flex justify-content-md-start">
                                 <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Subscribe</button>
                             </div>
@@ -108,19 +86,19 @@
                     <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
                         <h1 class="display-4 fw-bold lh-1">Successfully launced 10 newsletters.</h1>
                         <div class="row mt-5" style="color: gray;">
-                            <div class="col-3">
+                            <div class="col-6 col-md-3">
                                 <h4>100K+</h4>
                                 <p>Subscribers</p>
                             </div>
-                            <div class="col-3">
+                            <div class="col-6 col-md-3">
                                 <h4>10</h4>
                                 <p>Newsletter</p>
                             </div>
-                            <div class="col-3">
+                            <div class="col-6 col-md-3">
                                 <h4>4</h4>
                                 <p>Different categories</p>
                             </div>
-                            <div class="col-3">
+                            <div class="col-6 col-md-3">
                                 <h4>99%</h4>
                                 <p>Engagement rate</p>
                             </div>

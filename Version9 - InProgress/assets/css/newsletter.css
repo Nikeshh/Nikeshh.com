@@ -7,6 +7,9 @@
   /* Section 3 - Testimonials */
   /* Section 4 - Footer */
 }
+.newsletter .section-1 .navbar-nav .active {
+  color: white;
+}
 .newsletter .section-4 .social-links {
   margin: 2rem 0rem;
   padding: 0rem;

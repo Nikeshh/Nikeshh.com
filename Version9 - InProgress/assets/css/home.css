@@ -11,6 +11,9 @@
   /* Section 7 - Contact Me */
   /* Section 8 - Footer */
 }
+.home .section-1 .navbar-nav .active {
+  color: white;
+}
 .home .section-1 .social-links {
   margin: 2rem 0rem;
   padding: 0rem;
