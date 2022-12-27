@@ -319,6 +319,7 @@ html {
   gap: 1rem;
   padding: 0rem;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .blog-single .social-links ul li {
   list-style: none;

@@ -20,6 +20,7 @@
   gap: 1rem;
   padding: 0rem;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .home .section-1 .social-links ul li {
   list-style: none;
@@ -114,6 +115,7 @@
   padding: 0rem;
   align-items: center;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .home .section-4 .links ul li {
   list-style: none;
@@ -185,6 +187,7 @@
   gap: 1rem;
   padding: 0rem;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .home .section-8 .social-links ul li {
   list-style: none;

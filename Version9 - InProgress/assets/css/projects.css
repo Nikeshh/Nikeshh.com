@@ -211,6 +211,7 @@ html {
   padding: 0rem;
   align-items: center;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .projects .projects-main-content .links ul li {
   list-style: none;
