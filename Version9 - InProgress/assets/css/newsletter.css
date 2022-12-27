@@ -11,6 +11,9 @@
 .newsletter .section-1 .navbar-nav .active {
   color: white;
 }
+.newsletter .section-3 a {
+  text-decoration: none;
+}
 .newsletter .section-5 .social-links {
   margin: 2rem 0rem;
   padding: 0rem;
