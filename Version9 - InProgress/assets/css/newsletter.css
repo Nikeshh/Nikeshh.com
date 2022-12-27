@@ -4,35 +4,36 @@
   scroll-behavior: smooth;
   /* Section 1 - Introduction */
   /* Section 2 - Details */
-  /* Section 3 - Testimonials */
-  /* Section 4 - Footer */
+  /* Section 3 - Downloads */
+  /* Section 5 - Testimonials */
+  /* Section 5 - Footer */
 }
 .newsletter .section-1 .navbar-nav .active {
   color: white;
 }
-.newsletter .section-4 .social-links {
+.newsletter .section-5 .social-links {
   margin: 2rem 0rem;
   padding: 0rem;
 }
-.newsletter .section-4 .social-links ul {
+.newsletter .section-5 .social-links ul {
   display: flex;
   gap: 1rem;
   padding: 0rem;
   flex-wrap: wrap;
   justify-content: center;
 }
-.newsletter .section-4 .social-links ul li {
+.newsletter .section-5 .social-links ul li {
   list-style: none;
 }
-.newsletter .section-4 .social-links ul li .fab {
+.newsletter .section-5 .social-links ul li .fab {
   font-size: 20px;
   line-height: 40px;
   transition: 0.3s;
 }
-.newsletter .section-4 .social-links ul li .fab:hover {
+.newsletter .section-5 .social-links ul li .fab:hover {
   color: #fff;
 }
-.newsletter .section-4 .social-links ul li a {
+.newsletter .section-5 .social-links ul li a {
   position: relative;
   display: block;
   width: 40px;
@@ -43,49 +44,49 @@
   transition: 0.6s;
   box-shadow: 0 5px 4px rgba(0, 0, 0, 0.5);
 }
-.newsletter .section-4 .social-links ul li a:hover {
+.newsletter .section-5 .social-links ul li a:hover {
   transform: translate(0, -10%);
 }
-.newsletter .section-4 .social-links ul li:nth-child(1) a {
+.newsletter .section-5 .social-links ul li:nth-child(1) a {
   color: rgba(0, 0, 0, 0.829);
 }
-.newsletter .section-4 .social-links ul li:nth-child(2) a {
+.newsletter .section-5 .social-links ul li:nth-child(2) a {
   color: #0072b1;
 }
-.newsletter .section-4 .social-links ul li:nth-child(3) a {
+.newsletter .section-5 .social-links ul li:nth-child(3) a {
   color: #8a3ab9;
 }
-.newsletter .section-4 .social-links ul li:nth-child(4) a {
+.newsletter .section-5 .social-links ul li:nth-child(4) a {
   color: #3b5998;
 }
-.newsletter .section-4 .social-links ul li:nth-child(5) a {
+.newsletter .section-5 .social-links ul li:nth-child(5) a {
   color: #1DA1F2;
 }
-.newsletter .section-4 .social-links ul li:nth-child(6) a {
+.newsletter .section-5 .social-links ul li:nth-child(6) a {
   color: #000;
 }
-.newsletter .section-4 .social-links ul li:nth-child(7) a {
+.newsletter .section-5 .social-links ul li:nth-child(7) a {
   color: #000;
 }
-.newsletter .section-4 .social-links ul li:nth-child(1) a:hover {
+.newsletter .section-5 .social-links ul li:nth-child(1) a:hover {
   background-color: rgba(0, 0, 0, 0.829);
 }
-.newsletter .section-4 .social-links ul li:nth-child(2) a:hover {
+.newsletter .section-5 .social-links ul li:nth-child(2) a:hover {
   background-color: #0072b1;
 }
-.newsletter .section-4 .social-links ul li:nth-child(3) a:hover {
+.newsletter .section-5 .social-links ul li:nth-child(3) a:hover {
   background-color: #8a3ab9;
 }
-.newsletter .section-4 .social-links ul li:nth-child(4) a:hover {
+.newsletter .section-5 .social-links ul li:nth-child(4) a:hover {
   background-color: #3b5998;
 }
-.newsletter .section-4 .social-links ul li:nth-child(5) a:hover {
+.newsletter .section-5 .social-links ul li:nth-child(5) a:hover {
   background-color: #1DA1F2;
 }
-.newsletter .section-4 .social-links ul li:nth-child(6) a:hover {
+.newsletter .section-5 .social-links ul li:nth-child(6) a:hover {
   background-color: #000;
 }
-.newsletter .section-4 .social-links ul li:nth-child(7) a:hover {
+.newsletter .section-5 .social-links ul li:nth-child(7) a:hover {
   background-color: #000;
 }
 
