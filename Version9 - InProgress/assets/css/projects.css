@@ -210,6 +210,7 @@ html {
   gap: 1rem;
   padding: 0rem;
   align-items: center;
+  flex-wrap: wrap;
 }
 .projects .projects-main-content .links ul li {
   list-style: none;

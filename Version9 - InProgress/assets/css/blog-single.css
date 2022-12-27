@@ -318,6 +318,7 @@ html {
   display: flex;
   gap: 1rem;
   padding: 0rem;
+  flex-wrap: wrap;
 }
 .blog-single .social-links ul li {
   list-style: none;
