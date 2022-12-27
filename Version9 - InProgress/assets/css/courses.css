@@ -147,7 +147,7 @@ html {
   display: flex;
   visibility: visible;
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 1024px) {
   .courses #sidebar {
     display: none;
     visibility: hidden;
