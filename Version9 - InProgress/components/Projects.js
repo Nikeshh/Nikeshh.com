@@ -125,7 +125,7 @@ const Projects = () => {
     ]
 
     return (
-        <div id="projectCarousel" className="carousel slide p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg" data-bs-ride="carousel">
+        <div id="projectCarousel" className="carousel slide p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg" data-bs-interval="false">
             <div className="carousel-inner">
                 <div className="carousel-item active">
                     <Project title={data[0]["title"]} description={data[0]["description"]} />
