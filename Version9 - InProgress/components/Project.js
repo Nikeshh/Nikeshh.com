@@ -1,16 +1,10 @@
-const Project = () => {
+const Project = ({ title, description }) => {
     return (
         <div className="row">
             <div className="col-lg-7 p-3 p-lg-5 pt-lg-3">
-                <h1 className="display-4 fw-bold lh-1">Foodbooze (Mobile App, Website, Analytics) -
-                    Complete Food Delivery or Food Ecommerce Solution</h1>
+                <h1 className="display-4 fw-bold lh-1">{ title }</h1>
                 <p>
-                    Developed a full-fledged food delivery application suite which includes a
-                    point-of-sale system, user food ordering application (Flutter), restaurant
-                    management system (React.JS), delivery application (Flutter) and custom data
-                    analytics system (Flask with Neural Network Machine learning model) to monitor
-                    and analyze the data to find insights based on the food data and to flag or
-                    detect the ones who alienate the system.
+                    { description }
                 </p>
                 <div className="links">
                     <ul className="justify-content-sm-center justify-content-md-start">

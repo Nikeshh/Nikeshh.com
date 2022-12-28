@@ -1,4 +1,7 @@
-var Project = function Project() {
+var Project = function Project(_ref) {
+    var title = _ref.title,
+        description = _ref.description;
+
     return React.createElement(
         "div",
         { className: "row" },
@@ -8,12 +11,12 @@ var Project = function Project() {
             React.createElement(
                 "h1",
                 { className: "display-4 fw-bold lh-1" },
-                "Foodbooze (Mobile App, Website, Analytics) - Complete Food Delivery or Food Ecommerce Solution"
+                title
             ),
             React.createElement(
                 "p",
                 null,
-                "Developed a full-fledged food delivery application suite which includes a point-of-sale system, user food ordering application (Flutter), restaurant management system (React.JS), delivery application (Flutter) and custom data analytics system (Flask with Neural Network Machine learning model) to monitor and analyze the data to find insights based on the food data and to flag or detect the ones who alienate the system."
+                description
             ),
             React.createElement(
                 "div",
