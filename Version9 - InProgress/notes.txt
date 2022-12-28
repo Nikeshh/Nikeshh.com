@@ -1,0 +1,6 @@
+Adding react directly to the website:
+https://reactjs.org/docs/add-react-to-a-website.html
+
+Command to convert jsx to js which is faster in production:
+npx babel --watch components --out-dir ./src --presets react-app/prod
+The above command converts the jsx in the components directly into js in production

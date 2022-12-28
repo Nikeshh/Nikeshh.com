@@ -220,14 +220,16 @@
                         <h1 class="display-4 fw-bold mb-4">Something I tried</h1>
                     </div>
                 </div>
-                <div id="projectCarousel"
+                <!-- React Project Container Component -->
+                <div id="projects_container"></div>
+                <!--<div id="projectCarousel"
                     class="carousel slide p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg"
                     data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <div class="row">
-                                <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
-                                    <h1 class="display-4 fw-bold lh-1">Foodbooze (Mobile App, Website, Analytics) -
+                            <div className="row">
+                                <div className="col-lg-7 p-3 p-lg-5 pt-lg-3">
+                                    <h1 className="display-4 fw-bold lh-1">Foodbooze (Mobile App, Website, Analytics) -
                                         Complete Food Delivery or Food Ecommerce Solution</h1>
                                     <p>
                                         Developed a full-fledged food delivery application suite which includes a
@@ -237,28 +239,28 @@
                                         and analyze the data to find insights based on the food data and to flag or
                                         detect the ones who alienate the system.
                                     </p>
-                                    <div class="links">
-                                        <ul class="justify-content-sm-center justify-content-md-start">
+                                    <div className="links">
+                                        <ul className="justify-content-sm-center justify-content-md-start">
                                             <li><a href="https://github.com/sanketbodke" target="blank"><i
-                                                        class="fab fa-github"></i></i></a></li>
-                                            <li><a href="https://codepen.io/sanketbodke"><i class="fab fa-codepen"
+                                                        className="fab fa-github"></i></a></li>
+                                            <li><a href="https://codepen.io/sanketbodke"><i className="fab fa-codepen"
                                                         target="blank"></i></a></li>
                                             <li><a type="button" href="https://www.rtrix.in" target="_blank"
-                                                    class="btn btn-outline-primary btn-lg px-4 me-md-2 fw-bold">View
+                                                    className="btn btn-outline-primary btn-lg px-4 me-md-2 fw-bold">View
                                                     Project</a></li>
                                         </ul>
                                     </div>
-                                    <div class="d-grid gap-2 d-md-flex justify-content-end mb-4 mb-lg-3 mt-auto">
+                                    <div className="d-grid gap-2 d-md-flex justify-content-end mb-4 mb-lg-3 mt-auto">
                                         <a href="#projectCarousel" role="button" data-bs-slide="prev"
-                                            class="btn btn-primary btn-lg px-4 me-md-2 fw-bold"><i
-                                                class="fa-regular fa-circle-left"></i></a>
+                                            className="btn btn-primary btn-lg px-4 me-md-2 fw-bold"><i
+                                                className="fa-regular fa-circle-left"></i></a>
                                         <a href="#projectCarousel" role="button" data-bs-slide="next"
-                                            class="btn btn-primary btn-lg px-4 me-md-2 fw-bold"><i
-                                                class="fa-regular fa-circle-right"></i></a>
+                                            className="btn btn-primary btn-lg px-4 me-md-2 fw-bold"><i
+                                                className="fa-regular fa-circle-right"></i></a>
                                     </div>
                                 </div>
-                                <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
-                                    <img class="rounded-lg-3" src="./assets/images/test.png" alt="" width="720">
+                                <div className="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
+                                    <img className="rounded-lg-3" src="./assets/images/test.png" alt="" width="720" />
                                 </div>
                             </div>
                         </div>
@@ -1218,7 +1220,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div>-->
                 <div class="mt-3 d-flex flex-column justify-content-center align-items-center">
                     <p class="fs-5" style="font-style: italic;"><u>I have many other projects as well, Many projects are
                             even open for others to collobrate</u></p>
@@ -2141,6 +2143,12 @@
             </footer>
         </div>
     </div>
+
+    <!-- React Production -->
+    <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
+    <!-- Projects React component -->
+    <script type="module" src="./src/projects.js"></script>
 
     <!-- Website JS -->
     <!--<script src="./assets/js/script.js"></script>-->
