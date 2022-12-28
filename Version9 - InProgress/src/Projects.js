@@ -1,4 +1,4 @@
-import Project from './Project.js';
+import Project from './projects/Project.js';
 
 var Projects = function Projects() {
     var data = [{

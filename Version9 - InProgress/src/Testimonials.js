@@ -1,4 +1,4 @@
-import Testimonial from './Testimonial.js';
+import Testimonial from './testimonials/Testimonial.js';
 
 var Testimonials = function Testimonials() {
     var data = [{
