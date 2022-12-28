@@ -11,11 +11,6 @@ var Skill = function Skill(_ref) {
     return React.createElement(
         "div",
         { "class": "tab-pane fade show " + active, id: id, role: "tabpanel", "aria-labelledby": ariaLabelledBy },
-        React.createElement(
-            "h1",
-            null,
-            id
-        ),
         React.createElement(Technologies, null),
         React.createElement(Blogs, null),
         React.createElement(Projects, null)
