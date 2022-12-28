@@ -14,8 +14,74 @@
 <body>
     <!-- Testimonials -->
     <div class="testimonials">
+        <!-- Header -->
+        <div class="container">
+            <nav class="navbar navbar-expand-lg border-bottom" aria-label="Navbar Offcanvas">
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <img src="./assets/images/logo.png" alt="Avatar Logo" style="width:40px;"
+                    class="img-fluid img-thumbnail rounded-pill">
+                    <span class="ms-2 fs-4">Nikeshh Vijayabaskaran</span>
+                </a>
+                <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <a class="navbar-brand d-flex align-items-center" href="#">
+                            <img src="./assets/images/logo.png" alt="Avatar Logo" style="width:40px;"
+                            class="img-fluid img-thumbnail rounded-pill">
+                            <span class="ms-2 fs-4">Nikeshh Vijayabaskaran</span>
+                        </a>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav nav-pills justify-content-end flex-grow-1 pe-3 gap-md-2">
+                            <li class="nav-item"><a class="nav-link ps-3 pe-3" aria-current="page" href="#">Home</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link active ps-3 pe-3">About</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link ps-3 pe-3">Blog</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link ps-3 pe-3">Projects</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link ps-3 pe-3">Skills</a></li>
+                            <li class="nav-item dropdown ps-3 pe-3">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Others
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item"><a href="#" class="nav-link ps-3 pe-3">Contact Me</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </nav>
+        </div>
+        
+        <!-- Testimonials Content -->
+        <div class="container my-5">
+            <div class="px-4 py-5">
+                <div class="row justify-content-center text-center">
+                    <div style="width: fit-content;">
+                        <p class="fw-bold">TESTIMONIALS</p>
+                        <h1 class="display-4 fw-bold mb-4">Somesayings about me</h1>
+                    </div>
+                </div>
+                <!-- React Testimonials Container Component -->
+                <div id="testimonials_container"></div>
+            </div>
+        </div>
     </div>
     
+    <!-- React Production -->
+    <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
+    <!-- Testimonials React component -->
+    <script type="module" src="./src/testimonials.js"></script>
+
     <!-- Website JS -->
     <script src="./assets/js/script.js"></script>
     <!-- Theme JS -->
