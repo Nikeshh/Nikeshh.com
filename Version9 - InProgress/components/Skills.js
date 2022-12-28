@@ -1,7 +1,9 @@
+import Skill from "./skills/Skill.js";
+
 const Skills = () => {
     return (
-        <div>
-            
+        <div class="tab-content" id="skillsTabContent">
+            <Skill />
         </div>
     );
 }
