@@ -1,4 +1,10 @@
 const SkillSingle = () => {
+
+    React.useEffect(() => {
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    }, []);
+    
     return (
         <div class="main-content w-100 h-100">
             <header class="text-bg-dark">

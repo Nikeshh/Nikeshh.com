@@ -1,4 +1,4 @@
-/* Blog - Single */
+/* Skill - Single */
 body {
   min-height: 100vh;
   min-height: -webkit-fill-available;
@@ -10,6 +10,7 @@ html {
 
 .skill-single {
   width: 100%;
+  /* Hide Scrollbars */
   /* CUSTOMIZE THE CAROUSEL
   -------------------------------------------------- */
   /* Carousel base class */
@@ -162,6 +163,10 @@ html {
 }
 .skill-single .main-content {
   overflow-y: scroll;
+}
+.skill-single .skill-details ::-webkit-scrollbar {
+  display: none;
+  scrollbar-width: none;
 }
 .skill-single .carousel {
   margin-bottom: 4rem;
@@ -435,4 +440,4 @@ html {
   background: gray;
 }
 
-/* End of Blog - Single *//*# sourceMappingURL=skill-single.css.map */
+/* End of Skill - Single *//*# sourceMappingURL=skill-single.css.map */

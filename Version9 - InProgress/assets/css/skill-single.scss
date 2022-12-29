@@ -1,4 +1,4 @@
-/* Blog - Single */
+/* Skill - Single */
 
 body {
   min-height: 100vh;
@@ -166,6 +166,14 @@ html {
 
   .main-content {
     overflow-y: scroll;
+  }
+
+  /* Hide Scrollbars */
+  .skill-details {
+    ::-webkit-scrollbar {
+      display: none;
+      scrollbar-width: none;
+    }
   }
 
   /* CUSTOMIZE THE CAROUSEL
@@ -540,4 +548,4 @@ html {
   }
 }
 
-/* End of Blog - Single */
+/* End of Skill - Single */
