@@ -6,14 +6,15 @@ var Skill = function Skill(_ref) {
     var _ref$active = _ref.active,
         active = _ref$active === undefined ? "" : _ref$active,
         id = _ref.id,
-        ariaLabelledBy = _ref.ariaLabelledBy;
+        ariaLabelledBy = _ref.ariaLabelledBy,
+        tabControl = _ref.tabControl;
 
     return React.createElement(
         "div",
         { "class": "tab-pane fade show " + active, id: id, role: "tabpanel", "aria-labelledby": ariaLabelledBy },
-        React.createElement(Technologies, null),
-        React.createElement(Blogs, null),
-        React.createElement(Projects, null)
+        React.createElement(Technologies, { tabControl: tabControl }),
+        React.createElement(Blogs, { tabControl: tabControl }),
+        React.createElement(Projects, { tabControl: tabControl })
     );
 };
 

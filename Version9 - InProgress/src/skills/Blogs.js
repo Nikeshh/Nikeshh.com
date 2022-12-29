@@ -1,6 +1,8 @@
 import Blog from "./Blog.js";
 
-var Blogs = function Blogs() {
+var Blogs = function Blogs(_ref) {
+    var tabControl = _ref.tabControl;
+
     return React.createElement(
         "div",
         { "class": "row mt-5" },
@@ -24,13 +26,13 @@ var Blogs = function Blogs() {
                     { "class": "col-3 ms-auto d-flex justify-content-end gap-2" },
                     React.createElement(
                         "a",
-                        { "class": "btn btn-primary mb-3", href: "#skillsBlogsCarousel",
+                        { "class": "btn btn-primary mb-3", href: "#" + tabControl + "skillsBlogsCarousel",
                             role: "button", "data-bs-slide": "prev" },
                         React.createElement("i", { "class": "fa fa-arrow-left" })
                     ),
                     React.createElement(
                         "a",
-                        { "class": "btn btn-primary mb-3", href: "#skillsBlogsCarousel",
+                        { "class": "btn btn-primary mb-3", href: "#" + tabControl + "skillsBlogsCarousel",
                             role: "button", "data-bs-slide": "next" },
                         React.createElement("i", { "class": "fa fa-arrow-right" })
                     )
@@ -38,7 +40,7 @@ var Blogs = function Blogs() {
             ),
             React.createElement(
                 "div",
-                { id: "skillsBlogsCarousel", "class": "carousel slide",
+                { id: tabControl + "skillsBlogsCarousel", "class": "carousel slide",
                     "data-bs-ride": "carousel" },
                 React.createElement(
                     "div",

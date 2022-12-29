@@ -1,6 +1,6 @@
 import Project from "./Project.js";
 
-const Projects = () => {
+const Projects = ({ tabControl }) => {
     return (
         <div class="row mt-5">
             <div class="col-12">
@@ -9,17 +9,17 @@ const Projects = () => {
                         <p>PROJECTS LINKED</p>
                     </div>
                     <div class="col-3 ms-auto d-flex justify-content-end gap-2">
-                        <a class="btn btn-primary mb-3" href="#skillsProjectsCarousel"
+                        <a class="btn btn-primary mb-3" href={"#" + tabControl + "skillsProjectsCarousel"}
                             role="button" data-bs-slide="prev">
                             <i class="fa fa-arrow-left"></i>
                         </a>
-                        <a class="btn btn-primary mb-3" href="#skillsProjectsCarousel"
+                        <a class="btn btn-primary mb-3" href={"#" + tabControl + "skillsProjectsCarousel"}
                             role="button" data-bs-slide="next">
                             <i class="fa fa-arrow-right"></i>
                         </a>
                     </div>
                 </div>
-                <div id="skillsProjectsCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div id={tabControl + "skillsProjectsCarousel"} class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <div class="row">

@@ -1,6 +1,8 @@
 import Technology from "./Technology.js";
 
-var Technologies = function Technologies() {
+var Technologies = function Technologies(_ref) {
+    var tabControl = _ref.tabControl;
+
     return React.createElement(
         "div",
         { "class": "row" },
@@ -24,13 +26,13 @@ var Technologies = function Technologies() {
                     { "class": "col-3 ms-auto d-flex justify-content-end gap-2" },
                     React.createElement(
                         "a",
-                        { "class": "btn btn-primary mb-3", href: "#skillsTechnologiesCarousel",
+                        { "class": "btn btn-primary mb-3", href: "#" + tabControl + "skillsTechnologiesCarousel",
                             role: "button", "data-bs-slide": "prev" },
                         React.createElement("i", { "class": "fa fa-arrow-left" })
                     ),
                     React.createElement(
                         "a",
-                        { "class": "btn btn-primary mb-3", href: "#skillsTechnologiesCarousel",
+                        { "class": "btn btn-primary mb-3", href: "#" + tabControl + "skillsTechnologiesCarousel",
                             role: "button", "data-bs-slide": "next" },
                         React.createElement("i", { "class": "fa fa-arrow-right" })
                     )
@@ -38,7 +40,7 @@ var Technologies = function Technologies() {
             ),
             React.createElement(
                 "div",
-                { id: "skillsTechnologiesCarousel", "class": "carousel slide", "data-bs-ride": "carousel" },
+                { id: tabControl + "skillsTechnologiesCarousel", "class": "carousel slide", "data-bs-ride": "carousel" },
                 React.createElement(
                     "div",
                     { "class": "carousel-inner" },

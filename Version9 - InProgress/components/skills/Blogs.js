@@ -1,6 +1,6 @@
 import Blog from "./Blog.js";
 
-const Blogs = () => {
+const Blogs = ({ tabControl }) => {
     return (
         <div class="row mt-5">
             <div class="col-12">
@@ -9,17 +9,17 @@ const Blogs = () => {
                         <p>BLOGS LINKED</p>
                     </div>
                     <div class="col-3 ms-auto d-flex justify-content-end gap-2">
-                        <a class="btn btn-primary mb-3" href="#skillsBlogsCarousel"
+                        <a class="btn btn-primary mb-3" href={"#" + tabControl + "skillsBlogsCarousel"}
                             role="button" data-bs-slide="prev">
                             <i class="fa fa-arrow-left"></i>
                         </a>
-                        <a class="btn btn-primary mb-3" href="#skillsBlogsCarousel"
+                        <a class="btn btn-primary mb-3" href={"#" + tabControl + "skillsBlogsCarousel"}
                             role="button" data-bs-slide="next">
                             <i class="fa fa-arrow-right"></i>
                         </a>
                     </div>
                 </div>
-                <div id="skillsBlogsCarousel" class="carousel slide"
+                <div id={tabControl + "skillsBlogsCarousel"} class="carousel slide"
                     data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
