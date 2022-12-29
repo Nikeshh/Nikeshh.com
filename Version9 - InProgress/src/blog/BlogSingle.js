@@ -887,7 +887,7 @@ var BlogSingle = function BlogSingle() {
                             { "class": "comments" },
                             React.createElement(
                                 "div",
-                                { "class": "row" },
+                                { "class": "row ms-2 ms-md-0 me-2 me-md-0" },
                                 React.createElement(
                                     "div",
                                     { "class": "col-2" },
@@ -910,7 +910,7 @@ var BlogSingle = function BlogSingle() {
                             ),
                             React.createElement(
                                 "div",
-                                { "class": "row mt-2" },
+                                { "class": "row mt-2 ms-2 ms-md-0 me-2 me-md-0" },
                                 React.createElement(
                                     "div",
                                     { "class": "col-2" },

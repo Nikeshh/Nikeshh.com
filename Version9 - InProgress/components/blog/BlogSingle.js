@@ -244,7 +244,7 @@ const BlogSingle = () => {
                                 <p>COMMENTS</p>
                             </div>
                             <div class="comments">
-                                <div class="row">
+                                <div class="row ms-2 ms-md-0 me-2 me-md-0">
                                     <div class="col-2">
                                         <img src="./assets/images/logo.png" alt="Profile Icon" class="img-thumbnail rounded-circle" />
                                     </div>
@@ -255,7 +255,7 @@ const BlogSingle = () => {
                                         <span class="ms-auto mt-auto">-- JOHN DOE</span>
                                     </div>
                                 </div>
-                                <div class="row mt-2">
+                                <div class="row mt-2 ms-2 ms-md-0 me-2 me-md-0">
                                     <div class="col-2">
                                         <img src="./assets/images/logo.png" alt="Profile Icon" class="img-thumbnail rounded-circle" />
                                     </div>
