@@ -106,68 +106,64 @@ var SkillSingle = function SkillSingle() {
             { "class": "m-3 m-md-5" },
             React.createElement(
                 "div",
-                { "class": "row" },
+                { "class": "d-flex flex-wrap justify-content-between align-items-center" },
+                React.createElement(
+                    "h1",
+                    { "class": "display-6" },
+                    "NODEJS"
+                ),
                 React.createElement(
                     "div",
-                    { "class": "d-flex justify-content-between align-items-center" },
+                    { "class": "skill-level show-9 d-flex flex-wrap justify-content-md-end" },
                     React.createElement(
-                        "h1",
-                        { "class": "display-6" },
-                        "NODEJS"
+                        "span",
+                        null,
+                        "\xA0"
                     ),
                     React.createElement(
-                        "div",
-                        { "class": "skill-level show-9 d-flex justify-content-end" },
-                        React.createElement(
-                            "span",
-                            null,
-                            "\xA0"
-                        ),
-                        React.createElement(
-                            "span",
-                            null,
-                            "\xA0"
-                        ),
-                        React.createElement(
-                            "span",
-                            null,
-                            "\xA0"
-                        ),
-                        React.createElement(
-                            "span",
-                            null,
-                            "\xA0"
-                        ),
-                        React.createElement(
-                            "span",
-                            null,
-                            "\xA0"
-                        ),
-                        React.createElement(
-                            "span",
-                            null,
-                            "\xA0"
-                        ),
-                        React.createElement(
-                            "span",
-                            null,
-                            "\xA0"
-                        ),
-                        React.createElement(
-                            "span",
-                            null,
-                            "\xA0"
-                        ),
-                        React.createElement(
-                            "span",
-                            null,
-                            "\xA0"
-                        ),
-                        React.createElement(
-                            "span",
-                            null,
-                            "\xA0"
-                        )
+                        "span",
+                        null,
+                        "\xA0"
+                    ),
+                    React.createElement(
+                        "span",
+                        null,
+                        "\xA0"
+                    ),
+                    React.createElement(
+                        "span",
+                        null,
+                        "\xA0"
+                    ),
+                    React.createElement(
+                        "span",
+                        null,
+                        "\xA0"
+                    ),
+                    React.createElement(
+                        "span",
+                        null,
+                        "\xA0"
+                    ),
+                    React.createElement(
+                        "span",
+                        null,
+                        "\xA0"
+                    ),
+                    React.createElement(
+                        "span",
+                        null,
+                        "\xA0"
+                    ),
+                    React.createElement(
+                        "span",
+                        null,
+                        "\xA0"
+                    ),
+                    React.createElement(
+                        "span",
+                        null,
+                        "\xA0"
                     )
                 )
             ),
@@ -179,7 +175,7 @@ var SkillSingle = function SkillSingle() {
                     { "class": "col-12 col-md-12 skill-details shadow-lg p-3 bg-white rounded" },
                     React.createElement(
                         "div",
-                        { "class": "d-flex gap-2" },
+                        { "class": "d-flex gap-2 flex-wrap" },
                         React.createElement(
                             "div",
                             { "class": "p-2 border border-primary rounded-2" },
@@ -197,7 +193,7 @@ var SkillSingle = function SkillSingle() {
                         ),
                         React.createElement(
                             "div",
-                            { "class": "p-2 border border-primary rounded-2 ms-auto" },
+                            { "class": "p-2 border border-primary rounded-2 ms-md-auto" },
                             "CONTACT ME"
                         ),
                         React.createElement(

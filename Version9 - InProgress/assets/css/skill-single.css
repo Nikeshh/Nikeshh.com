@@ -391,7 +391,6 @@ html {
 .skill-single .skill-level {
   height: 1em;
   margin: 10px 0px;
-  min-width: 400px;
 }
 .skill-single .skill-level span {
   background: linear-gradient(#093, #3f9, #093);

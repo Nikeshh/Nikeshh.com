@@ -41,10 +41,9 @@ const SkillSingle = () => {
             </header>
             {/* Skill Content - Part without header */}
             <div class="m-3 m-md-5">
-                <div class="row">
-                    <div class="d-flex justify-content-between align-items-center">
+                <div class="d-flex flex-wrap justify-content-between align-items-center">
                     <h1 class="display-6">NODEJS</h1>
-                    <div class="skill-level show-9 d-flex justify-content-end">
+                    <div class="skill-level show-9 d-flex flex-wrap justify-content-md-end">
                         <span>&nbsp;</span>
                         <span>&nbsp;</span>
                         <span>&nbsp;</span>
@@ -55,27 +54,26 @@ const SkillSingle = () => {
                         <span>&nbsp;</span>
                         <span>&nbsp;</span>
                         <span>&nbsp;</span>
-                    </div>
                     </div>
                 </div>
                 <div class="row">
                     {/* Skill Details */}
                     <div class="col-12 col-md-12 skill-details shadow-lg p-3 bg-white rounded">
-                        <div class="d-flex gap-2">
+                        <div class="d-flex gap-2 flex-wrap">
                             <div class="p-2 border border-primary rounded-2">
-                            CONTRIBUTE
+                                CONTRIBUTE
                             </div>
                             <div class="p-2 border border-primary rounded-2">
-                            LINKED BLOGS
+                                LINKED BLOGS
                             </div>
                             <div class="p-2 border border-primary rounded-2">
-                            LINKED PROJECTS
+                                LINKED PROJECTS
                             </div>
-                            <div class="p-2 border border-primary rounded-2 ms-auto">
-                            CONTACT ME
+                            <div class="p-2 border border-primary rounded-2 ms-md-auto">
+                                CONTACT ME
                             </div>
                             <div class="p-2 border border-danger rounded-circle">
-                            ❤️
+                                ❤️
                             </div>
                         </div>
                         <div class="overflow-scroll skill-content mt-3">
