@@ -1,7 +1,7 @@
 var BlogSingle = function BlogSingle() {
     return React.createElement(
         "div",
-        { "class": "main-content w-100" },
+        { "class": "main-content w-100 h-100" },
         React.createElement(
             "header",
             { "class": "text-bg-dark" },
