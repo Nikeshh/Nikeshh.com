@@ -1,4 +1,4 @@
-/* Skill - Single */
+/* Blog - Single */
 body {
   min-height: 100vh;
   min-height: -webkit-fill-available;
@@ -26,6 +26,12 @@ html {
   /* rtl:end:remove */
   /* RESPONSIVE CSS
   -------------------------------------------------- */
+  /* Pagination */
+  /*
+  * Blog posts
+  */
+  /* Comments */
+  /* Social Links */
   /* Skill level bar */
 }
 .skill-single .bd-placeholder-img {
@@ -78,7 +84,7 @@ html {
   height: -webkit-fill-available;
   max-height: 100vh;
   overflow-x: auto;
-  overflow-y: hidden;
+  overflow-y: scroll;
 }
 .skill-single .dropdown-toggle {
   outline: 0;
@@ -155,22 +161,7 @@ html {
   }
 }
 .skill-single .main-content {
-  width: 100%;
-  height: 100%;
-}
-.skill-single .main-content .skill-details {
-  height: calc(100vh - 10rem);
-  /* Scroll bar inside skill details will get disappear */
-}
-.skill-single .main-content .skill-details ::-webkit-scrollbar {
-  width: 0; /* Remove scrollbar space */
-  background: transparent; /* Optional: just make scrollbar invisible */
-}
-.skill-single .main-content .skill-details .skill-content {
-  height: calc(100vh - 10rem - 5rem);
-}
-.skill-single .main-content .comments .comment {
-  background-color: #CBC3E3;
+  overflow-y: scroll;
 }
 .skill-single .carousel {
   margin-bottom: 4rem;
@@ -194,7 +185,8 @@ html {
   margin-left: 0.75rem;
 }
 .skill-single .feature-divider {
-  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+  margin: 5rem 0;
+  /* Space out the Bootstrap <hr> more */
 }
 .skill-single .feature-heading {
   letter-spacing: -0.05rem;
@@ -216,6 +208,185 @@ html {
   .skill-single .feature-heading {
     margin-top: 7rem;
   }
+}
+.skill-single .bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+      user-select: none;
+}
+@media (min-width: 768px) {
+  .skill-single .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+.skill-single .b-example-divider {
+  height: 3rem;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: solid rgba(0, 0, 0, 0.15);
+  border-width: 1px 0;
+  box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, 0.1), inset 0 0.125em 0.5em rgba(0, 0, 0, 0.15);
+}
+.skill-single .b-example-vr {
+  flex-shrink: 0;
+  width: 1.5rem;
+  height: 100vh;
+}
+.skill-single .bi {
+  vertical-align: -0.125em;
+  fill: currentColor;
+}
+.skill-single .nav-scroller {
+  position: relative;
+  z-index: 2;
+  height: 2.75rem;
+  overflow-y: hidden;
+}
+.skill-single .nav-scroller .nav {
+  display: flex;
+  flex-wrap: nowrap;
+  padding-bottom: 1rem;
+  margin-top: -1px;
+  overflow-x: auto;
+  text-align: center;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+.skill-single .blog-header {
+  border-bottom: 1px solid #e5e5e5;
+}
+.skill-single .blog-header-logo {
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+  font-size: 2.25rem;
+}
+.skill-single .blog-header-logo:hover {
+  text-decoration: none;
+}
+.skill-single h1,
+.skill-single h2,
+.skill-single h3,
+.skill-single h4,
+.skill-single h5,
+.skill-single h6 {
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+}
+.skill-single .display-4 {
+  font-size: 2.5rem;
+}
+@media (min-width: 768px) {
+  .skill-single .display-4 {
+    font-size: 3rem;
+  }
+}
+.skill-single .flex-auto {
+  flex: 0 0 auto;
+}
+.skill-single .h-250 {
+  height: 250px;
+}
+.skill-single .text-bg-dark {
+  color: #fff !important;
+  background-color: RGBA(33, 37, 41, var(--bs-bg-opacity, 1)) !important;
+}
+@media (min-width: 768px) {
+  .skill-single .h-md-250 {
+    height: 250px;
+  }
+}
+.skill-single .blog-pagination {
+  margin-bottom: 4rem;
+}
+.skill-single .blog-post {
+  margin-bottom: 4rem;
+}
+.skill-single .blog-post-title {
+  font-size: 2.5rem;
+}
+.skill-single .blog-post-meta {
+  margin-bottom: 1.25rem;
+  color: #727272;
+}
+.skill-single .comments .comment {
+  background-color: #CBC3E3;
+}
+.skill-single .social-links {
+  margin: 2rem 0rem;
+  padding: 0rem;
+}
+.skill-single .social-links ul {
+  display: flex;
+  gap: 1rem;
+  padding: 0rem;
+  flex-wrap: wrap;
+}
+.skill-single .social-links ul li {
+  list-style: none;
+}
+.skill-single .social-links ul li .fab {
+  font-size: 30px;
+  line-height: 60px;
+  transition: 0.3s;
+}
+.skill-single .social-links ul li .fab:hover {
+  color: #fff;
+}
+.skill-single .social-links ul li a {
+  position: relative;
+  display: block;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #fff;
+  text-align: center;
+  transition: 0.6s;
+  box-shadow: 0 5px 4px rgba(0, 0, 0, 0.5);
+}
+.skill-single .social-links ul li a:hover {
+  transform: translate(0, -10%);
+}
+.skill-single .social-links ul li:nth-child(1) a {
+  color: rgba(0, 0, 0, 0.829);
+}
+.skill-single .social-links ul li:nth-child(2) a {
+  color: #0072b1;
+}
+.skill-single .social-links ul li:nth-child(3) a {
+  color: #8a3ab9;
+}
+.skill-single .social-links ul li:nth-child(4) a {
+  color: #3b5998;
+}
+.skill-single .social-links ul li:nth-child(5) a {
+  color: #1DA1F2;
+}
+.skill-single .social-links ul li:nth-child(6) a {
+  color: #000;
+}
+.skill-single .social-links ul li:nth-child(7) a {
+  color: #000;
+}
+.skill-single .social-links ul li:nth-child(1) a:hover {
+  background-color: rgba(0, 0, 0, 0.829);
+}
+.skill-single .social-links ul li:nth-child(2) a:hover {
+  background-color: #0072b1;
+}
+.skill-single .social-links ul li:nth-child(3) a:hover {
+  background-color: #8a3ab9;
+}
+.skill-single .social-links ul li:nth-child(4) a:hover {
+  background-color: #3b5998;
+}
+.skill-single .social-links ul li:nth-child(5) a:hover {
+  background-color: #1DA1F2;
+}
+.skill-single .social-links ul li:nth-child(6) a:hover {
+  background-color: #000;
+}
+.skill-single .social-links ul li:nth-child(7) a:hover {
+  background-color: #000;
 }
 .skill-single .skill-level {
   height: 1em;
@@ -265,4 +436,4 @@ html {
   background: gray;
 }
 
-/* End of Skill - Single *//*# sourceMappingURL=skill-single.css.map */
+/* End of Blog - Single *//*# sourceMappingURL=skill-single.css.map */

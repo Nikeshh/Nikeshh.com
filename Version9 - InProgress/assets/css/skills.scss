@@ -142,6 +142,35 @@ html {
     outline: 0;
   }
 
+  .main-content {
+    overflow-y: scroll;
+  }
+
+  .skills-main-content {
+    .nav-tabs {
+        border-bottom: 0px !important;
+
+        .nav-link {
+            border-radius: .5rem;
+            margin-bottom: 0px !important;
+        }
+
+        .nav-link.active,
+        .nav-link:hover {
+            color: white;
+            background-color: purple;
+            box-shadow: 0 5px 4px rgba(0, 0, 0, .5);
+        }
+    }
+
+    ul {
+        li{
+            border: 1px solid black;
+            border-radius: .5rem;
+        }
+    }
+  }
+
   #sidebar-mobile {
     display: none;
     visibility: hidden;
@@ -164,10 +193,6 @@ html {
     }
   }
 
-  .main-content {
-    overflow-y: scroll;
-  }
-
   /* CUSTOMIZE THE CAROUSEL
   -------------------------------------------------- */
 
@@ -185,23 +210,7 @@ html {
   /* Declare heights because of positioning of img element */
   .carousel-item {
     height: fit-content;
-    max-height: 32rem;
   }
-
-  /* MARKETING CONTENT
-  -------------------------------------------------- */
-
-  /* Center align the text within the three columns below the carousel */
-  .marketing .col-lg-4 {
-    margin-bottom: 1.5rem;
-    text-align: center;
-  }
-  /* rtl:begin:ignore */
-  .marketing .col-lg-4 p {
-    margin-right: 0.75rem;
-    margin-left: 0.75rem;
-  }
-  /* rtl:end:ignore */
 
   /* Features ------------------------- */
 
@@ -236,31 +245,6 @@ html {
   @media (min-width: 62em) {
     .feature-heading {
       margin-top: 7rem;
-    }
-  }
-
-  .skills-main-content {
-    .nav-tabs {
-        border-bottom: 0px !important;
-
-        .nav-link {
-            border-radius: .5rem;
-            margin-bottom: 0px !important;
-        }
-
-        .nav-link.active,
-        .nav-link:hover {
-            color: white;
-            background-color: purple;
-            box-shadow: 0 5px 4px rgba(0, 0, 0, .5);
-        }
-    }
-
-    ul {
-        li{
-            border: 1px solid black;
-            border-radius: .5rem;
-        }
     }
   }
 }

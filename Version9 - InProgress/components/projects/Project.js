@@ -1,4 +1,4 @@
-const Project = ({ title, description }) => {
+const Project = ({ title, description, carousel=true }) => {
     return (
         <div className="row">
             <div className="col-lg-7 p-3 p-lg-5 pt-lg-3">
@@ -17,14 +17,16 @@ const Project = ({ title, description }) => {
                                 Project</a></li>
                     </ul>
                 </div>
-                <div className="d-grid gap-2 d-md-flex justify-content-end mb-4 mb-lg-3 mt-auto">
-                    <a href="#projectCarousel" role="button" data-bs-slide="prev"
-                        className="btn btn-primary btn-lg px-4 me-md-2 fw-bold"><i
-                            className="fa-regular fa-circle-left"></i></a>
-                    <a href="#projectCarousel" role="button" data-bs-slide="next"
-                        className="btn btn-primary btn-lg px-4 me-md-2 fw-bold"><i
-                            className="fa-regular fa-circle-right"></i></a>
-                </div>
+                { carousel && 
+                    <div className="d-grid gap-2 d-md-flex justify-content-end mb-4 mb-lg-3 mt-auto">
+                        <a href="#projectCarousel" role="button" data-bs-slide="prev"
+                            className="btn btn-primary btn-lg px-4 me-md-2 fw-bold"><i
+                                className="fa-regular fa-circle-left"></i></a>
+                        <a href="#projectCarousel" role="button" data-bs-slide="next"
+                            className="btn btn-primary btn-lg px-4 me-md-2 fw-bold"><i
+                                className="fa-regular fa-circle-right"></i></a>
+                    </div>
+                }
             </div>
             <div className="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
                 <img className="rounded-lg-3" src="./assets/images/placeholder.png" alt="" width="720" />

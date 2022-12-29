@@ -1,6 +1,8 @@
 var Project = function Project(_ref) {
     var title = _ref.title,
-        description = _ref.description;
+        description = _ref.description,
+        _ref$carousel = _ref.carousel,
+        carousel = _ref$carousel === undefined ? true : _ref$carousel;
 
     return React.createElement(
         "div",
@@ -56,7 +58,7 @@ var Project = function Project(_ref) {
                     )
                 )
             ),
-            React.createElement(
+            carousel && React.createElement(
                 "div",
                 { className: "d-grid gap-2 d-md-flex justify-content-end mb-4 mb-lg-3 mt-auto" },
                 React.createElement(

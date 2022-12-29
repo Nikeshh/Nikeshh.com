@@ -15,11 +15,6 @@ html {
   /* Carousel base class */
   /* Since positioning the image, we need to help out the caption */
   /* Declare heights because of positioning of img element */
-  /* MARKETING CONTENT
-  -------------------------------------------------- */
-  /* Center align the text within the three columns below the carousel */
-  /* rtl:begin:ignore */
-  /* rtl:end:ignore */
   /* Features ------------------------- */
   /* Thin out the marketing headings */
   /* rtl:begin:remove */
@@ -135,6 +130,26 @@ html {
 .skills .dropdown-toggle {
   outline: 0;
 }
+.skills .main-content {
+  overflow-y: scroll;
+}
+.skills .skills-main-content .nav-tabs {
+  border-bottom: 0px !important;
+}
+.skills .skills-main-content .nav-tabs .nav-link {
+  border-radius: 0.5rem;
+  margin-bottom: 0px !important;
+}
+.skills .skills-main-content .nav-tabs .nav-link.active,
+.skills .skills-main-content .nav-tabs .nav-link:hover {
+  color: white;
+  background-color: purple;
+  box-shadow: 0 5px 4px rgba(0, 0, 0, 0.5);
+}
+.skills .skills-main-content ul li {
+  border: 1px solid black;
+  border-radius: 0.5rem;
+}
 .skills #sidebar-mobile {
   display: none;
   visibility: hidden;
@@ -153,9 +168,6 @@ html {
     visibility: visible;
   }
 }
-.skills .main-content {
-  overflow-y: scroll;
-}
 .skills .carousel {
   margin-bottom: 4rem;
 }
@@ -167,15 +179,6 @@ html {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  max-height: 32rem;
-}
-.skills .marketing .col-lg-4 {
-  margin-bottom: 1.5rem;
-  text-align: center;
-}
-.skills .marketing .col-lg-4 p {
-  margin-right: 0.75rem;
-  margin-left: 0.75rem;
 }
 .skills .feature-divider {
   margin: 5rem 0; /* Space out the Bootstrap <hr> more */
@@ -200,23 +203,6 @@ html {
   .skills .feature-heading {
     margin-top: 7rem;
   }
-}
-.skills .skills-main-content .nav-tabs {
-  border-bottom: 0px !important;
-}
-.skills .skills-main-content .nav-tabs .nav-link {
-  border-radius: 0.5rem;
-  margin-bottom: 0px !important;
-}
-.skills .skills-main-content .nav-tabs .nav-link.active,
-.skills .skills-main-content .nav-tabs .nav-link:hover {
-  color: white;
-  background-color: purple;
-  box-shadow: 0 5px 4px rgba(0, 0, 0, 0.5);
-}
-.skills .skills-main-content ul li {
-  border: 1px solid black;
-  border-radius: 0.5rem;
 }
 
 /* End of Skills *//*# sourceMappingURL=skills.css.map */
