@@ -12,4 +12,5 @@ data-bs-interval="false" stops the carousel to scroll in bootstrap. If scroll is
 Add in index.html for maintenance or development mode:
 <div class="row">
     <p class="d-flex justify-content-center fw-bold fst-italic">This website is under development. Some of the sections will have placeholders.</p>
+    <p class="d-flex justify-content-center fw-bold fst-italic">If you are trying to contact me, reach out directly at nikeshhbaskaran01@gmail.com or +1 (416)-834-5350</p>
 </div>
