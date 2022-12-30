@@ -52,9 +52,9 @@ const BlogSingle = () => {
                                         target="_blank"><i class="fab fa-facebook"></i></a></li>
                                     <li><a href="https://twitter.com/NikeshhV" target="_blank"><i
                                         class="fab fa-twitter"></i></a></li>
-                                    <li><a href="https://codepen.io/nikeshh"><i class="fab fa-codepen"
+                                    <li><a href="https://codepen.io/nikeshh" target="_blank"><i class="fab fa-codepen"
                                         target="_blank"></i></a></li>
-                                    <li><a href="https://medium.com/@nikeshhvijayabaskaran"><i class="fab fa-medium"
+                                    <li><a href="https://medium.com/@nikeshhvijayabaskaran" target="_blank"><i class="fab fa-medium"
                                         target="_blank"></i></a></li>
                                 </ul>
                             </div>

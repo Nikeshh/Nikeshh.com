@@ -180,7 +180,7 @@ var BlogSingle = function BlogSingle() {
                                     null,
                                     React.createElement(
                                         "a",
-                                        { href: "https://codepen.io/nikeshh" },
+                                        { href: "https://codepen.io/nikeshh", target: "_blank" },
                                         React.createElement("i", { "class": "fab fa-codepen",
                                             target: "_blank" })
                                     )
@@ -190,7 +190,7 @@ var BlogSingle = function BlogSingle() {
                                     null,
                                     React.createElement(
                                         "a",
-                                        { href: "https://medium.com/@nikeshhvijayabaskaran" },
+                                        { href: "https://medium.com/@nikeshhvijayabaskaran", target: "_blank" },
                                         React.createElement("i", { "class": "fab fa-medium",
                                             target: "_blank" })
                                     )
