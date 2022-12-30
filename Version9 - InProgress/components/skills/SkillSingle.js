@@ -11,7 +11,7 @@ const SkillSingle = () => {
                 <div class="container-fluid">
                     <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
                     <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
-                        <i class="fa-solid fa-caret-left"></i> NodeJS
+                        <i class="fa-solid fa-arrow-left me-2"></i> NodeJS
                     </a>
                     <div class="tag ms-2 border border-primary p-2 rounded-2 text-white-50" data-bs-html="true"
                         data-bs-toggle="tooltip" data-bs-placement="bottom"

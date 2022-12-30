@@ -24,7 +24,7 @@ var SkillSingle = function SkillSingle() {
                     React.createElement(
                         "a",
                         { href: "/", "class": "d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none" },
-                        React.createElement("i", { "class": "fa-solid fa-caret-left" }),
+                        React.createElement("i", { "class": "fa-solid fa-arrow-left me-2" }),
                         " NodeJS"
                     ),
                     React.createElement(

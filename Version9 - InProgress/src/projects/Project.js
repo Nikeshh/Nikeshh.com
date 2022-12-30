@@ -1,5 +1,6 @@
 var Project = function Project(_ref) {
-    var title = _ref.title,
+    var index = _ref.index,
+        title = _ref.title,
         description = _ref.description,
         _ref$carousel = _ref.carousel,
         carousel = _ref$carousel === undefined ? true : _ref$carousel;
@@ -51,9 +52,9 @@ var Project = function Project(_ref) {
                         null,
                         React.createElement(
                             "a",
-                            { type: "button", href: "https://www.rtrix.in", target: "_blank",
+                            { type: "button", href: "project-single.html?index=" + index, target: "_blank",
                                 className: "btn btn-outline-primary btn-lg px-4 me-md-2 fw-bold" },
-                            "View Project"
+                            "View / Explore Project"
                         )
                     )
                 )

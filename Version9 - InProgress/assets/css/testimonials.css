@@ -6,6 +6,10 @@
 .testimonials .navbar-nav .active {
   color: white;
 }
+.testimonials .navbar-nav .nav-link:not(.active):hover {
+  border: 1px solid #8a3ab9;
+  color: #8a3ab9;
+}
 .testimonials .about-me-control:hover {
   color: green;
   background-color: white;

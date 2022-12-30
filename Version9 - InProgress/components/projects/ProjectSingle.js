@@ -1,9 +1,25 @@
+import { projects } from './data.js';
+
 const ProjectSingle = () => {
+
+    const [title, setTitle] = React.useState("");
 
     React.useEffect(() => {
         const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
         const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+
+        var index = getUrlValues()["index"];
+        var project = projects[index];
+        setTitle(project["title"]);
     }, []);
+
+    function getUrlValues() { 
+        var vars = {}; 
+        window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m, key, value) { 
+           vars[key] = value; 
+        });
+        return vars;
+    }
       
     return (
         <div class="main-content w-100 h-100">
@@ -11,7 +27,7 @@ const ProjectSingle = () => {
                 <div class="container-fluid">
                     <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
                         <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
-                            <i class="fa-solid fa-caret-left"></i> Foodbooze
+                            <i class="fa-solid fa-arrow-left me-2"></i> { title }
                         </a>
                         <div class="tag ms-2 border border-primary p-2 rounded-2 text-white-50" data-bs-html="true"
                             data-bs-toggle="tooltip" data-bs-placement="bottom"
@@ -48,7 +64,7 @@ const ProjectSingle = () => {
             {/* Skill Content - Part without header */}
             <div class="m-3 m-md-5">
                 <div class="d-flex flex-wrap justify-content-between align-items-center">
-                    <h1 class="display-6">Foodbooze</h1>
+                    <h1 class="display-6">{ title }</h1>
                     <div class="skill-level show-9 d-flex flex-wrap justify-content-md-end">
                         <span>&nbsp;</span>
                         <span>&nbsp;</span>

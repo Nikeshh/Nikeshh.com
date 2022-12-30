@@ -1,4 +1,4 @@
-const Project = ({ title, description, carousel=true }) => {
+const Project = ({ index, title, description, carousel=true }) => {
     return (
         <div className="row">
             <div className="col-lg-7 p-3 p-lg-5 pt-lg-3">
@@ -12,8 +12,8 @@ const Project = ({ title, description, carousel=true }) => {
                                     className="fab fa-github"></i></a></li>
                         <li><a href="https://codepen.io/sanketbodke"><i className="fab fa-codepen"
                                     target="blank"></i></a></li>
-                        <li><a type="button" href="https://www.rtrix.in" target="_blank"
-                                className="btn btn-outline-primary btn-lg px-4 me-md-2 fw-bold">View
+                        <li><a type="button" href={"project-single.html?index=" + index} target="_blank"
+                                className="btn btn-outline-primary btn-lg px-4 me-md-2 fw-bold">View / Explore
                                 Project</a></li>
                     </ul>
                 </div>

@@ -6,5 +6,9 @@
 .contact .navbar-nav .active {
   color: white;
 }
+.contact .navbar-nav .nav-link:not(.active):hover {
+  border: 1px solid #8a3ab9;
+  color: #8a3ab9;
+}
 
 /* End of Contact *//*# sourceMappingURL=contact.css.map */

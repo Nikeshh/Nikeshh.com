@@ -11,6 +11,10 @@
 .newsletter .section-1 .navbar-nav .active {
   color: white;
 }
+.newsletter .section-1 .navbar-nav .nav-link:not(.active):hover {
+  border: 1px solid #8a3ab9;
+  color: #8a3ab9;
+}
 .newsletter .section-3 a {
   text-decoration: none;
 }

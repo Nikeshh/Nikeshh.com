@@ -6,6 +6,10 @@
 .about .navbar-nav .active {
   color: white;
 }
+.about .navbar-nav .nav-link:not(.active):hover {
+  border: 1px solid #8a3ab9;
+  color: #8a3ab9;
+}
 .about .about-me-control:hover {
   color: green;
   background-color: white;
