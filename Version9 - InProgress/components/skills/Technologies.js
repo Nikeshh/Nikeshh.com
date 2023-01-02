@@ -1,6 +1,28 @@
 import Technology from "./Technology.js";
 
-const Technologies = ({ tabControl }) => {
+const Technologies = ({ tabControl, data=[] }) => {
+
+    const createCarouselItems = () => {
+        var carouselRow = [];
+        const numberOfFours = data.length / 4;
+        for(var i=0; i < numberOfFours; i++) {
+            var carouselItems = [];
+            for(var j=0; j<4; j++) {
+                if(data.length == 0) {
+                    break;
+                }
+                var technology = data.shift();
+                carouselItems.push(<Technology data={ technology } />);
+            }
+            if(i == 0) {
+                carouselRow.push(<div class="carousel-item active"><div class="row">{ carouselItems }</div></div>)
+            } else {
+                carouselRow.push(<div class="carousel-item"><div class="row">{ carouselItems }</div></div>)
+            }
+        }
+        return carouselRow;
+    }
+
     return (
         <div class="row">
             <div class="col-12">
@@ -21,30 +43,7 @@ const Technologies = ({ tabControl }) => {
                 </div>
                 <div id={tabControl + "skillsTechnologiesCarousel"} class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <div class="row">
-                                <Technology />
-                                <Technology />
-                                <Technology />
-                                <Technology />
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="row">
-                                <Technology />
-                                <Technology />
-                                <Technology />
-                                <Technology />
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="row">
-                                <Technology />
-                                <Technology />
-                                <Technology />
-                                <Technology />
-                            </div>
-                        </div>
+                        { createCarouselItems() }
                     </div>
                 </div>
             </div>

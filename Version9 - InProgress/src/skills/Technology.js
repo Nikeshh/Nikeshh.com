@@ -1,27 +1,30 @@
-var Technology = function Technology() {
+var Technology = function Technology(_ref) {
+    var _ref$data = _ref.data,
+        data = _ref$data === undefined ? { "name": "", "description": "", "image": "", "learn-more": "" } : _ref$data;
+
     return React.createElement(
         "div",
         { "class": "col-md-3 mb-3" },
         React.createElement(
             "div",
             { "class": "card" },
-            React.createElement("img", { "class": "img-fluid", alt: "100%x280", src: "./assets/images/skills/nodejs.png" }),
+            React.createElement("img", { "class": "img-fluid", alt: "100%x280", src: data["image"] }),
             React.createElement(
                 "div",
                 { "class": "card-body" },
                 React.createElement(
                     "h4",
                     { "class": "card-title" },
-                    "NodeJS"
+                    data["name"]
                 ),
                 React.createElement(
                     "p",
                     { "class": "card-text" },
-                    "Node.js\xAE is a powerful runtime running on Chrome's V8 Javascript engine helping us to develop backend applications"
+                    data["description"]
                 ),
                 React.createElement(
                     "a",
-                    { href: "#" },
+                    { href: "projects.html?learn-more=" + data["learn-more"] },
                     "LEARN MORE"
                 )
             )

@@ -2,7 +2,7 @@ var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = [
 
 function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
 
-import { projects } from './data.js';
+import { projects } from '../data/data.js';
 
 var ProjectSingle = function ProjectSingle() {
     var _React$useState = React.useState(""),

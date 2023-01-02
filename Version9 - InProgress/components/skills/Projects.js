@@ -1,6 +1,6 @@
 import Project from "./Project.js";
 
-const Projects = ({ tabControl }) => {
+const Projects = ({ tabControl, data=[] }) => {
     return (
         <div class="row mt-5">
             <div class="col-12">

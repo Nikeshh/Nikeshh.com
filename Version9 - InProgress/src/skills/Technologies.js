@@ -1,7 +1,47 @@
 import Technology from "./Technology.js";
 
 var Technologies = function Technologies(_ref) {
-    var tabControl = _ref.tabControl;
+    var tabControl = _ref.tabControl,
+        _ref$data = _ref.data,
+        data = _ref$data === undefined ? [] : _ref$data;
+
+
+    var createCarouselItems = function createCarouselItems() {
+        var carouselRow = [];
+        var numberOfFours = data.length / 4;
+        for (var i = 0; i < numberOfFours; i++) {
+            var carouselItems = [];
+            for (var j = 0; j < 4; j++) {
+                if (data.length == 0) {
+                    break;
+                }
+                var technology = data.shift();
+                carouselItems.push(React.createElement(Technology, { data: technology }));
+            }
+            if (i == 0) {
+                carouselRow.push(React.createElement(
+                    "div",
+                    { "class": "carousel-item active" },
+                    React.createElement(
+                        "div",
+                        { "class": "row" },
+                        carouselItems
+                    )
+                ));
+            } else {
+                carouselRow.push(React.createElement(
+                    "div",
+                    { "class": "carousel-item" },
+                    React.createElement(
+                        "div",
+                        { "class": "row" },
+                        carouselItems
+                    )
+                ));
+            }
+        }
+        return carouselRow;
+    };
 
     return React.createElement(
         "div",
@@ -44,42 +84,7 @@ var Technologies = function Technologies(_ref) {
                 React.createElement(
                     "div",
                     { "class": "carousel-inner" },
-                    React.createElement(
-                        "div",
-                        { "class": "carousel-item active" },
-                        React.createElement(
-                            "div",
-                            { "class": "row" },
-                            React.createElement(Technology, null),
-                            React.createElement(Technology, null),
-                            React.createElement(Technology, null),
-                            React.createElement(Technology, null)
-                        )
-                    ),
-                    React.createElement(
-                        "div",
-                        { "class": "carousel-item" },
-                        React.createElement(
-                            "div",
-                            { "class": "row" },
-                            React.createElement(Technology, null),
-                            React.createElement(Technology, null),
-                            React.createElement(Technology, null),
-                            React.createElement(Technology, null)
-                        )
-                    ),
-                    React.createElement(
-                        "div",
-                        { "class": "carousel-item" },
-                        React.createElement(
-                            "div",
-                            { "class": "row" },
-                            React.createElement(Technology, null),
-                            React.createElement(Technology, null),
-                            React.createElement(Technology, null),
-                            React.createElement(Technology, null)
-                        )
-                    )
+                    createCarouselItems()
                 )
             )
         )

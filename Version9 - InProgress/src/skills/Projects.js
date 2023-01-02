@@ -1,7 +1,9 @@
 import Project from "./Project.js";
 
 var Projects = function Projects(_ref) {
-    var tabControl = _ref.tabControl;
+    var tabControl = _ref.tabControl,
+        _ref$data = _ref.data,
+        data = _ref$data === undefined ? [] : _ref$data;
 
     return React.createElement(
         "div",

@@ -1,6 +1,6 @@
 import Blog from "./Blog.js";
 
-const Blogs = ({ tabControl }) => {
+const Blogs = ({ tabControl, data=[] }) => {
     return (
         <div class="row mt-5">
             <div class="col-12">

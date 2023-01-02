@@ -95,75 +95,76 @@ export var skillsAndServices = {
         "technologies": [{
             "name": "ReactJS",
             "description": "",
-            "image": ""
+            "image": "", "learn-more": ""
         }, {
             "name": "Redux",
             "description": "",
-            "image": ""
+            "image": "", "learn-more": ""
         }, {
             "name": "NextJS",
             "description": "",
-            "image": ""
+            "image": "", "learn-more": ""
         }, {
             "name": "ExpressJS",
             "description": "",
-            "image": ""
+            "image": "", "learn-more": ""
         }, {
             "name": "NodeJS",
-            "description": "",
-            "image": ""
+            "description": "Node.js® is a powerful runtime running on Chrome's V8 Javascript engine helping us to develop backend applications",
+            "image": "./assets/images/skills/nodejs.png",
+            "learn-more": "node-js"
         }, {
             "name": "HTML5",
             "description": "",
-            "image": ""
+            "image": "", "learn-more": ""
         }, {
             "name": "CSS4",
             "description": "",
-            "image": ""
+            "image": "", "learn-more": ""
         }, {
             "name": "Boostrap",
             "description": "",
-            "image": ""
+            "image": "", "learn-more": ""
         }, {
             "name": "WordPress",
             "description": "",
-            "image": ""
+            "image": "", "learn-more": ""
         }, {
             "name": "JavaScript",
             "description": "",
-            "image": ""
+            "image": "", "learn-more": ""
         }, {
             "name": "Typescript",
             "description": "",
-            "image": ""
+            "image": "", "learn-more": ""
         }, {
             "name": "API Integration [ SOAP, REST ]",
             "description": "",
-            "image": ""
+            "image": "", "learn-more": ""
         }, {
             "name": "Angular2+ and Angular 15",
             "description": "",
-            "image": ""
+            "image": "", "learn-more": ""
         }, {
             "name": "PHP [Laravel, CodeIgniter, WordPress]",
             "description": "",
-            "image": ""
+            "image": "", "learn-more": ""
         }, {
             "name": "jQuery",
             "description": "",
-            "image": ""
+            "image": "", "learn-more": ""
         }, {
             "name": "VueJS",
             "description": "",
-            "image": ""
+            "image": "", "learn-more": ""
         }, {
             "name": "Axios",
             "description": "",
-            "image": ""
+            "image": "", "learn-more": ""
         }, {
             "name": "Redux thunk",
             "description": "",
-            "image": ""
+            "image": "", "learn-more": ""
         }],
         "blogs": [],
         "projects": []
@@ -172,19 +173,19 @@ export var skillsAndServices = {
         "technologies": [{
             "name": "Android (Java, Kotlin)",
             "description": "",
-            "image": ""
+            "image": "", "learn-more": ""
         }, {
             "name": "IOS (Swift)",
             "description": "",
-            "image": ""
+            "image": "", "learn-more": ""
         }, {
             "name": "Flutter - Cross Platform",
             "description": "",
-            "image": ""
+            "image": "", "learn-more": ""
         }, {
             "name": "React Native",
             "description": "",
-            "image": ""
+            "image": "", "learn-more": ""
         }],
         "blogs": [],
         "projects": []
@@ -193,7 +194,7 @@ export var skillsAndServices = {
         "technologies": [{
             "name": "SEO",
             "description": "",
-            "image": ""
+            "image": "", "learn-more": ""
         }],
         "blogs": [],
         "projects": []
@@ -202,27 +203,27 @@ export var skillsAndServices = {
         "technologies": [{
             "name": "Adobe XD",
             "description": "",
-            "image": ""
+            "image": "", "learn-more": ""
         }, {
             "name": "JIRA",
             "description": "",
-            "image": ""
+            "image": "", "learn-more": ""
         }, {
             "name": "Figma",
             "description": "",
-            "image": ""
+            "image": "", "learn-more": ""
         }, {
             "name": "Visual Studio Code, Jupyter, Eclipse",
             "description": "",
-            "image": ""
+            "image": "", "learn-more": ""
         }, {
             "name": "Photoshop",
             "description": "",
-            "image": ""
+            "image": "", "learn-more": ""
         }, {
             "name": "MS Office, InVision, MS Word, Excel, PowerPoint, MS Project, Confluence",
             "description": "",
-            "image": ""
+            "image": "", "learn-more": ""
         }],
         "blogs": [],
         "projects": []
@@ -231,7 +232,7 @@ export var skillsAndServices = {
         "technologies": [{
             "name": "Sales And Marketing",
             "description": "",
-            "image": ""
+            "image": "", "learn-more": ""
         }],
         "blogs": [],
         "projects": []
@@ -240,7 +241,7 @@ export var skillsAndServices = {
         "technologies": [{
             "name": "Design",
             "description": "",
-            "image": ""
+            "image": "", "learn-more": ""
         }],
         "blogs": [],
         "projects": []
@@ -249,35 +250,35 @@ export var skillsAndServices = {
         "technologies": [{
             "name": "Python",
             "description": "",
-            "image": ""
+            "image": "", "learn-more": ""
         }, {
             "name": "Java",
             "description": "",
-            "image": ""
+            "image": "", "learn-more": ""
         }, {
             "name": "Java8",
             "description": "",
-            "image": ""
+            "image": "", "learn-more": ""
         }, {
             "name": "C++",
             "description": "",
-            "image": ""
+            "image": "", "learn-more": ""
         }, {
             "name": "C",
             "description": "",
-            "image": ""
+            "image": "", "learn-more": ""
         }, {
             "name": "Dart",
             "description": "",
-            "image": ""
+            "image": "", "learn-more": ""
         }, {
             "name": "Swift",
             "description": "",
-            "image": ""
+            "image": "", "learn-more": ""
         }, {
             "name": "R",
             "description": "",
-            "image": ""
+            "image": "", "learn-more": ""
         }],
         "blogs": [],
         "projects": []
@@ -286,51 +287,51 @@ export var skillsAndServices = {
         "technologies": [{
             "name": "SQL",
             "description": "",
-            "image": ""
+            "image": "", "learn-more": ""
         }, {
             "name": "MySQL",
             "description": "",
-            "image": ""
+            "image": "", "learn-more": ""
         }, {
             "name": "NoSQL",
             "description": "",
-            "image": ""
+            "image": "", "learn-more": ""
         }, {
             "name": "Oracle",
             "description": "",
-            "image": ""
+            "image": "", "learn-more": ""
         }, {
             "name": "H2",
             "description": "",
-            "image": ""
+            "image": "", "learn-more": ""
         }, {
             "name": "PostgreSQL",
             "description": "",
-            "image": ""
+            "image": "", "learn-more": ""
         }, {
             "name": "Hadoop",
             "description": "",
-            "image": ""
+            "image": "", "learn-more": ""
         }, {
             "name": "MSSQL Server",
             "description": "",
-            "image": ""
+            "image": "", "learn-more": ""
         }, {
             "name": "MongoDB",
             "description": "",
-            "image": ""
+            "image": "", "learn-more": ""
         }, {
             "name": "Redis",
             "description": "",
-            "image": ""
+            "image": "", "learn-more": ""
         }, {
             "name": "GraphQL",
             "description": "",
-            "image": ""
+            "image": "", "learn-more": ""
         }, {
             "name": "InfluxDB",
             "description": "",
-            "image": ""
+            "image": "", "learn-more": ""
         }],
         "blogs": [],
         "projects": []
@@ -339,35 +340,35 @@ export var skillsAndServices = {
         "technologies": [{
             "name": "Docker - Containerization",
             "description": "",
-            "image": ""
+            "image": "", "learn-more": ""
         }, {
             "name": "Kubernetes - Containerization",
             "description": "",
-            "image": ""
+            "image": "", "learn-more": ""
         }, {
             "name": "Microservices",
             "description": "",
-            "image": ""
+            "image": "", "learn-more": ""
         }, {
             "name": "Eureka",
             "description": "",
-            "image": ""
+            "image": "", "learn-more": ""
         }, {
             "name": "Terraform",
             "description": "",
-            "image": ""
+            "image": "", "learn-more": ""
         }, {
             "name": "Ansible",
             "description": "",
-            "image": ""
+            "image": "", "learn-more": ""
         }, {
             "name": "Cloud Tools (AWS, Azure, GCP)",
             "description": "",
-            "image": ""
+            "image": "", "learn-more": ""
         }, {
             "name": "AWS Skills (EC2, S3, IAM, RDS, Route 53, Lambda, VPC, ELB, Elastic Search)",
             "description": "",
-            "image": ""
+            "image": "", "learn-more": ""
         }],
         "blogs": [],
         "projects": []
@@ -376,27 +377,27 @@ export var skillsAndServices = {
         "technologies": [{
             "name": "ReactJS and Redux",
             "description": "",
-            "image": ""
+            "image": "", "learn-more": ""
         }, {
             "name": "HTML5, CSS4, Bootstrap, Wordpress, JavaScript, Typescript, jQuery, VueJS",
             "description": "",
-            "image": ""
+            "image": "", "learn-more": ""
         }, {
             "name": "NextJS",
             "description": "",
-            "image": ""
+            "image": "", "learn-more": ""
         }, {
             "name": "API Integration [SOAP, REST]",
             "description": "",
-            "image": ""
+            "image": "", "learn-more": ""
         }, {
             "name": "ExpressJS",
             "description": "",
-            "image": ""
+            "image": "", "learn-more": ""
         }, {
             "name": "Angular2+, PHP [Laravel, CodeIgniter, WordPress]",
             "description": "",
-            "image": ""
+            "image": "", "learn-more": ""
         }],
         "blogs": [],
         "projects": []
@@ -405,99 +406,99 @@ export var skillsAndServices = {
         "technologies": [{
             "name": "Python",
             "description": "",
-            "image": ""
+            "image": "", "learn-more": ""
         }, {
             "name": "NodeJS",
             "description": "",
-            "image": ""
+            "image": "", "learn-more": ""
         }, {
             "name": "Java",
             "description": "",
-            "image": ""
+            "image": "", "learn-more": ""
         }, {
             "name": "Spring",
             "description": "",
-            "image": ""
+            "image": "", "learn-more": ""
         }, {
             "name": "Spring boot",
             "description": "",
-            "image": ""
+            "image": "", "learn-more": ""
         }, {
             "name": "Analytics (Tableau, Python, Google Analytics, Power BI, Machine Learning and Artificial Intelligence)",
             "description": "",
-            "image": ""
+            "image": "", "learn-more": ""
         }, {
             "name": "XML",
             "description": "",
-            "image": ""
+            "image": "", "learn-more": ""
         }, {
             "name": "JavaFX",
             "description": "",
-            "image": ""
+            "image": "", "learn-more": ""
         }, {
             "name": "Servlets",
             "description": "",
-            "image": ""
+            "image": "", "learn-more": ""
         }, {
             "name": "JSP",
             "description": "",
-            "image": ""
+            "image": "", "learn-more": ""
         }, {
             "name": "JDBC",
             "description": "",
-            "image": ""
+            "image": "", "learn-more": ""
         }, {
             "name": "Servers (JBoss, WebSphere, WebLogic, Tomcat)",
             "description": "",
-            "image": ""
+            "image": "", "learn-more": ""
         }, {
             "name": "Testing (Cucumber, Junit, Mockito, Powermock)",
             "description": "",
-            "image": ""
+            "image": "", "learn-more": ""
         }, {
             "name": "Log4j",
             "description": "",
-            "image": ""
+            "image": "", "learn-more": ""
         }, {
             "name": "Logstash",
             "description": "",
-            "image": ""
+            "image": "", "learn-more": ""
         }, {
             "name": "Apache Camel",
             "description": "",
-            "image": ""
+            "image": "", "learn-more": ""
         }, {
             "name": "MDB",
             "description": "",
-            "image": ""
+            "image": "", "learn-more": ""
         }, {
             "name": "EJB",
             "description": "",
-            "image": ""
+            "image": "", "learn-more": ""
         }, {
             "name": "ESB (IIB, Mule, OSB)",
             "description": "",
-            "image": ""
+            "image": "", "learn-more": ""
         }, {
             "name": "Monitoring (Prometheus, ELK, Datadog, Grafana, Opentelemetry, Micrometer, Jaeger)",
             "description": "",
-            "image": ""
+            "image": "", "learn-more": ""
         }, {
             "name": "JMS(ApacheMQ, Apache ActiveMQ, RabbitMQ, IBM)",
             "description": "",
-            "image": ""
+            "image": "", "learn-more": ""
         }, {
             "name": "Computer Vision",
             "description": "",
-            "image": ""
+            "image": "", "learn-more": ""
         }, {
             "name": "NLP",
             "description": "",
-            "image": ""
+            "image": "", "learn-more": ""
         }, {
             "name": "Python for Data Science",
             "description": "",
-            "image": ""
+            "image": "", "learn-more": ""
         }],
         "blogs": [],
         "projects": []
@@ -506,148 +507,148 @@ export var skillsAndServices = {
         "technologies": [{
             "name": "Git",
             "description": "",
-            "image": ""
+            "image": "", "learn-more": ""
         }, {
             "name": "SVN",
             "description": "",
-            "image": ""
+            "image": "", "learn-more": ""
         }, {
             "name": "Vault",
             "description": "",
-            "image": ""
+            "image": "", "learn-more": ""
         }, {
             "name": "Consul",
             "description": "",
-            "image": ""
+            "image": "", "learn-more": ""
         }, {
             "name": "Bitbucket",
             "description": "",
-            "image": ""
+            "image": "", "learn-more": ""
         }, {
             "name": "Jira",
             "description": "",
-            "image": ""
+            "image": "", "learn-more": ""
         }, {
             "name": "Atlassian",
             "description": "",
-            "image": ""
+            "image": "", "learn-more": ""
         }, {
             "name": "Confluence",
             "description": "",
-            "image": ""
+            "image": "", "learn-more": ""
         }, {
             "name": "Wiki",
             "description": "",
-            "image": ""
+            "image": "", "learn-more": ""
         }, {
             "name": "Jenkins",
             "description": "",
-            "image": ""
+            "image": "", "learn-more": ""
         }, {
             "name": "CI/CD",
             "description": "",
-            "image": ""
+            "image": "", "learn-more": ""
         }, {
             "name": "Agile or Scrum Software Development",
             "description": "",
-            "image": ""
+            "image": "", "learn-more": ""
         }, {
             "name": "REST APIs",
             "description": "",
-            "image": ""
+            "image": "", "learn-more": ""
         }, {
             "name": "Data Structure",
             "description": "",
-            "image": ""
+            "image": "", "learn-more": ""
         }, {
             "name": "Maven - Build Tool",
             "description": "",
-            "image": ""
+            "image": "", "learn-more": ""
         }, {
             "name": "Gradle - Build Tool",
             "description": "",
-            "image": ""
+            "image": "", "learn-more": ""
         }],
         "blogs": [],
         "projects": []
     },
-    "other-skills-and-services": {
+    "other-skills-services": {
         "technologies": [{
             "name": "Visual Studio Code",
             "description": "",
-            "image": ""
+            "image": "", "learn-more": ""
         }, {
             "name": "Jupyter",
             "description": "",
-            "image": ""
+            "image": "", "learn-more": ""
         }, {
             "name": "Eclipse",
             "description": "",
-            "image": ""
+            "image": "", "learn-more": ""
         }, {
             "name": "MS Office",
             "description": "",
-            "image": ""
+            "image": "", "learn-more": ""
         }, {
             "name": "InVision",
             "description": "",
-            "image": ""
+            "image": "", "learn-more": ""
         }, {
             "name": "MS Word",
             "description": "",
-            "image": ""
+            "image": "", "learn-more": ""
         }, {
             "name": "Excel",
             "description": "",
-            "image": ""
+            "image": "", "learn-more": ""
         }, {
             "name": "PowerPoint",
             "description": "",
-            "image": ""
+            "image": "", "learn-more": ""
         }, {
             "name": "MS Project",
             "description": "",
-            "image": ""
+            "image": "", "learn-more": ""
         }, {
             "name": "Confluence",
             "description": "",
-            "image": ""
+            "image": "", "learn-more": ""
         }, {
             "name": "Scripting (Shell, Python, Bash)",
             "description": "",
-            "image": ""
+            "image": "", "learn-more": ""
         }, {
             "name": "Linux",
             "description": "",
-            "image": ""
+            "image": "", "learn-more": ""
         }, {
             "name": "Windows",
             "description": "",
-            "image": ""
+            "image": "", "learn-more": ""
         }, {
             "name": "macOS",
             "description": "",
-            "image": ""
+            "image": "", "learn-more": ""
         }, {
             "name": "Rundeck",
             "description": "",
-            "image": ""
+            "image": "", "learn-more": ""
         }, {
             "name": "Kafka",
             "description": "",
-            "image": ""
+            "image": "", "learn-more": ""
         }, {
             "name": "Kinesis",
             "description": "",
-            "image": ""
+            "image": "", "learn-more": ""
         }, {
             "name": "Azure EventHub",
             "description": "",
-            "image": ""
+            "image": "", "learn-more": ""
         }, {
             "name": "Apache Atlas",
             "description": "",
-            "image": ""
+            "image": "", "learn-more": ""
         }],
         "blogs": [],
         "projects": []
