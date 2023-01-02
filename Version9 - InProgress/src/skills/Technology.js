@@ -8,7 +8,7 @@ var Technology = function Technology(_ref) {
         React.createElement(
             "div",
             { "class": "card" },
-            React.createElement("img", { "class": "img-fluid", alt: "100%x280", src: data["image"] }),
+            React.createElement("img", { "class": "img-fluid", alt: data["name"], src: data["image"] }),
             React.createElement(
                 "div",
                 { "class": "card-body" },
