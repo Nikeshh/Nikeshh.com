@@ -470,15 +470,18 @@ export var skillsAndServices = {
         "technologies": [{
             "name": "Python",
             "description": "",
-            "image": "", "learn-more": ""
+            "image": "./assets/images/skills/python.png",
+            "learn-more": "python"
         }, {
             "name": "NodeJS",
             "description": "",
-            "image": "", "learn-more": ""
+            "image": "./assets/images/skills/nodejs.png",
+            "learn-more": "nodejs"
         }, {
             "name": "Java",
             "description": "",
-            "image": "", "learn-more": ""
+            "image": "./assets/images/skills/java.jpeg",
+            "learn-more": "java"
         }, {
             "name": "Spring",
             "description": "",
