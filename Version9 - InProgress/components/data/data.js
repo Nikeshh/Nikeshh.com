@@ -707,7 +707,8 @@ export const skillsAndServices = {
             {
                 "name": "Apache Camel",
                 "description": "",
-                "image": "", "learn-more": ""
+                "image": "./assets/images/skills/apache-camel.png", 
+                "learn-more": "apache-camel"
             },
             {
                 "name": "MDB",
