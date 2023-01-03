@@ -145,35 +145,43 @@ export var skillsAndServices = {
         }, {
             "name": "Typescript",
             "description": "",
-            "image": "", "learn-more": ""
+            "image": "./assets/images/skills/typescript.png",
+            "learn-more": "typescript"
         }, {
             "name": "API Integration [ SOAP, REST ]",
             "description": "",
-            "image": "", "learn-more": ""
+            "image": "./assets/images/skills/api-integration.jpeg",
+            "learn-more": "api-integration"
         }, {
-            "name": "Angular2+ and Angular 15",
+            "name": "Angular2+ and Angular 17",
             "description": "",
-            "image": "", "learn-more": ""
+            "image": "./assets/images/skills/angularjs.png",
+            "learn-more": "angularjs"
         }, {
             "name": "PHP [Laravel, CodeIgniter, WordPress]",
             "description": "",
-            "image": "", "learn-more": ""
+            "image": "./assets/images/skills/php.png",
+            "learn-more": "php"
         }, {
             "name": "jQuery",
             "description": "",
-            "image": "", "learn-more": ""
+            "image": "./assets/images/skills/jquery.png",
+            "learn-more": "jquery"
         }, {
             "name": "VueJS",
             "description": "",
-            "image": "", "learn-more": ""
+            "image": "./assets/images/skills/vuejs.jpeg",
+            "learn-more": "vuejs"
         }, {
             "name": "Axios",
             "description": "",
-            "image": "", "learn-more": ""
+            "image": "./assets/images/skills/axios.png",
+            "learn-more": "axios"
         }, {
             "name": "Redux thunk",
             "description": "",
-            "image": "", "learn-more": ""
+            "image": "./assets/images/skills/redux-thunk.png",
+            "learn-more": "redux-thunk"
         }],
         "blogs": [],
         "projects": []
