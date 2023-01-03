@@ -127,22 +127,26 @@ export const skillsAndServices = {
             {
                 "name": "ReactJS",
                 "description": "",
-                "image": "", "learn-more": ""
+                "image": "./assets/images/skills/reactjs.png", 
+                "learn-more": "react-js"
             },
             {
                 "name": "Redux",
                 "description": "",
-                "image": "", "learn-more": ""
+                "image": "./assets/images/skills/redux.png", 
+                "learn-more": "redux"
             },
             {
                 "name": "NextJS",
                 "description": "",
-                "image": "", "learn-more": ""
+                "image": "./assets/images/skills/nextjs.jpeg", 
+                "learn-more": "next-js"
             },
             {
                 "name": "ExpressJS",
                 "description": "",
-                "image": "", "learn-more": ""
+                "image": "./assets/images/skills/expressjs.png", 
+                "learn-more": "express-js"
             },
             {
                 "name": "NodeJS",
@@ -153,27 +157,32 @@ export const skillsAndServices = {
             {
                 "name": "HTML5",
                 "description": "",
-                "image": "", "learn-more": ""
+                "image": "./assets/images/skills/html5.jpeg",
+                "learn-more": "html5"
             },
             {
                 "name": "CSS4",
                 "description": "",
-                "image": "", "learn-more": ""
+                "image": "./assets/images/skills/css4.jpg", 
+                "learn-more": "css4"
             },
             {
-                "name": "Boostrap",
+                "name": "Bootstrap",
                 "description": "",
-                "image": "", "learn-more": ""
+                "image": "./assets/images/skills/bootstrap.png", 
+                "learn-more": "bootstrap"
             },
             {
                 "name": "WordPress",
                 "description": "",
-                "image": "", "learn-more": ""
+                "image": "./assets/images/skills/wordpress.png", 
+                "learn-more": "wordpress"
             },
             {
                 "name": "JavaScript",
                 "description": "",
-                "image": "", "learn-more": ""
+                "image": "./assets/images/skills/javascript.png", 
+                "learn-more": "javascript"
             },
             {
                 "name": "Typescript",
