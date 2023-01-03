@@ -495,43 +495,53 @@ export var skillsAndServices = {
         }, {
             "name": "Analytics (Tableau, Python, Google Analytics, Power BI, Machine Learning and Artificial Intelligence)",
             "description": "",
-            "image": "", "learn-more": ""
+            "image": "./assets/images/skills/analytics.png",
+            "learn-more": "analytics"
         }, {
             "name": "XML",
             "description": "",
-            "image": "", "learn-more": ""
+            "image": "./assets/images/skills/xml.png",
+            "learn-more": "xml"
         }, {
             "name": "JavaFX",
             "description": "",
-            "image": "", "learn-more": ""
+            "image": "./assets/images/skills/javafx.png",
+            "learn-more": "javafx"
         }, {
             "name": "Servlets",
             "description": "",
-            "image": "", "learn-more": ""
+            "image": "./assets/images/skills/servlets.png",
+            "learn-more": "servlets"
         }, {
             "name": "JSP",
             "description": "",
-            "image": "", "learn-more": ""
+            "image": "./assets/images/skills/jsp.png",
+            "learn-more": "jsp"
         }, {
             "name": "JDBC",
             "description": "",
-            "image": "", "learn-more": ""
+            "image": "./assets/images/skills/jdbc.png",
+            "learn-more": "jdbc"
         }, {
             "name": "Servers (JBoss, WebSphere, WebLogic, Tomcat)",
             "description": "",
-            "image": "", "learn-more": ""
+            "image": "./assets/images/skills/servers.jpg",
+            "learn-more": "servers"
         }, {
             "name": "Testing (Cucumber, Junit, Mockito, Powermock)",
             "description": "",
-            "image": "", "learn-more": ""
+            "image": "./assets/images/skills/cucumber.png",
+            "learn-more": "cucumber"
         }, {
             "name": "Log4j",
             "description": "",
-            "image": "", "learn-more": ""
+            "image": "./assets/images/skills/log4j.png",
+            "learn-more": "log4j"
         }, {
             "name": "Logstash",
             "description": "",
-            "image": "", "learn-more": ""
+            "image": "./assets/images/skills/logstash.png",
+            "learn-more": "logstash"
         }, {
             "name": "Apache Camel",
             "description": "",
