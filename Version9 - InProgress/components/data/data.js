@@ -245,22 +245,26 @@ export const skillsAndServices = {
             {
                 "name": "Android (Java, Kotlin)",
                 "description": "",
-                "image": "", "learn-more": ""
+                "image": "./assets/images/skills/android.jpeg", 
+                "learn-more": "android"
             },
             {
                 "name": "IOS (Swift)",
                 "description": "",
-                "image": "", "learn-more": ""
+                "image": "./assets/images/skills/ios.png", 
+                "learn-more": "ios"
             },
             {
                 "name": "Flutter - Cross Platform",
                 "description": "",
-                "image": "", "learn-more": ""
+                "image": "./assets/images/skills/flutter.png", 
+                "learn-more": ""
             },
             {
                 "name": "React Native",
                 "description": "",
-                "image": "", "learn-more": ""
+                "image": "./assets/images/skills/react-native.png", 
+                "learn-more": "react-native"
             },
         ],
         "blogs": [
@@ -275,7 +279,8 @@ export const skillsAndServices = {
             {
                 "name": "SEO",
                 "description": "",
-                "image": "", "learn-more": ""
+                "image": "./assets/images/skills/seo.jpeg", 
+                "learn-more": "seo"
             },
         ],
         "blogs": [
@@ -290,32 +295,38 @@ export const skillsAndServices = {
             {
                 "name": "Adobe XD",
                 "description": "",
-                "image": "", "learn-more": ""
+                "image": "./assets/images/skills/adobe-xd.png", 
+                "learn-more": "adobe-xd"
             },
             {
                 "name": "JIRA",
                 "description": "",
-                "image": "", "learn-more": ""
+                "image": "./assets/images/skills/jira.jpeg", 
+                "learn-more": "jira"
             },
             {
                 "name": "Figma",
                 "description": "",
-                "image": "", "learn-more": ""
+                "image": "./assets/images/skills/figma.png", 
+                "learn-more": "figma"
             },
             {
                 "name": "Visual Studio Code, Jupyter, Eclipse",
                 "description": "",
-                "image": "", "learn-more": ""
+                "image": "./assets/images/skills/visual-studio-code.png", 
+                "learn-more": "visual-studio-code"
             },
             {
                 "name": "Photoshop",
                 "description": "",
-                "image": "", "learn-more": ""
+                "image": "./assets/images/skills/photoshop.png", 
+                "learn-more": "photoshop"
             },
             {
                 "name": "MS Office, InVision, MS Word, Excel, PowerPoint, MS Project, Confluence",
                 "description": "",
-                "image": "", "learn-more": ""
+                "image": "./assets/images/skills/ms-office.jpeg", 
+                "learn-more": "ms-office"
             }
         ],
         "blogs": [
@@ -330,7 +341,8 @@ export const skillsAndServices = {
             {
                 "name": "Sales And Marketing",
                 "description": "",
-                "image": "", "learn-more": ""
+                "image": "./assets/images/skills/sales.jpeg", 
+                "learn-more": "sales"
             },
         ],
         "blogs": [
@@ -345,7 +357,8 @@ export const skillsAndServices = {
             {
                 "name": "Design",
                 "description": "",
-                "image": "", "learn-more": ""
+                "image": "./assets/images/skills/design.png", 
+                "learn-more": "design"
             },
         ],
         "blogs": [
@@ -360,42 +373,50 @@ export const skillsAndServices = {
             {
                 "name": "Python",
                 "description": "",
-                "image": "", "learn-more": ""
+                "image": "./assets/images/skills/python.png", 
+                "learn-more": "python"
             },
             {
                 "name": "Java",
                 "description": "",
-                "image": "", "learn-more": ""
+                "image": "./assets/images/skills/java.jpeg", 
+                "learn-more": "java"
             },
             {
                 "name": "Java8",
                 "description": "",
-                "image": "", "learn-more": ""
+                "image": "./assets/images/skills/java8.jpeg", 
+                "learn-more": "java8"
             },
             {
                 "name": "C++",
                 "description": "",
-                "image": "", "learn-more": ""
+                "image": "./assets/images/skills/c++.png", 
+                "learn-more": "c++"
             },
             {
                 "name": "C",
                 "description": "",
-                "image": "", "learn-more": ""
+                "image": "./assets/images/skills/c.png", 
+                "learn-more": "c"
             },
             {
                 "name": "Dart",
                 "description": "",
-                "image": "", "learn-more": ""
+                "image": "./assets/images/skills/dart.png", 
+                "learn-more": "dart"
             },
             {
                 "name": "Swift",
                 "description": "",
-                "image": "", "learn-more": ""
+                "image": "./assets/images/skills/swift.png", 
+                "learn-more": "swift"
             },
             {
                 "name": "R",
                 "description": "",
-                "image": "", "learn-more": ""
+                "image": "./assets/images/skills/r.jpeg", 
+                "learn-more": "r"
             }
         ],
         "blogs": [
@@ -410,62 +431,74 @@ export const skillsAndServices = {
             {
                 "name": "SQL",
                 "description": "",
-                "image": "", "learn-more": ""
+                "image": "./assets/images/skills/sql.png", 
+                "learn-more": "sql"
             },
             {
                 "name": "MySQL",
                 "description": "",
-                "image": "", "learn-more": ""
+                "image": "./assets/images/skills/mysql.jpeg", 
+                "learn-more": "mysql"
             },
             {
                 "name": "NoSQL",
                 "description": "",
-                "image": "", "learn-more": ""
+                "image": "./assets/images/skills/nosql.jpeg", 
+                "learn-more": "nosql"
             },
             {
                 "name": "Oracle",
                 "description": "",
-                "image": "", "learn-more": ""
+                "image": "./assets/images/skills/oracle.jpeg", 
+                "learn-more": "oracle"
             },
             {
                 "name": "H2",
                 "description": "",
-                "image": "", "learn-more": ""
+                "image": "./assets/images/skills/h2.png", 
+                "learn-more": "h2"
             },
             {
                 "name": "PostgreSQL",
                 "description": "",
-                "image": "", "learn-more": ""
+                "image": "./assets/images/skills/postgresql.png", 
+                "learn-more": "postgresql"
             },
             {
                 "name": "Hadoop",
                 "description": "",
-                "image": "", "learn-more": ""
+                "image": "./assets/images/skills/hadoop.png", 
+                "learn-more": "hadoop"
             },
             {
                 "name": "MSSQL Server",
                 "description": "",
-                "image": "", "learn-more": ""
+                "image": "./assets/images/skills/mssqlserver.svg", 
+                "learn-more": "mssqlserver"
             },
             {
                 "name": "MongoDB",
                 "description": "",
-                "image": "", "learn-more": ""
+                "image": "./assets/images/skills/mongodb.png", 
+                "learn-more": "mongodb"
             },
             {
                 "name": "Redis",
                 "description": "",
-                "image": "", "learn-more": ""
+                "image": "./assets/images/skills/redis.png", 
+                "learn-more": "redis"
             },
             {
                 "name": "GraphQL",
                 "description": "",
-                "image": "", "learn-more": ""
+                "image": "./assets/images/skills/graphql.png", 
+                "learn-more": "graphql"
             },
             {
                 "name": "InfluxDB",
                 "description": "",
-                "image": "", "learn-more": ""
+                "image": "./assets/images/skills/influx-db.jpeg", 
+                "learn-more": "influx-db"
             }
         ],
         "blogs": [

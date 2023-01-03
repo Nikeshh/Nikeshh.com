@@ -61,7 +61,7 @@ var Technologies = function Technologies(_ref) {
                         "TECHNOLOGIES"
                     )
                 ),
-                React.createElement(
+                data.length > 4 && React.createElement(
                     "div",
                     { "class": "col-3 ms-auto d-flex justify-content-end gap-2" },
                     React.createElement(
