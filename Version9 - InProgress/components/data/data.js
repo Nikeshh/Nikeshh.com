@@ -635,12 +635,14 @@ export const skillsAndServices = {
             {
                 "name": "Spring",
                 "description": "",
-                "image": "", "learn-more": ""
+                "image": "./assets/images/skills/spring.png", 
+                "learn-more": "spring"
             },
             {
                 "name": "Spring boot",
                 "description": "",
-                "image": "", "learn-more": ""
+                "image": "./assets/images/skills/spring-boot.png", 
+                "learn-more": "spring-boot"
             },
             {
                 "name": "Analytics (Tableau, Python, Google Analytics, Power BI, Machine Learning and Artificial Intelligence)",
