@@ -513,42 +513,50 @@ export const skillsAndServices = {
             {
                 "name": "Docker - Containerization",
                 "description": "",
-                "image": "", "learn-more": ""
+                "image": "./assets/images/skills/docker.png", 
+                "learn-more": "docker"
             },
             {
                 "name": "Kubernetes - Containerization",
                 "description": "",
-                "image": "", "learn-more": ""
+                "image": "./assets/images/skills/kubernetes.png", 
+                "learn-more": "kubernetes"
             },
             {
                 "name": "Microservices",
                 "description": "",
-                "image": "", "learn-more": ""
+                "image": "./assets/images/skills/microservices.jpeg", 
+                "learn-more": "microservices"
             },
             {
                 "name": "Eureka",
                 "description": "",
-                "image": "", "learn-more": ""
+                "image": "./assets/images/skills/eureka.svg", 
+                "learn-more": "eureka"
             },
             {
                 "name": "Terraform",
                 "description": "",
-                "image": "", "learn-more": ""
+                "image": "./assets/images/skills/terraform.png", 
+                "learn-more": "terraform"
             },
             {
                 "name": "Ansible",
                 "description": "",
-                "image": "", "learn-more": ""
+                "image": "./assets/images/skills/ansible.png", 
+                "learn-more": "ansible"
             },
             {
                 "name": "Cloud Tools (AWS, Azure, GCP)",
                 "description": "",
-                "image": "", "learn-more": ""
+                "image": "./assets/images/skills/cloud-tools.png", 
+                "learn-more": "cloud-tools"
             },
             {
                 "name": "AWS Skills (EC2, S3, IAM, RDS, Route 53, Lambda, VPC, ELB, Elastic Search)",
                 "description": "",
-                "image": "", "learn-more": ""
+                "image": "./assets/images/skills/aws.png", 
+                "learn-more": "aws"
             }
         ],
         "blogs": [
@@ -563,32 +571,38 @@ export const skillsAndServices = {
             {
                 "name": "ReactJS and Redux",
                 "description": "",
-                "image": "", "learn-more": ""
+                "image": "./assets/images/skills/reactjs.png", 
+                "learn-more": "reactjs"
             },
             {
                 "name": "HTML5, CSS4, Bootstrap, Wordpress, JavaScript, Typescript, jQuery, VueJS",
                 "description": "",
-                "image": "", "learn-more": ""
+                "image": "./assets/images/skills/html5.jpeg", 
+                "learn-more": "html5"
             },
             {
                 "name": "NextJS",
                 "description": "",
-                "image": "", "learn-more": ""
+                "image": "./assets/images/skills/nextjs.jpeg", 
+                "learn-more": "nextjs"
             },
             {
                 "name": "API Integration [SOAP, REST]",
                 "description": "",
-                "image": "", "learn-more": ""
+                "image": "./assets/images/skills/api-integration.jpeg", 
+                "learn-more": "api-integration"
             },
             {
                 "name": "ExpressJS",
                 "description": "",
-                "image": "", "learn-more": ""
+                "image": "./assets/images/skills/expressj.png", 
+                "learn-more": "expressjs"
             },
             {
                 "name": "Angular2+, PHP [Laravel, CodeIgniter, WordPress]",
                 "description": "",
-                "image": "", "learn-more": ""
+                "image": "./assets/images/skills/angularjs.png", 
+                "learn-more": "angularjs"
             }
         ],
         "blogs": [
