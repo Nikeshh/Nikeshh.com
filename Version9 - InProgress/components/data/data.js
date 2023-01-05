@@ -713,42 +713,50 @@ export const skillsAndServices = {
             {
                 "name": "MDB",
                 "description": "",
-                "image": "", "learn-more": ""
+                "image": "./assets/images/skills/mdb.jpeg", 
+                "learn-more": "mdb"
             },
             {
                 "name": "EJB",
                 "description": "",
-                "image": "", "learn-more": ""
+                "image": "./assets/images/skills/ejb.jpeg", 
+                "learn-more": "ejb"
             },
             {
                 "name": "ESB (IIB, Mule, OSB)",
                 "description": "",
-                "image": "", "learn-more": ""
+                "image": "./assets/images/skills/esb.png", 
+                "learn-more": "esb"
             },
             {
                 "name": "Monitoring (Prometheus, ELK, Datadog, Grafana, Opentelemetry, Micrometer, Jaeger)",
                 "description": "",
-                "image": "", "learn-more": ""
+                "image": "./assets/images/skills/monitoring.png", 
+                "learn-more": "monitoring"
             },
             {
-                "name": "JMS(ApacheMQ, Apache ActiveMQ, RabbitMQ, IBM)",
+                "name": "JMS (ApacheMQ, Apache ActiveMQ, RabbitMQ, IBM)",
                 "description": "",
-                "image": "", "learn-more": ""
+                "image": "./assets/images/skills/jms.jpeg", 
+                "learn-more": "jms"
             },
             {
                 "name": "Computer Vision",
                 "description": "",
-                "image": "", "learn-more": ""
+                "image": "./assets/images/skills/computer-vision.jpeg", 
+                "learn-more": "computer-vision"
             },
             {
                 "name": "NLP",
                 "description": "",
-                "image": "", "learn-more": ""
+                "image": "./assets/images/skills/nlp.jpeg", 
+                "learn-more": "nlp"
             },
             {
                 "name": "Python for Data Science",
                 "description": "",
-                "image": "", "learn-more": ""
+                "image": "./assets/images/skills/python-data-science.jpeg", 
+                "learn-more": "python-data-science"
             }
         ],
         "blogs": [
@@ -763,82 +771,98 @@ export const skillsAndServices = {
             {
                 "name": "Git",
                 "description": "",
-                "image": "", "learn-more": ""
+                "image": "./assets/images/skills/git.png", 
+                "learn-more": "git"
             },
             {
                 "name": "SVN",
                 "description": "",
-                "image": "", "learn-more": ""
+                "image": "./assets/images/skills/svn.png", 
+                "learn-more": "svn"
             },
             {
                 "name": "Vault",
                 "description": "",
-                "image": "", "learn-more": ""
+                "image": "./assets/images/skills/vault.jpeg", 
+                "learn-more": "vault"
             },
             {
                 "name": "Consul",
                 "description": "",
-                "image": "", "learn-more": ""
+                "image": "./assets/images/skills/consul.png", 
+                "learn-more": "consul"
             },
             {
                 "name": "Bitbucket",
                 "description": "",
-                "image": "", "learn-more": ""
+                "image": "./assets/images/skills/bitbucket.jpeg", 
+                "learn-more": "bitbucket"
             },
             {
                 "name": "Jira",
                 "description": "",
-                "image": "", "learn-more": ""
+                "image": "./assets/images/skills/jira.jpeg", 
+                "learn-more": "jira"
             },
             {
                 "name": "Atlassian",
                 "description": "",
-                "image": "", "learn-more": ""
+                "image": "./assets/images/skills/atlassian.png", 
+                "learn-more": "atlassian"
             },
             {
                 "name": "Confluence",
                 "description": "",
-                "image": "", "learn-more": ""
+                "image": "./assets/images/skills/confluence.png", 
+                "learn-more": "confluence"
             },
             {
                 "name": "Wiki",
                 "description": "",
-                "image": "", "learn-more": ""
+                "image": "./assets/images/skills/wiki.png", 
+                "learn-more": "wiki"
             },
             {
                 "name": "Jenkins",
                 "description": "",
-                "image": "", "learn-more": ""
+                "image": "./assets/images/skills/jenkins.png", 
+                "learn-more": "jenkins"
             },
             {
                 "name": "CI/CD",
                 "description": "",
-                "image": "", "learn-more": ""
+                "image": "./assets/images/skills/ci-cd.png", 
+                "learn-more": "ci-cd"
             },
             {
                 "name": "Agile or Scrum Software Development",
                 "description": "",
-                "image": "", "learn-more": ""
+                "image": "./assets/images/skills/agile.jpeg", 
+                "learn-more": "agile"
             },
             {
                 "name": "REST APIs",
                 "description": "",
-                "image": "", "learn-more": ""
+                "image": "./assets/images/skills/rest-apis.png", 
+                "learn-more": "rest-apis"
             },
             {
                 "name": "Data Structure",
                 "description": "",
-                "image": "", "learn-more": ""
+                "image": "./assets/images/skills/data-structure.png", 
+                "learn-more": "data-structure"
             },
             {
                 "name": "Maven - Build Tool",
                 "description": "",
-                "image": "", "learn-more": ""
+                "image": "./assets/images/skills/apache-maven.jpeg", 
+                "learn-more": "apache-maven"
             },
             {
                 "name": "Gradle - Build Tool",
                 "description": "",
-                "image": "", "learn-more": ""
+                "image": "./assets/images/skills/gradle.png", 
+                "learn-more": "gradle"
             }
         ],
         "blogs": [
@@ -853,97 +877,116 @@ export const skillsAndServices = {
             {
                 "name": "Visual Studio Code",
                 "description": "",
-                "image": "", "learn-more": ""
+                "image": "./assets/images/skills/visual-studio-code.png", 
+                "learn-more": "visual-studio-code"
             },
             {
                 "name": "Jupyter",
                 "description": "",
-                "image": "", "learn-more": ""
+                "image": "./assets/images/skills/jupyter.png", 
+                "learn-more": "jupyter"
             },
             {
                 "name": "Eclipse",
                 "description": "",
-                "image": "", "learn-more": ""
+                "image": "./assets/images/skills/eclipse.png", 
+                "learn-more": "eclipse"
             },
             {
                 "name": "MS Office",
                 "description": "",
-                "image": "", "learn-more": ""
+                "image": "./assets/images/skills/ms-office.jpeg", 
+                "learn-more": "ms-office"
             },
             {
                 "name": "InVision",
                 "description": "",
-                "image": "", "learn-more": ""
+                "image": "./assets/images/skills/invision.webp", 
+                "learn-more": "invision"
             },
             {
                 "name": "MS Word",
                 "description": "",
-                "image": "", "learn-more": ""
+                "image": "./assets/images/skills/ms-word.png", 
+                "learn-more": "ms-word"
             },
             {
                 "name": "Excel",
                 "description": "",
-                "image": "", "learn-more": ""
+                "image": "./assets/images/skills/excel.png", 
+                "learn-more": "excel"
             },
             {
                 "name": "PowerPoint",
                 "description": "",
-                "image": "", "learn-more": ""
+                "image": "./assets/images/skills/powerpoint.png", 
+                "learn-more": "powerpoint"
             },
             {
                 "name": "MS Project",
                 "description": "",
-                "image": "", "learn-more": ""
+                "image": "./assets/images/skills/ms-project.png", 
+                "learn-more": "ms-project"
             },
             {
                 "name": "Confluence",
                 "description": "",
-                "image": "", "learn-more": ""
+                "image": "./assets/images/skills/confluence.png", 
+                "learn-more": "confluence"
             },
             {
                 "name": "Scripting (Shell, Python, Bash)",
                 "description": "",
-                "image": "", "learn-more": ""
+                "image": "./assets/images/skills/scripting.jpeg", 
+                "learn-more": "scripting"
             },
             {
                 "name": "Linux",
                 "description": "",
-                "image": "", "learn-more": ""
+                "image": "./assets/images/skills/linux.jpeg", 
+                "learn-more": "linux"
             },
             {
                 "name": "Windows",
                 "description": "",
-                "image": "", "learn-more": ""
+                "image": "./assets/images/skills/windows.webp", 
+                "learn-more": "windows"
             },
             {
                 "name": "macOS",
                 "description": "",
-                "image": "", "learn-more": ""
+                "image": "./assets/images/skills/mac-os.png", 
+                "learn-more": "mac-os"
             },
             {
                 "name": "Rundeck",
                 "description": "",
-                "image": "", "learn-more": ""
+                "image": "./assets/images/skills/rundeck.png", 
+                "learn-more": "rundeck"
             },
             {
-                "name": "Kafka",
+                "name": "Apache Kafka",
                 "description": "",
-                "image": "", "learn-more": ""
+                "image": "./assets/images/skills/apache-kafka.png", 
+                "learn-more": "kafka"
             },
             {
-                "name": "Kinesis",
+                "name": "Amazon Kinesis",
                 "description": "",
-                "image": "", "learn-more": ""
+                "image": "./assets/images/skills/amazon-kinesis.png", 
+                "learn-more": "kinesis"
             },
             {
                 "name": "Azure EventHub",
                 "description": "",
-                "image": "", "learn-more": ""
+                "image": "./assets/images/skills/azure-eventhub.png", 
+                "learn-more": "azure-eventhub"
             },
             {
                 "name": "Apache Atlas",
                 "description": "",
-                "image": "", "learn-more": ""
+                "image": "./assets/images/skills/apache-atlas.png", 
+                "learn-more": "apache-atlas"
             },
         ],
         "blogs": [
