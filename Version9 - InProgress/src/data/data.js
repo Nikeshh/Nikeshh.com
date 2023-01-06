@@ -455,7 +455,7 @@ export var skillsAndServices = {
         }, {
             "name": "ExpressJS",
             "description": "",
-            "image": "./assets/images/skills/expressj.png",
+            "image": "./assets/images/skills/expressjs.png",
             "learn-more": "expressjs"
         }, {
             "name": "Angular2+, PHP [Laravel, CodeIgniter, WordPress]",

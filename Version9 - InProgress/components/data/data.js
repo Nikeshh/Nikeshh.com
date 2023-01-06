@@ -595,7 +595,7 @@ export const skillsAndServices = {
             {
                 "name": "ExpressJS",
                 "description": "",
-                "image": "./assets/images/skills/expressj.png", 
+                "image": "./assets/images/skills/expressjs.png", 
                 "learn-more": "expressjs"
             },
             {
