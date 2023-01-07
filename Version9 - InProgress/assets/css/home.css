@@ -1,6 +1,7 @@
 /* Home */
 .home {
   width: 100%;
+  height: 100%;
   scroll-behavior: smooth;
   /* Section 1 - Header and Banner */
   /* Section 2 - About Me */
@@ -10,6 +11,19 @@
   /* Section 6 - Skills and Services */
   /* Section 7 - Contact Me */
   /* Section 8 - Footer */
+}
+@media (max-width: 768px) {
+  .home .section-1 #banner {
+    margin-top: 0.5rem;
+  }
+}
+@media (min-width: 768px) {
+  .home .section-1 {
+    height: 100vh;
+  }
+  .home .section-1 #banner {
+    height: 100%;
+  }
 }
 .home .section-1 .navbar-nav .active {
   color: white;
@@ -263,4 +277,8 @@
   background-color: #000;
 }
 
-/* End of Home *//*# sourceMappingURL=home.css.map */
+/* End of Home */
+/* Calendly */
+.calendly-badge-widget .calendly-badge-content > span {
+  display: none !important;
+}/*# sourceMappingURL=home.css.map */
