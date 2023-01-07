@@ -279,6 +279,15 @@
 
 /* End of Home */
 /* Calendly */
+.calendly-badge-widget {
+  margin-bottom: 0.5rem;
+}
+@media (max-width: 768px) {
+  .calendly-badge-widget {
+    margin-bottom: 2rem;
+    margin-right: 0.4rem;
+  }
+}
 .calendly-badge-widget .calendly-badge-content > span {
   display: none !important;
 }/*# sourceMappingURL=home.css.map */

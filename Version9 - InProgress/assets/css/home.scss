@@ -332,6 +332,13 @@
 
 /* Calendly */
 .calendly-badge-widget {
+    margin-bottom: .5rem;
+
+    @media (max-width: 768px) {
+        margin-bottom: 2rem;
+        margin-right: .4rem;
+    }
+    
     .calendly-badge-content > span {
         display: none !important;
     }
