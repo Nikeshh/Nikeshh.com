@@ -7,6 +7,10 @@
 
     /* Section 1 - Header and Banner */
     .section-1 {
+        #banner {
+            margin-top: .2rem;
+        }
+        
         @media (max-width: 768px) {
             #banner {
                 margin-top: .5rem;

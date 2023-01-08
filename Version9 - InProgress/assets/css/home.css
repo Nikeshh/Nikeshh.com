@@ -12,6 +12,9 @@
   /* Section 7 - Contact Me */
   /* Section 8 - Footer */
 }
+.home .section-1 #banner {
+  margin-top: 0.2rem;
+}
 @media (max-width: 768px) {
   .home .section-1 #banner {
     margin-top: 0.5rem;
