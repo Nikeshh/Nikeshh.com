@@ -62,7 +62,7 @@ if (preferredTheme === 'dark') {
 }
 
 /**
- * Blog
+ * Blog (Currently used only for blog but can be adapted for whole website)
  */
 const body = document.querySelector("body"),
     modeToggle = body.querySelector(".mode-toggle");
