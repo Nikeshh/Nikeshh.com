@@ -1,7 +1,7 @@
 var BlogCard = function BlogCard() {
     return React.createElement(
         "div",
-        { "class": "row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative" },
+        { "class": "row g-0 rounded overflow-hidden flex-md-row h-md-250 position-relative" },
         React.createElement(
             "div",
             { "class": "col p-4 d-flex flex-column position-static" },
@@ -34,21 +34,7 @@ var BlogCard = function BlogCard() {
         React.createElement(
             "div",
             { "class": "col-auto d-none d-lg-block" },
-            React.createElement(
-                "svg",
-                { "class": "bd-placeholder-img", width: "200", height: "250", xmlns: "http://www.w3.org/2000/svg", role: "img", "aria-label": "Placeholder: Thumbnail", preserveAspectRatio: "xMidYMid slice", focusable: "false" },
-                React.createElement(
-                    "title",
-                    null,
-                    "Placeholder"
-                ),
-                React.createElement("rect", { width: "100%", height: "100%", fill: "#55595c" }),
-                React.createElement(
-                    "text",
-                    { x: "50%", y: "50%", fill: "#eceeef", dy: ".3em" },
-                    "Thumbnail"
-                )
-            )
+            React.createElement("img", { src: "./assets/images/blog/blog-banner.jpeg", alt: "Blog Image", "class": "img-fluid" })
         )
     );
 };
