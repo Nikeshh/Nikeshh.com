@@ -5,8 +5,6 @@ Command to convert jsx to js which is faster in production:
 npx babel --watch components --out-dir ./src --presets react-app/prod
 The above command converts the jsx in the components directly into js in production
 
-
-
 data-bs-interval="false" stops the carousel to scroll in bootstrap. If scroll is need, remove data-bs-interval="false" and add data-bs-ride="carousel"
 
 Add in index.html for maintenance or development mode:
