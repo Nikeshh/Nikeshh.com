@@ -12,8 +12,8 @@ var BlogCard = function BlogCard() {
             ),
             React.createElement(
                 "h3",
-                { "class": "mb-0" },
-                "Featured post"
+                { "class": "mb-0 blog-card-text" },
+                "Top 7 No-Code AI Platforms That Are Making ML Accessible"
             ),
             React.createElement(
                 "div",
@@ -22,19 +22,19 @@ var BlogCard = function BlogCard() {
             ),
             React.createElement(
                 "p",
-                { "class": "card-text mb-auto" },
+                { "class": "card-text mb-auto blog-card-text" },
                 "This is a wider card with supporting text below as a natural lead-in to additional content."
             ),
             React.createElement(
                 "a",
-                { href: "#", "class": "stretched-link" },
+                { href: "#", "class": "stretched-link blog-card-text" },
                 "Continue reading"
             )
         ),
         React.createElement(
             "div",
             { "class": "col-auto d-none d-lg-block" },
-            React.createElement("img", { src: "./assets/images/blog/blog-banner.jpeg", alt: "Blog Image", "class": "img-fluid" })
+            React.createElement("img", { src: "./assets/images/blog2.png", alt: "Blog Image", "class": "img-fluid" })
         )
     );
 };

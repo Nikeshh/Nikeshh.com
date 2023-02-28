@@ -15,9 +15,9 @@
   --black-light-color: #707070;
   --border-color: #e6e5e5;
   --toggle-color: #ddd;
-  --box1-color: #4da3ff;
-  --box2-color: #ffe6ac;
-  --box3-color: #e7d1fc;
+  --box1-color: #d8eafe;
+  --box2-color: #fff3d6;
+  --box3-color: #f4eafd;
   --title-icon-color: #fff;
 
   /* ====== Transition ====== */
@@ -317,6 +317,9 @@ nav.close ~ .dashboard .top {
   padding: 15px 20px;
   background-color: var(--box1-color);
   transition: var(--tran-05);
+}
+.dash-content .blog-card-text {
+  color: var(--text-color);
 }
 .boxes .box i {
   font-size: 35px;

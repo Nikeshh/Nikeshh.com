@@ -279,16 +279,50 @@ nav.close ~ .dashboard .top {
   padding-top: 50px;
 }
 
-.dashboard .dash-content .blog-content {
+/* Blog Content */
+.blog-content {
   display: flex;
   flex-wrap: wrap;
+  margin-top: 2rem;
+  gap: 1rem;
 }
-.dashboard .dash-content .blog-content .left-content {
-  flex: 3;
+.blog-content .left-content {
+  flex: 2;
 }
-.dashboard .dash-content .blog-content .right-content {
+.left-content .content-image {
+  width: 100%;
+  height: 450px;
+}
+.left-content .title {
+  margin-top: 1rem;
+  font-weight: bold;
+}
+.left-content .meta-details {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.meta-details .author-details, .meta-details .time-details {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.meta-details .author-details p, .meta-details .time-details p {
+  margin-bottom: 0;
+}
+.blog-content .right-content {
   flex: 1;
 }
+.right-content .recent-posts {
+  border: .2px solid var(--border-color);
+  border-radius: 5px;
+  padding: 1rem 2rem;
+}
+.recent-posts .title {
+  font-size: 22px;
+  font-weight: bold;
+}
+.recent-posts .post {}
 
 @media (max-width: 1000px) {
   nav {
