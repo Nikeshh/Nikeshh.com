@@ -4,7 +4,7 @@ const ProjectSingle = () => {
             <div class="left-content">
                 <img src="./assets/images/blog1.png" alt="" class="img-fluid content-image" />
                 <div class="title">
-                    <h1>Image Similarity Using Deep CNN: Theory To Code</h1>
+                    <h1>Foodbooze (Mobile App, Website, Analytics) - Complete Food Delivery or Food Ecommerce Solution</h1>
                 </div>
                 <div class="meta-details">
                     <span class="author-details">
@@ -17,16 +17,14 @@ const ProjectSingle = () => {
                     </span>
                 </div>
                 <div class="content">
-                    <p>Image similarity is becoming popular in recent times. The ability of an image similarity model to find identical images with the utmost accuracy in defined data sets is helping in many ways. Finding plagiarized photos, identifying fake accounts, discovering original images of people, products, and places are a few of the image similarity real-world applications. Image similarity is often concluded as the same as image classification by many. However, the similarity model unlike image classification is completely unsupervised and operates beyond labeling images for model creation.</p>
-                    <h2>Image similarity vs Image Classification</h2>
-                    <p>
-                        Image similarity is closely related to image classification application, as both models use the same classifier networks for the processing and delivering the expected outcomes. However, there are a few differences to consider.
-                        <ul>
-                            <li>Image similarity considers many dimensions while figuring out whether or not an image is found similar by considering one or possibly several discrete categories.</li>
-                            <li>Image classifiers are always learned to be implicit due to poor training. If you train a classification model to recognize bicycles, scooters, and cars, and you didn’t expect to classify anything else. Then, there is a possibility that the model will predict motorcycles as bicycles or scooters, which is not acceptable.</li>
-                            <li>Image similarity models are trained differently, using labels to indicate if two images are similar or not, and training networks with similarity relationships can range between every pair of images in a dataset to only between a few necessary. Thanks to constructive losses, the trained model can be flexible to recognize other images known to be similar in the data set instead of finding out only defined or fixed categories.</li>
-                        </ul>
-                    </p>
+                    Introducing our revolutionary cross-platform food delivery and ecommerce solution app, built using the Flutter framework. This innovative app offers a wide range of food options from various restaurants and food vendors, all in one place. With our user-friendly interface, customers can easily browse and order their favorite meals, pay securely, and track their orders in real-time. Our app is available on multiple platforms, including Android and iOS, ensuring that customers can access it from anywhere and at any time.
+                    Flutter is a powerful open-source framework developed by Google for building high-performance, cross-platform mobile applications. It enables developers to create stunning, native-like user interfaces and experiences using a single codebase for both iOS and Android platforms. Flutter uses the Dart programming language, which offers several benefits, such as faster development times, efficient memory allocation, and ease of use.
+                    Our app was built using the Flutter framework, which allowed us to create a high-quality, cross-platform solution in a fraction of the time it would have taken with traditional development methods. With Flutter, we were able to create a beautiful, responsive UI that delivers a seamless user experience on both Android and iOS devices. The app loads quickly, runs smoothly, and provides a consistent experience across all platforms, ensuring that customers can access it regardless of their device.
+                    One of the key features of our food delivery and ecommerce app is the ability to order food from multiple restaurants and vendors in one place. Customers can easily browse through different food options, filter by cuisine, price, or location, and place orders from multiple restaurants in one go. The app also offers secure payment options, including credit/debit cards and online wallets, ensuring that customers can pay for their orders with ease and confidence.
+                    Another essential feature of our app is real-time order tracking. Customers can track the progress of their orders, from the moment they are placed to the time they are delivered, using a real-time tracking system. This feature provides customers with a sense of control and transparency, ensuring that they are aware of their order's status at all times.
+                    Our food delivery and ecommerce solution app was built with scalability in mind. It can handle a large number of users and orders without compromising performance or user experience. The app's backend was developed using a robust, scalable architecture that can handle high volumes of traffic and data, ensuring that the app can scale seamlessly as the user base grows.
+                    Finally, our app is designed with security in mind. We understand the importance of protecting user data, and we have implemented multiple layers of security to ensure that our app is secure and reliable. Our app uses SSL encryption for all data transmissions, ensuring that all user data is encrypted and secure. We also implement strict security policies and protocols to protect against unauthorized access and data breaches.
+                    In conclusion, our cross-platform food delivery and ecommerce solution app built using Flutter offers a seamless, secure, and reliable way for customers to order food from multiple restaurants and vendors in one place. With its user-friendly interface, real-time order tracking, and secure payment options, our app delivers a top-notch user experience across all platforms. Thanks to Flutter's powerful features and capabilities, we were able to create a high-quality, scalable app in a fraction of the time it would have taken with traditional development methods. Whether you are a food lover or a food vendor, our app is the perfect solution for all your food delivery and ecommerce needs.
                 </div>
                 <div class="tags">
                     <span class="tag">Learning</span>
@@ -67,21 +65,21 @@ const ProjectSingle = () => {
                     <div class="user-comment">
                         <img src="./assets/images/avatar.png" alt="" class="img-fluid comment-image" />
                         <div class="comment-details">
-                            <p class="comment">This is a amazing blog post</p>
+                            <p class="comment">This is a amazing project</p>
                             <p class="details">Nikeshh Vijayabaskaran <span class="timestamp">February 28, 2023 At 4:15 am</span></p>
                         </div>
                     </div>
                     <div class="user-comment">
                         <img src="./assets/images/avatar.png" alt="" class="img-fluid comment-image" />
                         <div class="comment-details">
-                            <p class="comment">This is a amazing blog post</p>
+                            <p class="comment">This is a amazing project</p>
                             <p class="details">Nikeshh Vijayabaskaran <span class="timestamp">February 28, 2023 At 4:15 am</span></p>
                         </div>
                     </div>
                     <div class="user-comment">
                         <img src="./assets/images/avatar.png" alt="" class="img-fluid comment-image" />
                         <div class="comment-details">
-                            <p class="comment">This is a amazing blog post</p>
+                            <p class="comment">This is a amazing project</p>
                             <p class="details">Nikeshh Vijayabaskaran <span class="timestamp">February 28, 2023 At 4:15 am</span></p>
                         </div>
                     </div>
@@ -106,12 +104,12 @@ const ProjectSingle = () => {
             </div>
             <div class="right-content">
                 <div class="recent-posts">
-                    <p class="title">Recent Posts</p>
-                    <p class="post">Top 7 No-Code AI Platforms That Are Making ML Accessible</p>
-                    <p class="post">Edge AI for Secure AI Applications</p>
-                    <p class="post">Geospatial AI: A Data-Centric Approach for Growth & Development</p>
-                    <p class="post">Synthetic Data: The Future of Computer Vision</p>
-                    <p class="post">6 Best Practices Of Data Labeling for Object Detection Models</p>
+                    <p class="title">Similar Projects</p>
+                    <a href="#"><p class="post">Stream Lens</p></a>
+                    <a href="#"><p class="post">POS (POINT OF SALE) SYSTEM</p></a>
+                    <a href="#"><p class="post">RTRIX</p></a>
+                    <a href="#"><p class="post">SQUID GAME</p></a>
+                    <a href="#"><p class="post">CALIBRATION SYSTEM</p></a>
                 </div>
                 <div class="promotion">
                     <p class="title">Download Free Ebook</p>

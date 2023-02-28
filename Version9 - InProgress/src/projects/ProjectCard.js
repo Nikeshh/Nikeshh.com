@@ -8,12 +8,12 @@ var ProjectCard = function ProjectCard() {
             React.createElement(
                 "strong",
                 { "class": "d-inline-block mb-2 text-primary" },
-                "World"
+                "Mobile and App Development"
             ),
             React.createElement(
                 "h3",
                 { "class": "mb-0 blog-card-text" },
-                "Top 7 No-Code AI Platforms That Are Making ML Accessible"
+                "Foodbooze (Mobile App, Website, Analytics) - Complete Food Delivery or Food Ecommerce Solution"
             ),
             React.createElement(
                 "div",
@@ -23,18 +23,18 @@ var ProjectCard = function ProjectCard() {
             React.createElement(
                 "p",
                 { "class": "card-text mb-auto blog-card-text" },
-                "This is a wider card with supporting text below as a natural lead-in to additional content."
+                "Introducing a revolutionary cross-platform food delivery and ecommerce solution app built using flutter framework that is designed to make food ordering seamless and hassle-free."
             ),
             React.createElement(
                 "a",
                 { href: "#", "class": "stretched-link blog-card-text" },
-                "Continue reading"
+                "View Project"
             )
         ),
         React.createElement(
             "div",
             { "class": "col-auto d-none d-lg-block" },
-            React.createElement("img", { src: "./assets/images/blog2.png", alt: "Blog Image", "class": "img-fluid" })
+            React.createElement("img", { src: "./assets/images/placeholder.png", alt: "Project Image", "class": "img-fluid" })
         )
     );
 };
