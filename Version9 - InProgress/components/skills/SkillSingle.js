@@ -1,137 +1,136 @@
 const SkillSingle = () => {
-
-    React.useEffect(() => {
-        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
-        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
-    }, []);
-    
     return (
-        <div class="main-content w-100 h-100">
-            <header class="text-bg-dark">
-                <div class="container-fluid">
-                    <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-                    <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
-                        <i class="fa-solid fa-arrow-left me-2"></i> NodeJS
-                    </a>
-                    <div class="tag ms-2 border border-primary p-2 rounded-2 text-white-50" data-bs-html="true"
-                        data-bs-toggle="tooltip" data-bs-placement="bottom"
-                        data-bs-title="<em>Tag:</em> <u><b>Web design</b></u>">Web design</div>
-                    <div class="tag ms-2 border border-primary p-2 rounded-2 text-white-50" data-bs-html="true"
-                        data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="<em>Tag:</em> <u><b>Web</b></u>">Web
-                    </div>
-                    <div class="tag ms-2 border border-primary p-2 rounded-2 text-white-50" data-bs-html="true"
-                        data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="<em>Tag:</em> <u><b>Android</b></u>">
-                        Android</div>
-                    <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3 ms-auto" role="search">
-                        <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Search..."
-                        aria-label="Search" />
-                    </form>
-                    <div class="dropdown">
-                        <a href="#"
-                        class="d-flex align-items-center justify-content-center p-3 link-light text-decoration-none dropdown-toggle"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        Skills
+        <div class="blog-content">
+            <div class="left-content">
+                <img src="./assets/images/blog1.png" alt="" class="img-fluid content-image" />
+                <div class="title">
+                    <h1>ReactJS</h1>
+                </div>
+                <div class="meta-details">
+                    <span class="author-details">
+                        <i class="bi bi-person"></i>
+                        <a href="#">DeepLobe</a>
+                    </span>
+                    <span class="time-details">
+                        <i class="bi bi-clock-history"></i>
+                        <a href="#">December 9, 2021</a>
+                    </span>
+                </div>
+                <div class="content">
+                    ReactJS is a powerful open-source JavaScript library used for building interactive user interfaces. Developed by Facebook, ReactJS has quickly become one of the most popular front-end web development libraries in the industry, with its use by companies like Instagram, Airbnb, and Netflix.
+                    ReactJS allows developers to create reusable UI components, making it easier to manage complex UI designs. These components can be composed of other components, resulting in a modular and reusable approach to development. This approach leads to faster development times, easier maintenance, and fewer bugs.
+                    One of the primary features of ReactJS is its use of a virtual DOM. Instead of directly manipulating the actual DOM, ReactJS creates a virtual representation of it, which it updates only when there are changes. This approach allows for faster performance and reduces the amount of work required by the browser.
+                    Another key feature of ReactJS is its component-based structure. ReactJS divides the UI into independent and reusable parts, allowing developers to create complex applications with ease. The modular approach to development makes it easier to maintain and update code, reducing the time required for development and minimizing the chance of bugs.
+                    ReactJS also supports server-side rendering, which can improve page load times and enhance search engine optimization (SEO). Server-side rendering is the process of rendering a webpage on the server before sending it to the client. This approach results in a faster initial load time and can improve the SEO of the webpage.
+                    ReactJS can also be used with other libraries, such as Redux, to manage application state. Redux is a state management library that provides a centralized store for the application's state, making it easier to manage and maintain.
+                    ReactJS has a vast community support and an active development team, ensuring that it is constantly evolving and improving. The community provides numerous third-party libraries, tools, and plugins that extend the functionality of ReactJS. The community also provides extensive documentation and resources, making it easy for developers to learn and use the library.
+                    ReactJS also provides tools for testing, making it easier to ensure that the code is working as expected. ReactJS has several testing tools, such as Jest and Enzyme, which are designed to work seamlessly with ReactJS.
+                    In summary, ReactJS is a powerful and flexible front-end development library that allows developers to create complex and interactive user interfaces with ease. Its component-based structure, virtual DOM, and server-side rendering make it a popular choice for web developers. Its vast community support, extensive documentation, and third-party libraries make it easy for developers to learn and use. With its ability to improve page load times and enhance SEO, ReactJS is an ideal choice for creating high-performance and SEO-friendly web applications.
+                </div>
+                <div class="tags">
+                    <span class="tag">Learning</span>
+                    <span class="tag">AI</span>
+                    <span class="tag">Computer Vision</span>
+                </div>
+                <ul class="social-icons">
+                    <li class="share-via">
+                        <p>Share via</p>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <i class="fab fa-facebook"></i>
                         </a>
-                        <ul class="dropdown-menu text-small shadow">
-                        <li><a class="dropdown-item" href="#">New project...</a></li>
-                        <li><a class="dropdown-item" href="#">Settings</a></li>
-                        <li><a class="dropdown-item" href="#">Profile</a></li>
-                        <li>
-                            <hr class="dropdown-divider" />
-                        </li>
-                        <li><a class="dropdown-item" href="#">Sign out</a></li>
-                        </ul>
-                    </div>
-                    </div>
-                </div>
-            </header>
-            {/* Skill Content - Part without header */}
-            <div class="m-3 m-md-5">
-                <div class="d-flex flex-wrap justify-content-between align-items-center">
-                    <h1 class="display-6">NODEJS</h1>
-                    <div class="skill-level show-9 d-flex flex-wrap justify-content-md-end">
-                        <span>&nbsp;</span>
-                        <span>&nbsp;</span>
-                        <span>&nbsp;</span>
-                        <span>&nbsp;</span>
-                        <span>&nbsp;</span>
-                        <span>&nbsp;</span>
-                        <span>&nbsp;</span>
-                        <span>&nbsp;</span>
-                        <span>&nbsp;</span>
-                        <span>&nbsp;</span>
-                    </div>
-                </div>
-                <div class="row">
-                    {/* Skill Details */}
-                    <div class="col-12 col-md-12 skill-details shadow-lg p-3 bg-white rounded">
-                        <div class="d-flex gap-2 flex-wrap">
-                            <div class="p-2 border border-primary rounded-2">
-                                CONTRIBUTE
-                            </div>
-                            <div class="p-2 border border-primary rounded-2">
-                                LINKED BLOGS
-                            </div>
-                            <div class="p-2 border border-primary rounded-2">
-                                LINKED PROJECTS
-                            </div>
-                            <div class="p-2 border border-primary rounded-2 ms-md-auto">
-                                CONTACT ME
-                            </div>
-                            <div class="p-2 border border-danger rounded-circle">
-                                ❤️
-                            </div>
-                        </div>
-                        <div class="overflow-scroll skill-content mt-3">
-                            <img src="./assets/images/skills/nodejs.png" alt="" class="img-fluid img-thumbnail w-100 h-75" />
-                            <div class="mt-2">
-                            <h2>What is Node.js?</h2>
-                            <ul>
-                                <li>Node.js is an open source server environment</li>
-                                <li>Node.js is free</li>
-                                <li>Node.js runs on various platforms (Windows, Linux, Unix, Mac OS X, etc.)</li>
-                                <li>Node.js uses JavaScript on the server</li>
-                            </ul>
-                            <h2>Why Node.js?</h2>
-                            <p><strong>Node.js uses asynchronous programming!</strong></p>
-                            <p>A common task for a web server can be to open a file on the server and return the content to the
-                                client.</p>
-                            <p>Here is how PHP or ASP handles a file request:</p>
-                            <ol>
-                                <li>Sends the task to the computer&#39;s file system.</li>
-                                <li>Waits while the file system opens and reads the file.</li>
-                                <li>Returns the content to the client.</li>
-                                <li>Ready to handle the next request.</li>
-                            </ol>
-                            <p>Here is how Node.js handles a file request:</p>
-                            <ol>
-                                <li>Sends the task to the computer&#39;s file system.</li>
-                                <li>Ready to handle the next request.</li>
-                                <li>When the file system has opened and read the file, the server returns the content to the client.
-                                </li>
-                            </ol>
-                            <p>Node.js eliminates the waiting, and simply continues with the next request.</p>
-                            <p>Node.js runs single-threaded, non-blocking, asynchronous programming, which is very memory
-                                efficient.</p>
-                            <hr />
-                            <h2>What Can Node.js Do?</h2>
-                            <ul>
-                                <li>Node.js can generate dynamic page content</li>
-                                <li>Node.js can create, open, read, write, delete, and close files on the server</li>
-                                <li>Node.js can collect form data</li>
-                                <li>Node.js can add, delete, modify data in your database</li>
-                            </ul>
-                            <hr />
-                            <h2>What is a Node.js File?</h2>
-                            <ul>
-                                <li>Node.js files contain tasks that will be executed on certain events</li>
-                                <li>A typical event is someone trying to access a port on the server</li>
-                                <li>Node.js files must be initiated on the server before having any effect</li>
-                                <li>Node.js files have extension &quot;.js&quot;</li>
-                            </ul>
-                            </div>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <i class="fab fa-pinterest"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <i class="fab fa-google-plus"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </li>
+                </ul>
+                <div class="comments">
+                    <div class="user-comment">
+                        <img src="./assets/images/avatar.png" alt="" class="img-fluid comment-image" />
+                        <div class="comment-details">
+                            <p class="comment">This is a amazing skill</p>
+                            <p class="details">Nikeshh Vijayabaskaran <span class="timestamp">February 28, 2023 At 4:15 am</span></p>
                         </div>
                     </div>
+                    <div class="user-comment">
+                        <img src="./assets/images/avatar.png" alt="" class="img-fluid comment-image" />
+                        <div class="comment-details">
+                            <p class="comment">This is a amazing skill</p>
+                            <p class="details">Nikeshh Vijayabaskaran <span class="timestamp">February 28, 2023 At 4:15 am</span></p>
+                        </div>
+                    </div>
+                    <div class="user-comment">
+                        <img src="./assets/images/avatar.png" alt="" class="img-fluid comment-image" />
+                        <div class="comment-details">
+                            <p class="comment">This is a amazing skill</p>
+                            <p class="details">Nikeshh Vijayabaskaran <span class="timestamp">February 28, 2023 At 4:15 am</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="leave-a-comment">
+                    <p class="title">Leave A Comment</p>
+                    <form>
+                        <div class="form-group">
+                            <textarea class="form-control" id="yourComment" rows="4" placeholder="Your comment"></textarea>
+                        </div>
+                        <div class="user-details">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="name" placeholder="Your Name" />
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="email" placeholder="Your Email" />
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Comment</button>
+                    </form>
+                </div>
+            </div>
+            <div class="right-content">
+                <div class="recent-posts">
+                    <p class="title">Similar Skills</p>
+                    <a href="#"><p class="post">Redux</p></a>
+                    <a href="#"><p class="post">NextJS</p></a>
+                    <a href="#"><p class="post">ExpressJS</p></a>
+                    <a href="#"><p class="post">NodeJS</p></a>
+                    <a href="#"><p class="post">HTML5</p></a>
+                </div>
+                <div class="promotion">
+                    <p class="title">Download Free Ebook</p>
+                    <img src="./assets/images/blog3.png" alt="" class="img-fluid promotion-image" />
+                </div>
+                <div class="business-contact">
+                    <p class="title">Get custom ML Models for your business</p>
+                    <p class="subtitle">Fill in your details below for a free consultation call.</p>
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="fullName" placeholder="Full Name" />
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="emailAddress" placeholder="Please enter your email" />
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="mobile" placeholder="Mobile" />
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
                 </div>
             </div>
         </div>
@@ -141,4 +140,4 @@ const SkillSingle = () => {
 ReactDOM.render(
     <SkillSingle />,
     document.getElementById('skill_single')
-); 
+);
