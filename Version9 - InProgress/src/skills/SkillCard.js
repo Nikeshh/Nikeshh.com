@@ -1,4 +1,6 @@
-var SkillCard = function SkillCard() {
+var SkillCard = function SkillCard(_ref) {
+    var data = _ref.data;
+
     return React.createElement(
         "div",
         { "class": "row g-0 rounded overflow-hidden flex-md-row h-md-250 position-relative" },

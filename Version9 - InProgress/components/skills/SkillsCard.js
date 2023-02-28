@@ -1,43 +1,162 @@
 import SkillCard from './SkillCard.js';
 
-const SkillsCard = () => {
+/**
+ * Alternative version - Skill.js
+ */
+const SkillsCard = ({ active="", id, name, ariaLabelledBy, tabControl, data={ "technologies": [], "blogs": [], "projects": [] } }) => {
+    
+    const technologies = data["technologies"];
+    const blogs = data["blogs"];
+    const projects = data["projects"];
+
+    const createTechnologyCarouselItems = () => {
+        var carouselRow = [];
+        const numberOfThrees = technologies.length / 3;
+        for(var i=0; i < numberOfThrees; i++) {
+            var carouselItems = [];
+            for(var j=0; j<3; j++) {
+                const boxNumber = j+1;
+                const boxName = "box" + boxNumber;
+                if(technologies.length == 0) {
+                    break;
+                }
+                var technology = technologies.shift();
+                carouselItems.push(<div class={"box " + boxName}><SkillCard data={ technology } /></div>);
+            }
+            if(i == 0) {
+                carouselRow.push(<div class="carousel-item active"><div class="boxes">{ carouselItems }</div></div>);
+            } else {
+                carouselRow.push(<div class="carousel-item"><div class="boxes">{ carouselItems }</div></div>);
+            }
+        }
+        return carouselRow;
+    }
+
+    const createBlogCarouselItems = () => {
+        var carouselRow = [];
+        const numberOfThrees = blogs.length / 3;
+        for(var i=0; i < numberOfThrees; i++) {
+            var carouselItems = [];
+            for(var j=0; j<3; j++) {
+                const boxNumber = j+1;
+                const boxName = "box" + boxNumber;
+                if(blogs.length == 0) {
+                    break;
+                }
+                var blog = blogs.shift();
+                carouselItems.push(<div class={"box " + boxName}><SkillCard data={ blog } /></div>);
+            }
+            if(i == 0) {
+                carouselRow.push(<div class="carousel-item active"><div class="boxes">{ carouselItems }</div></div>);
+            } else {
+                carouselRow.push(<div class="carousel-item"><div class="boxes">{ carouselItems }</div></div>);
+            }
+        }
+        return carouselRow;
+    }
+
+    const createProjectCarouselItems = () => {
+        var carouselRow = [];
+        const numberOfThrees = projects.length / 3;
+        for(var i=0; i < numberOfThrees; i++) {
+            var carouselItems = [];
+            for(var j=0; j<3; j++) {
+                const boxNumber = j+1;
+                const boxName = "box" + boxNumber;
+                if(projects.length == 0) {
+                    break;
+                }
+                var project = projects.shift();
+                carouselItems.push(<div class={"box " + boxName}><SkillCard data={ project } /></div>);
+            }
+            if(i == 0) {
+                carouselRow.push(<div class="carousel-item active"><div class="boxes">{ carouselItems }</div></div>);
+            } else {
+                carouselRow.push(<div class="carousel-item"><div class="boxes">{ carouselItems }</div></div>);
+            }
+        }
+        return carouselRow;
+    }
+
     return (
-        <div>
-            <div class="boxes">
-                <div class="box box1">
-                    <SkillCard />
+        <div class={"tab-pane fade show " + active} id={id} role="tabpanel" aria-labelledby={ariaLabelledBy}>
+            {/* Technologies */}
+            <div class="row align-items-center">
+                <div class="col-9">
+                    <div class="title ms-0 mt-0 me-0 mb-3">
+                        <span class="text">{ name } - Technologies</span>
+                    </div>
                 </div>
-                <div class="box box2">
-                    <SkillCard />
-                </div>
-                <div class="box box3">
-                    <SkillCard />
+                { technologies.length > 3 && 
+                    <div class="col-3 ms-auto d-flex justify-content-end h-100 gap-2">
+                        <a class="btn btn-primary mb-3" href={"#" + tabControl + "skillsTechnologiesCarousel"}
+                            role="button" data-bs-slide="prev">
+                            <i class="fa fa-arrow-left"></i>
+                        </a>
+                        <a class="btn btn-primary mb-3" href={"#" + tabControl + "skillsTechnologiesCarousel"}
+                            role="button" data-bs-slide="next">
+                            <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </div>
+                }
+            </div>
+            <div id={tabControl + "skillsTechnologiesCarousel"} class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    { createTechnologyCarouselItems() }
                 </div>
             </div>
-            <div class="boxes">
-                <div class="box box1">
-                    <SkillCard />
+            {/* Blogs */}
+            <div class="row align-items-center">
+                <div class="col-9">
+                    <div class="title ms-0 mt-0 me-0 mb-3">
+                        <span class="text">{ name } - Related Blogs</span>
+                    </div>
                 </div>
-                <div class="box box2">
-                    <SkillCard />
-                </div>
-                <div class="box box3">
-                    <SkillCard />
+                { blogs.length > 3 && 
+                    <div class="col-3 ms-auto d-flex justify-content-end h-100 gap-2">
+                        <a class="btn btn-primary mb-3" href={"#" + tabControl + "skillsBlogsCarousel"}
+                            role="button" data-bs-slide="prev">
+                            <i class="fa fa-arrow-left"></i>
+                        </a>
+                        <a class="btn btn-primary mb-3" href={"#" + tabControl + "skillsBlogsCarousel"}
+                            role="button" data-bs-slide="next">
+                            <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </div>
+                }
+            </div>
+            <div id={tabControl + "skillsBlogsCarousel"} class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    { createBlogCarouselItems() }
                 </div>
             </div>
-            <div class="boxes">
-                <div class="box box1">
-                    <SkillCard />
+            {/* Projects */}
+            <div class="row align-items-center">
+                <div class="col-9">
+                    <div class="title ms-0 mt-0 me-0 mb-3">
+                        <span class="text">{ name } - Related Projects</span>
+                    </div>
                 </div>
-                <div class="box box2">
-                    <SkillCard />
-                </div>
-                <div class="box box3">
-                    <SkillCard />
+                { projects.length > 3 && 
+                    <div class="col-3 ms-auto d-flex justify-content-end h-100 gap-2">
+                        <a class="btn btn-primary mb-3" href={"#" + tabControl + "skillsProjectsCarousel"}
+                            role="button" data-bs-slide="prev">
+                            <i class="fa fa-arrow-left"></i>
+                        </a>
+                        <a class="btn btn-primary mb-3" href={"#" + tabControl + "skillsProjectsCarousel"}
+                            role="button" data-bs-slide="next">
+                            <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </div>
+                }
+            </div>
+            <div id={tabControl + "skillsProjectsCarousel"} class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    { createProjectCarouselItems() }
                 </div>
             </div>
         </div>
     );
 }
 
-ReactDOM.render(<SkillsCard />, document.getElementById('skills_card'));
+export default SkillsCard;

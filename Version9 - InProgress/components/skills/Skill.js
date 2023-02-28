@@ -2,6 +2,9 @@ import Technologies from "./Technologies.js";
 import Blogs from "./Blogs.js";
 import Projects from "./Projects.js";
 
+/**
+ * Alternative version - SkillsCard.js
+ */
 /* tabControl is used since unique id is needed for the slider to control the slides */
 const Skill = ({ active="", id, ariaLabelledBy, tabControl, data={ "technologies": [], "blogs": [], "projects": [] } }) => {
     return (

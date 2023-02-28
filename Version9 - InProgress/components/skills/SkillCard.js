@@ -1,4 +1,4 @@
-const SkillCard = () => {
+const SkillCard = ({ data }) => {
     return (
         <div class="row g-0 rounded overflow-hidden flex-md-row h-md-250 position-relative">
             <div class="col p-4 d-flex flex-column position-static">

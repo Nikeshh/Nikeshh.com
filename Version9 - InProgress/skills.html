@@ -124,12 +124,90 @@
 
       <div class="dash-content">
         <div class="overview">
-          <div class="title">
-            <i class="uil uil-tachometer-fast-alt"></i>
-            <span class="text">Skills (Something I can work on)</span>
-          </div>
-          <!-- React Skills Card Component -->
-          <div id="skills_card"></div>
+            <div class="title">
+                <i class="uil uil-tachometer-fast-alt"></i>
+                <span class="text">Skills (Something I can work on)</span>
+            </div>
+            <div class="row m-3">
+                <ul class="nav nav-tabs d-flex justify-content-center align-items-center gap-2" id="myTab"
+                    role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="website-development-tab" data-bs-toggle="tab"
+                            data-bs-target="#website-development" type="button" role="tab"
+                            aria-controls="website-development" aria-selected="true">Website
+                            development</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="app-development-tab" data-bs-toggle="tab"
+                            data-bs-target="#app-development" type="button" role="tab"
+                            aria-controls="app-development" aria-selected="false">App
+                            development</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="seo-tab" data-bs-toggle="tab" data-bs-target="#seo"
+                            type="button" role="tab" aria-controls="seo" aria-selected="false">SEO</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="ui-ux-product-development-and-maintenance-tab"
+                            data-bs-toggle="tab" data-bs-target="#ui-ux-product-development-and-maintenance"
+                            type="button" role="tab" aria-controls="ui-ux-product-development-and-maintenance"
+                            aria-selected="false">
+                            UI & UX, Product Development and Maintenance
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="sales-and-marketing-tab" data-bs-toggle="tab"
+                            data-bs-target="#sales-and-marketing" type="button" role="tab"
+                            aria-controls="sales-and-marketing" aria-selected="false">Sales and
+                            Marketing</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="design-tab" data-bs-toggle="tab" data-bs-target="#design"
+                            type="button" role="tab" aria-controls="design"
+                            aria-selected="false">Design</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="programming-languages-tab" data-bs-toggle="tab"
+                            data-bs-target="#programming-languages" type="button" role="tab"
+                            aria-controls="programming-languages" aria-selected="false">Programming
+                            Languages</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="databases-tab" data-bs-toggle="tab"
+                            data-bs-target="#databases" type="button" role="tab" aria-controls="databases"
+                            aria-selected="false">Databases</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="cloud-tab" data-bs-toggle="tab" data-bs-target="#cloud"
+                            type="button" role="tab" aria-controls="cloud" aria-selected="false">Cloud</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="frontend-and-scripting-tab" data-bs-toggle="tab"
+                            data-bs-target="#frontend-and-scripting" type="button" role="tab"
+                            aria-controls="frontend-and-scripting" aria-selected="false">Frontend and
+                            Scripting</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="backend-tab" data-bs-toggle="tab" data-bs-target="#backend"
+                            type="button" role="tab" aria-controls="backend"
+                            aria-selected="false">Backend</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="devops-tools-processes-tab" data-bs-toggle="tab"
+                            data-bs-target="#devops-tools-processes" type="button" role="tab"
+                            aria-controls="devops-tools-processes" aria-selected="false">DevOps, Tools and
+                            Processes</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="other-skills-services-tab" data-bs-toggle="tab"
+                            data-bs-target="#other-skills-services" type="button" role="tab"
+                            aria-controls="other-skills-services" aria-selected="false">Other Skills &
+                            Services</button>
+                    </li>
+                </ul>
+            </div>
+            <!-- React Skills Main Container Component -->
+            <div id="skills_main_container"></div>
         </div>
       </div>
     </section>
@@ -143,8 +221,8 @@
       src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"
       crossorigin
     ></script>
-    <!-- Skills Card React component -->
-    <script type="module" src="./src/skills/SkillsCard.js"></script>
+    <!-- Skills Main Container React component -->
+    <script type="module" src="./src/SkillsMainContainer.js"></script>
 
     <!-- Font awesome -->
     <script
