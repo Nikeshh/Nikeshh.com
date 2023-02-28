@@ -153,6 +153,43 @@ var BlogSingle = function BlogSingle() {
                         React.createElement("i", { "class": "fab fa-linkedin" })
                     )
                 )
+            ),
+            React.createElement(
+                "div",
+                { "class": "comment" },
+                React.createElement(
+                    "p",
+                    { "class": "title" },
+                    "Leave A Comment"
+                ),
+                React.createElement(
+                    "form",
+                    null,
+                    React.createElement(
+                        "div",
+                        { "class": "form-group" },
+                        React.createElement("textarea", { "class": "form-control", id: "yourComment", rows: "4", placeholder: "Your comment" })
+                    ),
+                    React.createElement(
+                        "div",
+                        { "class": "user-details" },
+                        React.createElement(
+                            "div",
+                            { "class": "form-group" },
+                            React.createElement("input", { type: "text", "class": "form-control", id: "name", placeholder: "Your Name" })
+                        ),
+                        React.createElement(
+                            "div",
+                            { "class": "form-group" },
+                            React.createElement("input", { type: "email", "class": "form-control", id: "email", placeholder: "Your Email" })
+                        )
+                    ),
+                    React.createElement(
+                        "button",
+                        { type: "submit", "class": "btn btn-primary" },
+                        "Comment"
+                    )
+                )
             )
         ),
         React.createElement(

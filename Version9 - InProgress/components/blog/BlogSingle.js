@@ -63,6 +63,23 @@ const BlogSingle = () => {
                         </a>
                     </li>
                 </ul>
+                <div class="comment">
+                    <p class="title">Leave A Comment</p>
+                    <form>
+                        <div class="form-group">
+                            <textarea class="form-control" id="yourComment" rows="4" placeholder="Your comment"></textarea>
+                        </div>
+                        <div class="user-details">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="name" placeholder="Your Name" />
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="email" placeholder="Your Email" />
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Comment</button>
+                    </form>
+                </div>
             </div>
             <div class="right-content">
                 <div class="recent-posts">

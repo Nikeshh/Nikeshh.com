@@ -357,6 +357,24 @@ nav.close ~ .dashboard .top {
   text-decoration: underline;
   font-style: italic;
 }
+.left-content .comment {
+  margin-top: 1rem;
+}
+.comment form {
+  display: flex;
+  flex-direction: column;
+  gap: .7rem;
+}
+.comment form .user-details {
+  display: flex;
+  gap: .5rem;
+}
+.comment form .user-details .form-group {
+  width: 100%;
+}
+.comment form .btn {
+  width: fit-content;
+}
 .blog-content .right-content {
   flex: 1;
   display: flex;
