@@ -33,9 +33,36 @@ const BlogSingle = () => {
                     <span class="tag">AI</span>
                     <span class="tag">Computer Vision</span>
                 </div>
-                <div class="social-icons">
-                    
-                </div>
+                <ul class="social-icons">
+                    <li class="share-via">
+                        <p>Share via</p>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <i class="fab fa-pinterest"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <i class="fab fa-google-plus"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </li>
+                </ul>
             </div>
             <div class="right-content">
                 <div class="recent-posts">

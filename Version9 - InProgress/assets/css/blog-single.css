@@ -15,7 +15,7 @@
   --black-light-color: #707070;
   --border-color: #e6e5e5;
   --toggle-color: #ddd;
-  --box1-color: #4da3ff;
+  --box1-color: #bcdafb;
   --box2-color: #ffe6ac;
   --box3-color: #e7d1fc;
   --title-icon-color: #fff;
@@ -304,7 +304,8 @@ nav.close ~ .dashboard .top {
   gap: 1rem;
   align-items: center;
 }
-.meta-details .author-details, .meta-details .time-details {
+.meta-details .author-details, 
+.meta-details .time-details {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -313,12 +314,48 @@ nav.close ~ .dashboard .top {
   align-items: center;
   gap: 5px;
 }
+.meta-details .author-details i, 
+.meta-details .time-details i {
+  transform: translateY(-15%);
+}
 .left-content .content {
   margin-top: 2rem;
   text-align: justify;
 }
 .left-content .content p {
   line-height: 32px;
+}
+.left-content .tags {
+  display: flex;
+  gap: .5rem;
+  margin-top: 1rem;
+}
+.tags .tag {
+  background-color: var(--box1-color);
+  padding: .4rem 2rem;
+  border-radius: .5rem;
+  color: var(--primary-color);
+}
+.left-content .social-icons {
+  margin-top: 1rem;
+  padding-left: 0rem;
+  display: flex;
+  gap: 1rem;
+}
+.social-icons li {
+  list-style: none;
+}
+.social-icons li i {
+  color: var(--black-light-color);
+  font-size: 2rem;
+}
+.social-icons li i:hover {
+  transition: var(--tran-05);
+  color: var(--primary-color);
+}
+.social-icons .share-via p {
+  text-decoration: underline;
+  font-style: italic;
 }
 .blog-content .right-content {
   flex: 1;

@@ -96,7 +96,64 @@ var BlogSingle = function BlogSingle() {
                     "Computer Vision"
                 )
             ),
-            React.createElement("div", { "class": "social-icons" })
+            React.createElement(
+                "ul",
+                { "class": "social-icons" },
+                React.createElement(
+                    "li",
+                    { "class": "share-via" },
+                    React.createElement(
+                        "p",
+                        null,
+                        "Share via"
+                    )
+                ),
+                React.createElement(
+                    "li",
+                    null,
+                    React.createElement(
+                        "a",
+                        { href: "#", target: "_blank" },
+                        React.createElement("i", { "class": "fab fa-facebook" })
+                    )
+                ),
+                React.createElement(
+                    "li",
+                    null,
+                    React.createElement(
+                        "a",
+                        { href: "#", target: "_blank" },
+                        React.createElement("i", { "class": "fab fa-pinterest" })
+                    )
+                ),
+                React.createElement(
+                    "li",
+                    null,
+                    React.createElement(
+                        "a",
+                        { href: "#", target: "_blank" },
+                        React.createElement("i", { "class": "fab fa-google-plus" })
+                    )
+                ),
+                React.createElement(
+                    "li",
+                    null,
+                    React.createElement(
+                        "a",
+                        { href: "#", target: "_blank" },
+                        React.createElement("i", { "class": "fab fa-twitter" })
+                    )
+                ),
+                React.createElement(
+                    "li",
+                    null,
+                    React.createElement(
+                        "a",
+                        { href: "#", target: "_blank" },
+                        React.createElement("i", { "class": "fab fa-linkedin" })
+                    )
+                )
+            )
         ),
         React.createElement(
             "div",
