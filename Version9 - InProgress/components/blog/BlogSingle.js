@@ -77,6 +77,22 @@ const BlogSingle = () => {
                     <p class="title">Download Free Ebook</p>
                     <img src="./assets/images/blog3.png" alt="" class="img-fluid promotion-image" />
                 </div>
+                <div class="business-contact">
+                    <p class="title">Get custom ML Models for your business</p>
+                    <p class="subtitle">Fill in your details below for a free consultation call.</p>
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="fullName" placeholder="Full Name" />
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="emailAddress" placeholder="Please enter your email" />
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="mobile" placeholder="Mobile" />
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
             </div>
         </div>
     );

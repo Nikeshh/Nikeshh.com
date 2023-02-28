@@ -374,12 +374,28 @@ nav.close ~ .dashboard .top {
   font-weight: bold;
 }
 .recent-posts .post {}
-.right-content .promotion {}
+.right-content .promotion {
+  margin-top: 2rem;
+}
 .promotion .title {
   font-size: 22px;
   font-weight: bold;
 }
 .promotion .promotion-image {}
+.right-content .business-contact {
+  margin-top: 2rem;
+  border-radius: .5rem;
+  background-color: var(--box1-color);
+  padding: 1rem 2rem;
+}
+.business-contact .title {
+  font-size: 22px;
+  font-weight: bold;
+}
+.business-contact .form-group,
+.business-contact .btn {
+  margin-top: 1.5rem;
+}
 
 @media (max-width: 1000px) {
   nav {

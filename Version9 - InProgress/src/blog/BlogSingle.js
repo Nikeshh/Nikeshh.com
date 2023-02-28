@@ -201,6 +201,44 @@ var BlogSingle = function BlogSingle() {
                     "Download Free Ebook"
                 ),
                 React.createElement("img", { src: "./assets/images/blog3.png", alt: "", "class": "img-fluid promotion-image" })
+            ),
+            React.createElement(
+                "div",
+                { "class": "business-contact" },
+                React.createElement(
+                    "p",
+                    { "class": "title" },
+                    "Get custom ML Models for your business"
+                ),
+                React.createElement(
+                    "p",
+                    { "class": "subtitle" },
+                    "Fill in your details below for a free consultation call."
+                ),
+                React.createElement(
+                    "form",
+                    null,
+                    React.createElement(
+                        "div",
+                        { "class": "form-group" },
+                        React.createElement("input", { type: "text", "class": "form-control", id: "fullName", placeholder: "Full Name" })
+                    ),
+                    React.createElement(
+                        "div",
+                        { "class": "form-group" },
+                        React.createElement("input", { type: "email", "class": "form-control", id: "emailAddress", placeholder: "Please enter your email" })
+                    ),
+                    React.createElement(
+                        "div",
+                        { "class": "form-group" },
+                        React.createElement("input", { type: "text", "class": "form-control", id: "mobile", placeholder: "Mobile" })
+                    ),
+                    React.createElement(
+                        "button",
+                        { type: "submit", "class": "btn btn-primary" },
+                        "Submit"
+                    )
+                )
             )
         )
     );
