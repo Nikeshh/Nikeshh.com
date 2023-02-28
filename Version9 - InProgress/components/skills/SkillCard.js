@@ -15,7 +15,4 @@ const SkillCard = () => {
     );
 }
 
-const skillCards = document.getElementsByName('skill_card');
-for (var i = 0; i < skillCards.length; i++) {
-  ReactDOM.render(<SkillCard />, skillCards.item(i));
-}
+export default SkillCard;

@@ -39,7 +39,4 @@ var SkillCard = function SkillCard() {
     );
 };
 
-var skillCards = document.getElementsByName('skill_card');
-for (var i = 0; i < skillCards.length; i++) {
-    ReactDOM.render(React.createElement(SkillCard, null), skillCards.item(i));
-}
+export default SkillCard;
