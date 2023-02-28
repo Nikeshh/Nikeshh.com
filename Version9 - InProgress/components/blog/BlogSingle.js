@@ -63,7 +63,30 @@ const BlogSingle = () => {
                         </a>
                     </li>
                 </ul>
-                <div class="comment">
+                <div class="comments">
+                    <div class="user-comment">
+                        <img src="./assets/images/avatar.png" alt="" class="img-fluid comment-image" />
+                        <div class="comment-details">
+                            <p class="comment">This is a amazing blog post</p>
+                            <p class="details">Nikeshh Vijayabaskaran <span class="timestamp">February 28, 2023 At 4:15 am</span></p>
+                        </div>
+                    </div>
+                    <div class="user-comment">
+                        <img src="./assets/images/avatar.png" alt="" class="img-fluid comment-image" />
+                        <div class="comment-details">
+                            <p class="comment">This is a amazing blog post</p>
+                            <p class="details">Nikeshh Vijayabaskaran <span class="timestamp">February 28, 2023 At 4:15 am</span></p>
+                        </div>
+                    </div>
+                    <div class="user-comment">
+                        <img src="./assets/images/avatar.png" alt="" class="img-fluid comment-image" />
+                        <div class="comment-details">
+                            <p class="comment">This is a amazing blog post</p>
+                            <p class="details">Nikeshh Vijayabaskaran <span class="timestamp">February 28, 2023 At 4:15 am</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="leave-a-comment">
                     <p class="title">Leave A Comment</p>
                     <form>
                         <div class="form-group">

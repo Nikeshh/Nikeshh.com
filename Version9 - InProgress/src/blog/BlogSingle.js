@@ -156,7 +156,83 @@ var BlogSingle = function BlogSingle() {
             ),
             React.createElement(
                 "div",
-                { "class": "comment" },
+                { "class": "comments" },
+                React.createElement(
+                    "div",
+                    { "class": "user-comment" },
+                    React.createElement("img", { src: "./assets/images/avatar.png", alt: "", "class": "img-fluid comment-image" }),
+                    React.createElement(
+                        "div",
+                        { "class": "comment-details" },
+                        React.createElement(
+                            "p",
+                            { "class": "comment" },
+                            "This is a amazing blog post"
+                        ),
+                        React.createElement(
+                            "p",
+                            { "class": "details" },
+                            "Nikeshh Vijayabaskaran ",
+                            React.createElement(
+                                "span",
+                                { "class": "timestamp" },
+                                "February 28, 2023 At 4:15 am"
+                            )
+                        )
+                    )
+                ),
+                React.createElement(
+                    "div",
+                    { "class": "user-comment" },
+                    React.createElement("img", { src: "./assets/images/avatar.png", alt: "", "class": "img-fluid comment-image" }),
+                    React.createElement(
+                        "div",
+                        { "class": "comment-details" },
+                        React.createElement(
+                            "p",
+                            { "class": "comment" },
+                            "This is a amazing blog post"
+                        ),
+                        React.createElement(
+                            "p",
+                            { "class": "details" },
+                            "Nikeshh Vijayabaskaran ",
+                            React.createElement(
+                                "span",
+                                { "class": "timestamp" },
+                                "February 28, 2023 At 4:15 am"
+                            )
+                        )
+                    )
+                ),
+                React.createElement(
+                    "div",
+                    { "class": "user-comment" },
+                    React.createElement("img", { src: "./assets/images/avatar.png", alt: "", "class": "img-fluid comment-image" }),
+                    React.createElement(
+                        "div",
+                        { "class": "comment-details" },
+                        React.createElement(
+                            "p",
+                            { "class": "comment" },
+                            "This is a amazing blog post"
+                        ),
+                        React.createElement(
+                            "p",
+                            { "class": "details" },
+                            "Nikeshh Vijayabaskaran ",
+                            React.createElement(
+                                "span",
+                                { "class": "timestamp" },
+                                "February 28, 2023 At 4:15 am"
+                            )
+                        )
+                    )
+                )
+            ),
+            React.createElement(
+                "div",
+                { "class": "leave-a-comment" },
                 React.createElement(
                     "p",
                     { "class": "title" },
