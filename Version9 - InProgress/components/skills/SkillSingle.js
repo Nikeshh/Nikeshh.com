@@ -1,10 +1,32 @@
+import { skillsAndServices } from '../data/data.js';
+
 const SkillSingle = () => {
+    
+    const [title, setTitle] = React.useState("");
+
+    React.useEffect(() => {
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+
+        // var index = getUrlValues()["index"];
+        // var skill = skillsAndServices[index];
+        // setTitle(skill["title"]);
+    }, []);
+
+    function getUrlValues() { 
+        var vars = {}; 
+        window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m, key, value) { 
+           vars[key] = value; 
+        });
+        return vars;
+    }
+
     return (
         <div class="blog-content">
             <div class="left-content">
                 <img src="./assets/images/blog1.png" alt="" class="img-fluid content-image" />
                 <div class="title">
-                    <h1>ReactJS</h1>
+                <h1>ReactJS</h1>
                 </div>
                 <div class="meta-details">
                     <span class="author-details">

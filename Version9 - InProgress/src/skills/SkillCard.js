@@ -1,5 +1,6 @@
 var SkillCard = function SkillCard(_ref) {
-    var data = _ref.data;
+    var data = _ref.data,
+        name = _ref.name;
 
     return React.createElement(
         "div",
@@ -10,33 +11,33 @@ var SkillCard = function SkillCard(_ref) {
             React.createElement(
                 "strong",
                 { "class": "d-inline-block mb-2 text-primary" },
-                "Mobile and App Development"
+                name
             ),
             React.createElement(
                 "h3",
                 { "class": "mb-0 blog-card-text" },
-                "Foodbooze (Mobile App, Website, Analytics) - Complete Food Delivery or Food Ecommerce Solution"
+                data["name"]
             ),
             React.createElement(
                 "div",
                 { "class": "mb-1 text-muted" },
-                "Nov 12"
+                data["learn-more"]
             ),
             React.createElement(
                 "p",
                 { "class": "card-text mb-auto blog-card-text" },
-                "Introducing a revolutionary cross-platform food delivery and ecommerce solution app built using flutter framework that is designed to make food ordering seamless and hassle-free."
+                data["description"].length > 150 ? data["description"].substring(0, 150) + "..." : data["description"]
             ),
             React.createElement(
                 "a",
-                { href: "#", "class": "stretched-link blog-card-text" },
-                "View Project"
+                { href: "skill-single.html?learn-more=" + data["learn-more"], "class": "stretched-link blog-card-text" },
+                "Learn More"
             )
         ),
         React.createElement(
             "div",
             { "class": "col-auto d-none d-lg-block" },
-            React.createElement("img", { src: "./assets/images/placeholder.png", alt: "Project Image", "class": "img-fluid" })
+            React.createElement("img", { alt: data["name"], src: data["image"], "class": "img-fluid" })
         )
     );
 };
