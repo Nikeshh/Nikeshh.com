@@ -1,6 +1,9 @@
 import Project from './projects/Project.js';
 import { projects } from './data/data.js';
 
+/**
+ * Not used currently
+ */
 const ProjectsWithoutCarousel = () => {
     return (
         <div>

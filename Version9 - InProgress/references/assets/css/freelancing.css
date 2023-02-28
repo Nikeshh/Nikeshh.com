@@ -310,10 +310,8 @@ img {
 .freelancing .right .jobs .jobs-left .job-row .job .job-controls .dollar-sign {
   border-radius: 50%;
   border: 0.1rem solid #689cfb;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   color: #689cfb;

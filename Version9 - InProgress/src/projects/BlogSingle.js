@@ -1,4 +1,4 @@
-var ProjectSingle = function ProjectSingle() {
+var BlogSingle = function BlogSingle() {
     return React.createElement(
         "div",
         { "class": "blog-content" },
@@ -357,4 +357,4 @@ var ProjectSingle = function ProjectSingle() {
     );
 };
 
-ReactDOM.render(React.createElement(ProjectSingle, null), document.getElementById('project_single'));
+ReactDOM.render(React.createElement(BlogSingle, null), document.getElementById('blog_single'));

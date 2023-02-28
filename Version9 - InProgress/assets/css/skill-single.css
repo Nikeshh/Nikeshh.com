@@ -40,8 +40,7 @@ html {
   text-anchor: middle;
   -webkit-user-select: none;
   -moz-user-select: none;
-  -ms-user-select: none;
-      user-select: none;
+  user-select: none;
 }
 @media (min-width: 768px) {
   .skill-single .bd-placeholder-img-lg {
@@ -176,7 +175,6 @@ html {
   z-index: 10;
 }
 .skill-single .carousel-item {
-  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   max-height: 32rem;
@@ -219,8 +217,7 @@ html {
   text-anchor: middle;
   -webkit-user-select: none;
   -moz-user-select: none;
-  -ms-user-select: none;
-      user-select: none;
+  user-select: none;
 }
 @media (min-width: 768px) {
   .skill-single .bd-placeholder-img-lg {

@@ -1,6 +1,9 @@
 import Project from './projects/Project.js';
 import { projects } from './data/data.js';
 
+/**
+ * Used in the home page
+ */
 var Projects = function Projects() {
     return React.createElement(
         'div',

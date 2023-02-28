@@ -221,7 +221,6 @@ img {
   padding: 0.5rem 1rem;
   color: #d5ab9b;
   border-radius: 1rem;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
@@ -304,7 +303,6 @@ img {
   padding: 0.5rem 1rem;
   color: #a57cb2;
   border-radius: 1rem;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }

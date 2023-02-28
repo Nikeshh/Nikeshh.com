@@ -1,3 +1,6 @@
+/**
+ * Currently only used in the home page (Used in Projects.js)
+ */
 var Project = function Project(_ref) {
     var index = _ref.index,
         title = _ref.title,

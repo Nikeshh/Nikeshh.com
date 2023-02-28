@@ -1,3 +1,6 @@
+/**
+ * Currently only used in the home page (Used in Projects.js)
+ */
 const Project = ({ index, title, description, carousel=true }) => {
     return (
         <div className="row">

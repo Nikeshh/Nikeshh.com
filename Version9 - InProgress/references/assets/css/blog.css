@@ -169,7 +169,6 @@ img {
   background-color: white;
   border-radius: 2rem;
   padding: 1rem;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   margin-top: auto;
@@ -306,7 +305,6 @@ img {
   font-weight: 300;
 }
 .blog .right .premium-membership .learn-more-btn {
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   background-color: white;

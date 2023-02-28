@@ -296,7 +296,6 @@ html {
   color: black;
   padding: 1rem;
   border-radius: 3rem;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
