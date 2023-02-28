@@ -1,5 +1,5 @@
 import Project from './projects/Project.js';
-import { projects } from './projects/data.js';
+import { projects } from './data/data.js';
 
 var ProjectsWithoutCarousel = function ProjectsWithoutCarousel() {
     return React.createElement(
