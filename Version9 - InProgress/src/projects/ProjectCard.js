@@ -1,4 +1,8 @@
-var ProjectCard = function ProjectCard() {
+var ProjectCard = function ProjectCard(_ref) {
+    var id = _ref.id,
+        title = _ref.title,
+        description = _ref.description;
+
     return React.createElement(
         "div",
         { "class": "row g-0 rounded overflow-hidden flex-md-row h-md-250 position-relative" },
@@ -13,7 +17,7 @@ var ProjectCard = function ProjectCard() {
             React.createElement(
                 "h3",
                 { "class": "mb-0 blog-card-text" },
-                "Foodbooze (Mobile App, Website, Analytics) - Complete Food Delivery or Food Ecommerce Solution"
+                title
             ),
             React.createElement(
                 "div",
@@ -23,11 +27,11 @@ var ProjectCard = function ProjectCard() {
             React.createElement(
                 "p",
                 { "class": "card-text mb-auto blog-card-text" },
-                "Introducing a revolutionary cross-platform food delivery and ecommerce solution app built using flutter framework that is designed to make food ordering seamless and hassle-free."
+                description.length > 150 ? description.substring(0, 150) + "..." : description
             ),
             React.createElement(
                 "a",
-                { href: "#", "class": "stretched-link blog-card-text" },
+                { href: "project-single.html?id=" + id, "class": "stretched-link blog-card-text" },
                 "View Project"
             )
         ),
@@ -39,7 +43,4 @@ var ProjectCard = function ProjectCard() {
     );
 };
 
-var projectCards = document.getElementsByName('project_card');
-for (var i = 0; i < projectCards.length; i++) {
-    ReactDOM.render(React.createElement(ProjectCard, null), projectCards.item(i));
-}
+export default ProjectCard;
