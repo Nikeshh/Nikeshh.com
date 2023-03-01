@@ -21,7 +21,7 @@ const SkillsCard = ({ active="", id, name, ariaLabelledBy, tabControl, data={ "t
                     break;
                 }
                 var technology = technologies.shift();
-                carouselItems.push(<div class={"box " + boxName}><SkillCard data={ technology } name={ name } /></div>);
+                carouselItems.push(<div class={"box " + boxName}><SkillCard data={ technology } name={ name } category={ id } subcategory="technologies" /></div>);
             }
             if(i == 0) {
                 carouselRow.push(<div class="carousel-item active"><div class="boxes">{ carouselItems }</div></div>);
@@ -44,7 +44,7 @@ const SkillsCard = ({ active="", id, name, ariaLabelledBy, tabControl, data={ "t
                     break;
                 }
                 var blog = blogs.shift();
-                carouselItems.push(<div class={"box " + boxName}><SkillCard data={ blog } name={ name } /></div>);
+                carouselItems.push(<div class={"box " + boxName}><SkillCard data={ blog } name={ name } category={ id } subcategory="blogs" /></div>);
             }
             if(i == 0) {
                 carouselRow.push(<div class="carousel-item active"><div class="boxes">{ carouselItems }</div></div>);
@@ -67,7 +67,7 @@ const SkillsCard = ({ active="", id, name, ariaLabelledBy, tabControl, data={ "t
                     break;
                 }
                 var project = projects.shift();
-                carouselItems.push(<div class={"box " + boxName}><SkillCard data={ project } name={ name } /></div>);
+                carouselItems.push(<div class={"box " + boxName}><SkillCard data={ project } name={ name } category={ id } subcategory="projects" /></div>);
             }
             if(i == 0) {
                 carouselRow.push(<div class="carousel-item active"><div class="boxes">{ carouselItems }</div></div>);

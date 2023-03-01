@@ -33,7 +33,7 @@ var SkillsCard = function SkillsCard(_ref) {
                 carouselItems.push(React.createElement(
                     "div",
                     { "class": "box " + boxName },
-                    React.createElement(SkillCard, { data: technology, name: name })
+                    React.createElement(SkillCard, { data: technology, name: name, category: id, subcategory: "technologies" })
                 ));
             }
             if (i == 0) {
@@ -76,7 +76,7 @@ var SkillsCard = function SkillsCard(_ref) {
                 carouselItems.push(React.createElement(
                     "div",
                     { "class": "box " + boxName },
-                    React.createElement(SkillCard, { data: blog, name: name })
+                    React.createElement(SkillCard, { data: blog, name: name, category: id, subcategory: "blogs" })
                 ));
             }
             if (i == 0) {
@@ -119,7 +119,7 @@ var SkillsCard = function SkillsCard(_ref) {
                 carouselItems.push(React.createElement(
                     "div",
                     { "class": "box " + boxName },
-                    React.createElement(SkillCard, { data: project, name: name })
+                    React.createElement(SkillCard, { data: project, name: name, category: id, subcategory: "projects" })
                 ));
             }
             if (i == 0) {

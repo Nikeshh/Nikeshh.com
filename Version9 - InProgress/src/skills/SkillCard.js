@@ -1,6 +1,8 @@
 var SkillCard = function SkillCard(_ref) {
     var data = _ref.data,
-        name = _ref.name;
+        name = _ref.name,
+        category = _ref.category,
+        subcategory = _ref.subcategory;
 
     return React.createElement(
         "div",
@@ -30,7 +32,7 @@ var SkillCard = function SkillCard(_ref) {
             ),
             React.createElement(
                 "a",
-                { href: "skill-single.html?learn-more=" + data["learn-more"], "class": "stretched-link blog-card-text" },
+                { href: "skill-single.html?category=" + category + "&subcategory=" + subcategory + "&learn-more=" + data["learn-more"], "class": "stretched-link blog-card-text" },
                 "Learn More"
             )
         ),

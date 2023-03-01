@@ -2,15 +2,22 @@ import { skillsAndServices } from '../data/data.js';
 
 const SkillSingle = () => {
     
-    const [title, setTitle] = React.useState("");
+    const [skill, setSkill] = React.useState({});
 
     React.useEffect(() => {
         const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
         const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 
-        // var index = getUrlValues()["index"];
-        // var skill = skillsAndServices[index];
-        // setTitle(skill["title"]);
+        var urlValues = getUrlValues();
+        var category = urlValues["category"];
+        var subcategory = urlValues["subcategory"];
+        var learnMore = urlValues["learn-more"];
+        var datas = skillsAndServices[category][subcategory];
+        for (var i=0; i < datas.length; i++) {
+            if(datas[i]["learn-more"] == learnMore) {
+                setSkill(datas[i]);
+            }
+        }
     }, []);
 
     function getUrlValues() { 
@@ -26,7 +33,7 @@ const SkillSingle = () => {
             <div class="left-content">
                 <img src="./assets/images/blog1.png" alt="" class="img-fluid content-image" />
                 <div class="title">
-                <h1>ReactJS</h1>
+                <h1>{skill["name"]}</h1>
                 </div>
                 <div class="meta-details">
                     <span class="author-details">
@@ -39,15 +46,7 @@ const SkillSingle = () => {
                     </span>
                 </div>
                 <div class="content">
-                    ReactJS is a powerful open-source JavaScript library used for building interactive user interfaces. Developed by Facebook, ReactJS has quickly become one of the most popular front-end web development libraries in the industry, with its use by companies like Instagram, Airbnb, and Netflix.
-                    ReactJS allows developers to create reusable UI components, making it easier to manage complex UI designs. These components can be composed of other components, resulting in a modular and reusable approach to development. This approach leads to faster development times, easier maintenance, and fewer bugs.
-                    One of the primary features of ReactJS is its use of a virtual DOM. Instead of directly manipulating the actual DOM, ReactJS creates a virtual representation of it, which it updates only when there are changes. This approach allows for faster performance and reduces the amount of work required by the browser.
-                    Another key feature of ReactJS is its component-based structure. ReactJS divides the UI into independent and reusable parts, allowing developers to create complex applications with ease. The modular approach to development makes it easier to maintain and update code, reducing the time required for development and minimizing the chance of bugs.
-                    ReactJS also supports server-side rendering, which can improve page load times and enhance search engine optimization (SEO). Server-side rendering is the process of rendering a webpage on the server before sending it to the client. This approach results in a faster initial load time and can improve the SEO of the webpage.
-                    ReactJS can also be used with other libraries, such as Redux, to manage application state. Redux is a state management library that provides a centralized store for the application's state, making it easier to manage and maintain.
-                    ReactJS has a vast community support and an active development team, ensuring that it is constantly evolving and improving. The community provides numerous third-party libraries, tools, and plugins that extend the functionality of ReactJS. The community also provides extensive documentation and resources, making it easy for developers to learn and use the library.
-                    ReactJS also provides tools for testing, making it easier to ensure that the code is working as expected. ReactJS has several testing tools, such as Jest and Enzyme, which are designed to work seamlessly with ReactJS.
-                    In summary, ReactJS is a powerful and flexible front-end development library that allows developers to create complex and interactive user interfaces with ease. Its component-based structure, virtual DOM, and server-side rendering make it a popular choice for web developers. Its vast community support, extensive documentation, and third-party libraries make it easy for developers to learn and use. With its ability to improve page load times and enhance SEO, ReactJS is an ideal choice for creating high-performance and SEO-friendly web applications.
+                    {skill["content"]}
                 </div>
                 <div class="tags">
                     <span class="tag">Learning</span>
