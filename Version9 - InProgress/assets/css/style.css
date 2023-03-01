@@ -1,0 +1,6 @@
+.calendly-badge-widget {
+    margin-bottom: .5rem;
+}
+.calendly-badge-widget .calendly-badge-content > span {
+    display: none !important;
+}
