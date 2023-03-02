@@ -57,6 +57,9 @@ body.dark::-webkit-scrollbar-thumb:hover,
 body.dark .activity-data::-webkit-scrollbar-thumb:hover {
     background: #3a3b3c;
 }
+.landing {
+    height: 100vh;
+}
 .landing .header {
     position: fixed;
     display: flex;
@@ -70,6 +73,7 @@ body.dark .activity-data::-webkit-scrollbar-thumb:hover {
 }
 .landing .banner {
     padding-top: 50px;
+    height: calc(100vh - 50px);
 }
 .calendly-badge-widget {
     margin-bottom: .5rem;
