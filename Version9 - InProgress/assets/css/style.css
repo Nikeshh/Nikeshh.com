@@ -140,8 +140,31 @@ body.dark .activity-data::-webkit-scrollbar-thumb:hover {
     width: 4rem;
     height: 4rem;
 }
-.explore-item p {
-
+.explore-item p {}
+/* About Me */
+.about-me {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.about-me .about-me-content {
+    flex: 1;
+}
+.about-me img {
+    flex: 1;
+    max-width: max-content;
+    max-height: max-content;
+}
+@media screen and (max-width: 600px) {
+    .about-me {
+        flex-direction: row-reverse;
+    }
+    .about-me img {
+        max-width: 250px;
+        max-height: 250px;
+    }
 }
 /* Calendly */
 .calendly-badge-widget {
