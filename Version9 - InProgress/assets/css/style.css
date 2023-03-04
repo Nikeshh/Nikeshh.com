@@ -76,7 +76,6 @@ body.dark .activity-data::-webkit-scrollbar-thumb:hover {
     background: linear-gradient(90deg, var(--background-purple) 80%, var(--dark-purple) 20%);
 }
 .landing .header {
-    position: fixed;
     display: flex;
     width: 100%;
     justify-content: space-between;
@@ -107,8 +106,8 @@ body.dark .activity-data::-webkit-scrollbar-thumb:hover {
     color: #000;
 }
 .landing .banner {
-    padding-top: 50px;
-    height: calc(100vh - 50px);
+    padding-top: 100px;
+    height: calc(100vh - 100px);
 }
 /* Explore */
 .explore {
