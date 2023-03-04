@@ -274,6 +274,10 @@ body.dark .activity-data::-webkit-scrollbar-thumb:hover {
 .projects .section-header {
     font-weight: 600;
 }
+.projects .section-subheading {
+    font-weight: 300;
+    text-align: center;
+}
 .projects .projects-content {
     display: flex;
     gap: 1rem;
