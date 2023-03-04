@@ -292,7 +292,6 @@ body.dark .activity-data::-webkit-scrollbar-thumb:hover {
     display: flex;
     gap: 1rem;
     align-items: center;
-    flex: 1;
 }
 .detail i {
     font-size: 3rem;
@@ -306,8 +305,68 @@ body.dark .activity-data::-webkit-scrollbar-thumb:hover {
     font-weight: 600;
     margin-bottom: 0px;
 }
+@media screen and (max-width: 1399px) {
+    .contact-us .contact-details {
+        gap: 2rem;
+    }
+}
+@media screen and (max-width: 991px) {
+    .contact-us .contact-details {
+        gap: 1rem;
+    }
+}
 .contact-us .contact-form {
     margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.contact-form img {
+    flex: 1;
+    max-height: max-content;
+    max-width: max-content;
+}
+.contact-form .form {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0rem 5rem;
+}
+.form .form-heading {
+    font-weight: 600;
+}
+.form .form-subheading {}
+.form input, textarea {
+    border: 1px solid var(--border-color);
+    background-color: var(--panel-color);
+    padding: 10px 25px;
+    border-radius: 5px;
+    height: max-content;
+    width: 100%;
+    color: var(--text-color);
+    font-size: 15px;
+    font-weight: 400;
+    outline: none;
+}
+.form input[type="submit"] {
+    transition: var(--tran-05);
+}
+.form input[type="submit"]:hover {
+    background-color: var(--dark-purple);
+    color: var(--text-color-inverse);
+}
+@media screen and (max-width: 991px) {
+    .contact-form .form {
+        padding: 0px;
+    }
+
+    .contact-form img {
+        margin-bottom: 2rem;
+        max-width: 250px;
+        min-width: 250px;
+    }
 }
 /* Calendly */
 .calendly-badge-widget {
