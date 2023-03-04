@@ -35,23 +35,60 @@
 <body>
     <!-- Header and Banner -->
     <section class="container-fluid landing">
-        <div class="header">
-            <div class="logo">
-                <i class="uil uil-bars sidebar-toggle"></i>
-                Medkit
+        <nav class="navbar navbar-expand-lg" aria-label="Navbar Offcanvas">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="./assets/images/logo.png" alt="Avatar Logo" style="width:40px;" class="img-fluid img-thumbnail rounded-pill">
+                <span class="ms-2 fs-4 brand-name">Nikeshh Vijayabaskaran</span>
+            </a>
+            <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <a class="navbar-brand d-flex align-items-center" href="#">
+                        <img src="./assets/images/logo.png" alt="Avatar Logo" style="width:40px;"
+                            class="img-fluid img-thumbnail rounded-pill">
+                        <span class="ms-2 fs-4 brand-name">Nikeshh Vijayabaskaran</span>
+                    </a>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav nav-pills justify-content-end flex-grow-1 pe-3 gap-xl-2">
+                        <li class="nav-item"><a class="nav-link active ps-3 pe-3" aria-current="page"
+                                href="#home">Home</a></li>
+                        <li class="nav-item"><a href="#about-me" class="nav-link ps-3 pe-3">About</a></li>
+                        <li class="nav-item"><a href="#blog" class="nav-link ps-3 pe-3">Blog</a></li>
+                        <li class="nav-item"><a href="#projects-of-me" class="nav-link ps-3 pe-3">Projects</a>
+                        </li>
+                        <li class="nav-item"><a href="#skills-and-services" class="nav-link ps-3 pe-3">Skills</a>
+                        </li>
+                        <li class="nav-item dropdown ps-3 pe-3">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Others
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="freelancing.html">Freelancing</a></li>
+                                <li><a class="dropdown-item" href="resources.html">Resources</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="courses.html">Courses</a></li>
+                                <li><a class="dropdown-item" href="class.html">Class and Community</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item nav-item-action"><a href="#contact-me" class="nav-link ps-3 pe-3">Contact Me</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="header-menu">
-                <span>Home</span>
-                <span>About Us</span>
-                <span>Pricing</span>
-                <span>Contact</span>
-                <span class="header-menu-action">Log In</span>
-                <span class="header-menu-action">Sign Up</span>
-            </div>
-        </div>
-        <div class="banner">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </nav>
+        <div class="banner container">
             <div class="banner-details">
-                <h1>Find the good <span class="secondary">life</span> by <span class="primary">good</span> health</h1>
+                <h1>Find the good <span class="secondary">life</span><br/>by <span class="primary">good</span> health</h1>
                 <p>Medkit is an award-winning health information & web resource designed to help patients and caregivers understand the many lab tests that are a vital part of medical care</p>
                 <div class="banner-actions">
                     <div class="get-started">
@@ -63,7 +100,7 @@
                     </div>
                 </div>
             </div>
-            <img src="./assets/images/banner-image.png" alt="Nikeshh Banner Image" />
+            <img src="./assets/images/avatar.png" alt="Nikeshh Banner Image" />
         </div>
     </section>
     <!-- Explore -->
