@@ -206,6 +206,62 @@ body.dark .activity-data::-webkit-scrollbar-thumb:hover {
         max-height: 250px;
     }
 }
+/* Testimonials */
+.testimonials {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 2rem !important; 
+    margin-bottom: 2rem !important;
+}
+.testimonials .testimonials-heading {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.testimonials-heading .carousel-buttons {
+    font-size: 2rem;
+}
+.carousel-buttons i:hover {
+    color: var(--dark-purple);
+}
+.testimonials .testimonials-body {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+.testimonials-body .testimonial-item {
+    flex: 1;
+    border-radius: 5px;
+    background-color: var(--light-purple);
+    padding: 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    color: var(--text-color);
+    text-align: start;
+}
+.testionial-item .testimonial {}
+.testimonial-item .user {
+    display: flex;
+    gap: 1rem;
+}
+.user img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.user .user-detail {
+    display: flex;
+    align-items: center;
+}
+.user-detail .user-designation {
+    font-weight: 300;
+    font-size: .8rem;
+    font-style: italic;
+}
 /* Projects */
 .projects {
     display: flex;
