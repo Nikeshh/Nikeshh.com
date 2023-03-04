@@ -418,6 +418,39 @@ body.dark .activity-data::-webkit-scrollbar-thumb:hover {
     margin-top: 2rem !important; 
     margin-bottom: 2rem !important;
 }
+.footer .footer-top {
+    display: flex;
+    justify-content: space-between;
+    padding: 0rem 2rem;
+    flex-wrap: wrap;
+}
+.footer-top li {
+    list-style-type: none
+}
+.footer-top .company-details {}
+.footer-top .services .heading,
+.footer-top .features .heading,
+.footer-top .contact .heading {
+    font-weight: 500;
+}
+.footer .footer-bottom {
+    display: flex;
+    background-color: var(--dark-purple);
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    flex-wrap: wrap;
+    padding: 1rem 2rem;
+}
+.footer-bottom .copyright {}
+.footer-bottom .legacy-actions {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.legacy-actions a {
+    color: #fff;
+}
 /* Calendly */
 .calendly-badge-widget {
     margin-bottom: .5rem;
