@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Mynerve&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -192,26 +193,26 @@ body.dark .activity-data::-webkit-scrollbar-thumb:hover {
     flex-direction: column;
     gap: 1rem;
     flex-wrap: wrap;
-    margin-top: 5rem !important; 
-    margin-bottom: 5rem !important;
+    margin-top: 10rem !important; 
+    margin-bottom: 10rem !important;
 }
 .explore .explore-heading {
     display: flex;
     justify-content: space-between;
 }
-.explore-heading .carousel-buttons {
-    font-size: 2rem;
-}
-.carousel-buttons i:hover {
-    color: var(--dark-purple);
-}
 .explore .explore-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+.explore-body .explore-row {
     display: flex;
     justify-content: space-between;
     gap: 1rem;
     flex-wrap: wrap;
 }
-.explore-body .explore-item {
+.explore-row .explore-item {
     flex: 1;
     border-radius: 5px;
     background-color: var(--light-purple);
@@ -234,7 +235,9 @@ body.dark .activity-data::-webkit-scrollbar-thumb:hover {
     width: 4rem;
     height: 4rem;
 }
-.explore-item p {}
+.explore-item p {
+    font-family: 'Mynerve', cursive;
+}
 /* About Me */
 .about-me {
     display: flex;
@@ -244,6 +247,8 @@ body.dark .activity-data::-webkit-scrollbar-thumb:hover {
     align-items: center;
     margin-top: 10rem !important; 
     margin-bottom: 10rem !important;
+    gap: 5rem;
+    text-align: justify;
 }
 .about-me .about-me-content {
     flex: 1;
@@ -276,12 +281,6 @@ body.dark .activity-data::-webkit-scrollbar-thumb:hover {
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.testimonials-heading .carousel-buttons {
-    font-size: 2rem;
-}
-.carousel-buttons i:hover {
-    color: var(--dark-purple);
-}
 .testimonials .testimonials-body {
     display: flex;
     justify-content: space-between;
@@ -298,25 +297,6 @@ body.dark .activity-data::-webkit-scrollbar-thumb:hover {
     gap: .5rem;
     color: var(--text-color);
     text-align: start;
-}
-.testionial-item .testimonial {}
-.testimonial-item .user {
-    display: flex;
-    gap: 1rem;
-}
-.user img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-}
-.user .user-detail {
-    display: flex;
-    align-items: center;
-}
-.user-detail .user-designation {
-    font-weight: 300;
-    font-size: .8rem;
-    font-style: italic;
 }
 /* Projects */
 .projects {
