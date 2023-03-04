@@ -220,7 +220,6 @@ body.dark .activity-data::-webkit-scrollbar-thumb:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex-wrap: wrap;
 }
 .blogs .section-header {
     font-weight: 600;
@@ -267,6 +266,48 @@ body.dark .activity-data::-webkit-scrollbar-thumb:hover {
         max-width: 250px;
         max-height: 250px;
     }
+}
+/* Contact Us */
+.contact-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact-us .section-preheading {
+    color: var(--dark-purple);
+    font-size: 14px;
+    margin-bottom: 0px;
+}
+.contact-us .section-header {
+    font-weight: 600;
+}
+.contact-us .contact-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10rem;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+.contact-details .detail {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    flex: 1;
+}
+.detail i {
+    font-size: 3rem;
+}
+.detail .detail-information {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+.detail-information p:nth-child(1) {
+    font-weight: 600;
+    margin-bottom: 0px;
+}
+.contact-us .contact-form {
+    margin-top: 2rem;
 }
 /* Calendly */
 .calendly-badge-widget {
