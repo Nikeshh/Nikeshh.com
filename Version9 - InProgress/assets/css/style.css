@@ -44,7 +44,7 @@ body.dark {
     --box3-color: #3a3b3c;
     --title-icon-color: #ccc;
 }
-body:not(:nth-child(0)) {
+body section:not(:nth-child(0)) {
     margin-top: 2rem !important; 
     margin-bottom: 2rem !important;
 }
@@ -162,6 +162,53 @@ body.dark .activity-data::-webkit-scrollbar-thumb:hover {
         flex-direction: row-reverse;
     }
     .about-me img {
+        max-width: 250px;
+        max-height: 250px;
+    }
+}
+/* Projects */
+.projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.projects .section-header {
+    font-weight: 600;
+}
+.projects .projects-content {
+    display: flex;
+    gap: 1rem;
+}
+.projects-content .project-content {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: var(--light-purple);
+}
+.project-content img {
+    max-width: max-content;
+    max-height: max-content;
+    margin: auto;
+}
+.project-content .project-content-title {
+    font-weight: 600;
+    margin-top: 1rem;
+}
+.project-content .project-content-description {}
+.project-content a {
+    margin-left: auto;
+    padding: 0rem 1rem;
+}
+.project-content .project-content-title,
+.project-content .project-content-description {
+    padding: 0rem 1rem;
+}
+.project-content a {
+    padding: 0rem 1rem 1rem 0rem;
+}
+@media screen and (max-width: 600px) {
+    .project-content img {
         max-width: 250px;
         max-height: 250px;
     }
