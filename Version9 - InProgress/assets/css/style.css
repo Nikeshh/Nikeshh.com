@@ -388,23 +388,23 @@ body.dark .activity-data::-webkit-scrollbar-thumb:hover {
         max-height: 250px;
     }
 }
-/* Contact Us */
-.contact-us {
+/* Contact Me */
+.contact-me {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 10rem !important; 
     margin-bottom: 10rem !important;
 }
-.contact-us .section-preheading {
+.contact-me .section-preheading {
     color: var(--dark-purple);
     font-size: 14px;
     margin-bottom: 0px;
 }
-.contact-us .section-header {
+.contact-me .section-header {
     font-weight: 600;
 }
-.contact-us .contact-details {
+.contact-me .contact-details {
     display: flex;
     flex-wrap: wrap;
     gap: 10rem;
@@ -429,16 +429,16 @@ body.dark .activity-data::-webkit-scrollbar-thumb:hover {
     margin-bottom: 0px;
 }
 @media screen and (max-width: 1399px) {
-    .contact-us .contact-details {
+    .contact-me .contact-details {
         gap: 2rem;
     }
 }
 @media screen and (max-width: 991px) {
-    .contact-us .contact-details {
+    .contact-me .contact-details {
         gap: 1rem;
     }
 }
-.contact-us .contact-form {
+.contact-me .contact-form {
     margin-top: 2rem;
     display: flex;
     flex-wrap: wrap;
@@ -512,7 +512,7 @@ body.dark .activity-data::-webkit-scrollbar-thumb:hover {
     flex-basis: 30%;
 }
 .footer-top .services,
-.footer-top .features,
+.footer-top .quick-links,
 .footer-top .contact {
     flex: 1;
     flex-basis: 20%;
@@ -523,7 +523,7 @@ body.dark .activity-data::-webkit-scrollbar-thumb:hover {
     gap: 1rem;
 }
 .footer-top .services .heading,
-.footer-top .features .heading,
+.footer-top .quick-links .heading,
 .footer-top .contact .heading {
     font-weight: 500;
     text-decoration: underline;
