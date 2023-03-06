@@ -5,8 +5,10 @@ import { skillsAndServices } from './data/data.js';
  * Used in the index modal
  */
 var ExploreModalContainer = function ExploreModalContainer() {
-    var name = "website-development";
-    var data = skillsAndServices[name];
+
+    var tag = "website-development";
+    var name = "Website Development";
+    var data = skillsAndServices[tag];
 
     return React.createElement(
         "div",

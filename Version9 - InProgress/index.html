@@ -123,7 +123,7 @@
                     <img src="./assets/images/skills/reactjs.png" alt="" />
                     <p>website development</p>
                 </div>
-                <div class="explore-item">
+                <div id="app-development" class="explore-item">
                     <img src="./assets/images/skills/android.jpeg" alt="" />
                     <p>app development</p>
                 </div>
@@ -405,10 +405,16 @@
     <script>
         window.addEventListener("load", function() {
             var modalContainer = document.getElementById("modal-container");
-            var websiteDevelopmentContainer = document.getElementById("website-development");
             var closeModal = document.getElementById("close-modal");
             var body = document.body;
+            var websiteDevelopmentContainer = document.getElementById("website-development");
             websiteDevelopmentContainer.addEventListener('click', function() {
+                modalContainer.removeAttribute('class');
+                modalContainer.classList.add("one");
+                body.classList.add("modal-active");
+            }, false);
+            var appDevelopmentContainer = document.getElementById("app-development");
+            appDevelopmentContainer.addEventListener('click', function() {
                 modalContainer.removeAttribute('class');
                 modalContainer.classList.add("one");
                 body.classList.add("modal-active");

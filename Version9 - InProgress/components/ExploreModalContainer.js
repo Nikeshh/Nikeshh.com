@@ -5,8 +5,10 @@ import { skillsAndServices } from './data/data.js';
  * Used in the index modal
  */
 const ExploreModalContainer = () => {
-    const name = "website-development";
-    const data = skillsAndServices[name];
+
+    const tag = "website-development";
+    const name = "Website Development";
+    const data = skillsAndServices[tag];
 
     return (
         <div id="modal-container">
@@ -22,7 +24,4 @@ const ExploreModalContainer = () => {
     );
 }
 
-ReactDOM.render(
-    <ExploreModalContainer />,
-    document.getElementById('explore_modal_container')
-);
+ReactDOM.render(<ExploreModalContainer />, document.getElementById('explore_modal_container'));
