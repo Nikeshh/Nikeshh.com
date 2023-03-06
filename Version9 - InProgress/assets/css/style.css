@@ -192,6 +192,11 @@ body.dark .activity-data::-webkit-scrollbar-thumb:hover {
         font-size: 15px !important;
     }
 }
+@media screen and (max-width: 326px) {
+    .landing .navbar .navbar-brand span {
+        font-size: 12px !important;
+    }
+}
 /* Explore */
 .explore {
     display: flex;
