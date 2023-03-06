@@ -119,7 +119,7 @@
         </div>
         <div class="explore-body">
             <div class="explore-row">
-                <div class="explore-item">
+                <div id="website-development" class="explore-item">
                     <img src="./assets/images/skills/reactjs.png" alt="" />
                     <p>website development</p>
                 </div>
@@ -184,6 +184,18 @@
             </div>
         </div>
     </section>
+    <!-- Explore Modal -->
+    <div id="modal-container">
+        <div class="modal-background">
+            <div class="modal">
+                <h2>I'm a Modal</h2>
+                <p>Hear me roar.</p>
+                <svg class="modal-svg" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" preserveAspectRatio="none">
+                    <rect x="0" y="0" fill="none" width="226" height="162" rx="3" ry="3"></rect>
+                </svg>
+            </div>
+        </div>
+    </div>
     <!-- About Me -->
     <section id="about-me" class="container about-me">
         <div class="about-me-content">
@@ -354,9 +366,6 @@
         </div>
     </section>
 
-    <!-- Custom scripts -->
-    <script>
-    </script>
     <!-- React Production -->
     <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
@@ -400,5 +409,22 @@
     <script
         type="text/javascript">window.onload = function () { Calendly.initBadgeWidget({ url: 'https://calendly.com/nikeshhv/15min', text: 'Book a meeting 🤝 (｡◕‿◕｡)', color: '#A020F0', textColor: '#ffffff', branding: true }); }</script>
     <!-- Calendly badge widget end -->
+    <!-- Custom scripts -->
+    <script>
+        window.addEventListener("load", function() {
+            var modalContainer = document.getElementById("modal-container");
+            var websiteDevelopmentContainer = document.getElementById("website-development");
+            var body = document.body;
+            websiteDevelopmentContainer.addEventListener('click', function() {
+                modalContainer.removeAttribute('class');
+                modalContainer.classList.add("one");
+                body.classList.add("modal-active");
+            }, false);
+            modalContainer.addEventListener('click', function() {
+                modalContainer.classList.add("out");
+                body.classList.remove("modal-active");
+            }, false);
+        });
+    </script>
 </body>
 </html>
