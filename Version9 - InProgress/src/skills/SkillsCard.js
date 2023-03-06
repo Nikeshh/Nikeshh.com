@@ -2,6 +2,7 @@ import SkillCard from './SkillCard.js';
 
 /**
  * Alternative version - Skill.js
+ * Alternative version - SkillsCardWithoutCarousel.js
  */
 var SkillsCard = function SkillsCard(_ref) {
     var _ref$active = _ref.active,

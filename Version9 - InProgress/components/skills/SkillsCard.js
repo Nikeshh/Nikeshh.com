@@ -2,6 +2,7 @@ import SkillCard from './SkillCard.js';
 
 /**
  * Alternative version - Skill.js
+ * Alternative version - SkillsCardWithoutCarousel.js
  */
 const SkillsCard = ({ active="", id, name, ariaLabelledBy, tabControl, data={ "technologies": [], "blogs": [], "projects": [] } }) => {
     

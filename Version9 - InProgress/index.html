@@ -184,18 +184,8 @@
             </div>
         </div>
     </section>
-    <!-- Explore Modal -->
-    <div id="modal-container">
-        <div class="modal-background">
-            <div class="modal">
-                <h2>I'm a Modal</h2>
-                <p>Hear me roar.</p>
-                <svg class="modal-svg" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" preserveAspectRatio="none">
-                    <rect x="0" y="0" fill="none" width="226" height="162" rx="3" ry="3"></rect>
-                </svg>
-            </div>
-        </div>
-    </div>
+    <!-- React Explore Modal Container Component -->
+    <div id="explore_modal_container"></div>
     <!-- About Me -->
     <section id="about-me" class="container about-me">
         <div class="about-me-content">
@@ -371,6 +361,8 @@
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
     <!-- Testimonials React component -->
     <script type="module" src="./src/Testimonials.js"></script>
+    <!-- Explore Modal Container React component -->
+    <script type="module" src="./src/ExploreModalContainer.js"></script>
     <!-- Font awesome -->
     <script src="https://kit.fontawesome.com/fd11c6d730.js" crossorigin="anonymous"></script>
     <!-- Bootstrap JS includes Popper JS -->
@@ -414,13 +406,14 @@
         window.addEventListener("load", function() {
             var modalContainer = document.getElementById("modal-container");
             var websiteDevelopmentContainer = document.getElementById("website-development");
+            var closeModal = document.getElementById("close-modal");
             var body = document.body;
             websiteDevelopmentContainer.addEventListener('click', function() {
                 modalContainer.removeAttribute('class');
                 modalContainer.classList.add("one");
                 body.classList.add("modal-active");
             }, false);
-            modalContainer.addEventListener('click', function() {
+            closeModal.addEventListener('click', function() {
                 modalContainer.classList.add("out");
                 body.classList.remove("modal-active");
             }, false);
