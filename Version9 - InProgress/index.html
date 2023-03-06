@@ -100,10 +100,10 @@
                     <li><a href="https://medium.com/@nikeshhvijayabaskaran" target="_blank"><i class="fab fa-medium" target="_blank"></i></a></li>
                 </ul>
                 <div class="banner-actions">
-                    <div class="hire-me">
+                    <div class="hire-me" onclick="hireme()">
                         Hire Me
                     </div>
-                    <div class="get-resume">
+                    <div class="get-resume" onclick="getresume()">
                         <i class="uil uil-download-alt"></i>
                         Get Resume / CV
                     </div>
@@ -201,7 +201,7 @@
         <div class="about-me-content">
             <p><span class="primary">ABOUT ME</span></p>
             <h2>Someone who aspires to change the world</h2>
-            <p>I ❤️ to break, build, and rebuild software applications. Everything has a story to narrate so do the software(s) I develop. I am having <span class="primary fst-italic">more than 4+ years of corporate experience + 3+ years of freelancing experience in full-stack development (60% Backend + 40% Frontend)</span>.</p>
+            <p>I ❤️ to break, build, and rebuild software applications. Everything has a story to narrate so do the software(s) I develop. I am having <span class="primary fst-italic">more than 4+ years of corporate experience + 3+ years of freelancing experience in full-stack development (50% Backend + 50% Frontend)</span>.</p>
             <p>I am an introverted extrovert. I like connecting with people but also have my own space. I am pretty ambitious & dedicated about the things I do, and I ❤️ what I do.</p>
             <p>I naturally tend to lean toward <span class="secondary fst-italic">creativity and strategy</span>, which plays a significant component in my life and work. This is why I have skills ranging from UI/UX to Data processing.</p>
             <p>Software development is an art, and I am happy to be a part of it. <a href="#">Read more about my story</a></p>
@@ -425,6 +425,16 @@
                 body.classList.remove("modal-active");
             }, false);
         });
+
+        function hireme() {
+            const url = "https://www.linkedin.com/in/nikeshh/";
+            window.open(url, '_blank').focus();
+        }
+
+        function getresume() {
+            const url = "https://www.linkedin.com/in/nikeshh/overlay/1635511815814/single-media-viewer/?profileId=ACoAACPionIB7qZyaGq0ubA9G9VnGMPiya39YP4";
+            window.open(url, '_blank').focus();
+        }
     </script>
 </body>
 </html>
