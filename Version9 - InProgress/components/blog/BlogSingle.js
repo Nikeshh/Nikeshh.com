@@ -1,10 +1,33 @@
+import { blogs } from '../data/data.js';
+
 const BlogSingle = () => {
+
+    const [blog, setBlog] = React.useState({});
+
+    React.useEffect(() => {
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+
+        var urlValues = getUrlValues();
+        var id = urlValues["id"];
+        var data = blogs[id];
+        setBlog(data);
+    }, []);
+
+    function getUrlValues() { 
+        var vars = {}; 
+        window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m, key, value) { 
+           vars[key] = value; 
+        });
+        return vars;
+    }
+
     return (
         <div class="blog-content">
             <div class="left-content">
                 <img src="./assets/images/blog1.png" alt="" class="img-fluid content-image" />
                 <div class="title">
-                    <h1>Image Similarity Using Deep CNN: Theory To Code</h1>
+                    <h1>{blog["title"]}</h1>
                 </div>
                 <div class="meta-details">
                     <span class="author-details">
@@ -17,16 +40,7 @@ const BlogSingle = () => {
                     </span>
                 </div>
                 <div class="content">
-                    <p>Image similarity is becoming popular in recent times. The ability of an image similarity model to find identical images with the utmost accuracy in defined data sets is helping in many ways. Finding plagiarized photos, identifying fake accounts, discovering original images of people, products, and places are a few of the image similarity real-world applications. Image similarity is often concluded as the same as image classification by many. However, the similarity model unlike image classification is completely unsupervised and operates beyond labeling images for model creation.</p>
-                    <h2>Image similarity vs Image Classification</h2>
-                    <p>
-                        Image similarity is closely related to image classification application, as both models use the same classifier networks for the processing and delivering the expected outcomes. However, there are a few differences to consider.
-                        <ul>
-                            <li>Image similarity considers many dimensions while figuring out whether or not an image is found similar by considering one or possibly several discrete categories.</li>
-                            <li>Image classifiers are always learned to be implicit due to poor training. If you train a classification model to recognize bicycles, scooters, and cars, and you didn’t expect to classify anything else. Then, there is a possibility that the model will predict motorcycles as bicycles or scooters, which is not acceptable.</li>
-                            <li>Image similarity models are trained differently, using labels to indicate if two images are similar or not, and training networks with similarity relationships can range between every pair of images in a dataset to only between a few necessary. Thanks to constructive losses, the trained model can be flexible to recognize other images known to be similar in the data set instead of finding out only defined or fixed categories.</li>
-                        </ul>
-                    </p>
+                    {blog["content"]}
                 </div>
                 <div class="tags">
                     <span class="tag">Learning</span>

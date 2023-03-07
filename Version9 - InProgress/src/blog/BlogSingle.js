@@ -1,355 +1,353 @@
+var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
+
+function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
+
+import { blogs } from '../data/data.js';
+
 var BlogSingle = function BlogSingle() {
+    var _React$useState = React.useState({}),
+        _React$useState2 = _slicedToArray(_React$useState, 2),
+        blog = _React$useState2[0],
+        setBlog = _React$useState2[1];
+
+    React.useEffect(function () {
+        var tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+        var tooltipList = [].concat(_toConsumableArray(tooltipTriggerList)).map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl);
+        });
+
+        var urlValues = getUrlValues();
+        var id = urlValues["id"];
+        var data = blogs[id];
+        setBlog(data);
+    }, []);
+
+    function getUrlValues() {
+        var vars = {};
+        window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+            vars[key] = value;
+        });
+        return vars;
+    }
+
     return React.createElement(
-        "div",
-        { "class": "blog-content" },
+        'div',
+        { 'class': 'blog-content' },
         React.createElement(
-            "div",
-            { "class": "left-content" },
-            React.createElement("img", { src: "./assets/images/blog1.png", alt: "", "class": "img-fluid content-image" }),
+            'div',
+            { 'class': 'left-content' },
+            React.createElement('img', { src: './assets/images/blog1.png', alt: '', 'class': 'img-fluid content-image' }),
             React.createElement(
-                "div",
-                { "class": "title" },
+                'div',
+                { 'class': 'title' },
                 React.createElement(
-                    "h1",
+                    'h1',
                     null,
-                    "Image Similarity Using Deep CNN: Theory To Code"
+                    blog["title"]
                 )
             ),
             React.createElement(
-                "div",
-                { "class": "meta-details" },
+                'div',
+                { 'class': 'meta-details' },
                 React.createElement(
-                    "span",
-                    { "class": "author-details" },
-                    React.createElement("i", { "class": "bi bi-person" }),
+                    'span',
+                    { 'class': 'author-details' },
+                    React.createElement('i', { 'class': 'bi bi-person' }),
                     React.createElement(
-                        "a",
-                        { href: "#" },
-                        "DeepLobe"
+                        'a',
+                        { href: '#' },
+                        'DeepLobe'
                     )
                 ),
                 React.createElement(
-                    "span",
-                    { "class": "time-details" },
-                    React.createElement("i", { "class": "bi bi-clock-history" }),
+                    'span',
+                    { 'class': 'time-details' },
+                    React.createElement('i', { 'class': 'bi bi-clock-history' }),
                     React.createElement(
-                        "a",
-                        { href: "#" },
-                        "December 9, 2021"
+                        'a',
+                        { href: '#' },
+                        'December 9, 2021'
                     )
                 )
             ),
             React.createElement(
-                "div",
-                { "class": "content" },
+                'div',
+                { 'class': 'content' },
+                blog["content"]
+            ),
+            React.createElement(
+                'div',
+                { 'class': 'tags' },
                 React.createElement(
-                    "p",
-                    null,
-                    "Image similarity is becoming popular in recent times. The ability of an image similarity model to find identical images with the utmost accuracy in defined data sets is helping in many ways. Finding plagiarized photos, identifying fake accounts, discovering original images of people, products, and places are a few of the image similarity real-world applications. Image similarity is often concluded as the same as image classification by many. However, the similarity model unlike image classification is completely unsupervised and operates beyond labeling images for model creation."
+                    'span',
+                    { 'class': 'tag' },
+                    'Learning'
                 ),
                 React.createElement(
-                    "h2",
-                    null,
-                    "Image similarity vs Image Classification"
+                    'span',
+                    { 'class': 'tag' },
+                    'AI'
                 ),
                 React.createElement(
-                    "p",
-                    null,
-                    "Image similarity is closely related to image classification application, as both models use the same classifier networks for the processing and delivering the expected outcomes. However, there are a few differences to consider.",
+                    'span',
+                    { 'class': 'tag' },
+                    'Computer Vision'
+                )
+            ),
+            React.createElement(
+                'ul',
+                { 'class': 'social-icons' },
+                React.createElement(
+                    'li',
+                    { 'class': 'share-via' },
                     React.createElement(
-                        "ul",
+                        'p',
                         null,
-                        React.createElement(
-                            "li",
-                            null,
-                            "Image similarity considers many dimensions while figuring out whether or not an image is found similar by considering one or possibly several discrete categories."
-                        ),
-                        React.createElement(
-                            "li",
-                            null,
-                            "Image classifiers are always learned to be implicit due to poor training. If you train a classification model to recognize bicycles, scooters, and cars, and you didn\u2019t expect to classify anything else. Then, there is a possibility that the model will predict motorcycles as bicycles or scooters, which is not acceptable."
-                        ),
-                        React.createElement(
-                            "li",
-                            null,
-                            "Image similarity models are trained differently, using labels to indicate if two images are similar or not, and training networks with similarity relationships can range between every pair of images in a dataset to only between a few necessary. Thanks to constructive losses, the trained model can be flexible to recognize other images known to be similar in the data set instead of finding out only defined or fixed categories."
-                        )
+                        'Share via'
+                    )
+                ),
+                React.createElement(
+                    'li',
+                    null,
+                    React.createElement(
+                        'a',
+                        { href: '#', target: '_blank' },
+                        React.createElement('i', { 'class': 'fab fa-facebook' })
+                    )
+                ),
+                React.createElement(
+                    'li',
+                    null,
+                    React.createElement(
+                        'a',
+                        { href: '#', target: '_blank' },
+                        React.createElement('i', { 'class': 'fab fa-pinterest' })
+                    )
+                ),
+                React.createElement(
+                    'li',
+                    null,
+                    React.createElement(
+                        'a',
+                        { href: '#', target: '_blank' },
+                        React.createElement('i', { 'class': 'fab fa-google-plus' })
+                    )
+                ),
+                React.createElement(
+                    'li',
+                    null,
+                    React.createElement(
+                        'a',
+                        { href: '#', target: '_blank' },
+                        React.createElement('i', { 'class': 'fab fa-twitter' })
+                    )
+                ),
+                React.createElement(
+                    'li',
+                    null,
+                    React.createElement(
+                        'a',
+                        { href: '#', target: '_blank' },
+                        React.createElement('i', { 'class': 'fab fa-linkedin' })
                     )
                 )
             ),
             React.createElement(
-                "div",
-                { "class": "tags" },
+                'div',
+                { 'class': 'comments' },
                 React.createElement(
-                    "span",
-                    { "class": "tag" },
-                    "Learning"
-                ),
-                React.createElement(
-                    "span",
-                    { "class": "tag" },
-                    "AI"
-                ),
-                React.createElement(
-                    "span",
-                    { "class": "tag" },
-                    "Computer Vision"
-                )
-            ),
-            React.createElement(
-                "ul",
-                { "class": "social-icons" },
-                React.createElement(
-                    "li",
-                    { "class": "share-via" },
+                    'div',
+                    { 'class': 'user-comment' },
+                    React.createElement('img', { src: './assets/images/avatar.png', alt: '', 'class': 'img-fluid comment-image' }),
                     React.createElement(
-                        "p",
-                        null,
-                        "Share via"
-                    )
-                ),
-                React.createElement(
-                    "li",
-                    null,
-                    React.createElement(
-                        "a",
-                        { href: "#", target: "_blank" },
-                        React.createElement("i", { "class": "fab fa-facebook" })
-                    )
-                ),
-                React.createElement(
-                    "li",
-                    null,
-                    React.createElement(
-                        "a",
-                        { href: "#", target: "_blank" },
-                        React.createElement("i", { "class": "fab fa-pinterest" })
-                    )
-                ),
-                React.createElement(
-                    "li",
-                    null,
-                    React.createElement(
-                        "a",
-                        { href: "#", target: "_blank" },
-                        React.createElement("i", { "class": "fab fa-google-plus" })
-                    )
-                ),
-                React.createElement(
-                    "li",
-                    null,
-                    React.createElement(
-                        "a",
-                        { href: "#", target: "_blank" },
-                        React.createElement("i", { "class": "fab fa-twitter" })
-                    )
-                ),
-                React.createElement(
-                    "li",
-                    null,
-                    React.createElement(
-                        "a",
-                        { href: "#", target: "_blank" },
-                        React.createElement("i", { "class": "fab fa-linkedin" })
-                    )
-                )
-            ),
-            React.createElement(
-                "div",
-                { "class": "comments" },
-                React.createElement(
-                    "div",
-                    { "class": "user-comment" },
-                    React.createElement("img", { src: "./assets/images/avatar.png", alt: "", "class": "img-fluid comment-image" }),
-                    React.createElement(
-                        "div",
-                        { "class": "comment-details" },
+                        'div',
+                        { 'class': 'comment-details' },
                         React.createElement(
-                            "p",
-                            { "class": "comment" },
-                            "This is a amazing blog post"
+                            'p',
+                            { 'class': 'comment' },
+                            'This is a amazing blog post'
                         ),
                         React.createElement(
-                            "p",
-                            { "class": "details" },
-                            "Nikeshh Vijayabaskaran ",
+                            'p',
+                            { 'class': 'details' },
+                            'Nikeshh Vijayabaskaran ',
                             React.createElement(
-                                "span",
-                                { "class": "timestamp" },
-                                "February 28, 2023 At 4:15 am"
+                                'span',
+                                { 'class': 'timestamp' },
+                                'February 28, 2023 At 4:15 am'
                             )
                         )
                     )
                 ),
                 React.createElement(
-                    "div",
-                    { "class": "user-comment" },
-                    React.createElement("img", { src: "./assets/images/avatar.png", alt: "", "class": "img-fluid comment-image" }),
+                    'div',
+                    { 'class': 'user-comment' },
+                    React.createElement('img', { src: './assets/images/avatar.png', alt: '', 'class': 'img-fluid comment-image' }),
                     React.createElement(
-                        "div",
-                        { "class": "comment-details" },
+                        'div',
+                        { 'class': 'comment-details' },
                         React.createElement(
-                            "p",
-                            { "class": "comment" },
-                            "This is a amazing blog post"
+                            'p',
+                            { 'class': 'comment' },
+                            'This is a amazing blog post'
                         ),
                         React.createElement(
-                            "p",
-                            { "class": "details" },
-                            "Nikeshh Vijayabaskaran ",
+                            'p',
+                            { 'class': 'details' },
+                            'Nikeshh Vijayabaskaran ',
                             React.createElement(
-                                "span",
-                                { "class": "timestamp" },
-                                "February 28, 2023 At 4:15 am"
+                                'span',
+                                { 'class': 'timestamp' },
+                                'February 28, 2023 At 4:15 am'
                             )
                         )
                     )
                 ),
                 React.createElement(
-                    "div",
-                    { "class": "user-comment" },
-                    React.createElement("img", { src: "./assets/images/avatar.png", alt: "", "class": "img-fluid comment-image" }),
+                    'div',
+                    { 'class': 'user-comment' },
+                    React.createElement('img', { src: './assets/images/avatar.png', alt: '', 'class': 'img-fluid comment-image' }),
                     React.createElement(
-                        "div",
-                        { "class": "comment-details" },
+                        'div',
+                        { 'class': 'comment-details' },
                         React.createElement(
-                            "p",
-                            { "class": "comment" },
-                            "This is a amazing blog post"
+                            'p',
+                            { 'class': 'comment' },
+                            'This is a amazing blog post'
                         ),
                         React.createElement(
-                            "p",
-                            { "class": "details" },
-                            "Nikeshh Vijayabaskaran ",
+                            'p',
+                            { 'class': 'details' },
+                            'Nikeshh Vijayabaskaran ',
                             React.createElement(
-                                "span",
-                                { "class": "timestamp" },
-                                "February 28, 2023 At 4:15 am"
+                                'span',
+                                { 'class': 'timestamp' },
+                                'February 28, 2023 At 4:15 am'
                             )
                         )
                     )
                 )
             ),
             React.createElement(
-                "div",
-                { "class": "leave-a-comment" },
+                'div',
+                { 'class': 'leave-a-comment' },
                 React.createElement(
-                    "p",
-                    { "class": "title" },
-                    "Leave A Comment"
+                    'p',
+                    { 'class': 'title' },
+                    'Leave A Comment'
                 ),
                 React.createElement(
-                    "form",
+                    'form',
                     null,
                     React.createElement(
-                        "div",
-                        { "class": "form-group" },
-                        React.createElement("textarea", { "class": "form-control", id: "yourComment", rows: "4", placeholder: "Your comment" })
+                        'div',
+                        { 'class': 'form-group' },
+                        React.createElement('textarea', { 'class': 'form-control', id: 'yourComment', rows: '4', placeholder: 'Your comment' })
                     ),
                     React.createElement(
-                        "div",
-                        { "class": "user-details" },
+                        'div',
+                        { 'class': 'user-details' },
                         React.createElement(
-                            "div",
-                            { "class": "form-group" },
-                            React.createElement("input", { type: "text", "class": "form-control", id: "name", placeholder: "Your Name" })
+                            'div',
+                            { 'class': 'form-group' },
+                            React.createElement('input', { type: 'text', 'class': 'form-control', id: 'name', placeholder: 'Your Name' })
                         ),
                         React.createElement(
-                            "div",
-                            { "class": "form-group" },
-                            React.createElement("input", { type: "email", "class": "form-control", id: "email", placeholder: "Your Email" })
+                            'div',
+                            { 'class': 'form-group' },
+                            React.createElement('input', { type: 'email', 'class': 'form-control', id: 'email', placeholder: 'Your Email' })
                         )
                     ),
                     React.createElement(
-                        "button",
-                        { type: "submit", "class": "btn btn-primary" },
-                        "Comment"
+                        'button',
+                        { type: 'submit', 'class': 'btn btn-primary' },
+                        'Comment'
                     )
                 )
             )
         ),
         React.createElement(
-            "div",
-            { "class": "right-content" },
+            'div',
+            { 'class': 'right-content' },
             React.createElement(
-                "div",
-                { "class": "recent-posts" },
+                'div',
+                { 'class': 'recent-posts' },
                 React.createElement(
-                    "p",
-                    { "class": "title" },
-                    "Recent Posts"
+                    'p',
+                    { 'class': 'title' },
+                    'Recent Posts'
                 ),
                 React.createElement(
-                    "p",
-                    { "class": "post" },
-                    "Top 7 No-Code AI Platforms That Are Making ML Accessible"
+                    'p',
+                    { 'class': 'post' },
+                    'Top 7 No-Code AI Platforms That Are Making ML Accessible'
                 ),
                 React.createElement(
-                    "p",
-                    { "class": "post" },
-                    "Edge AI for Secure AI Applications"
+                    'p',
+                    { 'class': 'post' },
+                    'Edge AI for Secure AI Applications'
                 ),
                 React.createElement(
-                    "p",
-                    { "class": "post" },
-                    "Geospatial AI: A Data-Centric Approach for Growth & Development"
+                    'p',
+                    { 'class': 'post' },
+                    'Geospatial AI: A Data-Centric Approach for Growth & Development'
                 ),
                 React.createElement(
-                    "p",
-                    { "class": "post" },
-                    "Synthetic Data: The Future of Computer Vision"
+                    'p',
+                    { 'class': 'post' },
+                    'Synthetic Data: The Future of Computer Vision'
                 ),
                 React.createElement(
-                    "p",
-                    { "class": "post" },
-                    "6 Best Practices Of Data Labeling for Object Detection Models"
+                    'p',
+                    { 'class': 'post' },
+                    '6 Best Practices Of Data Labeling for Object Detection Models'
                 )
             ),
             React.createElement(
-                "div",
-                { "class": "promotion" },
+                'div',
+                { 'class': 'promotion' },
                 React.createElement(
-                    "p",
-                    { "class": "title" },
-                    "Download Free Ebook"
+                    'p',
+                    { 'class': 'title' },
+                    'Download Free Ebook'
                 ),
-                React.createElement("img", { src: "./assets/images/blog3.png", alt: "", "class": "img-fluid promotion-image" })
+                React.createElement('img', { src: './assets/images/blog3.png', alt: '', 'class': 'img-fluid promotion-image' })
             ),
             React.createElement(
-                "div",
-                { "class": "business-contact" },
+                'div',
+                { 'class': 'business-contact' },
                 React.createElement(
-                    "p",
-                    { "class": "title" },
-                    "Get custom ML Models for your business"
+                    'p',
+                    { 'class': 'title' },
+                    'Get custom ML Models for your business'
                 ),
                 React.createElement(
-                    "p",
-                    { "class": "subtitle" },
-                    "Fill in your details below for a free consultation call."
+                    'p',
+                    { 'class': 'subtitle' },
+                    'Fill in your details below for a free consultation call.'
                 ),
                 React.createElement(
-                    "form",
+                    'form',
                     null,
                     React.createElement(
-                        "div",
-                        { "class": "form-group" },
-                        React.createElement("input", { type: "text", "class": "form-control", id: "fullName", placeholder: "Full Name" })
+                        'div',
+                        { 'class': 'form-group' },
+                        React.createElement('input', { type: 'text', 'class': 'form-control', id: 'fullName', placeholder: 'Full Name' })
                     ),
                     React.createElement(
-                        "div",
-                        { "class": "form-group" },
-                        React.createElement("input", { type: "email", "class": "form-control", id: "emailAddress", placeholder: "Please enter your email" })
+                        'div',
+                        { 'class': 'form-group' },
+                        React.createElement('input', { type: 'email', 'class': 'form-control', id: 'emailAddress', placeholder: 'Please enter your email' })
                     ),
                     React.createElement(
-                        "div",
-                        { "class": "form-group" },
-                        React.createElement("input", { type: "text", "class": "form-control", id: "mobile", placeholder: "Mobile" })
+                        'div',
+                        { 'class': 'form-group' },
+                        React.createElement('input', { type: 'text', 'class': 'form-control', id: 'mobile', placeholder: 'Mobile' })
                     ),
                     React.createElement(
-                        "button",
-                        { type: "submit", "class": "btn btn-primary" },
-                        "Submit"
+                        'button',
+                        { type: 'submit', 'class': 'btn btn-primary' },
+                        'Submit'
                     )
                 )
             )

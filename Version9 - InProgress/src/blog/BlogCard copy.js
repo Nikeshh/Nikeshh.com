@@ -1,8 +1,4 @@
-var BlogCard = function BlogCard(_ref) {
-    var id = _ref.id,
-        title = _ref.title,
-        description = _ref.description;
-
+var BlogCard = function BlogCard() {
     return React.createElement(
         "div",
         { "class": "row g-0 rounded overflow-hidden flex-md-row h-md-250 position-relative" },
@@ -17,7 +13,7 @@ var BlogCard = function BlogCard(_ref) {
             React.createElement(
                 "h3",
                 { "class": "mb-0 blog-card-text" },
-                title
+                "Top 7 No-Code AI Platforms That Are Making ML Accessible"
             ),
             React.createElement(
                 "div",
@@ -27,11 +23,11 @@ var BlogCard = function BlogCard(_ref) {
             React.createElement(
                 "p",
                 { "class": "card-text mb-auto blog-card-text" },
-                description.length > 150 ? description.substring(0, 150) + "..." : description
+                "This is a wider card with supporting text below as a natural lead-in to additional content."
             ),
             React.createElement(
                 "a",
-                { href: "blog-single.html?id=" + id, "class": "stretched-link blog-card-text" },
+                { href: "#", "class": "stretched-link blog-card-text" },
                 "Continue reading"
             )
         ),
@@ -43,4 +39,7 @@ var BlogCard = function BlogCard(_ref) {
     );
 };
 
-export default BlogCard;
+var blogCards = document.getElementsByName('blog_card');
+for (var i = 0; i < blogCards.length; i++) {
+    ReactDOM.render(React.createElement(BlogCard, null), blogCards.item(i));
+}
