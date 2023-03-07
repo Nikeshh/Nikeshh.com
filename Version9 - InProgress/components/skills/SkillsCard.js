@@ -12,16 +12,17 @@ const SkillsCard = ({ active="", id, name, ariaLabelledBy, tabControl, data={ "t
 
     const createTechnologyCarouselItems = () => {
         var carouselRow = [];
-        const numberOfThrees = technologies.length / 3;
+        const technologiesData = technologies.slice();
+        const numberOfThrees = technologiesData.length / 3;
         for(var i=0; i < numberOfThrees; i++) {
             var carouselItems = [];
             for(var j=0; j<3; j++) {
                 const boxNumber = j+1;
                 const boxName = "box" + boxNumber;
-                if(technologies.length == 0) {
+                if(technologiesData.length == 0) {
                     break;
                 }
-                var technology = technologies.shift();
+                var technology = technologiesData.shift();
                 carouselItems.push(<div class={"box " + boxName}><SkillCard data={ technology } name={ name } category={ id } subcategory="technologies" /></div>);
             }
             if(i == 0) {
@@ -35,16 +36,17 @@ const SkillsCard = ({ active="", id, name, ariaLabelledBy, tabControl, data={ "t
 
     const createBlogCarouselItems = () => {
         var carouselRow = [];
-        const numberOfThrees = blogs.length / 3;
+        const blogsData = blogs.slice();
+        const numberOfThrees = blogsData.length / 3;
         for(var i=0; i < numberOfThrees; i++) {
             var carouselItems = [];
             for(var j=0; j<3; j++) {
                 const boxNumber = j+1;
                 const boxName = "box" + boxNumber;
-                if(blogs.length == 0) {
+                if(blogsData.length == 0) {
                     break;
                 }
-                var blog = blogs.shift();
+                var blog = blogsData.shift();
                 carouselItems.push(<div class={"box " + boxName}><SkillCard data={ blog } name={ name } category={ id } subcategory="blogs" /></div>);
             }
             if(i == 0) {
@@ -58,16 +60,17 @@ const SkillsCard = ({ active="", id, name, ariaLabelledBy, tabControl, data={ "t
 
     const createProjectCarouselItems = () => {
         var carouselRow = [];
-        const numberOfThrees = projects.length / 3;
+        const projectsData = projects.slice();
+        const numberOfThrees = projectsData.length / 3;
         for(var i=0; i < numberOfThrees; i++) {
             var carouselItems = [];
             for(var j=0; j<3; j++) {
                 const boxNumber = j+1;
                 const boxName = "box" + boxNumber;
-                if(projects.length == 0) {
+                if(projectsData.length == 0) {
                     break;
                 }
-                var project = projects.shift();
+                var project = projectsData.shift();
                 carouselItems.push(<div class={"box " + boxName}><SkillCard data={ project } name={ name } category={ id } subcategory="projects" /></div>);
             }
             if(i == 0) {

@@ -751,7 +751,7 @@ export const skillsAndServices = {
                 "description": "",
                 "image": "./assets/images/skills/react-native.png", 
                 "learn-more": "react-native"
-            },
+            }
         ],
         "blogs": [
 

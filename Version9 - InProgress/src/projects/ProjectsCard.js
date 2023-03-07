@@ -11,15 +11,17 @@ var ProjectsCard = function ProjectsCard(_ref) {
     var projectRows = function projectRows() {
         var projectsRow = [];
         var id = 0;
-        for (var i = 0; i < projects.length; i++) {
+        var projectsData = projects.slice();
+        var numberOfThrees = projectsData.length / 3;
+        for (var i = 0; i < numberOfThrees; i++) {
             var projectItems = [];
             for (var j = 0; j < 3; j++) {
                 var boxNumber = j + 1;
                 var boxName = "box" + boxNumber;
-                if (projects.length == 0) {
+                if (projectsData.length == 0) {
                     break;
                 }
-                var project = projects.shift();
+                var project = projectsData.shift();
                 projectItems.push(React.createElement(
                     "div",
                     { "class": "box " + boxName },
@@ -27,19 +29,11 @@ var ProjectsCard = function ProjectsCard(_ref) {
                 ));
                 id = id + 1;
             }
-            if (i == 0) {
-                projectsRow.push(React.createElement(
-                    "div",
-                    { "class": "boxes" },
-                    projectItems
-                ));
-            } else {
-                projectsRow.push(React.createElement(
-                    "div",
-                    { "class": "boxes" },
-                    projectItems
-                ));
-            }
+            projectsRow.push(React.createElement(
+                "div",
+                { "class": "boxes" },
+                projectItems
+            ));
         }
         return projectsRow;
     };

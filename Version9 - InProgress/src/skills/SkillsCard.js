@@ -21,16 +21,17 @@ var SkillsCard = function SkillsCard(_ref) {
 
     var createTechnologyCarouselItems = function createTechnologyCarouselItems() {
         var carouselRow = [];
-        var numberOfThrees = technologies.length / 3;
+        var technologiesData = technologies.slice();
+        var numberOfThrees = technologiesData.length / 3;
         for (var i = 0; i < numberOfThrees; i++) {
             var carouselItems = [];
             for (var j = 0; j < 3; j++) {
                 var boxNumber = j + 1;
                 var boxName = "box" + boxNumber;
-                if (technologies.length == 0) {
+                if (technologiesData.length == 0) {
                     break;
                 }
-                var technology = technologies.shift();
+                var technology = technologiesData.shift();
                 carouselItems.push(React.createElement(
                     "div",
                     { "class": "box " + boxName },
@@ -64,16 +65,17 @@ var SkillsCard = function SkillsCard(_ref) {
 
     var createBlogCarouselItems = function createBlogCarouselItems() {
         var carouselRow = [];
-        var numberOfThrees = blogs.length / 3;
+        var blogsData = blogs.slice();
+        var numberOfThrees = blogsData.length / 3;
         for (var i = 0; i < numberOfThrees; i++) {
             var carouselItems = [];
             for (var j = 0; j < 3; j++) {
                 var boxNumber = j + 1;
                 var boxName = "box" + boxNumber;
-                if (blogs.length == 0) {
+                if (blogsData.length == 0) {
                     break;
                 }
-                var blog = blogs.shift();
+                var blog = blogsData.shift();
                 carouselItems.push(React.createElement(
                     "div",
                     { "class": "box " + boxName },
@@ -107,16 +109,17 @@ var SkillsCard = function SkillsCard(_ref) {
 
     var createProjectCarouselItems = function createProjectCarouselItems() {
         var carouselRow = [];
-        var numberOfThrees = projects.length / 3;
+        var projectsData = projects.slice();
+        var numberOfThrees = projectsData.length / 3;
         for (var i = 0; i < numberOfThrees; i++) {
             var carouselItems = [];
             for (var j = 0; j < 3; j++) {
                 var boxNumber = j + 1;
                 var boxName = "box" + boxNumber;
-                if (projects.length == 0) {
+                if (projectsData.length == 0) {
                     break;
                 }
-                var project = projects.shift();
+                var project = projectsData.shift();
                 carouselItems.push(React.createElement(
                     "div",
                     { "class": "box " + boxName },

@@ -5,23 +5,21 @@ const BlogsCard = ({ blogs=[] }) => {
     const blogRows = () => {
         var blogsRow = [];
         var id = 0;
-        for(var i=0; i < blogs.length; i++) {
+        const blogsData = blogs.slice();
+        const numberOfThrees = blogsData.length / 3;
+        for(var i=0; i < numberOfThrees; i++) {
             var blogItems = [];
             for(var j=0; j<3; j++) {
                 const boxNumber = j+1;
                 const boxName = "box" + boxNumber;
-                if(blogs.length == 0) {
+                if(blogsData.length == 0) {
                     break;
                 }
-                var blog = blogs.shift();
+                var blog = blogsData.shift();
                 blogItems.push(<div class={"box " + boxName}><BlogCard id={id} title={blog["title"]} description={blog["description"]} /></div>);
                 id = id + 1;
             }
-            if(i == 0) {
-                blogsRow.push(<div class="boxes">{ blogItems }</div>);
-            } else {
-                blogsRow.push(<div class="boxes">{ blogItems }</div>);
-            }
+            blogsRow.push(<div class="boxes">{ blogItems }</div>);
         }
         return blogsRow;
     }

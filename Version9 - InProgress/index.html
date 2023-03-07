@@ -117,75 +117,9 @@
         <div class="explore-heading">
             <h2>Explore by my <span class="primary">skills and services</span></h2>
         </div>
-        <div class="explore-body">
-            <div class="explore-row">
-                <div id="website-development" class="explore-item">
-                    <img src="./assets/images/skills/reactjs.png" alt="" />
-                    <p>website development</p>
-                </div>
-                <div id="app-development" class="explore-item">
-                    <img src="./assets/images/skills/android.jpeg" alt="" />
-                    <p>app development</p>
-                </div>
-                <div class="explore-item">
-                    <img src="./assets/images/skills/seo.jpeg" alt="" />
-                    <p>seo</p>
-                </div>
-                <div class="explore-item">
-                    <img src="./assets/images/skills/adobe-xd.png" alt="" />
-                    <p>ui / ux</p>
-                </div>
-            </div>
-            <div class="explore-row">
-                <div class="explore-item">
-                    <img src="./assets/images/skills/visual-studio-code.png" alt="" />
-                    <p>product development and maintenance</p>
-                </div>
-                <div class="explore-item">
-                    <img src="./assets/images/skills/sales.jpeg" alt="" />
-                    <p>sales and marketing</p>
-                </div>
-                <div class="explore-item">
-                    <img src="./assets/images/skills/design.png" alt="" />
-                    <p>design</p>
-                </div>
-                <div class="explore-item">
-                    <img src="./assets/images/skills/java.jpeg" alt="" />
-                    <p>programming languages</p>
-                </div>
-            </div>
-            <div class="explore-row">
-                <div class="explore-item">
-                    <img src="./assets/images/skills/sql.png" alt="" />
-                    <p>databases</p>
-                </div>
-                <div class="explore-item">
-                    <img src="./assets/images/skills/docker.png" alt="" />
-                    <p>cloud</p>
-                </div>
-                <div class="explore-item">
-                    <img src="./assets/images/skills/reactjs.png" alt="" />
-                    <p>frontend and scripting</p>
-                </div>
-                <div class="explore-item">
-                    <img src="./assets/images/skills/python.png" alt="" />
-                    <p>backend</p>
-                </div>
-            </div>
-            <div class="explore-row">
-                <div class="explore-item">
-                    <img src="./assets/images/skills/git.png" alt="" />
-                    <p>devops tools and processes</p>
-                </div>
-                <div class="explore-item">
-                    <img src="./assets/images/skills/jupyter.png" alt="" />
-                    <p>others</p>
-                </div>
-            </div>
-        </div>
+        <!-- React Explore Container Component -->
+        <div id="explore_container"></div>
     </section>
-    <!-- React Explore Modal Container Component -->
-    <div id="explore_modal_container"></div>
     <!-- About Me -->
     <section id="about-me" class="container about-me">
         <div class="about-me-content">
@@ -361,8 +295,8 @@
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
     <!-- Testimonials React component -->
     <script type="module" src="./src/Testimonials.js"></script>
-    <!-- Explore Modal Container React component -->
-    <script type="module" src="./src/ExploreModalContainer.js"></script>
+    <!-- Explore Container React component -->
+    <script type="module" src="./src/explore/ExploreContainer.js"></script>
     <!-- Font awesome -->
     <script src="https://kit.fontawesome.com/fd11c6d730.js" crossorigin="anonymous"></script>
     <!-- Bootstrap JS includes Popper JS -->
@@ -403,28 +337,6 @@
     <!-- Calendly badge widget end -->
     <!-- Custom scripts -->
     <script>
-        window.addEventListener("load", function() {
-            var modalContainer = document.getElementById("modal-container");
-            var closeModal = document.getElementById("close-modal");
-            var body = document.body;
-            var websiteDevelopmentContainer = document.getElementById("website-development");
-            websiteDevelopmentContainer.addEventListener('click', function() {
-                modalContainer.removeAttribute('class');
-                modalContainer.classList.add("one");
-                body.classList.add("modal-active");
-            }, false);
-            var appDevelopmentContainer = document.getElementById("app-development");
-            appDevelopmentContainer.addEventListener('click', function() {
-                modalContainer.removeAttribute('class');
-                modalContainer.classList.add("one");
-                body.classList.add("modal-active");
-            }, false);
-            closeModal.addEventListener('click', function() {
-                modalContainer.classList.add("out");
-                body.classList.remove("modal-active");
-            }, false);
-        });
-
         function hireme() {
             const url = "https://www.linkedin.com/in/nikeshh/";
             window.open(url, '_blank').focus();
