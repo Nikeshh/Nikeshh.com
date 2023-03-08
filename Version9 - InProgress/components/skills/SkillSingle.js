@@ -36,13 +36,13 @@ const SkillSingle = () => {
                 <h1>{skill["name"]}</h1>
                 </div>
                 <div class="meta-details">
-                    <span class="author-details">
+                <span class="author-details">
                         <i class="bi bi-person"></i>
-                        <a href="#">DeepLobe</a>
+                        <a href="#">Nikeshh Vijayabaskaran</a>
                     </span>
                     <span class="time-details">
                         <i class="bi bi-clock-history"></i>
-                        <a href="#">December 9, 2021</a>
+                        <a href="#">March 7th, 2023</a>
                     </span>
                 </div>
                 <div class="content">

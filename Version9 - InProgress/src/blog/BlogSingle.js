@@ -56,7 +56,7 @@ var BlogSingle = function BlogSingle() {
                     React.createElement(
                         'a',
                         { href: '#' },
-                        'DeepLobe'
+                        'Nikeshh Vijayabaskaran'
                     )
                 ),
                 React.createElement(
@@ -66,7 +66,7 @@ var BlogSingle = function BlogSingle() {
                     React.createElement(
                         'a',
                         { href: '#' },
-                        'December 9, 2021'
+                        'March 7th, 2023'
                     )
                 )
             ),

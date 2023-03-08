@@ -1,17 +1,54 @@
 var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
 
 import SkillCard from './SkillCard.js';
+import { skillsAndServices } from '../data/data.js';
 
 /**
  * Alternative version - Skill.js
  * Alternative version - SkillsCard.js
  */
 var SkillsCardWithoutCarousel = function SkillsCardWithoutCarousel(_ref) {
-    var name = _ref.name,
-        technologies = _ref.technologies,
-        blogs = _ref.blogs,
-        projects = _ref.projects;
+    var tag = _ref.tag,
+        name = _ref.name;
 
+    var _React$useState = React.useState([]),
+        _React$useState2 = _slicedToArray(_React$useState, 2),
+        technologies = _React$useState2[0],
+        setTechnologies = _React$useState2[1];
+
+    var _React$useState3 = React.useState([]),
+        _React$useState4 = _slicedToArray(_React$useState3, 2),
+        blogs = _React$useState4[0],
+        setBlogs = _React$useState4[1];
+
+    var _React$useState5 = React.useState([]),
+        _React$useState6 = _slicedToArray(_React$useState5, 2),
+        projects = _React$useState6[0],
+        setProjects = _React$useState6[1];
+
+    var _React$useState7 = React.useState([]),
+        _React$useState8 = _slicedToArray(_React$useState7, 2),
+        technologyRows = _React$useState8[0],
+        setTechnologyRows = _React$useState8[1];
+
+    var _React$useState9 = React.useState([]),
+        _React$useState10 = _slicedToArray(_React$useState9, 2),
+        blogRows = _React$useState10[0],
+        setBlogRows = _React$useState10[1];
+
+    var _React$useState11 = React.useState([]),
+        _React$useState12 = _slicedToArray(_React$useState11, 2),
+        projectRows = _React$useState12[0],
+        setProjectRows = _React$useState12[1];
+
+    React.useEffect(function () {
+        if (tag != "" && name != "") {
+            var data = skillsAndServices[tag];
+            setTechnologies(data["technologies"]);
+            setBlogs(data["blogs"]);
+            setProjects(data["projects"]);
+        }
+    }, [tag, name]);
 
     React.useEffect(function () {
         createTechnologyItems();
@@ -25,24 +62,8 @@ var SkillsCardWithoutCarousel = function SkillsCardWithoutCarousel(_ref) {
         createProjectItems();
     }, [projects]);
 
-    var _React$useState = React.useState([]),
-        _React$useState2 = _slicedToArray(_React$useState, 2),
-        technologyRows = _React$useState2[0],
-        setTechnologyRows = _React$useState2[1];
-
-    var _React$useState3 = React.useState([]),
-        _React$useState4 = _slicedToArray(_React$useState3, 2),
-        blogRows = _React$useState4[0],
-        setBlogRows = _React$useState4[1];
-
-    var _React$useState5 = React.useState([]),
-        _React$useState6 = _slicedToArray(_React$useState5, 2),
-        projectRows = _React$useState6[0],
-        setProjectRows = _React$useState6[1];
-
     var createTechnologyItems = function createTechnologyItems() {
         var rows = [];
-        var id = 0;
         var technologiesData = technologies.slice();
         var numberOfThrees = technologiesData.length / 3;
         for (var i = 0; i < numberOfThrees; i++) {
@@ -55,15 +76,14 @@ var SkillsCardWithoutCarousel = function SkillsCardWithoutCarousel(_ref) {
                 }
                 var technology = technologiesData.shift();
                 rowItems.push(React.createElement(
-                    "div",
-                    { "class": "box " + boxName },
-                    React.createElement(SkillCard, { data: technology, name: name, category: id, subcategory: "technologies" })
+                    'div',
+                    { 'class': "box " + boxName },
+                    React.createElement(SkillCard, { data: technology, name: name, category: tag, subcategory: 'technologies' })
                 ));
-                id = id + 1;
             }
             rows.push(React.createElement(
-                "div",
-                { "class": "boxes" },
+                'div',
+                { 'class': 'boxes' },
                 rowItems
             ));
         }
@@ -72,7 +92,6 @@ var SkillsCardWithoutCarousel = function SkillsCardWithoutCarousel(_ref) {
 
     var createBlogItems = function createBlogItems() {
         var rows = [];
-        var id = 0;
         var blogsData = blogs.slice();
         var numberOfThrees = blogsData.length / 3;
         for (var i = 0; i < numberOfThrees; i++) {
@@ -85,15 +104,14 @@ var SkillsCardWithoutCarousel = function SkillsCardWithoutCarousel(_ref) {
                 }
                 var blog = blogsData.shift();
                 rowItems.push(React.createElement(
-                    "div",
-                    { "class": "box " + boxName },
-                    React.createElement(SkillCard, { data: blog, name: name, category: id, subcategory: "blogs" })
+                    'div',
+                    { 'class': "box " + boxName },
+                    React.createElement(SkillCard, { data: blog, name: name, category: tag, subcategory: 'blogs' })
                 ));
-                id = id + 1;
             }
             rows.push(React.createElement(
-                "div",
-                { "class": "boxes" },
+                'div',
+                { 'class': 'boxes' },
                 rowItems
             ));
         }
@@ -102,7 +120,6 @@ var SkillsCardWithoutCarousel = function SkillsCardWithoutCarousel(_ref) {
 
     var createProjectItems = function createProjectItems() {
         var rows = [];
-        var id = 0;
         var projectsData = projects.slice();
         var numberOfThrees = projectsData.length / 3;
         for (var i = 0; i < numberOfThrees; i++) {
@@ -115,15 +132,14 @@ var SkillsCardWithoutCarousel = function SkillsCardWithoutCarousel(_ref) {
                 }
                 var project = projectsData.shift();
                 rowItems.push(React.createElement(
-                    "div",
-                    { "class": "box " + boxName },
-                    React.createElement(SkillCard, { data: project, name: name, category: id, subcategory: "projects" })
+                    'div',
+                    { 'class': "box " + boxName },
+                    React.createElement(SkillCard, { data: project, name: name, category: category, subcategory: 'projects' })
                 ));
-                id = id + 1;
             }
             rows.push(React.createElement(
-                "div",
-                { "class": "boxes" },
+                'div',
+                { 'class': 'boxes' },
                 rowItems
             ));
         }
@@ -131,74 +147,74 @@ var SkillsCardWithoutCarousel = function SkillsCardWithoutCarousel(_ref) {
     };
 
     return React.createElement(
-        "div",
-        { "class": "dash-content" },
+        'div',
+        { 'class': 'dash-content' },
         React.createElement(
-            "div",
-            { "class": "row" },
+            'div',
+            { 'class': 'row' },
             React.createElement(
-                "div",
-                { "class": "col-9" },
+                'div',
+                { 'class': 'col-9' },
                 React.createElement(
-                    "div",
-                    { "class": "title ms-0 mt-0 me-0 mb-3" },
+                    'div',
+                    { 'class': 'title ms-0 mt-0 me-0 mb-3' },
                     React.createElement(
-                        "span",
-                        { "class": "text" },
+                        'span',
+                        { 'class': 'text' },
                         name,
-                        " - Technologies"
+                        ' - Technologies'
                     )
                 )
             )
         ),
         React.createElement(
-            "div",
+            'div',
             null,
             technologyRows
         ),
         React.createElement(
-            "div",
-            { "class": "row" },
+            'div',
+            { 'class': 'row' },
             React.createElement(
-                "div",
-                { "class": "col-9" },
+                'div',
+                { 'class': 'col-9' },
                 React.createElement(
-                    "div",
-                    { "class": "title ms-0 mt-0 me-0 mb-3" },
+                    'div',
+                    { 'class': 'title ms-0 mt-0 me-0 mb-3' },
                     React.createElement(
-                        "span",
-                        { "class": "text" },
+                        'span',
+                        { 'class': 'text' },
                         name,
-                        " - Related Blogs"
+                        ' - Related Blogs'
                     )
                 )
             )
         ),
         React.createElement(
-            "div",
+            'div',
             null,
             blogRows
         ),
         React.createElement(
-            "div",
-            { "class": "row" },
+            'div',
+            { 'class': 'row' },
             React.createElement(
-                "div",
-                { "class": "col-9" },
+                'div',
+                { 'class': 'col-9' },
                 React.createElement(
-                    "div",
-                    { "class": "title ms-0 mt-0 me-0 mb-3" },
+                    'div',
+                    { 'class': 'title ms-0 mt-0 me-0 mb-3' },
                     React.createElement(
-                        "span",
-                        { "class": "text" },
+                        'span',
+                        { 'class': 'text' },
                         name,
-                        " - Related Projects"
+                        ' - Related Projects'
                     )
                 )
             )
         ),
         React.createElement(
-            "div",
+            'div',
             null,
             projectRows
         )

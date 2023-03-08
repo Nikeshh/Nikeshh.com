@@ -1,10 +1,27 @@
 import SkillCard from './SkillCard.js';
+import { skillsAndServices } from '../data/data.js';
 
 /**
  * Alternative version - Skill.js
  * Alternative version - SkillsCard.js
  */
-const SkillsCardWithoutCarousel = ({ name, technologies, blogs, projects }) => {
+const SkillsCardWithoutCarousel = ({ tag, name }) => {
+
+    const [technologies, setTechnologies] = React.useState([]);
+    const [blogs, setBlogs] = React.useState([]);
+    const [projects, setProjects] = React.useState([]);
+    const [technologyRows, setTechnologyRows] = React.useState([]);
+    const [blogRows, setBlogRows] = React.useState([]);
+    const [projectRows, setProjectRows] = React.useState([]);
+
+    React.useEffect(() => {
+        if(tag != "" && name != "") {
+            const data = skillsAndServices[tag];
+            setTechnologies(data["technologies"]);
+            setBlogs(data["blogs"]);
+            setProjects(data["projects"]);
+        }
+    }, [tag, name]);
 
     React.useEffect(() => {
         createTechnologyItems();
@@ -18,13 +35,8 @@ const SkillsCardWithoutCarousel = ({ name, technologies, blogs, projects }) => {
         createProjectItems();
     }, [projects]);
 
-    const [technologyRows, setTechnologyRows] = React.useState([]);
-    const [blogRows, setBlogRows] = React.useState([]);
-    const [projectRows, setProjectRows] = React.useState([]);
-
     const createTechnologyItems = () => {
         var rows = [];
-        var id = 0;
         const technologiesData = technologies.slice();
         const numberOfThrees = technologiesData.length / 3;
         for(var i=0; i < numberOfThrees; i++) {
@@ -36,8 +48,7 @@ const SkillsCardWithoutCarousel = ({ name, technologies, blogs, projects }) => {
                     break;
                 }
                 var technology = technologiesData.shift();
-                rowItems.push(<div class={"box " + boxName}><SkillCard data={ technology } name={ name } category={ id } subcategory="technologies" /></div>);
-                id = id + 1;
+                rowItems.push(<div class={"box " + boxName}><SkillCard data={ technology } name={ name } category={ tag } subcategory="technologies" /></div>);
             }
             rows.push(<div class="boxes">{ rowItems }</div>);
         }
@@ -46,7 +57,6 @@ const SkillsCardWithoutCarousel = ({ name, technologies, blogs, projects }) => {
 
     const createBlogItems = () => {
         var rows = [];
-        var id = 0;
         const blogsData = blogs.slice();
         const numberOfThrees = blogsData.length / 3;
         for(var i=0; i < numberOfThrees; i++) {
@@ -58,8 +68,7 @@ const SkillsCardWithoutCarousel = ({ name, technologies, blogs, projects }) => {
                     break;
                 }
                 var blog = blogsData.shift();
-                rowItems.push(<div class={"box " + boxName}><SkillCard data={ blog } name={ name } category={ id } subcategory="blogs" /></div>);
-                id = id + 1;
+                rowItems.push(<div class={"box " + boxName}><SkillCard data={ blog } name={ name } category={ tag } subcategory="blogs" /></div>);
             }
             rows.push(<div class="boxes">{ rowItems }</div>);
         }
@@ -68,7 +77,6 @@ const SkillsCardWithoutCarousel = ({ name, technologies, blogs, projects }) => {
 
     const createProjectItems = () => {
         var rows = [];
-        var id = 0;
         const projectsData = projects.slice();
         const numberOfThrees = projectsData.length / 3;
         for(var i=0; i < numberOfThrees; i++) {
@@ -80,8 +88,7 @@ const SkillsCardWithoutCarousel = ({ name, technologies, blogs, projects }) => {
                     break;
                 }
                 var project = projectsData.shift();
-                rowItems.push(<div class={"box " + boxName}><SkillCard data={ project } name={ name } category={ id } subcategory="projects" /></div>);
-                id = id + 1;
+                rowItems.push(<div class={"box " + boxName}><SkillCard data={ project } name={ name } category={ category } subcategory="projects" /></div>);
             }
             rows.push(<div class="boxes">{ rowItems }</div>);
         }
