@@ -115,7 +115,8 @@ body.dark .activity-data::-webkit-scrollbar-thumb:hover {
 .banner-details p {
     font-weight: 300;
 }
-.banner-details .social-links {
+.banner-details .social-links,
+.footer .social-links {
     list-style-type: none;
     display: flex;
     gap: 1rem;
@@ -528,7 +529,6 @@ body.dark .activity-data::-webkit-scrollbar-thumb:hover {
     flex: 1;
     flex-basis: 30%;
 }
-.footer-top .services,
 .footer-top .quick-links,
 .footer-top .contact {
     flex: 1;
@@ -539,7 +539,6 @@ body.dark .activity-data::-webkit-scrollbar-thumb:hover {
     flex-direction: column;
     gap: 1rem;
 }
-.footer-top .services .heading,
 .footer-top .quick-links .heading,
 .footer-top .contact .heading {
     font-weight: 500;
