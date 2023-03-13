@@ -50,6 +50,10 @@ body.dark::-webkit-scrollbar-thumb:hover,
 body.dark .activity-data::-webkit-scrollbar-thumb:hover {
     background: #3a3b3c;
 }
+/* Common */
+.text-muted {
+    margin-bottom: 0;
+}
 /* Top */
 .top {
     background: linear-gradient(to bottom, #3a3b3c 80%, var(--white) 0%);
@@ -78,9 +82,6 @@ body.dark .activity-data::-webkit-scrollbar-thumb:hover {
     padding: 1.5rem 1rem;
 }
 /* Bottom */
-.text-muted {
-    margin-bottom: 0;
-}
 .bottom {
     margin-top: 2rem;
     display: flex;
@@ -138,4 +139,9 @@ body.dark .activity-data::-webkit-scrollbar-thumb:hover {
 }
 .box .achieved-amount {
     font-size: 2rem;
+}
+@media screen and (max-width: 500px) {
+    .bottom {
+        flex-direction: column;
+    }
 }
