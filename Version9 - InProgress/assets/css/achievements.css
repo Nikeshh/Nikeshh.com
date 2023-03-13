@@ -52,5 +52,28 @@ body.dark .activity-data::-webkit-scrollbar-thumb:hover {
 }
 /* Top */
 .top {
-    background: linear-gradient(to bottom, #3a3b3c 70%, var(--white) 0%);
+    background: linear-gradient(to bottom, #3a3b3c 80%, var(--white) 0%);
+    color: white;
 }
+.top > div {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.top .header-line {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-line p {
+    text-decoration: underline;
+    margin-bottom: 0;
+}
+.top .description-box {
+    color: black;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    padding: 1.5rem 1rem;
+}
+/* Bottom */
