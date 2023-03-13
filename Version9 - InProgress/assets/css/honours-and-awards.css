@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Mynerve&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+:root {
+    /* ===== Colors ===== */
+    --primary-color: #0e4bf1;
+    --dark-yellow: #f7a33d;
+    --dark-purple: #4947a7;
+    --white: #fff;
+  
+    /* ====== Transition ====== */
+    --tran-05: all 0.5s ease;
+    --tran-03: all 0.3s ease;
+    --tran-03: all 0.2s ease;
+}
+body {
+    min-height: 100vh;
+}
+/* Colors */
+.primary {
+    color: var(--dark-purple);
+}
+.secondary {
+    color: var(--dark-yellow);
+}
+.white {
+    color: var(--white);
+}
+/* === Custom Scroll Bar CSS === */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: var(--light-purple);
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--dark-purple);
+}
+body.dark::-webkit-scrollbar-thumb:hover,
+body.dark .activity-data::-webkit-scrollbar-thumb:hover {
+    background: #3a3b3c;
+}
+/* Common */
+.text-muted {
+    margin-bottom: 0;
+}
+/* Top */
+.top {
+    background: linear-gradient(to bottom, #3a3b3c 80%, var(--white) 0%);
+    color: white;
+}
+.top > div {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.top .header-line {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-line p {
+    text-decoration: underline;
+    margin-bottom: 0;
+}
+.top .description-box {
+    color: black;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    padding: 1.5rem 1rem;
+}
+/* Bottom */
+.bottom {
+    margin-top: 2rem;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+.bottom .left {
+    flex: 2;
+}
+.bottom .right {
+    flex: 1;
+}
+.box {
+    color: black;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    padding: 2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.box .box-content {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    align-items: center;
+    transition: var(--tran-05);
+}
+.box .box-content:hover {
+    color: var(--dark-purple);
+    cursor: pointer;
+}
+.box-content .box-icon {
+    display: inline-block;
+    border-radius: 60px;
+    box-shadow: 0 0 2px #888;
+    padding: 0.5em 0.6em;
+}
+.box-content .content {
+    display: flex;
+    flex-direction: column;
+}
+.content .content-title {
+    font-size: 1.2rem;
+    margin-bottom: 0;
+}
+.content .content-subtitle {
+    font-size: .8rem;
+    margin-bottom: 0;
+}
+.content .content-options {
+    font-size: .8rem;
+    margin-bottom: 0;
+}
+.box .achieved-amount {
+    font-size: 2rem;
+}
+@media screen and (max-width: 500px) {
+    .bottom {
+        flex-direction: column;
+    }
+}
