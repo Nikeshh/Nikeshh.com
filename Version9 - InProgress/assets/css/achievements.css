@@ -78,6 +78,9 @@ body.dark .activity-data::-webkit-scrollbar-thumb:hover {
     padding: 1.5rem 1rem;
 }
 /* Bottom */
+.text-muted {
+    margin-bottom: 0;
+}
 .bottom {
     margin-top: 2rem;
     display: flex;
@@ -87,20 +90,52 @@ body.dark .activity-data::-webkit-scrollbar-thumb:hover {
 .bottom .left {
     flex: 2;
 }
-.left .box {
-    color: black;
-    border-radius: 10px;
-    background-color: white;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
-    padding: 1.5rem 1rem;
-}
 .bottom .right {
     flex: 1;
 }
-.right .box {
+.box {
     color: black;
     border-radius: 10px;
     background-color: white;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
-    padding: 1.5rem 1rem;
+    padding: 2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.box .box-content {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    align-items: center;
+    transition: var(--tran-05);
+}
+.box .box-content:hover {
+    color: var(--dark-purple);
+    cursor: pointer;
+}
+.box-content .box-icon {
+    display: inline-block;
+    border-radius: 60px;
+    box-shadow: 0 0 2px #888;
+    padding: 0.5em 0.6em;
+}
+.box-content .content {
+    display: flex;
+    flex-direction: column;
+}
+.content .content-title {
+    font-size: 1.2rem;
+    margin-bottom: 0;
+}
+.content .content-subtitle {
+    font-size: .8rem;
+    margin-bottom: 0;
+}
+.content .content-options {
+    font-size: .8rem;
+    margin-bottom: 0;
+}
+.box .achieved-amount {
+    font-size: 2rem;
 }
