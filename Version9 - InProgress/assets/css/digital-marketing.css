@@ -79,6 +79,7 @@ body.dark .activity-data::-webkit-scrollbar-thumb:hover {
 }
 .cards .card {
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    max-width: 300px;
 }
 .cards .card:nth-child(1) button {
     background-color: black;
@@ -87,9 +88,6 @@ body.dark .activity-data::-webkit-scrollbar-thumb:hover {
 .cards .card:nth-child(2) button {
     background-color: yellow;
     color: black;
-}
-.cards .card {
-    max-width: 300px;
 }
 .card .card-details {
     padding: 1rem 2rem;
@@ -103,4 +101,38 @@ body.dark .activity-data::-webkit-scrollbar-thumb:hover {
 .card-details button {
     padding: .5rem 1rem;
     border-radius: 3rem;
+}
+/* Description */
+.description {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.description h2 {
+    font-weight: bold;
+    font-size: 2.2rem;
+}
+/* Information */
+.information-left,
+.information-right {
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.left,
+.right {
+    flex: 1;
+}
+.left h2,
+.right h2 {
+    font-weight: bold;
+}
+.left p, .right p {}
+.information-left img,
+.information-right img {
+    flex: 1;
+    max-width: 600px;
 }
