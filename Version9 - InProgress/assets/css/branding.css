@@ -153,6 +153,10 @@ body.dark .activity-data::-webkit-scrollbar-thumb:hover {
 }
 .works .work-inner {
     display: flex;
-    justify-content: space-between;
+    gap: 2rem;
     margin-top: 2rem;
 }
+.work-inner .work {}
+.work h3 {}
+.work p {}
+.work img {}
