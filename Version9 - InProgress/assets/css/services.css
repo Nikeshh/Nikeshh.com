@@ -119,3 +119,53 @@ body.dark .activity-data::-webkit-scrollbar-thumb:hover {
     background-color: #0e4bf1;
     color: white;
 }
+/* Information */
+.information-left,
+.information-right {
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.left,
+.right {
+    flex: 1;
+}
+.left h2,
+.right h2 {
+    font-weight: bold;
+}
+.left p, .right p {}
+.information-left img,
+.information-right img {
+    flex: 1;
+    max-width: 600px;
+}
+/* Testimonials */
+.testimonials {}
+.testimonials .testimonial {
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.testimonail .testimonail-left {
+    flex: 1;
+}
+.testimonail-left .client-image {
+    display: flex;
+    justify-content: end;
+}
+.client-image img {
+    max-width: 100px;
+}
+.testimonail-left .lift-details {}
+.testimonail-left .user-details {}
+.user-details p {
+    margin-bottom: 0;
+}
+.testimonial > img {
+    flex: 1;
+    max-width: 400px;
+}
