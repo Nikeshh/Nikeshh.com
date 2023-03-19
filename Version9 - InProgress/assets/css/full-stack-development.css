@@ -211,4 +211,25 @@ body.dark .activity-data::-webkit-scrollbar-thumb:hover {
     gap: 1rem;
 }
 /* Promotion */
+.promotion {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
 /* Footer */
+.footer {
+    margin-top: 5rem;
+}
+.footer .footer-top {
+    display: flex;
+    gap: 1rem;
+}
+.footer-top .company-details {}
+.company-details .social-links {
+    display: flex;
+}
+.footer-top .about {}
+.footer-top .company {}
+.footer-top .support {}
+.footer .footer-bottom {}
