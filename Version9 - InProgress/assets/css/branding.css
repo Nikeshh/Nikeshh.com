@@ -50,3 +50,29 @@ body.dark::-webkit-scrollbar-thumb:hover,
 body.dark .activity-data::-webkit-scrollbar-thumb:hover {
     background: #3a3b3c;
 }
+/* Landing */
+.landing {
+    height: 100vh;
+}
+.landing .banner {
+    height: calc(100vh - 8px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.banner h1:nth-child(2) {
+    font-weight: bold;
+}
+.banner .banner-details {
+    display: flex;
+    justify-content: space-between;
+}
+.banner-details * {
+    flex: 1;
+}
+.banner-details .banner-action {}
+.banner-action button {
+    border-radius: 10px;
+    width: fit-content;
+    padding: .5rem 1rem;
+}
