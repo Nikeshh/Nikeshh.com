@@ -33,279 +33,295 @@
     />
 </head>
 <body>
-    <div class="container">
-        <!-- Landing -->
-        <section class="landing">
-            <div class="announcement">
-                <span class="tag">New</span> Using Superhive is a manifesto in itself. It is simply the best chcoice we ever made. <a href="#">Learn More</a>
+    <!-- Landing -->
+    <section class="landing">
+        <div class="announcement">
+            <div class="container announcement-inner">
+                <span class="tag">New</span> Using Superhive is a manifesto in itself. It is simply the best choice we ever made. <a href="#">Learn More</a>
             </div>
-            <nav class="navbar navbar-expand-lg" aria-label="Navbar Offcanvas">
-                <a class="navbar-brand d-flex align-items-center" href="#">
-                    <img src="./assets/images/logo.png" alt="Avatar Logo" style="width:40px;" class="img-fluid rounded-pill">
-                    <span class="ms-2 fs-4 fw-bold brand-name">TeamHive</span>
-                </a>
-                <div class="header-options">
-                    <div class="search-box">
-                        <i class="uil uil-search"></i>
-                        <input type="text" placeholder="Search here..." />
-                    </div>
-                    <button>Get started</button>
+        </div>
+        <nav class="navbar navbar-expand-lg container" aria-label="Navbar Offcanvas">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="./assets/images/logo.png" alt="Avatar Logo" style="width:40px;" class="img-fluid img-thumbnail rounded-pill">
+                <span class="ms-2 fs-4 brand-name">TeamHive</span>
+            </a>
+            <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <a class="navbar-brand d-flex align-items-center" href="#">
+                        <img src="./assets/images/logo.png" alt="Avatar Logo" style="width:40px;"
+                            class="img-fluid img-thumbnail rounded-pill">
+                        <span class="ms-2 fs-4 brand-name">TeamHive</span>
+                    </a>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
                 </div>
-            </nav>
-            <div class="banner">
-                <div class="banner-left">
-                    <p class="tag">FEATURES</p>
-                    <h3>TeamHive is the email newsletter that works <span class="primary">completely automated</span></h3>
-                    <p class="text-muted">Track connections in real-time. See who your community being led by and find the most active</p>
-                    <div class="banner-actions">
-                        <button>Sign up</button>
-                        <button>Invite a friend</button>
-                    </div>
-                </div>
-                <div class="banner-right">
-                    <img src="./assets/images/placeholder.png" class="img-fluid" alt="Newsletter banner image" />
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav nav-pills justify-content-end flex-grow-1 pe-3 gap-xl-2">
+                        <li class="nav-item nav-item-action"><input id="search" placeholder="Search" /></li>
+                        <li class="nav-item nav-item-action"><a href="#" class="nav-link ps-3 pe-3">Login</a></li>
+                        <li class="nav-item nav-item-action"><a href="#" class="nav-link ps-3 pe-3">Get Started</a></li>
+                    </ul>
                 </div>
             </div>
-        </section>
-        <!-- Stats -->
-        <section class="stats">
-            <div class="stat">
-                <p class="stat-value">95%</p>
-                <p class="stat-description">Of member asks on TeamHive get a response</p>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </nav>
+        <div class="banner">
+            <div class="banner-left">
+                <p class="tag">FEATURES</p>
+                <h3>TeamHive is the email newsletter that works <span class="primary">completely automated</span></h3>
+                <p class="text-muted">Track connections in real-time. See who your community being led by and find the most active</p>
+                <div class="banner-actions">
+                    <button>Sign up</button>
+                    <button>Invite a friend</button>
+                </div>
             </div>
-            <div class="stat">
-                <p class="stat-value">25</p>
-                <p class="stat-description">Average Number of Connections made by our newsletter</p>
+            <div class="banner-right">
+                <img src="./assets/images/placeholder.png" class="img-fluid" alt="Newsletter banner image" />
             </div>
-            <div class="stat">
-                <p class="stat-value">40%</p>
-                <p class="stat-description">oof community members gets responsive and finds the teammate of their streams</p>
+        </div>
+    </section>
+    <!-- Stats -->
+    <section class="stats">
+        <div class="stat">
+            <p class="stat-value">95%</p>
+            <p class="stat-description">Of member asks on TeamHive get a response</p>
+        </div>
+        <div class="stat">
+            <p class="stat-value">25</p>
+            <p class="stat-description">Average Number of Connections made by our newsletter</p>
+        </div>
+        <div class="stat">
+            <p class="stat-value">40%</p>
+            <p class="stat-description">oof community members gets responsive and finds the teammate of their streams</p>
+        </div>
+        <div class="stat">
+            <p class="stat-value">1M</p>
+            <p class="stat-description">Average mails sent per week via TeamHive</p>
+        </div>
+    </section>
+    <!-- Information - 1 -->
+    <section class="information-1">
+        <img src="./assets/images/placeholder.png" class="img-fluid" alt="Newsletter banner image" />
+        <p class="information-title">Let Your Newsletter Do The Talk.</p>
+        <p>Let's claim it, today we don't have the time to talk or time to scroll over groups or other platforms. So it is better for your automated newsletter to do the talk. What could be done better? Stay connected to your community.</p>
+        <button>Try it now</button>
+    </section>
+    <!-- Benefits -->
+    <section class="benefits">
+        <div class="benefits-left">
+            <div class="benefit">
+                <div class="meta">
+                    <p class="tag">BENEFIT</p>
+                    <i class="uil uil-adobe-alt box-icon"></i>
+                </div>
+                <h2>Direct Connections</h2>
+                <p>No logins or anything is needed. Directly connect with everyone with only one permission. Let us control your business world for you. Easy, customizable and quick qay of connecting with others</p>
             </div>
-            <div class="stat">
-                <p class="stat-value">1M</p>
-                <p class="stat-description">Average mails sent per week via TeamHive</p>
+            <div class="benefit">
+                <div class="meta">
+                    <p class="tag">BENEFIT</p>
+                    <i class="uil uil-adobe-alt box-icon"></i>
+                </div>
+                <h2>Don't let the team stagnate</h2>
+                <p>Don't let your team get bored by unncessary messages. Let your team stay connected in the way they should - only important things. Rest could stay in other apps, we take the important part.</p>
             </div>
-        </section>
-        <!-- Information - 1 -->
-        <section class="information-1">
-            <img src="./assets/images/placeholder.png" class="img-fluid" alt="Newsletter banner image" />
-            <p class="information-title">Let Your Newsletter Do The Talk.</p>
-            <p>Let's claim it, today we don't have the time to talk or time to scroll over groups or other platforms. So it is better for your automated newsletter to do the talk. What could be done better? Stay connected to your community.</p>
+        </div>
+        <div class="benefit-right">
+            <div class="benefit">
+                <div class="meta">
+                    <p class="tag">BENEFIT</p>
+                    <i class="uil uil-adobe-alt box-icon"></i>
+                </div>
+                <h2>Completely Automated</h2>
+                <p>Your members need to stay active? You can create polls, feedback papers and a lot more stuff with our widgets to keep them <a href="#">connected and everything with one click!</a></p>
+            </div>
+        </div>
+    </section>
+    <!-- Benefits - Full -->
+    <section class="benefits-full">
+        <img src="./assets/images/placeholder.png" class="img-fluid" alt="Newsletter banner image" />
+        <div class="benefits-full-right">
+            <p class="tag">BENEFITS</p>
+            <h2>Find the most active members of the team</h2>
+            <p class="text-muted">Track activities in real-time. Follow connections, graphics and a lot more from our platform. See the top contributors and the most active members of your team</p>
             <button>Try it now</button>
-        </section>
-        <!-- Benefits -->
-        <section class="benefits">
-            <div class="benefits-left">
-                <div class="benefit">
-                    <div class="meta">
-                        <p class="tag">BENEFIT</p>
-                        <i class="uil uil-adobe-alt box-icon"></i>
-                    </div>
-                    <h2>Direct Connections</h2>
-                    <p>No logins or anything is needed. Directly connect with everyone with only one permission. Let us control your business world for you. Easy, customizable and quick qay of connecting with others</p>
-                </div>
-                <div class="benefit">
-                    <div class="meta">
-                        <p class="tag">BENEFIT</p>
-                        <i class="uil uil-adobe-alt box-icon"></i>
-                    </div>
-                    <h2>Don't let the team stagnate</h2>
-                    <p>Don't let your team get bored by unncessary messages. Let your team stay connected in the way they should - only important things. Rest could stay in other apps, we take the important part.</p>
-                </div>
-            </div>
-            <div class="benefit-right">
-                <div class="benefit">
-                    <div class="meta">
-                        <p class="tag">BENEFIT</p>
-                        <i class="uil uil-adobe-alt box-icon"></i>
-                    </div>
-                    <h2>Completely Automated</h2>
-                    <p>Your members need to stay active? You can create polls, feedback papers and a lot more stuff with our widgets to keep them <a href="#">connected and everything with one click!</a></p>
-                </div>
-            </div>
-        </section>
-        <!-- Benefits - Full -->
-        <section class="benefits-full">
-            <img src="./assets/images/placeholder.png" class="img-fluid" alt="Newsletter banner image" />
-            <div class="benefits-full-right">
-                <p class="tag">BENEFITS</p>
-                <h2>Find the most active members of the team</h2>
-                <p class="text-muted">Track activities in real-time. Follow connections, graphics and a lot more from our platform. See the top contributors and the most active members of your team</p>
+        </div>
+    </section>
+    <!-- Information - 2 -->
+    <section class="information-2">
+        <h2>More than a Newsletter</h2>
+        <p>Unlock the automated, quality experience for everyone in the team.</p>
+        <div class="information-details">
+            <div class="information-detail">
+                <img src="./assets/images/placeholder.png" class="img-fluid" alt="Newsletter banner image" />
+                <p class="tag">COLLECT</p>
+                <h2>Collect the needed information and see the results easily</h2>
+                <p class="text-muted">Help your members find what matters to them. Collect informations and create graphics for them to understand their values. To have a smooth experience, all members need a bit of guidance.</p>
                 <button>Try it now</button>
             </div>
-        </section>
-        <!-- Information - 2 -->
-        <section class="information-2">
-            <h2>More than a Newsletter</h2>
-            <p>Unlock the automated, quality experience for everyone in the team.</p>
-            <div class="information-details">
-                <div class="information-detail">
-                    <img src="./assets/images/placeholder.png" class="img-fluid" alt="Newsletter banner image" />
-                    <p class="tag">COLLECT</p>
-                    <h2>Collect the needed information and see the results easily</h2>
-                    <p class="text-muted">Help your members find what matters to them. Collect informations and create graphics for them to understand their values. To have a smooth experience, all members need a bit of guidance.</p>
-                    <button>Try it now</button>
-                </div>
-                <div class="information-detail">
-                    <img src="./assets/images/placeholder.png" class="img-fluid" alt="Newsletter banner image" />
-                    <p class="tag">ANALYZE</p>
-                    <h2>Use the analyzer AI to track your reports</h2>
-                    <p class="text-muted">A strong community could be led by a strong guidance only. The guide in this tour may be automated already. Our Analyzer AI will track the parameters and will create real-life reports.</p>
-                    <button>Try it now</button>
-                </div>
-            </div>
-            <div class="information-details">
-                <div class="information-detail">
-                    <img src="./assets/images/placeholder.png" class="img-fluid" alt="Newsletter banner image" />
-                    <p class="tag">CURATE</p>
-                    <h2>Publish in one touch</h2>
-                    <p class="text-muted">Everything is under your control. You can schedule your announcements, plan your feeds and create posts with one click. Bring the right thing in the right time!</p>
-                    <button>Try it now</button>
-                </div>
-                <div class="information-detail">
-                    <img src="./assets/images/placeholder.png" class="img-fluid" alt="Newsletter banner image" />
-                    <p class="tag">CONNECT</p>
-                    <h2>Connection is the key</h2>
-                    <p class="text-muted">When a member replied to another, they get the connection flow. This way, we improve the general efficiency of the team.</p>
-                    <button>Try it now</button>
-                </div>
-            </div>
-        </section>
-        <!-- Testimonials -->
-        <section class="testimonials">
-            <div class="testimonials-left">
-                <p class="tag">TESTIMONIALS</p>
-                <h2>The customer is hero of our business</h2>
-                <p>Our customers are at the heart of our organization</p>
-                <button>All Comments</button>
-            </div>
-            <div class="testimonials-right">
-                <div class="testimonial">
-                    <div class="testimonial-detail">
-                        <img src="./assets/images/placeholder.png" class="img-fluid" alt="Newsletter banner image" />
-                        <p class="quote">"I can't describe how great we feel using TeamHive. It completely changed our workflow and the force we waste on trying to connect each other. Top Hive!"</p>
-                    </div>
-                    <div class="testimonial-user-detail">
-                        <h2>Aletta Feriachi</h2>
-                        <p>Italian Feriachi Inc. CEO</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Clients -->
-        <section class="clients">
-            <h2>We make it better. We grow together.</h2>
-            <p>Two words; Our Partners</p>
-            <div class="client-list">
-                <img src="./assets/images/placeholder.png" alt="Client Image" class="img-fluid" />
-                <img src="./assets/images/placeholder.png" alt="Client Image" class="img-fluid" />
-                <img src="./assets/images/placeholder.png" alt="Client Image" class="img-fluid" />
-                <img src="./assets/images/placeholder.png" alt="Client Image" class="img-fluid" />
-                <img src="./assets/images/placeholder.png" alt="Client Image" class="img-fluid" />
-                <img src="./assets/images/placeholder.png" alt="Client Image" class="img-fluid" />
-            </div>
-            <button>Try it now</button>
-        </section>
-        <!-- FAQ -->
-        <section class="faq">
-            <h2>Frequently asked questions</h2>
-            <p>We're happy to answer your questions!</p>
-            <div class="faq-list">
-                <div class="faq-detail">
-                    <i class="uil uil-adobe-alt box-icon"></i>
-                    <p>What is TeamHive?</p>
-                    <i class="uil uil-plus"></i>
-                    <p class="faq-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi optio, totam voluptate ullam quisquam necessitatibus deserunt nobis, eligendi dignissimos amet asperiores molestias odio neque. Magni alias asperiores neque impedit iure!</p>
-                </div>
-                <div class="faq-detail">
-                    <i class="uil uil-adobe-alt box-icon"></i>
-                    <p>How does the technology work?</p>
-                    <i class="uil uil-plus"></i>
-                    <p class="faq-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi optio, totam voluptate ullam quisquam necessitatibus deserunt nobis, eligendi dignissimos amet asperiores molestias odio neque. Magni alias asperiores neque impedit iure!</p>
-                </div>
-                <div class="faq-detail">
-                    <i class="uil uil-adobe-alt box-icon"></i>
-                    <p>Who is TeamHive for?</p>
-                    <i class="uil uil-plus"></i>
-                    <p class="faq-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi optio, totam voluptate ullam quisquam necessitatibus deserunt nobis, eligendi dignissimos amet asperiores molestias odio neque. Magni alias asperiores neque impedit iure!</p>
-                </div>
-                <div class="faq-detail">
-                    <i class="uil uil-adobe-alt box-icon"></i>
-                    <p>How often will I get TeamHive Mails?</p>
-                    <i class="uil uil-plus"></i>
-                    <p class="faq-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi optio, totam voluptate ullam quisquam necessitatibus deserunt nobis, eligendi dignissimos amet asperiores molestias odio neque. Magni alias asperiores neque impedit iure!</p>
-                </div>
-                <div class="faq-detail">
-                    <i class="uil uil-adobe-alt box-icon"></i>
-                    <p>Is it close to regular newsletters?</p>
-                    <i class="uil uil-plus"></i>
-                    <p class="faq-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi optio, totam voluptate ullam quisquam necessitatibus deserunt nobis, eligendi dignissimos amet asperiores molestias odio neque. Magni alias asperiores neque impedit iure!</p>
-                </div>
-                <div class="faq-detail">
-                    <i class="uil uil-adobe-alt box-icon"></i>
-                    <p>How automated is this?</p>
-                    <i class="uil uil-plus"></i>
-                    <p class="faq-content">It is almost completely automated as a system. You can schedule, plan and create calendars for your upcoming mails. You can use Analyzer AI, Tracker AI, Reporter AI to create a smooth business plan for you and for your teammates. Just with one click!</p>
-                </div>
-            </div>
-        </section>
-        <!-- Contact -->
-        <section class="contact">
-            <i class="uil uil-adobe-alt box-icon"></i>
-            <h2>Get Started</h2>
-            <p>Get in touch to get started.</p>
-            <div class="input-group">
-                <label for="full-name">Full Name</label>
-                <input type="text" id="full-name" placeholder="Full Name" />
-            </div>
-            <div class="input-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" placeholder="Email" />
-            </div>
-            <input type="checkbox" id="privacy-policy" value="You agree to our friendly privacy policy.">
-            <button>Register and submit</button>
-        </section>
-        <!-- Footer -->
-        <footer class="footer">
-            <div class="footer-top">
-                <div class="footer-top-left">
-                    <h2>Newsletter Will Be For You What You Want It To Be.</h2>
-                    <p>Sign up with your e-mail address to be informed about discounts and new recruits from all campaigns!</p>
-                    <div class="divider"></div>
-                    <div class="features">
-                        <div class="feature">
-                            <i class="uil uil-adobe-alt box-icon"></i>
-                            New Blog
-                        </div>
-                        <div class="feature">
-                            <i class="uil uil-adobe-alt box-icon"></i>
-                            Campaigns
-                        </div>
-                        <div class="feature">
-                            <i class="uil uil-adobe-alt box-icon"></i>
-                            Privileges
-                        </div>
-                        <div class="feature">
-                            <i class="uil uil-adobe-alt box-icon"></i>
-                            New Events
-                        </div>
-                    </div>
-                </div>
-                <div class="footer-top-right">
-                    <div class="input-group">
-                        <input type="email" id="email" placeholder="Type Your Email" />
-                    </div>
-                    <button>Send Mail</button>
-                </div>
-            </div>
-            <div class="footer-bottom">
+            <div class="information-detail">
                 <img src="./assets/images/placeholder.png" class="img-fluid" alt="Newsletter banner image" />
-                <div class="actions">
-                    <button class="signup">Sign up</button>
-                    <button class="invite-a-friend">Invite a friend</button>
+                <p class="tag">ANALYZE</p>
+                <h2>Use the analyzer AI to track your reports</h2>
+                <p class="text-muted">A strong community could be led by a strong guidance only. The guide in this tour may be automated already. Our Analyzer AI will track the parameters and will create real-life reports.</p>
+                <button>Try it now</button>
+            </div>
+        </div>
+        <div class="information-details">
+            <div class="information-detail">
+                <img src="./assets/images/placeholder.png" class="img-fluid" alt="Newsletter banner image" />
+                <p class="tag">CURATE</p>
+                <h2>Publish in one touch</h2>
+                <p class="text-muted">Everything is under your control. You can schedule your announcements, plan your feeds and create posts with one click. Bring the right thing in the right time!</p>
+                <button>Try it now</button>
+            </div>
+            <div class="information-detail">
+                <img src="./assets/images/placeholder.png" class="img-fluid" alt="Newsletter banner image" />
+                <p class="tag">CONNECT</p>
+                <h2>Connection is the key</h2>
+                <p class="text-muted">When a member replied to another, they get the connection flow. This way, we improve the general efficiency of the team.</p>
+                <button>Try it now</button>
+            </div>
+        </div>
+    </section>
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="testimonials-left">
+            <p class="tag">TESTIMONIALS</p>
+            <h2>The customer is hero of our business</h2>
+            <p>Our customers are at the heart of our organization</p>
+            <button>All Comments</button>
+        </div>
+        <div class="testimonials-right">
+            <div class="testimonial">
+                <div class="testimonial-detail">
+                    <img src="./assets/images/placeholder.png" class="img-fluid" alt="Newsletter banner image" />
+                    <p class="quote">"I can't describe how great we feel using TeamHive. It completely changed our workflow and the force we waste on trying to connect each other. Top Hive!"</p>
+                </div>
+                <div class="testimonial-user-detail">
+                    <h2>Aletta Feriachi</h2>
+                    <p>Italian Feriachi Inc. CEO</p>
                 </div>
             </div>
-        </footer>
-    </div>
+        </div>
+    </section>
+    <!-- Clients -->
+    <section class="clients">
+        <h2>We make it better. We grow together.</h2>
+        <p>Two words; Our Partners</p>
+        <div class="client-list">
+            <img src="./assets/images/placeholder.png" alt="Client Image" class="img-fluid" />
+            <img src="./assets/images/placeholder.png" alt="Client Image" class="img-fluid" />
+            <img src="./assets/images/placeholder.png" alt="Client Image" class="img-fluid" />
+            <img src="./assets/images/placeholder.png" alt="Client Image" class="img-fluid" />
+            <img src="./assets/images/placeholder.png" alt="Client Image" class="img-fluid" />
+            <img src="./assets/images/placeholder.png" alt="Client Image" class="img-fluid" />
+        </div>
+        <button>Try it now</button>
+    </section>
+    <!-- FAQ -->
+    <section class="faq">
+        <h2>Frequently asked questions</h2>
+        <p>We're happy to answer your questions!</p>
+        <div class="faq-list">
+            <div class="faq-detail">
+                <i class="uil uil-adobe-alt box-icon"></i>
+                <p>What is TeamHive?</p>
+                <i class="uil uil-plus"></i>
+                <p class="faq-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi optio, totam voluptate ullam quisquam necessitatibus deserunt nobis, eligendi dignissimos amet asperiores molestias odio neque. Magni alias asperiores neque impedit iure!</p>
+            </div>
+            <div class="faq-detail">
+                <i class="uil uil-adobe-alt box-icon"></i>
+                <p>How does the technology work?</p>
+                <i class="uil uil-plus"></i>
+                <p class="faq-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi optio, totam voluptate ullam quisquam necessitatibus deserunt nobis, eligendi dignissimos amet asperiores molestias odio neque. Magni alias asperiores neque impedit iure!</p>
+            </div>
+            <div class="faq-detail">
+                <i class="uil uil-adobe-alt box-icon"></i>
+                <p>Who is TeamHive for?</p>
+                <i class="uil uil-plus"></i>
+                <p class="faq-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi optio, totam voluptate ullam quisquam necessitatibus deserunt nobis, eligendi dignissimos amet asperiores molestias odio neque. Magni alias asperiores neque impedit iure!</p>
+            </div>
+            <div class="faq-detail">
+                <i class="uil uil-adobe-alt box-icon"></i>
+                <p>How often will I get TeamHive Mails?</p>
+                <i class="uil uil-plus"></i>
+                <p class="faq-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi optio, totam voluptate ullam quisquam necessitatibus deserunt nobis, eligendi dignissimos amet asperiores molestias odio neque. Magni alias asperiores neque impedit iure!</p>
+            </div>
+            <div class="faq-detail">
+                <i class="uil uil-adobe-alt box-icon"></i>
+                <p>Is it close to regular newsletters?</p>
+                <i class="uil uil-plus"></i>
+                <p class="faq-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi optio, totam voluptate ullam quisquam necessitatibus deserunt nobis, eligendi dignissimos amet asperiores molestias odio neque. Magni alias asperiores neque impedit iure!</p>
+            </div>
+            <div class="faq-detail">
+                <i class="uil uil-adobe-alt box-icon"></i>
+                <p>How automated is this?</p>
+                <i class="uil uil-plus"></i>
+                <p class="faq-content">It is almost completely automated as a system. You can schedule, plan and create calendars for your upcoming mails. You can use Analyzer AI, Tracker AI, Reporter AI to create a smooth business plan for you and for your teammates. Just with one click!</p>
+            </div>
+        </div>
+    </section>
+    <!-- Contact -->
+    <section class="contact">
+        <i class="uil uil-adobe-alt box-icon"></i>
+        <h2>Get Started</h2>
+        <p>Get in touch to get started.</p>
+        <div class="input-group">
+            <label for="full-name">Full Name</label>
+            <input type="text" id="full-name" placeholder="Full Name" />
+        </div>
+        <div class="input-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Email" />
+        </div>
+        <input type="checkbox" id="privacy-policy" value="You agree to our friendly privacy policy.">
+        <button>Register and submit</button>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-top-left">
+                <h2>Newsletter Will Be For You What You Want It To Be.</h2>
+                <p>Sign up with your e-mail address to be informed about discounts and new recruits from all campaigns!</p>
+                <div class="divider"></div>
+                <div class="features">
+                    <div class="feature">
+                        <i class="uil uil-adobe-alt box-icon"></i>
+                        New Blog
+                    </div>
+                    <div class="feature">
+                        <i class="uil uil-adobe-alt box-icon"></i>
+                        Campaigns
+                    </div>
+                    <div class="feature">
+                        <i class="uil uil-adobe-alt box-icon"></i>
+                        Privileges
+                    </div>
+                    <div class="feature">
+                        <i class="uil uil-adobe-alt box-icon"></i>
+                        New Events
+                    </div>
+                </div>
+            </div>
+            <div class="footer-top-right">
+                <div class="input-group">
+                    <input type="email" id="email" placeholder="Type Your Email" />
+                </div>
+                <button>Send Mail</button>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <img src="./assets/images/placeholder.png" class="img-fluid" alt="Newsletter banner image" />
+            <div class="actions">
+                <button class="signup">Sign up</button>
+                <button class="invite-a-friend">Invite a friend</button>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

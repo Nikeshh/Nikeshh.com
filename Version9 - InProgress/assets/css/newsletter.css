@@ -50,3 +50,24 @@ body.dark::-webkit-scrollbar-thumb:hover,
 body.dark .activity-data::-webkit-scrollbar-thumb:hover {
     background: #3a3b3c;
 }
+/* Landing */
+.landing {
+    height: 100vh;
+}
+.landing .announcement {
+    background-color: black;
+    padding: .5rem 0;
+    color: white;
+}
+.announcement .announcement-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.announcement .tag {
+    color: black;
+    background-color: white;
+    border-radius: 20px;
+    padding: .2rem .7rem;
+}
