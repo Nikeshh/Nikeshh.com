@@ -165,3 +165,57 @@ body.dark .activity-data::-webkit-scrollbar-thumb:hover {
 .information-detail img {
     max-width: 500px;
 }
+/* Testimonials */
+.testimonials {
+    display: flex;
+    margin-top: 5rem;
+    gap: 5rem;
+}
+.testimonials .testimonials-left {
+    display: flex;
+    flex-direction: column;
+}
+.testimonials .testimonials-right {}
+.testimonials-right .testimonial {}
+.testimonial .testimonial-detail {
+    display: flex;
+}
+.testimonial-detail img {
+    max-width: 150px;
+    border-radius: 50%;
+}
+/* Clients */
+.clients {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 5rem;
+}
+.clients .client-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.client-list img {
+    max-width: 150px;
+}
+/* FAQ */
+.faq {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.faq .faq-list {
+    display: flex;
+    flex-direction: column;
+}
+.faq-list .faq-detail {
+    display: flex;
+    gap: 1rem;
+}
+.faq-detail .faq-content {
+    display: none;
+}
