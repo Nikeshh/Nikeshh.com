@@ -50,3 +50,13 @@ body.dark::-webkit-scrollbar-thumb:hover,
 body.dark .activity-data::-webkit-scrollbar-thumb:hover {
     background: #3a3b3c;
 }
+/* Landing */
+.landing {
+    height: 70vh;
+}
+/* Our Mission */
+.our-mission {
+    display: flex;
+}
+.our-mission .our-mission-left {}
+.our-mission .our-mission-right {}
