@@ -109,15 +109,34 @@ body.dark .activity-data::-webkit-scrollbar-thumb:hover {
     justify-content: space-around;
 }
 .details .detail {}
-.detail img {
-    max-width: 150px;
-}
 .explore button {
     padding: .5rem 1rem;
     width: fit-content;
     border-radius: 5px;
     background-color: #0e4bf1;
     color: white;
+}
+/* Services */
+.services {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+}
+.services h2 {
+    font-weight: 600;
+}
+.services p {
+    font-weight: 300;
+    font-size: .9rem;
+}
+.services .service-types {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+.service-types .service-type {
+    flex: 1;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 }
 /* Information */
 .information-left,

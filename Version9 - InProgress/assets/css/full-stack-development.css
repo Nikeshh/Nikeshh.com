@@ -154,6 +154,28 @@ body.dark .activity-data::-webkit-scrollbar-thumb:hover {
     flex: 1;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 }
+/* Benefits */
+.benefits {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+}
+.benefits h2 {
+    font-weight: 600;
+}
+.benefits p {
+    font-weight: 300;
+    font-size: .9rem;
+}
+.benefits .benefit-types {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+.benefit-types .benefit-type {
+    flex: 1;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
 /* Information */
 .information {
     margin-top: 5rem;
