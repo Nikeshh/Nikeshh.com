@@ -1,0 +1,43 @@
+/*
+  Notes:
+  1 rem = 16px
+*/
+
+/* Core */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    outline: none;
+    font-family: "Roboto", sans-serif;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-size: 62.5%;
+}
+
+img { 
+    width: 100%;
+    height: auto;
+}
+
+/* End Core */
+
+/* Colors */
+
+.light-gray {
+    color: #d0c9c9;
+}
+
+.dark-gray {
+    color: #808080;
+}
+
+/* End of Colors */

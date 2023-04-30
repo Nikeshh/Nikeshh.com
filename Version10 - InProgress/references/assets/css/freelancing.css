@@ -1,0 +1,430 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@200&family=Nunito:wght@200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+/*
+  Notes:
+  1 rem = 16px
+*/
+/* Core */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  outline: none;
+  font-family: "Roboto", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+img {
+  width: 5rem;
+  height: 5rem;
+}
+
+/* End Core */
+/* Profile */
+.freelancing {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100vh;
+}
+.freelancing .left {
+  width: 7rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem;
+  background-color: #ffffff;
+}
+.freelancing .left .logo {
+  border-radius: 50%;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 2rem;
+  padding: 1.4rem;
+  background-color: #3d80f0;
+}
+.freelancing .left .menu {
+  display: flex;
+  flex-direction: column;
+  margin-top: 4rem;
+  gap: 3rem;
+  font-size: 2rem;
+  color: #c8c8c8;
+}
+.freelancing .left .menu .menu-item {
+  border-radius: 1rem;
+  padding: 0.7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.freelancing .left .menu .menu-item-active {
+  background-color: #e1ecfe;
+  color: #7dadfc;
+}
+.freelancing .left .controls {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  font-size: 2rem;
+  color: #c8c8c8;
+}
+.freelancing .left .controls .logout-control {
+  color: #f44141;
+}
+.freelancing .right {
+  width: calc(100% - 7rem);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #f8f9fd;
+}
+.freelancing .right .header {
+  height: 8rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 3rem;
+  background-color: #ffffff;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+.freelancing .right .header .header-left {
+  margin-right: auto;
+}
+.freelancing .right .header .header-left h1 {
+  font-weight: 400;
+  font-size: 2.5rem;
+}
+.freelancing .right .header .header-right {
+  margin-left: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+.freelancing .right .header .header-right .search-and-history {
+  display: flex;
+  flex-direction: row;
+  background-color: #f8f9fd;
+  padding: 0.5rem;
+  border-radius: 2rem;
+}
+.freelancing .right .header .header-right .search-and-history .search-btn {
+  background-color: #dbe7fc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  border-radius: 2rem;
+  color: #4c87f9;
+}
+.freelancing .right .header .header-right .search-and-history .history-btn {
+  color: #b4b5ce;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 1.5rem;
+}
+.freelancing .right .header .header-right .notifications {
+  display: flex;
+  flex-direction: row;
+  font-size: 2.5rem;
+  color: #9fa0a2;
+  position: relative;
+}
+.freelancing .right .header .header-right .notifications .tag {
+  position: absolute;
+  right: 0;
+  top: 0;
+  border-radius: 50%;
+  background-color: #f40205;
+  color: black;
+  font-size: 1rem;
+  padding: 0.3rem;
+  color: white;
+}
+.freelancing .right .header .header-right .profile img {
+  width: 4rem;
+  height: 4rem;
+}
+.freelancing .right .lets-find-your-dream-job {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 3rem 0rem 3rem;
+  background-color: white;
+  border-radius: 2rem;
+  padding: 3rem;
+  gap: 2rem;
+}
+.freelancing .right .lets-find-your-dream-job .lets-find-your-dream-job-first-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.freelancing .right .lets-find-your-dream-job .lets-find-your-dream-job-first-row h1 {
+  color: black;
+  font-weight: 300;
+}
+.freelancing .right .lets-find-your-dream-job .lets-find-your-dream-job-first-row p {
+  color: #a7a6c3;
+}
+.freelancing .right .lets-find-your-dream-job .lets-find-your-dream-job-second-row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: #f8f9fd;
+  border-radius: 1.5rem;
+  padding: 2rem;
+  font-size: 2rem;
+}
+.freelancing .right .lets-find-your-dream-job .lets-find-your-dream-job-second-row .search-field,
+.freelancing .right .lets-find-your-dream-job .lets-find-your-dream-job-second-row .location-field,
+.freelancing .right .lets-find-your-dream-job .lets-find-your-dream-job-second-row .salary-range-field {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  flex: 1;
+  padding-left: 2rem;
+}
+.freelancing .right .lets-find-your-dream-job .lets-find-your-dream-job-second-row .search-field i,
+.freelancing .right .lets-find-your-dream-job .lets-find-your-dream-job-second-row .location-field i,
+.freelancing .right .lets-find-your-dream-job .lets-find-your-dream-job-second-row .salary-range-field i {
+  color: #4080fa;
+}
+.freelancing .right .lets-find-your-dream-job .lets-find-your-dream-job-second-row .search-field input,
+.freelancing .right .lets-find-your-dream-job .lets-find-your-dream-job-second-row .location-field input,
+.freelancing .right .lets-find-your-dream-job .lets-find-your-dream-job-second-row .salary-range-field input {
+  background-color: #f8f9fd;
+  width: 100%;
+}
+.freelancing .right .lets-find-your-dream-job .lets-find-your-dream-job-second-row .vertical-divider {
+  width: 0.1rem;
+  background-color: #eeeff6;
+  height: 100%;
+  float: left;
+}
+.freelancing .right .lets-find-your-dream-job .lets-find-your-dream-job-second-row .lets-find-your-dream-job-second-row-controls {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  gap: 1rem;
+}
+.freelancing .right .lets-find-your-dream-job .lets-find-your-dream-job-second-row .lets-find-your-dream-job-second-row-controls .reset-btn {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  color: #407af9;
+}
+.freelancing .right .lets-find-your-dream-job .lets-find-your-dream-job-second-row .lets-find-your-dream-job-second-row-controls .search-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
+  background-color: #3063f9;
+  color: white;
+  padding: 1rem 2rem;
+}
+.freelancing .right .jobs {
+  height: calc(100% - 28rem);
+  display: flex;
+  flex-direction: row;
+  margin: 3rem 3rem 3rem 0rem;
+}
+.freelancing .right .jobs .jobs-left {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  padding: 0 5rem 0 5rem;
+  gap: 3rem;
+}
+.freelancing .right .jobs .jobs-left .job-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.freelancing .right .jobs .jobs-left .job-row .job {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-radius: 1rem;
+  padding: 2rem;
+  gap: 2rem;
+  background-color: white;
+}
+.freelancing .right .jobs .jobs-left .job-row .job .job-details {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: center;
+}
+.freelancing .right .jobs .jobs-left .job-row .job .job-details .job-details-logo {
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: #edeff9;
+  font-size: 3rem;
+}
+.freelancing .right .jobs .jobs-left .job-row .job .job-details .title-and-location {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.freelancing .right .jobs .jobs-left .job-row .job .job-details .title-and-location h3 {
+  font-weight: 400;
+}
+.freelancing .right .jobs .jobs-left .job-row .job .job-details .title-and-location p {
+  color: #9f9f9f;
+}
+.freelancing .right .jobs .jobs-left .job-row .job .job-details .download-job-details {
+  margin-left: auto;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: #edeff9;
+  color: #6090fa;
+}
+.freelancing .right .jobs .jobs-left .job-row .job .job-description {
+  color: #9f9f9f;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+.freelancing .right .jobs .jobs-left .job-row .job .job-controls {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+}
+.freelancing .right .jobs .jobs-left .job-row .job .job-controls .dollar-sign {
+  border-radius: 50%;
+  border: 0.1rem solid #689cfb;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  color: #689cfb;
+  padding: 0.5rem;
+}
+.freelancing .right .jobs .jobs-left .job-row .job .job-controls p {
+  font-size: 1.2rem;
+}
+.freelancing .right .jobs .jobs-left .job-row .job .job-controls .apply-job-btn {
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  background-color: #3063f9;
+  color: white;
+  margin-left: auto;
+}
+.freelancing .right .jobs .jobs-left .job-row .job-active {
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+.freelancing .right .jobs .jobs-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.freelancing .right .jobs .jobs-right .job-filter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 1.3rem;
+}
+.freelancing .right .jobs .jobs-right .job-filter h1 {
+  font-weight: 400;
+}
+.freelancing .right .jobs .jobs-right .job-filter p {
+  color: #3c70f9;
+  font-size: 1.2rem;
+}
+.freelancing .right .jobs .jobs-right .job-type {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 1.3rem;
+  gap: 1rem;
+}
+.freelancing .right .jobs .jobs-right .job-type .job-type-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.freelancing .right .jobs .jobs-right .job-type .job-type-header h1 {
+  font-weight: 400;
+}
+.freelancing .right .jobs .jobs-right .job-type .job-type-header p {
+  color: #3c70f9;
+  font-size: 1.2rem;
+}
+.freelancing .right .jobs .jobs-right .job-type .job-type-item {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  font-size: 1.4rem;
+}
+.freelancing .right .jobs .jobs-right .job-type .job-type-item .item-jobs {
+  margin-left: auto;
+  color: #a8a8c4;
+}
+.freelancing .right .jobs .jobs-right .job-type .job-type-item:has(input[type=checkbox]:checked) p,
+.freelancing .right .jobs .jobs-right .job-type .job-type-item:has(input[type=checkbox]:checked) .item-jobs {
+  font-weight: 600;
+}
+.freelancing .right .jobs .jobs-right .experience {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 1.3rem;
+  gap: 1rem;
+}
+.freelancing .right .jobs .jobs-right .experience .experience-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.freelancing .right .jobs .jobs-right .experience .experience-header h1 {
+  font-weight: 400;
+}
+.freelancing .right .jobs .jobs-right .experience .experience-header p {
+  color: #3c70f9;
+  font-size: 1.2rem;
+}
+.freelancing .right .jobs .jobs-right .experience .experience-item {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  font-size: 1.4rem;
+}
+.freelancing .right .jobs .jobs-right .experience .experience-item .item-experience {
+  margin-left: auto;
+  color: #a8a8c4;
+}
+.freelancing .right .jobs .jobs-right .experience .experience-item:has(input[type=checkbox]:checked) p,
+.freelancing .right .jobs .jobs-right .experience .experience-item:has(input[type=checkbox]:checked) .item-experience {
+  font-weight: 600;
+}
+
+/* End of Profile *//*# sourceMappingURL=freelancing.css.map */

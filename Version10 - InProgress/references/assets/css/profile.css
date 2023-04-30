@@ -1,0 +1,257 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@200&family=Nunito:wght@200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+/*
+  Notes:
+  1 rem = 16px
+*/
+/* Core */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  outline: none;
+  font-family: "Roboto", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* Switch */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* End of Switch */
+img {
+  width: 5rem;
+  height: 5rem;
+}
+
+/* End Core */
+/* Profile */
+.profile {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100vh;
+}
+.profile .left {
+  width: 30rem;
+  height: 100%;
+  border-right: 0.1rem solid #808080;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.profile .left .menu {
+  display: flex;
+  flex-direction: column;
+}
+.profile .left .menu .menu-item {
+  display: flex;
+  flex-direction: row;
+}
+.profile .left .sign-out {
+  display: flex;
+  flex-direction: row;
+  margin-top: auto;
+}
+.profile .right {
+  width: calc(100% - 30rem);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.profile .right .content {
+  display: flex;
+  flex-direction: row;
+}
+.profile .right .content .left-inner {
+  display: flex;
+  flex-direction: column;
+}
+.profile .right .content .left-inner .card {
+  display: flex;
+  flex-direction: column;
+}
+.profile .right .content .left-inner .card .card-first-row {
+  display: flex;
+  flex-direction: row;
+}
+.profile .right .content .left-inner .card .card-first-row p {
+  margin-left: auto;
+}
+.profile .right .content .left-inner .card .card-first-row label {
+  margin-left: auto;
+}
+.profile .right .content .left-inner .card .card-third-row {
+  display: flex;
+  flex-direction: row;
+}
+.profile .right .content .left-inner .card .card-third-row .card-third-row-left {
+  display: flex;
+  flex-direction: row;
+  margin-right: auto;
+}
+.profile .right .content .left-inner .card .card-third-row .card-third-row-right {
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+}
+.profile .right .content .left-inner .internet-payment-limit {
+  display: flex;
+  flex-direction: column;
+}
+.profile .right .content .left-inner .internet-payment-limit .details {
+  display: flex;
+  flex-direction: row;
+}
+.profile .right .content .left-inner .internet-payment-limit .progress-bar {
+  height: 0.7rem;
+  width: 100%;
+  border-radius: 1rem;
+  border: 0.1rem solid black;
+}
+.profile .right .content .left-inner .internet-payment-limit .progress-bar-80 {
+  width: 80%;
+  height: 100%;
+  background-color: black;
+}
+.profile .right .content .left-inner .income-and-spendings {
+  display: flex;
+  flex-direction: row;
+}
+.profile .right .content .left-inner .income-and-spendings .income .income-details {
+  display: flex;
+  flex-direction: column;
+}
+.profile .right .content .left-inner .income-and-spendings .spendings .spendings-details {
+  display: flex;
+  flex-direction: column;
+}
+.profile .right .content .left-inner .latest-spendings {
+  display: flex;
+  flex-direction: column;
+}
+.profile .right .content .left-inner .latest-spendings .heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.profile .right .content .left-inner .latest-spendings .datas {
+  display: flex;
+  flex-direction: column;
+}
+.profile .right .content .left-inner .latest-spendings .datas .data-item {
+  display: flex;
+  flex-direction: row;
+}
+.profile .right .content .left-inner .latest-spendings .datas .data-item .data-item-left {
+  display: flex;
+  flex-direction: row;
+}
+.profile .right .content .left-inner .latest-spendings .datas .data-item .data-item-right {
+  display: flex;
+  flex-direction: row;
+}
+.profile .right .content .right-inner {
+  display: flex;
+  flex-direction: column;
+}
+.profile .right .content .right-inner .expense-statistics {
+  display: flex;
+  flex-direction: column;
+}
+.profile .right .content .right-inner .expense-statistics .heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.profile .right .content .right-inner .expense-statistics .heading .week {
+  display: flex;
+  flex-direction: row;
+}
+.profile .right .content .right-inner .send-money-to {
+  display: flex;
+  flex-direction: column;
+}
+.profile .right .content .right-inner .send-money-to .heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.profile .right .content .right-inner .send-money-to .divider {
+  border-bottom: 0.1rem solid #808080;
+}
+.profile .right .content .right-inner .send-money-to .profiles {
+  display: flex;
+  flex-direction: row;
+}
+.profile .right .content .right-inner .scheduled-payments {
+  display: flex;
+  flex-direction: row;
+}
+.profile .right .content .right-inner .scheduled-payments .payment {
+  display: flex;
+  flex-direction: column;
+}
+.profile .right .content .right-inner .scheduled-payments .payment .details {
+  margin-top: auto;
+}
+
+/* End of Profile *//*# sourceMappingURL=profile.css.map */

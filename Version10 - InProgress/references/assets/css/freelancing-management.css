@@ -1,0 +1,360 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@200&family=Nunito:wght@200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+/*
+  Notes:
+  1 rem = 16px
+*/
+/* Core */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  outline: none;
+  font-family: "Roboto", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+img {
+  width: 5rem;
+  height: 5rem;
+}
+
+/* End Core */
+/* Freelancing Management */
+.freelancing-management {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  width: 100%;
+}
+.freelancing-management .left {
+  display: flex;
+  flex-direction: column;
+  width: 10rem;
+  height: 100%;
+  padding: 2rem 0;
+  align-items: center;
+  gap: 3rem;
+}
+.freelancing-management .left .menu {
+  display: flex;
+  flex-direction: column;
+  font-size: 2.6rem;
+  gap: 3rem;
+  color: #808080;
+}
+.freelancing-management .left .menu .menu-item-active {
+  color: black;
+}
+.freelancing-management .left .controls {
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+  font-size: 2.6rem;
+  gap: 3rem;
+  color: #808080;
+}
+.freelancing-management .middle {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 50rem);
+  height: 100%;
+}
+.freelancing-management .middle .first-row {
+  display: flex;
+  flex-direction: row;
+  padding: 2rem 2rem;
+}
+.freelancing-management .middle .first-row .first-row-left {
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  font-size: 2rem;
+  gap: 2rem;
+  color: #808080;
+}
+.freelancing-management .middle .first-row .first-row-left .active {
+  color: black;
+}
+.freelancing-management .middle .first-row .first-row-right {
+  margin-left: auto;
+}
+.freelancing-management .middle .first-row .first-row-right .start-a-new-project-btn {
+  padding: 1.5rem 2rem;
+  border-radius: 3rem;
+  background-color: #3aaeaf;
+  color: white;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+.freelancing-management .middle .blue-wrapper {
+  background-color: #f7fafc;
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  padding: 3rem;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+.freelancing-management .middle .blue-wrapper .second-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+.freelancing-management .middle .blue-wrapper .second-row .second-row-left {
+  display: flex;
+  flex-direction: row;
+  gap: 1.3rem;
+  font-size: 2.4rem;
+}
+.freelancing-management .middle .blue-wrapper .second-row .second-row-right {
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  gap: 9rem;
+}
+.freelancing-management .middle .blue-wrapper .second-row .second-row-right .item {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.freelancing-management .middle .blue-wrapper .second-row .second-row-right .item .item-title {
+  color: #afadad;
+}
+.freelancing-management .middle .blue-wrapper .second-row .second-row-right .item .item-dropdown {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  color: black;
+}
+.freelancing-management .middle .blue-wrapper .third-row,
+.freelancing-management .middle .blue-wrapper .fourth-row {
+  display: flex;
+  flex-direction: row;
+  margin-top: 4rem;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+.freelancing-management .middle .blue-wrapper .third-row .project,
+.freelancing-management .middle .blue-wrapper .fourth-row .project {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  flex: 1;
+  border-radius: 1rem;
+  padding: 2rem;
+  gap: 1rem;
+}
+.freelancing-management .middle .blue-wrapper .third-row .project h4,
+.freelancing-management .middle .blue-wrapper .fourth-row .project h4 {
+  font-size: 2rem;
+}
+.freelancing-management .middle .blue-wrapper .third-row .project ul > li,
+.freelancing-management .middle .blue-wrapper .fourth-row .project ul > li {
+  margin-left: 2rem;
+  list-style-type: circle;
+}
+.freelancing-management .middle .blue-wrapper .third-row .project .profiles,
+.freelancing-management .middle .blue-wrapper .fourth-row .project .profiles {
+  display: flex;
+  flex-direction: row;
+  margin-top: 3rem;
+}
+.freelancing-management .middle .blue-wrapper .third-row .project .profiles img,
+.freelancing-management .middle .blue-wrapper .fourth-row .project .profiles img {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+.freelancing-management .middle .blue-wrapper .third-row .project .controls,
+.freelancing-management .middle .blue-wrapper .fourth-row .project .controls {
+  display: flex;
+  flex-direction: row;
+}
+.freelancing-management .middle .blue-wrapper .third-row .project .controls .controls-left,
+.freelancing-management .middle .blue-wrapper .fourth-row .project .controls .controls-left {
+  margin-right: auto;
+  color: #aaa9a9;
+}
+.freelancing-management .middle .blue-wrapper .third-row .project .controls .controls-right,
+.freelancing-management .middle .blue-wrapper .fourth-row .project .controls .controls-right {
+  margin-left: auto;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  font-size: 1.2rem;
+}
+.freelancing-management .right {
+  display: flex;
+  flex-direction: column;
+  width: 40rem;
+  height: 100%;
+  padding: 2rem 3rem;
+  gap: 6rem;
+}
+.freelancing-management .right .controls {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.freelancing-management .right .controls .control-item {
+  padding: 1rem;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+}
+.freelancing-management .right .profile-details {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+}
+.freelancing-management .right .profile-details .profile-details-title {
+  font-size: 3rem;
+  font-weight: 300;
+}
+.freelancing-management .right .profile-details .profile-details-image {
+  margin-left: auto;
+  width: 7rem;
+  height: 7rem;
+}
+.freelancing-management .right .profile-details .profile-details-icon {
+  margin-left: auto;
+}
+.freelancing-management .right .divider {
+  border-bottom: 0.1rem solid #fbfbfb;
+}
+.freelancing-management .right .stats {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3rem;
+}
+.freelancing-management .right .stats .first-row {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+}
+.freelancing-management .right .stats .first-row .total-projects,
+.freelancing-management .right .stats .first-row .completed {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+.freelancing-management .right .stats .first-row .total-projects .title {
+  font-size: 1.2rem;
+  color: #808080;
+}
+.freelancing-management .right .stats .first-row .total-projects .count {
+  font-size: 2.3rem;
+  font-weight: 600;
+  padding-left: 0.7rem;
+  border-left: 0.3rem solid #a090c0;
+}
+.freelancing-management .right .stats .first-row .completed .title {
+  font-size: 1.2rem;
+  color: #808080;
+}
+.freelancing-management .right .stats .first-row .completed .count {
+  font-size: 2.3rem;
+  font-weight: 600;
+  padding-left: 0.7rem;
+  border-left: 0.3rem solid #76c6c5;
+}
+.freelancing-management .right .stats .second-row {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+}
+.freelancing-management .right .stats .second-row .in-progress,
+.freelancing-management .right .stats .second-row .out-of-schedule {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+.freelancing-management .right .stats .second-row .in-progress .title {
+  font-size: 1.2rem;
+  color: #808080;
+}
+.freelancing-management .right .stats .second-row .in-progress .count {
+  font-size: 2.3rem;
+  font-weight: 600;
+  padding-left: 0.7rem;
+  border-left: 0.3rem solid #f1c59a;
+}
+.freelancing-management .right .stats .second-row .out-of-schedule .title {
+  font-size: 1.2rem;
+  color: #808080;
+}
+.freelancing-management .right .stats .second-row .out-of-schedule .count {
+  font-size: 2.3rem;
+  font-weight: 600;
+  padding-left: 0.7rem;
+  border-left: 0.3rem solid #f78788;
+}
+.freelancing-management .right .activity-feed {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.freelancing-management .right .activity-feed .activity-feed-title {
+  font-weight: 300;
+  font-size: 3rem;
+}
+.freelancing-management .right .activity-feed .messages {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+.freelancing-management .right .activity-feed .messages .message-chat {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.freelancing-management .right .activity-feed .messages .message-chat .message-left {
+  display: flex;
+  flex-direction: row;
+  margin-right: auto;
+  gap: 1rem;
+  align-items: center;
+}
+.freelancing-management .right .activity-feed .messages .message-chat .message-left img {
+  border-radius: 50%;
+}
+.freelancing-management .right .activity-feed .messages .message-chat .message-left p {
+  padding: 2rem;
+  border-radius: 2rem;
+  background-color: #f7fafc;
+}
+.freelancing-management .right .activity-feed .messages .message-chat .message-right {
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  padding: 2rem;
+  border-radius: 2rem;
+  background-color: #fce6a1;
+}
+.freelancing-management .right .activity-feed .messages .message-send {
+  display: flex;
+  flex-direction: row;
+  padding: 1.5rem;
+  width: 100%;
+  border-radius: 3rem;
+  border: 0.1rem solid #d1cece;
+}
+.freelancing-management .right .activity-feed .messages .message-send .message-send-input {
+  color: #808080;
+  flex: 2;
+}
+.freelancing-management .right .activity-feed .messages .message-send .message-send-smilie {
+  flex: 1;
+}
+
+/* End of Freelancing Management *//*# sourceMappingURL=freelancing-management.css.map */

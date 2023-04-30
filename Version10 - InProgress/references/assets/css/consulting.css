@@ -1,0 +1,434 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@200&family=Nunito:wght@200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+/*
+  Notes:
+  1 rem = 16px
+*/
+/* Core */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  outline: none;
+  font-family: "Roboto", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+img {
+  width: 5rem;
+  height: 5rem;
+}
+
+/* End Core */
+/* Consulting */
+.consulting {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+}
+.consulting .left {
+  width: 30rem;
+  height: 100%;
+  border-right: 0.1rem solid #808080;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 2rem;
+  gap: 5rem;
+}
+.consulting .left .profile-details {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+.consulting .left .profile-details .details {
+  display: flex;
+  flex-direction: column;
+}
+.consulting .left .menu {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  font-size: 1.2rem;
+  color: #808080;
+}
+.consulting .left .menu .menu-item {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+.consulting .left .menu .menu-item-active {
+  color: black;
+}
+.consulting .left .divider {
+  border-bottom: 0.1rem solid #808080;
+}
+.consulting .left .posts {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2rem;
+  gap: 2rem;
+  color: #808080;
+}
+.consulting .left .posts .header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.consulting .left .posts .header .header-left {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  color: #000;
+}
+.consulting .left .posts .header .header-right {
+  color: #808080;
+  padding: 0.5rem;
+  border: 0.1rem solid #808080;
+  border-radius: 50%;
+  font-size: 0.9rem;
+}
+.consulting .left .posts .posts-data {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.consulting .left .posts .posts-data .data-item {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+.consulting .left .posts .posts-data .data-item .count {
+  margin-left: auto;
+  border: 0.1rem solid #808080;
+  padding: 0.2rem 1.2rem;
+  border-radius: 2rem;
+}
+.consulting .left .favorite-users {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2rem;
+  color: #808080;
+}
+.consulting .left .favorite-users .header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.consulting .left .favorite-users .header .header-left {
+  display: flex;
+  gap: 1rem;
+  color: #000;
+}
+.consulting .left .favorite-users .header .header-right {
+  border-radius: 50%;
+  padding: 0.5rem;
+  border: 0.1rem solid #808080;
+  font-size: 0.9rem;
+}
+.consulting .left .invite-new-member {
+  margin-top: auto;
+  display: flex;
+  flex-direction: row;
+  font-size: 1.2rem;
+  gap: 1rem;
+}
+.consulting .middle {
+  width: calc(100% - 70rem);
+  height: 100%;
+  background-color: #fafafa;
+  padding: 2rem 5rem;
+}
+.consulting .middle .profiles {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+.consulting .middle .profiles .profile {
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.consulting .middle .profiles .profile .image-with-plus {
+  position: relative;
+}
+.consulting .middle .profiles .profile .image-with-plus .add {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border-radius: 50%;
+  background-color: #5046ba;
+  color: white;
+  padding: 0.2rem;
+}
+.consulting .middle .thirty-days-performance {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  gap: 1rem;
+}
+.consulting .middle .thirty-days-performance .header {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.consulting .middle .thirty-days-performance .thirty-days-performance-inner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.consulting .middle .thirty-days-performance .thirty-days-performance-inner .views,
+.consulting .middle .thirty-days-performance .thirty-days-performance-inner .follows,
+.consulting .middle .thirty-days-performance .thirty-days-performance-inner .likes {
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+  gap: 1rem;
+  background-color: #4f46bb;
+  padding: 1rem 0rem 1rem 1rem;
+  color: white;
+  width: 100%;
+}
+.consulting .middle .thirty-days-performance .thirty-days-performance-inner .views .title,
+.consulting .middle .thirty-days-performance .thirty-days-performance-inner .follows .title,
+.consulting .middle .thirty-days-performance .thirty-days-performance-inner .likes .title {
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.consulting .middle .thirty-days-performance .thirty-days-performance-inner .views .count,
+.consulting .middle .thirty-days-performance .thirty-days-performance-inner .follows .count,
+.consulting .middle .thirty-days-performance .thirty-days-performance-inner .likes .count {
+  font-weight: 500;
+}
+.consulting .middle .analytics-and-event-distribution {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2rem;
+  gap: 2rem;
+}
+.consulting .middle .analytics-and-event-distribution .header {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.consulting .middle .analytics-and-event-distribution .analytics {
+  display: flex;
+  flex-direction: column;
+}
+.consulting .middle .analytics-and-event-distribution .analytics .second-row {
+  display: flex;
+  flex-direction: row;
+}
+.consulting .middle .analytics-and-event-distribution .event-distribution {
+  display: flex;
+  flex-direction: column;
+}
+.consulting .middle .analytics-and-event-distribution .event-distribution .event-distribution-options {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.consulting .middle .statistics {
+  display: flex;
+  flex-direction: column;
+}
+.consulting .middle .statistics .statistics-inner {
+  display: flex;
+  flex-direction: row;
+}
+.consulting .middle .statistics .statistics-inner .statistics-item {
+  display: flex;
+  flex-direction: row;
+}
+.consulting .middle .statistics .statistics-inner .statistics-item .statistics-item-left {
+  display: flex;
+  flex-direction: column;
+}
+.consulting .middle .statistics .statistics-inner .statistics-item .vertical-divider {
+  width: 0.1rem;
+  background-color: black;
+  height: 100%;
+  float: left;
+}
+.consulting .right {
+  width: 40rem;
+  height: 100%;
+  border-left: 0.1rem solid #808080;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 2rem;
+  gap: 3rem;
+}
+.consulting .right .first-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+.consulting .right .first-row .first-row-left {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+.consulting .right .first-row .first-row-left .name {
+  font-size: 2rem;
+  font-weight: 500;
+}
+.consulting .right .first-row .first-row-left .status {
+  font-weight: 300;
+}
+.consulting .right .first-row .first-row-right {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  font-size: 2rem;
+}
+.consulting .right .first-row .first-row-right .messages {
+  border-radius: 1rem;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+}
+.consulting .right .first-row .first-row-right .notifications {
+  border-radius: 1rem;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  position: relative;
+}
+.consulting .right .first-row .first-row-right .notifications .tag {
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  font-size: 0.5rem;
+  border-radius: 50%;
+  background-color: #4f46bb;
+  padding: 0.5rem;
+  color: white;
+}
+.consulting .right .second-row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.7rem;
+}
+.consulting .right .second-row .title {
+  font-size: 2rem;
+}
+.consulting .right .second-row .designation {
+  font-weight: 300;
+  font-size: 1.4rem;
+}
+.consulting .right .third-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  font-size: 1.6rem;
+}
+.consulting .right .third-row .third-row-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.consulting .right .third-row .third-row-item .item-number {
+  font-size: 2rem;
+}
+.consulting .right .third-row .third-row-item .item-title {
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+.consulting .right .fourth-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.consulting .right .fourth-row .view-profile-btn {
+  color: white;
+  border-radius: 0.7rem;
+  background-color: #4f46bb;
+  padding: 1rem 2rem;
+}
+.consulting .right .fourth-row .edit-profile-btn {
+  color: black;
+  border: 0.1rem solid #808080;
+  border-radius: 0.7rem;
+  padding: 1rem 2rem;
+}
+.consulting .right .fifth-row {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem 1rem;
+  gap: 1rem;
+  justify-content: center;
+}
+.consulting .right .fifth-row .fifth-row-item {
+  display: flex;
+  flex-direction: column;
+  padding: 10rem 3rem 2rem 3rem;
+  border-radius: 1rem;
+  position: relative;
+}
+.consulting .right .fifth-row .fifth-row-item .fifth-row-item > * {
+  margin-top: auto;
+}
+.consulting .right .fifth-row .fifth-row-item i:nth-child(1) {
+  font-size: 3rem;
+}
+.consulting .right .fifth-row .fifth-row-item h4 {
+  margin-top: 2rem;
+  font-size: 2rem;
+}
+.consulting .right .fifth-row .fifth-row-item p {
+  margin-top: 0.4rem;
+}
+.consulting .right .fifth-row .fifth-row-item .fa-xmark {
+  position: absolute;
+  top: 10%;
+  right: 10%;
+}
+.consulting .right .fifth-row .videos {
+  background-color: #f2e8ff;
+  color: #51459d;
+}
+.consulting .right .fifth-row .photos {
+  background-color: #fef3f1;
+  color: #ac6754;
+}
+.consulting .right .sixth-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 1rem 1rem;
+  width: 100%;
+  gap: 0.2rem;
+  justify-content: center;
+  align-items: center;
+}
+.consulting .right .sixth-row img {
+  width: 30%;
+  height: 10rem;
+}
+.consulting .right .sixth-row img:nth-child(1) {
+  border-top-left-radius: 1rem;
+}
+.consulting .right .sixth-row img:not(:first-child):not(:last-child) {
+  border-top-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+.consulting .right .sixth-row img:last-child {
+  border-bottom-right-radius: 1rem;
+}
+
+/* End of Consulting *//*# sourceMappingURL=consulting.css.map */

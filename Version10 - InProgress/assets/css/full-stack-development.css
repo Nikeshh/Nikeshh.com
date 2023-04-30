@@ -1,0 +1,257 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Mynerve&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+:root {
+    /* ===== Colors ===== */
+    --primary-color: #0e4bf1;
+    --dark-yellow: #f7a33d;
+    --dark-purple: #4947a7;
+    --white: #fff;
+  
+    /* ====== Transition ====== */
+    --tran-05: all 0.5s ease;
+    --tran-03: all 0.3s ease;
+    --tran-03: all 0.2s ease;
+}
+body {
+    min-height: 100vh;
+}
+/* Colors */
+.primary {
+    color: var(--dark-purple);
+}
+.secondary {
+    color: var(--dark-yellow);
+}
+.white {
+    color: var(--white);
+}
+/* === Custom Scroll Bar CSS === */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: var(--light-purple);
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--dark-purple);
+}
+body.dark::-webkit-scrollbar-thumb:hover,
+body.dark .activity-data::-webkit-scrollbar-thumb:hover {
+    background: #3a3b3c;
+}
+/* Landing */
+.landing {
+    height: 100vh;
+}
+.landing .navbar {}
+.landing .banner {
+    height: calc(100vh - 8px);
+    display: flex;
+    align-items: center;
+    gap: 10rem;
+}
+.banner .banner-details {
+    display: flex;
+    flex-direction: column;
+}
+.banner-details h1 {
+    font-size: 3rem;
+}
+.banner-details .signup-input {
+    display: flex;
+    gap: .2rem;
+}
+.signup-input input {
+    padding: .5rem 1rem;
+}
+.signup-input button {
+    padding: .5rem 1rem;
+    background-color: #0e4bf1;
+    color: white;
+    border-radius: 5px;
+}
+.banner img {
+    max-width: 500px;
+}
+/* Clients */
+.clients {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.clients img {
+    max-width: 150px;
+}
+/* Agency Details */
+.agency-details {
+    display: flex;
+    margin-top: 5rem;
+    align-items: center;
+}
+.agency-details .agency-details-left {
+    flex: 1;
+}
+.agency-details-left {}
+.agency-details-left h2 {
+    font-weight: 400;
+}
+.agency-details-left .details {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.details p {
+    margin-bottom: 0 !important;
+}
+.details .detail {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+.detail .detail-right {}
+.detail-right p:nth-child(1) {
+    font-weight: 600;
+}
+.detail-right p:nth-child(2) {
+    font-weight: 300;
+    font-size: .8rem;
+}
+.agency-details .agency-details-right {
+    flex: 1;
+}
+/* Services */
+.services {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+}
+.services h2 {
+    font-weight: 600;
+}
+.services p {
+    font-weight: 300;
+    font-size: .9rem;
+}
+.services .service-types {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+.service-types .service-type {
+    flex: 1;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+/* Benefits */
+.benefits {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+}
+.benefits h2 {
+    font-weight: 600;
+}
+.benefits p {
+    font-weight: 300;
+    font-size: .9rem;
+}
+.benefits .benefit-types {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+.benefit-types .benefit-type {
+    flex: 1;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+/* Information */
+.information {
+    margin-top: 5rem;
+    display: flex;
+    gap: 2rem;
+}
+.information .grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.grid .details {
+    display: flex;
+    gap: 1rem;
+}
+.details .grid-detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    padding: 1.5rem 1rem;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    text-align: center;
+}
+.information .information-right {}
+.information-right .meta {
+    display: flex;
+    gap: 1rem;
+}
+.information-right .tags {
+    display: flex;
+    gap: 1rem;
+}
+/* Blogs */
+.blogs {
+    margin-top: 2rem;
+    display: flex;
+    gap: 2rem;
+}
+.blogs .blog {
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+}
+.blog .blog-left {}
+.blog .blog-right {}
+.blog-right .meta {
+    display: flex;
+    gap: 1rem;
+}
+.blog-right .tags {
+    display: flex;
+    gap: 1rem;
+}
+/* Promotion */
+.promotion {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+/* Footer */
+.footer {
+    margin-top: 5rem;
+}
+.footer .footer-top {
+    display: flex;
+    gap: 1rem;
+}
+.footer-top .company-details {}
+.company-details .social-links {
+    display: flex;
+}
+.footer-top .about {}
+.footer-top .company {}
+.footer-top .support {}
+.footer .footer-bottom {}

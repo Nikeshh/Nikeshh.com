@@ -1,0 +1,27 @@
+/* Projects */
+
+.projects-main {
+    .tags {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        margin-left: 1rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 50%;
+    }
+    
+    .tag {
+        background-color: #FFD8DE;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        border-radius: 2rem;
+    
+        p {
+            margin-bottom: 0rem;
+            font-size: 0.2rem;
+        }
+    }
+}

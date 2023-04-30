@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Mynerve&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+:root {
+    /* ===== Colors ===== */
+    --primary-color: #0e4bf1;
+    --dark-yellow: #f7a33d;
+    --dark-purple: #4947a7;
+    --white: #fff;
+  
+    /* ====== Transition ====== */
+    --tran-05: all 0.5s ease;
+    --tran-03: all 0.3s ease;
+    --tran-03: all 0.2s ease;
+}
+body {
+    min-height: 100vh;
+}
+/* Colors */
+.primary {
+    color: var(--dark-purple);
+}
+.secondary {
+    color: var(--dark-yellow);
+}
+.white {
+    color: var(--white);
+}
+/* === Custom Scroll Bar CSS === */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: var(--light-purple);
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--dark-purple);
+}
+body.dark::-webkit-scrollbar-thumb:hover,
+body.dark .activity-data::-webkit-scrollbar-thumb:hover {
+    background: #3a3b3c;
+}
+/* Landing */
+.landing {
+    height: 100vh;
+}
+.landing .navbar {}
+.landing .banner {
+    display: flex;
+    height: calc(100vh - 8px);
+    align-items: center;
+    gap: 10rem;
+}
+.banner .banner-details {
+    display: flex;
+    flex-direction: column;
+}
+.banner-details h1 {
+    font-weight: 600;
+}
+.banner-details p {
+    font-size: .8rem;
+}
+.banner-details button {
+    padding: .5rem 1rem;
+    width: fit-content;
+    border-radius: 5px;
+    background-color: #0e4bf1;
+    color: white;
+}
+/* Clients */
+.clients {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.clients img {
+    max-width: 150px;
+}
+/* Explore */
+.explore {
+    margin-top: 5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+.explore h2 {
+    font-weight: 600;
+}
+.explore p {
+    font-weight: 300;
+    font-size: medium;
+}
+.explore .details {
+    display: flex;
+    justify-content: space-around;
+}
+.details .detail {}
+.explore button {
+    padding: .5rem 1rem;
+    width: fit-content;
+    border-radius: 5px;
+    background-color: #0e4bf1;
+    color: white;
+}
+/* Services */
+.services {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+}
+.services h2 {
+    font-weight: 600;
+}
+.services p {
+    font-weight: 300;
+    font-size: .9rem;
+}
+.services .service-types {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+.service-types .service-type {
+    flex: 1;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+/* Information */
+.information-left,
+.information-right {
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.left,
+.right {
+    flex: 1;
+}
+.left h2,
+.right h2 {
+    font-weight: bold;
+}
+.left p, .right p {}
+.information-left img,
+.information-right img {
+    flex: 1;
+    max-width: 600px;
+}
+/* Testimonials */
+.testimonials {}
+.testimonials .testimonial {
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.testimonail .testimonail-left {
+    flex: 1;
+}
+.testimonail-left .client-image {
+    display: flex;
+    justify-content: end;
+}
+.client-image img {
+    max-width: 100px;
+}
+.testimonail-left .lift-details {}
+.testimonail-left .user-details {}
+.user-details p {
+    margin-bottom: 0;
+}
+.testimonial > img {
+    flex: 1;
+    max-width: 400px;
+}

@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Mynerve&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+:root {
+    /* ===== Colors ===== */
+    --primary-color: #0e4bf1;
+    --dark-yellow: #f7a33d;
+    --dark-purple: #4947a7;
+    --white: #fff;
+  
+    /* ====== Transition ====== */
+    --tran-05: all 0.5s ease;
+    --tran-03: all 0.3s ease;
+    --tran-03: all 0.2s ease;
+}
+body {
+    min-height: 100vh;
+}
+/* Colors */
+.primary {
+    color: var(--dark-purple);
+}
+.secondary {
+    color: var(--dark-yellow);
+}
+.white {
+    color: var(--white);
+}
+/* === Custom Scroll Bar CSS === */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: var(--light-purple);
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--dark-purple);
+}
+body.dark::-webkit-scrollbar-thumb:hover,
+body.dark .activity-data::-webkit-scrollbar-thumb:hover {
+    background: #3a3b3c;
+}
+/* Landing */
+.landing {
+    background-color: #3a3b3c;
+    height: 100vh;
+}
+.landing .navbar {}
+.navbar .nav-item a {
+    color: white !important;
+}
+.landing .banner {}
+.banner .banner-details {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+.banner-details h1 {
+    font-weight: bold;
+}
+.banner-details .cards {
+    display: flex;
+    gap: 2rem;
+    color: black;
+    flex-wrap: wrap;
+}
+.cards .card {
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+}
+.cards .card:nth-child(1) button {
+    background-color: black;
+    color: white;
+}
+.cards .card:nth-child(2) button {
+    background-color: yellow;
+    color: black;
+}
+.card .card-details {
+    padding: 1rem 2rem;
+}
+.card-details .card-title {
+    font-weight: bold;
+}
+.card-details .card-description {
+    font-weight: lighter;
+}
+.card-details button {
+    padding: .5rem 1rem;
+    border-radius: 3rem;
+}
+/* Description */
+.description {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.description h2 {
+    font-weight: bold;
+    font-size: 2.2rem;
+}
+/* Information */
+.information-left,
+.information-right {
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.left,
+.right {
+    flex: 1;
+}
+.left h2,
+.right h2 {
+    font-weight: bold;
+}
+.left p, .right p {}
+.information-left img,
+.information-right img {
+    flex: 1;
+    max-width: 600px;
+}
