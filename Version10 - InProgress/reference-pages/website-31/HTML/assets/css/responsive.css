@@ -59,12 +59,12 @@
 	display:none;
 }
 
-.header label.create-account{
-	float:left;
-	margin-right: 50px;
-	position:fixed;
-	top: 9px;
-	right: 0px
+.header label.create-account {
+    float: left;
+    margin-right: 50px;
+    position: fixed;
+    top: 9px;
+    right: 28px;
 }
 
 .header {
@@ -157,6 +157,20 @@ h2 {
 	left:-15px;
 }
 
+div#navbarSupportedContent {
+    padding-left: 35px;
+    overflow-x: hidden;
+}
+
+.navbar-toggler.menu-icon {
+    width: 20px;
+    padding: 0;
+    cursor: pointer;
+    position: relative;
+    border: 0px;
+    left: 25px;
+}
+
 .dropdown-menu a {
 	color: rgb(137, 141, 154);
 	font-size:14px;
@@ -212,6 +226,10 @@ h2 {
 }
 
 @media only screen and (min-width:768px) and (max-width:992px) {
+div#navbarSupportedContent {
+	padding-left: 35px;
+	overflow-x: hidden;
+}
 .flush-xs {
     padding-right: 0px;
     padding-left: 0px;
@@ -276,12 +294,12 @@ h2 {
 }
 
 
-.header label.create-account{
-	float:left;
-	margin-right: 50px;
-	position:fixed;
-	top:14px;
-	right:60px
+.header label.create-account {
+    float: left;
+    margin-right: 50px;
+    position: fixed;
+    top: 14px;
+    right: 79px;
 }
 
 .header {
@@ -436,7 +454,7 @@ h2 {
     width: 36px;
     height: 20px;
     right: 50px;
-    top: 5px;
+    top: 1px;
 }
 
 .select ul li {
@@ -453,7 +471,7 @@ h2 {
 
 }
 
-@media only screen and (min-width:993px) and (max-width:1169px) {
+@media only screen and (min-width:993px) and (max-width:1270px) {
 	
 .select ul {
     width: 110px;
@@ -461,6 +479,7 @@ h2 {
 
 .navbar-nav .nav-link {
 	font-size: 11px;
+	padding: 5px 8px !important;
 }
 
 .container.full-width {
@@ -484,5 +503,8 @@ h2 {
     font-weight: 600;
 }
 	
-	
+div#navbarSupportedContent {
+    padding-left: 0px;
+}
+
 }

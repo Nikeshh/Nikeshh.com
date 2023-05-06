@@ -32,48 +32,18 @@
 		});
 		wow.init();
 	};
-
-	$('.slider').owlCarousel({
-		loop:true,
-		items:1,
-		margin:0,
-		nav:true,
-		autoplay:true,
-		center:true,
-		stagePadding:0,
-		nav:false
-	});
-	
-
-	$('.projects').owlCarousel({
-		loop:true,
-		margin:0,
-		nav:true,
-		autoplay:false,
-		nav:false,
-		responsive:{
-			0:{
-				items:1
-			},
-			600:{
-				items:3
-			},
-			1000:{
-				items:4
-			}
-		}
-	})
 	
 	$(function() {
-	var header = $(".header");
-  
-	$(window).scroll(function() {    
-		var scroll = $(window).scrollTop();
-		if (scroll >= 73) {
-			header.addClass("scrolled");
-		} else {
-			header.removeClass("scrolled");
-		}
-	});
-	
+		var header = $(".header");
+		$(window).scroll(function() {    
+			var scroll = $(window).scrollTop();
+			if (scroll >= 100) {
+				header.addClass("scrolled");
+				$("body").addClass('set');
+			} else {
+				header.removeClass("scrolled");
+				$("body").removeClass('set');
+			}
+		});
+    });
 })(jQuery);

@@ -133,6 +133,7 @@ img {
 
 .container.full-width {
     max-width: 1440px;
+    padding: 0px 40px;
 }
 
 .btn-info {
@@ -274,7 +275,7 @@ ul.list li {
     display: inline-block;
     color: rgb(137, 141, 154);
     font-size: 14px;
-    padding: 14px 10px;
+    padding: 13px 10px;
     position: relative;
 }
 
@@ -481,8 +482,9 @@ ul.list li {
 .switch {
     position: relative;
     display: inline-block;
-    width: 60px;
-    height: 34px;
+    width: 36px;
+    height: 20px;
+    margin: 0;
 }
 
 /* Hide default HTML checkbox */
@@ -557,6 +559,7 @@ input:checked + .slider:before {
     margin-bottom: 0px;
     margin: 0px 15px;
     margin-top: 10px;
+    margin-bottom: -10px;
 }
 
 .header label.create-account span {
@@ -565,6 +568,8 @@ input:checked + .slider:before {
     margin-top: 2px;
     color: rgb(137, 141, 154);
     position: relative;
+    position: relative;
+    top: -3px;
 }
 
 .scrolled {
@@ -644,12 +649,15 @@ input:checked + .slider:before {
     position: fixed;
 }
 
+div#navbarSupportedContent {
+    padding-left: 20px;
+}
+
 /* Banner Style */
 .banner {
     background: rgb(110, 219, 255);
     color: rgb(23, 26, 34);
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding: 15px 0px;
 }
 
 .banner h2 {
@@ -1071,6 +1079,7 @@ li.init {
     width: 150px;
     position: absolute;
     margin-top: 10px;
+    right: 15px;
 }
 
 a#submit {
