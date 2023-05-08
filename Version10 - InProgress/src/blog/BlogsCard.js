@@ -16,6 +16,9 @@ var BlogsCard = function BlogsCard(_ref) {
                 var boxNumber = j + 1;
                 var boxName = "box" + boxNumber;
                 if (blogsData.length == 0) {
+                    for (var k = 0; k < -blogItems.length + 3; k++) {
+                        blogItems.push(React.createElement("div", { "class": "placeholderbox" }));
+                    }
                     break;
                 }
                 var blog = blogsData.shift();

@@ -13,6 +13,9 @@ const BlogsCard = ({ blogs=[] }) => {
                 const boxNumber = j+1;
                 const boxName = "box" + boxNumber;
                 if(blogsData.length == 0) {
+                    for(var k=0; k<(-blogItems.length + 3); k++) {
+                        blogItems.push(<div class={"placeholderbox"}></div>);
+                    }
                     break;
                 }
                 var blog = blogsData.shift();
