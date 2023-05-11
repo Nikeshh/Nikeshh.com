@@ -443,9 +443,14 @@ h3 a.float-right .fa {
 	font-weight:600;
 }
 
-.white-content .search-icon{
+.white-content .search-icon {
 	background:#f8fafc url(../../../img/icon-3.png) 10px 10px no-repeat;
 	padding-left:45px;
+}
+
+.white-content .search-icon::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+	color: #d4d8dd;
+	opacity: 1; /* Firefox */
 }
 
 select {

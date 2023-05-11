@@ -1352,35 +1352,35 @@ ul.list li {
 	max-width:1260px;
 }
 
-#testimornial {
+#testimonials {
     padding: 100px 0px;
 }
 
-#testimornial button {
+#testimonials button {
     background: transparent;
     padding: 0;
     margin: 0;
     border-radius: 0;
 }
 
-#testimornial button.active img {
+#testimonials button.active img {
     width: 175px;
     height: 175px;
     border-radius: 100%;
 }
 
-#testimornial button.active span {
+#testimonials button.active span {
 	opacity: 1;
 }
 
-#testimornial button img {
+#testimonials button img {
     width: 125px;
     height: 125px;
     border-radius: 100%;
 	transition: 0.3s;
 }
 
-#testimornial button span {
+#testimonials button span {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1390,13 +1390,13 @@ ul.list li {
 	transition: 0.3s;
 }
 
-#testimornial button span h3 {
+#testimonials button span h3 {
     margin: 0;
     font-size: 30px;
     color: #000;
 }
 
-#testimornial ul#pills-tab {
+#testimonials ul#pills-tab {
     gap: 13%;
     display: flex;
     flex-direction: row;
@@ -1405,7 +1405,7 @@ ul.list li {
     margin-top: 10%;
 }
 
-#testimornial #pills-tabContent {
+#testimonials #pills-tabContent {
     position: relative;
     margin-right: auto;
     margin-left: auto;
@@ -1415,7 +1415,7 @@ ul.list li {
     text-align: center;
 }
 
-#testimornial .testimonial-content-wrap {
+#testimonials .testimonial-content-wrap {
     position: relative;
     z-index: 1;
     display: -webkit-box;
@@ -1442,7 +1442,7 @@ ul.list li {
     background-color: #fff;
 }
 
-#testimornial .testimonial-content {
+#testimonials .testimonial-content {
     width: 800px;
     margin-top: 30px;
     margin-right: auto;
@@ -1451,26 +1451,26 @@ ul.list li {
     font-size: 25px;
 }
 
-#testimornial .testimonial-arrow {
+#testimonials .testimonial-arrow {
     position: relative;
     bottom: -32px;
     background-color: #fff;
 }
 
-#testimornial .testimonial-arrow.first-image {
+#testimonials .testimonial-arrow.first-image {
     right: 327px;
 }
 
-#testimornial .testimonial-arrow.second-tab {
+#testimonials .testimonial-arrow.second-tab {
     left: auto;
     right: auto;
 }
 
-#testimornial .testimonial-arrow.third-tab {
+#testimonials .testimonial-arrow.third-tab {
     left: 317px;
 }
 
-#testimornial .testimonial-bg {
+#testimonials .testimonial-bg {
     position: absolute;
     left: 0%;
     top: 0%;
