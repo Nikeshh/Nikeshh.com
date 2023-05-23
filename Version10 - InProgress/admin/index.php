@@ -19,6 +19,7 @@
     while($row = $result->fetch_assoc()) {
         $labels[] = $row;
     }
+    // Find the menu items
     $menuitems = array();
     for ($i=0 ; $i < sizeof($labels); $i++){
         $sql = "SELECT * FROM ADMIN_MAIN_MENU WHERE LABEL = '" . $labels[$i]["label"] . "'";
@@ -88,7 +89,7 @@
                         echo '
                             <li
                                 class="sidebar-item ">
-                                <a href="./admin/track/track.html" class="sidebar-link">
+                                <a href="./admin/pages/mainpage.php?id='. $item["id"] .'" class="sidebar-link">
                                     <i class="bi bi-grid-fill"></i>
                                     <span>'. $item["name"] .'</span>
                                 </a>

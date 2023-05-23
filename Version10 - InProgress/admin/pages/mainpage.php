@@ -1,3 +1,61 @@
+<?php
+    if(isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on')   
+        $url = "https://";   
+    else  
+        $url = "http://";
+
+    // Append the host(domain name, ip) to the URL.   
+    $url.= $_SERVER['HTTP_HOST'];   
+
+    // Append the requested resource location to the URL   
+    $url.= $_SERVER['REQUEST_URI'];
+
+    $url_components = parse_url($url);
+    parse_str($url_components['query'], $params);
+    $id = $params["id"];
+
+    $servername = "127.0.0.1";
+    $username = "admin";
+    $password = "nikeshh123";
+    $dbname = "admin_nikeshh";
+
+    // Create connection
+    $conn = new mysqli($servername, $username, $password, $dbname);
+
+    // Check connection
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    }
+
+    // Find the unique labels
+    $sql = "SELECT * FROM ADMIN_MENU GROUP BY LABEL";
+    $result = $conn->query($sql);
+    $labels = array();
+    while($row = $result->fetch_assoc()) {
+        $labels[] = $row;
+    }
+    // Find the menu items
+    $menuitems = array();
+    for ($i=0 ; $i < sizeof($labels); $i++){
+        $sql = "SELECT * FROM ADMIN_MENU WHERE LABEL = '" . $labels[$i]["label"] . "'";
+        $result = $conn->query($sql);
+        $items = array();
+        while($row = $result->fetch_assoc()) {
+            $items[] = $row;
+        }
+        $menuitems[] = $items;
+    }
+
+    // Find the main page contents
+    $sql = "SELECT * FROM ADMIN_MAIN_MENU_PAGE WHERE MAIN_MENU_ID='" . $id . "'";
+    $result = $conn->query($sql);
+    $contents = array();
+    while($row = $result->fetch_assoc()) {
+        $contents[] = $row;
+    }
+    $content = $contents[0];
+    $conn->close();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -35,21 +93,32 @@
                 </div>
                 <div class="sidebar-menu">
                     <ul class="menu">
-                        <li
-                            class="sidebar-item  has-sub ">
-                            <a href="#" class='sidebar-link'>
-                                <i class="bi bi-collection-fill"></i>
-                                <span>Dropshipping</span>
-                            </a>
-                            <ul class="submenu ">
-                                <li class="submenu-item ">
-                                    <a href="./dropshipping/chewrr.html">Chewrr</a>
-                                </li>
-                                <li class="submenu-item ">
-                                    <a href="./dropshipping/biskitbites.html">Biskitbites</a>
-                                </li>
-                            </ul>
-                        </li>
+                        <?php
+                            for ($i=0 ; $i < sizeof($menuitems); $i++){
+                                $menuitem = $menuitems[$i];
+                                echo '<li class="sidebar-title">'. $labels[$i]["label"] . '</li>';
+                                for($j=0; $j < sizeof($menuitem); $j++) {
+                                    $item = $menuitem[$j];
+                                    echo '
+                                        <li
+                                            class="sidebar-item  has-sub ">
+                                            <a href="#" class="sidebar-link">
+                                                <i class="bi bi-collection-fill"></i>
+                                                <span>'. $item["name"] .'</span>
+                                            </a>
+                                            <ul class="submenu ">
+                                                <li class="submenu-item ">
+                                                    <a href="./dropshipping/chewrr.html">Chewrr</a>
+                                                </li>
+                                                <li class="submenu-item ">
+                                                    <a href="./dropshipping/biskitbites.html">Biskitbites</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    ';
+                                }
+                            }
+                        ?>
                     </ul>
                 </div>
             </div>
@@ -64,8 +133,8 @@
                 <div class="page-title">
                     <div class="row">
                         <div class="col-12 col-md-6 order-md-1 order-last">
-                            <h3>Track</h3>
-                            <p class="text-subtitle text-muted">Events planned, happened, happening and about to happen</p>
+                            <h3><?php echo $content["page_title"] ?></h3>
+                            <p class="text-subtitle text-muted"><?php echo $content["page_subtitle"] ?></p>
                         </div>
                         <div class="col-12 col-md-6 order-md-2 order-first">
                             <nav aria-label="breadcrumb" class="breadcrumb-header float-start float-lg-end">
