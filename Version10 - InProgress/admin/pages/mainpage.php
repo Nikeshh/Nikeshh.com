@@ -46,14 +46,13 @@
         $menuitems[] = $items;
     }
 
-    // Find the main page contents
+    // Find the main page details
     $sql = "SELECT * FROM ADMIN_MAIN_MENU_PAGE WHERE MAIN_MENU_ID='" . $id . "'";
     $result = $conn->query($sql);
-    $contents = array();
+    $mainpagecontents = array();
     while($row = $result->fetch_assoc()) {
-        $contents[] = $row;
+        $mainpagecontents[] = $row;
     }
-    $content = $contents[0];
     $conn->close();
 ?>
 <!DOCTYPE html>
@@ -133,8 +132,8 @@
                 <div class="page-title">
                     <div class="row">
                         <div class="col-12 col-md-6 order-md-1 order-last">
-                            <h3><?php echo $content["page_title"] ?></h3>
-                            <p class="text-subtitle text-muted"><?php echo $content["page_subtitle"] ?></p>
+                            <h3><?php echo $mainpagecontents[0]["page_title"] ?></h3>
+                            <p class="text-subtitle text-muted"><?php echo $mainpagecontents[0]["page_subtitle"] ?></p>
                         </div>
                         <div class="col-12 col-md-6 order-md-2 order-first">
                             <nav aria-label="breadcrumb" class="breadcrumb-header float-start float-lg-end">
@@ -147,6 +146,20 @@
                     </div>
                 </div>
                 <section class="section">
+                    <?php
+                        for ($i=0 ; $i < sizeof($mainpagecontents); $i++){
+                            $mainpagecontent = $mainpagecontents[$i];
+                            echo '
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4 class="card-title">' . $mainpagecontent["content_title"] . '</h4>
+                                    </div>
+                                    <div class="card-body">' . $mainpagecontent["content"] . '</div>
+                                </div>
+                            ';
+                        }
+                    ?>
+
                     <div class="card">
                         <div class="card-header">
                             <h4 class="card-title">Software, SAAS products, Websites, Apps, Themes, Templates, Extensions and Plugins Development</h4>
