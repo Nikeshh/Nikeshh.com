@@ -1,3 +1,36 @@
+<?php
+    $servername = "127.0.0.1";
+    $username = "admin";
+    $password = "nikeshh123";
+    $dbname = "admin_nikeshh";
+
+    // Create connection
+    $conn = new mysqli($servername, $username, $password, $dbname);
+
+    // Check connection
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    }
+
+    // Find the unique labels
+    $sql = "SELECT DISTINCT * FROM ADMIN_MAIN_MENU GROUP BY LABEL";
+    $result = $conn->query($sql);
+    $labels = array();
+    while($row = $result->fetch_assoc()) {
+        $labels[] = $row;
+    }
+    $menuitems = array();
+    for ($i=0 ; $i < sizeof($labels); $i++){
+        $sql = "SELECT * FROM ADMIN_MAIN_MENU WHERE LABEL = '" . $labels[$i]["label"] . "'";
+        $result = $conn->query($sql);
+        $items = array();
+        while($row = $result->fetch_assoc()) {
+            $items[] = $row;
+        }
+        $menuitems[] = $items;
+    }
+    $conn->close();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,6 +44,7 @@
     <link rel="shortcut icon" href="./admin/assets/images/logo/favicon.svg" type="image/x-icon">
     <link rel="shortcut icon" href="./admin/assets/images/logo/favicon.png" type="image/png">
     <link rel="stylesheet" href="./admin/assets/css/shared/iconly.css">
+    <link rel="stylesheet" href="./admin/assets/extensions/sweetalert2/sweetalert2.min.css">
 </head>
 
 <body>
@@ -34,19 +68,37 @@
                 <a href="#" class="sidebar-hide d-xl-none d-block"><i class="bi bi-x bi-middle"></i></a>
             </div>
         </div>
+        <div class="d-flex justify-content-center align-items-center">
+            <span id="addmainmenu" style="font-size: 1rem; cursor: pointer;" class="m-2"><i class="bi bi-folder-plus"></i></span>
+            <span id="addmenu" style="font-size: 1rem; cursor: pointer;" class="m-2"><i class="bi bi-folder-plus"></i></span>
+            <span id="addsubmenu" style="font-size: 1rem; cursor: pointer;" class="m-2"><i class="bi bi-folder-plus"></i></span>
+            <span id="addpage" style="font-size: 1rem; cursor: pointer;" class="m-2"><i class="bi bi-folder-plus"></i></span>
+            <span id="addmainmenupage" style="font-size: 1rem; cursor: pointer;" class="m-2"><i class="bi bi-folder-plus"></i></span>
+        </div>
     </div>
     <div class="sidebar-menu">
         <ul class="menu">
-            <li
-                class="sidebar-item ">
-                <a href="./admin/track/track.html" class='sidebar-link'>
-                    <i class="bi bi-grid-fill"></i>
-                    <span>Track</span>
-                </a>
-            </li>
 
-            <li class="sidebar-title">Menu</li>
+            <?php
+                for ($i=0 ; $i < sizeof($menuitems); $i++){
+                    $menuitem = $menuitems[$i];
+                    echo '<li class="sidebar-title">'. $labels[$i]["label"] . '</li>';
+                    for($j=0; $j < sizeof($menuitem); $j++) {
+                        $item = $menuitem[$j];
+                        echo '
+                            <li
+                                class="sidebar-item ">
+                                <a href="./admin/track/track.html" class="sidebar-link">
+                                    <i class="bi bi-grid-fill"></i>
+                                    <span>'. $item["name"] .'</span>
+                                </a>
+                            </li>
+                        ';
+                    }
+                }
+            ?>
             
+            <li class="sidebar-title">Menu</li>
             <li
                 class="sidebar-item active ">
                 <a href="..html" class='sidebar-link'>
@@ -714,22 +766,29 @@
             <footer>
                 <div class="footer clearfix mb-0 text-muted">
                     <div class="float-start">
-                        <p>2021 &copy; Mazer</p>
+                        <p>2023 &copy; Nikeshh Vijayabaskaran</p>
                     </div>
                     <div class="float-end">
                         <p>Crafted with <span class="text-danger"><i class="bi bi-heart"></i></span> by <a
-                                href="https://saugi.me">Saugi</a></p>
+                                href="https://nikeshh.com">Nikeshh Vijayabaskaran</a></p>
                     </div>
                 </div>
             </footer>
         </div>
     </div>
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+
     <script src="./admin/assets/js/bootstrap.js"></script>
     <script src="./admin/assets/js/app.js"></script>
     
-<!-- Need: Apexcharts -->
-<script src="./admin/assets/extensions/apexcharts/apexcharts.min.js"></script>
-<script src="./admin/assets/js/pages/dashboard.js"></script>
+    <!-- Need: Apexcharts -->
+    <script src="./admin/assets/extensions/apexcharts/apexcharts.min.js"></script>
+    <script src="./admin/assets/js/pages/dashboard.js"></script>
+
+    <!-- Sweet Alert -->
+    <script src="./admin/assets/extensions/sweetalert2/sweetalert2.min.js"></script>>
+    <script src="./admin/assets/js/pages/popup.js"></script>>
 
 </body>
 
