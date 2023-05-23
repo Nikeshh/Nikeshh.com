@@ -34,16 +34,30 @@
     while($row = $result->fetch_assoc()) {
         $labels[] = $row;
     }
-    // Find the menu items
+    // Find the menu and submenu items
     $menuitems = array();
+    $submenuitems = array();
     for ($i=0 ; $i < sizeof($labels); $i++){
+        // Menu Array
         $sql = "SELECT * FROM ADMIN_MENU WHERE LABEL = '" . $labels[$i]["label"] . "'";
         $result = $conn->query($sql);
-        $items = array();
+        $menus = array();
         while($row = $result->fetch_assoc()) {
-            $items[] = $row;
+            $menus[] = $row;
         }
-        $menuitems[] = $items;
+        $menuitems[] = $menus;
+
+        // Submenu array
+        foreach($menus as $row) {
+            $menu_id = $row["id"];
+            $sql = "SELECT * FROM ADMIN_SUB_MENU WHERE MENU_ID = '" . $menu_id . "'";
+            $result = $conn->query($sql);
+            $submenus = array();
+            while($row = $result->fetch_assoc()) {
+                $submenus[] = $row;
+            }
+        }
+        $submenuitems[] = $submenus;
     }
 
     // Find the main page details
@@ -93,26 +107,28 @@
                 <div class="sidebar-menu">
                     <ul class="menu">
                         <?php
-                            for ($i=0 ; $i < sizeof($menuitems); $i++){
-                                $menuitem = $menuitems[$i];
-                                echo '<li class="sidebar-title">'. $labels[$i]["label"] . '</li>';
-                                for($j=0; $j < sizeof($menuitem); $j++) {
-                                    $item = $menuitem[$j];
+                            for ($i=0 ; $i < sizeof($labels); $i++){
+                                $datalabel = $labels[$i];
+                                echo '<li class="sidebar-title">'. $datalabel["label"] . '</li>';
+                                $datamenus = $menuitems[$i];
+
+                                for($j=0; $j < sizeof($datamenus); $j++) {
+                                    $datamenu = $datamenus[$j]; // Single
+                                    $datasubmenu = $submenuitems[$j]; // Multiple
+
                                     echo '
                                         <li
                                             class="sidebar-item  has-sub ">
                                             <a href="#" class="sidebar-link">
                                                 <i class="bi bi-collection-fill"></i>
-                                                <span>'. $item["name"] .'</span>
+                                                <span>'. $datamenu["name"] .'</span>
                                             </a>
-                                            <ul class="submenu ">
-                                                <li class="submenu-item ">
-                                                    <a href="./dropshipping/chewrr.html">Chewrr</a>
-                                                </li>
-                                                <li class="submenu-item ">
-                                                    <a href="./dropshipping/biskitbites.html">Biskitbites</a>
-                                                </li>
-                                            </ul>
+                                            <ul class="submenu ">';
+                                                for($k=0; $k < sizeof($datasubmenu); $k++) {
+                                                    echo '<li class="submenu-item "><a href="./dropshipping/chewrr.html">'. $datasubmenu[$k]["name"] .'</a>';
+                                                }
+                                            echo '
+                                             </ul>
                                         </li>
                                     ';
                                 }
@@ -139,7 +155,7 @@
                             <nav aria-label="breadcrumb" class="breadcrumb-header float-start float-lg-end">
                                 <ol class="breadcrumb">
                                     <li class="breadcrumb-item"><a href="../../admin.html">Admin</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">Track</li>
+                                    <li class="breadcrumb-item active" aria-current="page"><?php echo $mainpagecontents[0]["page_title"] ?></li>
                                 </ol>
                             </nav>
                         </div>
