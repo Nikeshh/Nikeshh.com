@@ -70,11 +70,8 @@
             </div>
         </div>
         <div class="d-flex justify-content-center align-items-center">
-            <span id="addmainmenu" style="font-size: 1rem; cursor: pointer;" class="m-2"><i class="bi bi-folder-plus"></i></span>
-            <span id="addmenu" style="font-size: 1rem; cursor: pointer;" class="m-2"><i class="bi bi-folder-plus"></i></span>
-            <span id="addsubmenu" style="font-size: 1rem; cursor: pointer;" class="m-2"><i class="bi bi-folder-plus"></i></span>
-            <span id="addpage" style="font-size: 1rem; cursor: pointer;" class="m-2"><i class="bi bi-folder-plus"></i></span>
-            <span id="addmainmenupage" style="font-size: 1rem; cursor: pointer;" class="m-2"><i class="bi bi-folder-plus"></i></span>
+            <span id="addmainmenu" style="font-size: 1rem; cursor: pointer;" class="m-2"><i class="bi bi-menu-app"></i></span>
+            <span id="addmainmenupage" style="font-size: 1rem; cursor: pointer;" class="m-2"><i class="bi bi-file-earmark"></i></span>
         </div>
     </div>
     <div class="sidebar-menu">
@@ -788,8 +785,8 @@
     <script src="./admin/assets/js/pages/dashboard.js"></script>
 
     <!-- Sweet Alert -->
-    <script src="./admin/assets/extensions/sweetalert2/sweetalert2.min.js"></script>>
-    <script src="./admin/assets/js/pages/popup.js"></script>>
+    <script src="./admin/assets/extensions/sweetalert2/sweetalert2.min.js"></script>
+    <script src="./admin/assets/js/pages/popup.js"></script>
 
 </body>
 

@@ -75,11 +75,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Track</title>
+    <title><?php echo $mainpagecontents[0]["page_title"] ?></title>
     <link rel="stylesheet" href="../assets/css/main/app.css">
     <link rel="stylesheet" href="../assets/css/main/app-dark.css">
     <link rel="shortcut icon" href="../assets/images/logo/favicon.svg" type="image/x-icon">
     <link rel="shortcut icon" href="../assets/images/logo/favicon.png" type="image/png">
+    <link rel="stylesheet" href="../assets/extensions/sweetalert2/sweetalert2.min.css">
 </head>
 
 <body>
@@ -103,6 +104,11 @@
                             <a href="#" class="sidebar-hide d-xl-none d-block"><i class="bi bi-x bi-middle"></i></a>
                         </div>
                     </div>
+                    <div class="d-flex justify-content-center align-items-center">
+                        <span id="addmenu" style="font-size: 1rem; cursor: pointer;" class="m-2"><i class="bi bi-list"></i></span>
+                        <span id="addsubmenu" style="font-size: 1rem; cursor: pointer;" class="m-2"><i class="bi bi-menu-button"></i></span>
+                        <span id="addpage" style="font-size: 1rem; cursor: pointer;" class="m-2"><i class="bi bi-file-earmark"></i></span>
+                    </div>
                 </div>
                 <div class="sidebar-menu">
                     <ul class="menu">
@@ -125,7 +131,7 @@
                                             </a>
                                             <ul class="submenu ">';
                                                 for($k=0; $k < sizeof($datasubmenu); $k++) {
-                                                    echo '<li class="submenu-item "><a href="./dropshipping/chewrr.html">'. $datasubmenu[$k]["name"] .'</a>';
+                                                    echo '<li class="submenu-item "><a href="./subpage.php?id='. $datasubmenu[$k]["id"] .'">'. $datasubmenu[$k]["name"] .'</a>';
                                                 }
                                             echo '
                                              </ul>
@@ -732,17 +738,24 @@
             <footer>
                 <div class="footer clearfix mb-0 text-muted">
                     <div class="float-start">
-                        <p>2021 &copy; Mazer</p>
+                        <p>2023 &copy; Nikeshh Vijayabaskaran</p>
                     </div>
                     <div class="float-end">
                         <p>Crafted with <span class="text-danger"><i class="bi bi-heart"></i></span> by <a
-                                href="https://saugi.me">Saugi</a></p>
+                                href="https://nikeshh.com">Nikeshh Vijayabaskaran</a></p>
                     </div>
                 </div>
             </footer>
         </div>
     </div>
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+
     <script src="../assets/js/bootstrap.js"></script>
     <script src="../assets/js/app.js"></script>
+
+    <!-- Sweet Alert -->
+    <script src="../assets/extensions/sweetalert2/sweetalert2.min.js"></script>
+    <script src="../assets/js/pages/popup.js"></script>
 </body>
 </html>
