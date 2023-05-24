@@ -183,12 +183,10 @@
                                         <div class="card">
                                             <div class="card-header">
                                                 <h4 class="card-title">Edit '. $mainpagecontent["content_title"] .'</h4>
-                                                <button class="btn btn-primary">Save</button>
+                                                <button id="'. $mainpagecontent["id"] . "_button" .'" class="btn btn-primary">Save</button>
                                             </div>
                                             <div class="card-body">
-                                                <div id="'. $mainpagecontent["content_title"] . "_" . $mainpagecontent["id"] .'">
-                                                    <p>'. $mainpagecontent["content"] .'</p>
-                                                </div>
+                                                <textarea name="'. $mainpagecontent["id"] . "_editor" .'" id="'. $mainpagecontent["id"] . "_editor" .'" class="form-control" rows="12" cols="50"></textarea>
                                             </div>
                                         </div>
                                     </div>
@@ -774,18 +772,40 @@
     <script src="../assets/js/pages/popup.js"></script>
 
     <!-- CKEditor -->
-    <script src="https://cdn.ckeditor.com/ckeditor5/34.2.0/classic/ckeditor.js"></script>
+    <script src="https://cdn.ckeditor.com/4.11.1/standard/ckeditor.js"></script>
     <script>
-        var mainpagecontent = <?php echo json_encode($mainpagecontent); ?>;
-        for(var i=0; i<mainpagecontent.length; i++) {
-            var main_page_content = mainpagecontent[i];
-            var selector = "#" + main_page_content["content_title"] + "_" + main_page_content["id"];
-            ClassicEditor
-            .create(document.querySelector(selector))
-            .catch(error => {
-                console.error(error);
-            });
-        }
+        (function($){
+            var mainpagecontents = <?php echo json_encode($mainpagecontents); ?>;
+            for(var i=0; i<mainpagecontents.length; i++) {
+                var main_page_content = mainpagecontents[i];
+                var selector = main_page_content["id"] + "_editor";
+                CKEDITOR.replace(selector);
+                CKEDITOR.instances[selector].setData(main_page_content["content"]);
+
+                // Save
+                var save_selector = "#" + main_page_content["id"] + "_button";
+                $(save_selector).click(async function(){
+                    var content = CKEDITOR.instances[selector].getData();
+                    $.ajax({
+                        type: "POST",
+                        url: '../../server/mainmenupage/update.php',
+                        dataType: 'json',
+                        data: { content: content, id: main_page_content["id"] },
+                        success: function (response) {
+                            if(response == "Record updated successfully") {
+                                Swal.fire(`Updated!`);
+                                location.reload();
+                            } else {
+                                Swal.fire(`Not Updated! ${response}`);
+                            }
+                        },
+                        error: function(error){
+                            Swal.fire(`Error: ${JSON.stringify(error)}`);
+                        }
+                    });
+                });
+            }
+        })(jQuery);
     </script>
 </body>
 </html>
