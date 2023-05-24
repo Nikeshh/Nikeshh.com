@@ -178,6 +178,21 @@
                                     </div>
                                     <div class="card-body">' . $mainpagecontent["content"] . '</div>
                                 </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="card">
+                                            <div class="card-header">
+                                                <h4 class="card-title">Edit '. $mainpagecontent["content_title"] .'</h4>
+                                                <button class="btn btn-primary">Save</button>
+                                            </div>
+                                            <div class="card-body">
+                                                <div id="'. $mainpagecontent["content_title"] . "_" . $mainpagecontent["id"] .'">
+                                                    <p>'. $mainpagecontent["content"] .'</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             ';
                         }
                     ?>
@@ -757,5 +772,20 @@
     <!-- Sweet Alert -->
     <script src="../assets/extensions/sweetalert2/sweetalert2.min.js"></script>
     <script src="../assets/js/pages/popup.js"></script>
+
+    <!-- CKEditor -->
+    <script src="https://cdn.ckeditor.com/ckeditor5/34.2.0/classic/ckeditor.js"></script>
+    <script>
+        var mainpagecontent = <?php echo json_encode($mainpagecontent); ?>;
+        for(var i=0; i<mainpagecontent.length; i++) {
+            var main_page_content = mainpagecontent[i];
+            var selector = "#" + main_page_content["content_title"] + "_" + main_page_content["id"];
+            ClassicEditor
+            .create(document.querySelector(selector))
+            .catch(error => {
+                console.error(error);
+            });
+        }
+    </script>
 </body>
 </html>
