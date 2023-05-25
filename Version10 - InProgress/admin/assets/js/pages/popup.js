@@ -54,6 +54,7 @@
         const { value: items } = await Swal.fire({
           title: 'Main Menu Page',
           html:
+            '<input id="content_title" class="swal2-input" placeholder="Enter the content title">' +
             '<input id="content" class="swal2-input" placeholder="Enter the content">' +
             '<input id="page_title" class="swal2-input" placeholder="Enter the page title">' +
             '<input id="page_subtitle" class="swal2-input" placeholder="Enter the page subtitle">' +
@@ -66,6 +67,7 @@
           focusConfirm: false,
           preConfirm: () => {
             return [
+              document.getElementById('content_title').value,
               document.getElementById('content').value,
               document.getElementById('page_title').value,
               document.getElementById('page_subtitle').value,
@@ -79,7 +81,7 @@
             type: "POST",
             url: 'server/mainmenupage/create.php',
             dataType: 'json',
-            data: { content: items[0], page_title: items[1], page_subtitle: items[2], main_menu_id: items[3] },
+            data: { content_title: items[0], content: items[1], page_title: items[2], page_subtitle: items[3], main_menu_id: items[4] },
             success: function (response) {
               if(response == "New record created successfully") {
                   Swal.fire(`Saved!`)
@@ -236,6 +238,7 @@
         const { value: items } = await Swal.fire({
           title: 'Page',
           html:
+            '<input id="content_title" class="swal2-input" placeholder="Enter the content title">' +
             '<input id="content" class="swal2-input" placeholder="Enter the content">' +
             '<input id="page_title" class="swal2-input" placeholder="Enter the page title">' +
             '<input id="page_subtitle" class="swal2-input" placeholder="Enter the page subtitle">' +
@@ -248,6 +251,7 @@
           focusConfirm: false,
           preConfirm: () => {
             return [
+              document.getElementById('content_title').value,
               document.getElementById('content').value,
               document.getElementById('page_title').value,
               document.getElementById('page_subtitle').value,
@@ -261,7 +265,7 @@
             type: "POST",
             url: '../../server/page/create.php',
             dataType: 'json',
-            data: { content: items[0], page_title: items[1], page_subtitle: items[2], submenu_id: items[3] },
+            data: { content_title: items[0], content: items[1], page_title: items[2], page_subtitle: items[3], submenu_id: items[4] },
             success: function (response) {
               if(response == "New record created successfully") {
                   Swal.fire(`Saved!`)
