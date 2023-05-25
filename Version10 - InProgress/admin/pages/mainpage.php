@@ -121,17 +121,19 @@
                                 for($j=0; $j < sizeof($datamenus); $j++) {
                                     $datamenu = $datamenus[$j]; // Single
                                     $datasubmenu = $submenuitems[$j]; // Multiple
+                                    $favorite = $datamenu["favorite"] ? '<i class="bi bi-star-fill ms-2"></i>' : '<i class="bi bi-star ms-2"></i>';
 
                                     echo '
                                         <li
                                             class="sidebar-item  has-sub ">
                                             <a href="#" class="sidebar-link">
-                                                <i class="bi bi-collection-fill"></i>
+                                                '. $favorite .'
                                                 <span>'. $datamenu["name"] .'</span>
                                             </a>
                                             <ul class="submenu ">';
                                                 for($k=0; $k < sizeof($datasubmenu); $k++) {
-                                                    echo '<li class="submenu-item "><a href="./subpage.php?id='. $datasubmenu[$k]["id"] .'">'. $datasubmenu[$k]["name"] .'</a>';
+                                                    $favoritesubmenu = $datasubmenu[$k]["favorite"] ? '<i class="bi bi-star-fill ms-2"></i>' : '<i class="bi bi-star ms-2"></i>';
+                                                    echo '<li class="submenu-item "><a href="./subpage.php?id='. $datasubmenu[$k]["id"] .'">'. $favoritesubmenu .' <span>'. $datasubmenu[$k]["name"] .'</span></a></li>';
                                                 }
                                             echo '
                                              </ul>
@@ -154,7 +156,7 @@
                 <div class="page-title">
                     <div class="row">
                         <div class="col-12 col-md-6 order-md-1 order-last">
-                            <h3><?php echo $mainpagecontents[0]["page_title"] ?></h3>
+                            <h3><?php echo $mainpagecontents[0]["page_title"] ?><button id="<?php echo $mainpagecontents[0]["page_title"] . "_favorite_button" ?>" class="btn btn-primary ms-2"><i class="bi bi-heart-fill"></i></button><button id="<?php echo $mainpagecontents[0]["page_title"] . "_notfavorite_button" ?>" class="btn btn-primary ms-2"><i class="bi bi-heart"></i></button></h3>
                             <p class="text-subtitle text-muted"><?php echo $mainpagecontents[0]["page_subtitle"] ?></p>
                         </div>
                         <div class="col-12 col-md-6 order-md-2 order-first">
@@ -776,6 +778,52 @@
     <script>
         (function($){
             var mainpagecontents = <?php echo json_encode($mainpagecontents); ?>;
+            var main_menu_id = <?php echo $id; ?>;
+
+            // Favorite button
+            var favorite_selector = "#" + mainpagecontents[0]["page_title"] + "_favorite_button";
+            $(favorite_selector).click(async function(){
+                $.ajax({
+                    type: "POST",
+                    url: '../../server/mainmenu/favorite.php',
+                    dataType: 'json',
+                    data: { id: main_menu_id },
+                    success: function (response) {
+                        if(response == "Record updated successfully") {
+                            Swal.fire(`Updated!`);
+                            location.reload();
+                        } else {
+                            Swal.fire(`Not Updated! ${response}`);
+                        }
+                    },
+                    error: function(error){
+                        Swal.fire(`Error: ${JSON.stringify(error)}`);
+                    }
+                });
+            });
+
+            // Not Favorite button
+            var not_favorite_selector = "#" + mainpagecontents[0]["page_title"] + "_notfavorite_button";
+            $(not_favorite_selector).click(async function(){
+                $.ajax({
+                    type: "POST",
+                    url: '../../server/mainmenu/notfavorite.php',
+                    dataType: 'json',
+                    data: { id: main_menu_id },
+                    success: function (response) {
+                        if(response == "Record updated successfully") {
+                            Swal.fire(`Updated!`);
+                            location.reload();
+                        } else {
+                            Swal.fire(`Not Updated! ${response}`);
+                        }
+                    },
+                    error: function(error){
+                        Swal.fire(`Error: ${JSON.stringify(error)}`);
+                    }
+                });
+            });
+            
             for(var i=0; i<mainpagecontents.length; i++) {
                 var main_page_content = mainpagecontents[i];
                 var selector = main_page_content["id"] + "_editor";

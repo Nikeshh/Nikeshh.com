@@ -83,11 +83,12 @@
                     echo '<li class="sidebar-title">'. $labels[$i]["label"] . '</li>';
                     for($j=0; $j < sizeof($menuitem); $j++) {
                         $item = $menuitem[$j];
+                        $favorite = $item["favorite"] ? '<i class="bi bi-star-fill ms-2"></i>' : '<i class="bi bi-star ms-2"></i>';
                         echo '
                             <li
-                                class="sidebar-item ">
+                                class="sidebar-item d-flex align-items-center">
                                 <a href="./admin/pages/mainpage.php?id='. $item["id"] .'" class="sidebar-link">
-                                    <i class="bi bi-grid-fill"></i>
+                                    '. $favorite .'
                                     <span>'. $item["name"] .'</span>
                                 </a>
                             </li>
