@@ -27,39 +27,6 @@
         die("Connection failed: " . $conn->connect_error);
     }
 
-    // Find the unique labels
-    $sql = "SELECT * FROM ADMIN_MENU GROUP BY LABEL";
-    $result = $conn->query($sql);
-    $labels = array();
-    while($row = $result->fetch_assoc()) {
-        $labels[] = $row;
-    }
-    // Find the menu and submenu items
-    $menuitems = array();
-    $submenuitems = array();
-    for ($i=0 ; $i < sizeof($labels); $i++){
-        // Menu Array
-        $sql = "SELECT * FROM ADMIN_MENU WHERE LABEL = '" . $labels[$i]["label"] . "'";
-        $result = $conn->query($sql);
-        $menus = array();
-        while($row = $result->fetch_assoc()) {
-            $menus[] = $row;
-        }
-        $menuitems[] = $menus;
-
-        // Submenu array
-        foreach($menus as $row) {
-            $menu_id = $row["id"];
-            $sql = "SELECT * FROM ADMIN_SUB_MENU WHERE MENU_ID = '" . $menu_id . "'";
-            $result = $conn->query($sql);
-            $submenus = array();
-            while($row = $result->fetch_assoc()) {
-                $submenus[] = $row;
-            }
-        }
-        $submenuitems[] = $submenus;
-    }
-
     // Find the sub page details
     $sql = "SELECT * FROM ADMIN_PAGE WHERE SUBMENU_ID='" . $id . "'";
     $result = $conn->query($sql);
@@ -104,44 +71,9 @@
                             <a href="#" class="sidebar-hide d-xl-none d-block"><i class="bi bi-x bi-middle"></i></a>
                         </div>
                     </div>
-                    <div class="d-flex justify-content-center align-items-center">
-                        <span id="addmenu" style="font-size: 1rem; cursor: pointer;" class="m-2"><i class="bi bi-list"></i></span>
-                        <span id="addsubmenu" style="font-size: 1rem; cursor: pointer;" class="m-2"><i class="bi bi-menu-button"></i></span>
-                        <span id="addpage" style="font-size: 1rem; cursor: pointer;" class="m-2"><i class="bi bi-file-earmark"></i></span>
-                    </div>
                 </div>
                 <div class="sidebar-menu">
                     <ul class="menu">
-                        <?php
-                            for ($i=0 ; $i < sizeof($labels); $i++){
-                                $datalabel = $labels[$i];
-                                echo '<li class="sidebar-title">'. $datalabel["label"] . '</li>';
-                                $datamenus = $menuitems[$i];
-
-                                for($j=0; $j < sizeof($datamenus); $j++) {
-                                    $datamenu = $datamenus[$j]; // Single
-                                    $datasubmenu = $submenuitems[$j]; // Multiple
-                                    $favorite = $datamenu["favorite"] ? '<i class="bi bi-star-fill ms-2"></i>' : '<i class="bi bi-star ms-2"></i>';
-
-                                    echo '
-                                        <li
-                                            class="sidebar-item  has-sub ">
-                                            <a href="#" class="sidebar-link">
-                                                '. $favorite .'
-                                                <span>'. $datamenu["name"] .'</span>
-                                            </a>
-                                            <ul class="submenu ">';
-                                                for($k=0; $k < sizeof($datasubmenu); $k++) {
-                                                    $favoritesubmenu = $datasubmenu[$k]["favorite"] ? '<i class="bi bi-star-fill ms-2"></i>' : '<i class="bi bi-star ms-2"></i>';
-                                                    echo '<li class="submenu-item "><a href="./subpage.php?id='. $datasubmenu[$k]["id"] .'">'. $favoritesubmenu .' <span>'. $datasubmenu[$k]["name"] .'</span></a></li>';
-                                                }
-                                            echo '
-                                             </ul>
-                                        </li>
-                                    ';
-                                }
-                            }
-                        ?>
                     </ul>
                 </div>
             </div>

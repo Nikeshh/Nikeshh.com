@@ -28,7 +28,7 @@
     }
 
     // Find the unique labels
-    $sql = "SELECT * FROM ADMIN_MENU GROUP BY LABEL";
+    $sql = "SELECT * FROM ADMIN_MENU WHERE MAIN_MENU_ID = '" . $id . "' GROUP BY LABEL";
     $result = $conn->query($sql);
     $labels = array();
     while($row = $result->fetch_assoc()) {
@@ -39,7 +39,7 @@
     $submenuitems = array();
     for ($i=0 ; $i < sizeof($labels); $i++){
         // Menu Array
-        $sql = "SELECT * FROM ADMIN_MENU WHERE LABEL = '" . $labels[$i]["label"] . "'";
+        $sql = "SELECT * FROM ADMIN_MENU WHERE LABEL = '" . $labels[$i]["label"] . "' AND MAIN_MENU_ID = '" . $id . "'";
         $result = $conn->query($sql);
         $menus = array();
         while($row = $result->fetch_assoc()) {
