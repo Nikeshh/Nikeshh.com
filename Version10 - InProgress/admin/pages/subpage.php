@@ -14,10 +14,14 @@
     parse_str($url_components['query'], $params);
     $id = $params["id"];
 
-    $servername = "127.0.0.1";
+    /*$servername = "127.0.0.1";
     $username = "admin";
     $password = "nikeshh123";
-    $dbname = "admin_nikeshh";
+    $dbname = "admin_nikeshh";*/
+    $servername = "127.0.0.1";
+    $username = "u121977718_admin";
+    $password = "1Jobdone!";
+    $dbname = "u121977718_admin";
 
     // Create connection
     $conn = new mysqli($servername, $username, $password, $dbname);

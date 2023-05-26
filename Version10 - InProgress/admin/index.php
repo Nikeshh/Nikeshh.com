@@ -1,8 +1,12 @@
 <?php
-    $servername = "127.0.0.1";
+    /*$servername = "127.0.0.1";
     $username = "admin";
     $password = "nikeshh123";
-    $dbname = "admin_nikeshh";
+    $dbname = "admin_nikeshh";*/
+    $servername = "127.0.0.1";
+    $username = "u121977718_admin";
+    $password = "1Jobdone!";
+    $dbname = "u121977718_admin";
 
     // Create connection
     $conn = new mysqli($servername, $username, $password, $dbname);
@@ -40,12 +44,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nikeshh Admin Dashboard</title>
     
-    <link rel="stylesheet" href="./admin/assets/css/main/app.css">
-    <link rel="stylesheet" href="./admin/assets/css/main/app-dark.css">
-    <link rel="shortcut icon" href="./admin/assets/images/logo/favicon.svg" type="image/x-icon">
-    <link rel="shortcut icon" href="./admin/assets/images/logo/favicon.png" type="image/png">
-    <link rel="stylesheet" href="./admin/assets/css/shared/iconly.css">
-    <link rel="stylesheet" href="./admin/assets/extensions/sweetalert2/sweetalert2.min.css">
+    <link rel="stylesheet" href="./assets/css/main/app.css">
+    <link rel="stylesheet" href="./assets/css/main/app-dark.css">
+    <link rel="shortcut icon" href="./assets/images/logo/favicon.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/images/logo/favicon.png" type="image/png">
+    <link rel="stylesheet" href="./assets/css/shared/iconly.css">
+    <link rel="stylesheet" href="./assets/extensions/sweetalert2/sweetalert2.min.css">
 </head>
 
 <body>
@@ -55,7 +59,7 @@
     <div class="sidebar-header position-relative">
         <div class="d-flex justify-content-between align-items-center">
             <div class="logo">
-                <a href="./admin/index.html"><img src="./admin/assets/images/logo/logo.svg" alt="Logo" srcset=""></a>
+                <a href="./index.php"><img src="./assets/images/logo/logo.svg" alt="Logo" srcset=""></a>
             </div>
             <div class="theme-toggle d-flex gap-2  align-items-center mt-2">
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--system-uicons" width="20" height="20" preserveAspectRatio="xMidYMid meet" viewBox="0 0 21 21"><g fill="none" fill-rule="evenodd" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M10.5 14.5c2.219 0 4-1.763 4-3.982a4.003 4.003 0 0 0-4-4.018c-2.219 0-4 1.781-4 4c0 2.219 1.781 4 4 4zM4.136 4.136L5.55 5.55m9.9 9.9l1.414 1.414M1.5 10.5h2m14 0h2M4.135 16.863L5.55 15.45m9.899-9.9l1.414-1.415M10.5 19.5v-2m0-14v-2" opacity=".3"></path><g transform="translate(-210 -1)"><path d="M220.5 2.5v2m6.5.5l-1.5 1.5"></path><circle cx="220.5" cy="11.5" r="4"></circle><path d="m214 5l1.5 1.5m5 14v-2m6.5-.5l-1.5-1.5M214 18l1.5-1.5m-4-5h2m14 0h2"></path></g></g></svg>
@@ -87,7 +91,7 @@
                         echo '
                             <li
                                 class="sidebar-item d-flex align-items-center">
-                                <a href="./admin/pages/mainpage.php?id='. $item["id"] .'" class="sidebar-link">
+                                <a href="./pages/mainpage.php?id='. $item["id"] .'" class="sidebar-link">
                                     '. $favorite .'
                                     <span>'. $item["name"] .'</span>
                                 </a>
@@ -114,49 +118,49 @@
                 </a>
                 <ul class="submenu ">
                     <li class="submenu-item ">
-                        <a href="./admin/component-alert.html">Alert</a>
+                        <a href="./component-alert.html">Alert</a>
                     </li>
                     <li class="submenu-item ">
-                        <a href="./admin/component-badge.html">Badge</a>
+                        <a href="./component-badge.html">Badge</a>
                     </li>
                     <li class="submenu-item ">
-                        <a href="./admin/component-breadcrumb.html">Breadcrumb</a>
+                        <a href="./component-breadcrumb.html">Breadcrumb</a>
                     </li>
                     <li class="submenu-item ">
-                        <a href="./admin/component-button.html">Button</a>
+                        <a href="./component-button.html">Button</a>
                     </li>
                     <li class="submenu-item ">
-                        <a href="./admin/component-card.html">Card</a>
+                        <a href="./component-card.html">Card</a>
                     </li>
                     <li class="submenu-item ">
-                        <a href="./admin/component-carousel.html">Carousel</a>
+                        <a href="./component-carousel.html">Carousel</a>
                     </li>
                     <li class="submenu-item ">
-                        <a href="./admin/component-collapse.html">Collapse</a>
+                        <a href="./component-collapse.html">Collapse</a>
                     </li>
                     <li class="submenu-item ">
-                        <a href="./admin/component-dropdown.html">Dropdown</a>
+                        <a href="./component-dropdown.html">Dropdown</a>
                     </li>
                     <li class="submenu-item ">
-                        <a href="./admin/component-list-group.html">List Group</a>
+                        <a href="./component-list-group.html">List Group</a>
                     </li>
                     <li class="submenu-item ">
-                        <a href="./admin/component-modal.html">Modal</a>
+                        <a href="./component-modal.html">Modal</a>
                     </li>
                     <li class="submenu-item ">
-                        <a href="./admin/component-navs.html">Navs</a>
+                        <a href="./component-navs.html">Navs</a>
                     </li>
                     <li class="submenu-item ">
-                        <a href="./admin/component-pagination.html">Pagination</a>
+                        <a href="./component-pagination.html">Pagination</a>
                     </li>
                     <li class="submenu-item ">
-                        <a href="./admin/component-progress.html">Progress</a>
+                        <a href="./component-progress.html">Progress</a>
                     </li>
                     <li class="submenu-item ">
-                        <a href="./admin/component-spinner.html">Spinner</a>
+                        <a href="./component-spinner.html">Spinner</a>
                     </li>
                     <li class="submenu-item ">
-                        <a href="./admin/component-tooltip.html">Tooltip</a>
+                        <a href="./component-tooltip.html">Tooltip</a>
                     </li>
                 </ul>
             </li>
@@ -169,19 +173,19 @@
                 </a>
                 <ul class="submenu ">
                     <li class="submenu-item ">
-                        <a href="./admin/extra-component-avatar.html">Avatar</a>
+                        <a href="./extra-component-avatar.html">Avatar</a>
                     </li>
                     <li class="submenu-item ">
-                        <a href="./admin/extra-component-sweetalert.html">Sweet Alert</a>
+                        <a href="./extra-component-sweetalert.html">Sweet Alert</a>
                     </li>
                     <li class="submenu-item ">
-                        <a href="./admin/extra-component-toastify.html">Toastify</a>
+                        <a href="./extra-component-toastify.html">Toastify</a>
                     </li>
                     <li class="submenu-item ">
-                        <a href="./admin/extra-component-rating.html">Rating</a>
+                        <a href="./extra-component-rating.html">Rating</a>
                     </li>
                     <li class="submenu-item ">
-                        <a href="./admin/extra-component-divider.html">Divider</a>
+                        <a href="./extra-component-divider.html">Divider</a>
                     </li>
                 </ul>
             </li>
@@ -194,19 +198,19 @@
                 </a>
                 <ul class="submenu ">
                     <li class="submenu-item ">
-                        <a href="./admin/layout-default.html">Default Layout</a>
+                        <a href="./layout-default.html">Default Layout</a>
                     </li>
                     <li class="submenu-item ">
-                        <a href="./admin/layout-vertical-1-column.html">1 Column</a>
+                        <a href="./layout-vertical-1-column.html">1 Column</a>
                     </li>
                     <li class="submenu-item ">
-                        <a href="./admin/layout-vertical-navbar.html">Vertical Navbar</a>
+                        <a href="./layout-vertical-navbar.html">Vertical Navbar</a>
                     </li>
                     <li class="submenu-item ">
-                        <a href="./admin/layout-rtl.html">RTL Layout</a>
+                        <a href="./layout-rtl.html">RTL Layout</a>
                     </li>
                     <li class="submenu-item ">
-                        <a href="./admin/layout-horizontal.html">Horizontal Menu</a>
+                        <a href="./layout-horizontal.html">Horizontal Menu</a>
                     </li>
                 </ul>
             </li>
@@ -221,29 +225,29 @@
                 </a>
                 <ul class="submenu ">
                     <li class="submenu-item ">
-                        <a href="./admin/form-element-input.html">Input</a>
+                        <a href="./form-element-input.html">Input</a>
                     </li>
                     <li class="submenu-item ">
-                        <a href="./admin/form-element-input-group.html">Input Group</a>
+                        <a href="./form-element-input-group.html">Input Group</a>
                     </li>
                     <li class="submenu-item ">
-                        <a href="./admin/form-element-select.html">Select</a>
+                        <a href="./form-element-select.html">Select</a>
                     </li>
                     <li class="submenu-item ">
-                        <a href="./admin/form-element-radio.html">Radio</a>
+                        <a href="./form-element-radio.html">Radio</a>
                     </li>
                     <li class="submenu-item ">
-                        <a href="./admin/form-element-checkbox.html">Checkbox</a>
+                        <a href="./form-element-checkbox.html">Checkbox</a>
                     </li>
                     <li class="submenu-item ">
-                        <a href="./admin/form-element-textarea.html">Textarea</a>
+                        <a href="./form-element-textarea.html">Textarea</a>
                     </li>
                 </ul>
             </li>
             
             <li
                 class="sidebar-item  ">
-                <a href="./admin/form-layout.html" class='sidebar-link'>
+                <a href="./form-layout.html" class='sidebar-link'>
                     <i class="bi bi-file-earmark-medical-fill"></i>
                     <span>Form Layout</span>
                 </a>
@@ -257,7 +261,7 @@
                 </a>
                 <ul class="submenu ">
                     <li class="submenu-item ">
-                        <a href="./admin/form-validation-parsley.html">Parsley</a>
+                        <a href="./form-validation-parsley.html">Parsley</a>
                     </li>
                 </ul>
             </li>
@@ -270,23 +274,23 @@
                 </a>
                 <ul class="submenu ">
                     <li class="submenu-item ">
-                        <a href="./admin/form-editor-quill.html">Quill</a>
+                        <a href="./form-editor-quill.html">Quill</a>
                     </li>
                     <li class="submenu-item ">
-                        <a href="./admin/form-editor-ckeditor.html">CKEditor</a>
+                        <a href="./form-editor-ckeditor.html">CKEditor</a>
                     </li>
                     <li class="submenu-item ">
-                        <a href="./admin/form-editor-summernote.html">Summernote</a>
+                        <a href="./form-editor-summernote.html">Summernote</a>
                     </li>
                     <li class="submenu-item ">
-                        <a href="./admin/form-editor-tinymce.html">TinyMCE</a>
+                        <a href="./form-editor-tinymce.html">TinyMCE</a>
                     </li>
                 </ul>
             </li>
             
             <li
                 class="sidebar-item  ">
-                <a href="./admin/table.html" class='sidebar-link'>
+                <a href="./table.html" class='sidebar-link'>
                     <i class="bi bi-grid-1x2-fill"></i>
                     <span>Table</span>
                 </a>
@@ -300,10 +304,10 @@
                 </a>
                 <ul class="submenu ">
                     <li class="submenu-item ">
-                        <a href="./admin/table-datatable.html">Datatable</a>
+                        <a href="./table-datatable.html">Datatable</a>
                     </li>
                     <li class="submenu-item ">
-                        <a href="./admin/table-datatable-jquery.html">Datatable (jQuery)</a>
+                        <a href="./table-datatable-jquery.html">Datatable (jQuery)</a>
                     </li>
                 </ul>
             </li>
@@ -318,13 +322,13 @@
                 </a>
                 <ul class="submenu ">
                     <li class="submenu-item ">
-                        <a href="./admin/ui-widgets-chatbox.html">Chatbox</a>
+                        <a href="./ui-widgets-chatbox.html">Chatbox</a>
                     </li>
                     <li class="submenu-item ">
-                        <a href="./admin/ui-widgets-pricing.html">Pricing</a>
+                        <a href="./ui-widgets-pricing.html">Pricing</a>
                     </li>
                     <li class="submenu-item ">
-                        <a href="./admin/ui-widgets-todolist.html">To-do List</a>
+                        <a href="./ui-widgets-todolist.html">To-do List</a>
                     </li>
                 </ul>
             </li>
@@ -337,13 +341,13 @@
                 </a>
                 <ul class="submenu ">
                     <li class="submenu-item ">
-                        <a href="./admin/ui-icons-bootstrap-icons.html">Bootstrap Icons </a>
+                        <a href="./ui-icons-bootstrap-icons.html">Bootstrap Icons </a>
                     </li>
                     <li class="submenu-item ">
-                        <a href="./admin/ui-icons-fontawesome.html">Fontawesome</a>
+                        <a href="./ui-icons-fontawesome.html">Fontawesome</a>
                     </li>
                     <li class="submenu-item ">
-                        <a href="./admin/ui-icons-dripicons.html">Dripicons</a>
+                        <a href="./ui-icons-dripicons.html">Dripicons</a>
                     </li>
                 </ul>
             </li>
@@ -356,17 +360,17 @@
                 </a>
                 <ul class="submenu ">
                     <li class="submenu-item ">
-                        <a href="./admin/ui-chart-chartjs.html">ChartJS</a>
+                        <a href="./ui-chart-chartjs.html">ChartJS</a>
                     </li>
                     <li class="submenu-item ">
-                        <a href="./admin/ui-chart-apexcharts.html">Apexcharts</a>
+                        <a href="./ui-chart-apexcharts.html">Apexcharts</a>
                     </li>
                 </ul>
             </li>
             
             <li
                 class="sidebar-item  ">
-                <a href="./admin/ui-file-uploader.html" class='sidebar-link'>
+                <a href="./ui-file-uploader.html" class='sidebar-link'>
                     <i class="bi bi-cloud-arrow-up-fill"></i>
                     <span>File Uploader</span>
                 </a>
@@ -380,10 +384,10 @@
                 </a>
                 <ul class="submenu ">
                     <li class="submenu-item ">
-                        <a href="./admin/ui-map-google-map.html">Google Map</a>
+                        <a href="./ui-map-google-map.html">Google Map</a>
                     </li>
                     <li class="submenu-item ">
-                        <a href="./admin/ui-map-jsvectormap.html">JS Vector Map</a>
+                        <a href="./ui-map-jsvectormap.html">JS Vector Map</a>
                     </li>
                 </ul>
             </li>
@@ -392,7 +396,7 @@
             
             <li
                 class="sidebar-item  ">
-                <a href="./admin/application-email.html" class='sidebar-link'>
+                <a href="./application-email.html" class='sidebar-link'>
                     <i class="bi bi-envelope-fill"></i>
                     <span>Email Application</span>
                 </a>
@@ -400,7 +404,7 @@
             
             <li
                 class="sidebar-item  ">
-                <a href="./admin/application-chat.html" class='sidebar-link'>
+                <a href="./application-chat.html" class='sidebar-link'>
                     <i class="bi bi-chat-dots-fill"></i>
                     <span>Chat Application</span>
                 </a>
@@ -408,7 +412,7 @@
             
             <li
                 class="sidebar-item  ">
-                <a href="./admin/application-gallery.html" class='sidebar-link'>
+                <a href="./application-gallery.html" class='sidebar-link'>
                     <i class="bi bi-image-fill"></i>
                     <span>Photo Gallery</span>
                 </a>
@@ -416,7 +420,7 @@
             
             <li
                 class="sidebar-item  ">
-                <a href="./admin/application-checkout.html" class='sidebar-link'>
+                <a href="./application-checkout.html" class='sidebar-link'>
                     <i class="bi bi-basket-fill"></i>
                     <span>Checkout Page</span>
                 </a>
@@ -430,13 +434,13 @@
                 </a>
                 <ul class="submenu ">
                     <li class="submenu-item ">
-                        <a href="./admin/auth-login.html">Login</a>
+                        <a href="./auth-login.html">Login</a>
                     </li>
                     <li class="submenu-item ">
-                        <a href="./admin/auth-register.html">Register</a>
+                        <a href="./auth-register.html">Register</a>
                     </li>
                     <li class="submenu-item ">
-                        <a href="./admin/auth-forgot-password.html">Forgot Password</a>
+                        <a href="./auth-forgot-password.html">Forgot Password</a>
                     </li>
                 </ul>
             </li>
@@ -449,13 +453,13 @@
                 </a>
                 <ul class="submenu ">
                     <li class="submenu-item ">
-                        <a href="./admin/error-403.html">403</a>
+                        <a href="./error-403.html">403</a>
                     </li>
                     <li class="submenu-item ">
-                        <a href="./admin/error-404.html">404</a>
+                        <a href="./error-404.html">404</a>
                     </li>
                     <li class="submenu-item ">
-                        <a href="./admin/error-500.html">500</a>
+                        <a href="./error-500.html">500</a>
                     </li>
                 </ul>
             </li>
@@ -598,7 +602,7 @@
                                         <svg class="bi text-primary" width="32" height="32" fill="blue"
                                             style="width:10px">
                                             <use
-                                                xlink:href="./admin/assets/images/bootstrap-icons.svg#circle-fill" />
+                                                xlink:href="./assets/images/bootstrap-icons.svg#circle-fill" />
                                         </svg>
                                         <h5 class="mb-0 ms-3">Europe</h5>
                                     </div>
@@ -616,7 +620,7 @@
                                         <svg class="bi text-success" width="32" height="32" fill="blue"
                                             style="width:10px">
                                             <use
-                                                xlink:href="./admin/assets/images/bootstrap-icons.svg#circle-fill" />
+                                                xlink:href="./assets/images/bootstrap-icons.svg#circle-fill" />
                                         </svg>
                                         <h5 class="mb-0 ms-3">America</h5>
                                     </div>
@@ -634,7 +638,7 @@
                                         <svg class="bi text-danger" width="32" height="32" fill="blue"
                                             style="width:10px">
                                             <use
-                                                xlink:href="./admin/assets/images/bootstrap-icons.svg#circle-fill" />
+                                                xlink:href="./assets/images/bootstrap-icons.svg#circle-fill" />
                                         </svg>
                                         <h5 class="mb-0 ms-3">Indonesia</h5>
                                     </div>
@@ -668,7 +672,7 @@
                                             <td class="col-3">
                                                 <div class="d-flex align-items-center">
                                                     <div class="avatar avatar-md">
-                                                        <img src="./admin/assets/images/faces/5.jpg">
+                                                        <img src="./assets/images/faces/5.jpg">
                                                     </div>
                                                     <p class="font-bold ms-3 mb-0">Si Cantik</p>
                                                 </div>
@@ -681,7 +685,7 @@
                                             <td class="col-3">
                                                 <div class="d-flex align-items-center">
                                                     <div class="avatar avatar-md">
-                                                        <img src="./admin/assets/images/faces/2.jpg">
+                                                        <img src="./assets/images/faces/2.jpg">
                                                     </div>
                                                     <p class="font-bold ms-3 mb-0">Si Ganteng</p>
                                                 </div>
@@ -704,7 +708,7 @@
                 <div class="card-body py-4 px-4">
                     <div class="d-flex align-items-center">
                         <div class="avatar avatar-xl">
-                            <img src="./admin/assets/images/faces/1.jpg" alt="Face 1">
+                            <img src="./assets/images/faces/1.jpg" alt="Face 1">
                         </div>
                         <div class="ms-3 name">
                             <h5 class="font-bold">John Duck</h5>
@@ -720,7 +724,7 @@
                 <div class="card-content pb-4">
                     <div class="recent-message d-flex px-4 py-3">
                         <div class="avatar avatar-lg">
-                            <img src="./admin/assets/images/faces/4.jpg">
+                            <img src="./assets/images/faces/4.jpg">
                         </div>
                         <div class="name ms-4">
                             <h5 class="mb-1">Hank Schrader</h5>
@@ -729,7 +733,7 @@
                     </div>
                     <div class="recent-message d-flex px-4 py-3">
                         <div class="avatar avatar-lg">
-                            <img src="./admin/assets/images/faces/5.jpg">
+                            <img src="./assets/images/faces/5.jpg">
                         </div>
                         <div class="name ms-4">
                             <h5 class="mb-1">Dean Winchester</h5>
@@ -738,7 +742,7 @@
                     </div>
                     <div class="recent-message d-flex px-4 py-3">
                         <div class="avatar avatar-lg">
-                            <img src="./admin/assets/images/faces/1.jpg">
+                            <img src="./assets/images/faces/1.jpg">
                         </div>
                         <div class="name ms-4">
                             <h5 class="mb-1">John Dodol</h5>
@@ -778,16 +782,16 @@
     <!-- JQuery -->
     <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
 
-    <script src="./admin/assets/js/bootstrap.js"></script>
-    <script src="./admin/assets/js/app.js"></script>
+    <script src="./assets/js/bootstrap.js"></script>
+    <script src="./assets/js/app.js"></script>
     
     <!-- Need: Apexcharts -->
-    <script src="./admin/assets/extensions/apexcharts/apexcharts.min.js"></script>
-    <script src="./admin/assets/js/pages/dashboard.js"></script>
+    <script src="./assets/extensions/apexcharts/apexcharts.min.js"></script>
+    <script src="./assets/js/pages/dashboard.js"></script>
 
     <!-- Sweet Alert -->
-    <script src="./admin/assets/extensions/sweetalert2/sweetalert2.min.js"></script>
-    <script src="./admin/assets/js/pages/popup.js"></script>
+    <script src="./assets/extensions/sweetalert2/sweetalert2.min.js"></script>
+    <script src="./assets/js/pages/popup.js"></script>
 
 </body>
 
