@@ -20,6 +20,7 @@ class Faded extends Component
             <div>
                 @push('scripts')
                     <script>
+                        // TODO: Analyze how this script works. For now, commented out the opacity functionality
                         (function () {
                             const due_date = new Date('{{ $this->dueDate }}');
                             const days_deadline = parseInt('{{ $this->daysCount }}');
@@ -34,7 +35,7 @@ class Faded extends Component
                                 opacity = (opacity < 0) ? 0 : opacity;
                                 opacity = (opacity > 1) ? 1 : opacity;
                                 if (opacity >= 0 && opacity <= 1) {
-                                    document.getElementsByTagName("BODY")[0].style.opacity = opacity;
+                                    // document.getElementsByTagName("BODY")[0].style.opacity = opacity;
                                 }
                             }
                         })();
