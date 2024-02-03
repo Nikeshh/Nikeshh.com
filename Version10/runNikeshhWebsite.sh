@@ -1,0 +1,2 @@
+open -a "Google Chrome" /Users/leadupglobal/Desktop/Personal/Website/Website-Nikeshh.com/Version10\ -\ InProgress/index.html
+open -a "Google Chrome" /Users/leadupglobal/Desktop/Personal/Website/Website-Nikeshh.com/Version10\ -\ InProgress/admin/index.html
