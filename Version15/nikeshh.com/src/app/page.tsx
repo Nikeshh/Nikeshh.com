@@ -24,6 +24,26 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
+import Link from 'next/link';
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+  type CarouselApi,
+} from "@/components/ui/carousel"
+import {
+  Command,
+  CommandDialog,
+  CommandEmpty,
+  CommandGroup,
+  CommandInput,
+  CommandItem,
+  CommandList,
+  CommandSeparator,
+  CommandShortcut,
+} from "@/components/ui/command"
 
 export default function Home() {
   useEffect(() => {
@@ -52,8 +72,24 @@ export default function Home() {
       description: "2 hours ago",
     },
   ]
-   
-  type CardProps = React.ComponentProps<typeof Card>
+
+  const [api, setApi] = React.useState<CarouselApi>()
+  const [current, setCurrent] = React.useState(0)
+  const [count, setCount] = React.useState(0)
+
+  React.useEffect(() => {
+    if (!api) {
+      return
+    }
+ 
+    setCount(api.scrollSnapList().length)
+    setCurrent(api.selectedScrollSnap() + 1)
+ 
+    api.on("select", () => {
+      console.log("current")
+      setCurrent(api.selectedScrollSnap() + 1)
+    })
+  }, [api])
 
   return (
     <>
@@ -158,22 +194,22 @@ export default function Home() {
           <h2 className="font-bold text-xl md:text-[40px] md:leading-none">
             SKILLS, CERTIFICATIONS, AWARDS & EXPERIENCES
           </h2>
-          <div className="mt-6 flex flex-wrap gap-2 justify-center">
-            {['SAAS', 'Full Stack', 'UI/UX', 'Android', 'iOS'].map((a) => {
-              return (
-                <Badge variant={selectedSkill == a ? 'default' : 'outline'} key={a}>
-                  <a
-                      className="group flex justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
-                      href="#"
-                  >
-                      <span className={selectedSkill == a ? 'text-white transition' : 'text-gray-700 transition group-hover:text-gray-700/75'}>
-                          {a}
-                      </span>
-                  </a>
-              </Badge>
-              );
-            })}
-          </div>
+        </div>
+        <div className="mt-6 flex flex-wrap gap-2 justify-center">
+          {['SAAS', 'Full Stack', 'UI/UX', 'Android', 'iOS'].map((a) => {
+            return (
+              <Badge variant={selectedSkill == a ? 'default' : 'outline'} key={a}>
+                <a
+                    className="group flex justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
+                    href="#"
+                >
+                    <span className={selectedSkill == a ? 'text-white transition' : 'text-gray-700 transition group-hover:text-gray-700/75'}>
+                        {a}
+                    </span>
+                </a>
+            </Badge>
+            );
+          })}
         </div>
         <div className="mt-6 flex flex-wrap justify-center gap-4">
           {['SAAS', 'Full Stack', 'UI/UX', 'Android', 'iOS'].map((a) => {
@@ -207,13 +243,80 @@ export default function Home() {
                   </div>
                 </CardContent>
                 <CardFooter>
-                  <Button className="w-full">
+                  <Button className="w-full" variant="outline">
                     <Eye className="mr-2 h-4 w-4" /> Explore
                   </Button>
                 </CardFooter>
               </Card>
             );
           })}
+        </div>
+        <div className='mt-4 md:mt-6 w-full text-center'>
+         <Link href={'#'} className="hover:text-blue-600 underline">explore more.</Link>
+        </div>
+      </section>
+      <section className="container pt-12 md:pt-44 relative flex flex-col items-center justify-center">
+        <p>BUILT FOR SCALING & VALUE</p>
+        <div className="bg-gradient-to-r from-primary to-secondary-foreground text-transparent bg-clip-text relative">
+          <h2 className="font-bold text-xl md:text-[40px] md:leading-none">
+            SERVICES
+          </h2>
+        </div>
+        <div className="mt-6 flex flex-wrap gap-2 justify-center">
+          {['SAAS', 'Full Stack', 'UI/UX', 'Android', 'iOS'].map((a) => {
+            return (
+              <Badge variant={selectedSkill == a ? 'default' : 'outline'} key={a}>
+                <a
+                    className="group flex justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
+                    href="#"
+                >
+                    <span className={selectedSkill == a ? 'text-white transition' : 'text-gray-700 transition group-hover:text-gray-700/75'}>
+                        {a}
+                    </span>
+                </a>
+            </Badge>
+            );
+          })}
+        </div>
+        <div className="flex flex-wrap md:flex-nowrap justify-center gap-4 pt-9">
+          <Command>
+            <CommandInput placeholder="Type a command or search..." />
+            <CommandList>
+              <CommandEmpty>No results found.</CommandEmpty>
+              <CommandGroup heading="Suggestions">
+                <CommandItem>Calendar</CommandItem>
+                <CommandItem>Search Emoji</CommandItem>
+                <CommandItem>Calculator</CommandItem>
+              </CommandGroup>
+              <CommandSeparator />
+              <CommandGroup heading="Settings">
+                <CommandItem>Profile</CommandItem>
+                <CommandItem>Billing</CommandItem>
+                <CommandItem>Settings</CommandItem>
+              </CommandGroup>
+            </CommandList>
+          </Command>
+          <Card className="max-w-[450px]" key="service">
+            <CardHeader>
+              <CardTitle>Service</CardTitle>
+              <Image
+                src={'/assets/preview.png'}
+                alt="banner image"
+                height={240}
+                width={240}
+                className="rounded-tl-2xl rounded-tr-2xl border-2 border-muted"
+              />
+            </CardHeader>
+            <CardContent className="grid gap-4">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit quam, sapiente necessitatibus magnam ad totam esse. Officia natus aperiam itaque vitae quia, eligendi illo sed dolorum impedit quaerat, sapiente atque!</p>
+            </CardContent>
+            <CardFooter>
+              <Link href={'#'} className="hover:text-blue-600 underline">explore more.</Link>
+            </CardFooter>
+          </Card>
+        </div>
+        <div className='mt-4 md:mt-6 w-full text-center'>
+         <Link href={'#'} className="hover:text-blue-600 underline">view more.</Link>
         </div>
       </section>
     </>
