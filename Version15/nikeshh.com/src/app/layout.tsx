@@ -13,8 +13,8 @@ import { Toaster } from "@/components/ui/sonner"
 const font = DM_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Knowledge Nikeshh",
-  description: "Resources from nikeshh",
+  title: "Nikeshh Vijayabaskaran",
+  description: "Senior Full Stack Developer and Digital Marketer",
 };
 
 export default function RootLayout({

@@ -40,7 +40,7 @@ export default function Home() {
             Scaling to
             <HoverCard>
               <HoverCardTrigger asChild>
-                <Button variant="link" className="text-[16px] md:text-2xl">@perfection</Button>
+                <Button variant="link" className="text-[16px] md:text-2xl pl-1"><u>@perfection</u></Button>
               </HoverCardTrigger>
               <HoverCardContent className="w-80">
                 <div className="flex justify-between space-x-4">
@@ -77,6 +77,51 @@ export default function Home() {
             className="rounded-tl-2xl rounded-tr-2xl border-2 border-muted"
           />
           <div className="bottom-0 top-[50%] bg-gradient-to-t dark:from-background left-0 right-0 absolute z-10"></div>
+        </div>
+      </section>
+      <section className="container pt-12 md:pt-44 relative flex flex-col items-center justify-center">
+        <p>WORKED WITH</p>
+        <div className="bg-gradient-to-r from-primary to-secondary-foreground text-transparent bg-clip-text relative">
+            <h2 className="font-bold text-xl md:text-[40px] md:leading-none">
+              Leading Brands Across The Globe
+            </h2>
+          </div>
+        <div className='flex flex-wrap gap-2 md:gap-9 mt-9 justify-center'>
+          <Image
+            src={'/assets/preview.png'}
+            alt="banner image"
+            height={120}
+            width={120}
+            className="rounded-tl-2xl rounded-tr-2xl border-2 border-muted"
+          />
+          <Image
+            src={'/assets/preview.png'}
+            alt="banner image"
+            height={120}
+            width={120}
+            className="rounded-tl-2xl rounded-tr-2xl border-2 border-muted"
+          />
+          <Image
+            src={'/assets/preview.png'}
+            alt="banner image"
+            height={120}
+            width={120}
+            className="rounded-tl-2xl rounded-tr-2xl border-2 border-muted"
+          />
+          <Image
+            src={'/assets/preview.png'}
+            alt="banner image"
+            height={120}
+            width={120}
+            className="rounded-tl-2xl rounded-tr-2xl border-2 border-muted"
+          />
+          <Image
+            src={'/assets/preview.png'}
+            alt="banner image"
+            height={120}
+            width={120}
+            className="rounded-tl-2xl rounded-tr-2xl border-2 border-muted"
+          />
         </div>
       </section>
     </>
