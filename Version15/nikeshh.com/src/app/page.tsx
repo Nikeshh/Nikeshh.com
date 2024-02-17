@@ -1,10 +1,10 @@
 'use client'
 
 import { Button } from '@/components/ui/button';
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { toast } from "sonner"
 import Image from 'next/image';
-import { CalendarDays } from "lucide-react"
+import { CalendarDays, Eye } from "lucide-react"
 import {
   Avatar,
   AvatarFallback,
@@ -15,6 +15,15 @@ import {
   HoverCardContent,
   HoverCardTrigger,
 } from "@/components/ui/hover-card"
+import { Badge } from "@/components/ui/badge"
+import { cn } from "@/lib/utils"
+import {
+  Card,
+  CardContent,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card"
 
 export default function Home() {
   useEffect(() => {
@@ -26,6 +35,25 @@ export default function Home() {
       },
     })
   }, []);
+
+  const [selectedSkill, setSelectedSkill] = useState('SAAS');
+
+  const notifications = [
+    {
+      title: "Your call has been confirmed.",
+      description: "1 hour ago",
+    },
+    {
+      title: "You have a new message!",
+      description: "1 hour ago",
+    },
+    {
+      title: "Your subscription is expiring soon!",
+      description: "2 hours ago",
+    },
+  ]
+   
+  type CardProps = React.ComponentProps<typeof Card>
 
   return (
     <>
@@ -122,6 +150,70 @@ export default function Home() {
             width={120}
             className="rounded-tl-2xl rounded-tr-2xl border-2 border-muted"
           />
+        </div>
+      </section>
+      <section className="container pt-12 md:pt-44 relative flex flex-col items-center justify-center">
+        <p>TO MENTION</p>
+        <div className="bg-gradient-to-r from-primary to-secondary-foreground text-transparent bg-clip-text relative">
+          <h2 className="font-bold text-xl md:text-[40px] md:leading-none">
+            SKILLS, CERTIFICATIONS, AWARDS & EXPERIENCES
+          </h2>
+          <div className="mt-6 flex flex-wrap gap-2 justify-center">
+            {['SAAS', 'Full Stack', 'UI/UX', 'Android', 'iOS'].map((a) => {
+              return (
+                <Badge variant={selectedSkill == a ? 'default' : 'outline'} key={a}>
+                  <a
+                      className="group flex justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
+                      href="#"
+                  >
+                      <span className={selectedSkill == a ? 'text-white transition' : 'text-gray-700 transition group-hover:text-gray-700/75'}>
+                          {a}
+                      </span>
+                  </a>
+              </Badge>
+              );
+            })}
+          </div>
+        </div>
+        <div className="mt-6 flex flex-wrap justify-center gap-4">
+          {['SAAS', 'Full Stack', 'UI/UX', 'Android', 'iOS'].map((a) => {
+            return (
+              <Card className={cn("w-[380px]")} key={a}>
+                <CardHeader>
+                  <CardTitle>{a}</CardTitle>
+                </CardHeader>
+                <CardContent className="grid gap-4">
+                  <Image
+                    src={'/assets/preview.png'}
+                    alt="banner image"
+                    height={120}
+                    width={120}
+                    className="rounded-tl-2xl rounded-tr-2xl border-2 border-muted"
+                  />
+                  <div>
+                    {notifications.map((notification, index) => (
+                      <div
+                        key={index}
+                        className="mb-2 grid grid-cols-[25px_1fr] items-start pb-2 last:mb-0 last:pb-0"
+                      >
+                        <span className="flex h-2 w-2 translate-y-1 rounded-full bg-sky-500" />
+                        <div className="space-y-1">
+                          <p className="text-sm font-medium leading-none">
+                            {notification.title}
+                          </p>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </CardContent>
+                <CardFooter>
+                  <Button className="w-full">
+                    <Eye className="mr-2 h-4 w-4" /> Explore
+                  </Button>
+                </CardFooter>
+              </Card>
+            );
+          })}
         </div>
       </section>
     </>
