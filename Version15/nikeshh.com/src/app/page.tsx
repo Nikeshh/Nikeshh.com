@@ -299,13 +299,6 @@ export default function Home() {
           <Card className="max-w-[450px]" key="service">
             <CardHeader>
               <CardTitle>Service</CardTitle>
-              <Image
-                src={'/assets/preview.png'}
-                alt="banner image"
-                height={240}
-                width={240}
-                className="rounded-tl-2xl rounded-tr-2xl border-2 border-muted"
-              />
             </CardHeader>
             <CardContent className="grid gap-4">
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit quam, sapiente necessitatibus magnam ad totam esse. Officia natus aperiam itaque vitae quia, eligendi illo sed dolorum impedit quaerat, sapiente atque!</p>
@@ -314,6 +307,50 @@ export default function Home() {
               <Link href={'#'} className="hover:text-blue-600 underline">explore more.</Link>
             </CardFooter>
           </Card>
+        </div>
+        <div className='mt-4 md:mt-6 w-full text-center'>
+         <Link href={'#'} className="hover:text-blue-600 underline">view more.</Link>
+        </div>
+      </section>
+      <section className="container pt-12 md:pt-44 relative flex flex-col items-center justify-center">
+        <p>BUILT FOR IMPACT</p>
+        <div className="bg-gradient-to-r from-primary to-secondary-foreground text-transparent bg-clip-text relative">
+          <h2 className="font-bold text-xl md:text-[40px] md:leading-none">
+            PROJECTS
+          </h2>
+        </div>
+        <div className="mt-6 flex flex-wrap gap-2 justify-center">
+          {['SAAS', 'Full Stack', 'UI/UX', 'Android', 'iOS'].map((a) => {
+            return (
+              <Badge variant={selectedSkill == a ? 'default' : 'outline'} key={a}>
+                <a
+                    className="group flex justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
+                    href="#"
+                >
+                    <span className={selectedSkill == a ? 'text-white transition' : 'text-gray-700 transition group-hover:text-gray-700/75'}>
+                        {a}
+                    </span>
+                </a>
+            </Badge>
+            );
+          })}
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 pt-9">
+          {['SAAS', 'Full Stack', 'UI/UX', 'Android', 'iOS'].map((a) => {
+            return (
+              <Card key="service">
+                <CardHeader>
+                  <CardTitle>Service</CardTitle>
+                </CardHeader>
+                <CardContent className="grid gap-4">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit quam, sapiente necessitatibus magnam ad totam esse. Officia natus aperiam itaque vitae quia, eligendi illo sed dolorum impedit quaerat, sapiente atque!</p>
+                </CardContent>
+                <CardFooter>
+                  <Link href={'#'} className="hover:text-blue-600 underline">explore more.</Link>
+                </CardFooter>
+              </Card>
+            );
+          })}
         </div>
         <div className='mt-4 md:mt-6 w-full text-center'>
          <Link href={'#'} className="hover:text-blue-600 underline">view more.</Link>
