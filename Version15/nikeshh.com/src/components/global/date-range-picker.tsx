@@ -13,9 +13,11 @@ import { addDays, format } from "date-fns";
 import * as React from "react";
 import { DateRange } from "react-day-picker";
 
+// Not used right now. Can be used in the blog
 export function CalendarDateRangePicker({
   className,
 }: React.HTMLAttributes<HTMLDivElement>) {
+  
   const [date, setDate] = React.useState<DateRange | undefined>({
     from: new Date(2023, 0, 20),
     to: addDays(new Date(2023, 0, 20), 20),
