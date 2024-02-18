@@ -85,8 +85,8 @@ const Page = ({ params }: Props ) => {
       </div>
       <div className="mt-6 px-4 py-4 w-full flex justify-center">
         <ContactForm
-          subTitle="Let's Talk"
-          title="Contact Me"
+          subTitle="Let's Talk. Contact Me."
+          title="Want to work on this project?"
           apiCall={onContactFormSubmit}
         />
       </div>
