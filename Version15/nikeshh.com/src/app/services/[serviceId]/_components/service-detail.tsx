@@ -3,7 +3,7 @@ import { cn } from "@/lib/utils";
 
 export default function ServiceDetail() {
   return (
-    <nav
+    <div
       className={cn(`relative hidden h-screen border-r pt-16 lg:block w-96`)}
     >
       <div className="space-y-4 py-4">
@@ -42,6 +42,6 @@ export default function ServiceDetail() {
           </div>
         </div>
       </div>
-    </nav>
+    </div>
   );
 }

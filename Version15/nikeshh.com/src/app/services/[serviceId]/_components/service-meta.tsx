@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function ServiceMeta() {
   return (
-    <nav
+    <div
       className={cn(`relative hidden h-screen pt-16 lg:block w-96`)}
     >
       <div className="space-y-4 py-4">
@@ -53,6 +53,6 @@ export default function ServiceMeta() {
           </div>
         </div>
       </div>
-    </nav>
+    </div>
   );
 }

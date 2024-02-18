@@ -26,7 +26,7 @@ export function ProjectDetailMobile({ right }: SidebarProps) {
                 </h2>
               </div>
               <div className="mt-6 px-4">
-                <h3 className="underline">Business Objective</h3>
+                <h3 className="underline">Problem</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi maxime omnis placeat, et quidem nostrum exercitationem dolore inventore rem, aut laborum veniam quo. Sunt, magni voluptatem! Nulla minima in tenetur!</p>
               </div>
               <div className="mt-6 px-4">
@@ -34,7 +34,7 @@ export function ProjectDetailMobile({ right }: SidebarProps) {
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta maiores cupiditate, perferendis alias quaerat eos. Veniam eaque reprehenderit quibusdam praesentium quisquam beatae! Aliquam accusamus sunt cum voluptatum, doloremque vitae cumque.</p>
               </div>
               <div className="mt-6 px-4">
-                <h3 className="underline">Setup</h3>
+                <h3 className="underline">Technologies</h3>
                 <div className="mt-6 flex flex-wrap gap-2">
                   {['SAAS', 'Full Stack', 'UI/UX', 'Android', 'iOS'].map((a) => {
                     return (

@@ -36,9 +36,9 @@ const Page = ({ params }: Props ) => {
         <div className="flex items-center justify-between space-y-2">
           <div>
             <h1 className="text-3xl font-bold tracking-tight">
-              Service Name
+              Title of the project
             </h1>
-            <p>Subtitle of the service</p>
+            <p>Subtitle of the project</p>
           </div>
           <div className="hidden md:flex items-center space-x-2">
             <Button>Contact</Button>

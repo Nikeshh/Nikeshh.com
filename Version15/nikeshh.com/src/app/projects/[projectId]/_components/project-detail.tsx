@@ -3,8 +3,8 @@ import { cn } from "@/lib/utils";
 
 export default function ProjectDetail() {
   return (
-    <nav
-      className={cn(`relative hidden h-screen border-r pt-16 lg:block w-96`)}
+    <div
+      className={cn(`relative hidden h-screen border-r pt-16 lg:block w-[600px]`)}
     >
       <div className="space-y-4 py-4">
         <div className="px-3 py-2">
@@ -14,7 +14,7 @@ export default function ProjectDetail() {
             </h2>
           </div>
           <div className="mt-6 px-4">
-            <h3 className="underline">Business Objective</h3>
+            <h3 className="underline">Problem</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi maxime omnis placeat, et quidem nostrum exercitationem dolore inventore rem, aut laborum veniam quo. Sunt, magni voluptatem! Nulla minima in tenetur!</p>
           </div>
           <div className="mt-6 px-4">
@@ -22,7 +22,7 @@ export default function ProjectDetail() {
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta maiores cupiditate, perferendis alias quaerat eos. Veniam eaque reprehenderit quibusdam praesentium quisquam beatae! Aliquam accusamus sunt cum voluptatum, doloremque vitae cumque.</p>
           </div>
           <div className="mt-6 px-4">
-            <h3 className="underline">Setup</h3>
+            <h3 className="underline">Technologes</h3>
             <div className="mt-6 flex flex-wrap gap-2">
               {['SAAS', 'Full Stack', 'UI/UX', 'Android', 'iOS'].map((a) => {
                 return (
@@ -42,6 +42,6 @@ export default function ProjectDetail() {
           </div>
         </div>
       </div>
-    </nav>
+    </div>
   );
 }
