@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button';
 import React, { useEffect, useState } from 'react'
 import { toast } from "sonner"
 import Image from 'next/image';
-import { CalendarDays, Eye } from "lucide-react"
+import { CalendarDays, Eye, User2 } from "lucide-react"
 import {
   Avatar,
   AvatarFallback,
@@ -26,14 +26,6 @@ import {
 } from "@/components/ui/card"
 import Link from 'next/link';
 import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-  type CarouselApi,
-} from "@/components/ui/carousel"
-import {
   Command,
   CommandDialog,
   CommandEmpty,
@@ -44,6 +36,9 @@ import {
   CommandSeparator,
   CommandShortcut,
 } from "@/components/ui/command"
+import NewsletterForm from '@/components/newsletter';
+import { z } from 'zod';
+import { NewsletterUserFormSchema } from '@/lib/types';
 
 export default function Home() {
   useEffect(() => {
@@ -73,23 +68,10 @@ export default function Home() {
     },
   ]
 
-  const [api, setApi] = React.useState<CarouselApi>()
-  const [current, setCurrent] = React.useState(0)
-  const [count, setCount] = React.useState(0)
-
-  React.useEffect(() => {
-    if (!api) {
-      return
-    }
- 
-    setCount(api.scrollSnapList().length)
-    setCurrent(api.selectedScrollSnap() + 1)
- 
-    api.on("select", () => {
-      console.log("current")
-      setCurrent(api.selectedScrollSnap() + 1)
-    })
-  }, [api])
+  const onFormSubmit = async (
+    values: z.infer<typeof NewsletterUserFormSchema>
+  ) => {
+  }
 
   return (
     <>
@@ -146,7 +128,7 @@ export default function Home() {
       <section className="container pt-12 md:pt-44 relative flex flex-col items-center justify-center">
         <p>WORKED WITH</p>
         <div className="bg-gradient-to-r from-primary to-secondary-foreground text-transparent bg-clip-text relative">
-            <h2 className="font-bold text-xl md:text-[40px] md:leading-none">
+            <h2 className="font-bold text-xl md:text-[40px] md:leading-none text-center">
               Leading Brands Across The Globe
             </h2>
           </div>
@@ -191,7 +173,7 @@ export default function Home() {
       <section className="container pt-12 md:pt-44 relative flex flex-col items-center justify-center">
         <p>TO MENTION</p>
         <div className="bg-gradient-to-r from-primary to-secondary-foreground text-transparent bg-clip-text relative">
-          <h2 className="font-bold text-xl md:text-[40px] md:leading-none">
+          <h2 className="font-bold text-xl md:text-[40px] md:leading-none text-center">
             SKILLS, CERTIFICATIONS, AWARDS & EXPERIENCES
           </h2>
         </div>
@@ -258,7 +240,7 @@ export default function Home() {
       <section className="container pt-12 md:pt-44 relative flex flex-col items-center justify-center">
         <p>BUILT FOR SCALING & VALUE</p>
         <div className="bg-gradient-to-r from-primary to-secondary-foreground text-transparent bg-clip-text relative">
-          <h2 className="font-bold text-xl md:text-[40px] md:leading-none">
+          <h2 className="font-bold text-xl md:text-[40px] md:leading-none text-center">
             SERVICES
           </h2>
         </div>
@@ -315,7 +297,7 @@ export default function Home() {
       <section className="container pt-12 md:pt-44 relative flex flex-col items-center justify-center">
         <p>BUILT FOR IMPACT</p>
         <div className="bg-gradient-to-r from-primary to-secondary-foreground text-transparent bg-clip-text relative">
-          <h2 className="font-bold text-xl md:text-[40px] md:leading-none">
+          <h2 className="font-bold text-xl md:text-[40px] md:leading-none text-center">
             PROJECTS
           </h2>
         </div>
@@ -359,7 +341,7 @@ export default function Home() {
       <section className="container pt-12 md:pt-44 relative flex flex-col items-center justify-center">
         <p>TESTIMONIALS</p>
         <div className="bg-gradient-to-r from-primary to-secondary-foreground text-transparent bg-clip-text relative">
-          <h2 className="font-bold text-xl md:text-[40px] md:leading-none">
+          <h2 className="font-bold text-xl md:text-[40px] md:leading-none text-center">
             SOME TOOK THE SHOT
           </h2>
         </div>
@@ -385,6 +367,159 @@ export default function Home() {
           <div className='mt-4 md:mt-6 w-full text-center'>
             <Link href={'#'} className="hover:text-blue-600 underline">view next.</Link>
           </div>
+        </div>
+      </section>
+      <section className="container pt-12 md:pt-16 relative flex flex-col items-center justify-center">
+        <p>NEWSLETTER</p>
+        <div className="bg-gradient-to-r from-primary to-secondary-foreground text-transparent bg-clip-text relative">
+          <h2 className="font-bold text-xl md:text-[40px] md:leading-none text-center">
+            Once a week, look out for valuable content in email
+          </h2>
+        </div>
+        <div className='flex justify-center mt-2'>
+          <Badge variant="outline" key="Service">
+            <a
+                className="group flex justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
+                href="#"
+            >
+                <span className='text-gray-700 transition group-hover:text-gray-700/75'>
+                  Trust me, I wont spam
+                </span>
+            </a>
+          </Badge>
+        </div>
+        <div className="flex flex-wrap md:flex-nowrap justify-center gap-4 pt-9">
+          <Command>
+            <CommandInput placeholder="Type a command or search..." />
+            <CommandList>
+              <CommandEmpty>No results found.</CommandEmpty>
+              <CommandGroup heading="Suggestions">
+                <CommandItem>Calendar</CommandItem>
+                <CommandItem>Search Emoji</CommandItem>
+                <CommandItem>Calculator</CommandItem>
+              </CommandGroup>
+              <CommandSeparator />
+              <CommandGroup heading="Settings">
+                <CommandItem>Profile</CommandItem>
+                <CommandItem>Billing</CommandItem>
+                <CommandItem>Settings</CommandItem>
+              </CommandGroup>
+            </CommandList>
+          </Command>
+          <NewsletterForm
+            subTitle="Technology"
+            title="Subscribe to newsletter ✉️"
+            apiCall={onFormSubmit}
+          />
+        </div>
+      </section>
+      <section className="container pt-12 md:pt-16 relative flex flex-col items-center justify-center">
+        <p>BLOG</p>
+        <div className="bg-gradient-to-r from-primary to-secondary-foreground text-transparent bg-clip-text relative">
+          <h2 className="font-bold text-xl md:text-[40px] md:leading-none text-center">
+            TO LEARN
+          </h2>
+        </div>
+        <div className='grid grid-cols-1 md:grid-cols-3 mt-4 gap-4'>
+          <Card key="blog">
+            <CardHeader>
+              <Image
+                src={'/assets/preview.png'}
+                alt="banner image"
+                height={120}
+                width={120}
+                className="rounded-tl-2xl rounded-tr-2xl border-2 border-muted"
+              />
+            </CardHeader>
+            <CardContent className="flex flex-col justify-center gap-4">
+              <CardTitle>This is the blog title</CardTitle>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus eaque quas hic eius mollitia incidunt voluptatem officia magnam, perferendis ab voluptate fugit, perspiciatis nobis deserunt? Itaque, sit quod. Voluptate, perspiciatis.</p>
+              <div className='flex flex-wrap gap-3 items-center'>
+                <Avatar className="w-8 h-8">
+                  <AvatarImage alt="user" />
+                  <AvatarFallback className="bg-primary text-sm text-white">
+                    <User2 size={14} />
+                  </AvatarFallback>
+                </Avatar>
+                <div>
+                  <p>Nikeshh Vijayabaskaran</p>
+                  <span className="text-xs">Author</span>
+                </div>
+              </div>
+            </CardContent>
+            <CardFooter>
+              <Button className="w-full" variant="outline">
+                <Eye className="mr-2 h-4 w-4" /> View
+              </Button>
+            </CardFooter>
+          </Card>
+          <Card key="blog">
+            <CardHeader>
+              <Image
+                src={'/assets/preview.png'}
+                alt="banner image"
+                height={120}
+                width={120}
+                className="rounded-tl-2xl rounded-tr-2xl border-2 border-muted"
+              />
+            </CardHeader>
+            <CardContent className="flex flex-col justify-center gap-4">
+              <CardTitle>This is the blog title</CardTitle>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus eaque quas hic eius mollitia incidunt voluptatem officia magnam, perferendis ab voluptate fugit, perspiciatis nobis deserunt? Itaque, sit quod. Voluptate, perspiciatis.</p>
+              <div className='flex flex-wrap gap-3 items-center'>
+                <Avatar className="w-8 h-8">
+                  <AvatarImage alt="user" />
+                  <AvatarFallback className="bg-primary text-sm text-white">
+                    <User2 size={14} />
+                  </AvatarFallback>
+                </Avatar>
+                <div>
+                  <p>Nikeshh Vijayabaskaran</p>
+                  <span className="text-xs">Author</span>
+                </div>
+              </div>
+            </CardContent>
+            <CardFooter>
+              <Button className="w-full" variant="outline">
+                <Eye className="mr-2 h-4 w-4" /> View
+              </Button>
+            </CardFooter>
+          </Card>
+          <Card key="blog">
+            <CardHeader>
+              <Image
+                src={'/assets/preview.png'}
+                alt="banner image"
+                height={120}
+                width={120}
+                className="rounded-tl-2xl rounded-tr-2xl border-2 border-muted"
+              />
+            </CardHeader>
+            <CardContent className="flex flex-col justify-center gap-4">
+              <CardTitle>This is the blog title</CardTitle>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus eaque quas hic eius mollitia incidunt voluptatem officia magnam, perferendis ab voluptate fugit, perspiciatis nobis deserunt? Itaque, sit quod. Voluptate, perspiciatis.</p>
+              <div className='flex flex-wrap gap-3 items-center'>
+                <Avatar className="w-8 h-8">
+                  <AvatarImage alt="user" />
+                  <AvatarFallback className="bg-primary text-sm text-white">
+                    <User2 size={14} />
+                  </AvatarFallback>
+                </Avatar>
+                <div>
+                  <p>Nikeshh Vijayabaskaran</p>
+                  <span className="text-xs">Author</span>
+                </div>
+              </div>
+            </CardContent>
+            <CardFooter>
+              <Button className="w-full" variant="outline">
+                <Eye className="mr-2 h-4 w-4" /> View
+              </Button>
+            </CardFooter>
+          </Card>
+        </div>
+        <div className='mt-4 md:mt-6 w-full text-center'>
+          <Link href={'#'} className="hover:text-blue-600 underline">learn more.</Link>
         </div>
       </section>
     </>
