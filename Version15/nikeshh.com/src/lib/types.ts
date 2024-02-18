@@ -1,5 +1,4 @@
 import { z } from "zod";
-import { Icons } from "@/components/icons";
 
 export const NewsletterUserFormSchema = z.object({
     name: z.string().min(1, 'Required'),
@@ -11,33 +10,11 @@ export const ContactUserFormSchema = z.object({
     email: z.string().email(),
 })
 
-export interface NavItem {
+export interface FooterItem {
+  title: string;
+  items: {
     title: string;
-    href?: string;
-    disabled?: boolean;
+    href: string;
     external?: boolean;
-    icon?: keyof typeof Icons;
-    label?: string;
-    description?: string;
-  }
-  
-  export interface NavItemWithChildren extends NavItem {
-    items: NavItemWithChildren[];
-  }
-  
-  export interface NavItemWithOptionalChildren extends NavItem {
-    items?: NavItemWithChildren[];
-  }
-  
-  export interface FooterItem {
-    title: string;
-    items: {
-      title: string;
-      href: string;
-      external?: boolean;
-    }[];
-  }
-  
-  export type MainNavItem = NavItemWithOptionalChildren;
-  
-  export type SidebarNavItem = NavItemWithChildren;
+  }[];
+}

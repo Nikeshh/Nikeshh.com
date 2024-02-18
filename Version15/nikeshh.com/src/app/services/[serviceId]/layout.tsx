@@ -1,6 +1,9 @@
 import Header from "@/components/layout/dashboard/header";
-import Sidebar from "@/components/layout/dashboard/sidebar";
 import type { Metadata } from "next";
+import ServiceDetail from "./_components/service-detail";
+import ServiceMeta from "./_components/service-meta";
+import { ServiceDetailMobile } from "./_components/service-detail-mobile";
+import { ServiceMetaMobile } from "./_components/service-meta-mobile";
 
 export const metadata: Metadata = {
   title: "Services",
@@ -14,10 +17,11 @@ export default function DashboardLayout({
 }) {
   return (
     <>
-        <Header />
+        <Header LeftSideBar={ServiceDetailMobile} RightSideBar={ServiceMetaMobile} />
         <div className="flex h-screen overflow-hidden">
-            <Sidebar />
-            <main className="w-full pt-16">{children}</main>
+          <ServiceDetail />
+          <main className="w-full pt-16">{children}</main>
+          <ServiceMeta />
         </div>
     </>
   );

@@ -1,3 +1,5 @@
+"use client"
+
 import React from 'react'
 import { CalendarDateRangePicker } from "@/components/global/date-range-picker";
 import { Overview } from "@/components/global/overview";
@@ -12,14 +14,26 @@ import {
 } from "@/components/ui/card";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import ContactForm from '@/components/contact';
+import { NewsletterUserFormSchema } from '@/lib/types';
+import { z } from 'zod';
 
-type Props = {}
+type Props = {
+  params: { 
+    serviceId: string 
+  }
+}
 
-const Page = async ({
-    params,
-  }: {
-    params: { serviceId: string }
-  }) => {
+const Page = ({ params }: Props ) => {
+    
+  const onContactFormSubmit = async (
+    values: z.infer<typeof NewsletterUserFormSchema>
+  ) => {
+  }
+
+  const serviceId = params.serviceId;
+  console.log(serviceId);
+
   return (
     <ScrollArea className="h-full">
       <div className="flex-1 space-y-4 p-4 md:p-8 pt-6">
@@ -166,6 +180,14 @@ const Page = async ({
             </div>
           </TabsContent>
         </Tabs>
+      </div>
+      <div className="mt-6 px-4 py-4 border-b">
+        <ContactForm
+          subTitle="Let's Talk"
+          title="Contact Me"
+          width="300"
+          apiCall={onContactFormSubmit}
+        />
       </div>
     </ScrollArea>
   );

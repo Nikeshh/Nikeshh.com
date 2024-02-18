@@ -26,9 +26,10 @@ type Props = {
   title: string
   subTitle: string
   apiCall: (values: z.infer<typeof ContactUserFormSchema>) => any
+  width?: string
 }
 
-const ContactForm = ({ apiCall, subTitle, title }: Props) => {
+const ContactForm = ({ apiCall, subTitle, title, width }: Props) => {
   const form = useForm<z.infer<typeof ContactUserFormSchema>>({
     mode: 'onChange',
     resolver: zodResolver(ContactUserFormSchema),
@@ -40,7 +41,7 @@ const ContactForm = ({ apiCall, subTitle, title }: Props) => {
   const isLoading = form.formState.isLoading
   
   return (
-    <Card className="w-[350px] md:w-[750px]">
+    <Card className={width ? `w-[${width}px]` : "w-[350px] md:w-[750px]"}>
       <CardHeader>
         <CardTitle>{title}</CardTitle>
         <CardDescription>{subTitle}</CardDescription>

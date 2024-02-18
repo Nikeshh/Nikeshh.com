@@ -1,10 +1,14 @@
 import { cn } from "@/lib/utils";
-import { MobileSidebar } from "./mobile-sidebar";
 import { UserNav } from "./user-nav";
 import Link from "next/link";
 import { ModeToggle } from "@/components/global/mode-toggle";
 
-export default function Header() {
+interface Props extends React.HTMLAttributes<HTMLDivElement> {
+  LeftSideBar: React.ComponentType;
+  RightSideBar: React.ComponentType;
+}
+
+export default function Header({ LeftSideBar, RightSideBar }: Props) {
   return (
     <div className="fixed top-0 left-0 right-0 supports-backdrop-blur:bg-background/60 border-b bg-background/95 backdrop-blur z-20">
       <nav className="h-14 flex items-center justify-between px-4">
@@ -28,12 +32,15 @@ export default function Header() {
           </Link>
         </div>
         <div className={cn("block lg:!hidden")}>
-          <MobileSidebar />
+          <LeftSideBar />
         </div>
 
         <div className="flex items-center gap-2">
           <UserNav />
           <ModeToggle />
+          <div className={cn("block lg:!hidden")}>
+            <RightSideBar />
+          </div>
         </div>
       </nav>
     </div>
