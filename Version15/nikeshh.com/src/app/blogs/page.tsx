@@ -1,5 +1,8 @@
 "use client"
 
+import Navigation from '@/components/layout/navigation';
+import NotificationC from '@/components/layout/notification';
+import Footer from '@/components/layout/footer';
 import React from 'react'
 
 type Props = {}
@@ -10,6 +13,9 @@ const Page = (props: Props) => {
 
     return (
         <>
+            <NotificationC />
+            <Navigation />
+            <Footer />
         </>
     )
 }

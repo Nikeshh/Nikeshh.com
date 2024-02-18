@@ -12,6 +12,9 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel"
+import Navigation from '@/components/layout/navigation';
+import NotificationC from '@/components/layout/notification';
+import Footer from '@/components/layout/footer';
 
 const Page = () => {
 
@@ -21,6 +24,8 @@ const Page = () => {
 
     return (
         <>
+            <NotificationC />
+            <Navigation />
             <div className="container pt-12 md:pt-22 relative flex flex-col justify-center items-center flex-wrap md:flex-nowrap gap-5">
                 <div className="bg-gradient-to-r from-primary to-secondary-foreground text-transparent bg-clip-text relative">
                     <h1 className="font-bold text-2xl md:text-[50px] md:leading-none">
@@ -127,8 +132,9 @@ const Page = () => {
                     );
                 })}
             </div>
+            <Footer/>
         </>
     )
-    }
+}
 
 export default Page
