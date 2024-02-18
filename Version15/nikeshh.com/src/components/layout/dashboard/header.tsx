@@ -4,8 +4,8 @@ import Link from "next/link";
 import { ModeToggle } from "@/components/global/mode-toggle";
 
 interface Props extends React.HTMLAttributes<HTMLDivElement> {
-  LeftSideBar: React.ComponentType;
-  RightSideBar: React.ComponentType;
+  LeftSideBar?: React.ComponentType;
+  RightSideBar?: React.ComponentType;
 }
 
 export default function Header({ LeftSideBar, RightSideBar }: Props) {
@@ -31,16 +31,20 @@ export default function Header({ LeftSideBar, RightSideBar }: Props) {
             </svg>
           </Link>
         </div>
-        <div className={cn("block lg:!hidden")}>
-          <LeftSideBar />
-        </div>
+        {LeftSideBar &&
+          <div className={cn("block lg:!hidden")}>
+            <LeftSideBar />
+          </div>
+        }
 
         <div className="flex items-center gap-2">
           <UserNav />
           <ModeToggle />
-          <div className={cn("block lg:!hidden")}>
-            <RightSideBar />
-          </div>
+          {RightSideBar &&
+            <div className={cn("block lg:!hidden")}>
+              <RightSideBar />
+            </div>
+          }
         </div>
       </nav>
     </div>
