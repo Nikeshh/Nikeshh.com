@@ -40,6 +40,9 @@ import NewsletterForm from '@/components/newsletter';
 import { z } from 'zod';
 import { NewsletterUserFormSchema } from '@/lib/types';
 import ContactForm from '@/components/contact';
+import Navigation from "@/components/layout/navigation";
+import Footer from "@/components/layout/footer";
+import NotificationC from "@/components/layout/notification";
 
 export default function Home() {
   useEffect(() => {
@@ -81,6 +84,8 @@ export default function Home() {
 
   return (
     <>
+      <NotificationC />
+      <Navigation />
       <section className="container pt-12 md:pt-44 relative flex items-center md:justify-center flex-wrap md:flex-nowrap gap-5">
         <div className="flex justify-center relative flex-col gap-2 md:gap-4">
           <div className="bg-gradient-to-r from-primary to-secondary-foreground text-transparent bg-clip-text relative">
@@ -563,6 +568,7 @@ export default function Home() {
           apiCall={onContactFormSubmit}
         />
       </section>
+      <Footer />
     </>
   );
 }

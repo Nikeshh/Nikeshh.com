@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ModeToggle } from "../global/mode-toggle";
+import { ModeToggle } from "../../global/mode-toggle";
 import { Badge } from "@/components/ui/badge"
 
 const Navigation = () => {
