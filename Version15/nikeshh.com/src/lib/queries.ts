@@ -36,8 +36,12 @@ export const getSkills = async () => {
   const response = await db.skills.findMany({
     select: {
       id: true,
-      content: true,
       name: true,
+      category: true,
+      points: true
+    },
+    orderBy: {
+      category: 'asc',
     },
   });
   return response

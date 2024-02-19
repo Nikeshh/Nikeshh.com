@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const Footer = () => {
     return (
         <>
@@ -5,7 +7,7 @@ const Footer = () => {
                 <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
                     <div className="flex flex-col items-center gap-4 rounded-lg bg-indigo-600 p-6 shadow-lg sm:flex-row sm:justify-between">
                         <strong className="text-xl text-white sm:text-xl"> Dont wait for the next change. Be the change!</strong>
-                        <a className="inline-flex items-center gap-2 rounded-full border border-white bg-white px-8 py-3 text-indigo-600 hover:bg-transparent hover:text-white focus:outline-none focus:ring active:bg-white/90" href="#">
+                        <Link className="inline-flex items-center gap-2 rounded-full border border-white bg-white px-8 py-3 text-indigo-600 hover:bg-transparent hover:text-white focus:outline-none focus:ring active:bg-white/90" href="#">
                             <span className="text-sm font-medium"> Lets Get Started </span>
                             <svg
                                 className="size-5"
@@ -21,23 +23,23 @@ const Footer = () => {
                                     d="M17 8l4 4m0 0l-4 4m4-4H3"
                                 />
                             </svg>
-                        </a>
+                        </Link>
                     </div>
                     <div className="mt-16 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
                         <div className="text-center sm:text-left">
                             <p className="text-lg font-medium">Our Services</p>
                             <ul className="mt-8 space-y-4 text-sm">
                                 <li>
-                                    <a className="text-gray-700 transition hover:text-gray-700/75" href="#"> Web Development </a>
+                                    <Link className="text-gray-700 transition hover:text-gray-700/75" href="#"> Web Development </Link>
                                 </li>
                                 <li>
-                                    <a className="text-gray-700 transition hover:text-gray-700/75" href="#"> Web Design </a>
+                                    <Link className="text-gray-700 transition hover:text-gray-700/75" href="#"> Web Design </Link>
                                 </li>
                                 <li>
-                                    <a className="text-gray-700 transition hover:text-gray-700/75" href="#"> Marketing </a>
+                                    <Link className="text-gray-700 transition hover:text-gray-700/75" href="#"> Marketing </Link>
                                 </li>
                                 <li>
-                                    <a className="text-gray-700 transition hover:text-gray-700/75" href="#"> Google Ads </a>
+                                    <Link className="text-gray-700 transition hover:text-gray-700/75" href="#"> Google Ads </Link>
                                 </li>
                             </ul>
                         </div>
@@ -45,23 +47,23 @@ const Footer = () => {
                             <p className="text-lg font-medium">Resources</p>
                             <ul className="mt-8 space-y-4 text-sm">
                                 <li>
-                                    <a className="text-gray-700 transition hover:text-gray-700/75" href="#"> Online Guides </a>
+                                    <Link className="text-gray-700 transition hover:text-gray-700/75" href="#"> Online Guides </Link>
                                 </li>
                                 <li>
-                                    <a className="text-gray-700 transition hover:text-gray-700/75" href="#">
+                                    <Link className="text-gray-700 transition hover:text-gray-700/75" href="#">
                                         Conference Notes
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a className="text-gray-700 transition hover:text-gray-700/75" href="#"> Forum </a>
+                                    <Link className="text-gray-700 transition hover:text-gray-700/75" href="#"> Forum </Link>
                                 </li>
                                 <li>
-                                    <a className="text-gray-700 transition hover:text-gray-700/75" href="#"> Downloads </a>
+                                    <Link className="text-gray-700 transition hover:text-gray-700/75" href="#"> Downloads </Link>
                                 </li>
                                 <li>
-                                    <a className="text-gray-700 transition hover:text-gray-700/75" href="#">
+                                    <Link className="text-gray-700 transition hover:text-gray-700/75" href="#">
                                         Upcoming Events
-                                    </a>
+                                    </Link>
                                 </li>
                             </ul>
                         </div>
@@ -69,10 +71,10 @@ const Footer = () => {
                             <p className="text-lg font-medium">Helpful Links</p>
                             <ul className="mt-8 space-y-4 text-sm">
                                 <li>
-                                    <a className="text-gray-700 transition hover:text-gray-700/75" href="#"> FAQs </a>
+                                    <Link className="text-gray-700 transition hover:text-gray-700/75" href="#"> FAQs </Link>
                                 </li>
                                 <li>
-                                    <a className="text-gray-700 transition hover:text-gray-700/75" href="#"> Support </a>
+                                    <Link className="text-gray-700 transition hover:text-gray-700/75" href="#"> Support </Link>
                                 </li>
 
                             </ul>
