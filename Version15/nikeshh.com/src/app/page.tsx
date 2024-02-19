@@ -480,7 +480,7 @@ export default function Home({ testimonials, skills, services, projects, blogs }
         </div>
       </section>
       {blogs && blogs.length > 0 && (
-        <section className="container pt-12 md:pt-16 relative flex flex-col items-center justify-center">
+        <section className="container pt-12 md:pt-44 relative flex flex-col items-center justify-center">
           <p>BLOG</p>
           <div className="bg-gradient-to-r from-primary to-secondary-foreground text-transparent bg-clip-text relative">
             <h2 className="font-bold text-xl md:text-[40px] md:leading-none text-center">
@@ -530,7 +530,7 @@ export default function Home({ testimonials, skills, services, projects, blogs }
           </div>
         </section>
       )}
-      <section className="container pt-12 pb-12 md:pt-16 md:pb-16 relative flex gap-4 flex-wrap md:flex-nowrap items-center justify-center">
+      <section className="container pt-12 pb-12 md:pt-44 md:pb-24 relative flex gap-4 flex-wrap md:flex-nowrap items-center justify-center">
         <div className="flex flex-col justify-center items-center gap-12">
           <div className="hidden md:flex justify-center items-center relative">
             <Image
