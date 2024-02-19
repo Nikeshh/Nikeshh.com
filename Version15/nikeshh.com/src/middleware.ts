@@ -7,7 +7,12 @@ import { NextResponse } from "next/server";
 export default authMiddleware({
   publicRoutes: ["/"],
   async beforeAuth(auth, req) {},
-  async afterAuth(auth, req) {}
+  async afterAuth(auth, req) {
+    const url = req.nextUrl;
+    if (url.pathname === '/') {
+      return NextResponse.redirect(new URL(`/home/`, req.url))
+    }
+  }
 });
  
 export const config = {

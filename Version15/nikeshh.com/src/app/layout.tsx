@@ -5,8 +5,6 @@ import { DM_Sans } from "next/font/google";
 import { dark } from "@clerk/themes";
 import { ClerkProvider } from "@clerk/nextjs";
 import { Toaster } from "@/components/ui/sonner"
-import { getTestimonials, getSkills, getServices, getProjects, getBlogs } from "@/lib/queries";
-import Home from "./page";
 
 const font = DM_Sans({ subsets: ["latin"] });
 
@@ -20,12 +18,6 @@ export default async function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const testimonials = await getTestimonials();
-  const skills = await getSkills();
-  const services = await getServices();
-  const projects = await getProjects();
-  const blogs = await getBlogs();
-
   return (
     <html lang="en" suppressHydrationWarning={true}>
       <body className={font.className} suppressHydrationWarning={true}>
@@ -37,13 +29,7 @@ export default async function RootLayout({
         >
           <ClerkProvider appearance={{ baseTheme: dark }}>
             <main className="w-full">
-              <Home
-                testimonials={testimonials}
-                skills={skills}
-                services={services}
-                projects={projects}
-                blogs={blogs.slice(0, 3)}
-              />
+              {children}
             </main>
           </ClerkProvider>
         </ThemeProvider>
