@@ -48,7 +48,7 @@ const Page = () => {
                         );
                     })}
                 </div>
-                <div className="mb-48 w-full lg:max-w-5xl md:mx-auto">
+                <div className="mb-48 w-64 md:w-full lg:max-w-5xl md:mx-auto">
                     <Carousel className="relative">
                         <CarouselContent>
                             {Array.from({ length: 5 }).map((_, index) => (

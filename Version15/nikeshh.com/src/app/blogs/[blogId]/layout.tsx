@@ -4,8 +4,8 @@ import ServiceMeta from "./_components/service-meta";
 import { ServiceMetaMobile } from "./_components/service-meta-mobile";
 
 export const metadata: Metadata = {
-  title: "Services",
-  description: "Let me design and scale your business",
+  title: "Blogs",
+  description: "Learn more on the content",
 };
 
 export default function DashboardLayout({
