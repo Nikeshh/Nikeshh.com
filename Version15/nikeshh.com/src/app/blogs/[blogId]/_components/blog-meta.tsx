@@ -3,7 +3,7 @@ import { cn } from "@/lib/utils";
 import { ArrowRightSquare, Lock } from "lucide-react";
 import Link from "next/link";
 
-export default function ServiceMeta() {
+export default function BlogMeta() {
   return (
     <div
       className={cn(`relative hidden h-screen pt-16 lg:block w-96`)}

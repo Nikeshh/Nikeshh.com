@@ -7,7 +7,7 @@ import { useState } from "react";
 import { ArrowRightSquare, Lock } from "lucide-react";
 import Link from "next/link";
 
-export function ServiceMetaMobile() {
+export function BlogMetaMobile() {
   const [open, setOpen] = useState(false);
   
   return (
