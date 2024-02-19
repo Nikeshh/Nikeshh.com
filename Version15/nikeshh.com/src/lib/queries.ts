@@ -52,6 +52,7 @@ export const getServices = async () => {
     select: {
       id: true,
       name: true,
+      subtitle: true,
       category: true,
       subcategory: true
     },

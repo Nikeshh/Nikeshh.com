@@ -16,7 +16,7 @@ import {
   HoverCardTrigger,
 } from "@/components/ui/hover-card"
 import { Badge } from "@/components/ui/badge"
-import { cn } from "@/lib/utils"
+import { cn, groupByKey } from "@/lib/utils"
 import {
   Card,
   CardContent,
@@ -43,6 +43,7 @@ import ContactForm from '@/components/contact';
 import Navigation from "@/components/layout/navigation";
 import Footer from "@/components/layout/footer";
 import NotificationC from "@/components/layout/notification";
+import { Services } from '@prisma/client';
 
 type Props = {
   testimonials: {
@@ -62,6 +63,7 @@ type Props = {
   services: {
     id: string;
     name: string;
+    subtitle: string;
     category: string;
     subcategory: string;
   }[];
@@ -101,6 +103,16 @@ export default function Home({ testimonials, skills, services, projects, blogs }
   }
 
   // Services
+  const serviceTags = services.map(item => item.category).filter((value, index, self) => self.indexOf(value) === index);
+  const [selectedService, setSelectedService] = useState(serviceTags[0]);
+  const groupedServices = groupByKey(services.filter(item => item.category == serviceTags[0]), 'subcategory');
+  const [selectedServices, setSelectedServices] = useState(groupedServices);
+  const updatedSelectedService = (service: string) => {
+    setSelectedService(service);
+    const s = services.filter(item => item.category == serviceTags[0]);
+    setSelectedServices(groupByKey(s, 'subcategory'));
+  }
+  const [serviceCommand, setServiceCommand] = useState(Object.values(groupedServices)[0] as Services);
 
   // Projects
   const projectTags = projects.map(item => item.category).filter((value, index, self) => self.indexOf(value) === index);
@@ -120,20 +132,6 @@ export default function Home({ testimonials, skills, services, projects, blogs }
       },
     })
   }, []);
-  const notifications = [
-    {
-      title: "Your call has been confirmed.",
-      description: "1 hour ago",
-    },
-    {
-      title: "You have a new message!",
-      description: "1 hour ago",
-    },
-    {
-      title: "Your subscription is expiring soon!",
-      description: "2 hours ago",
-    },
-  ]
   const onNewsletterFormSubmit = async (
     values: z.infer<typeof NewsletterUserFormSchema>
   ) => {
@@ -314,63 +312,69 @@ export default function Home({ testimonials, skills, services, projects, blogs }
           </div>
         </section>
       )}
-      <section className="container pt-12 md:pt-44 relative flex flex-col items-center justify-center">
-        <p>BUILT FOR SCALING & VALUE</p>
-        <div className="bg-gradient-to-r from-primary to-secondary-foreground text-transparent bg-clip-text relative">
-          <h2 className="font-bold text-xl md:text-[40px] md:leading-none text-center">
-            SERVICES
-          </h2>
-        </div>
-        <div className="mt-6 flex flex-wrap gap-2 justify-center">
-          {['SAAS', 'Full Stack', 'UI/UX', 'Android', 'iOS'].map((a) => {
-            return (
-              <Badge variant={selectedSkill == a ? 'default' : 'outline'} key={a}>
-                <Link
-                  className="group flex justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
-                  href="#"
-                >
-                  <span className={selectedSkill == a ? 'text-white transition' : 'text-gray-700 transition group-hover:text-gray-700/75'}>
-                      {a}
-                  </span>
-                </Link>
-            </Badge>
-            );
-          })}
-        </div>
-        <div className="flex flex-wrap md:flex-nowrap justify-center gap-4 pt-9">
-          <Command>
-            <CommandInput placeholder="Type a command or search..." />
-            <CommandList>
-              <CommandEmpty>No results found.</CommandEmpty>
-              <CommandGroup heading="Suggestions">
-                <CommandItem>Calendar</CommandItem>
-                <CommandItem>Search Emoji</CommandItem>
-                <CommandItem>Calculator</CommandItem>
-              </CommandGroup>
-              <CommandSeparator />
-              <CommandGroup heading="Settings">
-                <CommandItem>Profile</CommandItem>
-                <CommandItem>Billing</CommandItem>
-                <CommandItem>Settings</CommandItem>
-              </CommandGroup>
-            </CommandList>
-          </Command>
-          <Card className="max-w-[450px]" key="service">
-            <CardHeader>
-              <CardTitle>Service</CardTitle>
-            </CardHeader>
-            <CardContent className="grid gap-4">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit quam, sapiente necessitatibus magnam ad totam esse. Officia natus aperiam itaque vitae quia, eligendi illo sed dolorum impedit quaerat, sapiente atque!</p>
-            </CardContent>
-            <CardFooter>
-              <Link href={'#'} className="hover:text-blue-600 underline">explore more.</Link>
-            </CardFooter>
-          </Card>
-        </div>
-        <div className='mt-4 md:mt-6 w-full text-center'>
-         <Link href={'#'} className="hover:text-blue-600 underline">view more.</Link>
-        </div>
-      </section>
+      {services && services.length > 0 && serviceTags && (
+        <section className="container pt-12 md:pt-44 relative flex flex-col items-center justify-center">
+          <p>BUILT FOR SCALING & VALUE</p>
+          <div className="bg-gradient-to-r from-primary to-secondary-foreground text-transparent bg-clip-text relative">
+            <h2 className="font-bold text-xl md:text-[40px] md:leading-none text-center">
+              SERVICES
+            </h2>
+          </div>
+          <div className="mt-6 flex flex-wrap gap-2 justify-center">
+            {serviceTags.map((a) => {
+              return (
+                <Badge variant={selectedService == a ? 'default' : 'outline'} key={a}>
+                  <Link
+                    className="group flex justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
+                    href="#"
+                  >
+                    <span className={selectedService == a ? 'text-white transition' : 'text-gray-700 transition group-hover:text-gray-700/75'}>
+                        {a}
+                    </span>
+                  </Link>
+              </Badge>
+              );
+            })}
+          </div>
+          <div className="flex flex-wrap md:flex-nowrap justify-center gap-4 pt-9">
+            <Command>
+              <CommandInput placeholder="Type a command or search..." />
+              <CommandList>
+                <CommandEmpty>No results found.</CommandEmpty>
+                {Object.keys(selectedServices).map((service) => {
+                  const subServices = selectedServices[service];
+                  return (
+                    <div key={service}>
+                      <CommandGroup heading={service}>
+                        {subServices.map((subService: Services) => {
+                          return (
+                            <CommandItem key={subService.id} onClick={() => setServiceCommand(subService)}>{subService.name}</CommandItem>
+                          );
+                        })}
+                      </CommandGroup>
+                      <CommandSeparator/>
+                    </div>
+                  );
+                })}
+              </CommandList>
+            </Command>
+            <Card className="max-w-[450px]">
+              <CardHeader>
+                <CardTitle>{serviceCommand.name}</CardTitle>
+              </CardHeader>
+              <CardContent className="grid gap-4">
+                <p>{serviceCommand.subtitle}</p>
+              </CardContent>
+              <CardFooter>
+                <Link href={'#'} className="hover:text-blue-600 underline">explore more.</Link>
+              </CardFooter>
+            </Card>
+          </div>
+          <div className='mt-4 md:mt-6 w-full text-center'>
+            <Link href={'#'} className="hover:text-blue-600 underline">view more.</Link>
+          </div>
+        </section>
+      )}
       {projects && projects.length > 0 && projectTags && (
         <section className="container pt-12 md:pt-44 relative flex flex-col items-center justify-center">
           <p>BUILT FOR IMPACT</p>
@@ -428,13 +432,25 @@ export default function Home({ testimonials, skills, services, projects, blogs }
           </div>
           <div className="relative isolate overflow-hidden px-6 py-24 sm:py-32 lg:px-8 w-full">
             <div className="mx-auto max-w-2xl lg:max-w-4xl">
-              <img className="mx-auto h-12" src={testimonials[testimonialIndex].companyLogoUrl} alt="Company logo" />
+              <Image
+                src={testimonials[testimonialIndex].companyLogoUrl}
+                alt="Company logo"
+                height={600}
+                width={600}
+                className="mx-auto h-12"
+              />
               <figure className="mt-10">
                 <blockquote className="text-center text-xl font-semibold leading-8 sm:text-2xl sm:leading-9">
                   <p>“{testimonials[testimonialIndex].content}”</p>
                 </blockquote>
                 <figcaption className="mt-10">
-                  <img className="mx-auto h-10 w-10 rounded-full" src={testimonials[testimonialIndex].avatarUrl} alt="User Logo" />
+                  <Image
+                    src={testimonials[testimonialIndex].avatarUrl}
+                    alt="User logo"
+                    height={600}
+                    width={600}
+                    className="mx-auto h-10 w-10 rounded-full"
+                  />
                   <div className="mt-4 flex items-center justify-center space-x-3 text-base">
                     <div className="font-semibold">{testimonials[testimonialIndex].name}</div>
                     <svg viewBox="0 0 2 2" width="3" height="3" aria-hidden="true" className="fill-gray-900">
