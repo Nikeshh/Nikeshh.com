@@ -68,9 +68,15 @@ type Props = {
     name: string;
     content: string;
   }[];
+  blogs: {
+    id: string;
+    title: string;
+    imageUrl: string;
+    subtitle: string;
+  }[];
 }
 
-export default function Home({ testimonials, skills, services, projects } : Props) {
+export default function Home({ testimonials, skills, services, projects, blogs } : Props) {
 
   const [testimonialIndex, setTestimonialIndex] = useState(0);
   const switchTestimonialIndex = () => {
@@ -460,115 +466,57 @@ export default function Home({ testimonials, skills, services, projects } : Prop
           />
         </div>
       </section>
-      <section className="container pt-12 md:pt-16 relative flex flex-col items-center justify-center">
-        <p>BLOG</p>
-        <div className="bg-gradient-to-r from-primary to-secondary-foreground text-transparent bg-clip-text relative">
-          <h2 className="font-bold text-xl md:text-[40px] md:leading-none text-center">
-            TO LEARN
-          </h2>
-        </div>
-        <div className='grid grid-cols-1 md:grid-cols-3 mt-4 gap-4'>
-          <Card key="blog">
-            <CardHeader>
-              <Image
-                src={'/assets/preview.png'}
-                alt="banner image"
-                height={120}
-                width={120}
-                className="rounded-tl-2xl rounded-tr-2xl border-2 border-muted"
-              />
-            </CardHeader>
-            <CardContent className="flex flex-col justify-center gap-4">
-              <CardTitle>This is the blog title</CardTitle>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus eaque quas hic eius mollitia incidunt voluptatem officia magnam, perferendis ab voluptate fugit, perspiciatis nobis deserunt? Itaque, sit quod. Voluptate, perspiciatis.</p>
-              <div className='flex flex-wrap gap-3 items-center'>
-                <Avatar className="w-8 h-8">
-                  <AvatarImage alt="user" />
-                  <AvatarFallback className="bg-primary text-sm text-white">
-                    <User2 size={14} />
-                  </AvatarFallback>
-                </Avatar>
-                <div>
-                  <p>Nikeshh Vijayabaskaran</p>
-                  <span className="text-xs">Author</span>
-                </div>
-              </div>
-            </CardContent>
-            <CardFooter>
-              <Button className="w-full" variant="outline">
-                <Eye className="mr-2 h-4 w-4" /> View
-              </Button>
-            </CardFooter>
-          </Card>
-          <Card key="blog">
-            <CardHeader>
-              <Image
-                src={'/assets/preview.png'}
-                alt="banner image"
-                height={120}
-                width={120}
-                className="rounded-tl-2xl rounded-tr-2xl border-2 border-muted"
-              />
-            </CardHeader>
-            <CardContent className="flex flex-col justify-center gap-4">
-              <CardTitle>This is the blog title</CardTitle>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus eaque quas hic eius mollitia incidunt voluptatem officia magnam, perferendis ab voluptate fugit, perspiciatis nobis deserunt? Itaque, sit quod. Voluptate, perspiciatis.</p>
-              <div className='flex flex-wrap gap-3 items-center'>
-                <Avatar className="w-8 h-8">
-                  <AvatarImage alt="user" />
-                  <AvatarFallback className="bg-primary text-sm text-white">
-                    <User2 size={14} />
-                  </AvatarFallback>
-                </Avatar>
-                <div>
-                  <p>Nikeshh Vijayabaskaran</p>
-                  <span className="text-xs">Author</span>
-                </div>
-              </div>
-            </CardContent>
-            <CardFooter>
-              <Button className="w-full" variant="outline">
-                <Eye className="mr-2 h-4 w-4" /> View
-              </Button>
-            </CardFooter>
-          </Card>
-          <Card key="blog">
-            <CardHeader>
-              <Image
-                src={'/assets/preview.png'}
-                alt="banner image"
-                height={120}
-                width={120}
-                className="rounded-tl-2xl rounded-tr-2xl border-2 border-muted"
-              />
-            </CardHeader>
-            <CardContent className="flex flex-col justify-center gap-4">
-              <CardTitle>This is the blog title</CardTitle>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus eaque quas hic eius mollitia incidunt voluptatem officia magnam, perferendis ab voluptate fugit, perspiciatis nobis deserunt? Itaque, sit quod. Voluptate, perspiciatis.</p>
-              <div className='flex flex-wrap gap-3 items-center'>
-                <Avatar className="w-8 h-8">
-                  <AvatarImage alt="user" />
-                  <AvatarFallback className="bg-primary text-sm text-white">
-                    <User2 size={14} />
-                  </AvatarFallback>
-                </Avatar>
-                <div>
-                  <p>Nikeshh Vijayabaskaran</p>
-                  <span className="text-xs">Author</span>
-                </div>
-              </div>
-            </CardContent>
-            <CardFooter>
-              <Button className="w-full" variant="outline">
-                <Eye className="mr-2 h-4 w-4" /> View
-              </Button>
-            </CardFooter>
-          </Card>
-        </div>
-        <div className='mt-4 md:mt-6 w-full text-center'>
-          <Link href={'#'} className="hover:text-blue-600 underline">learn more.</Link>
-        </div>
-      </section>
+      {blogs && blogs.length > 0 && (
+        <section className="container pt-12 md:pt-16 relative flex flex-col items-center justify-center">
+          <p>BLOG</p>
+          <div className="bg-gradient-to-r from-primary to-secondary-foreground text-transparent bg-clip-text relative">
+            <h2 className="font-bold text-xl md:text-[40px] md:leading-none text-center">
+              TO LEARN
+            </h2>
+          </div>
+          <div className='grid grid-cols-1 md:grid-cols-3 mt-4 gap-4'>
+            {blogs.map((blog) => {
+              return (
+                <Card key={blog.id}>
+                  <CardHeader>
+                    <Image
+                      src={blog.imageUrl}
+                      alt="blog image"
+                      height={120}
+                      width={120}
+                      className="rounded-tl-2xl rounded-tr-2xl border-2 border-muted"
+                    />
+                  </CardHeader>
+                  <CardContent className="flex flex-col justify-center gap-4">
+                    <CardTitle>{blog.title}</CardTitle>
+                    <p>{blog.subtitle}</p>
+                    <div className='flex flex-wrap gap-3 items-center'>
+                      <Avatar className="w-8 h-8">
+                        <AvatarImage alt="user" />
+                        <AvatarFallback className="bg-primary text-sm text-white">
+                          <User2 size={14} />
+                        </AvatarFallback>
+                      </Avatar>
+                      <div>
+                        <p>Nikeshh Vijayabaskaran</p>
+                        <span className="text-xs">Author</span>
+                      </div>
+                    </div>
+                  </CardContent>
+                  <CardFooter>
+                    <Button className="w-full" variant="outline">
+                      <Eye className="mr-2 h-4 w-4" /> View
+                    </Button>
+                  </CardFooter>
+                </Card>
+              )
+            })}
+          </div>
+          <div className='mt-4 md:mt-6 w-full text-center'>
+            <Link href={'#'} className="hover:text-blue-600 underline">learn more.</Link>
+          </div>
+        </section>
+      )}
       <section className="container pt-12 pb-12 md:pt-16 md:pb-16 relative flex gap-4 flex-wrap md:flex-nowrap items-center justify-center">
         <div className="flex flex-col justify-center items-center gap-12">
           <div className="hidden md:flex justify-center items-center relative">

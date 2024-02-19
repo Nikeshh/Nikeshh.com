@@ -6,7 +6,7 @@ import ModalProvider from "@/providers/modal-provider";
 import { dark } from "@clerk/themes";
 import { ClerkProvider } from "@clerk/nextjs";
 import { Toaster } from "@/components/ui/sonner"
-import { getTestimonials, getSkills, getServices, getProjects } from "@/lib/queries";
+import { getTestimonials, getSkills, getServices, getProjects, getBlogs } from "@/lib/queries";
 import Home from "./page";
 
 const font = DM_Sans({ subsets: ["latin"] });
@@ -25,6 +25,7 @@ export default async function RootLayout({
   const skills = await getSkills();
   const services = await getServices();
   const projects = await getProjects();
+  const blogs = await getBlogs();
 
   return (
     <html lang="en" suppressHydrationWarning={true}>
@@ -43,6 +44,7 @@ export default async function RootLayout({
                   skills={skills}
                   services={services}
                   projects={projects}
+                  blogs={blogs.slice(0, 3)}
                 />
               </main>
             </ClerkProvider>

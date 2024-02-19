@@ -44,7 +44,7 @@ export const getSkills = async () => {
 }
 
 export const getServices = async () => {
-  const response = await db.skills.findMany({
+  const response = await db.services.findMany({
     select: {
       id: true,
       content: true,
@@ -55,11 +55,23 @@ export const getServices = async () => {
 }
 
 export const getProjects = async () => {
-  const response = await db.skills.findMany({
+  const response = await db.projects.findMany({
     select: {
       id: true,
       content: true,
       name: true,
+    },
+  });
+  return response
+}
+
+export const getBlogs = async () => {
+  const response = await db.blogs.findMany({
+    select: {
+      id: true,
+      title: true,
+      subtitle: true,
+      imageUrl: true,
     },
   });
   return response
