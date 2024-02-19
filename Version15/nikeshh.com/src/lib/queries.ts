@@ -12,21 +12,53 @@ export const getAuthUserDetails = async () => {
     const userData = await db.user.findUnique({
       where: {
         email: user.emailAddresses[0].emailAddress,
-      },
-      include: {
-        Agency: {
-          include: {
-            SidebarOption: true,
-            SubAccount: {
-              include: {
-                SidebarOption: true,
-              },
-            },
-          },
-        },
-        Permissions: true,
-      },
+      }
     })
   
     return userData
+}
+
+export const getTestimonials = async () => {
+  const response = await db.testimonials.findMany({
+    select: {
+      id: true,
+      content: true,
+      name: true,
+      designation: true
+    },
+  });
+  return response
+}
+
+export const getSkills = async () => {
+  const response = await db.skills.findMany({
+    select: {
+      id: true,
+      content: true,
+      name: true,
+    },
+  });
+  return response
+}
+
+export const getServices = async () => {
+  const response = await db.skills.findMany({
+    select: {
+      id: true,
+      content: true,
+      name: true,
+    },
+  });
+  return response
+}
+
+export const getProjects = async () => {
+  const response = await db.skills.findMany({
+    select: {
+      id: true,
+      content: true,
+      name: true,
+    },
+  });
+  return response
 }

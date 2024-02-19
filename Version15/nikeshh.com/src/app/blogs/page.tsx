@@ -85,7 +85,7 @@ const Page = () => {
                                                                 </div>
                                                             </div>
                                                             <div className="flex flex-col gap-2">
-                                                                <p className="text-sm text-slate-600">72 commits</p>
+                                                                <p className="text-sm text-slate-600">72 articles</p>
                                                                 <p className="text-sm text-slate-600">last 30 days</p>
                                                             </div>
                                                         </div>
@@ -139,7 +139,7 @@ const Page = () => {
                                                 </div>
                                             </div>
                                             <div className="flex flex-col gap-2">
-                                                <p className="text-sm text-slate-600">72 commits</p>
+                                                <p className="text-sm text-slate-600">72 articles</p>
                                                 <p className="text-sm text-slate-600">last 30 days</p>
                                             </div>
                                         </div>
@@ -187,7 +187,7 @@ const Page = () => {
                                                 </div>
                                             </div>
                                             <div className="flex flex-col gap-2">
-                                                <p className="text-sm text-slate-600">72 commits</p>
+                                                <p className="text-sm text-slate-600">72 articles</p>
                                                 <p className="text-sm text-slate-600">last 30 days</p>
                                             </div>
                                         </div>
@@ -252,7 +252,7 @@ const Page = () => {
                                                                 </div>
                                                             </div>
                                                             <div className="flex flex-col gap-2">
-                                                                <p className="text-sm text-slate-600">72 commits</p>
+                                                                <p className="text-sm text-slate-600">72 articles</p>
                                                                 <p className="text-sm text-slate-600">last 30 days</p>
                                                             </div>
                                                         </div>

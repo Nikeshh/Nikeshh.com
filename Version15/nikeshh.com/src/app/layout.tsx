@@ -6,6 +6,8 @@ import ModalProvider from "@/providers/modal-provider";
 import { dark } from "@clerk/themes";
 import { ClerkProvider } from "@clerk/nextjs";
 import { Toaster } from "@/components/ui/sonner"
+import { getTestimonials, getSkills, getServices, getProjects } from "@/lib/queries";
+import Home from "./page";
 
 const font = DM_Sans({ subsets: ["latin"] });
 
@@ -14,11 +16,16 @@ export const metadata: Metadata = {
   description: "Senior Full Stack Developer and Digital Marketer",
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const testimonials = await getTestimonials();
+  const skills = await getSkills();
+  const services = await getServices();
+  const projects = await getProjects();
+
   return (
     <html lang="en" suppressHydrationWarning={true}>
       <body className={font.className} suppressHydrationWarning={true}>
@@ -31,7 +38,12 @@ export default function RootLayout({
           <ModalProvider>
             <ClerkProvider appearance={{ baseTheme: dark }}>
               <main className="w-full">
-                {children}
+                <Home
+                  testimonials={testimonials}
+                  skills={skills}
+                  services={services}
+                  projects={projects}
+                />
               </main>
             </ClerkProvider>
           </ModalProvider>
