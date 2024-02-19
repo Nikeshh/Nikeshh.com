@@ -48,14 +48,14 @@ const Page = () => {
                                             <CardContent className="flex flex-wrap md:flex-nowrap gap-6 justify-center p-6">
                                                 <div className='relative'>
                                                     <Badge variant="default" className='absolute top-2 right-2'>
-                                                        <a
+                                                        <Link
                                                             className="group flex justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
                                                             href="#"
                                                         >
                                                             <span className='text-white transition'>
                                                                 SAAS
                                                             </span>
-                                                        </a>
+                                                        </Link>
                                                     </Badge>
                                                     <p className="underline absolute bottom-2 right-2 text-slate-600 hover:text-primary">Featured</p>
                                                     <Image
@@ -215,14 +215,14 @@ const Page = () => {
                                             <CardContent className="flex flex-wrap md:flex-nowrap gap-6 justify-center p-6">
                                                 <div className='relative'>
                                                     <Badge variant="default" className='absolute top-2 right-2'>
-                                                        <a
+                                                        <Link
                                                             className="group flex justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
                                                             href="#"
                                                         >
                                                             <span className='text-white transition'>
                                                                 SAAS
                                                             </span>
-                                                        </a>
+                                                        </Link>
                                                     </Badge>
                                                     <p className="underline absolute bottom-2 right-2 text-slate-600 hover:text-primary">Featured</p>
                                                     <Image

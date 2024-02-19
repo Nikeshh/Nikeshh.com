@@ -9,6 +9,7 @@ import { NewsletterUserFormSchema } from '@/lib/types'
 import Image from 'next/image'
 import React from 'react'
 import { z } from 'zod'
+import Link from 'next/link';
 
 const Page = () => {
     const onContactFormSubmit = async (
@@ -41,7 +42,7 @@ const Page = () => {
                             <div className="bottom-0 top-[50%] bg-gradient-to-t dark:from-background left-0 right-0 absolute z-10"></div>
                         </div>
                         <Badge variant="secondary">
-                            <a
+                            <Link
                                 className="group flex justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
                                 href="#"
                             >
@@ -54,7 +55,7 @@ const Page = () => {
                                 ></span>
                                 <span className="relative inline-flex size-2 rounded-full bg-teal-500"></span>
                             </span>
-                            </a>
+                            </Link>
                         </Badge>
                     </div>
                     <ContactForm

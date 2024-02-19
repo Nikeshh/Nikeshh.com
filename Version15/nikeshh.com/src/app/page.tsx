@@ -62,12 +62,14 @@ type Props = {
   services: {
     id: string;
     name: string;
-    content: string;
+    category: string;
+    subcategory: string;
   }[];
   projects: {
     id: string;
     name: string;
-    content: string;
+    category: string;
+    subtitle: string;
   }[];
   blogs: {
     id: string;
@@ -96,6 +98,17 @@ export default function Home({ testimonials, skills, services, projects, blogs }
   const updateSelectedSkill = (skill: string) => {
     setSelectedSkill(skill);
     setSelectedSkills(skills.filter(item => item.category == skill));
+  }
+
+  // Services
+
+  // Projects
+  const projectTags = projects.map(item => item.category).filter((value, index, self) => self.indexOf(value) === index);
+  const [selectedProject, setSelectedProject] = useState(projectTags[0]);
+  const [selectedProjects, setSelectedProjects] = useState(projects.filter(item => item.category == projectTags[0]));
+  const updateSelectedProject = (project: string) => {
+    setSelectedProject(project);
+    setSelectedProjects(projects.filter(item => item.category == project));
   }
 
   useEffect(() => {
@@ -312,14 +325,14 @@ export default function Home({ testimonials, skills, services, projects, blogs }
           {['SAAS', 'Full Stack', 'UI/UX', 'Android', 'iOS'].map((a) => {
             return (
               <Badge variant={selectedSkill == a ? 'default' : 'outline'} key={a}>
-                <a
-                    className="group flex justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
-                    href="#"
+                <Link
+                  className="group flex justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
+                  href="#"
                 >
-                    <span className={selectedSkill == a ? 'text-white transition' : 'text-gray-700 transition group-hover:text-gray-700/75'}>
-                        {a}
-                    </span>
-                </a>
+                  <span className={selectedSkill == a ? 'text-white transition' : 'text-gray-700 transition group-hover:text-gray-700/75'}>
+                      {a}
+                  </span>
+                </Link>
             </Badge>
             );
           })}
@@ -358,50 +371,53 @@ export default function Home({ testimonials, skills, services, projects, blogs }
          <Link href={'#'} className="hover:text-blue-600 underline">view more.</Link>
         </div>
       </section>
-      <section className="container pt-12 md:pt-44 relative flex flex-col items-center justify-center">
-        <p>BUILT FOR IMPACT</p>
-        <div className="bg-gradient-to-r from-primary to-secondary-foreground text-transparent bg-clip-text relative">
-          <h2 className="font-bold text-xl md:text-[40px] md:leading-none text-center">
-            PROJECTS
-          </h2>
-        </div>
-        <div className="mt-6 flex flex-wrap gap-2 justify-center">
-          {['SAAS', 'Full Stack', 'UI/UX', 'Android', 'iOS'].map((a) => {
-            return (
-              <Badge variant={selectedSkill == a ? 'default' : 'outline'} key={a}>
-                <a
-                    className="group flex justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
-                    href="#"
-                >
-                    <span className={selectedSkill == a ? 'text-white transition' : 'text-gray-700 transition group-hover:text-gray-700/75'}>
+      {projects && projects.length > 0 && projectTags && (
+        <section className="container pt-12 md:pt-44 relative flex flex-col items-center justify-center">
+          <p>BUILT FOR IMPACT</p>
+          <div className="bg-gradient-to-r from-primary to-secondary-foreground text-transparent bg-clip-text relative">
+            <h2 className="font-bold text-xl md:text-[40px] md:leading-none text-center">
+              PROJECTS
+            </h2>
+          </div>
+          <div className="mt-6 flex flex-wrap gap-2 justify-center">
+            {projectTags.map((a) => {
+              return (
+                <Badge variant={selectedProject == a ? 'default' : 'outline'} key={a}>
+                  <Link
+                      className="group flex justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end uppercase"
+                      href="#"
+                      onClick={() => updateSelectedProject(a)}
+                  >
+                    <span className={selectedProject == a ? 'text-white transition' : 'text-gray-700 transition group-hover:text-gray-700/75'}>
                         {a}
                     </span>
-                </a>
-            </Badge>
-            );
-          })}
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 pt-9">
-          {['SAAS', 'Full Stack', 'UI/UX', 'Android', 'iOS'].map((a) => {
-            return (
-              <Card key="service">
-                <CardHeader>
-                  <CardTitle>Service</CardTitle>
-                </CardHeader>
-                <CardContent className="grid gap-4">
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit quam, sapiente necessitatibus magnam ad totam esse. Officia natus aperiam itaque vitae quia, eligendi illo sed dolorum impedit quaerat, sapiente atque!</p>
-                </CardContent>
-                <CardFooter>
-                  <Link href={'#'} className="hover:text-blue-600 underline">explore more.</Link>
-                </CardFooter>
-              </Card>
-            );
-          })}
-        </div>
-        <div className='mt-4 md:mt-6 w-full text-center'>
-         <Link href={'#'} className="hover:text-blue-600 underline">view more.</Link>
-        </div>
-      </section>
+                  </Link>
+              </Badge>
+              );
+            })}
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 pt-9">
+            {selectedProjects.map((a) => {
+              return (
+                <Card key={a.id}>
+                  <CardHeader>
+                    <CardTitle>{a.name}</CardTitle>
+                  </CardHeader>
+                  <CardContent className="grid gap-4">
+                    <p>{a.subtitle}</p>
+                  </CardContent>
+                  <CardFooter>
+                    <Link href={'#'} className="hover:text-blue-600 underline">explore more.</Link>
+                  </CardFooter>
+                </Card>
+              );
+            })}
+          </div>
+          <div className='mt-4 md:mt-6 w-full text-center'>
+            <Link href={'#'} className="hover:text-blue-600 underline">view more.</Link>
+          </div>
+        </section>
+      )}
       {testimonials && testimonials[testimonialIndex] && (
         <section className="container pt-12 md:pt-44 relative flex flex-col items-center justify-center">
           <p>TESTIMONIALS</p>
@@ -444,14 +460,14 @@ export default function Home({ testimonials, skills, services, projects, blogs }
         </div>
         <div className='flex justify-center mt-2'>
           <Badge variant="outline" key="Service">
-            <a
-                className="group flex justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
-                href="#"
+            <Link
+              className="group flex justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
+              href="#"
             >
-                <span className='text-gray-700 transition group-hover:text-gray-700/75'>
-                  Trust me, I wont spam
-                </span>
-            </a>
+              <span className='text-gray-700 transition group-hover:text-gray-700/75'>
+                Trust me, I wont spam
+              </span>
+            </Link>
           </Badge>
         </div>
         <div className="flex flex-wrap md:flex-nowrap justify-center gap-4 pt-9">
@@ -543,9 +559,9 @@ export default function Home({ testimonials, skills, services, projects, blogs }
             <div className="bottom-0 top-[50%] bg-gradient-to-t dark:from-background left-0 right-0 absolute z-10"></div>
           </div>
           <Badge variant="secondary">
-            <a
-                className="group flex justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
-                href="#"
+            <Link
+              className="group flex justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
+              href="#"
             >
               <span className="transition group-hover:text-gray-700/75">
                 Available to work
@@ -556,7 +572,7 @@ export default function Home({ testimonials, skills, services, projects, blogs }
                   ></span>
                   <span className="relative inline-flex size-2 rounded-full bg-teal-500"></span>
               </span>
-            </a>
+            </Link>
           </Badge>
         </div>
         <ContactForm

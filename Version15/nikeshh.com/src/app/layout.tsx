@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { ThemeProvider } from "@/providers/theme-provider";
 import { DM_Sans } from "next/font/google";
-import ModalProvider from "@/providers/modal-provider";
 import { dark } from "@clerk/themes";
 import { ClerkProvider } from "@clerk/nextjs";
 import { Toaster } from "@/components/ui/sonner"
@@ -36,19 +35,17 @@ export default async function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <ModalProvider>
-            <ClerkProvider appearance={{ baseTheme: dark }}>
-              <main className="w-full">
-                <Home
-                  testimonials={testimonials}
-                  skills={skills}
-                  services={services}
-                  projects={projects}
-                  blogs={blogs.slice(0, 3)}
-                />
-              </main>
-            </ClerkProvider>
-          </ModalProvider>
+          <ClerkProvider appearance={{ baseTheme: dark }}>
+            <main className="w-full">
+              <Home
+                testimonials={testimonials}
+                skills={skills}
+                services={services}
+                projects={projects}
+                blogs={blogs.slice(0, 3)}
+              />
+            </main>
+          </ClerkProvider>
         </ThemeProvider>
         <Toaster />
       </body>

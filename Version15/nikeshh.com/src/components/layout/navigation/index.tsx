@@ -8,7 +8,7 @@ const Navigation = () => {
             <aside className="flex gap-2 items-center flex-col">
                 <span className="text-xl font-bold"> Nikeshh.</span>
                 <Badge variant="secondary" className="md:hidden">
-                    <a
+                    <Link
                         className="group flex justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
                         href="#"
                     >
@@ -21,7 +21,7 @@ const Navigation = () => {
                             ></span>
                             <span className="relative inline-flex size-2 rounded-full bg-teal-500"></span>
                         </span>
-                    </a>
+                    </Link>
                 </Badge>
             </aside>
             <nav className="hidden md:block absolute left-[50%] top-[50%] transform translate-x-[-50%] translate-y-[-50%]">
@@ -33,7 +33,7 @@ const Navigation = () => {
             </nav>
             <aside className="flex gap-2 items-center">
                 <Badge variant="secondary" className="hidden md:inline-block">
-                    <a
+                    <Link
                         className="group flex justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
                         href="#"
                     >
@@ -46,7 +46,7 @@ const Navigation = () => {
                             ></span>
                             <span className="relative inline-flex size-2 rounded-full bg-teal-500"></span>
                         </span>
-                    </a>
+                    </Link>
                 </Badge>
                 <Link
                     href={'/contact-me'}

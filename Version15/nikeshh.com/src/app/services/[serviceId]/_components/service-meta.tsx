@@ -17,14 +17,14 @@ export default function ServiceMeta() {
                 {['Open source', 'Full Stack Development'].map((a) => {
                   return (
                     <Badge variant='default' key={a}>
-                      <a
+                      <Link
                         className="group flex justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
                         href="#"
                       >
                         <span className='text-white transition'>
                           {a}
                         </span>
-                      </a>
+                      </Link>
                     </Badge>
                   );
                 })}

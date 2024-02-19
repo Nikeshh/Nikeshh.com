@@ -3,6 +3,7 @@
 import { Badge } from "@/components/ui/badge";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { MenuIcon } from "lucide-react";
+import Link from "next/link";
 import { useState } from "react";
 
 interface SidebarProps extends React.HTMLAttributes<HTMLDivElement> {
@@ -39,14 +40,14 @@ export function ProjectDetailMobile({ right }: SidebarProps) {
                   {['SAAS', 'Full Stack', 'UI/UX', 'Android', 'iOS'].map((a) => {
                     return (
                       <Badge variant='default' key={a}>
-                        <a
+                        <Link
                           className="group flex justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
                           href="#"
                         >
                           <span className='text-white transition'>
                             {a}
                           </span>
-                        </a>
+                        </Link>
                     </Badge>
                     );
                   })}

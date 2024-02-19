@@ -7,6 +7,7 @@ import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import Image from 'next/image';
 import React, { useState } from 'react'
+import Link from 'next/link';
 
 const Page = () => {
 
@@ -28,14 +29,14 @@ const Page = () => {
                     {['SAAS', 'Full Stack', 'UI/UX', 'Android', 'iOS'].map((a) => {
                         return (
                         <Badge variant={selectedSkill == a ? 'default' : 'outline'} key={a}>
-                            <a
+                            <Link
                                 className="group flex justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
                                 href="#"
                             >
                                 <span className={selectedSkill == a ? 'text-white transition' : 'text-gray-700 transition group-hover:text-gray-700/75'}>
                                     {a}
                                 </span>
-                            </a>
+                            </Link>
                         </Badge>
                         );
                     })}
@@ -46,14 +47,14 @@ const Page = () => {
                             <div className='relative'>
                                 <p className='absolute text-9xl top-[-100px] left-[20%] font-bold z-[-10]'>#0{index+1}</p>
                                 <Badge variant="default" className='absolute top-2 right-2'>
-                                    <a
+                                    <Link
                                         className="group flex justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
                                         href="#"
                                     >
                                         <span className='text-white transition'>
                                             {a}
                                         </span>
-                                    </a>
+                                    </Link>
                                 </Badge>
                                 <p className="underline absolute bottom-2 right-2 text-slate-600 hover:text-primary">Featured</p>
                                 <Image

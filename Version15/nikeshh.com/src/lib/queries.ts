@@ -51,8 +51,12 @@ export const getServices = async () => {
   const response = await db.services.findMany({
     select: {
       id: true,
-      content: true,
       name: true,
+      category: true,
+      subcategory: true
+    },
+    orderBy: {
+      category: 'asc',
     },
   });
   return response
@@ -62,8 +66,12 @@ export const getProjects = async () => {
   const response = await db.projects.findMany({
     select: {
       id: true,
-      content: true,
       name: true,
+      subtitle: true,
+      category: true
+    },
+    orderBy: {
+      category: 'asc',
     },
   });
   return response

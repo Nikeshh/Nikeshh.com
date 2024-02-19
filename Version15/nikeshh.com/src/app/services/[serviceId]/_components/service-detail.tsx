@@ -1,5 +1,6 @@
 import { Badge } from "@/components/ui/badge";
 import { cn } from "@/lib/utils";
+import Link from "next/link";
 
 export default function ServiceDetail() {
   return (
@@ -27,14 +28,14 @@ export default function ServiceDetail() {
               {['SAAS', 'Full Stack', 'UI/UX', 'Android', 'iOS'].map((a) => {
                 return (
                   <Badge variant='default' key={a}>
-                    <a
+                    <Link
                       className="group flex justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
                       href="#"
                     >
                       <span className='text-white transition'>
                         {a}
                       </span>
-                    </a>
+                    </Link>
                 </Badge>
                 );
               })}
