@@ -50,6 +50,8 @@ type Props = {
     name: string;
     content: string;
     designation: string;
+    avatarUrl: string;
+    companyLogoUrl: string
   }[];
   skills: {
     id: string;
@@ -381,37 +383,39 @@ export default function Home({ testimonials, skills, services, projects } : Prop
          <Link href={'#'} className="hover:text-blue-600 underline">view more.</Link>
         </div>
       </section>
-      <section className="container pt-12 md:pt-44 relative flex flex-col items-center justify-center">
-        <p>TESTIMONIALS</p>
-        <div className="bg-gradient-to-r from-primary to-secondary-foreground text-transparent bg-clip-text relative">
-          <h2 className="font-bold text-xl md:text-[40px] md:leading-none text-center">
-            SOME TOOK THE SHOT
-          </h2>
-        </div>
-        <div className="relative isolate overflow-hidden px-6 py-24 sm:py-32 lg:px-8 w-full">
-          <div className="mx-auto max-w-2xl lg:max-w-4xl">
-            <img className="mx-auto h-12" src="https://tailwindui.com/img/logos/workcation-logo-indigo-600.svg" alt="" />
-            <figure className="mt-10">
-              <blockquote className="text-center text-xl font-semibold leading-8 sm:text-2xl sm:leading-9">
-                <p>“{testimonials[testimonialIndex].content}”</p>
-              </blockquote>
-              <figcaption className="mt-10">
-                <img className="mx-auto h-10 w-10 rounded-full" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" />
-                <div className="mt-4 flex items-center justify-center space-x-3 text-base">
-                  <div className="font-semibold">{testimonials[testimonialIndex].name}</div>
-                  <svg viewBox="0 0 2 2" width="3" height="3" aria-hidden="true" className="fill-gray-900">
-                    <circle cx="1" cy="1" r="1" />
-                  </svg>
-                  <div className="text-gray-600">{testimonials[testimonialIndex].designation}</div>
-                </div>
-              </figcaption>
-            </figure>
+      {testimonials && testimonials[testimonialIndex] && (
+        <section className="container pt-12 md:pt-44 relative flex flex-col items-center justify-center">
+          <p>TESTIMONIALS</p>
+          <div className="bg-gradient-to-r from-primary to-secondary-foreground text-transparent bg-clip-text relative">
+            <h2 className="font-bold text-xl md:text-[40px] md:leading-none text-center">
+              SOME TOOK THE SHOT
+            </h2>
           </div>
-          <div className='mt-4 md:mt-6 w-full text-center'>
-            <Link onClick={switchTestimonialIndex} className="hover:text-blue-600 underline" href={''}>view next.</Link>
+          <div className="relative isolate overflow-hidden px-6 py-24 sm:py-32 lg:px-8 w-full">
+            <div className="mx-auto max-w-2xl lg:max-w-4xl">
+              <img className="mx-auto h-12" src={testimonials[testimonialIndex].companyLogoUrl} alt="Company logo" />
+              <figure className="mt-10">
+                <blockquote className="text-center text-xl font-semibold leading-8 sm:text-2xl sm:leading-9">
+                  <p>“{testimonials[testimonialIndex].content}”</p>
+                </blockquote>
+                <figcaption className="mt-10">
+                  <img className="mx-auto h-10 w-10 rounded-full" src={testimonials[testimonialIndex].avatarUrl} alt="User Logo" />
+                  <div className="mt-4 flex items-center justify-center space-x-3 text-base">
+                    <div className="font-semibold">{testimonials[testimonialIndex].name}</div>
+                    <svg viewBox="0 0 2 2" width="3" height="3" aria-hidden="true" className="fill-gray-900">
+                      <circle cx="1" cy="1" r="1" />
+                    </svg>
+                    <div className="text-gray-600">{testimonials[testimonialIndex].designation}</div>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+            <div className='mt-4 md:mt-6 w-full text-center'>
+              <Link onClick={switchTestimonialIndex} className="hover:text-blue-600 underline" href={''}>view next.</Link>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      )}
       <section className="container pt-12 md:pt-16 relative flex flex-col items-center justify-center">
         <p>NEWSLETTER</p>
         <div className="bg-gradient-to-r from-primary to-secondary-foreground text-transparent bg-clip-text relative">

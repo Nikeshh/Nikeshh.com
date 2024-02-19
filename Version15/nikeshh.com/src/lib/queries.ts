@@ -24,7 +24,9 @@ export const getTestimonials = async () => {
       id: true,
       content: true,
       name: true,
-      designation: true
+      designation: true,
+      avatarUrl: true,
+      companyLogoUrl: true
     },
   });
   return response
