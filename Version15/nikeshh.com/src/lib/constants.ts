@@ -1,4 +1,3 @@
-
 export type User = {
   id: number;
   name: string;
@@ -7,6 +6,7 @@ export type User = {
   verified: boolean;
   status: string;
 };
+
 export const users: User[] = [
   {
     id: 1,
