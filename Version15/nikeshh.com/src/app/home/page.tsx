@@ -111,12 +111,14 @@ export default function Home({ testimonials, skills, services, projects, blogs }
   const [selectedService, setSelectedService] = useState(serviceTags[0]);
   const groupedServices = groupByKey(services.filter(item => item.category == serviceTags[0]), 'subcategory');
   const [selectedServices, setSelectedServices] = useState(groupedServices);
+  const [serviceCommand, setServiceCommand] = useState((Object.values(groupedServices)[0] as Services[])[0] as Services);
   const updateSelectedService = (service: string) => {
     setSelectedService(service);
-    const s = services.filter(item => item.category == serviceTags[0]);
-    setSelectedServices(groupByKey(s, 'subcategory'));
+    const s = services.filter(item => item.category == service);
+    const groupedServices = groupByKey(s, 'subcategory');
+    setSelectedServices(groupedServices);
+    setServiceCommand((Object.values(groupedServices)[0] as Services[])[0] as Services);
   }
-  const [serviceCommand, setServiceCommand] = useState(Object.values(groupedServices)[0] as Services);
 
   // Projects
   const projectTags = projects.map(item => item.category).filter((value, index, self) => self.indexOf(value) === index);
@@ -424,7 +426,7 @@ export default function Home({ testimonials, skills, services, projects, blogs }
                       <CommandGroup heading={service}>
                         {subServices.map((subService: Services) => {
                           return (
-                            <CommandItem key={subService.id} onClick={() => setServiceCommand(subService)}>{subService.name}</CommandItem>
+                            <CommandItem key={subService.id} onSelect={() => setServiceCommand(subService)} className="cursor-pointer">{subService.name}</CommandItem>
                           );
                         })}
                       </CommandGroup>
@@ -434,7 +436,7 @@ export default function Home({ testimonials, skills, services, projects, blogs }
                 })}
               </CommandList>
             </Command>
-            <Card className="max-w-[450px]">
+            <Card className="min-w-[200px] max-w-[450px]">
               <CardHeader>
                 <CardTitle>{serviceCommand.name}</CardTitle>
               </CardHeader>
@@ -602,13 +604,13 @@ export default function Home({ testimonials, skills, services, projects, blogs }
             <CommandList>
               <CommandEmpty>No results found.</CommandEmpty>
               <CommandGroup heading="Technology">
-                <CommandItem onSelect={(value) => setNewsletterCommand(value)}>SAAS</CommandItem>
-                <CommandItem onSelect={(value) => setNewsletterCommand(value)}>Web Design and Development</CommandItem>
+                <CommandItem onSelect={(value) => setNewsletterCommand(value)} className='cursor-pointer'>SAAS</CommandItem>
+                <CommandItem onSelect={(value) => setNewsletterCommand(value)} className='cursor-pointer'>Web Design and Development</CommandItem>
               </CommandGroup>
               <CommandSeparator />
               <CommandGroup heading="Business">
-                <CommandItem onSelect={(value) => setNewsletterCommand(value)}>Marketing</CommandItem>
-                <CommandItem onSelect={(value) => setNewsletterCommand(value)}>Lead Generation</CommandItem>
+                <CommandItem onSelect={(value) => setNewsletterCommand(value)} className='cursor-pointer'>Marketing</CommandItem>
+                <CommandItem onSelect={(value) => setNewsletterCommand(value)} className='cursor-pointer'>Lead Generation</CommandItem>
               </CommandGroup>
             </CommandList>
           </Command>
