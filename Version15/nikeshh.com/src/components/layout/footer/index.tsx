@@ -1,8 +1,10 @@
+"use client"
+
 import { upsertNewsletter } from "@/lib/queries";
 import { NewsletterUserFormSchema } from "@/lib/types";
 import { zodResolver } from "@hookform/resolvers/zod";
 import Link from "next/link";
-import { createRef, useEffect, useState } from "react";
+import { createRef } from "react";
 import { useForm } from "react-hook-form";
 import { toast } from "sonner";
 import { z } from "zod";

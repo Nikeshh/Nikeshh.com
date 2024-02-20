@@ -1,9 +1,33 @@
+"use client"
+
 import CustomModal from '@/components/global/custom-modal';
 import { useModal } from '@/providers/modal-provider'
 import Link from 'next/link';
+import { useEffect } from 'react';
+import { toast } from 'sonner';
 
 const NotificationC = () => {
     const { setOpen } = useModal();
+
+    useEffect(() => {
+        // Toast Message
+        toast("Website builder for agencies", {
+            description: "Monday, February 19, 2023 at 9:00 AM",
+            action: {
+            label: "View",
+            onClick: () => {
+                setOpen(
+                    <CustomModal
+                        title="⚠️ Under Construction"
+                        subheading="Should be available in 2-3 days"
+                    >
+                        <p>You can track the progress or contribute @<Link href="https://github.com/Nikeshh/Nikeshh.com/tree/main/Version15/nikeshh.com" className="underline cursor-pointer">Github</Link></p>
+                    </CustomModal>
+                )
+            },
+            },
+        })
+    }, []);
 
     return (
         <div className="bg-indigo-900 text-center py-4 px-6 lg:px-4 cursor-pointer">
