@@ -111,7 +111,7 @@ export default function Home({ testimonials, skills, services, projects, blogs }
   const [selectedService, setSelectedService] = useState(serviceTags[0]);
   const groupedServices = groupByKey(services.filter(item => item.category == serviceTags[0]), 'subcategory');
   const [selectedServices, setSelectedServices] = useState(groupedServices);
-  const updatedSelectedService = (service: string) => {
+  const updateSelectedService = (service: string) => {
     setSelectedService(service);
     const s = services.filter(item => item.category == serviceTags[0]);
     setSelectedServices(groupByKey(s, 'subcategory'));
@@ -197,7 +197,7 @@ export default function Home({ testimonials, skills, services, projects, blogs }
     <>
       <NotificationC />
       <Navigation />
-      <section className="container pt-12 md:pt-44 relative flex items-center md:justify-center flex-wrap md:flex-nowrap gap-5">
+      <section id="banner" className="container pt-12 md:pt-44 relative flex items-center md:justify-center flex-wrap md:flex-nowrap gap-5">
         <div className="flex justify-center relative flex-col gap-2 md:gap-4">
           <div className="bg-gradient-to-r from-primary to-secondary-foreground text-transparent bg-clip-text relative">
             <h1 className="font-bold text-2xl md:text-[50px] md:leading-none">
@@ -310,15 +310,14 @@ export default function Home({ testimonials, skills, services, projects, blogs }
             {skillTags.map((a) => {
               return (
                 <Badge variant={selectedSkill == a ? 'default' : 'outline'} key={a}>
-                  <Link
-                      className="group flex justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end uppercase"
-                      href="#"
-                      onClick={() => updateSelectedSkill(a)}
+                  <div
+                    className="group flex justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end uppercase cursor-pointer"
+                    onClick={() => updateSelectedSkill(a)}
                   >
-                      <span className={selectedSkill == a ? 'text-white transition' : 'text-gray-700 transition group-hover:text-gray-700/75'}>
-                          {a}
-                      </span>
-                  </Link>
+                    <span className={selectedSkill == a ? 'text-white transition' : 'text-gray-700 transition group-hover:text-gray-700/75'}>
+                      {a}
+                    </span>
+                  </div>
               </Badge>
               );
             })}
@@ -355,7 +354,16 @@ export default function Home({ testimonials, skills, services, projects, blogs }
                     </div>
                   </CardContent>
                   <CardFooter>
-                    <Button className="w-full" variant="outline">
+                    <Button className="w-full" variant="outline" onClick={() => {
+                      setOpen(
+                        <CustomModal
+                            title="⚠️ Under Construction"
+                            subheading="Should be available in 2-3 days"
+                        >
+                            <p>You can track the progress or contribute @<Link href="https://github.com/Nikeshh/Nikeshh.com/tree/main/Version15/nikeshh.com" className="underline">Github</Link></p>
+                        </CustomModal>
+                      )
+                    }}>
                       <Eye className="mr-2 h-4 w-4" /> Explore
                     </Button>
                   </CardFooter>
@@ -364,12 +372,21 @@ export default function Home({ testimonials, skills, services, projects, blogs }
             })}
           </div>
           <div className='mt-4 md:mt-6 w-full text-center'>
-            <Link href={'#'} className="hover:text-blue-600 underline">explore more.</Link>
+            <Link href={'#'} className="hover:text-blue-600 underline" onClick={() => {
+              setOpen(
+                <CustomModal
+                    title="⚠️ Under Construction"
+                    subheading="Should be available in 2-3 days"
+                >
+                    <p>You can track the progress or contribute @<Link href="https://github.com/Nikeshh/Nikeshh.com/tree/main/Version15/nikeshh.com" className="underline">Github</Link></p>
+                </CustomModal>
+              )
+            }}>explore more.</Link>
           </div>
         </section>
       )}
       {services && services.length > 0 && serviceTags && (
-        <section className="container pt-12 md:pt-44 relative flex flex-col items-center justify-center">
+        <section id="services" className="container pt-12 md:pt-44 relative flex flex-col items-center justify-center">
           <p>BUILT FOR SCALING & VALUE</p>
           <div className="bg-gradient-to-r from-primary to-secondary-foreground text-transparent bg-clip-text relative">
             <h2 className="font-bold text-xl md:text-[40px] md:leading-none text-center">
@@ -380,14 +397,14 @@ export default function Home({ testimonials, skills, services, projects, blogs }
             {serviceTags.map((a) => {
               return (
                 <Badge variant={selectedService == a ? 'default' : 'outline'} key={a}>
-                  <Link
-                    className="group flex justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
-                    href="#"
+                  <div
+                    className="group flex justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end cursor-pointer"
+                    onClick={() => updateSelectedService(a)}
                   >
                     <span className={selectedService == a ? 'text-white transition' : 'text-gray-700 transition group-hover:text-gray-700/75'}>
-                        {a}
+                      {a}
                     </span>
-                  </Link>
+                  </div>
               </Badge>
               );
             })}
@@ -422,12 +439,30 @@ export default function Home({ testimonials, skills, services, projects, blogs }
                 <p>{serviceCommand.subtitle}</p>
               </CardContent>
               <CardFooter>
-                <Link href={'#'} className="hover:text-blue-600 underline">explore more.</Link>
+                <Link href={'#'} className="hover:text-blue-600 underline" onClick={() => {
+                  setOpen(
+                    <CustomModal
+                        title="⚠️ Under Construction"
+                        subheading="Should be available in 2-3 days"
+                    >
+                        <p>You can track the progress or contribute @<Link href="https://github.com/Nikeshh/Nikeshh.com/tree/main/Version15/nikeshh.com" className="underline">Github</Link></p>
+                    </CustomModal>
+                  )
+                }}>explore more.</Link>
               </CardFooter>
             </Card>
           </div>
           <div className='mt-4 md:mt-6 w-full text-center'>
-            <Link href={'#'} className="hover:text-blue-600 underline">view more.</Link>
+            <Link href={'#'} className="hover:text-blue-600 underline" onClick={() => {
+              setOpen(
+                <CustomModal
+                    title="⚠️ Under Construction"
+                    subheading="Should be available in 2-3 days"
+                >
+                    <p>You can track the progress or contribute @<Link href="https://github.com/Nikeshh/Nikeshh.com/tree/main/Version15/nikeshh.com" className="underline">Github</Link></p>
+                </CustomModal>
+              )
+            }}>view more.</Link>
           </div>
         </section>
       )}
@@ -443,15 +478,14 @@ export default function Home({ testimonials, skills, services, projects, blogs }
             {projectTags.map((a) => {
               return (
                 <Badge variant={selectedProject == a ? 'default' : 'outline'} key={a}>
-                  <Link
-                      className="group flex justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end uppercase"
-                      href="#"
-                      onClick={() => updateSelectedProject(a)}
+                  <div
+                    className="group flex justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end uppercase cursor-pointer"
+                    onClick={() => updateSelectedProject(a)}
                   >
                     <span className={selectedProject == a ? 'text-white transition' : 'text-gray-700 transition group-hover:text-gray-700/75'}>
-                        {a}
+                      {a}
                     </span>
-                  </Link>
+                  </div>
               </Badge>
               );
             })}
@@ -467,19 +501,37 @@ export default function Home({ testimonials, skills, services, projects, blogs }
                     <p>{a.subtitle}</p>
                   </CardContent>
                   <CardFooter>
-                    <Link href={'#'} className="hover:text-blue-600 underline">explore more.</Link>
+                    <Link href={'#'} className="hover:text-blue-600 underline" onClick={() => {
+                      setOpen(
+                        <CustomModal
+                            title="⚠️ Under Construction"
+                            subheading="Should be available in 2-3 days"
+                        >
+                            <p>You can track the progress or contribute @<Link href="https://github.com/Nikeshh/Nikeshh.com/tree/main/Version15/nikeshh.com" className="underline">Github</Link></p>
+                        </CustomModal>
+                      )
+                    }}>explore more.</Link>
                   </CardFooter>
                 </Card>
               );
             })}
           </div>
           <div className='mt-4 md:mt-6 w-full text-center'>
-            <Link href={'#'} className="hover:text-blue-600 underline">view more.</Link>
+            <Link href={'#'} className="hover:text-blue-600 underline" onClick={() => {
+              setOpen(
+                <CustomModal
+                    title="⚠️ Under Construction"
+                    subheading="Should be available in 2-3 days"
+                >
+                    <p>You can track the progress or contribute @<Link href="https://github.com/Nikeshh/Nikeshh.com/tree/main/Version15/nikeshh.com" className="underline">Github</Link></p>
+                </CustomModal>
+              )
+            }}>view more.</Link>
           </div>
         </section>
       )}
       {testimonials && testimonials[testimonialIndex] && (
-        <section className="container pt-12 md:pt-44 relative flex flex-col items-center justify-center">
+        <section id="testimonials" className="container pt-12 md:pt-44 relative flex flex-col items-center justify-center">
           <p>TESTIMONIALS</p>
           <div className="bg-gradient-to-r from-primary to-secondary-foreground text-transparent bg-clip-text relative">
             <h2 className="font-bold text-xl md:text-[40px] md:leading-none text-center">
@@ -523,7 +575,7 @@ export default function Home({ testimonials, skills, services, projects, blogs }
           </div>
         </section>
       )}
-      <section className="container pt-12 md:pt-16 relative flex flex-col items-center justify-center">
+      <section id="newsletters" className="container pt-12 md:pt-16 relative flex flex-col items-center justify-center">
         <p>NEWSLETTER</p>
         <div className="bg-gradient-to-r from-primary to-secondary-foreground text-transparent bg-clip-text relative">
           <h2 className="font-bold text-xl md:text-[40px] md:leading-none text-center">
@@ -532,14 +584,13 @@ export default function Home({ testimonials, skills, services, projects, blogs }
         </div>
         <div className='flex justify-center mt-2'>
           <Badge variant="outline" key="Service">
-            <Link
-              className="group flex justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
-              href="#"
+            <div
+              className="group flex justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end cursor-pointer"
             >
               <span className='text-gray-700 transition group-hover:text-gray-700/75'>
                 Trust me, I wont spam
               </span>
-            </Link>
+            </div>
           </Badge>
         </div>
         <div className="flex flex-wrap md:flex-nowrap justify-center gap-4 pt-9">
@@ -567,7 +618,7 @@ export default function Home({ testimonials, skills, services, projects, blogs }
         </div>
       </section>
       {blogs && blogs.length > 0 && (
-        <section className="container pt-12 md:pt-44 relative flex flex-col items-center justify-center">
+        <section id="blogs" className="container pt-12 md:pt-44 relative flex flex-col items-center justify-center">
           <p>BLOG</p>
           <div className="bg-gradient-to-r from-primary to-secondary-foreground text-transparent bg-clip-text relative">
             <h2 className="font-bold text-xl md:text-[40px] md:leading-none text-center">
@@ -604,7 +655,16 @@ export default function Home({ testimonials, skills, services, projects, blogs }
                     </div>
                   </CardContent>
                   <CardFooter>
-                    <Button className="w-full" variant="outline">
+                    <Button className="w-full" variant="outline" onClick={() => {
+                      setOpen(
+                        <CustomModal
+                            title="⚠️ Under Construction"
+                            subheading="Should be available in 2-3 days"
+                        >
+                            <p>You can track the progress or contribute @<Link href="https://github.com/Nikeshh/Nikeshh.com/tree/main/Version15/nikeshh.com" className="underline">Github</Link></p>
+                        </CustomModal>
+                      )
+                    }}>
                       <Eye className="mr-2 h-4 w-4" /> View
                     </Button>
                   </CardFooter>
@@ -613,14 +673,23 @@ export default function Home({ testimonials, skills, services, projects, blogs }
             })}
           </div>
           <div className='mt-4 md:mt-6 w-full text-center'>
-            <Link href={'#'} className="hover:text-blue-600 underline">learn more.</Link>
+            <Link href={'#'} className="hover:text-blue-600 underline" onClick={() => {
+              setOpen(
+                <CustomModal
+                    title="⚠️ Under Construction"
+                    subheading="Should be available in 2-3 days"
+                >
+                    <p>You can track the progress or contribute @<Link href="https://github.com/Nikeshh/Nikeshh.com/tree/main/Version15/nikeshh.com" className="underline">Github</Link></p>
+                </CustomModal>
+              )
+            }}>learn more.</Link>
           </div>
         </section>
       )}
-      <section className="container pt-12 pb-12 md:pt-44 md:pb-24 relative flex gap-4 flex-wrap md:flex-nowrap items-center justify-center">
+      <section id="contact" className="container pt-12 pb-12 md:pt-44 md:pb-24 relative flex gap-4 flex-wrap md:flex-nowrap items-center justify-center">
         <div className="flex flex-col justify-center items-center gap-12">
           <div className="hidden md:flex justify-center items-center relative">
-          <div className="bottom-0 top-[2%] bg-gradient-to-b dark:from-background left-0 right-0 absolute z-10"></div>
+            <div className="bottom-0 top-[2%] bg-gradient-to-b dark:from-background left-0 right-0 absolute z-10"></div>
             <Image
               src={'/assets/myphoto.png'}
               alt="contact image"
@@ -631,9 +700,8 @@ export default function Home({ testimonials, skills, services, projects, blogs }
             <div className="bottom-0 top-[50%] bg-gradient-to-t dark:from-background left-0 right-0 absolute z-10"></div>
           </div>
           <Badge variant="secondary">
-            <Link
-              className="group flex justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
-              href="#"
+            <div
+              className="group flex justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end cursor-pointer"
             >
               <span className="transition group-hover:text-gray-700/75">
                 Available to work
@@ -644,7 +712,7 @@ export default function Home({ testimonials, skills, services, projects, blogs }
                   ></span>
                   <span className="relative inline-flex size-2 rounded-full bg-teal-500"></span>
               </span>
-            </Link>
+            </div>
           </Badge>
         </div>
         <ContactForm
