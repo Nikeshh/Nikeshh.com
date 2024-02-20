@@ -2,7 +2,7 @@ import { upsertNewsletter } from "@/lib/queries";
 import { NewsletterUserFormSchema } from "@/lib/types";
 import { zodResolver } from "@hookform/resolvers/zod";
 import Link from "next/link";
-import { createRef, useState } from "react";
+import { createRef, useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import { toast } from "sonner";
 import { z } from "zod";
@@ -21,7 +21,7 @@ import Loading from '../../global/loading'
 const Footer = () => {
 
     // Newsletter
-    const [newsletterCommand, setNewsletterCommand] = useState('General');
+    const newsletterCommand = 'General';
     const newsletterRef = createRef<HTMLFormElement>();
     const onNewsletterFormSubmit = async (
         values: z.infer<typeof NewsletterUserFormSchema>
@@ -35,7 +35,7 @@ const Footer = () => {
             toast.success("Success", {
                 description: 'Successfully Saved your info',
             })
-            newsletterRef.current?.reset();
+            newsletterRef.current?.reset(); //@todo this is not working
         } catch (error) {
             toast.error("Failed", {
                 description: 'Could not save your information',

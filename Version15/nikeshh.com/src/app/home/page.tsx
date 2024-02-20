@@ -142,7 +142,7 @@ export default function Home({ testimonials, skills, services, projects, blogs }
       toast.success("Success", {
         description: 'Successfully Saved your info',
       })
-      newsletterRef.current?.reset();
+      newsletterRef.current?.reset(); //@todo this is not working
     } catch (error) {
       toast.error("Failed", {
         description: 'Could not save your information',
@@ -183,7 +183,7 @@ export default function Home({ testimonials, skills, services, projects, blogs }
       toast.success("Success", {
         description: 'Successfully Saved your info',
       })
-      contactFormRef.current?.reset();
+      contactFormRef.current?.reset(); //@todo this is not working
     } catch (error) {
       toast.error("Failed", {
         description: 'Could not save your information',
@@ -231,22 +231,28 @@ export default function Home({ testimonials, skills, services, projects, blogs }
               </HoverCardContent>
             </HoverCard>
           </p>
-          <Button className="w-fit">
-            Explore Me
-          </Button>
+          <p>
+            Code, Coffee and Crazy Creativity: The Nikeshh Experience!
+          </p>
+          <Link href={"#worked-with"}>
+            <Button className="w-fit">
+              Explore Me
+            </Button>
+          </Link>
         </div>
         <div className="flex justify-center items-center relative md:mt-[-70px]">
+          <div className="bottom-0 top-[2%] bg-gradient-to-b dark:from-background left-0 right-0 absolute z-10"></div>
           <Image
-            src={'/assets/preview.png'}
+            src={'/assets/myphoto.png'}
             alt="banner image"
-            height={1200}
-            width={1200}
+            height={600}
+            width={600}
             className="rounded-tl-2xl rounded-tr-2xl border-2 border-muted"
           />
           <div className="bottom-0 top-[50%] bg-gradient-to-t dark:from-background left-0 right-0 absolute z-10"></div>
         </div>
       </section>
-      <section className="container pt-12 md:pt-44 relative flex flex-col items-center justify-center">
+      <section id="worked-with" className="container pt-12 md:pt-44 relative flex flex-col items-center justify-center">
         <p>WORKED WITH</p>
         <div className="bg-gradient-to-r from-primary to-secondary-foreground text-transparent bg-clip-text relative">
             <h2 className="font-bold text-xl md:text-[40px] md:leading-none text-center">
@@ -613,11 +619,12 @@ export default function Home({ testimonials, skills, services, projects, blogs }
       <section className="container pt-12 pb-12 md:pt-44 md:pb-24 relative flex gap-4 flex-wrap md:flex-nowrap items-center justify-center">
         <div className="flex flex-col justify-center items-center gap-12">
           <div className="hidden md:flex justify-center items-center relative">
+          <div className="bottom-0 top-[2%] bg-gradient-to-b dark:from-background left-0 right-0 absolute z-10"></div>
             <Image
-              src={'/assets/preview.png'}
-              alt="banner image"
-              height={600}
-              width={600}
+              src={'/assets/myphoto.png'}
+              alt="contact image"
+              height={300}
+              width={300}
               className="rounded-tl-2xl rounded-tr-2xl border-2 border-muted"
             />
             <div className="bottom-0 top-[50%] bg-gradient-to-t dark:from-background left-0 right-0 absolute z-10"></div>

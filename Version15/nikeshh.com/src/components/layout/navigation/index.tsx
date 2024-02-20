@@ -50,7 +50,7 @@ const Navigation = () => {
                     </Link>
                 </Badge>
                 <Link
-                    href={'/contact-me'}
+                    href={'/contact'}
                     className="bg-primary text-white p-2 px-4 rounded-md hover:bg-primary/80"
                 >
                     Contact Me
