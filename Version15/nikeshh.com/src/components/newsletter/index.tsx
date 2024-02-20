@@ -1,6 +1,6 @@
 import { NewsletterUserFormSchema } from '@/lib/types'
 import { zodResolver } from '@hookform/resolvers/zod'
-import React from 'react'
+import React, { LegacyRef } from 'react'
 import { useForm } from 'react-hook-form'
 import { z } from 'zod'
 import {
@@ -26,9 +26,10 @@ type Props = {
   title: string
   subTitle: string
   apiCall: (values: z.infer<typeof NewsletterUserFormSchema>) => any
+  newsletterRef: LegacyRef<HTMLFormElement>
 }
 
-const NewsletterForm = ({ apiCall, subTitle, title }: Props) => {
+const NewsletterForm = ({ apiCall, subTitle, title, newsletterRef}: Props) => {
   const form = useForm<z.infer<typeof NewsletterUserFormSchema>>({
     mode: 'onChange',
     resolver: zodResolver(NewsletterUserFormSchema),
@@ -40,7 +41,7 @@ const NewsletterForm = ({ apiCall, subTitle, title }: Props) => {
   const isLoading = form.formState.isLoading
   
   return (
-    <Card className="w-[350px] md:w-[750px]">
+    <Card className="w-[350px] md:w-[650px]">
       <CardHeader>
         <CardTitle>{title}</CardTitle>
         <CardDescription>{subTitle}</CardDescription>
@@ -48,6 +49,7 @@ const NewsletterForm = ({ apiCall, subTitle, title }: Props) => {
       <CardContent>
         <Form {...form}>
           <form
+            ref={newsletterRef}
             onSubmit={form.handleSubmit(apiCall)}
             className="flex flex-col gap-4"
           >

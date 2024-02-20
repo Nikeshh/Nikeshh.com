@@ -2,6 +2,8 @@
 
 import { clerkClient, currentUser } from "@clerk/nextjs"
 import { db } from "./db"
+import { Prisma } from "@prisma/client"
+import { v4 } from "uuid"
 
 export const getAuthUserDetails = async () => {
     const user = await currentUser()
@@ -87,5 +89,25 @@ export const getBlogs = async () => {
       imageUrl: true,
     },
   });
+  return response
+}
+
+export const upsertNewsletter = async (
+  newsletter: Prisma.NewsletterUncheckedCreateInput
+) => {
+  const response = await db.newsletter.upsert({
+    where: { id: newsletter.id || v4() },
+    update: newsletter,
+    create: newsletter,
+  })
+  return response
+}
+
+export const createContact = async (
+  contact: Prisma.ContactUncheckedCreateInput
+) => {
+  const response = await db.contact.create({
+    data: contact
+  })
   return response
 }

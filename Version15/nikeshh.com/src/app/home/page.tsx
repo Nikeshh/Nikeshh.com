@@ -1,10 +1,10 @@
 'use client'
 
 import { Button } from '@/components/ui/button';
-import React, { useEffect, useState } from 'react'
+import React, { createRef, useEffect, useState } from 'react'
 import { toast } from "sonner"
 import Image from 'next/image';
-import { CalendarDays, Eye, User2 } from "lucide-react"
+import { CalendarDays, Eye, Info, User2 } from "lucide-react"
 import {
   Avatar,
   AvatarFallback,
@@ -38,12 +38,15 @@ import {
 } from "@/components/ui/command"
 import NewsletterForm from '@/components/newsletter';
 import { z } from 'zod';
-import { NewsletterUserFormSchema } from '@/lib/types';
+import { ContactUserFormSchema, NewsletterUserFormSchema } from '@/lib/types';
 import ContactForm from '@/components/contact';
 import Navigation from "@/components/layout/navigation";
 import Footer from "@/components/layout/footer";
 import NotificationC from "@/components/layout/notification";
 import { Services } from '@prisma/client';
+import CustomModal from '@/components/global/custom-modal';
+import { useModal } from '@/providers/modal-provider';
+import { createContact, upsertNewsletter } from '@/lib/queries';
 
 type Props = {
   testimonials: {
@@ -82,6 +85,7 @@ type Props = {
 }
 
 export default function Home({ testimonials, skills, services, projects, blogs } : Props) {
+  const { setOpen } = useModal();
 
   // Testimonials
   const [testimonialIndex, setTestimonialIndex] = useState(0);
@@ -123,22 +127,68 @@ export default function Home({ testimonials, skills, services, projects, blogs }
     setSelectedProjects(projects.filter(item => item.category == project));
   }
 
+  // Newsletter
+  const [newsletterCommand, setNewsletterCommand] = useState('SAAS');
+  const newsletterRef = createRef<HTMLFormElement>();
+  const onNewsletterFormSubmit = async (
+    values: z.infer<typeof NewsletterUserFormSchema>
+  ) => {
+    try {
+      const response = await upsertNewsletter({
+        ...values,
+        newsletter: newsletterCommand,
+      });
+
+      toast.success("Success", {
+        description: 'Successfully Saved your info',
+      })
+      newsletterRef.current?.reset();
+    } catch (error) {
+      toast.error("Failed", {
+        description: 'Could not save your information',
+      })
+    }
+  }
+
+  // Toast Message
   useEffect(() => {
     toast("Website builder for agencies", {
       description: "Monday, February 19, 2023 at 9:00 AM",
       action: {
         label: "View",
-        onClick: () => console.log("Undo"),
+        onClick: () => {
+          setOpen(
+            <CustomModal
+                title="⚠️ Under Construction"
+                subheading="Should be available in 2-3 days"
+            >
+                <p>You can track the progress or contribute @<Link href="https://github.com/Nikeshh/Nikeshh.com/tree/main/Version15/nikeshh.com" className="underline">Github</Link></p>
+            </CustomModal>
+          )
+        },
       },
     })
   }, []);
-  const onNewsletterFormSubmit = async (
-    values: z.infer<typeof NewsletterUserFormSchema>
-  ) => {
-  }
+
+  // Contact Form
+  const contactFormRef = createRef<HTMLFormElement>();
   const onContactFormSubmit = async (
-    values: z.infer<typeof NewsletterUserFormSchema>
+    values: z.infer<typeof ContactUserFormSchema>
   ) => {
+    try {
+      const response = await createContact({
+        ...values
+      });
+
+      toast.success("Success", {
+        description: 'Successfully Saved your info',
+      })
+      contactFormRef.current?.reset();
+    } catch (error) {
+      toast.error("Failed", {
+        description: 'Could not save your information',
+      })
+    }
   }
 
   console.log("👋 Hi! It looks like you are trying to explore the code. You can directly work with me on any of the listed projects. Feel free to submit your details through the contact form or directly mail me at nikeshhbaskaran01@gmail.com. Cheers 🍻");
@@ -163,18 +213,17 @@ export default function Home({ testimonials, skills, services, projects, blogs }
               <HoverCardContent className="w-80">
                 <div className="flex justify-between space-x-4">
                   <Avatar>
-                    <AvatarImage src="https://github.com/vercel.png" />
-                    <AvatarFallback>VC</AvatarFallback>
+                    <AvatarFallback>N</AvatarFallback>
                   </Avatar>
                   <div className="space-y-1">
-                    <h4 className="text-sm font-semibold">@nextjs</h4>
+                    <h4 className="text-sm font-semibold">@nikeshh</h4>
                     <p className="text-sm">
-                      The React Framework – created and maintained by @vercel.
+                      Achieving perfection involves adding more value than merely pursuing flawlessness in the end.
                     </p>
                     <div className="flex items-center pt-2">
-                      <CalendarDays className="mr-2 h-4 w-4 opacity-70" />{" "}
+                      <Info className="mr-2 h-4 w-4 opacity-70" />{" "}
                       <span className="text-xs text-muted-foreground">
-                        Joined December 2021
+                        My core principle
                       </span>
                     </div>
                   </div>
@@ -491,23 +540,22 @@ export default function Home({ testimonials, skills, services, projects, blogs }
             <CommandInput placeholder="Type a command or search..." />
             <CommandList>
               <CommandEmpty>No results found.</CommandEmpty>
-              <CommandGroup heading="Suggestions">
-                <CommandItem>Calendar</CommandItem>
-                <CommandItem>Search Emoji</CommandItem>
-                <CommandItem>Calculator</CommandItem>
+              <CommandGroup heading="Technology">
+                <CommandItem onSelect={(value) => setNewsletterCommand(value)}>SAAS</CommandItem>
+                <CommandItem onSelect={(value) => setNewsletterCommand(value)}>Web Design and Development</CommandItem>
               </CommandGroup>
               <CommandSeparator />
-              <CommandGroup heading="Settings">
-                <CommandItem>Profile</CommandItem>
-                <CommandItem>Billing</CommandItem>
-                <CommandItem>Settings</CommandItem>
+              <CommandGroup heading="Business">
+                <CommandItem onSelect={(value) => setNewsletterCommand(value)}>Marketing</CommandItem>
+                <CommandItem onSelect={(value) => setNewsletterCommand(value)}>Lead Generation</CommandItem>
               </CommandGroup>
             </CommandList>
           </Command>
           <NewsletterForm
-            subTitle="Technology"
+            subTitle={newsletterCommand}
             title="Subscribe to newsletter ✉️"
             apiCall={onNewsletterFormSubmit}
+            newsletterRef={newsletterRef}
           />
         </div>
       </section>
@@ -595,6 +643,7 @@ export default function Home({ testimonials, skills, services, projects, blogs }
           subTitle="Lets Talk"
           title="Got a opportunity or project? Or just say Hi 👋"
           apiCall={onContactFormSubmit}
+          contactFormRef={contactFormRef}
         />
       </section>
       <Footer />

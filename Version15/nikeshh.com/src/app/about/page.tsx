@@ -27,6 +27,7 @@ const Page = () => {
                 <p>Hey there, fellow digital explorers!</p>
                 <p>I am Nikeshh, your not-so-typical Full Stack Software Developer and Digital Dynamo. I am here to turn your wildest digital dreams into reality, fuelled by gallons of coffee and a dash of pure, unadulterated madness.</p>
                 <p>My toolkit includes website wizardry, SEO sorcery, SAAS spells, app alchemy, and custom software secrets. Ready to embark on this wild ride of innovation?</p>
+                <p>I charge ahead with an unwavering passion, fueled by the profound belief that education should be a universal right, freely accessible to all. When you become a client or purchase my product, you re not just making a transaction; you are embracing and supporting my heartfelt vision.</p>
                 <h2 className="text-xl underline mt-4">Built With Love</h2>
                 <p>I make amazing digital products for your business, generate leads and scale them</p>
                 <p>Unlock the potential of your business with our <span className="underline font-bold">extraordinary digital products.</span> Specializing in creating solutions that not only drive leads but also fuel the growth and expansion of your company, i am here to take your business to new heights, one lead at a time, and help you scale your success.</p>

@@ -1,6 +1,58 @@
+import { upsertNewsletter } from "@/lib/queries";
+import { NewsletterUserFormSchema } from "@/lib/types";
+import { zodResolver } from "@hookform/resolvers/zod";
 import Link from "next/link";
+import { createRef, useState } from "react";
+import { useForm } from "react-hook-form";
+import { toast } from "sonner";
+import { z } from "zod";
+import {
+    Form,
+    FormControl,
+    FormField,
+    FormItem,
+    FormLabel,
+    FormMessage,
+  } from '../../ui/form'
+import { Input } from '../../ui/input'
+import { Button } from '../../ui/button'
+import Loading from '../../global/loading'
 
 const Footer = () => {
+
+    // Newsletter
+    const [newsletterCommand, setNewsletterCommand] = useState('General');
+    const newsletterRef = createRef<HTMLFormElement>();
+    const onNewsletterFormSubmit = async (
+        values: z.infer<typeof NewsletterUserFormSchema>
+    ) => {
+        try {
+            const response = await upsertNewsletter({
+                ...values,
+                newsletter: newsletterCommand,
+            });
+
+            toast.success("Success", {
+                description: 'Successfully Saved your info',
+            })
+            newsletterRef.current?.reset();
+        } catch (error) {
+            toast.error("Failed", {
+                description: 'Could not save your information',
+            })
+        }
+    }
+
+    const form = useForm<z.infer<typeof NewsletterUserFormSchema>>({
+        mode: 'onChange',
+        resolver: zodResolver(NewsletterUserFormSchema),
+        defaultValues: {
+          name: '',
+          email: '',
+        },
+    })
+    const isLoading = form.formState.isLoading
+
     return (
         <>
             <footer>
@@ -83,22 +135,54 @@ const Footer = () => {
                             <p className="text-lg font-medium">Stay In Touch</p>
                             <div className="mx-auto mt-8 max-w-md sm:ms-0">
                                 <p className="text-center md:text-left leading-relaxed text-gray-500"> Subscribe to newsletter </p>
-                                <form className="mt-4">
-                                    <div className="flex flex-col gap-4 sm:flex-row lg:flex-col lg:items-start">
-                                        <label htmlFor="email" className="sr-only">Email</label>
-                                        <input
-                                            className="w-full rounded-full border-gray-200 px-6 py-3 shadow-sm"
-                                            type="email"
-                                            placeholder="Enter your email"
-                                        />
-                                        <button
-                                            className="block rounded-full bg-indigo-600 px-8 py-3 font-medium text-white transition hover:bg-indigo-700"
-                                            type="submit"
-                                        >
-                                            Subscribe
-                                        </button>
-                                    </div>
-                                </form>
+                                <Form {...form}>
+                                    <form ref={newsletterRef} className="mt-4" onSubmit={form.handleSubmit(onNewsletterFormSubmit)}>
+                                        <div className="flex flex-col gap-4 sm:flex-row lg:flex-col lg:items-start">
+                                            <FormField
+                                                disabled={isLoading}
+                                                control={form.control}
+                                                name="name"
+                                                render={({ field }) => (
+                                                    <FormItem>
+                                                        <FormLabel>Name</FormLabel>
+                                                        <FormControl>
+                                                            <Input
+                                                                placeholder="Name"
+                                                                {...field}
+                                                            />
+                                                        </FormControl>
+                                                        <FormMessage />
+                                                    </FormItem>
+                                                )}
+                                            />
+                                            <FormField
+                                                disabled={isLoading}
+                                                control={form.control}
+                                                name="email"
+                                                render={({ field }) => (
+                                                    <FormItem>
+                                                    <FormLabel>Email</FormLabel>
+                                                    <FormControl>
+                                                        <Input
+                                                        type="email"
+                                                        placeholder="Email"
+                                                        {...field}
+                                                        />
+                                                    </FormControl>
+                                                    <FormMessage />
+                                                    </FormItem>
+                                                )}
+                                            />
+                                            <Button
+                                                className="block rounded-full bg-indigo-600 px-8 py-3 font-medium text-white transition hover:bg-indigo-700"
+                                                disabled={isLoading}
+                                                type="submit"
+                                                >
+                                                {form.formState.isSubmitting ? <Loading /> : 'Subscribe'}
+                                            </Button>
+                                        </div>
+                                    </form>
+                                </Form>
                             </div>
                         </div>
                     </div>

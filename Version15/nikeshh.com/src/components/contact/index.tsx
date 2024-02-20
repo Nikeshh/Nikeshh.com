@@ -1,6 +1,6 @@
 import { ContactUserFormSchema } from '@/lib/types'
 import { zodResolver } from '@hookform/resolvers/zod'
-import React from 'react'
+import React, { LegacyRef } from 'react'
 import { useForm } from 'react-hook-form'
 import { z } from 'zod'
 import {
@@ -27,9 +27,10 @@ type Props = {
   subTitle: string
   apiCall: (values: z.infer<typeof ContactUserFormSchema>) => any
   width?: string
+  contactFormRef: LegacyRef<HTMLFormElement>
 }
 
-const ContactForm = ({ apiCall, subTitle, title, width }: Props) => {
+const ContactForm = ({ apiCall, subTitle, title, width, contactFormRef }: Props) => {
   const form = useForm<z.infer<typeof ContactUserFormSchema>>({
     mode: 'onChange',
     resolver: zodResolver(ContactUserFormSchema),
@@ -49,6 +50,7 @@ const ContactForm = ({ apiCall, subTitle, title, width }: Props) => {
       <CardContent>
         <Form {...form}>
           <form
+            ref={contactFormRef}
             onSubmit={form.handleSubmit(apiCall)}
             className="flex flex-col gap-4"
           >
