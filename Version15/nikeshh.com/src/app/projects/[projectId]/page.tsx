@@ -1,10 +1,10 @@
 "use client"
 
-import React from 'react'
+import React, { createRef } from 'react'
 import { Button } from "@/components/ui/button";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import ContactForm from '@/components/contact';
-import { NewsletterUserFormSchema } from '@/lib/types';
+import { ContactUserFormSchema, NewsletterUserFormSchema } from '@/lib/types';
 import { z } from 'zod';
 import Image from 'next/image';
 import {
@@ -13,6 +13,8 @@ import {
   AvatarImage,
 } from "@/components/ui/avatar"
 import { User2 } from 'lucide-react';
+import { createContact } from '@/lib/queries';
+import { toast } from 'sonner';
 
 type Props = {
   params: { 
@@ -22,9 +24,25 @@ type Props = {
 
 const Page = ({ params }: Props ) => {
     
+  // Contact Form
+  const contactFormRef = createRef<HTMLFormElement>();
   const onContactFormSubmit = async (
-    values: z.infer<typeof NewsletterUserFormSchema>
+    values: z.infer<typeof ContactUserFormSchema>
   ) => {
+    try {
+      const response = await createContact({
+        ...values
+      });
+
+      toast.success("Success", {
+        description: 'Successfully saved your info',
+      })
+      contactFormRef.current?.reset(); //@todo this is not working
+    } catch (error) {
+      toast.error("Failed", {
+        description: 'Could not save your information',
+      })
+    }
   }
 
   console.log("👋 Hi! It looks like you are trying to explore the code. You can directly work with me on any of the listed projects. Feel free to submit your details through the contact form or directly mail me at nikeshhbaskaran01@gmail.com. Cheers 🍻");
@@ -90,6 +108,7 @@ const Page = ({ params }: Props ) => {
           subTitle="Let's Talk. Contact Me."
           title="Want to work on this project?"
           apiCall={onContactFormSubmit}
+          contactFormRef={contactFormRef}
         />
       </div>
     </ScrollArea>
