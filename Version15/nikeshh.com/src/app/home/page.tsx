@@ -243,7 +243,7 @@ export default function Home({ testimonials, skills, services, projects, blogs }
         </div>
       </section>
       {skills && skills.length > 0 && skillTags && (
-        <section className="container pt-12 md:pt-44 relative flex flex-col items-center justify-center">
+        <section id="skills" className="container pt-12 md:pt-44 relative flex flex-col items-center justify-center">
           <p>TO MENTION</p>
           <div className="bg-gradient-to-r from-primary to-secondary-foreground text-transparent bg-clip-text relative">
             <h2 className="font-bold text-xl md:text-[40px] md:leading-none text-center">
@@ -376,7 +376,7 @@ export default function Home({ testimonials, skills, services, projects, blogs }
         </section>
       )}
       {projects && projects.length > 0 && projectTags && (
-        <section className="container pt-12 md:pt-44 relative flex flex-col items-center justify-center">
+        <section id="projects" className="container pt-12 md:pt-44 relative flex flex-col items-center justify-center">
           <p>BUILT FOR IMPACT</p>
           <div className="bg-gradient-to-r from-primary to-secondary-foreground text-transparent bg-clip-text relative">
             <h2 className="font-bold text-xl md:text-[40px] md:leading-none text-center">
