@@ -6,7 +6,7 @@ const Navigation = () => {
     return (
         <div className="container relative top-15 p-4 flex items-center justify-between z-10">
             <aside className="flex gap-2 items-center flex-col">
-                <span className="text-xl font-bold"> Nikeshh.</span>
+                <Link href="/home"><span className="text-xl font-bold"> Nikeshh.</span></Link>
                 <Badge variant="secondary" className="md:hidden">
                     <Link
                         className="group flex justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"

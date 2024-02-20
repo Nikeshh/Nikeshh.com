@@ -259,42 +259,43 @@ export default function Home({ testimonials, skills, services, projects, blogs }
               Leading Brands Across The Globe
             </h2>
           </div>
-        <div className='flex flex-wrap gap-2 md:gap-9 mt-9 justify-center'>
-          <Image
-            src={'/assets/preview.png'}
-            alt="banner image"
-            height={120}
-            width={120}
-            className="rounded-tl-2xl rounded-tr-2xl border-2 border-muted"
-          />
-          <Image
-            src={'/assets/preview.png'}
-            alt="banner image"
-            height={120}
-            width={120}
-            className="rounded-tl-2xl rounded-tr-2xl border-2 border-muted"
-          />
-          <Image
-            src={'/assets/preview.png'}
-            alt="banner image"
-            height={120}
-            width={120}
-            className="rounded-tl-2xl rounded-tr-2xl border-2 border-muted"
-          />
-          <Image
-            src={'/assets/preview.png'}
-            alt="banner image"
-            height={120}
-            width={120}
-            className="rounded-tl-2xl rounded-tr-2xl border-2 border-muted"
-          />
-          <Image
-            src={'/assets/preview.png'}
-            alt="banner image"
-            height={120}
-            width={120}
-            className="rounded-tl-2xl rounded-tr-2xl border-2 border-muted"
-          />
+        <div className='flex flex-wrap gap-2 md:gap-9 mt-9 justify-center items-center'>
+          <Link
+            href="https://altinteriors.ca/"
+            target='_blank'
+          >
+            <Image
+              src={'/assets/clients/altinteriors.png'}
+              alt="client image"
+              height={240}
+              width={240}
+              className="rounded-tl-2xl rounded-tr-2xl border-2 border-muted"
+            />
+          </Link>
+          <Link
+            href="https://www.spadesbrand.com/"
+            target='_blank'
+          >
+            <Image
+              src={'/assets/clients/spadesbrand.png'}
+              alt="client image"
+              height={240}
+              width={240}
+              className="rounded-tl-2xl rounded-tr-2xl border-2 border-muted"
+            />
+          </Link>
+          <Link
+            href="https://www.ppe-supply.com/"
+            target='_blank'
+          >
+            <Image
+              src={'/assets/clients/ppesupply.png'}
+              alt="client image"
+              height={240}
+              width={240}
+              className="rounded-tl-2xl rounded-tr-2xl border-2 border-muted"
+            />
+          </Link>
         </div>
       </section>
       {skills && skills.length > 0 && skillTags && (

@@ -17,8 +17,11 @@ import {
 import { Input } from '../../ui/input'
 import { Button } from '../../ui/button'
 import Loading from '../../global/loading'
+import { useModal } from '@/providers/modal-provider';
+import CustomModal from "@/components/global/custom-modal";
 
 const Footer = () => {
+    const { setOpen } = useModal();
 
     // Newsletter
     const newsletterCommand = 'General';
@@ -79,19 +82,31 @@ const Footer = () => {
                     </div>
                     <div className="mt-16 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
                         <div className="text-center sm:text-left">
-                            <p className="text-lg font-medium">Our Services</p>
+                            <p className="text-lg font-medium">Important Links</p>
                             <ul className="mt-8 space-y-4 text-sm">
                                 <li>
-                                    <Link className="text-gray-700 transition hover:text-gray-700/75" href="#"> Web Development </Link>
+                                    <Link className="text-gray-700 transition hover:text-gray-700/75" href="/home"> Home </Link>
                                 </li>
                                 <li>
-                                    <Link className="text-gray-700 transition hover:text-gray-700/75" href="#"> Web Design </Link>
+                                    <Link className="text-gray-700 transition hover:text-gray-700/75" href="/home#skills"> Skills </Link>
                                 </li>
                                 <li>
-                                    <Link className="text-gray-700 transition hover:text-gray-700/75" href="#"> Marketing </Link>
+                                    <Link className="text-gray-700 transition hover:text-gray-700/75" href="/home#services"> Services </Link>
                                 </li>
                                 <li>
-                                    <Link className="text-gray-700 transition hover:text-gray-700/75" href="#"> Google Ads </Link>
+                                    <Link className="text-gray-700 transition hover:text-gray-700/75" href="/home#projects"> Projects </Link>
+                                </li>
+                                <li>
+                                    <Link className="text-gray-700 transition hover:text-gray-700/75" href="/home#newsletters"> Newsletters </Link>
+                                </li>
+                                <li>
+                                    <Link className="text-gray-700 transition hover:text-gray-700/75" href="/home#testimonials"> Testimonials </Link>
+                                </li>
+                                <li>
+                                    <Link className="text-gray-700 transition hover:text-gray-700/75" href="/home#blogs"> Blogs </Link>
+                                </li>
+                                <li>
+                                    <Link className="text-gray-700 transition hover:text-gray-700/75" href="/home#contact"> Contact </Link>
                                 </li>
                             </ul>
                         </div>
@@ -99,23 +114,16 @@ const Footer = () => {
                             <p className="text-lg font-medium">Resources</p>
                             <ul className="mt-8 space-y-4 text-sm">
                                 <li>
-                                    <Link className="text-gray-700 transition hover:text-gray-700/75" href="#"> Online Guides </Link>
-                                </li>
-                                <li>
-                                    <Link className="text-gray-700 transition hover:text-gray-700/75" href="#">
-                                        Conference Notes
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link className="text-gray-700 transition hover:text-gray-700/75" href="#"> Forum </Link>
-                                </li>
-                                <li>
-                                    <Link className="text-gray-700 transition hover:text-gray-700/75" href="#"> Downloads </Link>
-                                </li>
-                                <li>
-                                    <Link className="text-gray-700 transition hover:text-gray-700/75" href="#">
-                                        Upcoming Events
-                                    </Link>
+                                    <Link className="text-gray-700 transition hover:text-gray-700/75" href="#" onClick={() => {
+                                        setOpen(
+                                            <CustomModal
+                                                title="⚠️ Under Construction"
+                                                subheading="Should be available in 2-3 days"
+                                            >
+                                                <p>You can track the progress or contribute @<Link href="https://github.com/Nikeshh/Nikeshh.com/tree/main/Version15/nikeshh.com" className="underline">Github</Link></p>
+                                            </CustomModal>
+                                        )
+                                    }}> View </Link>
                                 </li>
                             </ul>
                         </div>
@@ -123,12 +131,17 @@ const Footer = () => {
                             <p className="text-lg font-medium">Helpful Links</p>
                             <ul className="mt-8 space-y-4 text-sm">
                                 <li>
-                                    <Link className="text-gray-700 transition hover:text-gray-700/75" href="#"> FAQs </Link>
+                                    <Link className="text-gray-700 transition hover:text-gray-700/75" href="#" onClick={() => {
+                                        setOpen(
+                                            <CustomModal
+                                                title="⚠️ Under Construction"
+                                                subheading="Should be available in 2-3 days"
+                                            >
+                                                <p>You can track the progress or contribute @<Link href="https://github.com/Nikeshh/Nikeshh.com/tree/main/Version15/nikeshh.com" className="underline">Github</Link></p>
+                                            </CustomModal>
+                                        )
+                                    }}> View </Link>
                                 </li>
-                                <li>
-                                    <Link className="text-gray-700 transition hover:text-gray-700/75" href="#"> Support </Link>
-                                </li>
-
                             </ul>
                         </div>
                         <div className="text-center sm:text-left">
@@ -194,7 +207,7 @@ const Footer = () => {
                             <ul className="flex justify-center gap-6 sm:justify-end mt-4">
                                 <li>
                                     <Link
-                                        href="#"
+                                        href="https://www.facebook.com/vnikeshh/"
                                         rel="noreferrer"
                                         target="_blank"
                                         className="text-indigo-600 transition hover:text-indigo-600/75"
@@ -211,7 +224,7 @@ const Footer = () => {
                                 </li>
                                 <li>
                                     <Link
-                                        href="#"
+                                        href="https://www.instagram.com/nikeshhvijayabaskaran/"
                                         rel="noreferrer"
                                         target="_blank"
                                         className="text-indigo-600 transition hover:text-indigo-600/75"
@@ -228,7 +241,7 @@ const Footer = () => {
                                 </li>
                                 <li>
                                     <Link
-                                        href="#"
+                                        href="https://twitter.com/NikeshhV"
                                         rel="noreferrer"
                                         target="_blank"
                                         className="text-indigo-600 transition hover:text-indigo-600/75"
@@ -243,7 +256,7 @@ const Footer = () => {
                                 </li>
                                 <li>
                                     <Link
-                                        href="#"
+                                        href="https://github.com/Nikeshh"
                                         rel="noreferrer"
                                         target="_blank"
                                         className="text-indigo-600 transition hover:text-indigo-600/75"
@@ -260,7 +273,7 @@ const Footer = () => {
                                 </li>
                                 <li>
                                     <Link
-                                        href="#"
+                                        href="https://dribbble.com/nikeshh"
                                         rel="noreferrer"
                                         target="_blank"
                                         className="text-indigo-600 transition hover:text-indigo-600/75"
