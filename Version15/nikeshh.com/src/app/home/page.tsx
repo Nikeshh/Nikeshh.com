@@ -1,7 +1,7 @@
 'use client'
 
 import { Button } from '@/components/ui/button';
-import React, { createRef, useEffect, useState } from 'react'
+import React, { createRef, use, useEffect, useState } from 'react'
 import { toast } from "sonner"
 import Image from 'next/image';
 import { CalendarDays, Eye, Info, User2 } from "lucide-react"
@@ -46,45 +46,21 @@ import NotificationC from "@/components/layout/notification";
 import { Services } from '@prisma/client';
 import CustomModal from '@/components/global/custom-modal';
 import { useModal } from '@/providers/modal-provider';
-import { createContact, upsertNewsletter } from '@/lib/queries';
+import { createContact, getBlogs, getProjects, getServices, getSkills, getTestimonials, upsertNewsletter } from '@/lib/queries';
 
-type Props = {
-  testimonials: {
-    id: string;
-    name: string;
-    content: string;
-    designation: string;
-    avatarUrl: string;
-    companyLogoUrl: string
-  }[];
-  skills: {
-    id: string;
-    name: string;
-    points: string;
-    category: string;
-  }[];
-  services: {
-    id: string;
-    name: string;
-    subtitle: string;
-    category: string;
-    subcategory: string;
-  }[];
-  projects: {
-    id: string;
-    name: string;
-    category: string;
-    subtitle: string;
-  }[];
-  blogs: {
-    id: string;
-    title: string;
-    imageUrl: string;
-    subtitle: string;
-  }[];
-}
+const loadTestimonals = async () => await getTestimonials();
+const loadSkills = async () => await getSkills();
+const loadServices = async () => await getServices();
+const loadProjects = async () => await getProjects();
+const loadBlogs = async () => await getBlogs();
 
-export default function Home({ testimonials, skills, services, projects, blogs } : Props) {
+export default function Home() {
+  const testimonials = use(loadTestimonals());
+  const skills = use(loadSkills());
+  const services = use(loadServices());
+  const projects = use(loadProjects());
+  const blogs = use(loadBlogs()).slice(0, 3);
+
   const { setOpen } = useModal();
 
   // Testimonials
