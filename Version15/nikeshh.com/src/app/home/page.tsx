@@ -140,7 +140,7 @@ export default function Home({ testimonials, skills, services, projects, blogs }
       });
 
       toast.success("Success", {
-        description: 'Successfully Saved your info',
+        description: 'Successfully saved your info',
       })
       newsletterRef.current?.reset(); //@todo this is not working
     } catch (error) {
@@ -181,7 +181,7 @@ export default function Home({ testimonials, skills, services, projects, blogs }
       });
 
       toast.success("Success", {
-        description: 'Successfully Saved your info',
+        description: 'Successfully saved your info',
       })
       contactFormRef.current?.reset(); //@todo this is not working
     } catch (error) {
