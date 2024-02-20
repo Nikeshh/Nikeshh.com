@@ -162,7 +162,7 @@ export default function Home({ testimonials, skills, services, projects, blogs }
                 title="⚠️ Under Construction"
                 subheading="Should be available in 2-3 days"
             >
-                <p>You can track the progress or contribute @<Link href="https://github.com/Nikeshh/Nikeshh.com/tree/main/Version15/nikeshh.com" className="underline">Github</Link></p>
+                <p>You can track the progress or contribute @<Link href="https://github.com/Nikeshh/Nikeshh.com/tree/main/Version15/nikeshh.com" className="underline cursor-pointer">Github</Link></p>
             </CustomModal>
           )
         },
@@ -208,7 +208,7 @@ export default function Home({ testimonials, skills, services, projects, blogs }
             Scaling to
             <HoverCard>
               <HoverCardTrigger asChild>
-                <Button variant="link" className="text-[16px] md:text-2xl pl-1"><u>@perfection</u></Button>
+                <Button variant="link" className="text-[16px] md:text-2xl pl-1 cursor-wait"><u>@perfection</u></Button>
               </HoverCardTrigger>
               <HoverCardContent className="w-80">
                 <div className="flex justify-between space-x-4">
@@ -234,7 +234,7 @@ export default function Home({ testimonials, skills, services, projects, blogs }
           <p>
             Code, Coffee and Crazy Creativity: The Nikeshh Experience!
           </p>
-          <Link href={"#worked-with"}>
+          <Link href={"#worked-with"} className="cursor-pointer">
             <Button className="w-fit">
               Explore Me
             </Button>
@@ -263,6 +263,7 @@ export default function Home({ testimonials, skills, services, projects, blogs }
           <Link
             href="https://altinteriors.ca/"
             target='_blank'
+            className='cursor-pointer'
           >
             <Image
               src={'/assets/clients/altinteriors.png'}
@@ -275,6 +276,7 @@ export default function Home({ testimonials, skills, services, projects, blogs }
           <Link
             href="https://www.spadesbrand.com/"
             target='_blank'
+            className='cursor-pointer'
           >
             <Image
               src={'/assets/clients/spadesbrand.png'}
@@ -287,6 +289,7 @@ export default function Home({ testimonials, skills, services, projects, blogs }
           <Link
             href="https://www.ppe-supply.com/"
             target='_blank'
+            className='cursor-pointer'
           >
             <Image
               src={'/assets/clients/ppesupply.png'}
@@ -360,7 +363,7 @@ export default function Home({ testimonials, skills, services, projects, blogs }
                             title="⚠️ Under Construction"
                             subheading="Should be available in 2-3 days"
                         >
-                            <p>You can track the progress or contribute @<Link href="https://github.com/Nikeshh/Nikeshh.com/tree/main/Version15/nikeshh.com" className="underline">Github</Link></p>
+                            <p>You can track the progress or contribute @<Link href="https://github.com/Nikeshh/Nikeshh.com/tree/main/Version15/nikeshh.com" className="underline cursor-pointer">Github</Link></p>
                         </CustomModal>
                       )
                     }}>
@@ -372,16 +375,16 @@ export default function Home({ testimonials, skills, services, projects, blogs }
             })}
           </div>
           <div className='mt-4 md:mt-6 w-full text-center'>
-            <Link href={'#'} className="hover:text-blue-600 underline" onClick={() => {
+            <div className="hover:text-blue-600 underline cursor-pointer" onClick={() => {
               setOpen(
                 <CustomModal
                     title="⚠️ Under Construction"
                     subheading="Should be available in 2-3 days"
                 >
-                    <p>You can track the progress or contribute @<Link href="https://github.com/Nikeshh/Nikeshh.com/tree/main/Version15/nikeshh.com" className="underline">Github</Link></p>
+                    <p>You can track the progress or contribute @<Link href="https://github.com/Nikeshh/Nikeshh.com/tree/main/Version15/nikeshh.com" className="underline cursor-pointer">Github</Link></p>
                 </CustomModal>
               )
-            }}>explore more.</Link>
+            }}>explore more.</div>
           </div>
         </section>
       )}
@@ -439,30 +442,30 @@ export default function Home({ testimonials, skills, services, projects, blogs }
                 <p>{serviceCommand.subtitle}</p>
               </CardContent>
               <CardFooter>
-                <Link href={'#'} className="hover:text-blue-600 underline" onClick={() => {
+                <div className="hover:text-blue-600 underline cursor-pointer" onClick={() => {
                   setOpen(
                     <CustomModal
                         title="⚠️ Under Construction"
                         subheading="Should be available in 2-3 days"
                     >
-                        <p>You can track the progress or contribute @<Link href="https://github.com/Nikeshh/Nikeshh.com/tree/main/Version15/nikeshh.com" className="underline">Github</Link></p>
+                        <p>You can track the progress or contribute @<Link href="https://github.com/Nikeshh/Nikeshh.com/tree/main/Version15/nikeshh.com" className="underline cursor-pointer">Github</Link></p>
                     </CustomModal>
                   )
-                }}>explore more.</Link>
+                }}>explore more.</div>
               </CardFooter>
             </Card>
           </div>
           <div className='mt-4 md:mt-6 w-full text-center'>
-            <Link href={'#'} className="hover:text-blue-600 underline" onClick={() => {
+            <div className="hover:text-blue-600 underline cursor-pointer" onClick={() => {
               setOpen(
                 <CustomModal
                     title="⚠️ Under Construction"
                     subheading="Should be available in 2-3 days"
                 >
-                    <p>You can track the progress or contribute @<Link href="https://github.com/Nikeshh/Nikeshh.com/tree/main/Version15/nikeshh.com" className="underline">Github</Link></p>
+                    <p>You can track the progress or contribute @<Link href="https://github.com/Nikeshh/Nikeshh.com/tree/main/Version15/nikeshh.com" className="underline cursor-pointer">Github</Link></p>
                 </CustomModal>
               )
-            }}>view more.</Link>
+            }}>view more.</div>
           </div>
         </section>
       )}
@@ -501,32 +504,32 @@ export default function Home({ testimonials, skills, services, projects, blogs }
                     <p>{a.subtitle}</p>
                   </CardContent>
                   <CardFooter>
-                    <Link href={'#'} className="hover:text-blue-600 underline" onClick={() => {
+                    <div className="hover:text-blue-600 underline cursor-pointer" onClick={() => {
                       setOpen(
                         <CustomModal
                             title="⚠️ Under Construction"
                             subheading="Should be available in 2-3 days"
                         >
-                            <p>You can track the progress or contribute @<Link href="https://github.com/Nikeshh/Nikeshh.com/tree/main/Version15/nikeshh.com" className="underline">Github</Link></p>
+                            <p>You can track the progress or contribute @<Link href="https://github.com/Nikeshh/Nikeshh.com/tree/main/Version15/nikeshh.com" className="underline cursor-pointer">Github</Link></p>
                         </CustomModal>
                       )
-                    }}>explore more.</Link>
+                    }}>explore more.</div>
                   </CardFooter>
                 </Card>
               );
             })}
           </div>
           <div className='mt-4 md:mt-6 w-full text-center'>
-            <Link href={'#'} className="hover:text-blue-600 underline" onClick={() => {
+            <div className="hover:text-blue-600 underline cursor-pointer" onClick={() => {
               setOpen(
                 <CustomModal
                     title="⚠️ Under Construction"
                     subheading="Should be available in 2-3 days"
                 >
-                    <p>You can track the progress or contribute @<Link href="https://github.com/Nikeshh/Nikeshh.com/tree/main/Version15/nikeshh.com" className="underline">Github</Link></p>
+                    <p>You can track the progress or contribute @<Link href="https://github.com/Nikeshh/Nikeshh.com/tree/main/Version15/nikeshh.com" className="underline cursor-pointer">Github</Link></p>
                 </CustomModal>
               )
-            }}>view more.</Link>
+            }}>view more.</div>
           </div>
         </section>
       )}
@@ -570,7 +573,7 @@ export default function Home({ testimonials, skills, services, projects, blogs }
               </figure>
             </div>
             <div className='mt-4 md:mt-6 w-full text-center'>
-              <Link onClick={switchTestimonialIndex} className="hover:text-blue-600 underline" href={''}>view next.</Link>
+              <div onClick={switchTestimonialIndex} className="hover:text-blue-600 underline cursor-pointer">view next.</div>
             </div>
           </div>
         </section>
@@ -661,7 +664,7 @@ export default function Home({ testimonials, skills, services, projects, blogs }
                             title="⚠️ Under Construction"
                             subheading="Should be available in 2-3 days"
                         >
-                            <p>You can track the progress or contribute @<Link href="https://github.com/Nikeshh/Nikeshh.com/tree/main/Version15/nikeshh.com" className="underline">Github</Link></p>
+                            <p>You can track the progress or contribute @<Link href="https://github.com/Nikeshh/Nikeshh.com/tree/main/Version15/nikeshh.com" className="underline cursor-pointer">Github</Link></p>
                         </CustomModal>
                       )
                     }}>
@@ -673,16 +676,16 @@ export default function Home({ testimonials, skills, services, projects, blogs }
             })}
           </div>
           <div className='mt-4 md:mt-6 w-full text-center'>
-            <Link href={'#'} className="hover:text-blue-600 underline" onClick={() => {
+            <div className="hover:text-blue-600 underline cursor-pointer" onClick={() => {
               setOpen(
                 <CustomModal
                     title="⚠️ Under Construction"
                     subheading="Should be available in 2-3 days"
                 >
-                    <p>You can track the progress or contribute @<Link href="https://github.com/Nikeshh/Nikeshh.com/tree/main/Version15/nikeshh.com" className="underline">Github</Link></p>
+                    <p>You can track the progress or contribute @<Link href="https://github.com/Nikeshh/Nikeshh.com/tree/main/Version15/nikeshh.com" className="underline cursor-pointer">Github</Link></p>
                 </CustomModal>
               )
-            }}>learn more.</Link>
+            }}>learn more.</div>
           </div>
         </section>
       )}
