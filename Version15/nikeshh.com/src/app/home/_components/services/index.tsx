@@ -27,13 +27,27 @@ const Services = ({ services } : Props) => {
     const [selectedService, setSelectedService] = useState(serviceTags[0]);
     const groupedServices = groupByKey(services.filter(item => item.category == serviceTags[0]), 'subcategory');
     const [selectedServices, setSelectedServices] = useState(groupedServices);
-    const [serviceCommand, setServiceCommand] = useState((Object.values(groupedServices)[0] as ServicesType[])[0] as ServicesType);
+    const groupedService = Object.values(groupedServices)[0] as ServicesType[]
+    const [serviceCommand, setServiceCommand] = useState(groupedService ? groupedService[0] as ServicesType : {
+        id: '',
+        name: '',
+        category: '',
+        subcategory: '',
+        subtitle: ''
+    });
     const updateSelectedService = (service: string) => {
         setSelectedService(service);
         const s = services.filter(item => item.category == service);
         const groupedServices = groupByKey(s, 'subcategory');
         setSelectedServices(groupedServices);
-        setServiceCommand((Object.values(groupedServices)[0] as ServicesType[])[0] as ServicesType);
+        const groupedService = Object.values(groupedServices)[0] as ServicesType[]
+        setServiceCommand(groupedService ? groupedService[0] as ServicesType : {
+            id: '',
+            name: '',
+            category: '',
+            subcategory: '',
+            subtitle: ''
+        });
     }
 
     if (services && services.length > 0 && serviceTags) {
