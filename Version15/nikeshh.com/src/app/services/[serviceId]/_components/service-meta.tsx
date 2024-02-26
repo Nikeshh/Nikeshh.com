@@ -14,9 +14,9 @@ export default function ServiceMeta() {
             <div className="px-4 py-4 border-b">
               <h3 className="underline">Tags</h3>
               <div className="mt-6 flex flex-wrap gap-2">
-                {['Open source', 'Full Stack Development'].map((a) => {
+                {['Open source', 'Full Stack Development'].map((a, index) => {
                   return (
-                    <Badge variant='default' key={a}>
+                    <Badge variant='default' key={index}>
                       <Link
                         className="group flex justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
                         href="#"

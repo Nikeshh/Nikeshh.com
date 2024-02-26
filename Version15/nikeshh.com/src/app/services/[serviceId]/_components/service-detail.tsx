@@ -25,9 +25,9 @@ export default function ServiceDetail() {
           <div className="mt-6 px-4">
             <h3 className="underline">Setup</h3>
             <div className="mt-6 flex flex-wrap gap-2">
-              {['SAAS', 'Full Stack', 'UI/UX', 'Android', 'iOS'].map((a) => {
+              {['SAAS', 'Full Stack', 'UI/UX', 'Android', 'iOS'].map((a, index) => {
                 return (
-                  <Badge variant='default' key={a}>
+                  <Badge variant='default' key={index}>
                     <Link
                       className="group flex justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
                       href="#"

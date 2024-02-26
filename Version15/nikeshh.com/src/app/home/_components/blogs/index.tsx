@@ -33,9 +33,9 @@ const Blogs = ({ blogs } : Props) => {
                     </h2>
                 </div>
                 <div className='grid grid-cols-1 md:grid-cols-3 mt-4 gap-4'>
-                    {blogs.map((blog) => {
+                    {blogs.map((blog, index) => {
                         return (
-                            <Card key={blog.id}>
+                            <Card key={index}>
                                 <CardHeader>
                                     <Image
                                         src={blog.imageUrl}
@@ -62,18 +62,11 @@ const Blogs = ({ blogs } : Props) => {
                                     </div>
                                 </CardContent>
                                 <CardFooter>
-                                    <Button className="w-full" variant="outline" onClick={() => {
-                                        setOpen(
-                                        <CustomModal
-                                            title="⚠️ Under Construction"
-                                            subheading="Should be available in 2-3 days"
-                                        >
-                                            <p>You can track the progress or contribute @<Link href="https://github.com/Nikeshh/Nikeshh.com/tree/main/Version15/nikeshh.com" className="underline cursor-pointer">Github</Link></p>
-                                        </CustomModal>
-                                        )
-                                    }}>
-                                        <Eye className="mr-2 h-4 w-4" /> View
-                                    </Button>
+                                    <Link href={`/blogs/${blog.id}`}>
+                                        <Button className="w-full" variant="outline">
+                                            <Eye className="mr-2 h-4 w-4" /> View
+                                        </Button>
+                                    </Link>
                                 </CardFooter>
                             </Card>
                         )

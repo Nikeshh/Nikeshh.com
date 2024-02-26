@@ -21,8 +21,6 @@ type Props = {
 }
 
 const Skills = ({ skills } : Props) => {
-    const { setOpen } = useModal();
-
     const skillTags = skills.map(item => item.category).filter((value, index, self) => self.indexOf(value) === index);
     const [selectedSkill, setSelectedSkill] = useState(skillTags[0]);
     const [selectedSkills, setSelectedSkills] = useState(skills.filter(item => item.category == skillTags[0]));
@@ -41,9 +39,9 @@ const Skills = ({ skills } : Props) => {
                     </h2>
                 </div>
                 <div className="mt-6 flex flex-wrap gap-2 justify-center">
-                    {skillTags.map((a) => {
+                    {skillTags.map((a, index) => {
                         return (
-                            <Badge variant={selectedSkill == a ? 'default' : 'outline'} key={a}>
+                            <Badge variant={selectedSkill == a ? 'default' : 'outline'} key={index}>
                             <div
                                 className="group flex justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end uppercase cursor-pointer"
                                 onClick={() => updateSelectedSkill(a)}
@@ -88,18 +86,11 @@ const Skills = ({ skills } : Props) => {
                                     </div>
                                 </CardContent>
                                 <CardFooter>
-                                    <Button className="w-full" variant="outline" onClick={() => {
-                                        setOpen(
-                                            <CustomModal
-                                                title="⚠️ Under Construction"
-                                                subheading="Should be available in 2-3 days"
-                                            >
-                                                <p>You can track the progress or contribute @<Link href="https://github.com/Nikeshh/Nikeshh.com/tree/main/Version15/nikeshh.com" className="underline cursor-pointer">Github</Link></p>
-                                            </CustomModal>
-                                        )
-                                        }}>
-                                        <Eye className="mr-2 h-4 w-4" /> Explore
-                                    </Button>
+                                    <Link href={`/skills/${skill.id}`}>
+                                        <Button className="w-full" variant="outline">
+                                            <Eye className="mr-2 h-4 w-4" /> Explore
+                                        </Button>
+                                    </Link>
                                 </CardFooter>
                             </Card>
                         );
