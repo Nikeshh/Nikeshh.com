@@ -13,6 +13,7 @@ import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useRouter } from "next/navigation";
 
 type Props = {
     services: {
@@ -32,6 +33,8 @@ const Services = ({ services } : Props) => {
         setSelectedService(service);
         setSelectedServices(services.filter(item => item.category == service));
     }
+
+    const router = useRouter();
 
     if (services && services.length > 0 && serviceTags) {
         return (
@@ -91,8 +94,8 @@ const Services = ({ services } : Props) => {
                                                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati explicabo dicta officiis aspernatur quam animi vero.</p>
                                                         <span className="underline">Technologies:</span>
                                                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis eveniet sequi ipsum quaerat!</p>
-                                                        <Button className="w-fit">
-                                                            VIEW PROJECT
+                                                        <Button className="w-fit" onClick={() => router.push(`/services/${service.id}`)}>
+                                                            VIEW
                                                         </Button>
                                                     </div>
                                                 </CardContent>
@@ -135,8 +138,8 @@ const Services = ({ services } : Props) => {
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati explicabo dicta officiis aspernatur quam animi vero.</p>
                                 <span className="underline">Technologies:</span>
                                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis eveniet sequi ipsum quaerat!</p>
-                                <Button className="w-fit">
-                                    VIEW PROJECT
+                                <Button className="w-fit" onClick={() => router.push(`/services/${service.id}`)}>
+                                    VIEW
                                 </Button>
                             </div>
                         </div>

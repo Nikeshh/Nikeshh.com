@@ -1,3 +1,5 @@
+"use client"
+
 import { Card, CardContent } from "@/components/ui/card"
 import {
   Carousel,
@@ -17,6 +19,8 @@ import { Badge } from "@/components/ui/badge";
 import Image from 'next/image';
 import { groupByKey } from "@/lib/utils";
 import { Blogs } from "@prisma/client";
+import { Button } from "@/components/ui/button";
+import { useRouter } from "next/navigation";
 
 type Props = {
     blogs: {
@@ -34,6 +38,8 @@ const Blogs = ({ blogs } : Props) => {
     const groupedBlogs = groupByKey(blogs.filter(item => item.category == blogTags[0]), 'category');
 
     const groupedVueJSBlogs = groupByKey(blogs.filter(item => item.category.toLowerCase() == 'vuejs'), 'category');
+
+    const router = useRouter();
 
     if (blogs && blogs.length > 0) {
         return (
@@ -97,7 +103,13 @@ const Blogs = ({ blogs } : Props) => {
                                                                     </div>
                                                                 </div>
                                                             </div>
+                                                            <div>
+                                                                <Button className="w-fit" onClick={() => router.push(`/blogs/${blog.id}`)}>
+                                                                    VIEW
+                                                                </Button>
+                                                            </div>
                                                         </div>
+
                                                     </CardContent>
                                                 </Card>
                                             </div>
@@ -134,6 +146,11 @@ const Blogs = ({ blogs } : Props) => {
                                             <div className="flex flex-col gap-2"> 
                                                 <h2 className="text-xl">{blog.title}</h2>
                                                 <p>{blog.subtitle}</p>
+                                                <div>
+                                                    <Button className="w-fit" onClick={() => router.push(`/blogs/${blog.id}`)}>
+                                                        VIEW
+                                                    </Button>
+                                                </div>
                                                 <div className="flex flex-col gap-2 py-9">
                                                     <p className="text-sm">Article written by</p>
                                                     <div className="flex flex-wrap justify-between gap-y-3">
@@ -226,6 +243,11 @@ const Blogs = ({ blogs } : Props) => {
                                                                                     <p className="text-sm text-slate-600">last 30 days</p>
                                                                                 </div>
                                                                             </div>
+                                                                        </div>
+                                                                        <div>
+                                                                            <Button className="w-fit" onClick={() => router.push(`/blogs/${blog.id}`)}>
+                                                                                VIEW
+                                                                            </Button>
                                                                         </div>
                                                                     </div>
                                                                 </CardContent>
