@@ -138,6 +138,19 @@ export const getBlogs = async () => {
   return response
 }
 
+export const getAllBlogs = async () => {
+  const response = await db.blogs.findMany({
+    select: {
+      id: true,
+      title: true,
+      subtitle: true,
+      imageUrl: true,
+      category: true
+    },
+  });
+  return response
+}
+
 export const upsertNewsletter = async (
   newsletter: Prisma.NewsletterUncheckedCreateInput
 ) => {
