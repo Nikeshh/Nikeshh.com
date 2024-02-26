@@ -38,9 +38,9 @@ const Projects = ({ projects } : Props) => {
                     </h2>
                 </div>
                 <div className="mt-6 flex flex-wrap gap-2 justify-center">
-                    {projectTags.map((a) => {
+                    {projectTags.map((a, index) => {
                         return (
-                            <Badge variant={selectedProject == a ? 'default' : 'outline'} key={a}>
+                            <Badge variant={selectedProject == a ? 'default' : 'outline'} key={index}>
                                 <div
                                     className="group flex justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end uppercase cursor-pointer"
                                     onClick={() => updateSelectedProject(a)}
@@ -54,9 +54,9 @@ const Projects = ({ projects } : Props) => {
                     })}
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-5 pt-9">
-                    {selectedProjects.map((a) => {
+                    {selectedProjects.map((a, index) => {
                         return (
-                            <Card key={a.id}>
+                            <Card key={index}>
                                 <CardHeader>
                                     <CardTitle>{a.name}</CardTitle>
                                 </CardHeader>
@@ -64,16 +64,9 @@ const Projects = ({ projects } : Props) => {
                                     <p>{a.subtitle}</p>
                                 </CardContent>
                                 <CardFooter>
-                                    <div className="hover:text-blue-600 underline cursor-pointer" onClick={() => {
-                                        setOpen(
-                                            <CustomModal
-                                                title="⚠️ Under Construction"
-                                                subheading="Should be available in 2-3 days"
-                                            >
-                                                <p>You can track the progress or contribute @<Link href="https://github.com/Nikeshh/Nikeshh.com/tree/main/Version15/nikeshh.com" className="underline cursor-pointer">Github</Link></p>
-                                            </CustomModal>
-                                        )
-                                    }}>explore more.</div>
+                                    <Link href={`/projects/${a.id}`}>
+                                        <div className="hover:text-blue-600 underline cursor-pointer">explore more.</div>
+                                    </Link>
                                 </CardFooter>
                             </Card>
                         );

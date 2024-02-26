@@ -60,9 +60,9 @@ const Services = ({ services } : Props) => {
                     </h2>
                 </div>
                 <div className="mt-6 flex flex-wrap gap-2 justify-center">
-                    {serviceTags.map((a) => {
+                    {serviceTags.map((a, index) => {
                         return (
-                            <Badge variant={selectedService == a ? 'default' : 'outline'} key={a}>
+                            <Badge variant={selectedService == a ? 'default' : 'outline'} key={index}>
                                 <div
                                     className="group flex justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end cursor-pointer"
                                     onClick={() => updateSelectedService(a)}
@@ -105,16 +105,9 @@ const Services = ({ services } : Props) => {
                             <p>{serviceCommand.subtitle}</p>
                         </CardContent>
                         <CardFooter>
-                            <div className="hover:text-blue-600 underline cursor-pointer" onClick={() => {
-                                setOpen(
-                                <CustomModal
-                                    title="⚠️ Under Construction"
-                                    subheading="Should be available in 2-3 days"
-                                >
-                                    <p>You can track the progress or contribute @<Link href="https://github.com/Nikeshh/Nikeshh.com/tree/main/Version15/nikeshh.com" className="underline cursor-pointer">Github</Link></p>
-                                </CustomModal>
-                                )
-                            }}>explore more.</div>
+                            <Link href={`/services/${serviceCommand.id}`}>
+                                <div className="hover:text-blue-600 underline cursor-pointer">explore more.</div>
+                            </Link>
                         </CardFooter>
                     </Card>
                 </div>

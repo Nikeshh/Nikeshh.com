@@ -34,9 +34,9 @@ const Projects = ({ projects } : Props) => {
                     </h1>
                 </div>
                 <div className="mt-6 mb-48 flex flex-wrap gap-2 justify-center">
-                    {projectTags.map((a) => {
+                    {projectTags.map((a, index) => {
                         return (
-                            <Badge variant={selectedService == a ? 'default' : 'outline'} key={a}>
+                            <Badge variant={selectedService == a ? 'default' : 'outline'} key={index}>
                             <div
                                 className="group flex justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end uppercase cursor-pointer"
                                 onClick={() => updateSelectedService(a)}

@@ -41,9 +41,9 @@ const Skills = ({ skills } : Props) => {
                     </h1>
                 </div>
                 <div className="mt-6 flex flex-wrap gap-2 justify-center">
-                    {skillTags.map((a) => {
+                    {skillTags.map((a, index) => {
                         return (
-                            <Badge variant={selectedSkill == a ? 'default' : 'outline'} key={a}>
+                            <Badge variant={selectedSkill == a ? 'default' : 'outline'} key={index}>
                             <div
                                 className="group flex justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end uppercase cursor-pointer"
                                 onClick={() => updateSelectedSkill(a)}

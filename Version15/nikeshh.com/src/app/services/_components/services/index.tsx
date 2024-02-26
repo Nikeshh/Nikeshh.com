@@ -42,9 +42,9 @@ const Services = ({ services } : Props) => {
                     </h1>
                 </div>
                 <div className="mt-6 flex flex-wrap gap-2 justify-center">
-                    {serviceTags.map((a) => {
+                    {serviceTags.map((a, index) => {
                         return (
-                            <Badge variant={selectedService == a ? 'default' : 'outline'} key={a}>
+                            <Badge variant={selectedService == a ? 'default' : 'outline'} key={index}>
                             <div
                                 className="group flex justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end uppercase cursor-pointer"
                                 onClick={() => updateSelectedService(a)}
