@@ -116,7 +116,7 @@ const Footer = () => {
                             <p className="text-lg font-medium">Resources</p>
                             <ul className="mt-8 space-y-4 text-sm">
                                 <li>
-                                    <Link className="text-gray-700 transition hover:text-gray-700/75" href="#" onClick={() => {
+                                    <div className="text-gray-700 transition hover:text-gray-700/75 cursor-pointer" onClick={() => {
                                         setOpen(
                                             <CustomModal
                                                 title="⚠️ Under Construction"
@@ -125,7 +125,7 @@ const Footer = () => {
                                                 <p>You can track the progress or contribute @<Link href="https://github.com/Nikeshh/Nikeshh.com/tree/main/Version15/nikeshh.com" className="underline">Github</Link></p>
                                             </CustomModal>
                                         )
-                                    }}> View </Link>
+                                    }}> View </div>
                                 </li>
                             </ul>
                         </div>
@@ -133,7 +133,7 @@ const Footer = () => {
                             <p className="text-lg font-medium">Helpful Links</p>
                             <ul className="mt-8 space-y-4 text-sm">
                                 <li>
-                                    <Link className="text-gray-700 transition hover:text-gray-700/75" href="#" onClick={() => {
+                                    <div className="text-gray-700 transition hover:text-gray-700/75 cursor-pointer" onClick={() => {
                                         setOpen(
                                             <CustomModal
                                                 title="⚠️ Under Construction"
@@ -142,7 +142,7 @@ const Footer = () => {
                                                 <p>You can track the progress or contribute @<Link href="https://github.com/Nikeshh/Nikeshh.com/tree/main/Version15/nikeshh.com" className="underline">Github</Link></p>
                                             </CustomModal>
                                         )
-                                    }}> View </Link>
+                                    }}> View </div>
                                 </li>
                             </ul>
                         </div>
@@ -162,7 +162,7 @@ const Footer = () => {
                                                         <FormLabel>Name</FormLabel>
                                                         <FormControl>
                                                             <Input
-                                                                placeholder="Name"
+                                                                placeholder="Type your name"
                                                                 {...field}
                                                             />
                                                         </FormControl>
@@ -180,7 +180,7 @@ const Footer = () => {
                                                     <FormControl>
                                                         <Input
                                                         type="email"
-                                                        placeholder="Email"
+                                                        placeholder="Type your email"
                                                         {...field}
                                                         />
                                                     </FormControl>

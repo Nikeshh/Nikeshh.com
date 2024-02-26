@@ -49,6 +49,21 @@ export const getSkills = async () => {
   return response
 }
 
+export const getAllSkills = async () => {
+  const response = await db.skills.findMany({
+    select: {
+      id: true,
+      name: true,
+      category: true,
+      points: true
+    },
+    orderBy: {
+      category: 'asc',
+    },
+  });
+  return response
+}
+
 export const getServices = async () => {
   const response = await db.services.findMany({
     select: {
@@ -65,7 +80,38 @@ export const getServices = async () => {
   return response
 }
 
+export const getAllServices = async () => {
+  const response = await db.services.findMany({
+    select: {
+      id: true,
+      name: true,
+      subtitle: true,
+      category: true,
+      subcategory: true
+    },
+    orderBy: {
+      category: 'asc',
+    },
+  });
+  return response
+}
+
 export const getProjects = async () => {
+  const response = await db.projects.findMany({
+    select: {
+      id: true,
+      name: true,
+      subtitle: true,
+      category: true
+    },
+    orderBy: {
+      category: 'asc',
+    },
+  });
+  return response
+}
+
+export const getAllProjects = async () => {
   const response = await db.projects.findMany({
     select: {
       id: true,
