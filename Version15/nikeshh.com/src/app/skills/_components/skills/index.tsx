@@ -13,6 +13,7 @@ import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useRouter } from "next/navigation";
 
 type Props = {
     skills: {
@@ -31,6 +32,8 @@ const Skills = ({ skills } : Props) => {
         setSelectedSkill(skill);
         setSelectedSkills(skills.filter(item => item.category == skill));
     }
+
+    const router = useRouter();
 
     if (skills && skills.length > 0 && skillTags) {
         return (
@@ -90,8 +93,8 @@ const Skills = ({ skills } : Props) => {
                                                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati explicabo dicta officiis aspernatur quam animi vero.</p>
                                                         <span className="underline">Technologies:</span>
                                                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis eveniet sequi ipsum quaerat!</p>
-                                                        <Button className="w-fit">
-                                                            VIEW PROJECT
+                                                        <Button className="w-fit" onClick={() => router.push(`/skills/${skill.id}`)}>
+                                                            VIEW
                                                         </Button>
                                                     </div>
                                                 </CardContent>
@@ -134,8 +137,8 @@ const Skills = ({ skills } : Props) => {
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati explicabo dicta officiis aspernatur quam animi vero.</p>
                                 <span className="underline">Technologies:</span>
                                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis eveniet sequi ipsum quaerat!</p>
-                                <Button className="w-fit">
-                                    VIEW PROJECT
+                                <Button className="w-fit" onClick={() => router.push(`/skills/${skill.id}`)}>
+                                    VIEW
                                 </Button>
                             </div>
                         </div>

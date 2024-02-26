@@ -1,11 +1,11 @@
 "use client"
 
 import { useState } from "react";
-import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useRouter } from "next/navigation";
 
 type Props = {
     projects: {
@@ -24,6 +24,8 @@ const Projects = ({ projects } : Props) => {
         setSelectedService(project);
         setSelectedProjects(projects.filter(item => item.category == project));
     }
+
+    const router = useRouter();
 
     if (projects && projects.length > 0 && projectTags) {
         return (
@@ -78,8 +80,8 @@ const Projects = ({ projects } : Props) => {
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati explicabo dicta officiis aspernatur quam animi vero.</p>
                                 <span className="underline">Technologies:</span>
                                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis eveniet sequi ipsum quaerat!</p>
-                                <Button className="w-fit">
-                                    VIEW PROJECT
+                                <Button className="w-fit" onClick={() => router.push(`/projects/${project.id}`)}>
+                                    VIEW
                                 </Button>
                             </div>
                         </div>
