@@ -80,16 +80,7 @@ const Blogs = ({ blogs } : Props) => {
                     })}
                 </div>
                 <div className='mt-4 md:mt-6 w-full text-center'>
-                    <div className="hover:text-blue-600 underline cursor-pointer" onClick={() => {
-                        setOpen(
-                            <CustomModal
-                                title="⚠️ Under Construction"
-                                subheading="Should be available in 2-3 days"
-                            >
-                                <p>You can track the progress or contribute @<Link href="https://github.com/Nikeshh/Nikeshh.com/tree/main/Version15/nikeshh.com" className="underline cursor-pointer">Github</Link></p>
-                            </CustomModal>
-                        )
-                    }}>learn more.</div>
+                    <Link className="hover:text-blue-600 underline cursor-pointer" href="/blogs">learn more.</Link>
                 </div>
             </section>
         );

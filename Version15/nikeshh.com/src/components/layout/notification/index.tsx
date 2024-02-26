@@ -3,11 +3,21 @@
 import CustomModal from '@/components/global/custom-modal';
 import { useModal } from '@/providers/modal-provider'
 import Link from 'next/link';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { toast } from 'sonner';
+import { Copy } from "lucide-react"
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+} from "@/components/ui/dialog"
 
 const NotificationC = () => {
     const { setOpen } = useModal();
+
+    const [dialogOpen, setDialogOpen] = useState(true);
 
     useEffect(() => {
         // Toast Message
@@ -27,10 +37,30 @@ const NotificationC = () => {
             },
             },
         })
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     return (
         <div className="bg-indigo-900 text-center py-4 px-6 lg:px-4 cursor-pointer">
+            <Dialog open={dialogOpen} onOpenChange={setDialogOpen}>
+                <DialogContent className="sm:max-w-[425px]">
+                    <DialogHeader>
+                        <DialogTitle>Please read?</DialogTitle>
+                        <DialogDescription>
+                            This website is in beta version. If you find any bug or have suggestions or ready to collaborate, please reach out to me directly @ nikeshhbaskaran01@gmail.com
+                            <div className="mt-2">
+                                <b><u>Technologies of this website:</u></b>
+                                <ul>
+                                    <li>1. Nextjs - Typescript</li>
+                                    <li>2. Clerk authentication</li>
+                                    <li>3. Prisma for ORM</li>
+                                    <li>4. Planet scale and MySQL for database</li>
+                                </ul>
+                            </div>
+                        </DialogDescription>
+                    </DialogHeader>
+                </DialogContent>
+            </Dialog>
             <div className="p-2 bg-indigo-800 items-center text-indigo-100 leading-none md:rounded lg:rounded-full flex lg:inline-flex" role="alert" onClick={() => {
                 setOpen(
                     <CustomModal
