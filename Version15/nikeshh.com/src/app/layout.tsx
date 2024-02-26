@@ -6,6 +6,7 @@ import { dark } from "@clerk/themes";
 import { ClerkProvider } from "@clerk/nextjs";
 import { Toaster } from "@/components/ui/sonner"
 import ModalProvider from "@/providers/modal-provider";
+import { Analytics } from "@vercel/analytics/react";
 
 const font = DM_Sans({ subsets: ["latin"] });
 
@@ -37,6 +38,7 @@ export default async function RootLayout({
           </ModalProvider>
         </ThemeProvider>
         <Toaster />
+        <Analytics />
       </body>
     </html>
   );
