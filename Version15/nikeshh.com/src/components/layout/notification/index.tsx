@@ -9,6 +9,7 @@ import {
   Dialog,
   DialogContent,
   DialogDescription,
+  DialogFooter,
   DialogHeader,
 } from "@/components/ui/dialog"
 import { DialogTitle } from '@radix-ui/react-dialog'
@@ -40,16 +41,16 @@ const NotificationC = () => {
                         <DialogTitle className="text-2xl font-bold">Please read?</DialogTitle>
                         <DialogDescription>
                             This website is in beta version. If you find any bug or have suggestions or ready to collaborate, please reach out to me directly @ nikeshhbaskaran01@gmail.com
-                            <div className="mt-2">
-                                <b><u>Technologies of this website:</u></b>
-                                <ul>
-                                    <li>1. Nextjs - Typescript</li>
-                                    <li>2. Clerk authentication</li>
-                                    <li>3. Prisma for ORM</li>
-                                    <li>4. Planet scale and MySQL for database</li>
-                                </ul>
-                            </div>
                         </DialogDescription>
+                        <DialogFooter>
+                            <ul>
+                                <li><b><u>Technologies of this website:</u></b></li>
+                                <li>1. Nextjs - Typescript</li>
+                                <li>2. Clerk authentication</li>
+                                <li>3. Prisma for ORM</li>
+                                <li>4. Planet scale and MySQL for database</li>
+                            </ul>
+                        </DialogFooter>
                     </DialogHeader>
                 </DialogContent>
             </Dialog>
