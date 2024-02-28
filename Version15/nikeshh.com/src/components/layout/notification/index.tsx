@@ -1,8 +1,5 @@
 "use client"
 
-import CustomModal from '@/components/global/custom-modal';
-import { useModal } from '@/providers/modal-provider'
-import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import { toast } from 'sonner';
 import {
@@ -16,8 +13,6 @@ import { DialogTitle } from '@radix-ui/react-dialog'
 import { useRouter } from 'next/navigation';
 
 const NotificationC = () => {
-    const { setOpen } = useModal();
-
     const [dialogOpen, setDialogOpen] = useState(true);
     const router = useRouter();
 

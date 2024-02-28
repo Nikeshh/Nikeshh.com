@@ -1,15 +1,5 @@
 import { Button } from '@/components/ui/button';
 import Image from 'next/image';
-import { Info } from "lucide-react"
-import {
-  Avatar,
-  AvatarFallback,
-} from "@/components/ui/avatar"
-import {
-  HoverCard,
-  HoverCardContent,
-  HoverCardTrigger,
-} from "@/components/ui/hover-card"
 import Link from 'next/link';
 import Navigation from "@/components/layout/navigation";
 import Footer from "@/components/layout/footer";
@@ -22,6 +12,7 @@ import Services from './_components/services';
 import Projects from './_components/projects';
 import Newsletters from './_components/newsletters';
 import Contact from './_components/contact';
+import HoverCardC from './_components/global/hover-card';
 
 const Home = async () => {
   const testimonials = await getTestimonials();
@@ -45,30 +36,7 @@ const Home = async () => {
           </div>
           <p className="text-[16px] md:text-2xl">
             Scaling to
-            <HoverCard>
-              <HoverCardTrigger asChild>
-                <Button variant="link" className="text-[16px] md:text-2xl pl-1 cursor-wait"><u>@perfection</u></Button>
-              </HoverCardTrigger>
-              <HoverCardContent className="w-80">
-                <div className="flex justify-between space-x-4">
-                  <Avatar>
-                    <AvatarFallback>N</AvatarFallback>
-                  </Avatar>
-                  <div className="space-y-1">
-                    <h4 className="text-sm font-semibold">@nikeshh</h4>
-                    <p className="text-sm">
-                      Achieving perfection involves adding more value than merely pursuing flawlessness in the end.
-                    </p>
-                    <div className="flex items-center pt-2">
-                      <Info className="mr-2 h-4 w-4 opacity-70" />{" "}
-                      <span className="text-xs text-muted-foreground">
-                        My core principle
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </HoverCardContent>
-            </HoverCard>
+            <HoverCardC />
           </p>
           <p>
             Code, Coffee and Crazy Creativity: <u>The Nikeshh Experience!</u> A developer who built skills with a great passion for technologies and creating impact for the end users.
