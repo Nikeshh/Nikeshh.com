@@ -71,7 +71,7 @@ const Home = async () => {
             </HoverCard>
           </p>
           <p>
-            Code, Coffee and Crazy Creativity: The Nikeshh Experience!
+            Code, Coffee and Crazy Creativity: <u>The Nikeshh Experience!</u> A developer who built skills with a great passion for technologies and creating impact for the end users.
           </p>
           <Link href={"#worked-with"} className="cursor-pointer">
             <Button className="w-fit">

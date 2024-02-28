@@ -15,6 +15,7 @@ import {
 import { User2 } from 'lucide-react';
 import { createContact } from '@/lib/queries';
 import { toast } from 'sonner';
+import DOMPurify from "isomorphic-dompurify";
 
 type Props = {
   params: { 
@@ -50,6 +51,19 @@ const Page = ({ params }: Props ) => {
   const skillId = params.skillId;
   console.log(skillId);
 
+  const data = `
+    <p>This is a sample content to be written</p>
+    <p></p>
+    <ul>
+    <li>pOints</li>
+    <li>Point 2</li>
+    </ul>
+    <p></p>
+    <p>This unordered list is not visible. Not sure why</p>
+  `;
+
+  const clean = DOMPurify.sanitize(data, { USE_PROFILES: { html: true } });
+
   return (
     <ScrollArea className="h-full">
       <div className="flex-1 space-y-4 p-4 md:p-8 pt-6">
@@ -73,6 +87,8 @@ const Page = ({ params }: Props ) => {
             className="rounded-tl-2xl rounded-tr-2xl border-2 border-muted"
           />
           <div className="flex flex-col gap-2">
+            <div dangerouslySetInnerHTML={{ __html:clean }}></div>
+
             <h2 className="mt-4 backdrop:text-xl font-bold tracking-tight">Subheading</h2>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora dolore itaque qui doloremque sint libero rerum, corrupti odit ipsum blanditiis nobis possimus! Voluptatem possimus, quasi aliquid veniam distinctio atque quisquam.</p>
             <h2 className="mt-4 text-xl font-bold tracking-tight">Subheading</h2>

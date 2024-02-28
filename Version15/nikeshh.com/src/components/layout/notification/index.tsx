@@ -36,7 +36,7 @@ const NotificationC = () => {
     return (
         <div className="bg-indigo-900 text-center py-4 px-6 lg:px-4 cursor-pointer">
             <Dialog open={dialogOpen} onOpenChange={setDialogOpen}>
-                <DialogContent className="overflow-auto md:max-h-[700px] md:h-fit h-screen bg-card">
+                <DialogContent>
                     <DialogHeader className="pt-8 text-left">
                         <DialogTitle className="text-2xl font-bold">Please read?</DialogTitle>
                         <DialogDescription>
