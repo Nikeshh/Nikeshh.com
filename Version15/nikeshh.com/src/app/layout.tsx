@@ -7,8 +7,18 @@ import { ClerkProvider } from "@clerk/nextjs";
 import { Toaster } from "@/components/ui/sonner"
 import ModalProvider from "@/providers/modal-provider";
 import { Analytics } from "@vercel/analytics/react";
+import localFont from 'next/font/local';
 
 const font = DM_Sans({ subsets: ["latin"] });
+
+const rollAndInEmilieFont = localFont({
+  src: [
+    {
+      path: '../../public/fonts/RollandinEmilie.ttf',
+    }
+  ],
+  variable: '--font-roll-and-in-emilie'
+})
 
 export const metadata: Metadata = {
   title: "Nikeshh Vijayabaskaran",
@@ -22,7 +32,7 @@ export default async function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning={true}>
-      <body className={font.className} suppressHydrationWarning={true}>
+      <body className={`${font.className} ${rollAndInEmilieFont.variable}`} suppressHydrationWarning={true}>
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"

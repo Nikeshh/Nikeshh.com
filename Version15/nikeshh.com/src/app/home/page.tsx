@@ -29,15 +29,17 @@ const Home = async () => {
       <Navigation />
       <section id="banner" className="container pt-12 md:pt-44 relative flex items-center md:justify-center flex-wrap md:flex-nowrap gap-5">
         <div className="flex justify-center relative flex-col gap-2 md:gap-4">
-          <div className="bg-gradient-to-r from-primary to-secondary-foreground text-transparent bg-clip-text relative">
-            <h1 className="font-bold text-2xl md:text-[50px] md:leading-none">
-              Senior Full Stack Developer and Digital Marketer
+          <h2 className="font-bold text-xl md:text-[20px] md:leading-none">
+            I am Nikeshh Vijayabaskaran.
+          </h2>
+          <div className="bg-gradient-to-r from-primary to-secondary-foreground text-transparent bg-clip-text relative mt-2">
+            <h1 className="font-bold text-[70px] architect-font">
+              I BUILD.
             </h1>
           </div>
-          <p className="text-[16px] md:text-2xl">
-            Scaling to
-            <HoverCardC />
-          </p>
+          <ul>
+            <li><HoverCardC title="Software Products & Systems that scale with perfection" content="" subtext="" /></li>
+          </ul>
           <p>
             Code, Coffee and Crazy Creativity: <u>The Nikeshh Experience!</u> A developer who built skills with a great passion for technologies and creating impact for the end users.
           </p>

@@ -13,13 +13,19 @@ import {
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
 
-const HoverCardC = () => {
+type Props = {
+    title: string;
+    content: string;
+    subtext: string;
+}
+
+const HoverCardC = ({ title, content, subtext } : Props) => {
     const [hoverCardOpen, setHoverCardOpen] = useState(false);
 
     return (
         <HoverCard open={hoverCardOpen}>
             <HoverCardTrigger asChild>
-                <Button variant="link" className="text-[16px] md:text-2xl pl-1" onClick={() => setHoverCardOpen(true)}><u>@perfection</u></Button>
+                <Button variant="link" className="text-[16px] md:text-2xl pl-0" onClick={() => setHoverCardOpen(true)}><u>{title}</u></Button>
             </HoverCardTrigger>
             <HoverCardContent className="w-80">
                 <div className="flex justify-between space-x-4">
