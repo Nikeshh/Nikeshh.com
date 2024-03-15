@@ -117,3 +117,7 @@ B (255 */
     transform: scale(1);
   }
 }
+
+.architect-font {
+  font-family: var(--font-roll-and-in-emilie);
+}
