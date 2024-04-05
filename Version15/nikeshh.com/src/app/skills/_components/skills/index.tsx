@@ -17,6 +17,7 @@ import { useRouter } from "next/navigation";
 
 type Props = {
     skills: {
+        imageUrl: string;
         id: string;
         name: string;
         category: string;
@@ -81,7 +82,7 @@ const Skills = ({ skills } : Props) => {
                                                         </Badge>
                                                         <p className="underline absolute bottom-2 right-2 text-slate-600 hover:text-primary">Featured</p>
                                                         <Image
-                                                            src={'/assets/preview.png'}
+                                                            src={skill.imageUrl ?? '/assets/preview.png'}
                                                             alt="banner image"
                                                             height={600}
                                                             width={1200}
