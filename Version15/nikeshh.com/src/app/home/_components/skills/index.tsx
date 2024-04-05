@@ -16,6 +16,7 @@ type Props = {
         id: string;
         name: string;
         category: string;
+        imageUrl: string;
         points: string;
     }[]
 }
@@ -63,7 +64,7 @@ const Skills = ({ skills } : Props) => {
                                 </CardHeader>
                                 <CardContent className="grid gap-4">
                                     <Image
-                                        src={'/assets/preview.png'}
+                                        src={skill.imageUrl ?? '/assets/preview.png'}
                                         alt="banner image"
                                         height={120}
                                         width={120}

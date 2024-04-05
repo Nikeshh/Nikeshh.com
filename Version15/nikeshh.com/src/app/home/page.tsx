@@ -30,7 +30,7 @@ const Home = async () => {
       <section id="banner" className="container pt-12 md:pt-44 relative flex items-center md:justify-center flex-wrap md:flex-nowrap gap-5">
         <div className="flex justify-center relative flex-col gap-2 md:gap-4">
           <h2 className="font-bold text-xl md:text-[20px] md:leading-none">
-            I am Nikeshh Vijayabaskaran.
+            I am Nikeshh Vijayabaskaran (aka) Nik.
           </h2>
           <div className="bg-gradient-to-r from-primary to-secondary-foreground text-transparent bg-clip-text relative mt-2">
             <h1 className="font-bold text-[70px] architect-font">
@@ -41,8 +41,14 @@ const Home = async () => {
             <li><HoverCardC title="Software Products & Systems that scale with perfection" content="" subtext="" /></li>
           </ul>
           <p>
-            Code, Coffee and Crazy Creativity: <u>The Nikeshh Experience!</u> A developer who built skills with a great passion for technologies and creating impact for the end users.
+            👨‍💻 Lead Full Stack Developer with work spanning a decade. 
           </p>
+          <p>
+            🧑🏻‍💻 Code, Coffee and Crazy Creativity: <u>The Nikeshh Experience!</u> A developer who built skills with a great passion for technologies and creating impact for the end users. 
+          </p>
+          <p>🤖 Artificial Intelligence and Blockchain Enthusiast</p>
+          <p>I&apos;m reachable at 📞 +1 (416)-834-5350 (or) 📨 nikeshhbaskaran01@gmail.com</p>
+          <p>(◠‿◠) ✌ 🟢 Available for full time / contract / freelancing work</p>
           <Link href={"#worked-with"} className="cursor-pointer">
             <Button className="w-fit">
               Explore Me
@@ -70,9 +76,37 @@ const Home = async () => {
           </div>
         <div className='flex flex-wrap gap-2 md:gap-9 mt-9 justify-center items-center'>
           <Link
+            href="https://www.rbcroyalbank.com/"
+            target='_blank'
+            className='cursor-pointer flex flex-col items-center'
+          >
+            <Image
+              src={'/assets/clients/rbc.jpeg'}
+              alt="client image"
+              height={240}
+              width={240}
+              className="rounded-tl-2xl rounded-tr-2xl border-2 border-muted"
+            />
+            <span>Contractor</span>
+          </Link>
+          <Link
+            href="https://www.temenos.com/"
+            target='_blank'
+            className='cursor-pointer flex flex-col items-center'
+          >
+            <Image
+              src={'/assets/clients/temenos.svg'}
+              alt="client image"
+              height={240}
+              width={240}
+              className="rounded-tl-2xl rounded-tr-2xl border-2 border-muted"
+            />
+            <span>Full time employee</span>
+          </Link>
+          <Link
             href="https://altinteriors.ca/"
             target='_blank'
-            className='cursor-pointer'
+            className='cursor-pointer flex flex-col items-center'
           >
             <Image
               src={'/assets/clients/altinteriors.png'}
@@ -81,11 +115,12 @@ const Home = async () => {
               width={240}
               className="rounded-tl-2xl rounded-tr-2xl border-2 border-muted"
             />
+            <span>Freelancer</span>
           </Link>
           <Link
             href="https://www.spadesbrand.com/"
             target='_blank'
-            className='cursor-pointer'
+            className='cursor-pointer flex flex-col items-center'
           >
             <Image
               src={'/assets/clients/spadesbrand.png'}
@@ -94,11 +129,12 @@ const Home = async () => {
               width={240}
               className="rounded-tl-2xl rounded-tr-2xl border-2 border-muted"
             />
+            <span>Freelancer</span>
           </Link>
           <Link
             href="https://www.ppe-supply.com/"
             target='_blank'
-            className='cursor-pointer'
+            className='cursor-pointer flex flex-col items-center'
           >
             <Image
               src={'/assets/clients/ppesupply.png'}
@@ -107,6 +143,7 @@ const Home = async () => {
               width={240}
               className="rounded-tl-2xl rounded-tr-2xl border-2 border-muted"
             />
+            <span>Freelancer</span>
           </Link>
         </div>
       </section>

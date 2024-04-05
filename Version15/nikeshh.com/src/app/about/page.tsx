@@ -21,9 +21,7 @@ const Page = () => {
             </div>
             <div className="container pt-12 md:pt-22 relative flex flex-col justify-center flex-wrap md:flex-nowrap gap-5">
                 <p>Code, Coffee and Crazy Creativity: The Nikeshh Experience!</p>
-                <p>Zakity! Zikaty! Experience</p>
-                <h2 className="text-xl underline mt-4">Time to create</h2>
-                <p>Keep Calm And Bring Your <span className="underline">Vision and Ideas to Reality</span></p>
+                <h2 className="text-xl underline mt-4">I love to break, build, and rebuild software applications.</h2>
                 <p>Hey there, fellow digital explorers!</p>
                 <p>I am Nikeshh, your not-so-typical Full Stack Software Developer and Digital Dynamo. I am here to turn your wildest digital dreams into reality, fuelled by gallons of coffee and a dash of pure, unadulterated madness.</p>
                 <p>My toolkit includes website wizardry, SEO sorcery, SAAS spells, app alchemy, and custom software secrets. Ready to embark on this wild ride of innovation?</p>

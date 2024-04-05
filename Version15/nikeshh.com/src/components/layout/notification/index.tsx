@@ -30,7 +30,7 @@ const NotificationC = () => {
 
     return (
         <div className="bg-indigo-900 text-center py-4 px-6 lg:px-4 cursor-pointer">
-            <Dialog open={dialogOpen} onOpenChange={setDialogOpen}>
+            {/*<Dialog open={dialogOpen} onOpenChange={setDialogOpen}>
                 <DialogContent>
                     <DialogHeader className="pt-8 text-left">
                         <DialogTitle className="text-2xl font-bold">Please read?</DialogTitle>
@@ -48,7 +48,7 @@ const NotificationC = () => {
                         </DialogFooter>
                     </DialogHeader>
                 </DialogContent>
-            </Dialog>
+            </Dialog>*/}
             <div className="p-2 bg-indigo-800 items-center text-indigo-100 leading-none md:rounded lg:rounded-full flex lg:inline-flex" role="alert" onClick={() => router.push("/projects/ab9fd4b2-20bf-4f4c-bb30-7f2b725399c1")}>
                 <span className="flex rounded-full bg-indigo-500 uppercase px-2 py-1 text-xs font-bold mr-3">SAAS Alert</span>
                 <span className="font-semibold mr-2 text-left flex-auto">Website builder for agencies</span>

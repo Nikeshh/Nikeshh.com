@@ -40,6 +40,7 @@ export const getSkills = async () => {
       id: true,
       name: true,
       category: true,
+      imageUrl: true,
       points: true
     },
     orderBy: {
@@ -55,6 +56,7 @@ export const getAllSkills = async () => {
       id: true,
       name: true,
       category: true,
+      imageUrl: true,
       points: true
     },
     orderBy: {
