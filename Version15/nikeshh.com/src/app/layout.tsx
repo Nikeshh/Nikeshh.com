@@ -8,6 +8,8 @@ import { Toaster } from "@/components/ui/sonner"
 import ModalProvider from "@/providers/modal-provider";
 import { Analytics } from "@vercel/analytics/react";
 import localFont from 'next/font/local';
+import { PrismicPreview } from "@prismicio/next";
+import { repositoryName } from "@/prismicio";
 
 const font = DM_Sans({ subsets: ["latin"] });
 
@@ -49,6 +51,7 @@ export default async function RootLayout({
         </ThemeProvider>
         <Toaster />
         <Analytics />
+        <PrismicPreview repositoryName={repositoryName} />
       </body>
     </html>
   );

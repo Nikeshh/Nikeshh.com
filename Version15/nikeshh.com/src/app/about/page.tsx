@@ -23,29 +23,29 @@ export default async function Page({ params }: { params: Params }) {
 
     return (
         <>
-            <NotificationC />
-            <Navigation />
-            <Bounded as="article">
-                <div className="relative grid place-items-center text-center">
-                    <StarGrid />
-                    <h1 className="text-7xl font-medium">
-                        <PrismicText field={page.data.company} />
-                        <p className="text-lg text-yellow-500">Case Study</p>
-                    </h1>
-                    <p className="mb-4 mt-8 max-w-xl text-lg text-slate-300">
-                        <PrismicText field={page.data.description} />
-                    </p>
-                    <PrismicNextImage
-                        field={page.data.logo_image}
-                        className="rounded-lg"
-                        quality={100}
-                    />
-                </div>
-                <div className="mx-auto">
-                    <SliceZone slices={page.data.slices} components={components} />
-                </div>
-            </Bounded>
-            <Footer/>
+          <NotificationC />
+          <Navigation />
+          <Bounded as="article">
+              <div className="relative grid place-items-center text-center">
+                  <StarGrid />
+                  <h1 className="text-7xl font-medium">
+                      <PrismicText field={page.data.company} />
+                      <p className="text-lg text-yellow-500">Case Study</p>
+                  </h1>
+                  <p className="mb-4 mt-8 max-w-xl text-lg text-slate-300">
+                      <PrismicText field={page.data.description} />
+                  </p>
+                  <PrismicNextImage
+                      field={page.data.logo_image}
+                      className="rounded-lg"
+                      quality={100}
+                  />
+              </div>
+              <div className="mx-auto">
+                  <SliceZone slices={page.data.slices} components={components} />
+              </div>
+          </Bounded>
+          <Footer/>
         </>
     );
 }
