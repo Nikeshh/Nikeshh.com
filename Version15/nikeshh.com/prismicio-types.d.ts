@@ -11,6 +11,17 @@ type AboutDocumentDataSlicesSlice = RichTextSlice;
  */
 interface AboutDocumentData {
   /**
+   * Title field in *About*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: about.title
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  title: prismic.RichTextField;
+
+  /**
    * Company field in *About*
    *
    * - **Field Type**: Rich Text

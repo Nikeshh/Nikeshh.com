@@ -29,7 +29,7 @@ const Navigation = () => {
                     <Link href={'/home'} className="hover:text-blue-600">Home</Link>
                     <Link href={'/home#skills'} className="hover:text-blue-600">Skills</Link>
                     <Link href={'/home#projects'} className="hover:text-blue-600">Projects</Link>
-                    <Link href={'/about'} className="hover:text-blue-600" target="_blank">About Me</Link>
+                    <Link href={'/about'} className="hover:text-blue-600">About Me</Link>
                 </ul>
             </nav>
             <aside className="flex gap-2 items-center">
