@@ -32,14 +32,12 @@ const Home = async () => {
           <h2 className="font-bold text-xl md:text-[20px] md:leading-none">
             I am Nikeshh Vijayabaskaran (aka) Nik.
           </h2>
-          <div className="bg-gradient-to-r from-primary to-secondary-foreground text-transparent bg-clip-text relative mt-2">
+          <div className="bg-gradient-to-r from-primary to-secondary-foreground text-transparent bg-clip-text relative mt-2 mb-2">
             <h1 className="font-bold text-[70px] architect-font">
               I BUILD.
             </h1>
+            <p>Software Products & Systems that scale with <HoverCardC title="perfection" content="" subtext="" /></p>
           </div>
-          <ul>
-            <li><HoverCardC title="Software Products & Systems that scale with perfection" content="" subtext="" /></li>
-          </ul>
           <p>
             👨‍💻 Lead Full Stack Developer with work spanning a decade. 
           </p>
