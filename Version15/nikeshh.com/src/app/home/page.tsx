@@ -28,7 +28,7 @@ const Home = async () => {
       {/*<NotificationC />*/}
       <Navigation />
       <section id="banner" className="container pt-12 md:pt-44 relative flex items-center md:justify-center flex-wrap md:flex-nowrap gap-5">
-        <div className="flex justify-center relative flex-col gap-2 md:gap-4">
+        <div className="flex justify-center relative flex-col flex-wrap gap-2 md:gap-4">
           <h2 className="font-bold text-xl md:text-[20px] md:leading-none">
             I am Nikeshh Vijayabaskaran (aka) Nik.
           </h2>
