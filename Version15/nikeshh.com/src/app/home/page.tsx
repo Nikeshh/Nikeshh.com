@@ -28,7 +28,7 @@ const Home = async () => {
       {/*<NotificationC />*/}
       <Navigation />
       <section id="banner" className="container pt-12 md:pt-44 relative flex items-center md:justify-center flex-wrap md:flex-nowrap gap-5">
-        <div className="flex justify-center relative flex-col flex-wrap gap-2 md:gap-4">
+        <div className="flex justify-center relative flex-col flex-wrap gap-2 md:gap-4 lg:flex-2">
           <h2 className="font-bold text-xl md:text-[20px] md:leading-none">
             I am Nikeshh Vijayabaskaran (aka) Nik.
           </h2>
@@ -56,7 +56,7 @@ const Home = async () => {
             </Button>
           </Link>
         </div>
-        <div className="flex justify-center items-center relative md:mt-[-70px]">
+        <div className="flex justify-center items-center relative md:mt-[-70px] lg:flex-1">
           <div className="bottom-0 top-[2%] bg-gradient-to-b dark:from-background left-0 right-0 absolute z-10"></div>
           <Image
             src={'/assets/myphoto.png'}
