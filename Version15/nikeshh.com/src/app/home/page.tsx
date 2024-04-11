@@ -25,7 +25,7 @@ const Home = async () => {
 
   return (
     <>
-      <NotificationC />
+      {/*<NotificationC />*/}
       <Navigation />
       <section id="banner" className="container pt-12 md:pt-44 relative flex items-center md:justify-center flex-wrap md:flex-nowrap gap-5">
         <div className="flex justify-center relative flex-col gap-2 md:gap-4">
@@ -44,7 +44,10 @@ const Home = async () => {
             👨‍💻 Lead Full Stack Developer with work spanning a decade. 
           </p>
           <p>
-            🧑🏻‍💻 Code, Coffee and Crazy Creativity: <u>The Nikeshh Experience!</u> A developer who built skills with a great passion for technologies and creating impact for the end users. 
+            🧑🏻‍💻 Code, Coffee and Crazy Creativity: <u>The Nikeshh Experience!</u>
+          </p>
+          <p>
+            ⚡ A developer who built skills with a great passion for technologies and creating impact for the end users. 
           </p>
           <p>🤖 Artificial Intelligence and Blockchain Enthusiast</p>
           <p>I&apos;m reachable at 📞 +1 (416)-834-5350 (or) 📨 nikeshhbaskaran01@gmail.com</p>

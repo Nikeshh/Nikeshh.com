@@ -112,7 +112,7 @@ const Footer = () => {
                                 </li>
                             </ul>
                         </div>
-                        <div className="text-center sm:text-left">
+                        {/*<div className="text-center sm:text-left">
                             <p className="text-lg font-medium">Resources</p>
                             <ul className="mt-8 space-y-4 text-sm">
                                 <li>
@@ -145,7 +145,7 @@ const Footer = () => {
                                     }}> View </div>
                                 </li>
                             </ul>
-                        </div>
+                        </div>*/}
                         <div className="text-center sm:text-left">
                             <p className="text-lg font-medium">Stay In Touch</p>
                             <div className="mx-auto mt-8 max-w-md sm:ms-0">

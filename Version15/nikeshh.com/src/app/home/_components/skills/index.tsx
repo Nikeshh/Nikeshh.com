@@ -89,20 +89,20 @@ const Skills = ({ skills } : Props) => {
                                         ))}
                                     </div>
                                 </CardContent>
-                                <CardFooter>
+                                {/*<CardFooter>
                                     <Link href={`/skills/${skill.id}`}>
                                         <Button className="w-full" variant="outline">
                                             <Eye className="mr-2 h-4 w-4" /> Explore
                                         </Button>
                                     </Link>
-                                </CardFooter>
+                                </CardFooter>*/}
                             </Card>
                         );
                     })}
                 </div>
-                <div className='mt-4 md:mt-6 w-full text-center'>
+                {/*<div className='mt-4 md:mt-6 w-full text-center'>
                     <Link className="hover:text-blue-600 underline cursor-pointer" href="/skills">explore more.</Link>
-                </div>
+                </div>*/}
             </section>
         );
     } else {
