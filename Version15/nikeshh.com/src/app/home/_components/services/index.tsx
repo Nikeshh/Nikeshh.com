@@ -111,9 +111,9 @@ const Services = ({ services } : Props) => {
                         </CardFooter>*/}
                     </Card>
                 </div>
-                <div className='mt-4 md:mt-6 w-full text-center'>
+                {/*<div className='mt-4 md:mt-6 w-full text-center'>
                     <Link className="hover:text-blue-600 underline cursor-pointer" href="/services">view more.</Link>
-                </div>
+                </div>*/}
             </section>
         );
     } else {
