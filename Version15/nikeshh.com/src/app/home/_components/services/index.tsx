@@ -104,11 +104,11 @@ const Services = ({ services } : Props) => {
                         <CardContent className="grid gap-4">
                             <p>{serviceCommand.subtitle}</p>
                         </CardContent>
-                        <CardFooter>
+                        {/*<CardFooter>
                             <Link href={`/services/${serviceCommand.id}`}>
                                 <div className="hover:text-blue-600 underline cursor-pointer">explore more.</div>
                             </Link>
-                        </CardFooter>
+                        </CardFooter>*/}
                     </Card>
                 </div>
                 <div className='mt-4 md:mt-6 w-full text-center'>

@@ -63,11 +63,11 @@ const Projects = ({ projects } : Props) => {
                                 <CardContent className="grid gap-4">
                                     <p>{a.subtitle}</p>
                                 </CardContent>
-                                <CardFooter>
+                                {/*<CardFooter>
                                     <Link href={`/projects/${a.id}`}>
                                         <div className="hover:text-blue-600 underline cursor-pointer">explore more.</div>
                                     </Link>
-                                </CardFooter>
+                                </CardFooter>*/}
                             </Card>
                         );
                     })}
