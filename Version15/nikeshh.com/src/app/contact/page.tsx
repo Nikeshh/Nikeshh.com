@@ -38,7 +38,7 @@ const Page = () => {
 
     return (
         <>
-            <NotificationC />
+            {/*<NotificationC />*/}
             <Navigation />
             <div className="container pt-12 md:pt-22 relative flex flex-col justify-center items-center flex-wrap md:flex-nowrap gap-5">
                 <div className="bg-gradient-to-r from-primary to-secondary-foreground text-transparent bg-clip-text relative">
