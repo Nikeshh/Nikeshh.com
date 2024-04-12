@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react'
 import Image from 'next/image';
+import { UserIcon } from 'lucide-react';
 
 type Props = {
     testimonials: { 
@@ -35,34 +36,38 @@ const Testimonials = ({ testimonials } : Props) => {
                 </div>
                 <div className="relative isolate overflow-hidden px-6 py-24 sm:py-32 lg:px-8 w-full">
                     <div className="mx-auto max-w-2xl lg:max-w-4xl">
-                    <Image
-                        src={testimonials[testimonialIndex].companyLogoUrl}
-                        alt="Company logo"
-                        height={600}
-                        width={600}
-                        className="mx-auto h-12"
-                    />
-                    <figure className="mt-10">
-                        <blockquote className="text-center text-xl font-semibold leading-8 sm:text-2xl sm:leading-9">
-                            <p>“{testimonials[testimonialIndex].content}”</p>
-                        </blockquote>
-                        <figcaption className="mt-10">
+                        {testimonials[testimonialIndex].companyLogoUrl && (
                             <Image
-                                src={testimonials[testimonialIndex].avatarUrl}
-                                alt="User logo"
+                                src={testimonials[testimonialIndex].companyLogoUrl}
+                                alt="Company logo"
                                 height={600}
                                 width={600}
-                                className="mx-auto h-10 w-10 rounded-full"
+                                className="mx-auto h-12"
                             />
-                            <div className="mt-4 flex items-center justify-center space-x-3 text-base">
-                                <div className="font-semibold">{testimonials[testimonialIndex].name}</div>
-                                <svg viewBox="0 0 2 2" width="3" height="3" aria-hidden="true" className="fill-gray-900">
-                                <circle cx="1" cy="1" r="1" />
-                                </svg>
-                                <div className="text-gray-600">{testimonials[testimonialIndex].designation}</div>
-                            </div>
-                        </figcaption>
-                    </figure>
+                        )}
+                        <figure className="mt-10">
+                            <blockquote className="text-center text-xl font-semibold leading-8 sm:text-2xl sm:leading-9">
+                                <p>“{testimonials[testimonialIndex].content}”</p>
+                            </blockquote>
+                            <figcaption className="mt-10">
+                                {testimonials[testimonialIndex].avatarUrl ? (
+                                    <Image
+                                        src={testimonials[testimonialIndex].avatarUrl}
+                                        alt="User logo"
+                                        height={600}
+                                        width={600}
+                                        className="mx-auto h-10 w-10 rounded-full"
+                                    />
+                                ) : <UserIcon className="mx-auto h-10 w-10 rounded-full" />}
+                                <div className="mt-4 flex items-center justify-center space-x-3 text-base">
+                                    <div className="font-semibold">{testimonials[testimonialIndex].name}</div>
+                                    <svg viewBox="0 0 2 2" width="3" height="3" aria-hidden="true" className="fill-gray-900">
+                                    <circle cx="1" cy="1" r="1" />
+                                    </svg>
+                                    <div className="text-gray-600">{testimonials[testimonialIndex].designation}</div>
+                                </div>
+                            </figcaption>
+                        </figure>
                     </div>
                     <div className='mt-4 md:mt-6 w-full text-center'>
                         <div onClick={switchTestimonialIndex} className="hover:text-blue-600 underline cursor-pointer">view next.</div>
