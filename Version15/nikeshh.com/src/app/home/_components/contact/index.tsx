@@ -8,6 +8,7 @@ import { z } from "zod";
 import Image from 'next/image';
 import { Badge } from "@/components/ui/badge";
 import ContactForm from "@/components/contact";
+import { onCreateNewPageInDatabase } from "@/app/connections/notion-connection";
 
 const Contact = () => {
 
@@ -21,9 +22,42 @@ const Contact = () => {
                 ...values
             });
 
-            toast.success("Success", {
-                description: 'Successfully saved your info',
-            })
+            const notionResponse = await onCreateNewPageInDatabase(
+                "5b0b7647b75b419bbe54f88bf4b34c15",
+                {
+                    "Name": {
+                        "title": [
+                            {
+                                "text": {
+                                    "content": values.name
+                                }
+                            }
+                        ]
+                    },
+                    "Email": {
+                        "email": values.email
+                    },
+                    "Tags": {
+                        "type": "multi_select",
+                        "multi_select": [
+                            {
+                              "name": "Nikeshh.com",
+                              "color": "gray"
+                            }
+                        ]
+                    },
+                }
+            )
+            if (response && notionResponse) {
+                toast.success("Success", {
+                    description: 'Successfully saved your info',
+                });
+            } else {
+                toast.success("Failed", {
+                    description: 'Could not save your information',
+                });
+            }
+
             contactFormRef.current?.reset(); //@todo this is not working
         } catch (error) {
             toast.error("Failed", {
