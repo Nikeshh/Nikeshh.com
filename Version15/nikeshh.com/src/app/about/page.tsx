@@ -22,7 +22,7 @@ const Page = async () => {
 
     return (
         <>
-          <NotificationC />
+          {/*<NotificationC />*/}
           <Navigation />
           <Bounded as="article">
               <div className="relative grid place-items-center text-center">
