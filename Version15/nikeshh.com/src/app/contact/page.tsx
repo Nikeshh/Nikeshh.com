@@ -12,6 +12,7 @@ import { z } from 'zod'
 import Link from 'next/link';
 import { createContact } from '@/lib/queries';
 import { toast } from 'sonner';
+import { onCreateNewPageInDatabase } from "@/app/connections/notion-connection";
 
 const Page = () => {
     const contactFormRef = createRef<HTMLFormElement>();
@@ -22,10 +23,44 @@ const Page = () => {
         const response = await createContact({
           ...values
         });
+
+        const notionResponse = await onCreateNewPageInDatabase(
+            "5b0b7647b75b419bbe54f88bf4b34c15",
+            {
+                "Name": {
+                    "title": [
+                        {
+                            "text": {
+                                "content": values.name
+                            }
+                        }
+                    ]
+                },
+                "Email": {
+                    "email": values.email
+                },
+                "Tags": {
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                          "name": "Nikeshh.com",
+                          "color": "gray"
+                        }
+                    ]
+                },
+            }
+        )
   
-        toast.success("Success", {
-          description: 'Successfully saved your info',
-        })
+        if (response && notionResponse) {
+            toast.success("Success", {
+                description: 'Successfully saved your info',
+            });
+        } else {
+            toast.success("Failed", {
+                description: 'Could not save your information',
+            });
+        }
+        
         contactFormRef.current?.reset(); //@todo this is not working
       } catch (error) {
         toast.error("Failed", {
