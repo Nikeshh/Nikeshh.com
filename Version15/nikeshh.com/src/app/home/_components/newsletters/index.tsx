@@ -8,6 +8,7 @@ import { NewsletterUserFormSchema } from "@/lib/types";
 import { createRef, useState } from "react";
 import { toast } from "sonner";
 import { z } from "zod";
+import { onCreateNewPageInDatabase } from "@/app/connections/notion-connection";
 
 const Newsletters = () => {
     // Newsletter
@@ -22,9 +23,51 @@ const Newsletters = () => {
                 newsletter: newsletterCommand,
             });
 
-            toast.success("Success", {
-                description: 'Successfully saved your info',
-            })
+            const notionResponse = await onCreateNewPageInDatabase(
+                "5b0b7647b75b419bbe54f88bf4b34c15",
+                {
+                    "Name": {
+                        "title": [
+                            {
+                                "text": {
+                                    "content": values.name
+                                }
+                            }
+                        ]
+                    },
+                    "Email": {
+                        "email": values.email
+                    },
+                    "Tags": {
+                        "type": "multi_select",
+                        "multi_select": [
+                            {
+                              "name": "Nikeshh.com",
+                              "color": "gray"
+                            },
+                            {
+                                "name": "Newsletter",
+                                "color": "yellow"
+                            },
+                            {
+                                "name": newsletterCommand,
+                                "color": "blue"
+                            }
+                        ]
+                    },
+                }
+            )
+
+            if (response && notionResponse) {
+                toast.success("Success", {
+                    description: 'Successfully saved your info',
+                });
+            } else {
+                toast.success("Failed", {
+                    description: 'Could not save your information',
+                });
+            }
+
             newsletterRef.current?.reset(); //@todo this is not working
         } catch (error) {
             toast.error("Failed", {
