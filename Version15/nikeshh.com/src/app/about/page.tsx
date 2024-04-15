@@ -5,7 +5,7 @@ import { createClient } from "@/prismicio";
 import { components } from "@/slices";
 import Bounded from "@/components/Bounded";
 import StarGrid from "@/components/StarGrid";
-import { PrismicNextImage } from "@prismicio/next";
+import { PrismicNextImage, PrismicNextLink } from "@prismicio/next";
 import Navigation from "@/components/layout/navigation";
 import NotificationC from "@/components/layout/notification";
 import Footer from "@/components/layout/footer";
