@@ -286,6 +286,104 @@ interface BlogsDocumentData {
 export type BlogsDocument<Lang extends string = string> =
   prismic.PrismicDocumentWithUID<Simplify<BlogsDocumentData>, "blogs", Lang>;
 
+type CaseStudyDocumentDataSlicesSlice = RichTextSlice;
+
+/**
+ * Content for Case Study documents
+ */
+interface CaseStudyDocumentData {
+  /**
+   * Company field in *Case Study*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: case_study.company
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  company: prismic.RichTextField;
+
+  /**
+   * Description field in *Case Study*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: case_study.description
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  description: prismic.RichTextField;
+
+  /**
+   * Logo Image field in *Case Study*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: case_study.logo_image
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  logo_image: prismic.ImageField<never>;
+
+  /**
+   * Slice Zone field in *Case Study*
+   *
+   * - **Field Type**: Slice Zone
+   * - **Placeholder**: *None*
+   * - **API ID Path**: case_study.slices[]
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#slices
+   */
+  slices: prismic.SliceZone<CaseStudyDocumentDataSlicesSlice> /**
+   * Meta Description field in *Case Study*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: A brief summary of the page
+   * - **API ID Path**: case_study.meta_description
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */;
+  meta_description: prismic.KeyTextField;
+
+  /**
+   * Meta Image field in *Case Study*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: case_study.meta_image
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  meta_image: prismic.ImageField<never>;
+
+  /**
+   * Meta Title field in *Case Study*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: A title of the page used for social media and search engines
+   * - **API ID Path**: case_study.meta_title
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  meta_title: prismic.KeyTextField;
+}
+
+/**
+ * Case Study document from Prismic
+ *
+ * - **API ID**: `case_study`
+ * - **Repeatable**: `true`
+ * - **Documentation**: https://prismic.io/docs/custom-types
+ *
+ * @typeParam Lang - Language API ID of the document.
+ */
+export type CaseStudyDocument<Lang extends string = string> =
+  prismic.PrismicDocumentWithUID<
+    Simplify<CaseStudyDocumentData>,
+    "case_study",
+    Lang
+  >;
+
 type ProjectDocumentDataSlicesSlice = RichTextSlice;
 
 /**
@@ -837,6 +935,7 @@ export type AllDocumentTypes =
   | AboutDocument
   | BlogDocument
   | BlogsDocument
+  | CaseStudyDocument
   | ProjectDocument
   | ProjectsDocument
   | ServiceDocument
@@ -845,11 +944,11 @@ export type AllDocumentTypes =
   | SkillsDocument;
 
 /**
- * Primary content in *MultipleItems → Primary*
+ * Primary content in *CaseStudies → Primary*
  */
 export interface CaseStudiesSliceDefaultPrimary {
   /**
-   * Heading field in *MultipleItems → Primary*
+   * Heading field in *CaseStudies → Primary*
    *
    * - **Field Type**: Title
    * - **Placeholder**: *None*
@@ -859,7 +958,7 @@ export interface CaseStudiesSliceDefaultPrimary {
   heading: prismic.TitleField;
 
   /**
-   * Body field in *MultipleItems → Primary*
+   * Body field in *CaseStudies → Primary*
    *
    * - **Field Type**: Rich Text
    * - **Placeholder**: *None*
@@ -870,11 +969,11 @@ export interface CaseStudiesSliceDefaultPrimary {
 }
 
 /**
- * Primary content in *MultipleItems → Items*
+ * Primary content in *CaseStudies → Items*
  */
 export interface CaseStudiesSliceDefaultItem {
   /**
-   * Case Study field in *MultipleItems → Items*
+   * Case Study field in *CaseStudies → Items*
    *
    * - **Field Type**: Content Relationship
    * - **Placeholder**: *None*
@@ -885,7 +984,7 @@ export interface CaseStudiesSliceDefaultItem {
 }
 
 /**
- * Default variation for MultipleItems Slice
+ * Default variation for CaseStudies Slice
  *
  * - **API ID**: `default`
  * - **Description**: Default
@@ -898,12 +997,12 @@ export type CaseStudiesSliceDefault = prismic.SharedSliceVariation<
 >;
 
 /**
- * Slice variation for *MultipleItems*
+ * Slice variation for *CaseStudies*
  */
 type CaseStudiesSliceVariation = CaseStudiesSliceDefault;
 
 /**
- * MultipleItems Shared Slice
+ * CaseStudies Shared Slice
  *
  * - **API ID**: `case_studies`
  * - **Description**: CaseStudies
@@ -978,6 +1077,9 @@ declare module "@prismicio/client" {
       BlogsDocument,
       BlogsDocumentData,
       BlogsDocumentDataSlicesSlice,
+      CaseStudyDocument,
+      CaseStudyDocumentData,
+      CaseStudyDocumentDataSlicesSlice,
       ProjectDocument,
       ProjectDocumentData,
       ProjectDocumentDataSlicesSlice,
