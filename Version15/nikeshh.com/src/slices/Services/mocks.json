@@ -7,9 +7,9 @@
 				"__TYPE__": "StructuredTextContent",
 				"value": [
 					{
-						"type": "heading2",
+						"type": "paragraph",
 						"content": {
-							"text": "Still"
+							"text": "Aliquip qui irure sint id adipisicing reprehenderit esse ex. Esse aliqua incididunt Lorem qui deserunt dolore consectetur eu proident dolore sit adipisicing amet. Enim excepteur aliqua nulla minim ullamco magna cillum fugiat voluptate."
 						}
 					}
 				]
@@ -20,7 +20,7 @@
 					{
 						"type": "paragraph",
 						"content": {
-							"text": "Pariatur culpa ut ullamco mollit consectetur ex velit exercitation anim nisi irure exercitation."
+							"text": "Incididunt eu aliquip ipsum velit nisi sit excepteur nostrud. Voluptate eu elit sunt dolore esse ut deserunt eiusmod dolore eiusmod. Sunt eiusmod sit laborum magna esse."
 						}
 					}
 				]
@@ -31,7 +31,7 @@
 				"__TYPE__": "GroupItemContent",
 				"value": [
 					[
-						"case_study",
+						"service",
 						{
 							"__TYPE__": "LinkContent",
 							"value": {

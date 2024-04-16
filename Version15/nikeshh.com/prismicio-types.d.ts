@@ -214,7 +214,7 @@ interface BlogDocumentData {
 export type BlogDocument<Lang extends string = string> =
   prismic.PrismicDocumentWithUID<Simplify<BlogDocumentData>, "blog", Lang>;
 
-type BlogsDocumentDataSlicesSlice = CaseStudiesSlice;
+type BlogsDocumentDataSlicesSlice = BlogSlice;
 
 /**
  * Content for Blogs documents
@@ -285,104 +285,6 @@ interface BlogsDocumentData {
  */
 export type BlogsDocument<Lang extends string = string> =
   prismic.PrismicDocumentWithUID<Simplify<BlogsDocumentData>, "blogs", Lang>;
-
-type CaseStudyDocumentDataSlicesSlice = RichTextSlice;
-
-/**
- * Content for Case Study documents
- */
-interface CaseStudyDocumentData {
-  /**
-   * Company field in *Case Study*
-   *
-   * - **Field Type**: Rich Text
-   * - **Placeholder**: *None*
-   * - **API ID Path**: case_study.company
-   * - **Tab**: Main
-   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
-   */
-  company: prismic.RichTextField;
-
-  /**
-   * Description field in *Case Study*
-   *
-   * - **Field Type**: Rich Text
-   * - **Placeholder**: *None*
-   * - **API ID Path**: case_study.description
-   * - **Tab**: Main
-   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
-   */
-  description: prismic.RichTextField;
-
-  /**
-   * Logo Image field in *Case Study*
-   *
-   * - **Field Type**: Image
-   * - **Placeholder**: *None*
-   * - **API ID Path**: case_study.logo_image
-   * - **Tab**: Main
-   * - **Documentation**: https://prismic.io/docs/field#image
-   */
-  logo_image: prismic.ImageField<never>;
-
-  /**
-   * Slice Zone field in *Case Study*
-   *
-   * - **Field Type**: Slice Zone
-   * - **Placeholder**: *None*
-   * - **API ID Path**: case_study.slices[]
-   * - **Tab**: Main
-   * - **Documentation**: https://prismic.io/docs/field#slices
-   */
-  slices: prismic.SliceZone<CaseStudyDocumentDataSlicesSlice> /**
-   * Meta Description field in *Case Study*
-   *
-   * - **Field Type**: Text
-   * - **Placeholder**: A brief summary of the page
-   * - **API ID Path**: case_study.meta_description
-   * - **Tab**: SEO & Metadata
-   * - **Documentation**: https://prismic.io/docs/field#key-text
-   */;
-  meta_description: prismic.KeyTextField;
-
-  /**
-   * Meta Image field in *Case Study*
-   *
-   * - **Field Type**: Image
-   * - **Placeholder**: *None*
-   * - **API ID Path**: case_study.meta_image
-   * - **Tab**: SEO & Metadata
-   * - **Documentation**: https://prismic.io/docs/field#image
-   */
-  meta_image: prismic.ImageField<never>;
-
-  /**
-   * Meta Title field in *Case Study*
-   *
-   * - **Field Type**: Text
-   * - **Placeholder**: A title of the page used for social media and search engines
-   * - **API ID Path**: case_study.meta_title
-   * - **Tab**: SEO & Metadata
-   * - **Documentation**: https://prismic.io/docs/field#key-text
-   */
-  meta_title: prismic.KeyTextField;
-}
-
-/**
- * Case Study document from Prismic
- *
- * - **API ID**: `case_study`
- * - **Repeatable**: `true`
- * - **Documentation**: https://prismic.io/docs/custom-types
- *
- * @typeParam Lang - Language API ID of the document.
- */
-export type CaseStudyDocument<Lang extends string = string> =
-  prismic.PrismicDocumentWithUID<
-    Simplify<CaseStudyDocumentData>,
-    "case_study",
-    Lang
-  >;
 
 type ProjectDocumentDataSlicesSlice = RichTextSlice;
 
@@ -678,7 +580,7 @@ export type ServiceDocument<Lang extends string = string> =
     Lang
   >;
 
-type ServicesDocumentDataSlicesSlice = CaseStudiesSlice;
+type ServicesDocumentDataSlicesSlice = ServicesSlice;
 
 /**
  * Content for Services documents
@@ -859,7 +761,7 @@ interface SkillDocumentData {
 export type SkillDocument<Lang extends string = string> =
   prismic.PrismicDocumentWithUID<Simplify<SkillDocumentData>, "skill", Lang>;
 
-type SkillsDocumentDataSlicesSlice = CaseStudiesSlice;
+type SkillsDocumentDataSlicesSlice = SkillsSlice;
 
 /**
  * Content for Skills documents
@@ -935,7 +837,6 @@ export type AllDocumentTypes =
   | AboutDocument
   | BlogDocument
   | BlogsDocument
-  | CaseStudyDocument
   | ProjectDocument
   | ProjectsDocument
   | ServiceDocument
@@ -944,11 +845,78 @@ export type AllDocumentTypes =
   | SkillsDocument;
 
 /**
- * Primary content in *CaseStudies → Primary*
+ * Primary content in *Blogs → Primary*
+ */
+export interface BlogSliceDefaultPrimary {
+  /**
+   * Heading field in *Blogs → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: blog.primary.heading
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  heading: prismic.RichTextField;
+
+  /**
+   * Body field in *Blogs → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: blog.primary.body
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  body: prismic.RichTextField;
+}
+
+/**
+ * Primary content in *Blogs → Items*
+ */
+export interface BlogSliceDefaultItem {
+  /**
+   * Blog field in *Blogs → Items*
+   *
+   * - **Field Type**: Content Relationship
+   * - **Placeholder**: *None*
+   * - **API ID Path**: blog.items[].blog
+   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+   */
+  blog: prismic.ContentRelationshipField<"blog">;
+}
+
+/**
+ * Default variation for Blogs Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type BlogSliceDefault = prismic.SharedSliceVariation<
+  "default",
+  Simplify<BlogSliceDefaultPrimary>,
+  Simplify<BlogSliceDefaultItem>
+>;
+
+/**
+ * Slice variation for *Blogs*
+ */
+type BlogSliceVariation = BlogSliceDefault;
+
+/**
+ * Blogs Shared Slice
+ *
+ * - **API ID**: `blog`
+ * - **Description**: Blog
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type BlogSlice = prismic.SharedSlice<"blog", BlogSliceVariation>;
+
+/**
+ * Primary content in *Projects → Primary*
  */
 export interface CaseStudiesSliceDefaultPrimary {
   /**
-   * Heading field in *CaseStudies → Primary*
+   * Heading field in *Projects → Primary*
    *
    * - **Field Type**: Title
    * - **Placeholder**: *None*
@@ -958,7 +926,7 @@ export interface CaseStudiesSliceDefaultPrimary {
   heading: prismic.TitleField;
 
   /**
-   * Body field in *CaseStudies → Primary*
+   * Body field in *Projects → Primary*
    *
    * - **Field Type**: Rich Text
    * - **Placeholder**: *None*
@@ -969,22 +937,22 @@ export interface CaseStudiesSliceDefaultPrimary {
 }
 
 /**
- * Primary content in *CaseStudies → Items*
+ * Primary content in *Projects → Items*
  */
 export interface CaseStudiesSliceDefaultItem {
   /**
-   * Case Study field in *CaseStudies → Items*
+   * Project field in *Projects → Items*
    *
    * - **Field Type**: Content Relationship
    * - **Placeholder**: *None*
-   * - **API ID Path**: case_studies.items[].case_study
+   * - **API ID Path**: case_studies.items[].project
    * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
    */
-  case_study: prismic.ContentRelationshipField;
+  project: prismic.ContentRelationshipField<"project">;
 }
 
 /**
- * Default variation for CaseStudies Slice
+ * Default variation for Projects Slice
  *
  * - **API ID**: `default`
  * - **Description**: Default
@@ -997,12 +965,12 @@ export type CaseStudiesSliceDefault = prismic.SharedSliceVariation<
 >;
 
 /**
- * Slice variation for *CaseStudies*
+ * Slice variation for *Projects*
  */
 type CaseStudiesSliceVariation = CaseStudiesSliceDefault;
 
 /**
- * CaseStudies Shared Slice
+ * Projects Shared Slice
  *
  * - **API ID**: `case_studies`
  * - **Description**: CaseStudies
@@ -1058,6 +1026,143 @@ export type RichTextSlice = prismic.SharedSlice<
   RichTextSliceVariation
 >;
 
+/**
+ * Primary content in *Services → Primary*
+ */
+export interface ServicesSliceDefaultPrimary {
+  /**
+   * Heading field in *Services → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: services.primary.heading
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  heading: prismic.RichTextField;
+
+  /**
+   * Body field in *Services → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: services.primary.body
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  body: prismic.RichTextField;
+}
+
+/**
+ * Primary content in *Services → Items*
+ */
+export interface ServicesSliceDefaultItem {
+  /**
+   * Service field in *Services → Items*
+   *
+   * - **Field Type**: Content Relationship
+   * - **Placeholder**: *None*
+   * - **API ID Path**: services.items[].service
+   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+   */
+  service: prismic.ContentRelationshipField<"service">;
+}
+
+/**
+ * Default variation for Services Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type ServicesSliceDefault = prismic.SharedSliceVariation<
+  "default",
+  Simplify<ServicesSliceDefaultPrimary>,
+  Simplify<ServicesSliceDefaultItem>
+>;
+
+/**
+ * Slice variation for *Services*
+ */
+type ServicesSliceVariation = ServicesSliceDefault;
+
+/**
+ * Services Shared Slice
+ *
+ * - **API ID**: `services`
+ * - **Description**: Services
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type ServicesSlice = prismic.SharedSlice<
+  "services",
+  ServicesSliceVariation
+>;
+
+/**
+ * Primary content in *Skills → Primary*
+ */
+export interface SkillsSliceDefaultPrimary {
+  /**
+   * Heading field in *Skills → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: skills.primary.heading
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  heading: prismic.RichTextField;
+
+  /**
+   * Body field in *Skills → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: skills.primary.body
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  body: prismic.RichTextField;
+}
+
+/**
+ * Primary content in *Skills → Items*
+ */
+export interface SkillsSliceDefaultItem {
+  /**
+   * Skill field in *Skills → Items*
+   *
+   * - **Field Type**: Content Relationship
+   * - **Placeholder**: *None*
+   * - **API ID Path**: skills.items[].skill
+   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+   */
+  skill: prismic.ContentRelationshipField<"skill">;
+}
+
+/**
+ * Default variation for Skills Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type SkillsSliceDefault = prismic.SharedSliceVariation<
+  "default",
+  Simplify<SkillsSliceDefaultPrimary>,
+  Simplify<SkillsSliceDefaultItem>
+>;
+
+/**
+ * Slice variation for *Skills*
+ */
+type SkillsSliceVariation = SkillsSliceDefault;
+
+/**
+ * Skills Shared Slice
+ *
+ * - **API ID**: `skills`
+ * - **Description**: Skills
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type SkillsSlice = prismic.SharedSlice<"skills", SkillsSliceVariation>;
+
 declare module "@prismicio/client" {
   interface CreateClient {
     (
@@ -1077,9 +1182,6 @@ declare module "@prismicio/client" {
       BlogsDocument,
       BlogsDocumentData,
       BlogsDocumentDataSlicesSlice,
-      CaseStudyDocument,
-      CaseStudyDocumentData,
-      CaseStudyDocumentDataSlicesSlice,
       ProjectDocument,
       ProjectDocumentData,
       ProjectDocumentDataSlicesSlice,
@@ -1099,6 +1201,11 @@ declare module "@prismicio/client" {
       SkillsDocumentData,
       SkillsDocumentDataSlicesSlice,
       AllDocumentTypes,
+      BlogSlice,
+      BlogSliceDefaultPrimary,
+      BlogSliceDefaultItem,
+      BlogSliceVariation,
+      BlogSliceDefault,
       CaseStudiesSlice,
       CaseStudiesSliceDefaultPrimary,
       CaseStudiesSliceDefaultItem,
@@ -1108,6 +1215,16 @@ declare module "@prismicio/client" {
       RichTextSliceDefaultPrimary,
       RichTextSliceVariation,
       RichTextSliceDefault,
+      ServicesSlice,
+      ServicesSliceDefaultPrimary,
+      ServicesSliceDefaultItem,
+      ServicesSliceVariation,
+      ServicesSliceDefault,
+      SkillsSlice,
+      SkillsSliceDefaultPrimary,
+      SkillsSliceDefaultItem,
+      SkillsSliceVariation,
+      SkillsSliceDefault,
     };
   }
 }
