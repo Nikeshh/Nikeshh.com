@@ -1,8 +1,8 @@
 {
-  "id": "blog",
+  "id": "blogs",
   "type": "SharedSlice",
   "name": "Blogs",
-  "description": "Blog",
+  "description": "Blogs",
   "variations": [
     {
       "id": "default",
@@ -36,10 +36,7 @@
           "type": "Link",
           "config": {
             "label": "Blog",
-            "select": "document",
-            "customtypes": [
-              "blog"
-            ]
+            "select": "document"
           }
         }
       }
