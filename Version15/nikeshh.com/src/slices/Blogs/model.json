@@ -1,8 +1,8 @@
 {
-  "id": "case_studies",
+  "id": "blog",
   "type": "SharedSlice",
-  "name": "CaseStudies",
-  "description": "CaseStudies",
+  "name": "Blogs",
+  "description": "Blog",
   "variations": [
     {
       "id": "default",
@@ -18,7 +18,7 @@
             "label": "Heading",
             "placeholder": "",
             "allowTargetBlank": true,
-            "single": "heading2"
+            "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
           }
         },
         "body": {
@@ -27,16 +27,19 @@
             "label": "Body",
             "placeholder": "",
             "allowTargetBlank": true,
-            "multi": "paragraph"
+            "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
           }
         }
       },
       "items": {
-        "case_study": {
+        "blog": {
           "type": "Link",
           "config": {
-            "label": "Case Study",
-            "select": "document"
+            "label": "Blog",
+            "select": "document",
+            "customtypes": [
+              "blog"
+            ]
           }
         }
       }
