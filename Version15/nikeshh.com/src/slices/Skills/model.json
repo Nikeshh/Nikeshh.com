@@ -36,10 +36,7 @@
           "type": "Link",
           "config": {
             "label": "Skill",
-            "select": "document",
-            "customtypes": [
-              "skill"
-            ]
+            "select": "document"
           }
         }
       }

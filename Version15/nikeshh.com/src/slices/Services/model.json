@@ -36,10 +36,7 @@
           "type": "Link",
           "config": {
             "label": "Service",
-            "select": "document",
-            "customtypes": [
-              "service"
-            ]
+            "select": "document"
           }
         }
       }

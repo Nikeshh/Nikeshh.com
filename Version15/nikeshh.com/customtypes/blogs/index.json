@@ -27,7 +27,7 @@
         "fieldset": "Slice Zone",
         "config": {
           "choices": {
-            "blog": {
+            "blogs": {
               "type": "SharedSlice"
             }
           }

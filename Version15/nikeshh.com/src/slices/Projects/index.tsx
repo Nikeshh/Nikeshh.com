@@ -9,31 +9,30 @@ import {
 } from "@prismicio/react";
 import clsx from "clsx";
 
-/**
- * Props for `CaseStudies`.
- */
-export type CaseStudiesProps = SliceComponentProps<Content.CaseStudiesSlice>;
 
 /**
- * Component for "CaseStudies" Slices.
+ * Props for `Projects`.
  */
-const CaseStudies = async ({
-  slice,
-}: CaseStudiesProps): Promise<JSX.Element> => {
+export type ProjectsProps = SliceComponentProps<Content.ProjectsSlice>;
+
+/**
+ * Component for "Projects" Slices.
+ */
+const Projects = async ({ slice }: ProjectsProps): Promise<JSX.Element> => {
   const client = createClient();
 
   const caseStudies = await Promise.all(
     slice.items.map(async (item) => {
-      if (isFilled.contentRelationship(item.case_study)) {
-        return await client.getByID<Content.CaseStudyDocument>(
-          item.case_study.id,
+      if (isFilled.contentRelationship(item.project)) {
+        return await client.getByID<Content.ProjectDocument>(
+          item.project.id,
         );
       }
     }),
   );
 
   return (
-    <Bounded
+<Bounded
       data-slice-type={slice.slice_type}
       data-slice-variation={slice.variation}
     >
@@ -86,4 +85,4 @@ const CaseStudies = async ({
   );
 };
 
-export default CaseStudies;
+export default Projects;

@@ -1,8 +1,8 @@
 {
-  "id": "case_studies",
+  "id": "projects",
   "type": "SharedSlice",
   "name": "Projects",
-  "description": "CaseStudies",
+  "description": "Projects",
   "variations": [
     {
       "id": "default",
@@ -18,7 +18,7 @@
             "label": "Heading",
             "placeholder": "",
             "allowTargetBlank": true,
-            "single": "heading2"
+            "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
           }
         },
         "body": {
@@ -27,7 +27,7 @@
             "label": "Body",
             "placeholder": "",
             "allowTargetBlank": true,
-            "multi": "paragraph"
+            "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
           }
         }
       },
@@ -36,10 +36,7 @@
           "type": "Link",
           "config": {
             "label": "Project",
-            "select": "document",
-            "customtypes": [
-              "project"
-            ]
+            "select": "document"
           }
         }
       }
