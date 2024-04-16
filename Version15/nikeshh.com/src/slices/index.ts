@@ -3,5 +3,6 @@
 import dynamic from "next/dynamic";
 
 export const components = {
+  case_studies: dynamic(() => import("./MultipleItems")),
   rich_text: dynamic(() => import("./RichText")),
 };
