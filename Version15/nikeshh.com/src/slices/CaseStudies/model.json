@@ -1,7 +1,7 @@
 {
   "id": "case_studies",
   "type": "SharedSlice",
-  "name": "MultipleItems",
+  "name": "CaseStudies",
   "description": "CaseStudies",
   "variations": [
     {
