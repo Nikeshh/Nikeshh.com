@@ -146,6 +146,20 @@ const Home = async () => {
             />
             <span>Freelancer</span>
           </Link>
+          <Link
+            href="https://www.skinessence.ca/"
+            target='_blank'
+            className='cursor-pointer flex flex-col items-center'
+          >
+            <Image
+              src={'/assets/clients/skin-essence.jpg'}
+              alt="client image"
+              height={240}
+              width={240}
+              className="rounded-tl-2xl rounded-tr-2xl border-2 border-muted"
+            />
+            <span>Freelancer</span>
+          </Link>
         </div>
       </section>
       <Skills skills={skills} />
