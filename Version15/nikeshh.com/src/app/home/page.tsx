@@ -152,7 +152,7 @@ const Home = async () => {
             className='cursor-pointer flex flex-col items-center'
           >
             <Image
-              src={'/assets/clients/skin-essence.jpg'}
+              src={'/assets/clients/skinessence.png'}
               alt="client image"
               height={240}
               width={240}
