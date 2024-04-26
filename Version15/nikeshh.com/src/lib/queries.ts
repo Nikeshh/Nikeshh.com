@@ -4,6 +4,9 @@ import { clerkClient, currentUser } from "@clerk/nextjs"
 import { db } from "./db"
 import { Prisma } from "@prisma/client"
 import { v4 } from "uuid"
+import { cache } from 'react'
+
+export const revalidate = 3600 // revalidate the data at most every hour
 
 export const getAuthUserDetails = async () => {
     const user = await currentUser()
@@ -20,7 +23,7 @@ export const getAuthUserDetails = async () => {
     return userData
 }
 
-export const getTestimonials = async () => {
+export const getTestimonials = cache(async () => {
   const response = await db.testimonials.findMany({
     select: {
       id: true,
@@ -32,9 +35,9 @@ export const getTestimonials = async () => {
     },
   });
   return response
-}
+})
 
-export const getSkills = async () => {
+export const getSkills = cache(async () => {
   const response = await db.skills.findMany({
     select: {
       id: true,
@@ -48,9 +51,9 @@ export const getSkills = async () => {
     },
   });
   return response
-}
+})
 
-export const getAllSkills = async () => {
+export const getAllSkills = cache(async () => {
   const response = await db.skills.findMany({
     select: {
       id: true,
@@ -64,9 +67,9 @@ export const getAllSkills = async () => {
     },
   });
   return response
-}
+})
 
-export const getServices = async () => {
+export const getServices = cache(async () => {
   const response = await db.services.findMany({
     select: {
       id: true,
@@ -80,9 +83,9 @@ export const getServices = async () => {
     },
   });
   return response
-}
+})
 
-export const getAllServices = async () => {
+export const getAllServices = cache(async () => {
   const response = await db.services.findMany({
     select: {
       id: true,
@@ -96,9 +99,9 @@ export const getAllServices = async () => {
     },
   });
   return response
-}
+})
 
-export const getProjects = async () => {
+export const getProjects = cache(async () => {
   const response = await db.projects.findMany({
     select: {
       id: true,
@@ -111,9 +114,9 @@ export const getProjects = async () => {
     },
   });
   return response
-}
+})
 
-export const getAllProjects = async () => {
+export const getAllProjects = cache(async () => {
   const response = await db.projects.findMany({
     select: {
       id: true,
@@ -126,9 +129,9 @@ export const getAllProjects = async () => {
     },
   });
   return response
-}
+})
 
-export const getBlogs = async () => {
+export const getBlogs = cache(async () => {
   const response = await db.blogs.findMany({
     select: {
       id: true,
@@ -138,9 +141,9 @@ export const getBlogs = async () => {
     },
   });
   return response
-}
+})
 
-export const getAllBlogs = async () => {
+export const getAllBlogs = cache(async () => {
   const response = await db.blogs.findMany({
     select: {
       id: true,
@@ -151,7 +154,7 @@ export const getAllBlogs = async () => {
     },
   });
   return response
-}
+})
 
 export const upsertNewsletter = async (
   newsletter: Prisma.NewsletterUncheckedCreateInput
