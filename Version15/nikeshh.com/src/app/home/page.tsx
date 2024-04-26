@@ -169,6 +169,20 @@ const Home = async () => {
       <Newsletters />
       <Blogs blogs={blogs.slice(0, 3)} />
       <Contact />
+      <section id="nikeshhcodes" className="container pt-12 md:pt-22 relative flex flex-col items-center justify-center">
+        <div className="w-full p-4 text-center bg-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700">
+          <h5 className="mb-2 text-3xl font-bold text-gray-900 dark:text-white">Want to learn programming?</h5>
+          <p className="mb-5 text-base text-gray-500 sm:text-lg dark:text-gray-400">Stay up to date with NikeshhCodes.com. I am building this website live in public.</p>
+          <div className="items-center justify-center space-y-4 sm:flex sm:space-y-0 sm:space-x-4 rtl:space-x-reverse">
+              <a href="https://nikeshhcodes.com" target='_blank' className="w-full sm:w-auto bg-gray-800 hover:bg-gray-700 focus:ring-4 focus:outline-none focus:ring-gray-300 text-white rounded-lg inline-flex items-center justify-center px-4 py-2.5 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700">
+                  <div className="text-left rtl:text-right">
+                      <div className="mb-1 text-xs">View NikeshhCodes.com</div>
+                      <div className="-mt-1 font-sans text-sm font-semibold">(Site under construction)</div>
+                  </div>
+              </a>
+          </div>
+        </div>
+      </section>
       <Footer />
     </>
   );
