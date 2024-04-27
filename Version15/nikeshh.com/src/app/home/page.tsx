@@ -36,6 +36,7 @@ const Home = async () => {
             <h1 className="font-bold text-[70px] architect-font">
               I BUILD.
             </h1>
+            <p>Applications ◦ Automations ◦ Systems</p>
             <p>Software Products & Systems that scale with <HoverCardC title="perfection" content="" subtext="" /></p>
           </div>
           <p>
