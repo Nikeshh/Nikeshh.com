@@ -89,7 +89,7 @@ const Newsletters = () => {
                     <div
                         className="group flex justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end cursor-pointer"
                     >
-                        <span className='text-gray-700 transition group-hover:text-gray-700/75'>
+                        <span className='text-gray-400 transition group-hover:text-gray-700/75'>
                             Trust me, I wont spam
                         </span>
                     </div>

@@ -12,7 +12,7 @@ const Navigation = () => {
                         className="group flex justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
                         href="#"
                     >
-                        <span className="text-gray-700 transition group-hover:text-gray-700/75">
+                        <span className="text-gray-400 transition group-hover:text-gray-700/75">
                             Available to work
                         </span>
                         <span className="relative flex h-2 w-2">
@@ -38,7 +38,7 @@ const Navigation = () => {
                         className="group flex justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
                         href="#"
                     >
-                        <span className="text-gray-700 transition group-hover:text-gray-700/75">
+                        <span className="text-gray-400 transition group-hover:text-gray-700/75">
                             Available to work
                         </span>
                         <span className="relative flex h-2 w-2">

@@ -24,7 +24,7 @@ const rollAndInEmilieFont = localFont({
 
 export const metadata: Metadata = {
   title: "Nikeshh Vijayabaskaran",
-  description: "Senior Full Stack Developer and Digital Marketer",
+  description: "Lead Full Stack Developer and Digital Marketer",
 };
 
 export default async function RootLayout({

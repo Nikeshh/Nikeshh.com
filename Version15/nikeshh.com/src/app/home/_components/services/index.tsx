@@ -67,7 +67,7 @@ const Services = ({ services } : Props) => {
                                     className="group flex justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end cursor-pointer"
                                     onClick={() => updateSelectedService(a)}
                                 >
-                                    <span className={selectedService == a ? 'text-white transition' : 'text-gray-700 transition group-hover:text-gray-700/75'}>
+                                    <span className={selectedService == a ? 'text-white transition' : 'text-gray-300 transition group-hover:text-gray-700/75'}>
                                         {a}
                                     </span>
                                 </div>
@@ -104,16 +104,14 @@ const Services = ({ services } : Props) => {
                         <CardContent className="grid gap-4">
                             <p>{serviceCommand.subtitle}</p>
                         </CardContent>
-                        {/*<CardFooter>
-                            <Link href={`/services/${serviceCommand.id}`}>
-                                <div className="hover:text-blue-600 underline cursor-pointer">explore more.</div>
-                            </Link>
-                        </CardFooter>*/}
+                        <CardFooter>
+                            <Link className="hover:text-blue-600 underline cursor-pointer" href={`/services/${serviceCommand.name.toLowerCase().replace(/ /g, '-').replace(/\//g, '').replace(/\(/g, '').replace(/\)/g, '')}`}>read more.</Link>
+                        </CardFooter>
                     </Card>
                 </div>
-                {/*<div className='mt-4 md:mt-6 w-full text-center'>
+                <div className='mt-4 md:mt-6 w-full text-center'>
                     <Link className="hover:text-blue-600 underline cursor-pointer" href="/services">view more.</Link>
-                </div>*/}
+                </div>
             </section>
         );
     } else {

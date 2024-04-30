@@ -87,28 +87,28 @@ const Footer = () => {
                             <p className="text-lg font-medium">Important Links</p>
                             <ul className="mt-8 space-y-4 text-sm">
                                 <li>
-                                    <Link className="text-gray-700 transition hover:text-gray-700/75" href="/home"> Home </Link>
+                                    <Link className="text-gray-400 transition hover:text-gray-700/75" href="/home"> Home </Link>
                                 </li>
                                 <li>
-                                    <Link className="text-gray-700 transition hover:text-gray-700/75" href="/home#skills"> Skills </Link>
+                                    <Link className="text-gray-400 transition hover:text-gray-700/75" href="/home#skills"> Skills </Link>
                                 </li>
                                 <li>
-                                    <Link className="text-gray-700 transition hover:text-gray-700/75" href="/home#services"> Services </Link>
+                                    <Link className="text-gray-400 transition hover:text-gray-700/75" href="/home#services"> Services </Link>
                                 </li>
                                 <li>
-                                    <Link className="text-gray-700 transition hover:text-gray-700/75" href="/home#projects"> Projects </Link>
+                                    <Link className="text-gray-400 transition hover:text-gray-700/75" href="/home#projects"> Projects </Link>
                                 </li>
                                 <li>
-                                    <Link className="text-gray-700 transition hover:text-gray-700/75" href="/home#newsletters"> Newsletters </Link>
+                                    <Link className="text-gray-400 transition hover:text-gray-700/75" href="/home#newsletters"> Newsletters </Link>
                                 </li>
                                 <li>
-                                    <Link className="text-gray-700 transition hover:text-gray-700/75" href="/home#testimonials"> Testimonials </Link>
+                                    <Link className="text-gray-400 transition hover:text-gray-700/75" href="/home#testimonials"> Testimonials </Link>
                                 </li>
                                 <li>
-                                    <Link className="text-gray-700 transition hover:text-gray-700/75" href="/home#blogs"> Blogs </Link>
+                                    <Link className="text-gray-400 transition hover:text-gray-700/75" href="/home#blogs"> Blogs </Link>
                                 </li>
                                 <li>
-                                    <Link className="text-gray-700 transition hover:text-gray-700/75" href="/home#contact"> Contact </Link>
+                                    <Link className="text-gray-400 transition hover:text-gray-700/75" href="/home#contact"> Contact </Link>
                                 </li>
                             </ul>
                         </div>
@@ -116,7 +116,7 @@ const Footer = () => {
                             {/*<p className="text-lg font-medium">Resources</p>
                             <ul className="mt-8 space-y-4 text-sm">
                                 <li>
-                                    <div className="text-gray-700 transition hover:text-gray-700/75 cursor-pointer" onClick={() => {
+                                    <div className="text-gray-400 transition hover:text-gray-700/75 cursor-pointer" onClick={() => {
                                         setOpen(
                                             <CustomModal
                                                 title="⚠️ Under Construction"
@@ -133,7 +133,7 @@ const Footer = () => {
                             {/*<p className="text-lg font-medium">Helpful Links</p>
                             <ul className="mt-8 space-y-4 text-sm">
                                 <li>
-                                    <div className="text-gray-700 transition hover:text-gray-700/75 cursor-pointer" onClick={() => {
+                                    <div className="text-gray-400 transition hover:text-gray-700/75 cursor-pointer" onClick={() => {
                                         setOpen(
                                             <CustomModal
                                                 title="⚠️ Under Construction"

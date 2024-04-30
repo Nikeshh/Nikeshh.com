@@ -45,7 +45,7 @@ const Projects = ({ projects } : Props) => {
                                     className="group flex justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end uppercase cursor-pointer"
                                     onClick={() => updateSelectedProject(a)}
                                 >
-                                    <span className={selectedProject == a ? 'text-white transition' : 'text-gray-700 transition group-hover:text-gray-700/75'}>
+                                    <span className={selectedProject == a ? 'text-white transition' : 'text-gray-400 transition group-hover:text-gray-700/75'}>
                                         {a}
                                     </span>
                                 </div>
@@ -63,18 +63,16 @@ const Projects = ({ projects } : Props) => {
                                 <CardContent className="grid gap-4">
                                     <p>{a.subtitle}</p>
                                 </CardContent>
-                                {/*<CardFooter>
-                                    <Link href={`/projects/${a.id}`}>
-                                        <div className="hover:text-blue-600 underline cursor-pointer">explore more.</div>
-                                    </Link>
-                                </CardFooter>*/}
+                                <CardFooter>
+                                    <Link className="hover:text-blue-600 underline cursor-pointer" href={`/projects/${a.name.toLowerCase().replace(/ /g, '-').replace(/\//g, '').replace(/\(/g, '').replace(/\)/g, '')}`}>explore more.</Link>
+                                </CardFooter>
                             </Card>
                         );
                     })}
                 </div>
-                {/*<div className='mt-4 md:mt-6 w-full text-center'>
+                <div className='mt-4 md:mt-6 w-full text-center'>
                     <Link className="hover:text-blue-600 underline cursor-pointer" href="/projects">view more.</Link>
-                </div>*/}
+                </div>
             </section>
         );
     } else {

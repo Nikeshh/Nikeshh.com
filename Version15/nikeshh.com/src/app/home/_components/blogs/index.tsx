@@ -62,11 +62,7 @@ const Blogs = ({ blogs } : Props) => {
                                     </div>
                                 </CardContent>
                                 <CardFooter>
-                                    <Link href={`/blogs/${blog.id}`}>
-                                        <Button className="w-full" variant="outline">
-                                            <Eye className="mr-2 h-4 w-4" /> View
-                                        </Button>
-                                    </Link>
+                                    <Link className="hover:text-blue-600 underline cursor-pointer" href={`/blogs/${blog.title.toLowerCase().replace(/ /g, '-').replace(/\//g, '').replace(/\(/g, '').replace(/\)/g, '')}`}>View</Link>
                                 </CardFooter>
                             </Card>
                         )

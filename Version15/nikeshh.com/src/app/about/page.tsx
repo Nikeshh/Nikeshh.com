@@ -27,7 +27,7 @@ const Page = async () => {
           <Bounded as="article">
               <div className="relative grid place-items-center text-center">
                   <StarGrid />
-                  <h1 className="text-7xl font-medium">
+                  <h1 className="text-4xl font-medium">
                       <PrismicText field={page.data.company} />
                       <p className="text-lg text-yellow-500">About Me</p>
                   </h1>
@@ -40,7 +40,7 @@ const Page = async () => {
                       quality={100}
                   />
               </div>
-              <div className="mx-auto">
+              <div className="mx-auto ml-0">
                 <SliceZone slices={page.data.slices} components={components} />
               </div>
           </Bounded>
