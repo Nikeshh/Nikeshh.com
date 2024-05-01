@@ -41,7 +41,7 @@ const Blogs = ({ blogs } : Props) => {
                                         src={blog.imageUrl}
                                         alt="blog image"
                                         height={120}
-                                        width={120}
+                                        width={300}
                                         className="rounded-tl-2xl rounded-tr-2xl border-2 border-muted"
                                     />
                                 </CardHeader>
