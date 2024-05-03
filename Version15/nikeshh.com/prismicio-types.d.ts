@@ -286,6 +286,187 @@ interface BlogsDocumentData {
 export type BlogsDocument<Lang extends string = string> =
   prismic.PrismicDocumentWithUID<Simplify<BlogsDocumentData>, "blogs", Lang>;
 
+type EntitiesDocumentDataSlicesSlice = EntitiesSlice;
+
+/**
+ * Content for Entities documents
+ */
+interface EntitiesDocumentData {
+  /**
+   * Title field in *Entities*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: entities.title
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  title: prismic.RichTextField;
+
+  /**
+   * Slice Zone field in *Entities*
+   *
+   * - **Field Type**: Slice Zone
+   * - **Placeholder**: *None*
+   * - **API ID Path**: entities.slices[]
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#slices
+   */
+  slices: prismic.SliceZone<EntitiesDocumentDataSlicesSlice> /**
+   * Meta Description field in *Entities*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: A brief summary of the page
+   * - **API ID Path**: entities.meta_description
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */;
+  meta_description: prismic.KeyTextField;
+
+  /**
+   * Meta Image field in *Entities*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: entities.meta_image
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  meta_image: prismic.ImageField<never>;
+
+  /**
+   * Meta Title field in *Entities*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: A title of the page used for social media and search engines
+   * - **API ID Path**: entities.meta_title
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  meta_title: prismic.KeyTextField;
+}
+
+/**
+ * Entities document from Prismic
+ *
+ * - **API ID**: `entities`
+ * - **Repeatable**: `false`
+ * - **Documentation**: https://prismic.io/docs/custom-types
+ *
+ * @typeParam Lang - Language API ID of the document.
+ */
+export type EntitiesDocument<Lang extends string = string> =
+  prismic.PrismicDocumentWithUID<
+    Simplify<EntitiesDocumentData>,
+    "entities",
+    Lang
+  >;
+
+type EntityDocumentDataSlicesSlice = RichTextSlice;
+
+/**
+ * Content for Entity documents
+ */
+interface EntityDocumentData {
+  /**
+   * Title field in *Entity*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: entity.title
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  title: prismic.RichTextField;
+
+  /**
+   * Company field in *Entity*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: entity.company
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  company: prismic.RichTextField;
+
+  /**
+   * Description field in *Entity*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: entity.description
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  description: prismic.RichTextField;
+
+  /**
+   * Logo Image field in *Entity*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: entity.logo_image
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  logo_image: prismic.ImageField<never>;
+
+  /**
+   * Slice Zone field in *Entity*
+   *
+   * - **Field Type**: Slice Zone
+   * - **Placeholder**: *None*
+   * - **API ID Path**: entity.slices[]
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#slices
+   */
+  slices: prismic.SliceZone<EntityDocumentDataSlicesSlice> /**
+   * Meta Description field in *Entity*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: A brief summary of the page
+   * - **API ID Path**: entity.meta_description
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */;
+  meta_description: prismic.KeyTextField;
+
+  /**
+   * Meta Image field in *Entity*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: entity.meta_image
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  meta_image: prismic.ImageField<never>;
+
+  /**
+   * Meta Title field in *Entity*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: A title of the page used for social media and search engines
+   * - **API ID Path**: entity.meta_title
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  meta_title: prismic.KeyTextField;
+}
+
+/**
+ * Entity document from Prismic
+ *
+ * - **API ID**: `entity`
+ * - **Repeatable**: `true`
+ * - **Documentation**: https://prismic.io/docs/custom-types
+ *
+ * @typeParam Lang - Language API ID of the document.
+ */
+export type EntityDocument<Lang extends string = string> =
+  prismic.PrismicDocumentWithUID<Simplify<EntityDocumentData>, "entity", Lang>;
+
 type PageDocumentDataSlicesSlice = never;
 
 /**
@@ -1014,6 +1195,8 @@ export type AllDocumentTypes =
   | AboutDocument
   | BlogDocument
   | BlogsDocument
+  | EntitiesDocument
+  | EntityDocument
   | PageDocument
   | PagesDocument
   | ProjectDocument
@@ -1089,6 +1272,76 @@ type BlogsSliceVariation = BlogsSliceDefault;
  * - **Documentation**: https://prismic.io/docs/slice
  */
 export type BlogsSlice = prismic.SharedSlice<"blogs", BlogsSliceVariation>;
+
+/**
+ * Primary content in *Entities → Primary*
+ */
+export interface EntitiesSliceDefaultPrimary {
+  /**
+   * Heading field in *Entities → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: entities.primary.heading
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  heading: prismic.RichTextField;
+
+  /**
+   * Body field in *Entities → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: entities.primary.body
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  body: prismic.RichTextField;
+}
+
+/**
+ * Primary content in *Entities → Items*
+ */
+export interface EntitiesSliceDefaultItem {
+  /**
+   * Entity field in *Entities → Items*
+   *
+   * - **Field Type**: Content Relationship
+   * - **Placeholder**: *None*
+   * - **API ID Path**: entities.items[].entity
+   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+   */
+  entity: prismic.ContentRelationshipField;
+}
+
+/**
+ * Default variation for Entities Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type EntitiesSliceDefault = prismic.SharedSliceVariation<
+  "default",
+  Simplify<EntitiesSliceDefaultPrimary>,
+  Simplify<EntitiesSliceDefaultItem>
+>;
+
+/**
+ * Slice variation for *Entities*
+ */
+type EntitiesSliceVariation = EntitiesSliceDefault;
+
+/**
+ * Entities Shared Slice
+ *
+ * - **API ID**: `entities`
+ * - **Description**: Entities
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type EntitiesSlice = prismic.SharedSlice<
+  "entities",
+  EntitiesSliceVariation
+>;
 
 /**
  * Primary content in *Pages → Primary*
@@ -1428,6 +1681,12 @@ declare module "@prismicio/client" {
       BlogsDocument,
       BlogsDocumentData,
       BlogsDocumentDataSlicesSlice,
+      EntitiesDocument,
+      EntitiesDocumentData,
+      EntitiesDocumentDataSlicesSlice,
+      EntityDocument,
+      EntityDocumentData,
+      EntityDocumentDataSlicesSlice,
       PageDocument,
       PageDocumentData,
       PageDocumentDataSlicesSlice,
@@ -1458,6 +1717,11 @@ declare module "@prismicio/client" {
       BlogsSliceDefaultItem,
       BlogsSliceVariation,
       BlogsSliceDefault,
+      EntitiesSlice,
+      EntitiesSliceDefaultPrimary,
+      EntitiesSliceDefaultItem,
+      EntitiesSliceVariation,
+      EntitiesSliceDefault,
       PagesSlice,
       PagesSliceDefaultPrimary,
       PagesSliceDefaultItem,

@@ -381,9 +381,6 @@ const Home = async () => {
             <ul className='text-sm font-light'>
               <li>Got selected in TCS Enginx - Top 100 (June 2018)</li>
             </ul>
-            <Link href={""} className="text-sm border font-light dark:border-white/[0.2] border-black/[0.2] rounded-full mt-4 text-black dark:text-white px-2 py-0.5">
-              View
-            </Link>
           </div>
           <div className="border border-black/[0.2] dark:border-white/[0.2] flex flex-col items-start max-w-sm mx-auto p-4 relative h-[30rem]">
             <Icon className="absolute h-6 w-6 -top-3 -left-3 dark:text-white text-black" />
@@ -397,9 +394,6 @@ const Home = async () => {
             <ul className='text-sm font-light'>
               <li>University Topper (Rank:Ranger) (June 2018)</li>
             </ul>
-            <Link href={""} className="text-sm border font-light dark:border-white/[0.2] border-black/[0.2] rounded-full mt-4 text-black dark:text-white px-2 py-0.5">
-              View
-            </Link>
           </div>
           <div className="border border-black/[0.2] dark:border-white/[0.2] flex flex-col items-start max-w-sm mx-auto p-4 relative h-[30rem]">
             <Icon className="absolute h-6 w-6 -top-3 -left-3 dark:text-white text-black" />
@@ -413,9 +407,6 @@ const Home = async () => {
             <ul className='text-sm font-light'>
               <li>1st Rank holder ( 2017 ) - Proficiency award - Department of Computer Science and Engineering (June 2017)</li>
             </ul>
-            <Link href={""} className="text-sm border font-light dark:border-white/[0.2] border-black/[0.2] rounded-full mt-4 text-black dark:text-white px-2 py-0.5">
-              View
-            </Link>
           </div>
           <div className="border border-black/[0.2] dark:border-white/[0.2] flex flex-col items-start max-w-sm mx-auto p-4 relative h-[30rem]">
             <Icon className="absolute h-6 w-6 -top-3 -left-3 dark:text-white text-black" />
@@ -429,9 +420,6 @@ const Home = async () => {
             <ul className='text-sm font-light'>
               <li>1st Rank holder ( 2018 ) - Proficiency award - Department of Computer Science and Engineering (June 2018)</li>
             </ul>
-            <Link href={""} className="text-sm border font-light dark:border-white/[0.2] border-black/[0.2] rounded-full mt-4 text-black dark:text-white px-2 py-0.5">
-              View
-            </Link>
           </div>
           <div className="border border-black/[0.2] dark:border-white/[0.2] flex flex-col items-start max-w-sm mx-auto p-4 relative h-[30rem]">
             <Icon className="absolute h-6 w-6 -top-3 -left-3 dark:text-white text-black" />
@@ -445,9 +433,6 @@ const Home = async () => {
             <ul className='text-sm font-light'>
               <li>1st Rank holder ( 2019 ) - Proficiency award - Department of Computer Science and Engineering (June 2019)</li>
             </ul>
-            <Link href={""} className="text-sm border font-light dark:border-white/[0.2] border-black/[0.2] rounded-full mt-4 text-black dark:text-white px-2 py-0.5">
-              View
-            </Link>
           </div>
           <div className="border border-black/[0.2] dark:border-white/[0.2] flex flex-col items-start max-w-sm mx-auto p-4 relative h-[30rem]">
             <Icon className="absolute h-6 w-6 -top-3 -left-3 dark:text-white text-black" />
@@ -461,9 +446,6 @@ const Home = async () => {
             <ul className='text-sm font-light'>
               <li>3rd Rank holder ( 2015-2019 ) - Department of Computer Science and Engineering (March 2021)</li>
             </ul>
-            <Link href={""} className="text-sm border font-light dark:border-white/[0.2] border-black/[0.2] rounded-full mt-4 text-black dark:text-white px-2 py-0.5">
-              View
-            </Link>
           </div>
         </div>
       </section>
@@ -488,9 +470,6 @@ const Home = async () => {
             <ul className='text-sm font-light'>
               <li>President, Indian Society Of Technical Education (Jun 2016 - Jun 2019)</li>
             </ul>
-            <Link href={""} className="text-sm border font-light dark:border-white/[0.2] border-black/[0.2] rounded-full mt-4 text-black dark:text-white px-2 py-0.5">
-              View
-            </Link>
           </div>
           <div className="border border-black/[0.2] dark:border-white/[0.2] flex flex-col items-start max-w-sm mx-auto p-4 relative h-[30rem]">
             <Icon className="absolute h-6 w-6 -top-3 -left-3 dark:text-white text-black" />
@@ -504,9 +483,7 @@ const Home = async () => {
             <ul className='text-sm font-light'>
               <li>President, Coding Club (Jun 2016 - Jun 2019)</li>
             </ul>
-            <Link href={""} className="text-sm border font-light dark:border-white/[0.2] border-black/[0.2] rounded-full mt-4 text-black dark:text-white px-2 py-0.5">
-              View
-            </Link>
+
           </div>
           <div className="border border-black/[0.2] dark:border-white/[0.2] flex flex-col items-start max-w-sm mx-auto p-4 relative h-[30rem]">
             <Icon className="absolute h-6 w-6 -top-3 -left-3 dark:text-white text-black" />
@@ -521,9 +498,6 @@ const Home = async () => {
               <li>Education and Technical Mentor (July 2021 - April 2022)</li>
               <li>Mentored SRM students and was involved in designing and developing Australian based educational platform</li>
             </ul>
-            <Link href={""} className="text-sm border font-light dark:border-white/[0.2] border-black/[0.2] rounded-full mt-4 text-black dark:text-white px-2 py-0.5">
-              View
-            </Link>
           </div>
           <div className="border border-black/[0.2] dark:border-white/[0.2] flex flex-col items-start max-w-sm mx-auto p-4 relative h-[30rem]">
             <Icon className="absolute h-6 w-6 -top-3 -left-3 dark:text-white text-black" />
@@ -537,9 +511,6 @@ const Home = async () => {
             <ul className='text-sm font-light'>
               <li>Chief Designer and Coordinator - Tarangini - Intra college magazine (June 2016 - June 2018)</li>
             </ul>
-            <Link href={""} className="text-sm border font-light dark:border-white/[0.2] border-black/[0.2] rounded-full mt-4 text-black dark:text-white px-2 py-0.5">
-              View
-            </Link>
           </div>
           <div className="border border-black/[0.2] dark:border-white/[0.2] flex flex-col items-start max-w-sm mx-auto p-4 relative h-[30rem]">
             <Icon className="absolute h-6 w-6 -top-3 -left-3 dark:text-white text-black" />
@@ -554,9 +525,6 @@ const Home = async () => {
               <li>IV coordinator (June 2015 - October 2017)</li>
               <li>Companies: 24/7[ai] and SAP Solutions Pvt Ltd - Bangalore</li>
             </ul>
-            <Link href={""} className="text-sm border font-light dark:border-white/[0.2] border-black/[0.2] rounded-full mt-4 text-black dark:text-white px-2 py-0.5">
-              View
-            </Link>
           </div>
           <div className="border border-black/[0.2] dark:border-white/[0.2] flex flex-col items-start max-w-sm mx-auto p-4 relative h-[30rem]">
             <Icon className="absolute h-6 w-6 -top-3 -left-3 dark:text-white text-black" />
@@ -570,9 +538,6 @@ const Home = async () => {
             <ul className='text-sm font-light'>
               <li>Student Partner (June 2017 - December 2018)</li>
             </ul>
-            <Link href={""} className="text-sm border font-light dark:border-white/[0.2] border-black/[0.2] rounded-full mt-4 text-black dark:text-white px-2 py-0.5">
-              View
-            </Link>
           </div>
           <div className="border border-black/[0.2] dark:border-white/[0.2] flex flex-col items-start max-w-sm mx-auto p-4 relative h-[30rem]">
             <Icon className="absolute h-6 w-6 -top-3 -left-3 dark:text-white text-black" />
@@ -587,9 +552,6 @@ const Home = async () => {
               <li>Academic Tutor (June 2018 - June 2018)</li>
               <li>Conducted a workshop on Android Development during Yuktaha&apos;17</li>
             </ul>
-            <Link href={""} className="text-sm border font-light dark:border-white/[0.2] border-black/[0.2] rounded-full mt-4 text-black dark:text-white px-2 py-0.5">
-              View
-            </Link>
           </div>
           <div className="border border-black/[0.2] dark:border-white/[0.2] flex flex-col items-start max-w-sm mx-auto p-4 relative h-[30rem]">
             <Icon className="absolute h-6 w-6 -top-3 -left-3 dark:text-white text-black" />
@@ -604,9 +566,6 @@ const Home = async () => {
               <li>Civil Rights and Social Action</li>
               <li>President, Designer, Organiser - Institute of Engineers NSS (June 2016 - September 2019)</li>
             </ul>
-            <Link href={""} className="text-sm border font-light dark:border-white/[0.2] border-black/[0.2] rounded-full mt-4 text-black dark:text-white px-2 py-0.5">
-              View
-            </Link>
           </div>
         </div>
       </section>
