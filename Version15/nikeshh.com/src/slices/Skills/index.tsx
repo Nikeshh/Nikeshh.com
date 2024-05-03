@@ -53,8 +53,11 @@ const Skills = async ({ slice }: SkillsProps): Promise<JSX.Element> => {
               >
                 <div className="col-span-1 flex flex-col justify-center gap-4">
                   <h3 className="text-4xl">
-                    <PrismicText field={caseStudy.data.company} />
+                    <PrismicText field={caseStudy.data.title} />
                   </h3>
+                  <p className="text-lg text-yellow-500">
+                    <PrismicText field={caseStudy.data.company} />
+                  </p>
                   <div className="max-w-md">
                     <PrismicRichText field={caseStudy.data.description} />
                   </div>
@@ -63,8 +66,7 @@ const Skills = async ({ slice }: SkillsProps): Promise<JSX.Element> => {
                     document={caseStudy}
                     className="after:absolute after:inset-0 hover:underline"
                   >
-                    Read <PrismicText field={caseStudy.data.company} /> case
-                    study
+                    Read more
                   </PrismicNextLink>
                 </div>
                 <PrismicNextImage

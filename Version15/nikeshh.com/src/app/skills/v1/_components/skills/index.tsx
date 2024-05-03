@@ -52,7 +52,7 @@ const Skills = ({ skills } : Props) => {
                                 className="group flex justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end uppercase cursor-pointer"
                                 onClick={() => updateSelectedSkill(a)}
                             >
-                                <span className={selectedSkill == a ? 'text-white transition' : 'text-gray-700 transition group-hover:text-gray-700/75'}>
+                                <span className={selectedSkill == a ? 'text-white transition' : 'text-gray-400 transition group-hover:text-gray-700/75'}>
                                     {a}
                                 </span>
                             </div>

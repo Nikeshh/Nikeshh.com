@@ -7,6 +7,8 @@ import Bounded from "@/components/Bounded";
 import StarGrid from "@/components/StarGrid";
 import { PrismicNextImage } from "@prismicio/next";
 import { asText } from "@prismicio/client";
+import Navigation from "@/components/layout/navigation";
+import Footer from "@/components/layout/footer";
 
 type Params = { uid: string };
 
@@ -17,26 +19,32 @@ export default async function Page({ params }: { params: Params }) {
     .catch(() => notFound());
 
   return (
-    <Bounded as="article">
-      <div className="relative grid place-items-center text-center">
-        <StarGrid />
-        <h1 className="text-7xl font-medium">
-          <PrismicText field={page.data.company} />
-          <p className="text-lg text-yellow-500">Case Study</p>
-        </h1>
-        <p className="mb-4 mt-8 max-w-xl text-lg text-slate-300">
-          <PrismicText field={page.data.description} />
-        </p>
-        <PrismicNextImage
-          field={page.data.logo_image}
-          className="rounded-lg"
-          quality={100}
-        />
-      </div>
-      <div className="mx-auto">
-        <SliceZone slices={page.data.slices} components={components} />
-      </div>
-    </Bounded>
+    <>
+      <Navigation />
+      <StarGrid />
+      <Bounded as="article">
+        <div className="relative grid place-items-center text-center">
+          <h1 className="text-4xl font-medium">
+            <PrismicText field={page.data.title} />
+            <p className="text-lg text-yellow-500">
+              <PrismicText field={page.data.company} />
+            </p>
+          </h1>
+          <p className="mb-4 mt-8 max-w-xl text-lg text-slate-300">
+            <PrismicText field={page.data.description} />
+          </p>
+          <PrismicNextImage
+            field={page.data.logo_image}
+            className="rounded-lg"
+            quality={100}
+          />
+        </div>
+        <div className="mx-auto ml-0">
+          <SliceZone slices={page.data.slices} components={components} />
+        </div>
+      </Bounded>
+      <Footer />
+    </>
   );
 }
 
@@ -51,7 +59,7 @@ export async function generateMetadata({
     .catch(() => notFound());
 
   return {
-    title: `${page.data.meta_title || asText(page.data.company) + " Case Study"}`,
+    title: `${page.data.meta_title || asText(page.data.title)}`,
     description: page.data.meta_description,
   };
 }

@@ -32,11 +32,11 @@ const Skills = ({ skills } : Props) => {
 
     if (skills && skills.length > 0 && skillTags) {
         return (
-            <section id="skills" className="container pt-12 md:pt-44 relative flex flex-col items-center justify-center">
+            <section id="skills" className="container pt-12 md:pt-22 relative flex flex-col items-center justify-center">
                 <p>TO MENTION</p>
                 <div className="bg-gradient-to-r from-primary to-secondary-foreground text-transparent bg-clip-text relative">
                     <h2 className="font-bold text-xl md:text-[40px] md:leading-none text-center">
-                        SKILLS, CERTIFICATIONS, AWARDS & EXPERIENCES
+                        SKILLS
                     </h2>
                 </div>
                 <div className="mt-6 flex flex-wrap gap-2 justify-center">
@@ -47,7 +47,7 @@ const Skills = ({ skills } : Props) => {
                                 className="group flex justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end uppercase cursor-pointer"
                                 onClick={() => updateSelectedSkill(a)}
                             >
-                                <span className={selectedSkill == a ? 'text-white transition' : 'text-gray-700 transition group-hover:text-gray-700/75'}>
+                                <span className={selectedSkill == a ? 'text-white transition' : 'text-gray-400 transition group-hover:text-gray-700/75'}>
                                     {a}
                                 </span>
                             </div>
@@ -89,20 +89,16 @@ const Skills = ({ skills } : Props) => {
                                         ))}
                                     </div>
                                 </CardContent>
-                                {/*<CardFooter>
-                                    <Link href={`/skills/${skill.id}`}>
-                                        <Button className="w-full" variant="outline">
-                                            <Eye className="mr-2 h-4 w-4" /> Explore
-                                        </Button>
-                                    </Link>
-                                </CardFooter>*/}
+                                <CardFooter>
+                                    <Link className="hover:text-blue-600 underline cursor-pointer" href={`/skills/${skill.name.toLowerCase().replace(/ /g, '-').replace(/\//g, '').replace(/\(/g, '').replace(/\)/g, '')}`}>read more.</Link>
+                                </CardFooter>
                             </Card>
                         );
                     })}
                 </div>
-                {/*<div className='mt-4 md:mt-6 w-full text-center'>
+                <div className='mt-4 md:mt-6 w-full text-center'>
                     <Link className="hover:text-blue-600 underline cursor-pointer" href="/skills">explore more.</Link>
-                </div>*/}
+                </div>
             </section>
         );
     } else {
