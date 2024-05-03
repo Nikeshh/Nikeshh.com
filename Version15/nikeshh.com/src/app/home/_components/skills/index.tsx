@@ -90,7 +90,7 @@ const Skills = ({ skills } : Props) => {
                                     </div>
                                 </CardContent>
                                 <CardFooter>
-                                    <Link className="hover:text-blue-600 underline cursor-pointer" href={`/skills/${skill.name.toLowerCase().replace(/ /g, '-').replace(/\//g, '').replace(/\(/g, '').replace(/\)/g, '')}`}>read more.</Link>
+                                    <Link className="hover:text-blue-600 underline cursor-pointer" href={`/skills/${skill.name.toLowerCase().replace(/ /g, '-').replace(/\//g, '').replace(/\(/g, '').replace(/\)/g, '').replace(/\&/g, '-')}`}>read more.</Link>
                                 </CardFooter>
                             </Card>
                         );
