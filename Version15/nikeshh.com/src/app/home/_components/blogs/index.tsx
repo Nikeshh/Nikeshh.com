@@ -41,7 +41,7 @@ const Blogs = ({ blogs } : Props) => {
                                         src={blog.imageUrl}
                                         alt="blog image"
                                         height={120}
-                                        width={300}
+                                        width={400}
                                         className="rounded-tl-2xl rounded-tr-2xl border-2 border-muted"
                                     />
                                 </CardHeader>
@@ -62,7 +62,7 @@ const Blogs = ({ blogs } : Props) => {
                                     </div>
                                 </CardContent>
                                 <CardFooter>
-                                    <Link className="hover:text-blue-600 underline cursor-pointer" href={`/blogs/${blog.title.toLowerCase().replace(/ /g, '-').replace(/\//g, '').replace(/\(/g, '').replace(/\)/g, '')}`}>View</Link>
+                                    <Link className="hover:text-blue-600 underline cursor-pointer" href={`/blogs/${blog.title.toLowerCase().replace(/ /g, '-').replace(/\//g, '').replace(/\(/g, '').replace(/\)/g, '').replace(/\:/g, '').replace(/\&/g, '-')}`}>View</Link>
                                 </CardFooter>
                             </Card>
                         )
