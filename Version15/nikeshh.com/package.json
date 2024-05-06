@@ -59,7 +59,8 @@
     "three-globe": "^2.31.0",
     "uploadthing": "^6.4.1",
     "uuid": "^9.0.1",
-    "zod": "^3.22.4"
+    "zod": "^3.22.4",
+    "next-nprogress-bar": "^2.1.2"
   },
   "devDependencies": {
     "@slicemachine/adapter-next": "latest",
