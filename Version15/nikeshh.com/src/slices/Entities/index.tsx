@@ -3,6 +3,7 @@ import { createClient } from "@/prismicio";
 import { Content, isFilled } from "@prismicio/client";
 import { PrismicNextImage, PrismicNextLink } from "@prismicio/next";
 import {
+  PrismicLink,
   PrismicRichText,
   PrismicText,
   SliceComponentProps,
@@ -64,7 +65,7 @@ const Entities = async ({ slice }: EntitiesProps): Promise<JSX.Element> => {
                       )}
                     />
                     <div className="hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-900 opacity-25"></div>
-                    <a href="#!">
+                    <a href="">
                       <div className="text-xs absolute top-0 right-0 bg-indigo-600 px-4 py-2 text-white mt-3 mr-3 hover:bg-white hover:text-indigo-600 transition duration-500 ease-in-out">
                         <PrismicText field={caseStudy.data.company} />
                       </div>
@@ -83,12 +84,12 @@ const Entities = async ({ slice }: EntitiesProps): Promise<JSX.Element> => {
                   </div>
                   <div className="h-5 px-6 py-3 flex flex-row items-center justify-between bg-gray-700">
                     <span className="py-1 text-xs font-regular text-gray-100 mr-1 flex flex-row items-center">
-                      <span className="ml-1">MRR: $1000</span>
+                      <span className="ml-1">MRR: <PrismicText field={caseStudy.data.mrr} /></span>
                     </span>
                   </div>
                   <div className="h-5 px-6 py-3 flex flex-row items-center justify-between bg-gray-700">
                     <span className="py-1 text-xs font-regular text-gray-100 mr-1 flex flex-row items-center">
-                      <span className="ml-1">Target MRR: $4000</span>
+                      <span className="ml-1">Target MRR: <PrismicText field={caseStudy.data.target_mrr} /></span>
                     </span>
                   </div>
                   <div className="px-6 py-3 flex flex-row items-center justify-between bg-gray-900">
@@ -106,17 +107,17 @@ const Entities = async ({ slice }: EntitiesProps): Promise<JSX.Element> => {
                           d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"
                         ></path>
                       </svg>
-                      <PrismicNextLink
-                        document={caseStudy}
+                      <Link
+                        href={"/entities/" + caseStudy.uid}
                         className="hover:text-indigo-600 transition duration-500 ease-in-out"
                       >
                         <span className="ml-1">Read More</span>
-                      </PrismicNextLink>
+                      </Link>
                     </span>
 
                     <span className="py-1 text-xs font-regular text-gray-100 mr-1 flex flex-row items-center">
                       <Link
-                        href="#"
+                        href={new URL(caseStudy.data.link ?? "")}
                         className="hover:text-indigo-600 transition duration-500 ease-in-out"
                       >
                         <span className="ml-1">Visit</span>

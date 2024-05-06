@@ -10,6 +10,7 @@ import { Analytics } from "@vercel/analytics/react";
 import localFont from 'next/font/local';
 import { PrismicPreview } from "@prismicio/next";
 import { repositoryName } from "@/prismicio";
+import { NProgressBarProvider } from '@/providers/nprogress-bar-provider'
 
 const font = DM_Sans({ subsets: ["latin"] });
 
@@ -43,6 +44,7 @@ export default async function RootLayout({
         >
           <ModalProvider>
             <ClerkProvider appearance={{ baseTheme: dark }}>
+              <NProgressBarProvider />
               <main className="w-full">
                 {children}
               </main>

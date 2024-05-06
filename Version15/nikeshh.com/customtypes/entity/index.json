@@ -47,6 +47,31 @@
           "thumbnails": []
         }
       },
+      "mrr": {
+        "type": "StructuredText",
+        "config": {
+          "label": "MRR",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+        }
+      },
+      "target_mrr": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Target MRR",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+        }
+      },
+      "link": {
+        "type": "Text",
+        "config": {
+          "label": "Link",
+          "placeholder": ""
+        }
+      },
       "slices": {
         "type": "Slices",
         "fieldset": "Slice Zone",

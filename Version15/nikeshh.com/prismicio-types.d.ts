@@ -413,6 +413,39 @@ interface EntityDocumentData {
   logo_image: prismic.ImageField<never>;
 
   /**
+   * MRR field in *Entity*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: entity.mrr
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  mrr: prismic.RichTextField;
+
+  /**
+   * Target MRR field in *Entity*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: entity.target_mrr
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  target_mrr: prismic.RichTextField;
+
+  /**
+   * Link field in *Entity*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: entity.link
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  link: prismic.KeyTextField;
+
+  /**
    * Slice Zone field in *Entity*
    *
    * - **Field Type**: Slice Zone
