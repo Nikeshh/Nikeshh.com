@@ -79,6 +79,7 @@
     "prisma": "^5.13.0",
     "slice-machine-ui": "latest",
     "tailwindcss": "^3.3.0",
-    "typescript": "^5"
+    "typescript": "^5",
+    "@types/react-vertical-timeline-component": "^3.3.5"
   }
 }
