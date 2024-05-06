@@ -3,9 +3,9 @@ import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 
-import carhubImg from "@/public/carhub.png";
-import realtorImg from "@/public/realtor.png";
-import ecommerceImg from "@/public/ecommerce.png";
+const carhubImg = "/carhub.png";
+const realtorImg = "/realtor.png";
+const ecommerceImg = "/ecommerce.png";
 
 // Navigation links
 export const LINKS = [
@@ -124,4 +124,4 @@ export const SKILLS_DATA = [
 ] as const;
 
 // Owner name
-export const OWNER_NAME = "Sanidhya Kumar Verma";
+export const OWNER_NAME = "Nikeshh Vijayabaskaran";

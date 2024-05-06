@@ -8,8 +8,6 @@ import ActiveSectionContextProvider from "./context/active-section-context";
 import ThemeContextProvider from "./context/theme-context";
 import { EXTRA_LINKS, OWNER_NAME } from "./constants";
 
-import "./globals.css";
-
 // inter font export
 const inter = Inter({ subsets: ["latin"] });
 

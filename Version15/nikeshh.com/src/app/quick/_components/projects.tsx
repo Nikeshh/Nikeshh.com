@@ -71,6 +71,8 @@ const Project = ({
         >
           <Image
             src={imageUrl}
+            width={250}
+            height={250}
             alt={title}
             quality={95}
             className="absolute hidden sm:block top-8 -right-40 w-[28.25rem]
