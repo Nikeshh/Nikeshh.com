@@ -500,6 +500,191 @@ interface EntityDocumentData {
 export type EntityDocument<Lang extends string = string> =
   prismic.PrismicDocumentWithUID<Simplify<EntityDocumentData>, "entity", Lang>;
 
+type InsightDocumentDataSlicesSlice = RichTextSlice;
+
+/**
+ * Content for Insight documents
+ */
+interface InsightDocumentData {
+  /**
+   * Title field in *Insight*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: insight.title
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  title: prismic.RichTextField;
+
+  /**
+   * Company field in *Insight*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: insight.company
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  company: prismic.RichTextField;
+
+  /**
+   * Description field in *Insight*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: insight.description
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  description: prismic.RichTextField;
+
+  /**
+   * Logo Image field in *Insight*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: insight.logo_image
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  logo_image: prismic.ImageField<never>;
+
+  /**
+   * Slice Zone field in *Insight*
+   *
+   * - **Field Type**: Slice Zone
+   * - **Placeholder**: *None*
+   * - **API ID Path**: insight.slices[]
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#slices
+   */
+  slices: prismic.SliceZone<InsightDocumentDataSlicesSlice> /**
+   * Meta Description field in *Insight*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: A brief summary of the page
+   * - **API ID Path**: insight.meta_description
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */;
+  meta_description: prismic.KeyTextField;
+
+  /**
+   * Meta Image field in *Insight*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: insight.meta_image
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  meta_image: prismic.ImageField<never>;
+
+  /**
+   * Meta Title field in *Insight*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: A title of the page used for social media and search engines
+   * - **API ID Path**: insight.meta_title
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  meta_title: prismic.KeyTextField;
+}
+
+/**
+ * Insight document from Prismic
+ *
+ * - **API ID**: `insight`
+ * - **Repeatable**: `true`
+ * - **Documentation**: https://prismic.io/docs/custom-types
+ *
+ * @typeParam Lang - Language API ID of the document.
+ */
+export type InsightDocument<Lang extends string = string> =
+  prismic.PrismicDocumentWithUID<
+    Simplify<InsightDocumentData>,
+    "insight",
+    Lang
+  >;
+
+type InsightsforgeDocumentDataSlicesSlice = InsightsForgeSlice;
+
+/**
+ * Content for InsightsForge documents
+ */
+interface InsightsforgeDocumentData {
+  /**
+   * Title field in *InsightsForge*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: insightsforge.title
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  title: prismic.RichTextField;
+
+  /**
+   * Slice Zone field in *InsightsForge*
+   *
+   * - **Field Type**: Slice Zone
+   * - **Placeholder**: *None*
+   * - **API ID Path**: insightsforge.slices[]
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#slices
+   */
+  slices: prismic.SliceZone<InsightsforgeDocumentDataSlicesSlice> /**
+   * Meta Description field in *InsightsForge*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: A brief summary of the page
+   * - **API ID Path**: insightsforge.meta_description
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */;
+  meta_description: prismic.KeyTextField;
+
+  /**
+   * Meta Image field in *InsightsForge*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: insightsforge.meta_image
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  meta_image: prismic.ImageField<never>;
+
+  /**
+   * Meta Title field in *InsightsForge*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: A title of the page used for social media and search engines
+   * - **API ID Path**: insightsforge.meta_title
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  meta_title: prismic.KeyTextField;
+}
+
+/**
+ * InsightsForge document from Prismic
+ *
+ * - **API ID**: `insightsforge`
+ * - **Repeatable**: `false`
+ * - **Documentation**: https://prismic.io/docs/custom-types
+ *
+ * @typeParam Lang - Language API ID of the document.
+ */
+export type InsightsforgeDocument<Lang extends string = string> =
+  prismic.PrismicDocumentWithUID<
+    Simplify<InsightsforgeDocumentData>,
+    "insightsforge",
+    Lang
+  >;
+
 type PageDocumentDataSlicesSlice = never;
 
 /**
@@ -859,6 +1044,191 @@ export type ProjectsDocument<Lang extends string = string> =
   prismic.PrismicDocumentWithUID<
     Simplify<ProjectsDocumentData>,
     "projects",
+    Lang
+  >;
+
+type ResearchDocumentDataSlicesSlice = RichTextSlice;
+
+/**
+ * Content for Research documents
+ */
+interface ResearchDocumentData {
+  /**
+   * title field in *Research*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: research.title
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  title: prismic.RichTextField;
+
+  /**
+   * company field in *Research*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: research.company
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  company: prismic.RichTextField;
+
+  /**
+   * description field in *Research*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: research.description
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  description: prismic.RichTextField;
+
+  /**
+   * Logo Image field in *Research*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: research.logo_image
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  logo_image: prismic.ImageField<never>;
+
+  /**
+   * Slice Zone field in *Research*
+   *
+   * - **Field Type**: Slice Zone
+   * - **Placeholder**: *None*
+   * - **API ID Path**: research.slices[]
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#slices
+   */
+  slices: prismic.SliceZone<ResearchDocumentDataSlicesSlice> /**
+   * Meta Description field in *Research*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: A brief summary of the page
+   * - **API ID Path**: research.meta_description
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */;
+  meta_description: prismic.KeyTextField;
+
+  /**
+   * Meta Image field in *Research*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: research.meta_image
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  meta_image: prismic.ImageField<never>;
+
+  /**
+   * Meta Title field in *Research*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: A title of the page used for social media and search engines
+   * - **API ID Path**: research.meta_title
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  meta_title: prismic.KeyTextField;
+}
+
+/**
+ * Research document from Prismic
+ *
+ * - **API ID**: `research`
+ * - **Repeatable**: `true`
+ * - **Documentation**: https://prismic.io/docs/custom-types
+ *
+ * @typeParam Lang - Language API ID of the document.
+ */
+export type ResearchDocument<Lang extends string = string> =
+  prismic.PrismicDocumentWithUID<
+    Simplify<ResearchDocumentData>,
+    "research",
+    Lang
+  >;
+
+type ResearchhubDocumentDataSlicesSlice = ResearchHubSlice;
+
+/**
+ * Content for ResearchHub documents
+ */
+interface ResearchhubDocumentData {
+  /**
+   * title field in *ResearchHub*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: researchhub.title
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  title: prismic.RichTextField;
+
+  /**
+   * Slice Zone field in *ResearchHub*
+   *
+   * - **Field Type**: Slice Zone
+   * - **Placeholder**: *None*
+   * - **API ID Path**: researchhub.slices[]
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#slices
+   */
+  slices: prismic.SliceZone<ResearchhubDocumentDataSlicesSlice> /**
+   * Meta Description field in *ResearchHub*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: A brief summary of the page
+   * - **API ID Path**: researchhub.meta_description
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */;
+  meta_description: prismic.KeyTextField;
+
+  /**
+   * Meta Image field in *ResearchHub*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: researchhub.meta_image
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  meta_image: prismic.ImageField<never>;
+
+  /**
+   * Meta Title field in *ResearchHub*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: A title of the page used for social media and search engines
+   * - **API ID Path**: researchhub.meta_title
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  meta_title: prismic.KeyTextField;
+}
+
+/**
+ * ResearchHub document from Prismic
+ *
+ * - **API ID**: `researchhub`
+ * - **Repeatable**: `false`
+ * - **Documentation**: https://prismic.io/docs/custom-types
+ *
+ * @typeParam Lang - Language API ID of the document.
+ */
+export type ResearchhubDocument<Lang extends string = string> =
+  prismic.PrismicDocumentWithUID<
+    Simplify<ResearchhubDocumentData>,
+    "researchhub",
     Lang
   >;
 
@@ -1230,10 +1600,14 @@ export type AllDocumentTypes =
   | BlogsDocument
   | EntitiesDocument
   | EntityDocument
+  | InsightDocument
+  | InsightsforgeDocument
   | PageDocument
   | PagesDocument
   | ProjectDocument
   | ProjectsDocument
+  | ResearchDocument
+  | ResearchhubDocument
   | ServiceDocument
   | ServicesDocument
   | SkillDocument
@@ -1377,6 +1751,76 @@ export type EntitiesSlice = prismic.SharedSlice<
 >;
 
 /**
+ * Primary content in *InsightsForge → Primary*
+ */
+export interface InsightsForgeSliceDefaultPrimary {
+  /**
+   * Heading field in *InsightsForge → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: insights_forge.primary.heading
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  heading: prismic.RichTextField;
+
+  /**
+   * Body field in *InsightsForge → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: insights_forge.primary.body
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  body: prismic.RichTextField;
+}
+
+/**
+ * Primary content in *InsightsForge → Items*
+ */
+export interface InsightsForgeSliceDefaultItem {
+  /**
+   * Insight field in *InsightsForge → Items*
+   *
+   * - **Field Type**: Content Relationship
+   * - **Placeholder**: *None*
+   * - **API ID Path**: insights_forge.items[].insight
+   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+   */
+  insight: prismic.ContentRelationshipField;
+}
+
+/**
+ * Default variation for InsightsForge Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type InsightsForgeSliceDefault = prismic.SharedSliceVariation<
+  "default",
+  Simplify<InsightsForgeSliceDefaultPrimary>,
+  Simplify<InsightsForgeSliceDefaultItem>
+>;
+
+/**
+ * Slice variation for *InsightsForge*
+ */
+type InsightsForgeSliceVariation = InsightsForgeSliceDefault;
+
+/**
+ * InsightsForge Shared Slice
+ *
+ * - **API ID**: `insights_forge`
+ * - **Description**: InsightsForge
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type InsightsForgeSlice = prismic.SharedSlice<
+  "insights_forge",
+  InsightsForgeSliceVariation
+>;
+
+/**
  * Primary content in *Pages → Primary*
  */
 export interface PagesSliceDefaultPrimary {
@@ -1511,6 +1955,76 @@ type ProjectsSliceVariation = ProjectsSliceDefault;
 export type ProjectsSlice = prismic.SharedSlice<
   "projects",
   ProjectsSliceVariation
+>;
+
+/**
+ * Primary content in *ResearchHub → Primary*
+ */
+export interface ResearchHubSliceDefaultPrimary {
+  /**
+   * Heading field in *ResearchHub → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: research_hub.primary.heading
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  heading: prismic.RichTextField;
+
+  /**
+   * Body field in *ResearchHub → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: research_hub.primary.body
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  body: prismic.RichTextField;
+}
+
+/**
+ * Primary content in *ResearchHub → Items*
+ */
+export interface ResearchHubSliceDefaultItem {
+  /**
+   * Research field in *ResearchHub → Items*
+   *
+   * - **Field Type**: Content Relationship
+   * - **Placeholder**: *None*
+   * - **API ID Path**: research_hub.items[].research
+   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+   */
+  research: prismic.ContentRelationshipField;
+}
+
+/**
+ * Default variation for ResearchHub Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type ResearchHubSliceDefault = prismic.SharedSliceVariation<
+  "default",
+  Simplify<ResearchHubSliceDefaultPrimary>,
+  Simplify<ResearchHubSliceDefaultItem>
+>;
+
+/**
+ * Slice variation for *ResearchHub*
+ */
+type ResearchHubSliceVariation = ResearchHubSliceDefault;
+
+/**
+ * ResearchHub Shared Slice
+ *
+ * - **API ID**: `research_hub`
+ * - **Description**: ResearchHub
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type ResearchHubSlice = prismic.SharedSlice<
+  "research_hub",
+  ResearchHubSliceVariation
 >;
 
 /**
@@ -1720,6 +2234,12 @@ declare module "@prismicio/client" {
       EntityDocument,
       EntityDocumentData,
       EntityDocumentDataSlicesSlice,
+      InsightDocument,
+      InsightDocumentData,
+      InsightDocumentDataSlicesSlice,
+      InsightsforgeDocument,
+      InsightsforgeDocumentData,
+      InsightsforgeDocumentDataSlicesSlice,
       PageDocument,
       PageDocumentData,
       PageDocumentDataSlicesSlice,
@@ -1732,6 +2252,12 @@ declare module "@prismicio/client" {
       ProjectsDocument,
       ProjectsDocumentData,
       ProjectsDocumentDataSlicesSlice,
+      ResearchDocument,
+      ResearchDocumentData,
+      ResearchDocumentDataSlicesSlice,
+      ResearchhubDocument,
+      ResearchhubDocumentData,
+      ResearchhubDocumentDataSlicesSlice,
       ServiceDocument,
       ServiceDocumentData,
       ServiceDocumentDataSlicesSlice,
@@ -1755,6 +2281,11 @@ declare module "@prismicio/client" {
       EntitiesSliceDefaultItem,
       EntitiesSliceVariation,
       EntitiesSliceDefault,
+      InsightsForgeSlice,
+      InsightsForgeSliceDefaultPrimary,
+      InsightsForgeSliceDefaultItem,
+      InsightsForgeSliceVariation,
+      InsightsForgeSliceDefault,
       PagesSlice,
       PagesSliceDefaultPrimary,
       PagesSliceDefaultItem,
@@ -1765,6 +2296,11 @@ declare module "@prismicio/client" {
       ProjectsSliceDefaultItem,
       ProjectsSliceVariation,
       ProjectsSliceDefault,
+      ResearchHubSlice,
+      ResearchHubSliceDefaultPrimary,
+      ResearchHubSliceDefaultItem,
+      ResearchHubSliceVariation,
+      ResearchHubSliceDefault,
       RichTextSlice,
       RichTextSliceDefaultPrimary,
       RichTextSliceVariation,

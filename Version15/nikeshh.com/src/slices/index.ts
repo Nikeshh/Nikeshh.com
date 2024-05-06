@@ -5,8 +5,10 @@ import dynamic from "next/dynamic";
 export const components = {
   blogs: dynamic(() => import("./Blogs")),
   entities: dynamic(() => import("./Entities")),
+  insights_forge: dynamic(() => import("./InsightsForge")),
   pages: dynamic(() => import("./Pages")),
   projects: dynamic(() => import("./Projects")),
+  research_hub: dynamic(() => import("./ResearchHub")),
   rich_text: dynamic(() => import("./RichText")),
   services: dynamic(() => import("./Services")),
   skills: dynamic(() => import("./Skills")),
