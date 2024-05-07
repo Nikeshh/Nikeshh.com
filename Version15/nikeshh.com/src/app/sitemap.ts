@@ -5,20 +5,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
     {
         url: 'https://nikeshh.com',
         lastModified: new Date(),
-        changeFrequency: 'weekly',
+        changeFrequency: 'daily',
         priority: 1,
     },
     {
         url: 'https://nikeshh.com/home',
         lastModified: new Date(),
-        changeFrequency: 'weekly',
-        priority: 0.8,
+        changeFrequency: 'daily',
+        priority: 1,
     },
     {
         url: 'https://nikeshh.com/about',
         lastModified: new Date(),
-        changeFrequency: 'weekly',
-        priority: 0.8,
+        changeFrequency: 'daily',
+        priority: 1,
     }
   ]
 }
