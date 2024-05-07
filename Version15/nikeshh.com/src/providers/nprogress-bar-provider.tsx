@@ -7,7 +7,7 @@ export const NProgressBarProvider = () => {
     <AppProgressBar
       height="4px"
       shallowRouting
-      color="#800080"
+      color="#0000FF"
       options={{ showSpinner: false }}
     />
   )
