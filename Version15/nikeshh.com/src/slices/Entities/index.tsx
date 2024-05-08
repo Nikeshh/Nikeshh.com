@@ -11,11 +11,23 @@ import {
 import clsx from "clsx";
 import StarGrid from "@/components/StarGrid";
 import Link from "next/link";
+import TextShimmer from "@/components/magicui/animated-shiny-text";
+import { ArrowRightIcon } from "lucide-react";
+import { cn } from "@/lib/utils";
+import { motion } from "framer-motion";
 
 /**
  * Props for `Entities`.
  */
 export type EntitiesProps = SliceComponentProps<Content.EntitiesSlice>;
+
+// Entity Types
+export const ENTITY_TYPES = [
+  "Agency",
+  "Enterprise",
+  "Education",
+  "Job"
+] as const;
 
 /**
  * Component for "Entities" Slices.
@@ -45,6 +57,19 @@ const Entities = async ({ slice }: EntitiesProps): Promise<JSX.Element> => {
         <PrismicRichText field={slice.primary.body} />
       </div>
 
+      <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800 mt-4">
+        {ENTITY_TYPES.map((type, i) => (
+          <Link key={`entity-${i}`} href="#">
+            <div
+              id="skills"
+              className="bg-white borderBlack rounded-xl px-5 py-3 dark:bg-white/10 dark:text-white/80"
+            >
+              {type}
+            </div>
+          </Link>
+        ))}
+      </ul>
+
       <div className="text-black dark:text-slate-100">
         <div className="wrapper pt-10">
           <div className="box-border max-w-7xl mx-4 sm:columns-1 md:columns-2 lg:columns-3 xl:columns-3">
@@ -72,12 +97,12 @@ const Entities = async ({ slice }: EntitiesProps): Promise<JSX.Element> => {
                         </div>
                       </a>
                     </div>
-                    <a
-                      href="#"
+                    <Link
+                      href={new URL(caseStudy.data.link ?? "")}
                       className="font-medium text-lg inline-block hover:text-indigo-600 transition duration-500 ease-in-out inline-block mb-2"
                     >
                       <PrismicText field={caseStudy.data.title} />
-                    </a>
+                    </Link>
                     <p className="text-gray-500 text-sm">
                       <PrismicRichText field={caseStudy.data.description} />
                     </p>
@@ -95,14 +120,14 @@ const Entities = async ({ slice }: EntitiesProps): Promise<JSX.Element> => {
                         <span className="text-lg font-bold">34</span>
                       </a>
                     </div>
-                    <div className="h-5 px-6 py-3 flex flex-row items-center justify-between bg-gray-700">
+                    <div className="h-5 py-3 flex flex-row items-center justify-betwee ">
                       <span className="py-1 text-xs font-regular text-gray-100 mr-1 flex flex-row items-center">
                         <span className="ml-1">
                           MRR: <PrismicText field={caseStudy.data.mrr} />
                         </span>
                       </span>
                     </div>
-                    <div className="h-5 px-6 py-3 flex flex-row items-center justify-between bg-gray-700">
+                    <div className="h-5 py-3 flex flex-row items-center justify-between">
                       <span className="py-1 text-xs font-regular text-gray-100 mr-1 flex flex-row items-center">
                         <span className="ml-1">
                           Target MRR:{" "}
@@ -110,38 +135,30 @@ const Entities = async ({ slice }: EntitiesProps): Promise<JSX.Element> => {
                         </span>
                       </span>
                     </div>
-                    <div className="px-6 py-3 flex flex-row items-center justify-between bg-gray-900">
+                    <div className="h-5 py-3 flex flex-row items-center justify-between">
                       <span className="py-1 text-xs font-regular text-gray-100 mr-1 flex flex-row items-center">
-                        <svg
-                          className="h-5"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"
-                          ></path>
-                        </svg>
-                        <Link
-                          href={"/entities/" + caseStudy.uid}
-                          className="hover:text-indigo-600 transition duration-500 ease-in-out"
-                        >
-                          <span className="ml-1">Read More</span>
-                        </Link>
-                      </span>
-
-                      <span className="py-1 text-xs font-regular text-gray-100 mr-1 flex flex-row items-center">
-                        <Link
-                          href={new URL(caseStudy.data.link ?? "")}
-                          className="hover:text-indigo-600 transition duration-500 ease-in-out"
-                        >
-                          <span className="ml-1">Visit</span>
-                        </Link>
+                        <span className="ml-1">
+                          🟩🟥🟥🟥🟥🟥🟥🟥🟥🟥
+                        </span>
                       </span>
                     </div>
+                    <Link
+                      href={"/entities/" + caseStudy.uid}
+                      className="hover:text-indigo-600 transition duration-500 ease-in-out"
+                    >
+                      <div className="z-10 flex min-h-[4rem] items-center justify-start">
+                        <div
+                          className={cn(
+                            "group rounded-full border border-black/5 bg-neutral-100 text-base text-white transition-all ease-in hover:cursor-pointer hover:bg-neutral-200 dark:border-white/5 dark:bg-neutral-900 dark:hover:bg-neutral-800",
+                          )}
+                        >
+                          <TextShimmer className="inline-flex items-center justify-center px-4 py-1 transition ease-out hover:text-neutral-600 hover:duration-300 hover:dark:text-neutral-400">
+                            <span>✨ Read More</span>
+                            <ArrowRightIcon className="ml-1 size-3 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5" />
+                          </TextShimmer>
+                        </div>
+                      </div>
+                    </Link>
                   </article>
                 )
             )}

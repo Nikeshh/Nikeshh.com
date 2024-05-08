@@ -87,16 +87,16 @@ const Footer = () => {
                             <p className="text-lg font-medium">Important Links</p>
                             <ul className="mt-8 space-y-4 text-sm">
                                 <li>
-                                    <Link className="text-gray-400 transition hover:text-gray-700/75" href="/home"> Home </Link>
+                                    <Link className="text-gray-400 transition hover:text-gray-700/75" href="/"> Home </Link>
                                 </li>
                                 <li>
-                                    <Link className="text-gray-400 transition hover:text-gray-700/75" href="/home#skills"> Skills </Link>
+                                    <Link className="text-gray-400 transition hover:text-gray-700/75" href="/skills"> Skills </Link>
                                 </li>
                                 <li>
-                                    <Link className="text-gray-400 transition hover:text-gray-700/75" href="/home#services"> Services </Link>
+                                    <Link className="text-gray-400 transition hover:text-gray-700/75" href="/services"> Services </Link>
                                 </li>
                                 <li>
-                                    <Link className="text-gray-400 transition hover:text-gray-700/75" href="/home#projects"> Projects </Link>
+                                    <Link className="text-gray-400 transition hover:text-gray-700/75" href="/projects"> Projects </Link>
                                 </li>
                                 <li>
                                     <Link className="text-gray-400 transition hover:text-gray-700/75" href="/home#newsletters"> Newsletters </Link>
@@ -105,10 +105,10 @@ const Footer = () => {
                                     <Link className="text-gray-400 transition hover:text-gray-700/75" href="/home#testimonials"> Testimonials </Link>
                                 </li>
                                 <li>
-                                    <Link className="text-gray-400 transition hover:text-gray-700/75" href="/home#blogs"> Blogs </Link>
+                                    <Link className="text-gray-400 transition hover:text-gray-700/75" href="/blogs"> Blogs </Link>
                                 </li>
                                 <li>
-                                    <Link className="text-gray-400 transition hover:text-gray-700/75" href="/home#contact"> Contact </Link>
+                                    <Link className="text-gray-400 transition hover:text-gray-700/75" href="/contact"> Contact </Link>
                                 </li>
                             </ul>
                         </div>
