@@ -16,7 +16,7 @@ import { TracingBeam } from '@/components/ui/tracing-beam';
 import { twMerge } from 'tailwind-merge';
 import Educations from './_components/educations';
 import { EvervaultCard, Icon } from "@/components/ui/evervault-card";
-import { Globe } from './_components/globe';
+import Globe from '@/components/magicui/globe';
 
 const Home = async () => {
   const testimonials = await getTestimonials();
@@ -75,11 +75,14 @@ const Home = async () => {
       <section id="worked-with" className="container pt-12 md:pt-44 relative flex flex-col items-center justify-center">
         <p>WORKED WITH</p>
         <div className="bg-gradient-to-r from-primary to-secondary-foreground text-transparent bg-clip-text relative">
-          <h2 className="font-bold text-xl md:text-[40px] md:leading-none text-center">
+          <h2 className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300/80 bg-clip-text text-center text-5xl font-semibold leading-none text-transparent dark:from-white dark:to-slate-900/10">
             Leading Brands Across The Globe
           </h2>
         </div>
-        <Globe />
+        <div className="relative flex h-full w-full max-w-[32rem] items-center justify-center overflow-hidden rounded-lg border bg-background px-40 pb-40 pt-8 md:pb-60 md:shadow-xl mt-4">
+          <Globe />
+          <div className="pointer-events-none absolute inset-0 h-full bg-[radial-gradient(circle_at_50%_200%,rgba(0,0,0,0.2),rgba(255,255,255,0))]" />
+        </div>
         <div className='flex flex-wrap gap-2 md:gap-9 mt-9 justify-center items-center'>
           <Link
             href="https://www.rbcroyalbank.com/"

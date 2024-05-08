@@ -6,6 +6,7 @@ export const components = {
   blogs: dynamic(() => import("./Blogs")),
   entities: dynamic(() => import("./Entities")),
   insights_forge: dynamic(() => import("./InsightsForge")),
+  journeys: dynamic(() => import("./Journeys")),
   pages: dynamic(() => import("./Pages")),
   projects: dynamic(() => import("./Projects")),
   research_hub: dynamic(() => import("./ResearchHub")),
