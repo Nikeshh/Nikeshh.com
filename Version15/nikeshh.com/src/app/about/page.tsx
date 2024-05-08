@@ -24,9 +24,9 @@ const Page = async () => {
         <>
           {/*<NotificationC />*/}
           <Navigation />
+          <StarGrid />
           <Bounded as="article">
               <div className="relative grid place-items-center text-center">
-                  <StarGrid />
                   <h1 className="text-4xl font-medium">
                       <PrismicText field={page.data.company} />
                       <p className="text-lg text-yellow-500">About Me</p>
