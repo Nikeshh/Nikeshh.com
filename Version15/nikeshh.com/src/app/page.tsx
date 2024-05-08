@@ -182,9 +182,8 @@ const Home = async () => {
                 <div className="w-9 rounded-lg bg-blue-600">
                   <svg aria-hidden="true" className="h-9 w-9" fill="none"><defs><linearGradient id=":R2menla:" x1="11.5" y1="18" x2="36" y2="15.5" gradientUnits="userSpaceOnUse"><stop offset=".194" stop-color="#fff"></stop><stop offset="1" stop-color="#6692F1"></stop></linearGradient></defs><path d="m30 15-4 5-4-11-4 18-4-11-4 7-4-5" stroke="url(#:R2menla:)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
                 </div>
-                <h3 className="mt-6 text-sm font-medium dark:text-white text-blue-600">Full Stack App Development</h3>
-                <p className="mt-2 font-display text-xl dark:text-gray-300 text-slate-900">Bridging the gap between pixels and databases, I wield the power of full-stack app development to bring your digital dreams to life!</p>
-                <p className="mt-4 text-sm dark:text-gray-400 text-slate-600">Mastering the art of full-stack app development with languages like JavaScript and Python, frameworks like React and Node.js, and databases like MongoDB and SQL, I&apos;m your one-stop-shop for turning ideas into interactive digital wonders!</p>
+                <h3 className="mt-6 text-sm font-medium dark:text-white text-blue-600">Full Stack App Development (Crafting Awesome Digital Experiences)</h3>
+                <p className="mt-2 font-display text-xl dark:text-gray-300 text-slate-900">I love creating cool stuff online, making it look great and easy to use, and managing the whole process smoothly.</p>
               </div>
             </div>
           </div>
@@ -193,9 +192,8 @@ const Home = async () => {
               <div className="mx-auto max-w-2xl">
                 <div className="w-9 rounded-lg bg-blue-600">
                   <svg aria-hidden="true" className="h-9 w-9" fill="none"><path opacity=".5" d="M8 17a1 1 0 0 1 1-1h18a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2Z" fill="#fff"></path><path opacity=".3" d="M8 24a1 1 0 0 1 1-1h18a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2Z" fill="#fff"></path><path d="M8 10a1 1 0 0 1 1-1h18a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2Z" fill="#fff"></path></svg>                </div>
-                <h3 className="mt-6 text-sm font-medium dark:text-white text-blue-600">Digital Marketing</h3>
-                <p className="mt-2 font-display text-xl dark:text-gray-300 text-slate-900">Sailing through the digital seas with SEO compasses and social media sails, I chart a course to boost your brand&apos;s visibility and navigate you to success!.</p>
-                <p className="mt-4 text-sm dark:text-gray-400 text-slate-600">Navigating the digital realm with SEO strategies, PPC campaigns, and social media prowess, I leverage tools like Google Analytics, Facebook Ads, and Hootsuite to steer your brand toward online dominance!</p>
+                <h3 className="mt-6 text-sm font-medium dark:text-white text-blue-600">Building Apps from Start to Finish</h3>
+                <p className="mt-2 font-display text-xl dark:text-gray-300 text-slate-900">I can create apps that work from the front (what you see) to the back (where the data is stored). I use languages like JavaScript and Python, along with frameworks like React and Node.js, to make your ideas into real digital things.</p>
               </div>
             </div>
           </div>
@@ -203,10 +201,19 @@ const Home = async () => {
             <div>
               <div className="mx-auto max-w-2xl">
                 <div className="w-9 rounded-lg bg-blue-600">
-                  <svg aria-hidden="true" className="h-9 w-9" fill="none"><path opacity=".5" d="M25.778 25.778c.39.39 1.027.393 1.384-.028A11.952 11.952 0 0 0 30 18c0-6.627-5.373-12-12-12S6 11.373 6 18c0 2.954 1.067 5.659 2.838 7.75.357.421.993.419 1.384.028.39-.39.386-1.02.036-1.448A9.959 9.959 0 0 1 8 18c0-5.523 4.477-10 10-10s10 4.477 10 10a9.959 9.959 0 0 1-2.258 6.33c-.35.427-.354 1.058.036 1.448Z" fill="#fff"></path><path d="M12 28.395V28a6 6 0 0 1 12 0v.395A11.945 11.945 0 0 1 18 30c-2.186 0-4.235-.584-6-1.605ZM21 16.5c0-1.933-.5-3.5-3-3.5s-3 1.567-3 3.5 1.343 3.5 3 3.5 3-1.567 3-3.5Z" fill="#fff"></path></svg>                </div>
-                <h3 className="mt-6 text-sm font-medium dark:text-white text-blue-600">Project Management</h3>
-                <p className="mt-2 font-display text-xl dark:text-gray-300 text-slate-900">Guiding projects from inception to fruition, I wield Agile methodologies and Gantt chart magic to keep timelines on track and stakeholders smiling!</p>
-                <p className="mt-4 text-sm dark:text-gray-400 text-slate-600">Steering projects to success with Agile methodologies and Trello boards, I harness the power of Jira, Asana, and Slack to keep teams aligned and milestones within reach!</p>
+                <svg aria-hidden="true" className="h-9 w-9" fill="none"><path opacity=".5" d="M25.778 25.778c.39.39 1.027.393 1.384-.028A11.952 11.952 0 0 0 30 18c0-6.627-5.373-12-12-12S6 11.373 6 18c0 2.954 1.067 5.659 2.838 7.75.357.421.993.419 1.384.028.39-.39.386-1.02.036-1.448A9.959 9.959 0 0 1 8 18c0-5.523 4.477-10 10-10s10 4.477 10 10a9.959 9.959 0 0 1-2.258 6.33c-.35.427-.354 1.058.036 1.448Z" fill="#fff"></path><path d="M12 28.395V28a6 6 0 0 1 12 0v.395A11.945 11.945 0 0 1 18 30c-2.186 0-4.235-.584-6-1.605ZM21 16.5c0-1.933-.5-3.5-3-3.5s-3 1.567-3 3.5 1.343 3.5 3 3.5 3-1.567 3-3.5Z" fill="#fff"></path></svg>                </div>
+                <h3 className="mt-6 text-sm font-medium dark:text-white text-blue-600">Getting Your Brand Noticed Online</h3>
+                <p className="mt-2 font-display text-xl dark:text-gray-300 text-slate-900">I help businesses stand out on the internet. I use tricks like making sure they show up in search engines, running ads on social media, and using tools like Google Analytics to see what&apos;s working.</p>
+              </div>
+            </div>
+          </div>
+          <div className="-mx-4 mt-20 flex flex-col gap-y-10 overflow-hidden px-4 sm:-mx-6 sm:px-6">
+            <div>
+              <div className="mx-auto max-w-2xl">
+                <div className="w-9 rounded-lg bg-blue-600">
+                <svg aria-hidden="true" className="h-9 w-9" fill="none"><path opacity=".5" d="M8 17a1 1 0 0 1 1-1h18a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2Z" fill="#fff"></path><path opacity=".3" d="M8 24a1 1 0 0 1 1-1h18a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2Z" fill="#fff"></path><path d="M8 10a1 1 0 0 1 1-1h18a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2Z" fill="#fff"></path></svg>                </div>
+                <h3 className="mt-6 text-sm font-medium dark:text-white text-blue-600">Keeping Projects on Track</h3>
+                <p className="mt-2 font-display text-xl dark:text-gray-300 text-slate-900">When it comes to getting stuff done, I&apos;m your person. I use methods like Agile (which is just a smart way to manage projects) and tools like Trello and Jira to keep everything organized and moving forward.</p>
               </div>
             </div>
           </div>
