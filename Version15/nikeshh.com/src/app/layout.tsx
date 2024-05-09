@@ -11,6 +11,7 @@ import localFont from 'next/font/local';
 import { PrismicPreview } from "@prismicio/next";
 import { repositoryName } from "@/prismicio";
 import { NProgressBarProvider } from '@/providers/nprogress-bar-provider'
+import Script from "next/script";
 
 const font = DM_Sans({ subsets: ["latin"] });
 
@@ -35,6 +36,19 @@ export default async function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning={true}>
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=G-9J8D52CREF"
+        strategy="afterInteractive"
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){window.dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-9J8D52CREF');
+        `}
+      </Script>
       <body className={`${font.className} ${rollAndInEmilieFont.variable}`} suppressHydrationWarning={true}>
         <ThemeProvider
           attribute="class"
