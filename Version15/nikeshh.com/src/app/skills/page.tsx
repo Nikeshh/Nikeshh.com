@@ -7,6 +7,7 @@ import { createClient } from "@/prismicio";
 import { components } from "@/slices";
 import Footer from "@/components/layout/footer";
 import Navigation from "@/components/layout/navigation";
+import TextReveal from "@/components/magicui/text-reveal";
 
 /**
  * This component renders your homepage.
@@ -43,6 +44,9 @@ export default async function Index() {
 
   return <>
     <Navigation />
+    <div className="z-10 flex min-h-[16rem] items-center justify-center rounded-lg border bg-white dark:bg-black">
+      <TextReveal text="Driven by curiosity and creativity, I love bringing ideas to life to make a difference." />
+    </div>
     <SliceZone slices={home.data.slices} components={components} />
     <Footer />
   </>
