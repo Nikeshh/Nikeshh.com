@@ -49,6 +49,12 @@ export default async function RootLayout({
           gtag('config', 'G-9J8D52CREF');
         `}
       </Script>
+      <Script id="crisp">
+        {`
+          window.$crisp=[];window.CRISP_WEBSITE_ID="4e3a32b6-0a30-4883-b6a4-30a22ddcc1c0";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();
+        `}
+      </Script>
+
       <body className={`${font.className} ${rollAndInEmilieFont.variable}`} suppressHydrationWarning={true}>
         <ThemeProvider
           attribute="class"

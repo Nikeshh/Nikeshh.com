@@ -52,6 +52,7 @@ const Home = async () => {
         <div className="flex justify-center items-center relative md:mt-[-70px] lg:flex-1">
           <div className="bottom-0 top-[2%] bg-gradient-to-b dark:from-background left-0 right-0 absolute z-10"></div>
           <Image
+            priority={false}
             src={'/assets/myphoto.png'}
             alt="banner image"
             height={600}

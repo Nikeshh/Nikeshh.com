@@ -8,7 +8,7 @@ import { z } from "zod";
 import Image from 'next/image';
 import { Badge } from "@/components/ui/badge";
 import ContactForm from "@/components/contact";
-import { onCreateNewPageInDatabase } from "@/app/connections/notion-connection";
+import { onCreateNewPageInDatabase } from "@/app/_connections/notion-connection";
 
 const Contact = () => {
 
@@ -72,6 +72,7 @@ const Contact = () => {
                 <div className="hidden md:flex justify-center items-center relative">
                     <div className="bottom-0 top-[2%] bg-gradient-to-b dark:from-background left-0 right-0 absolute z-10"></div>
                     <Image
+                        priority={false}
                         src={'/assets/myphoto.png'}
                         alt="contact image"
                         height={300}
