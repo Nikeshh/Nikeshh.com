@@ -8,7 +8,7 @@ import { NewsletterUserFormSchema } from "@/lib/types";
 import { createRef, useState } from "react";
 import { toast } from "sonner";
 import { z } from "zod";
-import { onCreateNewPageInDatabase } from "@/app/connections/notion-connection";
+import { onCreateNewPageInDatabase } from "@/app/_connections/notion-connection";
 
 const Newsletters = () => {
     // Newsletter

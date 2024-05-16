@@ -11,12 +11,15 @@ import Blogs from './_components/blogs';
 import Projects from './_components/projects';
 import Newsletters from './_components/newsletters';
 import Contact from './_components/contact';
-import HoverCardC from './_components/global/hover-card';
-import { TracingBeam } from '@/components/ui/tracing-beam';
 import { twMerge } from 'tailwind-merge';
 import Educations from './_components/educations';
-import { EvervaultCard, Icon } from "@/components/ui/evervault-card";
 import Globe from '@/components/magicui/globe';
+import Meteors from '@/components/magicui/meteors';
+import { ArrowRightIcon } from "@radix-ui/react-icons";
+import { Accordion, AccordionItem, AccordionContent, AccordionTrigger } from "@/components/ui/accordion";
+import Certification from './_components/certification';
+import Honor from './_components/honor';
+import Volunteer from './_components/volunteer';
 
 const Home = async () => {
   const testimonials = await getTestimonials();
@@ -30,8 +33,16 @@ const Home = async () => {
     <>
       {/*<NotificationC />*/}
       <Navigation />
-      <section id="banner" className="container pt-12 md:pt-44 relative flex items-center md:justify-center flex-wrap md:flex-nowrap gap-5">
+      <section id="banner" className="container pt-28 md:pt-44 relative flex items-center md:justify-center flex-wrap md:flex-nowrap gap-5">
         <div className="flex justify-center relative flex-col flex-wrap gap-2 md:gap-4 lg:flex-2">
+          <Link href="/built-in-public">
+            <span className="absolute -top-16 left-0 right-auto cursor-pointer lg:-top-20">
+              <span className="flex items-center">
+                <span className="mt-3 inline-block whitespace-nowrap rounded-full bg-neutral-800 px-2.5 py-1 text-[11px] font-semibold uppercase leading-5 tracking-wide text-white">Explore built in public projects!</span>
+                <svg className="mr-6 h-8 w-14 [transform:rotateY(180deg)rotateX(0deg)]" width="45" height="25" viewBox="0 0 45 25" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M43.2951 3.47877C43.8357 3.59191 44.3656 3.24541 44.4788 2.70484C44.5919 2.16427 44.2454 1.63433 43.7049 1.52119L43.2951 3.47877ZM4.63031 24.4936C4.90293 24.9739 5.51329 25.1423 5.99361 24.8697L13.8208 20.4272C14.3011 20.1546 14.4695 19.5443 14.1969 19.0639C13.9242 18.5836 13.3139 18.4152 12.8336 18.6879L5.87608 22.6367L1.92723 15.6792C1.65462 15.1989 1.04426 15.0305 0.563943 15.3031C0.0836291 15.5757 -0.0847477 16.1861 0.187863 16.6664L4.63031 24.4936ZM43.7049 1.52119C32.7389 -0.77401 23.9595 0.99522 17.3905 5.28788C10.8356 9.57127 6.58742 16.2977 4.53601 23.7341L6.46399 24.2659C8.41258 17.2023 12.4144 10.9287 18.4845 6.96211C24.5405 3.00476 32.7611 1.27399 43.2951 3.47877L43.7049 1.52119Z" fill="currentColor" className="fill-gray-300 dark:fill-gray-700"></path></svg>
+              </span>
+            </span>
+          </Link>
           <h2 className="font-bold text-xl md:text-[20px] md:leading-none">
             I am Nikeshh Vijayabaskaran (aka) Nik.
           </h2>
@@ -40,10 +51,9 @@ const Home = async () => {
               I BUILD.
             </h1>
             <p>Applications ◦ Automations ◦ Systems ◦ Software Products</p>
-            {/*<HoverCardC title="perfection" content="" subtext="" />*/}
           </div>
           <p>
-            👨‍💻 Lead Full Stack Developer with work spanning a decade.
+            👨‍💻 Lead Full Stack Developer and Digital Marketer with work spanning a decade.
           </p>
           <p>
             🧑🏻‍💻 Code, Coffee and Crazy Creativity: <u>The Nikeshh Experience!</u>
@@ -54,15 +64,23 @@ const Home = async () => {
           <p>🤖 Artificial Intelligence, Automation and Blockchain Enthusiast</p>
           <p>📞 +1 (416)-834-5350 (or) 📨 nikeshhbaskaran01@gmail.com</p>
           <p>🟢 Available for full time / contract / freelancing work</p>
-          <Link href={"#worked-with"} className="cursor-pointer">
-            <Button className="w-fit">
-              Explore Me
-            </Button>
-          </Link>
+          <div className="flex flex-wrap gap-2">
+            <Link href={"#worked-with"} className="cursor-pointer">
+              <Button className="w-fit dark:border-white" variant="outline">
+                Explore Me
+              </Button>
+            </Link>
+            <Link href="https://nikeshh.substack.com/" className="cursor-pointer">
+              <Button className="w-fit dark:border-white" variant="outline">
+                My Writings!
+              </Button>
+            </Link>
+          </div>
         </div>
         <div className="flex justify-center items-center relative md:mt-[-70px] lg:flex-1">
-          <div className="bottom-0 top-[2%] bg-gradient-to-b dark:from-background left-0 right-0 absolute z-10"></div>
+          {/*<div className="bottom-0 top-[2%] bg-gradient-to-b dark:from-background left-0 right-0 absolute z-10"></div>*/}
           <Image
+            priority={false}
             src={'/assets/myphoto.png'}
             alt="banner image"
             height={600}
@@ -70,6 +88,29 @@ const Home = async () => {
             className="rounded-tl-2xl rounded-tr-2xl border-2 border-muted"
           />
           <div className="bottom-0 top-[50%] bg-gradient-to-t dark:from-background left-0 right-0 absolute z-10"></div>
+        </div>
+      </section>    
+      <section id="newsletter" className="container pt-12 md:pt-44 relative flex flex-col items-center justify-center">
+        <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+            <div className="mx-auto max-w-screen-md sm:text-center">
+                <h2 className="mb-4 text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl dark:text-white">Sign up for my newsletter</h2>
+                <p className="mx-auto mb-8 max-w-2xl font-light text-gray-500 md:mb-12 sm:text-xl dark:text-gray-400">Stay up to date with the AI, Tech, Automations, Roadmap progress and announcements, feel free to sign up with your email.</p>
+                <form action="#">
+                    <div className="items-center mx-auto mb-3 space-y-4 max-w-screen-sm sm:flex sm:space-y-0">
+                        <div className="relative w-full">
+                            <label className="hidden mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Email address</label>
+                            <div className="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
+                                <svg className="w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path></svg>
+                            </div>
+                            <input className="block p-3 pl-10 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 sm:rounded-none sm:rounded-l-lg focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Enter your email" type="email" id="email" />
+                        </div>
+                        <div>
+                            <button type="submit" className="py-3 px-5 w-full text-sm font-medium text-center text-white rounded-lg border cursor-pointer bg-primary-700 border-primary-600 sm:rounded-none sm:rounded-r-lg focus:ring-4 bg-blue-700 hover:bg-blue-600">Subscribe</button>
+                        </div>
+                    </div>
+                    <div className="mx-auto max-w-screen-sm text-sm text-left text-gray-500 newsletter-form-footer dark:text-gray-300">We care about the protection of your data. <a href="#" className="font-medium text-blue-700 hover:text-blue-600 hover:underline">Read our Privacy Policy</a>.</div>
+                </form>
+            </div>
         </div>
       </section>
       <section id="worked-with" className="container pt-12 md:pt-44 relative flex flex-col items-center justify-center">
@@ -172,48 +213,83 @@ const Home = async () => {
       </section>
       <section id="top-skills" aria-label="Top skills of Nikeshh Vijayabaskaran" className="pb-14 pt-20 sm:pb-20 sm:pt-32 lg:pb-32">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="mx-auto max-w-2xl md:text-center">
+          <div className="mx-auto max-w-2xl md:text-center flex flex-col items-center">
             <h2 className="font-display text-3xl tracking-tight dark:text-white text-slate-900 sm:text-4xl">Top Skills 💎</h2>
-            <p className="mt-4 text-lg tracking-tight dark:text-gray-400 text-slate-700">Crafting digital magic with a sprinkle of <span className='underline'>UI/UX wizardry</span>, a dash of <span className='underline'>app development sorcery</span>, a pinch of <span className='underline'>AI enchantment</span>, and a whole lot of <span className='underline'>project management pizzazz</span>! Let me make the work sparkle ✨.</p>
+            <p className="mt-4 text-lg tracking-tight dark:text-gray-400 text-slate-700">I specialize in making digital stuff awesome! From designing <span className='underline text-purple-600'>user-friendly interfaces</span> to developing <span className='underline text-purple-600'>cool apps</span>, sprinkled with some <span className='underline text-purple-600'>AI magic</span>, and <span className='underline text-purple-600'>managing projects</span> like a pro. Let&apos;s work together to make your projects shine ✨.</p>
           </div>
           <div className="-mx-4 mt-20 flex flex-col gap-y-10 overflow-hidden px-4 sm:-mx-6 sm:px-6">
-            <div>
-              <div className="mx-auto max-w-2xl">
-                <div className="w-9 rounded-lg bg-blue-600">
-                  <svg aria-hidden="true" className="h-9 w-9" fill="none"><defs><linearGradient id=":R2menla:" x1="11.5" y1="18" x2="36" y2="15.5" gradientUnits="userSpaceOnUse"><stop offset=".194" stop-color="#fff"></stop><stop offset="1" stop-color="#6692F1"></stop></linearGradient></defs><path d="m30 15-4 5-4-11-4 18-4-11-4 7-4-5" stroke="url(#:R2menla:)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+            <div className="relative flex h-full w-full items-center justify-center overflow-hidden rounded-lg border hover:dark:border-white bg-background p-10 lg:p-20 md:shadow-xl">
+              <Meteors number={30} />
+              <div>
+                <p className="z-10 whitespace-pre-wrap text-center text-2xl font-medium tracking-tighter text-black dark:text-white underline">
+                  Full Stack App Development
+                </p>
+                <p className="mt-2 font-display text-xl dark:text-gray-300 text-slate-900">I love creating cool stuff online, <span className='italic text-purple-600'>making it look great and easy to use,</span> and managing the whole process smoothly.</p>
+                <div className="flex justify-center">
+                  <Button variant="ghost" asChild size="sm" className="mt-2 pointer-events-auto">
+                    <a href="/full-stack-development">
+                      Learn More
+                      <ArrowRightIcon className="ml-2 h-4 w-4" />
+                    </a>
+                  </Button>
                 </div>
-                <h3 className="mt-6 text-sm font-medium dark:text-white text-blue-600">Full Stack App Development (Crafting Awesome Digital Experiences)</h3>
-                <p className="mt-2 font-display text-xl dark:text-gray-300 text-slate-900">I love creating cool stuff online, making it look great and easy to use, and managing the whole process smoothly.</p>
               </div>
             </div>
           </div>
           <div className="-mx-4 mt-20 flex flex-col gap-y-10 overflow-hidden px-4 sm:-mx-6 sm:px-6">
-            <div>
-              <div className="mx-auto max-w-2xl">
-                <div className="w-9 rounded-lg bg-blue-600">
-                  <svg aria-hidden="true" className="h-9 w-9" fill="none"><path opacity=".5" d="M8 17a1 1 0 0 1 1-1h18a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2Z" fill="#fff"></path><path opacity=".3" d="M8 24a1 1 0 0 1 1-1h18a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2Z" fill="#fff"></path><path d="M8 10a1 1 0 0 1 1-1h18a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2Z" fill="#fff"></path></svg>                </div>
-                <h3 className="mt-6 text-sm font-medium dark:text-white text-blue-600">Building Apps from Start to Finish</h3>
-                <p className="mt-2 font-display text-xl dark:text-gray-300 text-slate-900">I can create apps that work from the front (what you see) to the back (where the data is stored). I use languages like JavaScript and Python, along with frameworks like React and Node.js, to make your ideas into real digital things.</p>
+            <div className="relative flex h-full w-full items-center justify-center overflow-hidden rounded-lg border hover:dark:border-white bg-background p-10 lg:p-20 md:shadow-xl">
+              <Meteors number={30} />
+              <div>
+                <p className="z-10 whitespace-pre-wrap text-center text-2xl font-medium tracking-tighter text-black dark:text-white underline">
+                  Building Apps from Start to Finish
+                </p>
+                <p className="mt-2 font-display text-xl dark:text-gray-300 text-slate-900">I can create apps that work from the <span className='italic text-purple-600'>front (what you see) to the back (where the data is stored).</span> I use languages like JavaScript and Python, along with frameworks like React and Node.js, to make your ideas into real digital things.</p>
+                <div className="flex justify-center">
+                  <Button variant="ghost" asChild size="sm" className="mt-2 pointer-events-auto">
+                    <a href="/building-apps-from-start-to-finish">
+                      Learn More
+                      <ArrowRightIcon className="ml-2 h-4 w-4" />
+                    </a>
+                  </Button>
+                </div>
               </div>
             </div>
           </div>
           <div className="-mx-4 mt-20 flex flex-col gap-y-10 overflow-hidden px-4 sm:-mx-6 sm:px-6">
-            <div>
-              <div className="mx-auto max-w-2xl">
-                <div className="w-9 rounded-lg bg-blue-600">
-                <svg aria-hidden="true" className="h-9 w-9" fill="none"><path opacity=".5" d="M25.778 25.778c.39.39 1.027.393 1.384-.028A11.952 11.952 0 0 0 30 18c0-6.627-5.373-12-12-12S6 11.373 6 18c0 2.954 1.067 5.659 2.838 7.75.357.421.993.419 1.384.028.39-.39.386-1.02.036-1.448A9.959 9.959 0 0 1 8 18c0-5.523 4.477-10 10-10s10 4.477 10 10a9.959 9.959 0 0 1-2.258 6.33c-.35.427-.354 1.058.036 1.448Z" fill="#fff"></path><path d="M12 28.395V28a6 6 0 0 1 12 0v.395A11.945 11.945 0 0 1 18 30c-2.186 0-4.235-.584-6-1.605ZM21 16.5c0-1.933-.5-3.5-3-3.5s-3 1.567-3 3.5 1.343 3.5 3 3.5 3-1.567 3-3.5Z" fill="#fff"></path></svg>                </div>
-                <h3 className="mt-6 text-sm font-medium dark:text-white text-blue-600">Getting Your Brand Noticed Online</h3>
-                <p className="mt-2 font-display text-xl dark:text-gray-300 text-slate-900">I help businesses stand out on the internet. I use tricks like making sure they show up in search engines, running ads on social media, and using tools like Google Analytics to see what&apos;s working.</p>
+            <div className="relative flex h-full w-full items-center justify-center overflow-hidden rounded-lg border hover:dark:border-white bg-background p-10 lg:p-20 md:shadow-xl">
+              <Meteors number={30} />
+              <div>
+                <p className="z-10 whitespace-pre-wrap text-center text-2xl font-medium tracking-tighter text-black dark:text-white underline">
+                  Getting Your Brand Noticed Online
+                </p>
+                <p className="mt-2 font-display text-xl dark:text-gray-300 text-slate-900"><span className='italic text-purple-600'>I help businesses stand out on the internet.</span> I use tricks like making sure they show up in search engines, running ads on social media, and using tools like Google Analytics to see what&apos;s working.</p>
+                <div className="flex justify-center">
+                  <Button variant="ghost" asChild size="sm" className="mt-2 pointer-events-auto">
+                    <a href="/getting-your-brand-noticed-online">
+                      Learn More
+                      <ArrowRightIcon className="ml-2 h-4 w-4" />
+                    </a>
+                  </Button>
+                </div>
               </div>
             </div>
           </div>
           <div className="-mx-4 mt-20 flex flex-col gap-y-10 overflow-hidden px-4 sm:-mx-6 sm:px-6">
-            <div>
-              <div className="mx-auto max-w-2xl">
-                <div className="w-9 rounded-lg bg-blue-600">
-                <svg aria-hidden="true" className="h-9 w-9" fill="none"><path opacity=".5" d="M8 17a1 1 0 0 1 1-1h18a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2Z" fill="#fff"></path><path opacity=".3" d="M8 24a1 1 0 0 1 1-1h18a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2Z" fill="#fff"></path><path d="M8 10a1 1 0 0 1 1-1h18a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2Z" fill="#fff"></path></svg>                </div>
-                <h3 className="mt-6 text-sm font-medium dark:text-white text-blue-600">Keeping Projects on Track</h3>
-                <p className="mt-2 font-display text-xl dark:text-gray-300 text-slate-900">When it comes to getting stuff done, I&apos;m your person. I use methods like Agile (which is just a smart way to manage projects) and tools like Trello and Jira to keep everything organized and moving forward.</p>
+            <div className="relative flex h-full w-full items-center justify-center overflow-hidden rounded-lg border hover:dark:border-white bg-background p-10 lg:p-20 md:shadow-xl">
+              <Meteors number={30} />
+              <div>
+                <p className="z-10 whitespace-pre-wrap text-center text-2xl font-medium tracking-tighter text-black dark:text-white underline">
+                  Keeping Projects on Track
+                </p>
+                <p className="mt-2 font-display text-xl dark:text-gray-300 text-slate-900">When it comes to getting stuff done, I&apos;m your person. I use methods like Agile (which is just a smart way to manage projects) and tools like Trello and Jira to <span className='italic text-purple-600'>keep everything organized and moving forward.</span></p>
+                <div className="flex justify-center">
+                  <Button variant="ghost" asChild size="sm" className="mt-2 pointer-events-auto">
+                    <a href="/keeping-projects-on-track">
+                      Learn More
+                      <ArrowRightIcon className="ml-2 h-4 w-4" />
+                    </a>
+                  </Button>
+                </div>
               </div>
             </div>
           </div>
@@ -228,38 +304,41 @@ const Home = async () => {
           </h2>
         </div>
         <div className="mt-6 flex flex-wrap gap-2 justify-center">
-          <TracingBeam className="px-6">
             <div className="max-w-2xl mx-auto antialiased pt-4 relative">
               {workExperiences.map((item, index) => (
                 <div key={`content-${index}`} className="mb-10">
                   <h2 className="bg-black dark:bg-white dark:text-black text-white rounded-full text-sm w-fit px-4 py-1 mb-4">
                     {item.badge}
                   </h2>
-      
-                  <p className={twMerge("text-xl mb-4 flex justify-between items-end")}>
-                    {item.title} <span className='italic text-sm'>{item.type}</span>
-                  </p>
-
-                  <p className={twMerge("text-md mb-4 italic underline")}>
-                    {item.company}
-                  </p>
-      
-                  <div className="text-sm  prose prose-sm dark:prose-invert">
-                    {item?.image && (
-                      <Image
-                        src={item.image}
-                        alt="blog thumbnail"
-                        height="1000"
-                        width="1000"
-                        className="rounded-lg mb-10 object-cover"
-                      />
-                    )}
-                    {item.description}
-                  </div>
+                  <Accordion type="single" collapsible>
+                    <AccordionItem value="item-1">
+                      <AccordionTrigger><p className="lg:min-w-[800px] flex text-left">{item.title}</p></AccordionTrigger>
+                      <AccordionContent>
+                        <p className={twMerge("text-xl mb-4 flex justify-between items-end")}>
+                          <span className='italic text-sm'>{item.type}</span>
+                        </p>
+                        <p className={twMerge("text-md mb-4 italic underline")}>
+                          {item.company}
+                        </p>
+            
+                        <div className="text-sm  prose prose-sm dark:prose-invert">
+                          {item?.image && (
+                            <Image
+                              src={item.image}
+                              alt="blog thumbnail"
+                              height="1000"
+                              width="1000"
+                              className="rounded-lg mb-10 object-cover"
+                            />
+                          )}
+                          {item.description}
+                        </div>
+                      </AccordionContent>
+                    </AccordionItem>
+                  </Accordion>
                 </div>
               ))}
             </div>
-          </TracingBeam>
         </div>
       </section>
       <Educations />
@@ -271,104 +350,48 @@ const Home = async () => {
             </h2>
         </div>
         <div className="mt-14 flex flex-wrap gap-2 gap-y-12 justify-center">
-          <div className="border border-black/[0.2] dark:border-white/[0.2] flex flex-col items-start max-w-sm mx-auto p-4 relative h-[30rem]">
-            <Icon className="absolute h-6 w-6 -top-3 -left-3 dark:text-white text-black" />
-            <Icon className="absolute h-6 w-6 -bottom-3 -left-3 dark:text-white text-black" />
-            <Icon className="absolute h-6 w-6 -top-3 -right-3 dark:text-white text-black" />
-            <Icon className="absolute h-6 w-6 -bottom-3 -right-3 dark:text-white text-black" />
-            <EvervaultCard text="Google" />
-            <h2 className="dark:text-white text-black mt-4">
-              Google Data Analytics Professional Certificate
-            </h2>
-            <ul className='text-sm font-light'>
-              <li>Issued: Nov 2021</li>
-              <li>Credential ID: KAR7PTDN2R3U</li>
-            </ul>
-            <Link href={"https://www.credly.com/badges/39aaaa1e-6676-4854-b8e6-1fe8aab100c0/linked_in_profile"} className="text-sm border font-light dark:border-white/[0.2] border-black/[0.2] rounded-full mt-4 text-black dark:text-white px-2 py-0.5">
-              Check Credential
-            </Link>
-          </div>
-          <div className="border border-black/[0.2] dark:border-white/[0.2] flex flex-col items-start max-w-sm mx-auto p-4 relative h-[30rem]">
-            <Icon className="absolute h-6 w-6 -top-3 -left-3 dark:text-white text-black" />
-            <Icon className="absolute h-6 w-6 -bottom-3 -left-3 dark:text-white text-black" />
-            <Icon className="absolute h-6 w-6 -top-3 -right-3 dark:text-white text-black" />
-            <Icon className="absolute h-6 w-6 -bottom-3 -right-3 dark:text-white text-black" />
-            <EvervaultCard text="Google" />
-            <h2 className="dark:text-white text-black mt-4">
-              Google Project Management: Professional Certificate
-            </h2>
-            <ul className='text-sm font-light'>
-              <li>Issued: Nov 2021</li>
-              <li>Credential ID: KDQVVYVXGU3Z</li>
-            </ul>
-            <Link href={"https://www.credly.com/badges/adc3e6e6-4072-4154-92a8-777c1abc2dc4/linked_in_profile"} className="text-sm border font-light dark:border-white/[0.2] border-black/[0.2] rounded-full mt-4 text-black dark:text-white px-2 py-0.5">
-              Check Credential
-            </Link>
-          </div>
-          <div className="border border-black/[0.2] dark:border-white/[0.2] flex flex-col items-start max-w-sm mx-auto p-4 relative h-[30rem]">
-            <Icon className="absolute h-6 w-6 -top-3 -left-3 dark:text-white text-black" />
-            <Icon className="absolute h-6 w-6 -bottom-3 -left-3 dark:text-white text-black" />
-            <Icon className="absolute h-6 w-6 -top-3 -right-3 dark:text-white text-black" />
-            <Icon className="absolute h-6 w-6 -bottom-3 -right-3 dark:text-white text-black" />
-            <EvervaultCard text="LinkedIn" />
-            <h2 className="dark:text-white text-black mt-4">
-              NLP with Python for Machine Learning Essential Training
-            </h2>
-            <ul className='text-sm font-light'>
-              <li>Issued: July 2022</li>
-            </ul>
-            <Link href={"https://www.linkedin.com/learning/certificates/1ca1142a98bbc60dd891517f1735fa967f07bb2984ca4266a8ace8aafa6b3804"} className="text-sm border font-light dark:border-white/[0.2] border-black/[0.2] rounded-full mt-4 text-black dark:text-white px-2 py-0.5">
-              Check Credential
-            </Link>
-          </div>
-          <div className="border border-black/[0.2] dark:border-white/[0.2] flex flex-col items-start max-w-sm mx-auto p-4 relative h-[30rem]">
-            <Icon className="absolute h-6 w-6 -top-3 -left-3 dark:text-white text-black" />
-            <Icon className="absolute h-6 w-6 -bottom-3 -left-3 dark:text-white text-black" />
-            <Icon className="absolute h-6 w-6 -top-3 -right-3 dark:text-white text-black" />
-            <Icon className="absolute h-6 w-6 -bottom-3 -right-3 dark:text-white text-black" />
-            <EvervaultCard text="LinkedIn" />
-            <h2 className="dark:text-white text-black mt-4">
-              Python for Data Science Essential Training
-            </h2>
-            <ul className='text-sm font-light'>
-              <li>Issued: July 2022</li>
-            </ul>
-            <Link href={"https://www.linkedin.com/learning/certificates/b67f2e1c32a250c525e858f6a805c92e2326cd82095ebb409f6d1e60235c0068"} className="text-sm border font-light dark:border-white/[0.2] border-black/[0.2] rounded-full mt-4 text-black dark:text-white px-2 py-0.5">
-              Check Credential
-            </Link>
-          </div>
-          <div className="border border-black/[0.2] dark:border-white/[0.2] flex flex-col items-start max-w-sm mx-auto p-4 relative h-[30rem]">
-            <Icon className="absolute h-6 w-6 -top-3 -left-3 dark:text-white text-black" />
-            <Icon className="absolute h-6 w-6 -bottom-3 -left-3 dark:text-white text-black" />
-            <Icon className="absolute h-6 w-6 -top-3 -right-3 dark:text-white text-black" />
-            <Icon className="absolute h-6 w-6 -bottom-3 -right-3 dark:text-white text-black" />
-            <EvervaultCard text="LinkedIn" />
-            <h2 className="dark:text-white text-black mt-4">
-              SQL for Statistics Essential Training
-            </h2>
-            <ul className='text-sm font-light'>
-              <li>Issued: July 2022</li>
-            </ul>
-            <Link href={"https://www.linkedin.com/learning/certificates/6737152efdc0bd69af83ffb125b9e38b689f23292cfca6888f1a174b9afd63c4"} className="text-sm border font-light dark:border-white/[0.2] border-black/[0.2] rounded-full mt-4 text-black dark:text-white px-2 py-0.5">
-              Check Credential
-            </Link>
-          </div>
-          <div className="border border-black/[0.2] dark:border-white/[0.2] flex flex-col items-start max-w-sm mx-auto p-4 relative h-[30rem]">
-            <Icon className="absolute h-6 w-6 -top-3 -left-3 dark:text-white text-black" />
-            <Icon className="absolute h-6 w-6 -bottom-3 -left-3 dark:text-white text-black" />
-            <Icon className="absolute h-6 w-6 -top-3 -right-3 dark:text-white text-black" />
-            <Icon className="absolute h-6 w-6 -bottom-3 -right-3 dark:text-white text-black" />
-            <EvervaultCard text="Udemy" />
-            <h2 className="dark:text-white text-black mt-4">
-              Artificial Intelligence A-Z™: Learn How To Build An AI
-            </h2>
-            <ul className='text-sm font-light'>
-              <li>Issued: June 2018</li>
-            </ul>
-            <Link href={"https://www.udemy.com/certificate/UC-H95OPLWW/"} className="text-sm border font-light dark:border-white/[0.2] border-black/[0.2] rounded-full mt-4 text-black dark:text-white px-2 py-0.5">
-              Check Credential
-            </Link>
-          </div>
+          <Certification
+            headline='Issued: Nov 2021'
+            title='Google Data Analytics Professional Certificate'
+            id='KAR7PTDN2R3U'
+            link='https://www.credly.com/badges/39aaaa1e-6676-4854-b8e6-1fe8aab100c0/linked_in_profile'
+            badges={["Google", "Data Analytics"]}
+          />
+          <Certification
+            headline='Issued: Nov 2021'
+            title='Google Project Management: Professional Certificate'
+            id='KDQVVYVXGU3Z'
+            link='https://www.credly.com/badges/adc3e6e6-4072-4154-92a8-777c1abc2dc4/linked_in_profile'
+            badges={["Google", "Project Management"]}
+          />
+          <Certification
+            headline='Issued: July 2022'
+            title='NLP with Python for Machine Learning Essential Training'
+            id='AeihXv3ISiAX1xnxqu9pX5w01VId'
+            link='https://www.linkedin.com/learning/certificates/1ca1142a98bbc60dd891517f1735fa967f07bb2984ca4266a8ace8aafa6b3804'
+            badges={["LinkedIn", "NLP"]}
+          />
+          <Certification
+            headline='Issued: July 2022'
+            title='Python for Data Science Essential Training'
+            id=''
+            link='https://www.linkedin.com/learning/certificates/b67f2e1c32a250c525e858f6a805c92e2326cd82095ebb409f6d1e60235c0068'
+            badges={["LinkedIn", "Python", "Data Science"]}
+          />
+          <Certification
+            headline='Issued: July 2022'
+            title='SQL for Statistics Essential Training'
+            id=''
+            link='https://www.linkedin.com/learning/certificates/6737152efdc0bd69af83ffb125b9e38b689f23292cfca6888f1a174b9afd63c4'
+            badges={["LinkedIn", "SQL", "Statistics"]}
+          />
+          <Certification
+            headline='Issued: June 2018'
+            title='Artificial Intelligence A-Z™: Learn How To Build An AI'
+            id=''
+            link='https://www.udemy.com/certificate/UC-H95OPLWW/'
+            badges={["AI"]}
+          />
         </div>
       </section>
       <section id="honors-and-awards" className="container pt-12 md:pt-44 relative flex flex-col items-center justify-center">
@@ -379,84 +402,36 @@ const Home = async () => {
             </h2>
         </div>
         <div className="mt-14 flex flex-wrap gap-2 gap-y-12 justify-center">
-          <div className="border border-black/[0.2] dark:border-white/[0.2] flex flex-col items-start max-w-sm mx-auto p-4 relative h-[30rem]">
-            <Icon className="absolute h-6 w-6 -top-3 -left-3 dark:text-white text-black" />
-            <Icon className="absolute h-6 w-6 -bottom-3 -left-3 dark:text-white text-black" />
-            <Icon className="absolute h-6 w-6 -top-3 -right-3 dark:text-white text-black" />
-            <Icon className="absolute h-6 w-6 -bottom-3 -right-3 dark:text-white text-black" />
-            <EvervaultCard text="TCS" />
-            <h2 className="dark:text-white text-black mt-4">
-              TCS Enginx - Top 100
-            </h2>
-            <ul className='text-sm font-light'>
-              <li>Got selected in TCS Enginx - Top 100 (June 2018)</li>
-            </ul>
-          </div>
-          <div className="border border-black/[0.2] dark:border-white/[0.2] flex flex-col items-start max-w-sm mx-auto p-4 relative h-[30rem]">
-            <Icon className="absolute h-6 w-6 -top-3 -left-3 dark:text-white text-black" />
-            <Icon className="absolute h-6 w-6 -bottom-3 -left-3 dark:text-white text-black" />
-            <Icon className="absolute h-6 w-6 -top-3 -right-3 dark:text-white text-black" />
-            <Icon className="absolute h-6 w-6 -bottom-3 -right-3 dark:text-white text-black" />
-            <EvervaultCard text="Salesforce" />
-            <h2 className="dark:text-white text-black mt-4">
-              Salesforce Trailhead
-            </h2>
-            <ul className='text-sm font-light'>
-              <li>University Topper (Rank:Ranger) (June 2018)</li>
-            </ul>
-          </div>
-          <div className="border border-black/[0.2] dark:border-white/[0.2] flex flex-col items-start max-w-sm mx-auto p-4 relative h-[30rem]">
-            <Icon className="absolute h-6 w-6 -top-3 -left-3 dark:text-white text-black" />
-            <Icon className="absolute h-6 w-6 -bottom-3 -left-3 dark:text-white text-black" />
-            <Icon className="absolute h-6 w-6 -top-3 -right-3 dark:text-white text-black" />
-            <Icon className="absolute h-6 w-6 -bottom-3 -right-3 dark:text-white text-black" />
-            <EvervaultCard text="PSG iTech" />
-            <h2 className="dark:text-white text-black mt-4">
-              PSG Institute Of Technology and Applied Research
-            </h2>
-            <ul className='text-sm font-light'>
-              <li>1st Rank holder ( 2017 ) - Proficiency award - Department of Computer Science and Engineering (June 2017)</li>
-            </ul>
-          </div>
-          <div className="border border-black/[0.2] dark:border-white/[0.2] flex flex-col items-start max-w-sm mx-auto p-4 relative h-[30rem]">
-            <Icon className="absolute h-6 w-6 -top-3 -left-3 dark:text-white text-black" />
-            <Icon className="absolute h-6 w-6 -bottom-3 -left-3 dark:text-white text-black" />
-            <Icon className="absolute h-6 w-6 -top-3 -right-3 dark:text-white text-black" />
-            <Icon className="absolute h-6 w-6 -bottom-3 -right-3 dark:text-white text-black" />
-            <EvervaultCard text="PSG iTech" />
-            <h2 className="dark:text-white text-black mt-4">
-              PSG Institute Of Technology and Applied Research
-            </h2>
-            <ul className='text-sm font-light'>
-              <li>1st Rank holder ( 2018 ) - Proficiency award - Department of Computer Science and Engineering (June 2018)</li>
-            </ul>
-          </div>
-          <div className="border border-black/[0.2] dark:border-white/[0.2] flex flex-col items-start max-w-sm mx-auto p-4 relative h-[30rem]">
-            <Icon className="absolute h-6 w-6 -top-3 -left-3 dark:text-white text-black" />
-            <Icon className="absolute h-6 w-6 -bottom-3 -left-3 dark:text-white text-black" />
-            <Icon className="absolute h-6 w-6 -top-3 -right-3 dark:text-white text-black" />
-            <Icon className="absolute h-6 w-6 -bottom-3 -right-3 dark:text-white text-black" />
-            <EvervaultCard text="PSG iTech" />
-            <h2 className="dark:text-white text-black mt-4">
-              PSG Institute Of Technology and Applied Research
-            </h2>
-            <ul className='text-sm font-light'>
-              <li>1st Rank holder ( 2019 ) - Proficiency award - Department of Computer Science and Engineering (June 2019)</li>
-            </ul>
-          </div>
-          <div className="border border-black/[0.2] dark:border-white/[0.2] flex flex-col items-start max-w-sm mx-auto p-4 relative h-[30rem]">
-            <Icon className="absolute h-6 w-6 -top-3 -left-3 dark:text-white text-black" />
-            <Icon className="absolute h-6 w-6 -bottom-3 -left-3 dark:text-white text-black" />
-            <Icon className="absolute h-6 w-6 -top-3 -right-3 dark:text-white text-black" />
-            <Icon className="absolute h-6 w-6 -bottom-3 -right-3 dark:text-white text-black" />
-            <EvervaultCard text="PSG iTech" />
-            <h2 className="dark:text-white text-black mt-4">
-              PSG Institute Of Technology and Applied Research
-            </h2>
-            <ul className='text-sm font-light'>
-              <li>3rd Rank holder ( 2015-2019 ) - Department of Computer Science and Engineering (March 2021)</li>
-            </ul>
-          </div>
+          <Honor
+            title='TCS Enginx - Top 100'
+            description='Got selected in TCS Enginx - Top 100 (June 2018)'
+            badges={["TCS", "Hackathon"]}
+          />
+          <Honor
+            title='Salesforce Trailhead'
+            description='University Topper (Rank:Ranger) (June 2018)'
+            badges={["Salesforce", "University Topper"]}
+          />
+          <Honor
+            title='Proficiency award'
+            description='1st Rank holder ( 2017 ) - Department of Computer Science and Engineering (June 2017)'
+            badges={["PSG iTech", "University Topper"]}
+          />
+          <Honor
+            title='Proficiency award'
+            description='1st Rank holder ( 2018 ) - Department of Computer Science and Engineering (June 2018)'
+            badges={["PSG iTech", "University Topper"]}
+          />
+          <Honor
+            title='Proficiency award'
+            description='1st Rank holder ( 2019 ) - Department of Computer Science and Engineering (June 2019)'
+            badges={["PSG iTech", "University Topper"]}
+          />
+          <Honor
+            title='Proficiency award'
+            description='3rd Rank holder ( 2015-2019 ) - Department of Computer Science and Engineering (June 2019)'
+            badges={["PSG iTech", "University Topper"]}
+          />
         </div>
       </section>
       <Projects projects={projects} />
@@ -468,122 +443,53 @@ const Home = async () => {
             </h2>
         </div>
         <div className="mt-14 flex flex-wrap gap-2 gap-y-12 justify-center">
-          <div className="border border-black/[0.2] dark:border-white/[0.2] flex flex-col items-start max-w-sm mx-auto p-4 relative h-[30rem]">
-            <Icon className="absolute h-6 w-6 -top-3 -left-3 dark:text-white text-black" />
-            <Icon className="absolute h-6 w-6 -bottom-3 -left-3 dark:text-white text-black" />
-            <Icon className="absolute h-6 w-6 -top-3 -right-3 dark:text-white text-black" />
-            <Icon className="absolute h-6 w-6 -bottom-3 -right-3 dark:text-white text-black" />
-            <EvervaultCard text="SNIST" />
-            <h2 className="dark:text-white text-black mt-4">
-              INDIAN SOCIETY OF TECHNICAL EDUCATION-SNIST
-            </h2>
-            <ul className='text-sm font-light'>
-              <li>President, Indian Society Of Technical Education (Jun 2016 - Jun 2019)</li>
-            </ul>
-          </div>
-          <div className="border border-black/[0.2] dark:border-white/[0.2] flex flex-col items-start max-w-sm mx-auto p-4 relative h-[30rem]">
-            <Icon className="absolute h-6 w-6 -top-3 -left-3 dark:text-white text-black" />
-            <Icon className="absolute h-6 w-6 -bottom-3 -left-3 dark:text-white text-black" />
-            <Icon className="absolute h-6 w-6 -top-3 -right-3 dark:text-white text-black" />
-            <Icon className="absolute h-6 w-6 -bottom-3 -right-3 dark:text-white text-black" />
-            <EvervaultCard text="PSG iTech" />
-            <h2 className="dark:text-white text-black mt-4">
-              PSG Institute Of Technology and Applied Research
-            </h2>
-            <ul className='text-sm font-light'>
-              <li>President, Coding Club (Jun 2016 - Jun 2019)</li>
-            </ul>
-
-          </div>
-          <div className="border border-black/[0.2] dark:border-white/[0.2] flex flex-col items-start max-w-sm mx-auto p-4 relative h-[30rem]">
-            <Icon className="absolute h-6 w-6 -top-3 -left-3 dark:text-white text-black" />
-            <Icon className="absolute h-6 w-6 -bottom-3 -left-3 dark:text-white text-black" />
-            <Icon className="absolute h-6 w-6 -top-3 -right-3 dark:text-white text-black" />
-            <Icon className="absolute h-6 w-6 -bottom-3 -right-3 dark:text-white text-black" />
-            <EvervaultCard text="SRM" />
-            <h2 className="dark:text-white text-black mt-4">
-              SRM University
-            </h2>
-            <ul className='text-sm font-light'>
-              <li>Education and Technical Mentor (July 2021 - April 2022)</li>
-              <li>Mentored SRM students and was involved in designing and developing Australian based educational platform</li>
-            </ul>
-          </div>
-          <div className="border border-black/[0.2] dark:border-white/[0.2] flex flex-col items-start max-w-sm mx-auto p-4 relative h-[30rem]">
-            <Icon className="absolute h-6 w-6 -top-3 -left-3 dark:text-white text-black" />
-            <Icon className="absolute h-6 w-6 -bottom-3 -left-3 dark:text-white text-black" />
-            <Icon className="absolute h-6 w-6 -top-3 -right-3 dark:text-white text-black" />
-            <Icon className="absolute h-6 w-6 -bottom-3 -right-3 dark:text-white text-black" />
-            <EvervaultCard text="PSG iTech" />
-            <h2 className="dark:text-white text-black mt-4">
-              PSG Institute Of Technology and Applied Research
-            </h2>
-            <ul className='text-sm font-light'>
-              <li>Chief Designer and Coordinator - Tarangini - Intra college magazine (June 2016 - June 2018)</li>
-            </ul>
-          </div>
-          <div className="border border-black/[0.2] dark:border-white/[0.2] flex flex-col items-start max-w-sm mx-auto p-4 relative h-[30rem]">
-            <Icon className="absolute h-6 w-6 -top-3 -left-3 dark:text-white text-black" />
-            <Icon className="absolute h-6 w-6 -bottom-3 -left-3 dark:text-white text-black" />
-            <Icon className="absolute h-6 w-6 -top-3 -right-3 dark:text-white text-black" />
-            <Icon className="absolute h-6 w-6 -bottom-3 -right-3 dark:text-white text-black" />
-            <EvervaultCard text="PSG iTech" />
-            <h2 className="dark:text-white text-black mt-4">
-              PSG Institute Of Technology and Applied Research
-            </h2>
-            <ul className='text-sm font-light'>
-              <li>IV coordinator (June 2015 - October 2017)</li>
-              <li>Companies: 24/7[ai] and SAP Solutions Pvt Ltd - Bangalore</li>
-            </ul>
-          </div>
-          <div className="border border-black/[0.2] dark:border-white/[0.2] flex flex-col items-start max-w-sm mx-auto p-4 relative h-[30rem]">
-            <Icon className="absolute h-6 w-6 -top-3 -left-3 dark:text-white text-black" />
-            <Icon className="absolute h-6 w-6 -bottom-3 -left-3 dark:text-white text-black" />
-            <Icon className="absolute h-6 w-6 -top-3 -right-3 dark:text-white text-black" />
-            <Icon className="absolute h-6 w-6 -bottom-3 -right-3 dark:text-white text-black" />
-            <EvervaultCard text="Internshala" />
-            <h2 className="dark:text-white text-black mt-4">
-              Internshala
-            </h2>
-            <ul className='text-sm font-light'>
-              <li>Student Partner (June 2017 - December 2018)</li>
-            </ul>
-          </div>
-          <div className="border border-black/[0.2] dark:border-white/[0.2] flex flex-col items-start max-w-sm mx-auto p-4 relative h-[30rem]">
-            <Icon className="absolute h-6 w-6 -top-3 -left-3 dark:text-white text-black" />
-            <Icon className="absolute h-6 w-6 -bottom-3 -left-3 dark:text-white text-black" />
-            <Icon className="absolute h-6 w-6 -top-3 -right-3 dark:text-white text-black" />
-            <Icon className="absolute h-6 w-6 -bottom-3 -right-3 dark:text-white text-black" />
-            <EvervaultCard text="Yuktaha" />
-            <h2 className="dark:text-white text-black mt-4">
-              Yuktaha, PSG iTech
-            </h2>
-            <ul className='text-sm font-light'>
-              <li>Academic Tutor (June 2018 - June 2018)</li>
-              <li>Conducted a workshop on Android Development during Yuktaha&apos;17</li>
-            </ul>
-          </div>
-          <div className="border border-black/[0.2] dark:border-white/[0.2] flex flex-col items-start max-w-sm mx-auto p-4 relative h-[30rem]">
-            <Icon className="absolute h-6 w-6 -top-3 -left-3 dark:text-white text-black" />
-            <Icon className="absolute h-6 w-6 -bottom-3 -left-3 dark:text-white text-black" />
-            <Icon className="absolute h-6 w-6 -top-3 -right-3 dark:text-white text-black" />
-            <Icon className="absolute h-6 w-6 -bottom-3 -right-3 dark:text-white text-black" />
-            <EvervaultCard text="NSS" />
-            <h2 className="dark:text-white text-black mt-4">
-              Institute of Engineers, NSS
-            </h2>
-            <ul className='text-sm font-light'>
-              <li>Civil Rights and Social Action</li>
-              <li>President, Designer, Organiser - Institute of Engineers NSS (June 2016 - September 2019)</li>
-            </ul>
-          </div>
+          <Volunteer
+            title='President, Indian Society Of Technical Education'
+            description='INDIAN SOCIETY OF TECHNICAL EDUCATION-SNIST - (Jun 2016 - Jun 2019)'
+            badges={["SNIST", "President"]}
+          />
+          <Volunteer
+            title='President, Coding Club'
+            description='PSG Institute Of Technology and Applied Research - (Jun 2016 - Jun 2019)'
+            badges={["President", "PSG iTech", "Coding Club"]}
+          />
+          <Volunteer
+            title='Education and Technical Mentor'
+            description='Mentored SRM students and was involved in designing and developing Australian based educational platform - (July 2021 - April 2022)'
+            badges={["Mentor", "SRM University"]}
+          />
+          <Volunteer
+            title='Chief Designer and Coordinator'
+            description='Tarangini - Intra college magazine - (June 2016 - June 2018)'
+            badges={["PSG iTech", "Magazine"]}
+          />
+          <Volunteer
+            title='IV coordinator'
+            description='Companies: 24/7[ai] and SAP Solutions Pvt Ltd - Bangalore - (June 2015 - October 2017)'
+            badges={["PSG iTech", "Coordinator", "24/7[ai]", "SAP"]}
+          />
+          <Volunteer
+            title='Student Partner'
+            description='Internshala - (June 2017 - December 2018)'
+            badges={["Coordinator"]}
+          />
+          <Volunteer
+            title='Academic Tutor - Android Development'
+            description='Yuktaha, PSG iTech - Conducted a workshop on Android Development during Yuktaha&apos;17 - (June 2018 - June 2018)'
+            badges={["Yuktaha", "Tutor"]}
+          />
+          <Volunteer
+            title='President, Designer, Organiser'
+            description='Institute of Engineers NSS (June 2016 - September 2019)'
+            badges={["Civil Rights and Social Action"]}
+          />
         </div>
       </section>
       <Testimonials testimonials={testimonials} />
       <Newsletters />
       <Blogs blogs={blogs.slice(0, 3)} />
       <Contact />
-      <section id="nikeshhcodes" className="container pt-12 md:pt-22 relative flex flex-col items-center justify-center">
+      <section id="nikeshhcodes" className="container relative pt-12 md:pt-22 relative flex flex-col items-center justify-center">
         <div className="w-full p-4 text-center bg-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700">
           <h5 className="mb-2 text-3xl font-bold text-gray-900 dark:text-white">Want to learn programming?</h5>
           <p className="mb-5 text-base text-gray-500 sm:text-lg dark:text-gray-400">Stay up to date with NikeshhCodes.com. I am building this website live in public.</p>
@@ -596,6 +502,13 @@ const Home = async () => {
             </a>
           </div>
         </div>
+        <Link href="/built-in-public">
+            <span className="relative cursor-pointer">
+              <span className="flex items-center">
+                <span className="mt-3 inline-block whitespace-nowrap rounded-full bg-neutral-800 px-2.5 py-1 text-[11px] font-semibold uppercase leading-5 tracking-wide text-white">Explore other built in public projects!</span>
+              </span>
+            </span>
+          </Link>
       </section>
       <Footer />
     </>
