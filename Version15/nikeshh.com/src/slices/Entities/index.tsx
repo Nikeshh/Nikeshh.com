@@ -68,7 +68,7 @@ const Entities = async ({ slice }: EntitiesProps): Promise<JSX.Element> => {
           {caseStudies.map(
             (caseStudy, index) =>
               caseStudy && (
-                <div className="group flex flex-col h-full bg-white border border-gray-200 shadow-sm rounded-xl dark:bg-neutral-900 dark:border-neutral-700 dark:shadow-neutral-700/70">
+                <div key={index} className="group flex flex-col h-full bg-white border border-gray-200 shadow-sm rounded-xl dark:bg-neutral-900 dark:border-neutral-700 dark:shadow-neutral-700/70">
                   <div className="h-52 flex flex-col justify-center items-center bg-blue-600 rounded-t-xl">
                     <svg className="size-28" width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <rect width="56" height="56" rx="10" fill="white"/>
