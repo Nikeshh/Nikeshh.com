@@ -12,6 +12,7 @@ import { PrismicPreview } from "@prismicio/next";
 import { repositoryName } from "@/prismicio";
 import { NProgressBarProvider } from '@/providers/nprogress-bar-provider'
 import Script from "next/script";
+import CookiesConsent from '@/components/cookies-consent';
 
 const font = DM_Sans({ subsets: ["latin"] });
 
@@ -68,6 +69,7 @@ export default async function RootLayout({
               <main className="w-full">
                 {children}
               </main>
+              <CookiesConsent />
             </ClerkProvider>
           </ModalProvider>
         </ThemeProvider>
