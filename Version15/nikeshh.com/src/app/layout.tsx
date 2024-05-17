@@ -12,6 +12,7 @@ import { NProgressBarProvider } from '@/providers/nprogress-bar-provider'
 import Script from "next/script";
 import CookiesConsent from '@/components/cookies-consent';
 import PrelineScript from "@/components/PrelineScript";
+import Notification from "./_components/notification";
 
 const font = DM_Sans({ subsets: ["latin"] });
 
@@ -64,6 +65,7 @@ export default async function RootLayout({
         >
           <ModalProvider>
           <NProgressBarProvider />
+          <Notification />
           <main className="w-full">
             {children}
           </main>
