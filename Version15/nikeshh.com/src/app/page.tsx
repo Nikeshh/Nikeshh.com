@@ -91,7 +91,7 @@ const Home = async () => {
         </div>
       </section>    
       <section id="newsletter" className="container pt-12 md:pt-44 relative flex flex-col items-center justify-center">
-        <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+        <div className="py-4 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
             <div className="mx-auto max-w-screen-md sm:text-center">
                 <h2 className="mb-4 text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl dark:text-white">Sign up for my newsletter</h2>
                 <p className="mx-auto mb-8 max-w-2xl font-light text-gray-500 md:mb-12 sm:text-xl dark:text-gray-400">Stay up to date with the AI, Tech, Automations, Roadmap progress and announcements, feel free to sign up with your email.</p>
@@ -112,6 +112,27 @@ const Home = async () => {
                 </form>
             </div>
         </div>
+      </section>
+      <section id="nikeshhcodes" className="container py-4 relative pt-12 md:pt-44 flex flex-col items-center justify-center">
+        <div className="w-full p-4 text-center bg-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700">
+          <h5 className="mb-2 text-3xl font-bold text-gray-900 dark:text-white">Want to learn programming?</h5>
+          <p>Stay up to date with NikeshhCodes.com</p>
+          <div className="items-center justify-center space-y-4 sm:flex sm:space-y-0 sm:space-x-4 rtl:space-x-reverse">
+            <a href="https://nikeshhcodes.com" target='_blank' className="w-full sm:w-auto bg-gray-800 hover:bg-gray-700 focus:ring-4 focus:outline-none focus:ring-gray-300 text-white rounded-lg inline-flex items-center justify-center px-4 py-2.5 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700">
+              <div className="text-left rtl:text-right">
+                <div className="mb-1 text-xs">View NikeshhCodes.com</div>
+                <div className="-mt-1 font-sans text-sm font-semibold">(Site under construction)</div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <Link href="/built-in-public">
+            <span className="relative cursor-pointer">
+              <span className="flex items-center">
+                <span className="mt-3 inline-block whitespace-nowrap rounded-full bg-neutral-800 px-2.5 py-1 text-[11px] font-semibold uppercase leading-5 tracking-wide text-white">Explore other built in public projects!</span>
+              </span>
+            </span>
+          </Link>
       </section>
       <section id="worked-with" className="container pt-12 md:pt-44 relative flex flex-col items-center justify-center">
         <p>WORKED WITH</p>
@@ -489,27 +510,6 @@ const Home = async () => {
       <Newsletters />
       <Blogs blogs={blogs.slice(0, 3)} />
       <Contact />
-      <section id="nikeshhcodes" className="container relative pt-12 md:pt-22 relative flex flex-col items-center justify-center">
-        <div className="w-full p-4 text-center bg-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700">
-          <h5 className="mb-2 text-3xl font-bold text-gray-900 dark:text-white">Want to learn programming?</h5>
-          <p className="mb-5 text-base text-gray-500 sm:text-lg dark:text-gray-400">Stay up to date with NikeshhCodes.com. I am building this website live in public.</p>
-          <div className="items-center justify-center space-y-4 sm:flex sm:space-y-0 sm:space-x-4 rtl:space-x-reverse">
-            <a href="https://nikeshhcodes.com" target='_blank' className="w-full sm:w-auto bg-gray-800 hover:bg-gray-700 focus:ring-4 focus:outline-none focus:ring-gray-300 text-white rounded-lg inline-flex items-center justify-center px-4 py-2.5 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700">
-              <div className="text-left rtl:text-right">
-                <div className="mb-1 text-xs">View NikeshhCodes.com</div>
-                <div className="-mt-1 font-sans text-sm font-semibold">(Site under construction)</div>
-              </div>
-            </a>
-          </div>
-        </div>
-        <Link href="/built-in-public">
-            <span className="relative cursor-pointer">
-              <span className="flex items-center">
-                <span className="mt-3 inline-block whitespace-nowrap rounded-full bg-neutral-800 px-2.5 py-1 text-[11px] font-semibold uppercase leading-5 tracking-wide text-white">Explore other built in public projects!</span>
-              </span>
-            </span>
-          </Link>
-      </section>
       <Footer />
     </>
   );
