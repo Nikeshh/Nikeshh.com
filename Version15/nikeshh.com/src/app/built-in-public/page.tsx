@@ -9,7 +9,7 @@ const Page = () => {
       <section className="px-4 py-14 first:pt-10 md:px-6 md:py-20 lg:py-24">
         <div className="mx-auto flex w-full max-w-6xl flex-col items-center">
           <div className="py-12 grid grid-cols-2 gap-4 sm:gap-6 md:gap-8 lg:gap-12">
-            <Link className="group block" href="https://nikeshhcodes.com/">
+            <Link className="group block" href="/built-in-public/nikeshhcodes">
               <div className="aspect-w-16 aspect-h-12 overflow-hidden bg-gray-100 rounded-2xl dark:bg-neutral-800">
                 <img
                   className="group-hover:scale-105 transition-transform duration-500 ease-in-out object-cover rounded-2xl"
