@@ -33,7 +33,7 @@ const Home = async () => {
     <>
       {/*<NotificationC />*/}
       <Navigation />
-      <section id="banner" className="container pt-28 md:pt-44 relative flex items-center md:justify-center flex-wrap md:flex-nowrap gap-5">
+      <section id="banner" className="container pt-28 md:pt-26 xl:pt-24 relative flex items-center md:justify-center flex-wrap md:flex-nowrap gap-5">
         <div className="flex justify-center relative flex-col flex-wrap gap-2 md:gap-4 lg:flex-2">
           <Link href="/built-in-public">
             <span className="absolute -top-16 left-0 right-auto cursor-pointer lg:-top-20">
