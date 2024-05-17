@@ -8,7 +8,7 @@ const Notification = () => {
         <div className="max-w-[85rem] px-4 py-4 sm:px-6 lg:px-8 mx-auto">
           <div className="flex">
             <p className="text-white">
-              This website is built in live. Some functionalities or button clicks might not work. You can see some changes happening daily.
+            This website is under development. Some functionalities or buttons might not work as expected. Changes and updates are being made daily.
             </p>
 
             <div className="ps-3 ms-auto">
