@@ -79,8 +79,8 @@ const Services = ({ services } : Props) => {
                                                     href={`/services/${subService.name.toLowerCase().replace(/ /g, '-').replace(/\//g, '').replace(/\(/g, '').replace(/\)/g, '')}`}>Learn more
                                                     <span className="sr-only">{subService.name}</span>
                                                     <svg className="overflow-visible ml-3 text-slate-300 group-hover:text-slate-400"
-                                                        width="3" height="6" viewBox="0 0 3 6" fill="none" stroke="currentColor" stroke-width="2"
-                                                        stroke-linecap="round" stroke-linejoin="round">
+                                                        width="3" height="6" viewBox="0 0 3 6" fill="none" stroke="currentColor" strokeWidth="2"
+                                                        strokeLinecap="round" strokeLinejoin="round">
                                                         <path d="M0 0L3 3L0 6"></path>
                                                     </svg>
                                                 </Link>

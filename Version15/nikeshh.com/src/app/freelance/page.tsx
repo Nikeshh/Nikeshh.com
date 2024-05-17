@@ -166,7 +166,7 @@ const Home = async () => {
             <div>
               <div className="mx-auto max-w-2xl">
                 <div className="w-9 rounded-lg bg-blue-600">
-                  <svg aria-hidden="true" className="h-9 w-9" fill="none"><defs><linearGradient id=":R2menla:" x1="11.5" y1="18" x2="36" y2="15.5" gradientUnits="userSpaceOnUse"><stop offset=".194" stop-color="#fff"></stop><stop offset="1" stop-color="#6692F1"></stop></linearGradient></defs><path d="m30 15-4 5-4-11-4 18-4-11-4 7-4-5" stroke="url(#:R2menla:)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                  <svg aria-hidden="true" className="h-9 w-9" fill="none"><defs><linearGradient id=":R2menla:" x1="11.5" y1="18" x2="36" y2="15.5" gradientUnits="userSpaceOnUse"><stop offset=".194" stop-color="#fff"></stop><stop offset="1" stop-color="#6692F1"></stop></linearGradient></defs><path d="m30 15-4 5-4-11-4 18-4-11-4 7-4-5" stroke="url(#:R2menla:)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path></svg>
                 </div>
                 <h3 className="mt-6 text-sm font-medium dark:text-white text-blue-600">Full Stack App Development</h3>
                 <p className="mt-2 font-display text-xl dark:text-gray-300 text-slate-900">Bridging the gap between pixels and databases, I wield the power of full-stack app development to bring your digital dreams to life!</p>
