@@ -32,7 +32,7 @@ type Props = {
     }[]
 }
 
-const Blogs = ({ blogs } : Props) => {
+const Blog = ({ blogs } : Props) => {
 
     const blogTags = blogs.map(item => item.category).filter((value, index, self) => self.indexOf(value) === index);
     const groupedBlogs = groupByKey(blogs.filter(item => item.category == blogTags[0]), 'category');
@@ -272,4 +272,4 @@ const Blogs = ({ blogs } : Props) => {
     }
 }
 
-export default Blogs;
+export default Blog;
