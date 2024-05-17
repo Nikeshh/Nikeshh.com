@@ -10,7 +10,6 @@ import Image from 'next/image'
 import React, { createRef } from 'react'
 import { z } from 'zod'
 import Link from 'next/link';
-import { createContact } from '@/lib/queries';
 import { toast } from 'sonner';
 import { onCreateNewPageInDatabase } from "@/app/_connections/notion-connection";
 
@@ -20,10 +19,6 @@ const Page = () => {
       values: z.infer<typeof ContactUserFormSchema>
     ) => {
       try {
-        const response = await createContact({
-          ...values
-        });
-
         const notionResponse = await onCreateNewPageInDatabase(
             "5b0b7647b75b419bbe54f88bf4b34c15",
             {
@@ -45,13 +40,17 @@ const Page = () => {
                         {
                           "name": "Nikeshh.com",
                           "color": "gray"
+                        },
+                        {
+                            "name": "Contact",
+                            "color": "green"
                         }
                     ]
                 },
             }
         )
   
-        if (response && notionResponse) {
+        if (notionResponse) {
             toast.success("Success", {
                 description: 'Successfully saved your info',
             });

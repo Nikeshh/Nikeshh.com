@@ -13,7 +13,6 @@ import {
   AvatarImage,
 } from "@/components/ui/avatar"
 import { User2 } from 'lucide-react';
-import { createContact } from '@/lib/queries';
 import { toast } from 'sonner';
 import DOMPurify from "isomorphic-dompurify";
 
@@ -31,10 +30,6 @@ const Page = ({ params }: Props ) => {
     values: z.infer<typeof ContactUserFormSchema>
   ) => {
     try {
-      const response = await createContact({
-        ...values
-      });
-
       toast.success("Success", {
         description: 'Successfully saved your info',
       })

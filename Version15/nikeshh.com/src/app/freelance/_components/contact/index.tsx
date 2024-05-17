@@ -1,6 +1,5 @@
 "use client"
 
-import { createContact } from "@/lib/queries";
 import { ContactUserFormSchema } from "@/lib/types";
 import { createRef } from "react";
 import { toast } from "sonner";
@@ -18,10 +17,6 @@ const Contact = () => {
         values: z.infer<typeof ContactUserFormSchema>
     ) => {
         try {
-            const response = await createContact({
-                ...values
-            });
-
             const notionResponse = await onCreateNewPageInDatabase(
                 "5b0b7647b75b419bbe54f88bf4b34c15",
                 {
@@ -48,7 +43,7 @@ const Contact = () => {
                     },
                 }
             )
-            if (response && notionResponse) {
+            if (notionResponse) {
                 toast.success("Success", {
                     description: 'Successfully saved your info',
                 });

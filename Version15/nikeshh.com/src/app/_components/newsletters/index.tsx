@@ -3,7 +3,6 @@
 import NewsletterForm from "@/components/newsletter";
 import { Badge } from "@/components/ui/badge";
 import { Command, CommandEmpty, CommandGroup, CommandInput, CommandItem, CommandList, CommandSeparator } from "@/components/ui/command";
-import { upsertNewsletter } from "@/lib/queries";
 import { NewsletterUserFormSchema } from "@/lib/types";
 import { createRef, useState } from "react";
 import { toast } from "sonner";
@@ -18,11 +17,6 @@ const Newsletters = () => {
         values: z.infer<typeof NewsletterUserFormSchema>
     ) => {
         try {
-            const response = await upsertNewsletter({
-                ...values,
-                newsletter: newsletterCommand,
-            });
-
             const notionResponse = await onCreateNewPageInDatabase(
                 "5b0b7647b75b419bbe54f88bf4b34c15",
                 {
@@ -58,7 +52,7 @@ const Newsletters = () => {
                 }
             )
 
-            if (response && notionResponse) {
+            if (notionResponse) {
                 toast.success("Success", {
                     description: 'Successfully saved your info',
                 });

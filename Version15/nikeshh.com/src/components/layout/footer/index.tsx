@@ -1,6 +1,5 @@
 "use client"
 
-import { upsertNewsletter } from "@/lib/queries";
 import { NewsletterUserFormSchema } from "@/lib/types";
 import { zodResolver } from "@hookform/resolvers/zod";
 import Link from "next/link";
@@ -19,12 +18,9 @@ import {
 import { Input } from '../../ui/input'
 import { Button } from '../../ui/button'
 import Loading from '../../global/loading'
-import { useModal } from '@/providers/modal-provider';
-import CustomModal from "@/components/global/custom-modal";
+import { onCreateNewPageInDatabase } from "@/app/_connections/notion-connection";
 
 const Footer = () => {
-    const { setOpen } = useModal();
-
     // Newsletter
     const newsletterCommand = 'General';
     const newsletterRef = createRef<HTMLFormElement>();
@@ -32,14 +28,51 @@ const Footer = () => {
         values: z.infer<typeof NewsletterUserFormSchema>
     ) => {
         try {
-            const response = await upsertNewsletter({
-                ...values,
-                newsletter: newsletterCommand,
-            });
+            const notionResponse = await onCreateNewPageInDatabase(
+                "5b0b7647b75b419bbe54f88bf4b34c15",
+                {
+                    "Name": {
+                        "title": [
+                            {
+                                "text": {
+                                    "content": values.name
+                                }
+                            }
+                        ]
+                    },
+                    "Email": {
+                        "email": values.email
+                    },
+                    "Tags": {
+                        "type": "multi_select",
+                        "multi_select": [
+                            {
+                              "name": "Nikeshh.com",
+                              "color": "gray"
+                            },
+                            {
+                                "name": "Newsletter",
+                                "color": "yellow"
+                            },
+                            {
+                                "name": newsletterCommand,
+                                "color": "blue"
+                            }
+                        ]
+                    },
+                }
+            )
 
-            toast.success("Success", {
-                description: 'Successfully saved your info',
-            })
+            if (notionResponse) {
+                toast.success("Success", {
+                    description: 'Successfully saved your info',
+                });
+            } else {
+                toast.success("Failed", {
+                    description: 'Could not save your information',
+                });
+            }
+            
             newsletterRef.current?.reset(); //@todo this is not working
         } catch (error) {
             toast.error("Failed", {
@@ -84,7 +117,7 @@ const Footer = () => {
                     </div>
                     <div className="mt-16 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
                         <div className="text-center sm:text-left">
-                            <p className="text-lg font-medium">Important Links</p>
+                            <p className="text-lg font-medium">Nikeshh.</p>
                             <ul className="mt-8 space-y-4 text-sm">
                                 <li>
                                     <Link className="text-gray-400 transition hover:text-gray-700/75" href="/"> Home </Link>
@@ -113,38 +146,38 @@ const Footer = () => {
                             </ul>
                         </div>
                         <div className="text-center sm:text-left">
-                            {/*<p className="text-lg font-medium">Resources</p>
+                            <p className="text-lg font-medium">Social Links</p>
                             <ul className="mt-8 space-y-4 text-sm">
                                 <li>
-                                    <div className="text-gray-400 transition hover:text-gray-700/75 cursor-pointer" onClick={() => {
-                                        setOpen(
-                                            <CustomModal
-                                                title="⚠️ Under Construction"
-                                                subheading="Should be available in 2-3 days"
-                                            >
-                                                <p>You can track the progress or contribute @<Link href="https://github.com/Nikeshh/Nikeshh.com/tree/main/Version15/nikeshh.com" className="underline">Github</Link></p>
-                                            </CustomModal>
-                                        )
-                                    }}> View </div>
+                                    <Link className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-neutral-400 dark:hover:text-neutral-200" target="_blank" href="https://www.facebook.com/vnikeshh/">Facebook</Link>
                                 </li>
-                            </ul>*/}
+                                <li>
+                                    <Link className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-neutral-400 dark:hover:text-neutral-200" target="_blank" href="https://www.instagram.com/nikeshhvijayabaskaran/">Instagram</Link>
+                                </li>
+                                <li>
+                                    <Link className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-neutral-400 dark:hover:text-neutral-200" target="_blank" href="https://x.com/NikeshhV">Twitter</Link>
+                                </li>
+                                <li>
+                                    <Link className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-neutral-400 dark:hover:text-neutral-200" target="_blank" href="https://github.com/Nikeshh">GitHub</Link> <span className="inline text-blue-600 dark:text-blue-500">— Source codes of my projects</span>
+                                </li>
+                                <li>
+                                    <Link className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-neutral-400 dark:hover:text-neutral-200" target="_blank" href="https://dribbble.com/nikeshh">Dribbble</Link>
+                                </li>
+                            </ul>
                         </div>
                         <div className="text-center sm:text-left">
-                            {/*<p className="text-lg font-medium">Helpful Links</p>
+                            <p className="text-lg font-medium">Legal</p>
                             <ul className="mt-8 space-y-4 text-sm">
                                 <li>
-                                    <div className="text-gray-400 transition hover:text-gray-700/75 cursor-pointer" onClick={() => {
-                                        setOpen(
-                                            <CustomModal
-                                                title="⚠️ Under Construction"
-                                                subheading="Should be available in 2-3 days"
-                                            >
-                                                <p>You can track the progress or contribute @<Link href="https://github.com/Nikeshh/Nikeshh.com/tree/main/Version15/nikeshh.com" className="underline">Github</Link></p>
-                                            </CustomModal>
-                                        )
-                                    }}> View </div>
+                                    <Link className="text-gray-400 transition hover:text-gray-700/75" href="/terms-and-conditions"> Terms & Conditions </Link>
                                 </li>
-                            </ul>*/}
+                                <li>
+                                    <Link className="text-gray-400 transition hover:text-gray-700/75" href="/cookie-policy"> Cookie Policy </Link>
+                                </li>
+                                <li>
+                                    <Link className="text-gray-400 transition hover:text-gray-700/75" href="/privacy-policy"> Privacy Policy </Link>
+                                </li>
+                            </ul>
                         </div>
                         <div className="text-center sm:text-left">
                             <p className="text-lg font-medium">Stay In Touch</p>
@@ -243,7 +276,7 @@ const Footer = () => {
                                 </li>
                                 <li>
                                     <Link
-                                        href="https://twitter.com/NikeshhV"
+                                        href="https://x.com/NikeshhV"
                                         rel="noreferrer"
                                         target="_blank"
                                         className="text-indigo-600 transition hover:text-indigo-600/75"

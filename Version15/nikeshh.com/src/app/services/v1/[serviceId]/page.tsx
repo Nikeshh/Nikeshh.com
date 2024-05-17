@@ -13,7 +13,6 @@ import {
 } from "@/components/ui/avatar"
 import { User2 } from 'lucide-react';
 import { ContactUserFormSchema } from '@/lib/types';
-import { createContact } from '@/lib/queries';
 import { toast } from 'sonner';
 
 type Props = {
@@ -30,10 +29,6 @@ const Page = ({ params }: Props ) => {
     values: z.infer<typeof ContactUserFormSchema>
   ) => {
     try {
-      const response = await createContact({
-        ...values
-      });
-
       toast.success("Success", {
         description: 'Successfully saved your info',
       })

@@ -13,6 +13,7 @@ import Script from "next/script";
 import CookiesConsent from '@/components/cookies-consent';
 import PrelineScript from "@/components/PrelineScript";
 import Notification from "./_components/notification";
+import Scroll from "@/components/scroll";
 
 const font = DM_Sans({ subsets: ["latin"] });
 
@@ -37,6 +38,7 @@ export default async function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning={true}>
+      <Scroll />
       <Script
         src="https://www.googletagmanager.com/gtag/js?id=G-9J8D52CREF"
         strategy="afterInteractive"

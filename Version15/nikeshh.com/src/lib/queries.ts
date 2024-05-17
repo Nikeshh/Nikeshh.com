@@ -153,23 +153,3 @@ export const getAllBlogs = cache(async () => {
   });
   return response
 })
-
-export const upsertNewsletter = async (
-  newsletter: Prisma.NewsletterUncheckedCreateInput
-) => {
-  const response = await db.newsletter.upsert({
-    where: { id: newsletter.id || v4() },
-    update: newsletter,
-    create: newsletter,
-  })
-  return response
-}
-
-export const createContact = async (
-  contact: Prisma.ContactUncheckedCreateInput
-) => {
-  const response = await db.contact.create({
-    data: contact
-  })
-  return response
-}

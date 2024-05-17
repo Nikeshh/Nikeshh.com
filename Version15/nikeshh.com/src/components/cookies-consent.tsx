@@ -1,5 +1,18 @@
+"use client"
+
+import { useState } from "react";
+
 const CookiesConsent = () => {
-  return (
+  
+  const [firstShow, setFirstShow] = useState(localStorage.getItem("cookie-consent-not-shown") == "false" ? false : true ?? true);
+
+  const updateCookieConsent = () => {
+    setFirstShow(false);
+    localStorage.setItem("cookie-consent-not-shown", "false")
+  }
+
+  if (firstShow) {
+    return (
     <>
       <div
         id="cookies-simple-with-dismiss-button"
@@ -12,15 +25,14 @@ const CookiesConsent = () => {
               in accordance with our{" "}
               <a
                 className="inline-flex items-center gap-x-1.5 text-blue-600 decoration-2 hover:underline font-medium dark:text-blue-500"
-                href="#"
+                href="/cookie-policy"
               >
                 Cookies Policy.
               </a>
             </h2>
             <button
-              type="button"
               className="p-2 inline-flex items-center gap-x-2 text-sm font-semibold rounded-full border border-transparent bg-gray-100 text-gray-800 hover:bg-gray-200 disabled:opacity-50 disabled:pointer-events-none dark:bg-white/10 dark:hover:bg-white/20 dark:text-white dark:hover:text-white"
-              data-hs-remove-element="#cookies-simple-with-dismiss-button"
+              onClick={() => updateCookieConsent()}
             >
               <span className="sr-only">Dismiss</span>
               <svg
@@ -44,6 +56,10 @@ const CookiesConsent = () => {
       </div>
     </>
   );
+  } else {
+    <>
+    </>
+  }
 };
 
 export default CookiesConsent;
