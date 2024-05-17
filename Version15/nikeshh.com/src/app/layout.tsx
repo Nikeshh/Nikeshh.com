@@ -2,8 +2,6 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { ThemeProvider } from "@/providers/theme-provider";
 import { DM_Sans } from "next/font/google";
-import { dark } from "@clerk/themes";
-import { ClerkProvider } from "@clerk/nextjs";
 import { Toaster } from "@/components/ui/sonner"
 import ModalProvider from "@/providers/modal-provider";
 import { Analytics } from "@vercel/analytics/react";
@@ -13,6 +11,7 @@ import { repositoryName } from "@/prismicio";
 import { NProgressBarProvider } from '@/providers/nprogress-bar-provider'
 import Script from "next/script";
 import CookiesConsent from '@/components/cookies-consent';
+import PrelineScript from "@/components/PrelineScript";
 
 const font = DM_Sans({ subsets: ["latin"] });
 
@@ -64,19 +63,18 @@ export default async function RootLayout({
           disableTransitionOnChange
         >
           <ModalProvider>
-            <ClerkProvider appearance={{ baseTheme: dark }}>
-              <NProgressBarProvider />
-              <main className="w-full">
-                {children}
-              </main>
-              <CookiesConsent />
-            </ClerkProvider>
+          <NProgressBarProvider />
+          <main className="w-full">
+            {children}
+          </main>
+          <CookiesConsent />
           </ModalProvider>
         </ThemeProvider>
         <Toaster />
         <Analytics />
         <PrismicPreview repositoryName={repositoryName} />
       </body>
+      <PrelineScript />
     </html>
   );
 }
