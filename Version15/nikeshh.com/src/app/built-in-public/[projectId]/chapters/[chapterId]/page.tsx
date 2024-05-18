@@ -1,5 +1,6 @@
 import { Preview } from '@/components/preview';
 import { Separator } from '@/components/ui/separator';
+import React from 'react';
 
 export default async function ChapterIdPage({
     params,
@@ -13,7 +14,7 @@ export default async function ChapterIdPage({
     const chapter = {
         id: "fb8b5eb9-11fc-4655-87e7-37a07bf2285c",
         title: "Introduction",
-        description: "<p>This is a chapter</p>",
+        description: "<style>.purple { color: purple }</style><p className='purple'>This is a chapter</p>",
         videoUrl:
           "https://utfs.io/f/d2d269ef-20f7-4bd8-ba53-b173bf97fd1d-ifdqzr.mp4",
         position: 1,

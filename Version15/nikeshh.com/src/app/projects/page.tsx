@@ -44,9 +44,6 @@ export default async function Index() {
 
   return <>
     <Navigation />
-    <div className="z-10 flex min-h-[16rem] items-center justify-center rounded-lg border bg-white dark:bg-black">
-      <TextReveal text="Bro, why do you have so many projects? Because, I learn by building!" />
-    </div>
     <SliceZone slices={home.data.slices} components={components} />
     <Footer />
   </>
