@@ -77,8 +77,8 @@ const Projects = ({ projects, inlineElement } : Props) => {
                                 </p>
 
                                 <div className="mt-3 flex flex-wrap gap-2">
-                                    {a.tags.map((tag) => (
-                                        <span className="py-1.5 px-3 bg-white text-gray-600 border border-gray-200 text-xs sm:text-sm rounded-xl dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400">
+                                    {a.tags.map((tag, index) => (
+                                        <span key={index} className="py-1.5 px-3 bg-white text-gray-600 border border-gray-200 text-xs sm:text-sm rounded-xl dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400">
                                             {tag}
                                         </span>
                                     ))}

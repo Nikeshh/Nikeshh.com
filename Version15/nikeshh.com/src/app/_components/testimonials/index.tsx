@@ -38,7 +38,7 @@ const Testimonials = ({ testimonials } : Props) => {
                                             </div>
                                         )}
                                         <p className="text-base italic md:text-lg text-gray-800 dark:text-neutral-200">
-                                            " {testimonial.content} "
+                                            &quot; {testimonial.content} &quot;
                                         </p>
                                     </div>
 

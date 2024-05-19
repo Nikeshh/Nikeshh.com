@@ -133,7 +133,7 @@ const TopSkills = () => {
                       I help businesses stand out on the internet. I use tricks
                       like making sure they show up in search engines, running
                       ads on social media, and using tools like Google Analytics
-                      to see what's working.
+                      to see what&apos;s working.
                     </p>
                     <Link
                       href="/pages/getting-your-brand-noticed-online"
@@ -167,7 +167,7 @@ const TopSkills = () => {
                       Keeping Projects on Track
                     </h3>
                     <p className="mt-1 text-gray-600 dark:text-neutral-400">
-                      When it comes to getting stuff done, I'm your person. I
+                      When it comes to getting stuff done, I&apos;m your person. I
                       use methods like Agile (which is just a smart way to
                       manage projects) and tools like Trello and Jira to keep
                       everything organized and moving forward.
