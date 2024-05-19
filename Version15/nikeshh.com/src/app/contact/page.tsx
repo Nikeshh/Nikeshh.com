@@ -12,6 +12,7 @@ import { z } from 'zod'
 import Link from 'next/link';
 import { toast } from 'sonner';
 import { onCreateNewPageInDatabase } from "@/app/_connections/notion-connection";
+import { InlineWidget } from 'react-calendly';
 
 const Page = () => {
     const contactFormRef = createRef<HTMLFormElement>();
@@ -74,51 +75,55 @@ const Page = () => {
         <>
             {/*<NotificationC />*/}
             <Navigation />
-            <div className="container pt-12 md:pt-22 relative flex flex-col justify-center items-center flex-wrap md:flex-nowrap gap-5">
-                <div className="bg-gradient-to-r from-primary to-secondary-foreground text-transparent bg-clip-text relative">
-                    <h1 className="font-bold text-2xl md:text-[50px] md:leading-none">
-                        Contact Me
-                    </h1>
-                </div>
-                <div className="container pt-12 pb-12 md:pt-16 md:pb-16 relative flex gap-4 flex-wrap md:flex-nowrap items-center justify-center">
-                    <div className="flex flex-col justify-center items-center gap-12">
-                        <div className="hidden md:flex justify-center items-center relative">
-                            {/*<div className="bottom-0 top-[2%] bg-gradient-to-b dark:from-background left-0 right-0 absolute z-10"></div>*/}
-                            <Image
-                                priority={false}
-                                src={'/assets/myphoto.png'}
-                                alt="contact image"
-                                height={300}
-                                width={300}
-                                className="rounded-tl-2xl rounded-tr-2xl border-2 border-muted"
-                            />
-                            <div className="bottom-0 top-[50%] bg-gradient-to-t dark:from-background left-0 right-0 absolute z-10"></div>
-                        </div>
-                        <Badge variant="secondary">
-                            <Link
-                                className="group flex justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
-                                href="#"
-                            >
-                            <span className="transition group-hover:text-gray-700/75">
-                                Available to work
-                            </span>
-                            <span className="relative flex h-2 w-2">
-                                <span
-                                    className="absolute inline-flex h-full w-full animate-ping rounded-full bg-teal-400 opacity-75"
-                                ></span>
-                                <span className="relative inline-flex size-2 rounded-full bg-teal-500"></span>
-                            </span>
-                            </Link>
-                        </Badge>
+            <section id="contact" className="flex flex-col items-center pt-20">
+                <div className="container relative flex flex-col justify-center items-center flex-wrap md:flex-nowrap gap-5">
+                    <div className="bg-gradient-to-r from-primary to-secondary-foreground text-transparent bg-clip-text relative">
+                        <h1 className="font-bold text-2xl md:text-[50px] md:leading-none">
+                            Contact Me
+                        </h1>
                     </div>
-                    <ContactForm
-                        subTitle="Lets Talk"
-                        title="Got a opportunity or project? Or just say Hi 👋"
-                        apiCall={onContactFormSubmit} 
-                        contactFormRef={contactFormRef}                   
-                    />
+                    <div className="container pt-12 pb-12 md:pt-16 md:pb-16 relative flex gap-4 flex-wrap md:flex-nowrap items-center justify-center">
+                        <div className="flex flex-col justify-center items-center gap-12">
+                            <div className="hidden md:flex justify-center items-center relative">
+                                {/*<div className="bottom-0 top-[2%] bg-gradient-to-b dark:from-background left-0 right-0 absolute z-10"></div>*/}
+                                <Image
+                                    priority={false}
+                                    src={'/assets/myphoto.png'}
+                                    alt="contact image"
+                                    height={300}
+                                    width={300}
+                                    className="rounded-tl-2xl rounded-tr-2xl border-2 border-muted"
+                                />
+                                <div className="bottom-0 top-[50%] bg-gradient-to-t dark:from-background left-0 right-0 absolute z-10"></div>
+                            </div>
+                            <Badge variant="secondary">
+                                <Link
+                                    className="group flex justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
+                                    href="#"
+                                >
+                                <span className="transition group-hover:text-gray-700/75">
+                                    Available to work
+                                </span>
+                                <span className="relative flex h-2 w-2">
+                                    <span
+                                        className="absolute inline-flex h-full w-full animate-ping rounded-full bg-teal-400 opacity-75"
+                                    ></span>
+                                    <span className="relative inline-flex size-2 rounded-full bg-teal-500"></span>
+                                </span>
+                                </Link>
+                            </Badge>
+                        </div>
+                        <ContactForm
+                            subTitle="Lets Talk"
+                            title="Got a opportunity or project? Or just say Hi 👋"
+                            apiCall={onContactFormSubmit} 
+                            contactFormRef={contactFormRef}                   
+                        />
+                    </div>
                 </div>
-            </div>
+                <span className="my-6 text-sm text-slate-500">-- or --</span>
+                <InlineWidget url="https://calendly.com/nikeshhv/15min" styles={{ width: '100%', height: '1000px' }} />
+            </section>
             <Footer />
         </>
     )

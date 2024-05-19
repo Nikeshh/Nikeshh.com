@@ -20,20 +20,7 @@ export const getAuthUserDetails = async () => {
 }
 
 export const getTestimonials = cache(async () => {
-  let response = [];
-  if (process.env.QUERY_FROM_DB) {
-    response = await db.testimonials.findMany({
-      select: {
-        id: true,
-        content: true,
-        name: true,
-        designation: true,
-        avatarUrl: true,
-        companyLogoUrl: true
-      },
-    });
-  } else {
-    response = [
+  let response = [
       {
         id: '1ebdc057-7cda-4536-bdec-269ae7ed4f84',
         content: 'Had the opportunity to work with Nikeshh. Friendly and approachable. Was astonished they way in which he managed to resolve issues which i faced during an implementation with lightning speed . His knowledge on the area he is working is commendable . He would surely be an asset in which ever organisation he is in.',
@@ -91,254 +78,432 @@ export const getTestimonials = cache(async () => {
         companyLogoUrl: ''
       }
     ];
-  }
   return response;
 })
 
 export const getSkills = cache(async () => {
-  let response = [];
-  if (process.env.QUERY_FROM_DB) {
-    response = await db.skills.findMany({
-      select: {
-        id: true,
-        name: true,
-        category: true,
-        imageUrl: true,
-        points: true
-      },
-      orderBy: {
-        category: 'asc',
-      },
-    });
-  } else {
-    response = [
-      {
-        id: '87adf1db-271f-4b69-a2c2-26baa2ef6135',
-        name: 'Big Data Technologies',
-        category: 'Data Science and Analytics',
-        imageUrl: '',
-        points: 'Hadoop | Spark | Kafka | Hive | HBase'
-      },
-      {
-        id: 'e6c27a4b-2253-4d03-acb3-cb333c6d6dd2',
-        name: 'Tools & Libraries',
-        category: 'Data Science and Analytics',
-        imageUrl: '',
-        points: 'OpenAI | IBM Watson | Microsoft Azure AI'
-      },
-      {
-        id: 'd83f61c5-aca5-41e5-a8db-f9ce7fd714a5',
-        name: 'Frameworks',
-        category: 'Data Science and Analytics',
-        imageUrl: '',
-        points: 'TensorFlow | PyTorch | Scikit-learn'
-      },
-      {
-        id: 'c3fa167a-c0d2-4d09-9d24-445398d3e2c5',
-        name: 'Manipulation & Analysis',
-        category: 'Data Science and Analytics',
-        imageUrl: '',
-        points: 'Pandas | NumPy | SQL'
-      },
-      {
-        id: '10694fb9-f614-40a5-bf6c-75144aa6f003',
-        name: 'User Research & Testing',
-        category: 'Design and Product Development',
-        imageUrl: '',
-        points: 'Usability testing tools | UserZoom | Optimal Workshop'
-      },
-      {
-        id: '197a029c-cddd-4e8f-a14f-c51d81a327fa',
-        name: 'Prototyping & Wireframing',
-        category: 'Design and Product Development',
-        imageUrl: '',
-        points: 'Proto.io | Axure RP | Balsamiq'
-      },
-      {
-        id: 'e45c82f1-f8d3-4f49-97a6-e0bd27737af0',
-        name: 'Project Management',
-        category: 'Design and Product Development',
-        imageUrl: '',
-        points: 'Jira | Trello | Asana'
-      },
-      {
-        id: 'a4c46e8a-0141-47d2-9cc6-590d96514656',
-        name: 'Collaboration',
-        category: 'Design and Product Development',
-        imageUrl: '',
-        points: 'Slack | Microsoft Teams'
-      },
-      {
-        id: '494557c2-2e68-46f3-b515-431ded4700c0',
-        name: 'Design Tools',
-        category: 'Design and Product Development',
-        imageUrl: '',
-        points: 'Adobe XD | Sketch | Figma | InVision'
-      },
-      {
-        id: '93f84fd8-2508-4d25-9084-0ccd9fddb903',
-        name: 'DevOps Monitoring',
-        category: 'Development',
-        imageUrl: '',
-        points: 'Prometheus | Grafana | ELK Stack | Splunk'
-      },
-      {
-        id: '3a898f84-b2f5-4f42-9789-55ce8201e9a2',
-        name: 'Cloud Technologies',
-        category: 'Development',
-        imageUrl: '',
-        points: 'AWS | Azure | GCP'
-      },
-      {
-        id: '6878f45d-1def-4dba-9efe-7fbed5b1669d',
-        name: 'Scripting & Automation',
-        category: 'Development',
-        imageUrl: '',
-        points: 'Shell scripting | Python scripting'
-      },
-      {
-        id: '4adf8afc-fd50-435d-b2cb-36c1b13f865d',
-        name: 'API Integration',
-        category: 'Development',
-        imageUrl: '',
-        points: 'RESTful APIs | GraphQL'
-      },
-      {
-        id: 'fa276ef8-1ff7-4a5b-8c06-50ce1da8c681',
-        name: 'Languages & Frameworks',
-        category: 'Development',
-        imageUrl: '',
-        points: 'Python (Django, Flask) | JavaScript (Node.js) | Java (Spring Boot) | Ruby (Ruby on Rails) | PHP (Laravel) | C# (ASP.NET Core)'
-      },
-      {
-        id: '8e44e67f-bf0c-4eb8-9aa4-f9a137ea2621',
-        name: 'Web Development',
-        category: 'Development',
-        imageUrl: '',
-        points: 'React.js | Angular | Vue.js | Ember.js'
-      },
-      {
-        id: 'ef22d2cc-e011-4cc8-9391-3bc6bbbd25f9',
-        name: 'Android Development',
-        category: 'Development',
-        imageUrl: '',
-        points: 'Java | Kotlin | Android Studio'
-      },
-      {
-        id: '23f13aad-4131-44b4-8c5d-ab80031cd710',
-        name: 'Database Management',
-        category: 'Development',
-        imageUrl: '',
-        points: 'SQL (MySQL, PostgreSQL, SQLite) | NoSQL (MongoDB, Cassandra, Redis)'
-      },
-      {
-        id: '9fd2df92-bc7f-4de1-9aef-77abf63bf76c',
-        name: 'iOS Development',
-        category: 'Development',
-        imageUrl: '',
-        points: 'Swift | Objective-C | Xcode'
-      },
-      {
-        id: 'a104ea3c-b053-459f-930f-e1a12cfbfb74',
-        name: 'Client-side Technologies',
-        category: 'Development',
-        imageUrl: '',
-        points: 'HTML5 | CSS3 | JavaScript (ES6+) | TypeScript'
-      },
-      {
-        id: '3a79e8dd-69d7-46c7-8a16-ca9fd633e270',
-        name: 'Version Control & CI/CD',
-        category: 'Development',
-        imageUrl: '',
-        points: 'Git | GitHub | GitLab | Bitbucket | Jenkins | Travis CI | CircleCI'
-      },
-      {
-        id: 'd1715acf-add1-44d9-8ae2-6aba67763fd0',
-        name: 'Cross-platform Development',
-        category: 'Development',
-        imageUrl: '',
-        points: 'React Native | Flutter | Xamarin'
-      },
-      {
-        id: 'cec17a2e-a5ed-4418-ad36-450f9cd29fe4',
-        name: 'Containerization and Orchestration',
-        category: 'Development',
-        imageUrl: '',
-        points: 'Docker | Kubernetes'
-      },
-      {
-        id: '93eb29cb-cc74-4b59-9b3d-8dbb096d8571',
-        name: 'Game Development',
-        category: 'Emerging Technologies',
-        imageUrl: '',
-        points: 'Unity | Unreal Engine | Godot Engine'
-      },
-      {
-        id: 'ef830a49-486e-4692-8680-a8627979976a',
-        name: 'Blockchain Development',
-        category: 'Emerging Technologies',
-        imageUrl: '',
-        points: 'Ethereum | Hyperledger Fabric | Solidity'
-      },
-      {
-        id: '89b1449d-d4bd-4914-ab05-2ea9fd29bc35',
-        name: 'AR/VR Development',
-        category: 'Emerging Technologies',
-        imageUrl: '',
-        points: 'Unity | Unreal Engine | ARKit | ARCore'
-      },
-      {
-        id: 'fbc9dbf0-9615-4e7b-82cd-4c21656e2be6',
-        name: 'Embedded Systems',
-        category: 'Emerging Technologies',
-        imageUrl: '',
-        points: 'Raspberry Pi | Arduino | Microcontrollers'
-      },
-      {
-        id: 'a586a2c6-4c3d-4417-b25b-d5eb4c9b6727',
-        name: 'Performance Testing',
-        category: 'Quality Assurance and Testing',
-        imageUrl: '',
-        points: 'JMeter | Gatling | LoadRunner'
-      },
-      {
-        id: '0b3e6dc9-ae9e-4848-83ee-8e322d29ef1a',
-        name: 'Behavior-Driven Development',
-        category: 'Quality Assurance and Testing',
-        imageUrl: '',
-        points: 'Cucumber | Behave'
-      },
-      {
-        id: '66041962-53fe-4b30-a6d8-4e1eb57013d9',
-        name: 'Test Automation',
-        category: 'Quality Assurance and Testing',
-        imageUrl: '',
-        points: 'Selenium, Cypress | Puppeteer'
-      },
-      {
-        id: 'ae7ddde8-048b-4f42-b715-62f0aa0e3c48',
-        name: 'Compliance Standards',
-        category: 'Security and Compliance',
-        imageUrl: '',
-        points: 'GDPR | HIPAA | PCI DSS'
-      },
-      {
-        id: '3fa6841d-89a5-4d39-a149-1d9944b812dc',
-        name: 'Identity & Access Management',
-        category: 'Security and Compliance',
-        imageUrl: '',
-        points: 'OAuth | JWT'
-      },
-      {
-        id: '207ab8bd-415b-42f1-86ec-7960a54285da',
-        name: 'Security Protocols',
-        category: 'Security and Compliance',
-        imageUrl: '',
-        points: 'SSL/TLS | HTTPS'
-      }
-    ]
-  }
-  return response
+  let techView = [
+    {
+      name: 'Containerization and Orchestration',
+      category: 'Development',
+      imageUrl: '',
+      description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
+      points: 'Docker | Kubernetes',
+      view: "Tech View"
+    },
+    {
+      name: 'Languages & Frameworks',
+      category: 'Development',
+      imageUrl: '',
+      description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
+      points: 'Python (Django, Flask) | JavaScript (Node.js) | Java (Spring Boot) | Ruby (Ruby on Rails) | PHP (Laravel) | C# (ASP.NET Core)',
+      view: "Tech View"
+    },
+    {
+      name: 'Scripting & Automation',
+      category: 'Development',
+      imageUrl: '',
+      description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
+      points: 'Shell scripting | Python scripting',
+      view: "Tech View"
+    },
+    {
+      name: 'Database Management',
+      category: 'Development',
+      imageUrl: '',
+      description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
+      points: 'SQL: MySQL, PostgreSQL, SQLite | NoSQL: MongoDB, Cassandra, Redis',
+      view: "Tech View"
+    },
+    {
+      name: 'Version Control & CI/CD',
+      category: 'Development',
+      imageUrl: '',
+      description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
+      points: 'Git | GitHub | GitLab | Bitbucket | Jenkins | Travis CI | CircleCI',
+      view: "Tech View"
+    },
+    {
+      name: 'Cloud Technologies',
+      category: 'Development',
+      imageUrl: '',
+      description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
+      points: 'AWS | Azure | GCP',
+      view: "Tech View"
+    },
+    {
+      name: 'DevOps Monitoring',
+      category: 'Development',
+      imageUrl: '',
+      description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
+      points: 'Prometheus | Grafana | ELK Stack | Splunk',
+      view: "Tech View"
+    },
+    {
+      name: 'Data Manipulation & Analysis',
+      category: 'Data Science and Analytics',
+      imageUrl: '',
+      description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
+      points: 'Pandas | NumPy | SQL',
+      view: "Tech View"
+    },
+    {
+      name: 'Big Data Technologies',
+      category: 'Data Science and Analytics',
+      imageUrl: '',
+      description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
+      points: 'Hadoop | Spark | Kafka | Hive | HBase',
+      view: "Tech View"
+    },
+    {
+      name: 'AI & Machine Learning Frameworks',
+      category: 'Data Science and Analytics',
+      imageUrl: '',
+      description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
+      points: 'TensorFlow | PyTorch | Scikit-learn',
+      view: "Tech View"
+    },
+    {
+      name: 'AI Tools & Libraries',
+      category: 'Data Science and Analytics',
+      imageUrl: '',
+      description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
+      points: 'OpenAI | IBM Watson | Microsoft Azure AI',
+      view: "Tech View"
+    },
+    {
+      name: 'Test Automation',
+      category: 'Quality Assurance and Testing',
+      imageUrl: '',
+      description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
+      points: 'Selenium | Cypress | Puppeteer',
+      view: "Tech View"
+    },
+    {
+      name: 'Behavior-Driven Development',
+      category: 'Quality Assurance and Testing',
+      imageUrl: '',
+      description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
+      points: 'Cucumber | Behave',
+      view: "Tech View"
+    },
+    {
+      name: 'Performance Testing',
+      category: 'Quality Assurance and Testing',
+      imageUrl: '',
+      description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
+      points: 'JMeter | Gatling | LoadRunner',
+      view: "Tech View"
+    },
+    {
+      name: 'Identity & Access Management',
+      category: 'Security and Compliance',
+      imageUrl: '',
+      description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
+      points: 'OAuth | JWT',
+      view: "Tech View"
+    },
+    {
+      name: 'Security Protocols',
+      category: 'Security and Compliance',
+      imageUrl: '',
+      description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
+      points: 'SSL/TLS | HTTPS',
+      view: "Tech View"
+    },
+    {
+      name: 'Compliance Standards',
+      category: 'Security and Compliance',
+      imageUrl: '',
+      description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
+      points: 'GDPR | HIPAA | PCI DSS',
+      view: "Tech View"
+    },
+    {
+      name: 'Blockchain Development',
+      category: 'Emerging Technologies',
+      imageUrl: '',
+      description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
+      points: 'Ethereum | Hyperledger Fabric | Solidity',
+      view: "Tech View"
+    },
+    {
+      name: 'AR/VR Development',
+      category: 'Emerging Technologies',
+      imageUrl: '',
+      description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
+      points: 'Unity | Unreal Engine | ARKit | ARCore',
+      view: "Tech View"
+    },
+    {
+      name: 'Design Tools',
+      category: 'Design and Product Development',
+      imageUrl: '',
+      description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
+      points: 'Adobe XD | Sketch | Figma | InVision',
+      view: "Tech View"
+    },
+    {
+      name: 'Prototyping & Wireframing',
+      category: 'Design and Product Development',
+      imageUrl: '',
+      description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
+      points: 'Proto.io | Axure RP | Balsamiq',
+      view: "Tech View"
+    },
+    {
+      name: 'User Research & Testing',
+      category: 'Design and Product Development',
+      imageUrl: '',
+      description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
+      points: 'Usability testing tools | UserZoom | Optimal Workshop',
+      view: "Tech View"
+    },
+    {
+      name: 'Project Management',
+      category: 'Design and Product Development',
+      imageUrl: '',
+      description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
+      points: 'Jira | Trello | Asana',
+      view: "Tech View"
+    },
+    {
+      name: 'Collaboration',
+      category: 'Design and Product Development',
+      imageUrl: '',
+      description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
+      points: 'Slack | Microsoft Teams',
+      view: "Tech View"
+    },
+  ];
+
+  let businessView = [
+    {
+      name: 'Web Development',
+      category: 'Development for Business Solutions',
+      imageUrl: '',
+      description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
+      points: 'Front-end: HTML5, CSS3, JavaScript (ES6+), React.js, Angular, Vue.js, Ember.js | Back-end: Python (Django, Flask), JavaScript (Node.js), Java (Spring Boot), Ruby (Ruby on Rails), PHP (Laravel), C# (ASP.NET Core)',
+      view: "Business View"
+    },
+    {
+      name: 'Mobile Development',
+      category: 'Development for Business Solutions',
+      imageUrl: '',
+      description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
+      points: 'Android: Java, Kotlin | iOS: Swift, Objective-C | Cross-platform: React Native, Flutter, Xamarin',
+      view: "Business View"
+    },
+    {
+      name: 'API Integration',
+      category: 'Development for Business Solutions',
+      imageUrl: '',
+      description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
+      points: 'RESTful APIs | GraphQL',
+      view: "Business View"
+    },
+    {
+      name: 'Design Tools',
+      category: 'Product Design and User Experience',
+      imageUrl: '',
+      description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
+      points: 'Adobe XD | Sketch | Figma | InVision',
+      view: "Business View"
+    },
+    {
+      name: 'Prototyping & Wireframing',
+      category: 'Product Design and User Experience',
+      imageUrl: '',
+      description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
+      points: 'Proto.io | Axure RP | Balsamiq',
+      view: "Business View"
+    },
+    {
+      name: 'User Research & Testing',
+      category: 'Product Design and User Experience',
+      imageUrl: '',
+      description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
+      points: 'Usability testing tools | UserZoom | Optimal Workshop',
+      view: "Business View"
+    },
+    {
+      name: 'Search Engine Optimization (SEO)',
+      category: 'Digital Marketing',
+      imageUrl: '',
+      description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
+      points: "On-Page SEO: Optimization of website content, HTML, and structure to improve rankings in search engine results. | Off-Page SEO: Building backlinks and promoting content to improve the site's authority. | Technical SEO: Ensuring the website meets technical requirements for search engines like fast load times, mobile friendliness, and secure connections (HTTPS).",
+      view: "Business View"
+    },
+    {
+      name: 'Pay-Per-Click (PPC) Advertising',
+      category: 'Digital Marketing',
+      imageUrl: '',
+      description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
+      points: "Google Ads: Creating and managing ads that appear in Google search results and on partner websites. | Social Media Ads: Advertising on platforms like Facebook, Instagram, LinkedIn, and Twitter. | Display Ads: Banner ads on various websites to increase brand visibility and drive traffic.",
+      view: "Business View"
+    },
+    {
+      name: 'Content Marketing',
+      category: 'Digital Marketing',
+      imageUrl: '',
+      description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
+      points: "Blogging: Writing and publishing articles that provide value to the target audience and improve SEO. | Video Marketing: Creating videos for platforms like YouTube or social media to engage users. | Infographics and Visual Content: Designing visually appealing content to convey information effectively. | E-books and Whitepapers: Producing in-depth content to establish thought leadership and generate leads.",
+      view: "Business View"
+    },
+    {
+      name: 'Social Media Marketing',
+      category: 'Digital Marketing',
+      imageUrl: '',
+      description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
+      points: "Profile Management: Creating and maintaining social media profiles on platforms like Facebook, Instagram, Twitter, LinkedIn, etc. | Content Creation and Posting: Regular posting of relevant content to engage the audience. | Community Management: Interacting with followers, responding to comments, and managing brand reputation. | Social Media Analytics: Monitoring and analyzing performance metrics to refine strategies.",
+      view: "Business View"
+    },
+    {
+      name: 'Email Marketing',
+      category: 'Digital Marketing',
+      imageUrl: '',
+      description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
+      points: "Campaign Creation: Designing and sending targeted email campaigns to subscribers. | Automation: Setting up automated email sequences for lead nurturing and customer retention. | List Management: Growing and segmenting email lists to improve targeting. | Analytics: Tracking open rates, click-through rates, and conversions to optimize campaigns.",
+      view: "Business View"
+    },
+    {
+      name: 'Affiliate Marketing',
+      category: 'Digital Marketing',
+      imageUrl: '',
+      description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
+      points: "Program Setup: Establishing affiliate programs where partners promote products/services for a commission. | Partner Management: Recruiting and managing affiliates to ensure productive partnerships. | Tracking and Reporting: Monitoring affiliate performance and managing payouts.",
+      view: "Business View"
+    },
+    {
+      name: 'Conversion Rate Optimization (CRO)',
+      category: 'Digital Marketing',
+      imageUrl: '',
+      description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
+      points: "A/B Testing: Testing different versions of webpages or ads to determine which performs better. | User Experience (UX) Design: Improving the usability and functionality of websites to enhance user experience. | Landing Page Optimization: Creating and refining landing pages to increase conversion rates.",
+      view: "Business View"
+    },
+    {
+      name: 'Web Analytics and Reporting',
+      category: 'Digital Marketing',
+      imageUrl: '',
+      description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
+      points: "Data Analysis: Using tools like Google Analytics to track and analyze website traffic and user behavior. | Performance Reporting: Creating reports to measure the effectiveness of digital marketing campaigns. | Insight Generation: Providing actionable insights based on data analysis to inform future strategies.",
+      view: "Business View"
+    },
+    {
+      name: 'Influencer Marketing',
+      category: 'Digital Marketing',
+      imageUrl: '',
+      description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
+      points: "Campaign Planning: Identifying and collaborating with influencers to promote products or services. | Content Coordination: Ensuring influencers create content that aligns with brand messaging. | Performance Tracking: Monitoring the impact of influencer campaigns on brand awareness and sales.",
+      view: "Business View"
+    },
+    {
+      name: 'Online Reputation Management',
+      category: 'Digital Marketing',
+      imageUrl: '',
+      description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
+      points: "Review Monitoring: Keeping track of customer reviews and responding appropriately. | Crisis Management: Handling negative publicity or social media crises to protect brand image. | Positive Promotion: Encouraging satisfied customers to leave positive reviews and testimonials.",
+      view: "Business View"
+    },
+    {
+      name: 'Project Management Tools',
+      category: 'Project and Team Management',
+      imageUrl: '',
+      description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
+      points: 'Jira | Trello | Asana',
+      view: "Business View"
+    },
+    {
+      name: 'Collaboration Tools',
+      category: 'Project and Team Management',
+      imageUrl: '',
+      description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
+      points: 'Slack | Microsoft Teams',
+      view: "Business View"
+    },
+    {
+      name: 'Version Control & CI/CD',
+      category: 'Project and Team Management',
+      imageUrl: '',
+      description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
+      points: 'Git | GitHub | GitLab | Bitbucket | Jenkins | Travis CI | CircleCI',
+      view: "Business View"
+    },
+    {
+      name: 'Data Analysis Tools',
+      category: 'Data-Driven Decision Making',
+      imageUrl: '',
+      description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
+      points: 'Pandas | NumPy | SQL',
+      view: "Business View"
+    },
+    {
+      name: 'Big Data Technologies',
+      category: 'Data-Driven Decision Making',
+      imageUrl: '',
+      description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
+      points: 'Hadoop | Spark | Kafka | Hive | HBase',
+      view: "Business View"
+    },
+    {
+      name: 'AI & Machine Learning Frameworks',
+      category: 'Data-Driven Decision Making',
+      imageUrl: '',
+      description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
+      points: 'TensorFlow | PyTorch | Scikit-learn',
+      view: "Business View"
+    },
+    {
+      name: 'Business Intelligence',
+      category: 'Data-Driven Decision Making',
+      imageUrl: '',
+      description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
+      points: 'OpenAI | IBM Watson | Microsoft Azure AI',
+      view: "Business View"
+    },
+    {
+      name: 'Security Protocols',
+      category: 'Security and Compliance',
+      imageUrl: '',
+      description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
+      points: 'SSL/TLS | HTTPS',
+      view: "Business View"
+    },
+    {
+      name: 'Compliance Standards',
+      category: 'Security and Compliance',
+      imageUrl: '',
+      description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
+      points: 'GDPR | HIPAA | PCI DSS',
+      view: "Business View"
+    },
+    {
+      name: 'Identity & Access Management',
+      category: 'Security and Compliance',
+      imageUrl: '',
+      description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
+      points: 'OAuth | JWT',
+      view: "Business View"
+    },
+    {
+      name: 'Blockchain Applications',
+      category: 'Emerging Business Technologies',
+      imageUrl: '',
+      description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
+      points: 'Ethereum | Hyperledger Fabric',
+      view: "Business View"
+    },
+    {
+      name: 'AR/VR Solutions',
+      category: 'Emerging Business Technologies',
+      imageUrl: '',
+      description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
+      points: 'Unity | Unreal Engine | ARKit | ARCore',
+      view: "Business View"
+    },
+  ]
+  return [...techView, ...businessView];
 })
 
 export const getServices = cache(async () => {
@@ -363,250 +528,197 @@ export const getServices = cache(async () => {
 })
 
 export const getProjects = cache(async () => {
-  let response = [];
-  if (process.env.QUERY_FROM_DB) {
-    response = await db.projects.findMany({
-      select: {
-        id: true,
-        name: true,
-        subtitle: true,
-        category: true
-      },
-      orderBy: {
-        category: 'asc',
-      },
-    });
-  } else {
-    response = [
+  let response = [
       {
-        id: 'cc661afb-be4a-431c-9419-dae8d1afd791',
-        name: 'VectorChat - PDF Interaction Platform',
+        name: 'LMS Platform',
         subtitle: 'VectorChat revolutionizes communication by enabling seamless interaction with PDF documents through vector data. Enhance collaboration and productivity with intuitive chat-based PDF interactions.',
-        category: 'AI'
+        category: 'Web App',
+        link: 'https://lms-platform-red.vercel.app/',
+        imageUrl: '/projects/lms-platform.png',
+        tags: ['LMS']
       },
       {
-        id: '03fcc2c3-555a-4f7d-ada1-c3d0fd70a4c6',
-        name: 'MavenMind - AI SAAS Platform',
-        subtitle: 'MavenMind is a versatile AI-powered SAAS platform designed to assist marketing agencies in website creation and automation. Streamline your marketing efforts with intuitive tools and harness the power of automation to drive growth and engagement.',
-        category: 'AI'
+        name: 'SkinEssence',
+        subtitle: 'VectorChat revolutionizes communication by enabling seamless interaction with PDF documents through vector data. Enhance collaboration and productivity with intuitive chat-based PDF interactions.',
+        category: 'Shopify Website',
+        link: 'https://www.skinessence.ca/',
+        imageUrl: '/projects/skin-essence.png',
+        tags: ['LMS']
       },
       {
-        id: '07346be2-8021-4b1d-bb7e-0c9c1f83ee27',
-        name: 'BalanceBuddy - Automated Bank Statement Collection',
-        subtitle: 'BalanceBuddy automates the collection of bank account balance sheets and delivers them directly to your email inbox. Stay effortlessly updated on your financial status with BalanceBuddy.',
-        category: 'Automation'
+        name: 'ALT Interiors',
+        subtitle: 'VectorChat revolutionizes communication by enabling seamless interaction with PDF documents through vector data. Enhance collaboration and productivity with intuitive chat-based PDF interactions.',
+        category: 'Shopify Website',
+        link: 'alt',
+        imageUrl: '/projects/alt-interiors.png',
+        tags: ['LMS']
       },
       {
-        id: '9ce6d882-73e8-494d-8d07-f5b019a2cbec',
-        name: 'Glisten AI - AI-Powered Document Search and Website Customization',
-        subtitle: 'Glisten AI offers advanced document search capabilities powered by AI, coupled with customizable website content management using Prismic CMS. Empower your business with intelligent insights and seamless content management.',
-        category: 'CMS'
+        name: 'Spades Brand',
+        subtitle: 'VectorChat revolutionizes communication by enabling seamless interaction with PDF documents through vector data. Enhance collaboration and productivity with intuitive chat-based PDF interactions.',
+        category: 'Shopify Website',
+        link: 'https://www.spadesbrand.com/',
+        imageUrl: '/projects/spades-brand.png',
+        tags: ['LMS']
       },
       {
-        id: 'd5ccb773-8361-41c3-9428-30b11970620c',
-        name: 'HeritageHub - Heritage Data Retrieval System',
-        subtitle: 'HeritageHub is a data retrieval system powered by Elastic Search, designed specifically for heritage sites. Retrieve historical data and artifacts swiftly, preserving cultural heritage effectively.',
-        category: 'Enterprise System'
+        name: 'PPE Supply Canada',
+        subtitle: 'VectorChat revolutionizes communication by enabling seamless interaction with PDF documents through vector data. Enhance collaboration and productivity with intuitive chat-based PDF interactions.',
+        category: 'Shopify Website',
+        link: 'https://www.ppe-supply.com/',
+        imageUrl: '/projects/ppe-supply-canada.png',
+        tags: ['LMS']
       },
       {
-        id: '06ef2289-a795-4b7f-95c6-f6c7930a08ff',
-        name: 'ChemCrafter - Comprehensive Calibration System',
-        subtitle: "ChemCrafter is a comprehensive data analysis and recording system tailored for calibration processes in various industries. Ensure precision and compliance with ChemCrafter's advanced analytical tools.",
-        category: 'Enterprise System'
+        name: 'Karking',
+        subtitle: 'VectorChat revolutionizes communication by enabling seamless interaction with PDF documents through vector data. Enhance collaboration and productivity with intuitive chat-based PDF interactions.',
+        category: 'Website',
+        link: 'https://karking.in/',
+        imageUrl: '/projects/karking.png',
+        tags: ['LMS']
       },
       {
-        id: 'b170a7b2-0d6d-452c-b9f3-7dd6f174754a',
+        name: 'Immunuts',
+        subtitle: 'VectorChat revolutionizes communication by enabling seamless interaction with PDF documents through vector data. Enhance collaboration and productivity with intuitive chat-based PDF interactions.',
+        category: 'Website',
+        link: 'https://immunuts.in/',
+        imageUrl: '/projects/immunuts.png',
+        tags: ['LMS']
+      },
+      {
+        name: 'Norte-Damepavillion',
+        subtitle: 'VectorChat revolutionizes communication by enabling seamless interaction with PDF documents through vector data. Enhance collaboration and productivity with intuitive chat-based PDF interactions.',
+        category: 'Website',
+        link: 'https://www.notre-damepavillionhospital.ca/',
+        imageUrl: '/projects/notre-damepavillionhospital.png',
+        tags: ['LMS']
+      },
+      {
+        name: 'Mitaz Consulting',
+        subtitle: 'VectorChat revolutionizes communication by enabling seamless interaction with PDF documents through vector data. Enhance collaboration and productivity with intuitive chat-based PDF interactions.',
+        category: 'Website',
+        link: 'https://mitazconsulting.ca/',
+        imageUrl: '/projects/mitazconsulting.png',
+        tags: ['LMS']
+      },
+      {
+        name: 'Elkrest Farm',
+        subtitle: 'VectorChat revolutionizes communication by enabling seamless interaction with PDF documents through vector data. Enhance collaboration and productivity with intuitive chat-based PDF interactions.',
+        category: 'Website',
+        link: 'https://elkrestsfarm.ca/',
+        imageUrl: '/projects/elkrests-farm.png',
+        tags: ['LMS']
+      },
+      {
+        name: 'Island National Medical Center',
+        subtitle: 'VectorChat revolutionizes communication by enabling seamless interaction with PDF documents through vector data. Enhance collaboration and productivity with intuitive chat-based PDF interactions.',
+        category: 'Website',
+        link: 'https://inamc.ca/',
+        imageUrl: '/projects/inamc.png',
+        tags: ['LMS']
+      },
+      {
+        name: 'Market Farm',
+        subtitle: 'VectorChat revolutionizes communication by enabling seamless interaction with PDF documents through vector data. Enhance collaboration and productivity with intuitive chat-based PDF interactions.',
+        category: 'Website',
+        link: 'https://marketfarm.ca/',
+        imageUrl: '/projects/marketfarm.png',
+        tags: ['LMS']
+      },
+      {
+        name: 'Placement Nursing',
+        subtitle: 'VectorChat revolutionizes communication by enabling seamless interaction with PDF documents through vector data. Enhance collaboration and productivity with intuitive chat-based PDF interactions.',
+        category: 'Website',
+        link: 'https://www.placementnursing.ca/',
+        imageUrl: '/projects/placementnursing.png',
+        tags: ['LMS']
+      },
+      {
+        name: 'Learns Point',
+        subtitle: 'VectorChat revolutionizes communication by enabling seamless interaction with PDF documents through vector data. Enhance collaboration and productivity with intuitive chat-based PDF interactions.',
+        category: 'Website',
+        link: 'https://learnerspoint.org/',
+        imageUrl: '/projects/learnerspoint.png',
+        tags: ['LMS']
+      },
+      {
         name: 'RideRush - Cross-Platform Bike Taxi Booking App',
-        subtitle: 'RideRush offers seamless bike taxi booking services across multiple platforms. Simplify urban transportation and enjoy efficient and eco-friendly travel experiences with RideRush.',
-        category: 'Mobile App'
+        subtitle: 'VectorChat revolutionizes communication by enabling seamless interaction with PDF documents through vector data. Enhance collaboration and productivity with intuitive chat-based PDF interactions.',
+        category: 'Website',
+        link: 'https://www.rtrix.in/',
+        imageUrl: '/projects/rtrix.png',
+        tags: ['LMS']
       },
       {
-        id: 'd67a80a1-d956-4f4d-99bf-616765535c83',
-        name: 'ChatterEase - Intelligent Chatbot App',
-        subtitle: "ChatterEase is an intelligent chatbot app designed to provide personalized assistance and streamline communication. Enhance customer support and engagement with ChatterEase's AI-powered features.",
-        category: 'Mobile App'
+        name: 'Nikeshh.com',
+        subtitle: 'VectorChat revolutionizes communication by enabling seamless interaction with PDF documents through vector data. Enhance collaboration and productivity with intuitive chat-based PDF interactions.',
+        category: 'Web App',
+        link: 'https://nikeshh.com/',
+        imageUrl: '/projects/nikeshh.png',
+        tags: ['LMS']
       },
       {
-        id: '2fd19d3a-ed0f-4b69-a7e6-3edfb577ae90',
-        name: 'SchoolSavvy - Student and Teacher Management System',
-        subtitle: 'SchoolSavvy is an Android application designed for student and teacher management in educational institutions. Streamline administrative tasks and foster collaboration with SchoolSavvy.',
-        category: 'Mobile App'
+        name: 'Digital Ecommerce',
+        subtitle: 'VectorChat revolutionizes communication by enabling seamless interaction with PDF documents through vector data. Enhance collaboration and productivity with intuitive chat-based PDF interactions.',
+        category: 'Web App',
+        link: 'https://digital-ecommerce-production.up.railway.app/',
+        imageUrl: '/projects/digital-ecommerce.png',
+        tags: ['LMS']
       },
       {
-        id: 'ec65a0bf-f106-47c8-8775-ee72ecf1d4da',
-        name: 'ShopShip - Comprehensive Ecommerce Solution',
-        subtitle: 'ShopShip provides a comprehensive ecommerce solution, offering mobile apps and websites for food delivery and ecommerce ventures. Empower your business with ShopShip and elevate your online presence.',
-        category: 'Mobile App'
+        name: 'Learning Portal',
+        subtitle: 'VectorChat revolutionizes communication by enabling seamless interaction with PDF documents through vector data. Enhance collaboration and productivity with intuitive chat-based PDF interactions.',
+        category: 'Web App',
+        link: 'https://learning-portal-murex.vercel.app/',
+        imageUrl: '/projects/learning-portal.png',
+        tags: ['LMS']
       },
       {
-        id: '85f9e6c8-30ba-4f9a-ba9c-dc868d732d26',
-        name: 'FeastFinder - Food Delivery and Ecommerce Solution',
-        subtitle: 'FeastFinder offers a complete food delivery and ecommerce solution, comprising mobile apps, websites, and analytics tools. Empower restaurants and food businesses to succeed in the digital landscape with FeastFinder.',
-        category: 'Mobile App'
+        name: 'Modern Ecommerce',
+        subtitle: 'VectorChat revolutionizes communication by enabling seamless interaction with PDF documents through vector data. Enhance collaboration and productivity with intuitive chat-based PDF interactions.',
+        category: 'Web App',
+        link: 'https://modern-ecommerce-tawny.vercel.app/',
+        imageUrl: '/projects/modern-ecommerce.png',
+        tags: ['LMS']
       },
       {
-        id: '3ebd8236-4bcf-4004-aa62-44c55b053ed4',
-        name: 'DineDeliver - Restaurant Management App',
-        subtitle: "DineDeliver streamlines food ordering and delivery processes for restaurants. Enhance customer satisfaction and boost sales with DineDeliver's intuitive features.",
-        category: 'Mobile App'
+        name: 'NikeshhCodes.com',
+        subtitle: 'VectorChat revolutionizes communication by enabling seamless interaction with PDF documents through vector data. Enhance collaboration and productivity with intuitive chat-based PDF interactions.',
+        category: 'Web App',
+        link: 'https://nikeshhcodes.com/',
+        imageUrl: '/projects/nikeshhcodes.png',
+        tags: ['LMS']
       },
       {
-        id: 'b4b412a2-9d6d-4ade-ac8c-5d8b64943167',
-        name: 'TaskTrack - Task Management App',
-        subtitle: 'TaskTrack is a simple yet powerful todo app that helps users organize their tasks and boost productivity. Stay organized and focused on your goals with TaskTrack.',
-        category: 'Mobile App'
+        name: 'Ecommerce Marketplace',
+        subtitle: 'VectorChat revolutionizes communication by enabling seamless interaction with PDF documents through vector data. Enhance collaboration and productivity with intuitive chat-based PDF interactions.',
+        category: 'Web App',
+        link: 'https://ecommerce-marketplace-two.vercel.app/',
+        imageUrl: '/projects/ecommerce-marketplace.png',
+        tags: ['LMS']
       },
       {
-        id: 'c1a5dcc8-9cdd-44f9-bb20-e4b9f7d1f054',
-        name: 'PPE-Supply - Mask Manufacturing Company Website',
-        subtitle: 'PPE-Supply is a Shopify website dedicated to a mask manufacturing company. Crafted with Liquid programming language, PPE-Supply showcases a range of protective products with a seamless shopping experience.',
-        category: 'Shopify Website'
+        name: 'Suzan Peltekian',
+        subtitle: 'VectorChat revolutionizes communication by enabling seamless interaction with PDF documents through vector data. Enhance collaboration and productivity with intuitive chat-based PDF interactions.',
+        category: 'Wordpress',
+        link: 'https://superchargewithsuzan.com/',
+        imageUrl: '/projects/suzan-peltekian.png',
+        tags: ['LMS']
       },
       {
-        id: '630e0c21-1c7c-4752-b8f6-2e50331ec81b',
-        name: 'Spades Brand - Deodorant and Skincare Products Website',
-        subtitle: 'Spades Brand presents a curated selection of deodorants and skincare products through its Shopify website. Designed with Liquid programming language, Spades Brand offers a refreshing and user-friendly online shopping experience.',
-        category: 'Shopify Website'
+        name: 'Suzan Peltekian',
+        subtitle: 'VectorChat revolutionizes communication by enabling seamless interaction with PDF documents through vector data. Enhance collaboration and productivity with intuitive chat-based PDF interactions.',
+        category: 'GHL',
+        link: 'https://register.suzanpeltekian.com/manifest-millions',
+        imageUrl: '/projects/suzan-peltekian-manifest-millions.png',
+        tags: ['LMS']
       },
-      {
-        id: '6e7d3134-259b-45f5-8df0-39a80a1e05b6',
-        name: 'Alt Interiors - Interior Design Company Website',
-        subtitle: 'Alt Interiors is an interior design company website designed and written in Liquid programming language. Showcase your design expertise and inspire clients with stunning visuals and immersive experiences on Alt Interiors.',
-        category: 'Shopify Website'
-      },
-      {
-        id: 'b69c868f-8c14-4bff-8e38-4a1192a39422',
-        name: 'TailwindTreasure - Tailwind CSS Template Pack',
-        subtitle: 'TailwindTreasure offers a treasure trove of web components written in Tailwind CSS, simplifying integration into SAAS applications with minimal effort. Empower your development projects with TailwindTreasure and accelerate your time-to-market.',
-        category: 'Templates & Themes'
-      },
-      {
-        id: '33ecbef3-b8da-4f04-90c0-e7f4763d3a9f',
-        name: 'StoreSpark - WordPress Theme for Ecommerce Websites',
-        subtitle: 'StoreSpark is a WordPress theme designed for building various ecommerce websites with drag-and-drop features and simple no-code solutions. Empower businesses to create stunning online stores effortlessly with StoreSpark.',
-        category: 'Templates & Themes'
-      },
-      {
-        id: '7486e9e1-9ec6-4c43-8b66-25f1e414204d',
-        name: 'PowerPlay - Shopify Theme for Ecommerce Websites',
-        subtitle: 'PowerPlay is a robust Shopify theme equipped with drag-and-drop features and no-code solutions. Empower ecommerce businesses with customizable design elements and seamless storefront management capabilities.',
-        category: 'Templates & Themes'
-      },
-      {
-        id: 'a667055b-65f8-4501-bb41-9bce69822567',
-        name: 'TalentQuest - Job Portal',
-        subtitle: 'TalentQuest is a job portal powered by Next.js, MongoDB, and Elastic Search. Streamline the hiring process, connect employers with top talent, and empower job seekers to find their dream opportunities with ease, efficiency, and transparency.',
-        category: 'Web App'
-      },
-      {
-        id: '3917cd23-a1e3-40f3-9ac7-c8522c6d615e',
-        name: 'MarketSquare - Software Digital Product Marketplace',
-        subtitle: 'MarketSquare is a digital product marketplace powered by Next.js, MongoDB, and Elastic Search. Connect buyers and sellers of software products seamlessly, with advanced search and discovery features that facilitate transactions and drive revenue growth.',
-        category: 'Web App'
-      },
-      {
-        id: '7fda7d26-7bf5-4978-9913-d0a4f46e0580',
-        name: 'BloodWatch - Real-Time Blood Bank Monitoring System',
-        subtitle: 'BloodWatch is a comprehensive monitoring system used by blood banks to track blood inventory, donations, and transfusions in real-time. Ensure efficient blood supply management, enhance patient care, and save lives with BloodWatch.',
-        category: 'Web App'
-      },
-      {
-        id: '681f0056-3fda-4658-a1be-3c7eeda0f133',
-        name: 'SalePoint - Point Of Sale Desktop Application',
-        subtitle: 'SalePoint is a desktop-based point of sale (POS) system designed for retail businesses. Simplify sales transactions, inventory management, and customer interactions with SalePoint.',
-        category: 'Web App'
-      },
-      {
-        id: '5c7d3193-ec1c-462f-b957-a0b2f76ba0cf',
-        name: 'Stream Lens - Event Monitoring System',
-        subtitle: 'Stream Lens is an event monitoring system powered by Next.js, Kafka, Kinesis, and Event Hub. Monitor and analyze real-time data streams with precision and efficiency, empowering businesses to make informed decisions and respond swiftly to emerging opportunities and threats.',
-        category: 'Web App'
-      },
-      {
-        id: '3a261b6b-4913-4810-917f-1c5f42e96c6d',
-        name: 'BloodTrack - Blood Bank Data Acquisition System',
-        subtitle: 'BloodTrack is a data acquisition system used by blood banks to manage blood inventory, donations, and distribution. Streamline blood bank operations, ensure regulatory compliance, and save lives with BloodTrack.',
-        category: 'Web App'
-      },
-      {
-        id: 'ba5d1b74-ada4-4fec-a150-debf6f168b97',
-        name: 'MedAppoint - Doctor Appointment Web App',
-        subtitle: 'MedAppoint is a doctor appointment web app powered by Next.js, MongoDB, and Elastic Search. Streamline appointment scheduling, patient management, and medical records with MedAppoint, empowering healthcare providers and patients alike.',
-        category: 'Web App'
-      },
-      {
-        id: 'a39b6bc7-853c-47fa-b789-d4226676c4d5',
-        name: 'HomeHive - Home Service Provider Platform',
-        subtitle: 'HomeHive is a home service provider platform powered by Next.js, MongoDB, and Elastic Search. Connect homeowners with service professionals, schedule appointments, and manage bookings seamlessly with HomeHive.',
-        category: 'Web App'
-      },
-      {
-        id: 'c51b5bd9-a4ae-4888-9dd5-d10de1994465',
-        name: 'StaySpot - House Booking Platform',
-        subtitle: 'StaySpot is a house booking platform powered by Next.js, MongoDB, and Elastic Search. Discover, book, and manage vacation rentals and accommodations effortlessly with StaySpot.',
-        category: 'Web App'
-      },
-      {
-        id: 'ca51b4c0-9e0f-416f-afd8-9534eddbc765',
-        name: 'VidGenius - Video Course Creation Platform',
-        subtitle: 'VidGenius is a video course creation platform powered by Next.js, MongoDB, and Elastic Search. Create, publish, and monetize online courses effortlessly with VidGenius, empowering educators and learners to engage with high-quality educational content.',
-        category: 'Web App'
-      },
-      {
-        id: '6dbe63fb-ed4c-4d8a-ba91-79bc0d308542',
-        name: 'TeamTrack - Employee Management System',
-        subtitle: 'TeamTrack is a comprehensive employee management system designed to streamline HR processes and enhance workforce productivity. From attendance tracking to performance evaluation, TeamTrack empowers businesses to manage their human resources effectively.',
-        category: 'Web App'
-      },
-      {
-        id: 'cf930824-1d52-4246-9610-7629748cef1e',
-        name: 'SiteSprint - SAAS Website Builder for Agencies',
-        subtitle: 'SiteSprint is a SAAS website builder designed to streamline website development for agencies. Empower your team with intuitive tools for creating dynamic websites that captivate audiences and drive conversions.',
-        category: 'Web App'
-      },
-      {
-        id: '288bad70-94c4-426e-8d09-6ef867e25ac8',
-        name: 'PropSmart - SAAS Application for Real Estate Agents',
-        subtitle: 'PropSmart is a SAAS application that helps real estate agents close deals faster and manage leads effectively. With its intuitive interface and powerful features, PropSmart streamlines property listings, client communications, and transaction management, empowering real estate professionals to succeed in a competitive market.',
-        category: 'Web App'
-      },
-      {
-        id: '168c349e-d3b7-4cfb-9879-84fd448c161a',
-        name: 'NextNews - Newsletter Creation and Email Marketing Platform',
-        subtitle: 'NextNews is a newsletter creation and email marketing platform built with Next.js. Simplify newsletter creation, distribution, and analytics tracking with NextNews, empowering businesses to engage and nurture their audience effectively.',
-        category: 'Web App'
-      },
-      {
-        id: 'e45209fc-2057-4be4-8211-0267b3631dfa',
-        name: 'FlowForge - SAAS Automation Builder for Business Owners',
-        subtitle: 'FlowForge is a SAAS automation builder tailored for business owners, offering intuitive tools for streamlining workflows and automating repetitive tasks. Empower your team with customizable automation flows and drive operational efficiency with FlowForge.',
-        category: 'Web App'
-      },
-      {
-        id: '070ae99c-ef6b-44b5-89d8-2202708935cb',
-        name: 'DocGenius - Documentation Platform',
-        subtitle: 'DocGenius is a documentation platform that enables users to create software documentation with zero to little effort, powered by easy-to-use drag-and-drop builders. Streamline the documentation process, empower collaboration, and enhance productivity with DocGenius.',
-        category: 'Web App'
-      }
     ]
-  }
-  return response
+    return response;
 })
 
 export const getBlogs = cache(async () => {
-  let response = [];
-  if (process.env.QUERY_FROM_DB) {
-    response = await db.blogs.findMany({
-      select: {
-        id: true,
-        title: true,
-        subtitle: true,
-        imageUrl: true,
-        category: true
-      },
-    });
-  } else {
-    response = [
+  let response = [
       {
         id: '0b5df545-cb7c-498c-81b1-71cdd5a5e83a',
         title: 'Top 7 No-Code AI Platforms That Are Making ML Accessible',
@@ -629,6 +741,5 @@ export const getBlogs = cache(async () => {
         category: 'AI'
       }
     ]
-  }
-  return response
+    return response
 })

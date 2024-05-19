@@ -9,7 +9,6 @@ import { useRouter } from "next/navigation";
 
 type Props = {
     projects: {
-        id: string;
         name: string;
         subtitle: string;
         category: string;
@@ -80,7 +79,7 @@ const Projects = ({ projects } : Props) => {
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati explicabo dicta officiis aspernatur quam animi vero.</p>
                                 <span className="underline">Technologies:</span>
                                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis eveniet sequi ipsum quaerat!</p>
-                                <Button className="w-fit" onClick={() => router.push(`/projects/${project.id}`)}>
+                                <Button className="w-fit" onClick={() => router.push(`/projects/${project.name}`)}>
                                     VIEW
                                 </Button>
                             </div>

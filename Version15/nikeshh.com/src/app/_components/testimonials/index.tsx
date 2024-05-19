@@ -3,6 +3,7 @@
 import React, { useState } from 'react'
 import Image from 'next/image';
 import { UserIcon } from 'lucide-react';
+import { CgProfile } from 'react-icons/cg';
 
 type Props = {
     testimonials: { 
@@ -16,16 +17,7 @@ type Props = {
 }
 
 const Testimonials = ({ testimonials } : Props) => {
-    const [testimonialIndex, setTestimonialIndex] = useState(0);
-    const switchTestimonialIndex = () => {
-        if (testimonialIndex == testimonials.length - 1) {
-            setTestimonialIndex(0);
-        } else {
-            setTestimonialIndex(testimonialIndex + 1);
-        }
-    }
-    
-    if (testimonials && testimonials[testimonialIndex]) {
+    if (testimonials) {
         return (
             <section id="testimonials" className="container pt-12 md:pt-44 relative flex flex-col items-center justify-center">
                 <p>TESTIMONIALS</p>
@@ -34,43 +26,43 @@ const Testimonials = ({ testimonials } : Props) => {
                         SOME TOOK THE SHOT
                     </h2>
                 </div>
-                <div className="relative isolate overflow-hidden px-6 py-24 sm:py-32 lg:px-8 w-full">
-                    <div className="mx-auto max-w-2xl lg:max-w-4xl">
-                        {testimonials[testimonialIndex].companyLogoUrl && (
-                            <Image
-                                src={testimonials[testimonialIndex].companyLogoUrl}
-                                alt="Company logo"
-                                height={600}
-                                width={600}
-                                className="mx-auto h-12"
-                            />
-                        )}
-                        <figure className="mt-10">
-                            <blockquote className="text-center text-xl font-semibold leading-8 sm:text-2xl sm:leading-9">
-                                <p>“{testimonials[testimonialIndex].content}”</p>
-                            </blockquote>
-                            <figcaption className="mt-10">
-                                {testimonials[testimonialIndex].avatarUrl ? (
-                                    <Image
-                                        src={testimonials[testimonialIndex].avatarUrl}
-                                        alt="User logo"
-                                        height={600}
-                                        width={600}
-                                        className="mx-auto h-10 w-10 rounded-full"
-                                    />
-                                ) : <UserIcon className="mx-auto h-10 w-10 rounded-full" />}
-                                <div className="mt-4 flex items-center justify-center space-x-3 text-base">
-                                    <div className="font-semibold">{testimonials[testimonialIndex].name}</div>
-                                    <svg viewBox="0 0 2 2" width="3" height="3" aria-hidden="true" className="fill-gray-900">
-                                    <circle cx="1" cy="1" r="1" />
-                                    </svg>
-                                    <div className="text-gray-600">{testimonials[testimonialIndex].designation}</div>
+                <div className="overflow-hidden bg-gray-800 dark:bg-neutral-950">
+                    <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-7">
+                        {testimonials.map((testimonial, index) => (
+                            <div className="flex h-auto" key={index}>
+                                <div className="flex flex-col bg-white rounded-xl dark:bg-neutral-900">
+                                    <div className="flex-auto p-4 md:p-6">
+                                        {testimonial.companyLogoUrl && (
+                                            <div className="flex-shrink-0">
+                                                <img className="size-8 sm:h-[2.875rem] sm:w-[2.875rem] rounded-full" src={testimonial.companyLogoUrl} alt="Image Description" />
+                                            </div>
+                                        )}
+                                        <p className="text-base italic md:text-lg text-gray-800 dark:text-neutral-200">
+                                            " {testimonial.content} "
+                                        </p>
+                                    </div>
+
+                                    <div className="p-4 bg-gray-100 rounded-b-xl md:px-7 dark:bg-neutral-800">
+                                        <div className="flex items-center">
+                                            {testimonial.avatarUrl && (
+                                                <div className="flex-shrink-0">
+                                                    <img className="size-8 sm:h-[2.875rem] sm:w-[2.875rem] rounded-full" src={testimonial.avatarUrl} alt="Image Description" />
+                                                </div>
+                                            )}
+
+                                            <div className="grow ms-3">
+                                                <p className="text-sm sm:text-base font-semibold text-gray-800 dark:text-neutral-200">
+                                                    {testimonial.name}
+                                                </p>
+                                                <p className="text-xs text-gray-500 dark:text-neutral-400">
+                                                    {testimonial.designation}
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                            </figcaption>
-                        </figure>
-                    </div>
-                    <div className='mt-4 md:mt-6 w-full text-center'>
-                        <div onClick={switchTestimonialIndex} className="hover:text-blue-600 underline cursor-pointer">view next.</div>
+                            </div>
+                        ))}
                     </div>
                 </div>
             </section>

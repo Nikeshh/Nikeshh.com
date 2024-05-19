@@ -1,23 +1,23 @@
 "use client"
 
-import CustomModal from '@/components/global/custom-modal';
 import { Badge } from '@/components/ui/badge';
-import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
-import { useModal } from '@/providers/modal-provider';
+import { cn } from '@/lib/utils';
 import Link from 'next/link';
 import React, { useState } from 'react'
 
 type Props = {
     projects: {
-        id: string;
         name: string;
         subtitle: string;
         category: string;
-    }[]
+        link: string;
+        imageUrl: string;
+        tags: Array<string>;
+    }[],
+    inlineElement: boolean
 }
 
-const Projects = ({ projects } : Props) => {
-    const { setOpen } = useModal();
+const Projects = ({ projects, inlineElement } : Props) => {
 
     // Projects
     const projectTags = projects.map(item => item.category).filter((value, index, self) => self.indexOf(value) === index);
@@ -30,7 +30,12 @@ const Projects = ({ projects } : Props) => {
 
     if (projects && projects.length > 0 && projectTags) {
         return (
-            <section id="projects" className="container pt-12 md:pt-44 relative flex flex-col items-center justify-center">
+            <section id="projects" className={
+                cn(
+                    "container relative flex flex-col items-center justify-center",
+                    inlineElement ? "pt-12 md:pt-44" : "py-12"
+                )
+            }>
                 <p>BUILT FOR IMPACT</p>
                 <div className="bg-gradient-to-r from-primary to-secondary-foreground text-transparent bg-clip-text relative">
                     <h2 className="font-bold text-xl md:text-[40px] md:leading-none text-center">
@@ -53,25 +58,35 @@ const Projects = ({ projects } : Props) => {
                         );
                     })}
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-5 pt-9">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-x-7 gap-y-12 pt-9">
                     {selectedProjects.map((a, index) => {
                         return (
-                            <Card key={index}>
-                                <CardHeader>
-                                    <CardTitle>{a.name}</CardTitle>
-                                </CardHeader>
-                                <CardContent className="grid gap-4">
-                                    <p>{a.subtitle}</p>
-                                </CardContent>
-                                <CardFooter>
-                                    <Link className="hover:text-blue-600 underline cursor-pointer" href={`/projects/${a.name.toLowerCase().replace(/ /g, '-').replace(/\//g, '').replace(/\(/g, '').replace(/\)/g, '')}`}>explore more.</Link>
-                                </CardFooter>
-                            </Card>
+                            <Link href={`/projects/${a.name.toLowerCase().replace(/ /g, '-').replace(/\//g, '').replace(/\(/g, '').replace(/\)/g, '')}`} key={index} className="group block cursor-pointer">
+                                <div className="aspect-w-16 aspect-h-12 overflow-hidden bg-gray-100 rounded-2xl dark:bg-neutral-800">
+                                    <img className="group-hover:scale-105 transition-transform duration-500 ease-in-out object-cover rounded-2xl" src={a.imageUrl} alt="Image Description" />
+                                </div>
+
+                                <div className="pt-4">
+                                <Link href={`/projects/${a.name.toLowerCase().replace(/ /g, '-').replace(/\//g, '').replace(/\(/g, '').replace(/\)/g, '')}`}>
+                                    <h3 className="relative inline-block font-medium text-lg text-black before:absolute before:bottom-0.5 before:start-0 before:-z-[1] before:w-full before:h-1 before:bg-blue-400 before:transition before:origin-left before:scale-x-0 group-hover:before:scale-x-100 dark:text-white">
+                                        {a.name}
+                                    </h3>
+                                </Link>
+                                <p className="mt-1 text-gray-600 dark:text-neutral-400">
+                                    {a.subtitle}
+                                </p>
+
+                                <div className="mt-3 flex flex-wrap gap-2">
+                                    {a.tags.map((tag) => (
+                                        <span className="py-1.5 px-3 bg-white text-gray-600 border border-gray-200 text-xs sm:text-sm rounded-xl dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400">
+                                            {tag}
+                                        </span>
+                                    ))}
+                                </div>
+                                </div>
+                            </Link>
                         );
                     })}
-                </div>
-                <div className='mt-4 md:mt-6 w-full text-center'>
-                    <Link className="hover:text-blue-600 underline cursor-pointer" href="/projects">view more.</Link>
                 </div>
             </section>
         );

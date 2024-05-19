@@ -27,7 +27,7 @@ const Navigation = () => {
             <nav className="hidden md:block absolute left-[50%] top-[50%] transform translate-x-[-50%] translate-y-[-50%]">
                 <ul className="flex items-center justify-center gap-8">
                     <Link href={'/'} className="hover:text-blue-600">Home</Link>
-                    <Link href={'/skills'} className="hover:text-blue-600">Skills</Link>
+                    <Link href={'/skills'} className="hover:text-blue-600">Skills & Services</Link>
                     <Link href={'/projects'} className="hover:text-blue-600">Projects</Link>
                     <Link href={'/about'} className="hover:text-blue-600">About Me</Link>
                 </ul>

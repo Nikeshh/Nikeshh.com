@@ -71,7 +71,7 @@ const Newsletters = () => {
     }
 
     return (
-        <section id="newsletters" className="container pt-12 md:pt-16 relative flex flex-col items-center justify-center">
+        <section id="newsletters" className="container pt-12 md:pt-44 relative flex flex-col items-center justify-center">
             <p>NEWSLETTER</p>
             <div className="bg-gradient-to-r from-primary to-secondary-foreground text-transparent bg-clip-text relative">
                 <h2 className="font-bold text-xl md:text-[40px] md:leading-none text-center">

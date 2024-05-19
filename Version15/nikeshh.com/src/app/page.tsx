@@ -13,14 +13,15 @@ import Newsletters from './_components/newsletters';
 import Contact from './_components/contact';
 import Educations from './_components/educations';
 import Globe from '@/components/magicui/globe';
-import Meteors from '@/components/magicui/meteors';
 import { ArrowRightIcon } from "@radix-ui/react-icons";
 import Certification from './_components/certification';
-import Honor from './_components/honor';
-import Volunteer from './_components/volunteer';
 import Newsletter from './_components/newsletter';
 import StarGrid from '@/components/StarGrid';
 import ExpertJourneys from './_components/expert-journeys';
+import FAQ from './_components/faq';
+import HonorsAndAwards from './_components/honors-and-awards';
+import Volunteering from './_components/volunteering';
+import TopSkills from './_components/top-skills';
 
 const Home = async () => {
   const testimonials = await getTestimonials();
@@ -92,28 +93,6 @@ const Home = async () => {
           <div className="bottom-0 top-[50%] bg-gradient-to-t dark:from-background left-0 right-0 absolute z-10"></div>
         </div>
       </section>    
-      <Newsletter />
-      <section id="nikeshhcodes" className="container py-4 relative pt-12 md:pt-44 flex flex-col items-center justify-center">
-        <div className="w-full p-4 text-center bg-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700">
-          <h5 className="mb-2 text-3xl font-bold text-gray-900 dark:text-white">Want to learn programming?</h5>
-          <p>Stay up to date with NikeshhCodes.com</p>
-          <div className="items-center justify-center space-y-4 sm:flex sm:space-y-0 sm:space-x-4 rtl:space-x-reverse">
-            <a href="https://nikeshhcodes.com" target='_blank' className="w-full sm:w-auto bg-gray-800 hover:bg-gray-700 focus:ring-4 focus:outline-none focus:ring-gray-300 text-white rounded-lg inline-flex items-center justify-center px-4 py-2.5 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700 mt-2">
-              <div className="text-left rtl:text-right">
-                <div className="mb-1 text-xs">View NikeshhCodes.com</div>
-                <div className="-mt-1 font-sans text-sm font-semibold">(Site under construction)</div>
-              </div>
-            </a>
-          </div>
-        </div>
-        <Link href="/built-in-public">
-            <span className="relative cursor-pointer">
-              <span className="flex items-center">
-                <span className="mt-3 inline-block whitespace-nowrap rounded-full bg-neutral-800 px-2.5 py-1 text-[11px] font-semibold uppercase leading-5 tracking-wide text-white">Explore other built in public projects!</span>
-              </span>
-            </span>
-          </Link>
-      </section>
       <section id="worked-with" className="container pt-12 md:pt-44 relative flex flex-col items-center justify-center">
         <p>WORKED WITH</p>
         <div className="bg-gradient-to-r from-primary to-secondary-foreground text-transparent bg-clip-text relative">
@@ -210,95 +189,130 @@ const Home = async () => {
             />
             <span>Freelancer</span>
           </Link>
+          <Link
+            href="https://superchargewithsuzan.com/"
+            target='_blank'
+            className='cursor-pointer flex flex-col items-center'
+          >
+            <Image
+              src={'/assets/clients/suzan-peltekian.png'}
+              alt="client image"
+              height={240}
+              width={240}
+              className="rounded-tl-2xl rounded-tr-2xl border-2 border-muted"
+            />
+            <span>Freelancer</span>
+          </Link>
         </div>
       </section>
-      <section id="top-skills" aria-label="Top skills of Nikeshh Vijayabaskaran" className="pb-14 pt-20 sm:pb-20 sm:pt-32 lg:pb-32">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="mx-auto max-w-2xl md:text-center flex flex-col items-center">
-            <h2 className="font-display text-3xl tracking-tight dark:text-white text-slate-900 sm:text-4xl">Top Skills 💎</h2>
-            <p className="mt-4 text-lg tracking-tight dark:text-gray-400 text-slate-700">I specialize in making digital stuff awesome! From designing <span className='underline text-purple-600'>user-friendly interfaces</span> to developing <span className='underline text-purple-600'>cool apps</span>, sprinkled with some <span className='underline text-purple-600'>AI magic</span>, and <span className='underline text-purple-600'>managing projects</span> like a pro. Let&apos;s work together to make your projects shine ✨.</p>
-          </div>
-          <div className="-mx-4 mt-20 flex flex-col gap-y-10 overflow-hidden px-4 sm:-mx-6 sm:px-6">
-            <div className="relative flex h-full w-full items-center justify-center overflow-hidden rounded-lg border hover:dark:border-white bg-background p-10 lg:p-20 md:shadow-xl">
-              <Meteors number={30} />
-              <div>
-                <p className="z-10 whitespace-pre-wrap text-center text-2xl font-medium tracking-tighter text-black dark:text-white underline">
-                  Full Stack App Development
-                </p>
-                <p className="mt-2 font-display text-xl dark:text-gray-300 text-slate-900">I love creating cool stuff online, <span className='italic text-purple-600'>making it look great and easy to use,</span> and managing the whole process smoothly.</p>
-                <div className="flex justify-center">
-                  <Button variant="ghost" asChild size="sm" className="mt-2 pointer-events-auto">
-                    <a href="/pages/full-stack-development">
-                      Learn More
-                      <ArrowRightIcon className="ml-2 h-4 w-4" />
-                    </a>
-                  </Button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="-mx-4 mt-20 flex flex-col gap-y-10 overflow-hidden px-4 sm:-mx-6 sm:px-6">
-            <div className="relative flex h-full w-full items-center justify-center overflow-hidden rounded-lg border hover:dark:border-white bg-background p-10 lg:p-20 md:shadow-xl">
-              <Meteors number={30} />
-              <div>
-                <p className="z-10 whitespace-pre-wrap text-center text-2xl font-medium tracking-tighter text-black dark:text-white underline">
-                  Building Apps from Start to Finish
-                </p>
-                <p className="mt-2 font-display text-xl dark:text-gray-300 text-slate-900">I can create apps that work from the <span className='italic text-purple-600'>front (what you see) to the back (where the data is stored).</span> I use languages like JavaScript and Python, along with frameworks like React and Node.js, to make your ideas into real digital things.</p>
-                <div className="flex justify-center">
-                  <Button variant="ghost" asChild size="sm" className="mt-2 pointer-events-auto">
-                    <a href="/pages/building-apps-from-start-to-finish">
-                      Learn More
-                      <ArrowRightIcon className="ml-2 h-4 w-4" />
-                    </a>
-                  </Button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="-mx-4 mt-20 flex flex-col gap-y-10 overflow-hidden px-4 sm:-mx-6 sm:px-6">
-            <div className="relative flex h-full w-full items-center justify-center overflow-hidden rounded-lg border hover:dark:border-white bg-background p-10 lg:p-20 md:shadow-xl">
-              <Meteors number={30} />
-              <div>
-                <p className="z-10 whitespace-pre-wrap text-center text-2xl font-medium tracking-tighter text-black dark:text-white underline">
-                  Getting Your Brand Noticed Online
-                </p>
-                <p className="mt-2 font-display text-xl dark:text-gray-300 text-slate-900"><span className='italic text-purple-600'>I help businesses stand out on the internet.</span> I use tricks like making sure they show up in search engines, running ads on social media, and using tools like Google Analytics to see what&apos;s working.</p>
-                <div className="flex justify-center">
-                  <Button variant="ghost" asChild size="sm" className="mt-2 pointer-events-auto">
-                    <a href="/pages/getting-your-brand-noticed-online">
-                      Learn More
-                      <ArrowRightIcon className="ml-2 h-4 w-4" />
-                    </a>
-                  </Button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="-mx-4 mt-20 flex flex-col gap-y-10 overflow-hidden px-4 sm:-mx-6 sm:px-6">
-            <div className="relative flex h-full w-full items-center justify-center overflow-hidden rounded-lg border hover:dark:border-white bg-background p-10 lg:p-20 md:shadow-xl">
-              <Meteors number={30} />
-              <div>
-                <p className="z-10 whitespace-pre-wrap text-center text-2xl font-medium tracking-tighter text-black dark:text-white underline">
-                  Keeping Projects on Track
-                </p>
-                <p className="mt-2 font-display text-xl dark:text-gray-300 text-slate-900">When it comes to getting stuff done, I&apos;m your person. I use methods like Agile (which is just a smart way to manage projects) and tools like Trello and Jira to <span className='italic text-purple-600'>keep everything organized and moving forward.</span></p>
-                <div className="flex justify-center">
-                  <Button variant="ghost" asChild size="sm" className="mt-2 pointer-events-auto">
-                    <a href="/pages/keeping-projects-on-track">
-                      Learn More
-                      <ArrowRightIcon className="ml-2 h-4 w-4" />
-                    </a>
-                  </Button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <Skills skills={skills} />
-      {/* <ExpertJourneys /> */}
       <Educations />
+      <TopSkills />
+      <Skills skills={skills} inlineElement={true} />
+      <Projects projects={projects} inlineElement={true} />
+      <section className="bg-neutral-900 mt-12 md:mt-44">
+        <div className="max-w-5xl px-4 xl:px-0 py-10 mx-auto">
+          <div className="border border-neutral-800 rounded-xl">
+            <div className="p-4 lg:p-8 bg-gradient-to-bl from-neutral-800 via-neutral-900 to-neutral-950 rounded-xl">
+              <div className="grid grid-cols-1 sm:grid-cols-3 items-center gap-y-20 gap-x-12">
+                <div className="relative text-center first:before:hidden before:absolute before:-top-full sm:before:top-1/2 before:start-1/2 sm:before:-start-6 before:w-px before:h-20 before:bg-neutral-800 before:rotate-[60deg] sm:before:rotate-12 before:transform sm:before:-translate-y-1/2 before:-translate-x-1/2 sm:before:-translate-x-0 before:mt-3.5 sm:before:mt-0">
+                  <svg className="flex-shrink-0 size-6 sm:size-8 text-[#ff0] mx-auto" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m11 17 2 2a1 1 0 1 0 3-3"/><path d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4"/><path d="m21 3 1 11h-2"/><path d="M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3"/><path d="M3 4h8"/></svg>
+                  <div className="mt-3 sm:mt-5">
+                    <h3 className="text-lg sm:text-3xl font-semibold text-white">50+</h3>
+                    <p className="mt-1 text-sm sm:text-base text-neutral-400">Number of Projects Delivered</p>
+                  </div>
+                </div>
+
+                <div className="relative text-center first:before:hidden before:absolute before:-top-full sm:before:top-1/2 before:start-1/2 sm:before:-start-6 before:w-px before:h-20 before:bg-neutral-800 before:rotate-[60deg] sm:before:rotate-12 before:transform sm:before:-translate-y-1/2 before:-translate-x-1/2 sm:before:-translate-x-0 before:mt-3.5 sm:before:mt-0">
+                  <div className="flex justify-center items-center -space-x-5">
+                    <img className="relative z-[2] flex-shrink-0 size-8 rounded-full border-[3px] border-neutral-800" src="https://images.unsplash.com/photo-1601935111741-ae98b2b230b0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Image Description" />
+                    <img className="relative z-[1] flex-shrink-0 size-8 rounded-full border-[3px] border-neutral-800 -mt-7" src="https://images.unsplash.com/photo-1570654639102-bdd95efeca7a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Image Description" />
+                    <img className="relative flex-shrink-0 size-8 rounded-full border-[3px] border-neutral-800" src="https://images.unsplash.com/photo-1679412330254-90cb240038c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2.5&w=320&h=320&q=80" alt="Image Description" />
+                  </div>
+                  <div className="mt-3 sm:mt-5">
+                    <h3 className="text-lg sm:text-3xl font-semibold text-white">99%</h3>
+                    <p className="mt-1 text-sm sm:text-base text-neutral-400">Client Satisfaction Rate</p>
+                  </div>
+                </div>
+
+                <div className="relative text-center first:before:hidden before:absolute before:-top-full sm:before:top-1/2 before:start-1/2 sm:before:-start-6 before:w-px before:h-20 before:bg-neutral-800 before:rotate-[60deg] sm:before:rotate-12 before:transform sm:before:-translate-y-1/2 before:-translate-x-1/2 sm:before:-translate-x-0 before:mt-3.5 sm:before:mt-0">
+                  <svg className="flex-shrink-0 size-6 sm:size-8 text-[#ff0] mx-auto" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 15h2a2 2 0 1 0 0-4h-3c-.6 0-1.1.2-1.4.6L3 17"/><path d="m7 21 1.6-1.4c.3-.4.8-.6 1.4-.6h4c1.1 0 2.1-.4 2.8-1.2l4.6-4.4a2 2 0 0 0-2.75-2.91l-4.2 3.9"/><path d="m2 16 6 6"/><circle cx="16" cy="9" r="2.9"/><circle cx="6" cy="5" r="3"/></svg>
+                  <div className="mt-3 sm:mt-5">
+                    <h3 className="text-lg sm:text-3xl font-semibold text-white">500+</h3>
+                    <p className="mt-1 text-sm sm:text-base text-neutral-400">Automation Scripts Written</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="border border-neutral-800 rounded-xl mt-4">
+            <div className="p-4 lg:p-8 bg-gradient-to-bl from-neutral-800 via-neutral-900 to-neutral-950 rounded-xl">
+              <div className="grid grid-cols-1 sm:grid-cols-3 items-center gap-y-20 gap-x-12">
+                <div className="relative text-center first:before:hidden before:absolute before:-top-full sm:before:top-1/2 before:start-1/2 sm:before:-start-6 before:w-px before:h-20 before:bg-neutral-800 before:rotate-[60deg] sm:before:rotate-12 before:transform sm:before:-translate-y-1/2 before:-translate-x-1/2 sm:before:-translate-x-0 before:mt-3.5 sm:before:mt-0">
+                  <svg className="flex-shrink-0 size-6 sm:size-8 text-[#ff0] mx-auto" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m11 17 2 2a1 1 0 1 0 3-3"/><path d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4"/><path d="m21 3 1 11h-2"/><path d="M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3"/><path d="M3 4h8"/></svg>
+                  <div className="mt-3 sm:mt-5">
+                    <h3 className="text-lg sm:text-3xl font-semibold text-white">10+</h3>
+                    <p className="mt-1 text-sm sm:text-base text-neutral-400">Years of Experience</p>
+                  </div>
+                </div>
+
+                <div className="relative text-center first:before:hidden before:absolute before:-top-full sm:before:top-1/2 before:start-1/2 sm:before:-start-6 before:w-px before:h-20 before:bg-neutral-800 before:rotate-[60deg] sm:before:rotate-12 before:transform sm:before:-translate-y-1/2 before:-translate-x-1/2 sm:before:-translate-x-0 before:mt-3.5 sm:before:mt-0">
+                  <div className="flex justify-center items-center -space-x-5">
+                    <img className="relative z-[2] flex-shrink-0 size-8 rounded-full border-[3px] border-neutral-800" src="https://images.unsplash.com/photo-1601935111741-ae98b2b230b0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Image Description" />
+                    <img className="relative z-[1] flex-shrink-0 size-8 rounded-full border-[3px] border-neutral-800 -mt-7" src="https://images.unsplash.com/photo-1570654639102-bdd95efeca7a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Image Description" />
+                    <img className="relative flex-shrink-0 size-8 rounded-full border-[3px] border-neutral-800" src="https://images.unsplash.com/photo-1679412330254-90cb240038c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2.5&w=320&h=320&q=80" alt="Image Description" />
+                  </div>
+                  <div className="mt-3 sm:mt-5">
+                    <h3 className="text-lg sm:text-3xl font-semibold text-white">99%</h3>
+                    <p className="mt-1 text-sm sm:text-base text-neutral-400">Project Success Rate</p>
+                  </div>
+                </div>
+
+                <div className="relative text-center first:before:hidden before:absolute before:-top-full sm:before:top-1/2 before:start-1/2 sm:before:-start-6 before:w-px before:h-20 before:bg-neutral-800 before:rotate-[60deg] sm:before:rotate-12 before:transform sm:before:-translate-y-1/2 before:-translate-x-1/2 sm:before:-translate-x-0 before:mt-3.5 sm:before:mt-0">
+                  <svg className="flex-shrink-0 size-6 sm:size-8 text-[#ff0] mx-auto" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 15h2a2 2 0 1 0 0-4h-3c-.6 0-1.1.2-1.4.6L3 17"/><path d="m7 21 1.6-1.4c.3-.4.8-.6 1.4-.6h4c1.1 0 2.1-.4 2.8-1.2l4.6-4.4a2 2 0 0 0-2.75-2.91l-4.2 3.9"/><path d="m2 16 6 6"/><circle cx="16" cy="9" r="2.9"/><circle cx="6" cy="5" r="3"/></svg>
+                  <div className="mt-3 sm:mt-5">
+                    <h3 className="text-lg sm:text-3xl font-semibold text-white">1,000,000+</h3>
+                    <p className="mt-1 text-sm sm:text-base text-neutral-400">Lines of Code Written</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="border border-neutral-800 rounded-xl mt-4">
+            <div className="p-4 lg:p-8 bg-gradient-to-bl from-neutral-800 via-neutral-900 to-neutral-950 rounded-xl">
+              <div className="grid grid-cols-1 sm:grid-cols-3 items-center gap-y-20 gap-x-12">
+                <div className="relative text-center first:before:hidden before:absolute before:-top-full sm:before:top-1/2 before:start-1/2 sm:before:-start-6 before:w-px before:h-20 before:bg-neutral-800 before:rotate-[60deg] sm:before:rotate-12 before:transform sm:before:-translate-y-1/2 before:-translate-x-1/2 sm:before:-translate-x-0 before:mt-3.5 sm:before:mt-0">
+                  <svg className="flex-shrink-0 size-6 sm:size-8 text-[#ff0] mx-auto" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m11 17 2 2a1 1 0 1 0 3-3"/><path d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4"/><path d="m21 3 1 11h-2"/><path d="M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3"/><path d="M3 4h8"/></svg>
+                  <div className="mt-3 sm:mt-5">
+                    <h3 className="text-lg sm:text-3xl font-semibold text-white">25+ Technologies</h3>
+                    <p className="mt-1 text-sm sm:text-base text-neutral-400">Tech Stack Proficiency</p>
+                  </div>
+                </div>
+
+                <div className="relative text-center first:before:hidden before:absolute before:-top-full sm:before:top-1/2 before:start-1/2 sm:before:-start-6 before:w-px before:h-20 before:bg-neutral-800 before:rotate-[60deg] sm:before:rotate-12 before:transform sm:before:-translate-y-1/2 before:-translate-x-1/2 sm:before:-translate-x-0 before:mt-3.5 sm:before:mt-0">
+                  <div className="flex justify-center items-center -space-x-5">
+                    <img className="relative z-[2] flex-shrink-0 size-8 rounded-full border-[3px] border-neutral-800" src="https://images.unsplash.com/photo-1601935111741-ae98b2b230b0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Image Description" />
+                    <img className="relative z-[1] flex-shrink-0 size-8 rounded-full border-[3px] border-neutral-800 -mt-7" src="https://images.unsplash.com/photo-1570654639102-bdd95efeca7a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Image Description" />
+                    <img className="relative flex-shrink-0 size-8 rounded-full border-[3px] border-neutral-800" src="https://images.unsplash.com/photo-1679412330254-90cb240038c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2.5&w=320&h=320&q=80" alt="Image Description" />
+                  </div>
+                  <div className="mt-3 sm:mt-5">
+                    <h3 className="text-lg sm:text-3xl font-semibold text-white">$5M+</h3>
+                    <p className="mt-1 text-sm sm:text-base text-neutral-400">Leads to conversion revenue</p>
+                  </div>
+                </div>
+
+                <div className="relative text-center first:before:hidden before:absolute before:-top-full sm:before:top-1/2 before:start-1/2 sm:before:-start-6 before:w-px before:h-20 before:bg-neutral-800 before:rotate-[60deg] sm:before:rotate-12 before:transform sm:before:-translate-y-1/2 before:-translate-x-1/2 sm:before:-translate-x-0 before:mt-3.5 sm:before:mt-0">
+                  <svg className="flex-shrink-0 size-6 sm:size-8 text-[#ff0] mx-auto" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 15h2a2 2 0 1 0 0-4h-3c-.6 0-1.1.2-1.4.6L3 17"/><path d="m7 21 1.6-1.4c.3-.4.8-.6 1.4-.6h4c1.1 0 2.1-.4 2.8-1.2l4.6-4.4a2 2 0 0 0-2.75-2.91l-4.2 3.9"/><path d="m2 16 6 6"/><circle cx="16" cy="9" r="2.9"/><circle cx="6" cy="5" r="3"/></svg>
+                  <div className="mt-3 sm:mt-5">
+                    <h3 className="text-lg sm:text-3xl font-semibold text-white">99.9%</h3>
+                    <p className="mt-1 text-sm sm:text-base text-neutral-400">Uptime for Deployed Services</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* <ExpertJourneys /> */}
       <section id="certifications" className="container pt-12 md:pt-44 relative flex flex-col items-center justify-center">
         <p>CERTIFIED TRIUMPHS</p>
         <div className="bg-gradient-to-r from-primary to-secondary-foreground text-transparent bg-clip-text relative">
@@ -306,146 +320,88 @@ const Home = async () => {
                 CERTIFICATIONS
             </h2>
         </div>
-        <div className="mt-14 flex flex-wrap gap-2 gap-y-12 justify-center">
-          <Certification
-            headline='Issued: Nov 2021'
-            title='Google Data Analytics Professional Certificate'
-            id='KAR7PTDN2R3U'
-            link='https://www.credly.com/badges/39aaaa1e-6676-4854-b8e6-1fe8aab100c0/linked_in_profile'
-            badges={["Google", "Data Analytics"]}
-          />
-          <Certification
-            headline='Issued: Nov 2021'
-            title='Google Project Management: Professional Certificate'
-            id='KDQVVYVXGU3Z'
-            link='https://www.credly.com/badges/adc3e6e6-4072-4154-92a8-777c1abc2dc4/linked_in_profile'
-            badges={["Google", "Project Management"]}
-          />
-          <Certification
-            headline='Issued: July 2022'
-            title='NLP with Python for Machine Learning Essential Training'
-            id='AeihXv3ISiAX1xnxqu9pX5w01VId'
-            link='https://www.linkedin.com/learning/certificates/1ca1142a98bbc60dd891517f1735fa967f07bb2984ca4266a8ace8aafa6b3804'
-            badges={["LinkedIn", "NLP"]}
-          />
-          <Certification
-            headline='Issued: July 2022'
-            title='Python for Data Science Essential Training'
-            id=''
-            link='https://www.linkedin.com/learning/certificates/b67f2e1c32a250c525e858f6a805c92e2326cd82095ebb409f6d1e60235c0068'
-            badges={["LinkedIn", "Python", "Data Science"]}
-          />
-          <Certification
-            headline='Issued: July 2022'
-            title='SQL for Statistics Essential Training'
-            id=''
-            link='https://www.linkedin.com/learning/certificates/6737152efdc0bd69af83ffb125b9e38b689f23292cfca6888f1a174b9afd63c4'
-            badges={["LinkedIn", "SQL", "Statistics"]}
-          />
-          <Certification
-            headline='Issued: June 2018'
-            title='Artificial Intelligence A-Z™: Learn How To Build An AI'
-            id=''
-            link='https://www.udemy.com/certificate/UC-H95OPLWW/'
-            badges={["AI"]}
-          />
+        <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+          <div className="grid lg:grid-cols-2 lg:gap-y-16 gap-10">
+            <Certification
+              headline='Issued: Nov 2021'
+              title='Google Data Analytics Professional Certificate'
+              id='KAR7PTDN2R3U'
+              link='https://www.credly.com/badges/39aaaa1e-6676-4854-b8e6-1fe8aab100c0/linked_in_profile'
+              badges={["Google", "Data Analytics"]}
+              imageUrl='/google_logo.jpg'
+            />
+            <Certification
+              headline='Issued: Nov 2021'
+              title='Google Project Management: Professional Certificate'
+              id='KDQVVYVXGU3Z'
+              link='https://www.credly.com/badges/adc3e6e6-4072-4154-92a8-777c1abc2dc4/linked_in_profile'
+              badges={["Google", "Project Management"]}
+              imageUrl='/google_logo.jpg'
+            />
+            <Certification
+              headline='Issued: July 2022'
+              title='NLP with Python for Machine Learning Essential Training'
+              id='AeihXv3ISiAX1xnxqu9pX5w01VId'
+              link='https://www.linkedin.com/learning/certificates/1ca1142a98bbc60dd891517f1735fa967f07bb2984ca4266a8ace8aafa6b3804'
+              badges={["LinkedIn", "NLP"]}
+              imageUrl='/linkedin_logo.jpeg'
+            />
+            <Certification
+              headline='Issued: July 2022'
+              title='Python for Data Science Essential Training'
+              id=''
+              link='https://www.linkedin.com/learning/certificates/b67f2e1c32a250c525e858f6a805c92e2326cd82095ebb409f6d1e60235c0068'
+              badges={["LinkedIn", "Python", "Data Science"]}
+              imageUrl='/linkedin_logo.jpeg'
+            />
+            <Certification
+              headline='Issued: July 2022'
+              title='SQL for Statistics Essential Training'
+              id=''
+              link='https://www.linkedin.com/learning/certificates/6737152efdc0bd69af83ffb125b9e38b689f23292cfca6888f1a174b9afd63c4'
+              badges={["LinkedIn", "SQL", "Statistics"]}
+              imageUrl='/linkedin_logo.jpeg'
+            />
+            <Certification
+              headline='Issued: June 2018'
+              title='Artificial Intelligence A-Z™: Learn How To Build An AI'
+              id=''
+              link='https://www.udemy.com/certificate/UC-H95OPLWW/'
+              badges={["AI"]}
+              imageUrl='/udemy_logo.jpg'
+            />
+          </div>
         </div>
       </section>
-      <section id="honors-and-awards" className="container pt-12 md:pt-44 relative flex flex-col items-center justify-center">
-        <p>GLORY TROPHIES</p>
-        <div className="bg-gradient-to-r from-primary to-secondary-foreground text-transparent bg-clip-text relative">
-            <h2 className="font-bold text-xl md:text-[40px] md:leading-none text-center">
-                HONORS AND AWARDS
-            </h2>
-        </div>
-        <div className="mt-14 flex flex-wrap gap-2 gap-y-12 justify-center">
-          <Honor
-            title='TCS Enginx - Top 100'
-            description='Got selected in TCS Enginx - Top 100 (June 2018)'
-            badges={["TCS", "Hackathon"]}
-          />
-          <Honor
-            title='Salesforce Trailhead'
-            description='University Topper (Rank:Ranger) (June 2018)'
-            badges={["Salesforce", "University Topper"]}
-          />
-          <Honor
-            title='Proficiency award'
-            description='1st Rank holder ( 2017 ) - Department of Computer Science and Engineering (June 2017)'
-            badges={["PSG iTech", "University Topper"]}
-          />
-          <Honor
-            title='Proficiency award'
-            description='1st Rank holder ( 2018 ) - Department of Computer Science and Engineering (June 2018)'
-            badges={["PSG iTech", "University Topper"]}
-          />
-          <Honor
-            title='Proficiency award'
-            description='1st Rank holder ( 2019 ) - Department of Computer Science and Engineering (June 2019)'
-            badges={["PSG iTech", "University Topper"]}
-          />
-          <Honor
-            title='Proficiency award'
-            description='3rd Rank holder ( 2015-2019 ) - Department of Computer Science and Engineering (June 2019)'
-            badges={["PSG iTech", "University Topper"]}
-          />
-        </div>
-      </section>
-      <Projects projects={projects} />
-      <section id="volunteering" className="container pt-12 md:pt-44 relative flex flex-col items-center justify-center">
-        <p>HEART WORK</p>
-        <div className="bg-gradient-to-r from-primary to-secondary-foreground text-transparent bg-clip-text relative">
-            <h2 className="font-bold text-xl md:text-[40px] md:leading-none text-center">
-              VOLUNTEERING
-            </h2>
-        </div>
-        <div className="mt-14 flex flex-wrap gap-2 gap-y-12 justify-center">
-          <Volunteer
-            title='President, Indian Society Of Technical Education'
-            description='INDIAN SOCIETY OF TECHNICAL EDUCATION-SNIST - (Jun 2016 - Jun 2019)'
-            badges={["SNIST", "President"]}
-          />
-          <Volunteer
-            title='President, Coding Club'
-            description='PSG Institute Of Technology and Applied Research - (Jun 2016 - Jun 2019)'
-            badges={["President", "PSG iTech", "Coding Club"]}
-          />
-          <Volunteer
-            title='Education and Technical Mentor'
-            description='Mentored SRM students and was involved in designing and developing Australian based educational platform - (July 2021 - April 2022)'
-            badges={["Mentor", "SRM University"]}
-          />
-          <Volunteer
-            title='Chief Designer and Coordinator'
-            description='Tarangini - Intra college magazine - (June 2016 - June 2018)'
-            badges={["PSG iTech", "Magazine"]}
-          />
-          <Volunteer
-            title='IV coordinator'
-            description='Companies: 24/7[ai] and SAP Solutions Pvt Ltd - Bangalore - (June 2015 - October 2017)'
-            badges={["PSG iTech", "Coordinator", "24/7[ai]", "SAP"]}
-          />
-          <Volunteer
-            title='Student Partner'
-            description='Internshala - (June 2017 - December 2018)'
-            badges={["Coordinator"]}
-          />
-          <Volunteer
-            title='Academic Tutor - Android Development'
-            description='Yuktaha, PSG iTech - Conducted a workshop on Android Development during Yuktaha&apos;17 - (June 2018 - June 2018)'
-            badges={["Yuktaha", "Tutor"]}
-          />
-          <Volunteer
-            title='President, Designer, Organiser'
-            description='Institute of Engineers NSS (June 2016 - September 2019)'
-            badges={["Civil Rights and Social Action"]}
-          />
-        </div>
-      </section>
+      {/*<HonorsAndAwards />*/}
+      {/*<Volunteering />*/}
       <Testimonials testimonials={testimonials} />
-      <Newsletters />
-      <Blogs blogs={blogs.slice(0, 3)} />
+      {/*<FAQ />*/}
       <Contact />
+      <Newsletter />
+      {/*<Newsletters />*/}
+      <Blogs blogs={blogs.slice(0, 3)} />
+      <section id="nikeshhcodes" className="container py-4 relative pt-12 md:pt-44 flex flex-col items-center justify-center">
+        <div className="w-full p-4 text-center bg-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700">
+          <h5 className="mb-2 text-3xl font-bold text-gray-900 dark:text-white">Want to learn programming?</h5>
+          <p>Stay up to date with NikeshhCodes.com</p>
+          <div className="items-center justify-center space-y-4 sm:flex sm:space-y-0 sm:space-x-4 rtl:space-x-reverse">
+            <a href="https://nikeshhcodes.com" target='_blank' className="w-full sm:w-auto bg-gray-800 hover:bg-gray-700 focus:ring-4 focus:outline-none focus:ring-gray-300 text-white rounded-lg inline-flex items-center justify-center px-4 py-2.5 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700 mt-2">
+              <div className="text-left rtl:text-right">
+                <div className="mb-1 text-xs">View NikeshhCodes.com</div>
+                <div className="-mt-1 font-sans text-sm font-semibold">(Site under construction)</div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <Link href="/built-in-public">
+            <span className="relative cursor-pointer">
+              <span className="flex items-center">
+                <span className="mt-3 inline-block whitespace-nowrap rounded-full bg-neutral-800 px-2.5 py-1 text-[11px] font-semibold uppercase leading-5 tracking-wide text-white">Explore other built in public projects!</span>
+              </span>
+            </span>
+          </Link>
+      </section>
       <Footer />
     </>
   );

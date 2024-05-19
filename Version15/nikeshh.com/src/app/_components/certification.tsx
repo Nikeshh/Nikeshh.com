@@ -5,47 +5,44 @@ type Props = {
     title: string,
     id: string,
     link: string,
-    badges: Array<string>
+    badges: Array<string>,
+    imageUrl: string
 }
 
-const Certification = ({ headline, title, id, link, badges }: Props) => {
+const Certification = ({ headline, title, id, link, badges, imageUrl }: Props) => {
     return (
-        <article
-            className="relative hover:animate-background rounded-xl bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 p-0.5 shadow-xl transition hover:bg-[length:400%_400%] hover:shadow-sm hover:[animation-duration:_4s] dark:shadow-gray-700/25"
-        >
-        <div className="rounded-[10px] bg-white p-4 !pt-20 sm:p-6 dark:bg-gray-900">
-            <p className="block text-xs text-gray-500 dark:text-gray-400">
-                {headline}
-            </p>
+        <div key={id} className="group rounded-xl overflow-hidden">
+            <div className="sm:flex">
+                <div className="flex-shrink-0 relative rounded-xl overflow-hidden w-full sm:w-56 h-44">
+                    <img className="group-hover:scale-105 transition-transform duration-500 ease-in-out size-full absolute top-0 start-0 object-cover rounded-xl" src={imageUrl} alt="Image Description" />
+                </div>
 
-            <a href="#">
-            <h3 className="mt-0.5 text-lg font-medium text-gray-900 dark:text-white">
-                {title}
-            </h3>
-            </a>
-
-            {id && (
-                <p>Credential ID: {id}</p>
-            )}
-
-            <Link href={link} target='_blank' className="absolute right-4 top-1 text-sm border font-light dark:border-white/[0.2] border-black/[0.2] rounded-full mt-4 text-black dark:text-white px-2 py-0.5">
-                Check Credential
-            </Link>
-
-            <div className="mt-4 flex flex-wrap gap-1">
-                {badges.map((badge, index) => {
-                    return (
-                        <span
-                            key={index}
-                            className="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-xs text-purple-600 dark:bg-purple-600 dark:text-purple-100"
-                        >
-                            {badge}
-                        </span>
-                    );
-                })}
+                <div className="grow mt-4 sm:mt-0 sm:ms-6 px-4 sm:px-0">
+                    <h3 className="text-xl font-semibold text-gray-800 group-hover:text-gray-600 dark:text-neutral-300 dark:group-hover:text-white">
+                        {title}
+                    </h3>
+                    <p className="mt-3 text-gray-600 dark:text-neutral-400">
+                        {headline}
+                    </p>
+                    <div className="mt-4 flex flex-wrap gap-1">
+                        {badges.map((badge, index) => {
+                            return (
+                                <span
+                                    key={index}
+                                    className="whitespace-nowrap rounded-full px-2.5 py-0.5 text-xs text-blue-600 bg-transparent border border-slate-500"
+                                >
+                                    {badge}
+                                </span>
+                            );
+                        })}
+                    </div>
+                    <Link href={link} target="_blank" className="mt-4 inline-flex items-center gap-x-1 text-blue-600 decoration-2 hover:underline text-sm">
+                        Check Credential
+                        <svg className="flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+                    </Link>
+                </div>
             </div>
         </div>
-        </article>
     );
 }
 
