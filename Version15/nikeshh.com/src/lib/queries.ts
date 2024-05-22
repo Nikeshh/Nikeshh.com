@@ -713,6 +713,62 @@ export const getProjects = cache(async () => {
         imageUrl: '/projects/suzan-peltekian-manifest-millions.png',
         tags: ['LMS']
       },
+      {
+        name: 'DocGenius - Documentation Platform',
+        subtitle: 'VectorChat revolutionizes communication by enabling seamless interaction with PDF documents through vector data. Enhance collaboration and productivity with intuitive chat-based PDF interactions.',
+        category: 'Web App',
+        link: 'https://documentation-platform-production.up.railway.app/',
+        imageUrl: '/projects/docgenius.png',
+        tags: ['LMS']
+      },
+      {
+        name: 'FlowForge - SAAS Automation Builder',
+        subtitle: 'VectorChat revolutionizes communication by enabling seamless interaction with PDF documents through vector data. Enhance collaboration and productivity with intuitive chat-based PDF interactions.',
+        category: 'Web App',
+        link: 'https://saas-automation-builder.vercel.app/',
+        imageUrl: '/projects/fuzzie.png',
+        tags: ['LMS']
+      },
+      {
+        name: 'Glisten AI - AI-Powered Document Search and Website Customization',
+        subtitle: 'VectorChat revolutionizes communication by enabling seamless interaction with PDF documents through vector data. Enhance collaboration and productivity with intuitive chat-based PDF interactions.',
+        category: 'Automation',
+        link: 'https://glisten-ai-website.vercel.app/',
+        imageUrl: '/projects/glisten-ai.png',
+        tags: ['LMS']
+      },
+      {
+        name: 'NextNews - Newsletter Creation and Email Marketing Platform',
+        subtitle: 'VectorChat revolutionizes communication by enabling seamless interaction with PDF documents through vector data. Enhance collaboration and productivity with intuitive chat-based PDF interactions.',
+        category: 'Web App',
+        link: 'https://newsletter-platform.vercel.app/',
+        imageUrl: '/projects/newsletter-platform.png',
+        tags: ['LMS']
+      },
+      {
+        name: 'StaySpot - House Booking Platform',
+        subtitle: 'VectorChat revolutionizes communication by enabling seamless interaction with PDF documents through vector data. Enhance collaboration and productivity with intuitive chat-based PDF interactions.',
+        category: 'Web App',
+        link: 'https://house-booking-platform.vercel.app/',
+        imageUrl: '/projects/stayspot.png',
+        tags: ['LMS']
+      },
+      {
+        name: 'SiteSprint - SAAS Website Builder for Agencies',
+        subtitle: 'VectorChat revolutionizes communication by enabling seamless interaction with PDF documents through vector data. Enhance collaboration and productivity with intuitive chat-based PDF interactions.',
+        category: 'Web App',
+        link: 'https://saaswebsitebuilder.vercel.app/',
+        imageUrl: '/projects/sitesprint.png',
+        tags: ['LMS']
+      },
+      {
+        name: 'VectorChat - PDF Interaction Platform',
+        subtitle: 'VectorChat revolutionizes communication by enabling seamless interaction with PDF documents through vector data. Enhance collaboration and productivity with intuitive chat-based PDF interactions.',
+        category: 'AI',
+        link: 'https://chat-pdf-lemon.vercel.app/',
+        imageUrl: '/projects/vectorchat.png',
+        tags: ['LMS']
+      },
     ]
     return response;
 })
