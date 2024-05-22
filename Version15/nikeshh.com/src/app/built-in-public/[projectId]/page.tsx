@@ -1,4 +1,5 @@
 import { redirect } from "next/navigation";
+import projects_data from "../projects_data";
 
 export default async function Page({
   params,
@@ -7,14 +8,7 @@ export default async function Page({
     projectId: string;
   };
 }) {
-  const project = {
-    id: "fe015b36-fefc-432e-9fb9-d28ba67ecb58",
-    chapters: [
-      {
-        id: "fb8b5eb9-11fc-4655-87e7-37a07bf2285c",
-      },
-    ],
-  };
+  const project = projects_data.filter((a) => a.id == params.projectId)[0];
 
   if (!project) {
     return redirect("/");

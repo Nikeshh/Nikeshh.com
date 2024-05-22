@@ -6,6 +6,7 @@ import Link from 'next/link';
 import React, { useState } from 'react'
 import LoadingC from '@/components/global/loading'
 import { Switch } from '@/components/ui/switch';
+import { Info } from 'lucide-react';
 
 type Props = {
     projects: {
@@ -23,7 +24,7 @@ type Props = {
 const Projects = ({ projects, inlineElement } : Props) => {
 
     const [loading, setLoading] = useState(false);
-    const [view, setView] = useState("Business Prespective");
+    const [view, setView] = useState("Business Perspective");
 
     let filteredProjects = projects.filter(item => item.view == view);
     let projectTags = filteredProjects.map(item => item.category).filter((value, index, self) => self.indexOf(value) === index);
@@ -65,23 +66,23 @@ const Projects = ({ projects, inlineElement } : Props) => {
                     <div className="flex justify-center items-center">
                         <label className={cn(
                             'min-w-14 text-sm text-gray-500 me-3 dark:text-neutral-400',
-                            view == "Business Prespective" && 'dark:text-white',
-                        )}>Business Prespective</label>
+                            view == "Business Perspective" && 'dark:text-white',
+                        )}>Business Perspective</label>
 
                         <Switch onClick={() => {
-                            if (view == "Business Prespective") {
+                            if (view == "Business Perspective") {
                                 updateSelectedProject("WEB APP");
-                                updateView("Technical Prespective");
-                            } else if (view == "Technical Prespective") {
+                                updateView("Development Showcase");
+                            } else if (view == "Development Showcase") {
                                 updateSelectedProject("WEB APP");
-                                updateView("Business Prespective");
+                                updateView("Business Perspective");
                             }
-                        }} checked={view == "Technical Prespective"}/>
+                        }} checked={view == "Development Showcase"}/>
                         <label className={cn(
                             'relative min-w-14 text-sm text-gray-500 ms-3 dark:text-neutral-400',
-                            view == "Technical Prespective" && 'dark:text-white',
+                            view == "Development Showcase" && 'dark:text-white',
                         )}>
-                            Technical Prespective
+                            Development Showcase
                             <span className="absolute -top-10 start-auto -end-[64px]">
                                 <span className="flex items-center">
                                     <svg className="w-14 h-8 -me-6" width="45" height="25" viewBox="0 0 45 25" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -92,6 +93,12 @@ const Projects = ({ projects, inlineElement } : Props) => {
                             </span>
                         </label>
                     </div>
+                    {view == "Development Showcase" && (
+                        <div className='flex justify-center mt-4 text-sm gap-2 items-center'>
+                            <Info />
+                            <p>Please note projects presented below are more technical in nature.</p>
+                        </div>
+                    )}
                 </div>
                 <div className="mt-6 flex flex-wrap gap-2 justify-center">
                     {projectTags.map((a, index) => {

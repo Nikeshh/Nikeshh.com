@@ -5,6 +5,7 @@ import { Badge } from '@/components/ui/badge';
 import { cn } from '@/lib/utils';
 import Link from 'next/link';
 import { Switch } from "@/components/ui/switch"
+import { Info } from 'lucide-react';
 
 type Props = {
     skills: {
@@ -19,7 +20,7 @@ type Props = {
 }
 
 const Skills = ({ skills, inlineElement } : Props) => {
-    const [view, setView] = useState("Business View");
+    const [view, setView] = useState("Business Perspective");
 
     let filteredSkills = skills.filter(item => item.view == view);
     let skillTags = filteredSkills.map(item => item.category).filter((value, index, self) => self.indexOf(value) === index);
@@ -58,23 +59,23 @@ const Skills = ({ skills, inlineElement } : Props) => {
                     <div className="flex justify-center items-center">
                         <label className={cn(
                             'min-w-14 text-sm text-gray-500 me-3 dark:text-neutral-400',
-                            view == "Business View" && 'dark:text-white',
-                        )}>Business View</label>
+                            view == "Business Perspective" && 'dark:text-white',
+                        )}>Business Perspective</label>
 
                         <Switch onClick={() => {
-                            if (view == "Business View") {
+                            if (view == "Business Perspective") {
                                 updateSelectedSkill("Development");
-                                updateView("Tech View");
-                            } else if (view == "Tech View") {
+                                updateView("Technical Perspective");
+                            } else if (view == "Technical Perspective") {
                                 updateSelectedSkill("Development For Business Solutions");
-                                updateView("Business View");
+                                updateView("Business Perspective");
                             }
-                        }} checked={view == "Tech View"}/>
+                        }} checked={view == "Technical Perspective"}/>
                         <label className={cn(
                             'relative min-w-14 text-sm text-gray-500 ms-3 dark:text-neutral-400',
-                            view == "Tech View" && 'dark:text-white',
+                            view == "Technical Perspective" && 'dark:text-white',
                         )}>
-                            Tech View
+                            Technical Perspective
                             <span className="absolute -top-10 start-auto -end-[64px]">
                                 <span className="flex items-center">
                                     <svg className="w-14 h-8 -me-6" width="45" height="25" viewBox="0 0 45 25" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -85,6 +86,12 @@ const Skills = ({ skills, inlineElement } : Props) => {
                             </span>
                         </label>
                     </div>
+                    {view == "Technical Perspective" && (
+                        <div className='flex justify-center mt-4 text-sm gap-2 items-center'>
+                            <Info />
+                            <p>Please note data presented below are more technical in nature.</p>
+                        </div>
+                    )}
                 </div>
                 <div className="mt-6 flex flex-wrap gap-2 justify-center">
                     {skillTags.map((a, index) => {

@@ -89,7 +89,7 @@ export const getSkills = cache(async () => {
       imageUrl: '',
       description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
       points: 'Docker | Kubernetes',
-      view: "Tech View"
+      view: "Technical Perspective"
     },
     {
       name: 'Languages & Frameworks',
@@ -97,7 +97,7 @@ export const getSkills = cache(async () => {
       imageUrl: '',
       description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
       points: 'Python (Django, Flask) | JavaScript (Node.js) | Java (Spring Boot) | Ruby (Ruby on Rails) | PHP (Laravel) | C# (ASP.NET Core)',
-      view: "Tech View"
+      view: "Technical Perspective"
     },
     {
       name: 'Scripting & Automation',
@@ -105,7 +105,7 @@ export const getSkills = cache(async () => {
       imageUrl: '',
       description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
       points: 'Shell scripting | Python scripting',
-      view: "Tech View"
+      view: "Technical Perspective"
     },
     {
       name: 'Database Management',
@@ -113,7 +113,7 @@ export const getSkills = cache(async () => {
       imageUrl: '',
       description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
       points: 'SQL: MySQL, PostgreSQL, SQLite | NoSQL: MongoDB, Cassandra, Redis',
-      view: "Tech View"
+      view: "Technical Perspective"
     },
     {
       name: 'Version Control & CI/CD',
@@ -121,7 +121,7 @@ export const getSkills = cache(async () => {
       imageUrl: '',
       description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
       points: 'Git | GitHub | GitLab | Bitbucket | Jenkins | Travis CI | CircleCI',
-      view: "Tech View"
+      view: "Technical Perspective"
     },
     {
       name: 'Cloud Technologies',
@@ -129,7 +129,7 @@ export const getSkills = cache(async () => {
       imageUrl: '',
       description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
       points: 'AWS | Azure | GCP',
-      view: "Tech View"
+      view: "Technical Perspective"
     },
     {
       name: 'DevOps Monitoring',
@@ -137,7 +137,7 @@ export const getSkills = cache(async () => {
       imageUrl: '',
       description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
       points: 'Prometheus | Grafana | ELK Stack | Splunk',
-      view: "Tech View"
+      view: "Technical Perspective"
     },
     {
       name: 'Data Manipulation & Analysis',
@@ -145,7 +145,7 @@ export const getSkills = cache(async () => {
       imageUrl: '',
       description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
       points: 'Pandas | NumPy | SQL',
-      view: "Tech View"
+      view: "Technical Perspective"
     },
     {
       name: 'Big Data Technologies',
@@ -153,7 +153,7 @@ export const getSkills = cache(async () => {
       imageUrl: '',
       description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
       points: 'Hadoop | Spark | Kafka | Hive | HBase',
-      view: "Tech View"
+      view: "Technical Perspective"
     },
     {
       name: 'AI & Machine Learning Frameworks',
@@ -161,7 +161,7 @@ export const getSkills = cache(async () => {
       imageUrl: '',
       description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
       points: 'TensorFlow | PyTorch | Scikit-learn',
-      view: "Tech View"
+      view: "Technical Perspective"
     },
     {
       name: 'AI Tools & Libraries',
@@ -169,7 +169,7 @@ export const getSkills = cache(async () => {
       imageUrl: '',
       description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
       points: 'OpenAI | IBM Watson | Microsoft Azure AI',
-      view: "Tech View"
+      view: "Technical Perspective"
     },
     {
       name: 'Test Automation',
@@ -177,7 +177,7 @@ export const getSkills = cache(async () => {
       imageUrl: '',
       description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
       points: 'Selenium | Cypress | Puppeteer',
-      view: "Tech View"
+      view: "Technical Perspective"
     },
     {
       name: 'Behavior-Driven Development',
@@ -185,7 +185,7 @@ export const getSkills = cache(async () => {
       imageUrl: '',
       description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
       points: 'Cucumber | Behave',
-      view: "Tech View"
+      view: "Technical Perspective"
     },
     {
       name: 'Performance Testing',
@@ -193,7 +193,7 @@ export const getSkills = cache(async () => {
       imageUrl: '',
       description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
       points: 'JMeter | Gatling | LoadRunner',
-      view: "Tech View"
+      view: "Technical Perspective"
     },
     {
       name: 'Identity & Access Management',
@@ -201,7 +201,7 @@ export const getSkills = cache(async () => {
       imageUrl: '',
       description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
       points: 'OAuth | JWT',
-      view: "Tech View"
+      view: "Technical Perspective"
     },
     {
       name: 'Security Protocols',
@@ -209,7 +209,7 @@ export const getSkills = cache(async () => {
       imageUrl: '',
       description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
       points: 'SSL/TLS | HTTPS',
-      view: "Tech View"
+      view: "Technical Perspective"
     },
     {
       name: 'Compliance Standards',
@@ -217,7 +217,7 @@ export const getSkills = cache(async () => {
       imageUrl: '',
       description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
       points: 'GDPR | HIPAA | PCI DSS',
-      view: "Tech View"
+      view: "Technical Perspective"
     },
     {
       name: 'Blockchain Development',
@@ -225,7 +225,7 @@ export const getSkills = cache(async () => {
       imageUrl: '',
       description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
       points: 'Ethereum | Hyperledger Fabric | Solidity',
-      view: "Tech View"
+      view: "Technical Perspective"
     },
     {
       name: 'AR/VR Development',
@@ -233,7 +233,7 @@ export const getSkills = cache(async () => {
       imageUrl: '',
       description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
       points: 'Unity | Unreal Engine | ARKit | ARCore',
-      view: "Tech View"
+      view: "Technical Perspective"
     },
     {
       name: 'Design Tools',
@@ -241,7 +241,7 @@ export const getSkills = cache(async () => {
       imageUrl: '',
       description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
       points: 'Adobe XD | Sketch | Figma | InVision',
-      view: "Tech View"
+      view: "Technical Perspective"
     },
     {
       name: 'Prototyping & Wireframing',
@@ -249,7 +249,7 @@ export const getSkills = cache(async () => {
       imageUrl: '',
       description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
       points: 'Proto.io | Axure RP | Balsamiq',
-      view: "Tech View"
+      view: "Technical Perspective"
     },
     {
       name: 'User Research & Testing',
@@ -257,7 +257,7 @@ export const getSkills = cache(async () => {
       imageUrl: '',
       description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
       points: 'Usability testing tools | UserZoom | Optimal Workshop',
-      view: "Tech View"
+      view: "Technical Perspective"
     },
     {
       name: 'Project Management',
@@ -265,7 +265,7 @@ export const getSkills = cache(async () => {
       imageUrl: '',
       description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
       points: 'Jira | Trello | Asana',
-      view: "Tech View"
+      view: "Technical Perspective"
     },
     {
       name: 'Collaboration',
@@ -273,7 +273,7 @@ export const getSkills = cache(async () => {
       imageUrl: '',
       description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
       points: 'Slack | Microsoft Teams',
-      view: "Tech View"
+      view: "Technical Perspective"
     },
   ];
 
@@ -284,7 +284,7 @@ export const getSkills = cache(async () => {
       imageUrl: '',
       description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
       points: 'Front-end: HTML5, CSS3, JavaScript (ES6+), React.js, Angular, Vue.js, Ember.js | Back-end: Python (Django, Flask), JavaScript (Node.js), Java (Spring Boot), Ruby (Ruby on Rails), PHP (Laravel), C# (ASP.NET Core)',
-      view: "Business View"
+      view: "Business Perspective"
     },
     {
       name: 'Mobile Development',
@@ -292,7 +292,7 @@ export const getSkills = cache(async () => {
       imageUrl: '',
       description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
       points: 'Android: Java, Kotlin | iOS: Swift, Objective-C | Cross-platform: React Native, Flutter, Xamarin',
-      view: "Business View"
+      view: "Business Perspective"
     },
     {
       name: 'API Integration',
@@ -300,7 +300,7 @@ export const getSkills = cache(async () => {
       imageUrl: '',
       description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
       points: 'RESTful APIs | GraphQL',
-      view: "Business View"
+      view: "Business Perspective"
     },
     {
       name: 'Design Tools',
@@ -308,7 +308,7 @@ export const getSkills = cache(async () => {
       imageUrl: '',
       description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
       points: 'Adobe XD | Sketch | Figma | InVision',
-      view: "Business View"
+      view: "Business Perspective"
     },
     {
       name: 'Prototyping & Wireframing',
@@ -316,7 +316,7 @@ export const getSkills = cache(async () => {
       imageUrl: '',
       description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
       points: 'Proto.io | Axure RP | Balsamiq',
-      view: "Business View"
+      view: "Business Perspective"
     },
     {
       name: 'User Research & Testing',
@@ -324,7 +324,7 @@ export const getSkills = cache(async () => {
       imageUrl: '',
       description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
       points: 'Usability testing tools | UserZoom | Optimal Workshop',
-      view: "Business View"
+      view: "Business Perspective"
     },
     {
       name: 'Search Engine Optimization (SEO)',
@@ -332,7 +332,7 @@ export const getSkills = cache(async () => {
       imageUrl: '',
       description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
       points: "On-Page SEO: Optimization of website content, HTML, and structure to improve rankings in search engine results. | Off-Page SEO: Building backlinks and promoting content to improve the site's authority. | Technical SEO: Ensuring the website meets technical requirements for search engines like fast load times, mobile friendliness, and secure connections (HTTPS).",
-      view: "Business View"
+      view: "Business Perspective"
     },
     {
       name: 'Pay-Per-Click (PPC) Advertising',
@@ -340,7 +340,7 @@ export const getSkills = cache(async () => {
       imageUrl: '',
       description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
       points: "Google Ads: Creating and managing ads that appear in Google search results and on partner websites. | Social Media Ads: Advertising on platforms like Facebook, Instagram, LinkedIn, and Twitter. | Display Ads: Banner ads on various websites to increase brand visibility and drive traffic.",
-      view: "Business View"
+      view: "Business Perspective"
     },
     {
       name: 'Content Marketing',
@@ -348,7 +348,7 @@ export const getSkills = cache(async () => {
       imageUrl: '',
       description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
       points: "Blogging: Writing and publishing articles that provide value to the target audience and improve SEO. | Video Marketing: Creating videos for platforms like YouTube or social media to engage users. | Infographics and Visual Content: Designing visually appealing content to convey information effectively. | E-books and Whitepapers: Producing in-depth content to establish thought leadership and generate leads.",
-      view: "Business View"
+      view: "Business Perspective"
     },
     {
       name: 'Social Media Marketing',
@@ -356,7 +356,7 @@ export const getSkills = cache(async () => {
       imageUrl: '',
       description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
       points: "Profile Management: Creating and maintaining social media profiles on platforms like Facebook, Instagram, Twitter, LinkedIn, etc. | Content Creation and Posting: Regular posting of relevant content to engage the audience. | Community Management: Interacting with followers, responding to comments, and managing brand reputation. | Social Media Analytics: Monitoring and analyzing performance metrics to refine strategies.",
-      view: "Business View"
+      view: "Business Perspective"
     },
     {
       name: 'Email Marketing',
@@ -364,7 +364,7 @@ export const getSkills = cache(async () => {
       imageUrl: '',
       description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
       points: "Campaign Creation: Designing and sending targeted email campaigns to subscribers. | Automation: Setting up automated email sequences for lead nurturing and customer retention. | List Management: Growing and segmenting email lists to improve targeting. | Analytics: Tracking open rates, click-through rates, and conversions to optimize campaigns.",
-      view: "Business View"
+      view: "Business Perspective"
     },
     {
       name: 'Affiliate Marketing',
@@ -372,7 +372,7 @@ export const getSkills = cache(async () => {
       imageUrl: '',
       description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
       points: "Program Setup: Establishing affiliate programs where partners promote products/services for a commission. | Partner Management: Recruiting and managing affiliates to ensure productive partnerships. | Tracking and Reporting: Monitoring affiliate performance and managing payouts.",
-      view: "Business View"
+      view: "Business Perspective"
     },
     {
       name: 'Conversion Rate Optimization (CRO)',
@@ -380,7 +380,7 @@ export const getSkills = cache(async () => {
       imageUrl: '',
       description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
       points: "A/B Testing: Testing different versions of webpages or ads to determine which performs better. | User Experience (UX) Design: Improving the usability and functionality of websites to enhance user experience. | Landing Page Optimization: Creating and refining landing pages to increase conversion rates.",
-      view: "Business View"
+      view: "Business Perspective"
     },
     {
       name: 'Web Analytics and Reporting',
@@ -388,7 +388,7 @@ export const getSkills = cache(async () => {
       imageUrl: '',
       description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
       points: "Data Analysis: Using tools like Google Analytics to track and analyze website traffic and user behavior. | Performance Reporting: Creating reports to measure the effectiveness of digital marketing campaigns. | Insight Generation: Providing actionable insights based on data analysis to inform future strategies.",
-      view: "Business View"
+      view: "Business Perspective"
     },
     {
       name: 'Influencer Marketing',
@@ -396,7 +396,7 @@ export const getSkills = cache(async () => {
       imageUrl: '',
       description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
       points: "Campaign Planning: Identifying and collaborating with influencers to promote products or services. | Content Coordination: Ensuring influencers create content that aligns with brand messaging. | Performance Tracking: Monitoring the impact of influencer campaigns on brand awareness and sales.",
-      view: "Business View"
+      view: "Business Perspective"
     },
     {
       name: 'Online Reputation Management',
@@ -404,7 +404,7 @@ export const getSkills = cache(async () => {
       imageUrl: '',
       description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
       points: "Review Monitoring: Keeping track of customer reviews and responding appropriately. | Crisis Management: Handling negative publicity or social media crises to protect brand image. | Positive Promotion: Encouraging satisfied customers to leave positive reviews and testimonials.",
-      view: "Business View"
+      view: "Business Perspective"
     },
     {
       name: 'Project Management Tools',
@@ -412,7 +412,7 @@ export const getSkills = cache(async () => {
       imageUrl: '',
       description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
       points: 'Jira | Trello | Asana',
-      view: "Business View"
+      view: "Business Perspective"
     },
     {
       name: 'Collaboration Tools',
@@ -420,7 +420,7 @@ export const getSkills = cache(async () => {
       imageUrl: '',
       description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
       points: 'Slack | Microsoft Teams',
-      view: "Business View"
+      view: "Business Perspective"
     },
     {
       name: 'Version Control & CI/CD',
@@ -428,7 +428,7 @@ export const getSkills = cache(async () => {
       imageUrl: '',
       description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
       points: 'Git | GitHub | GitLab | Bitbucket | Jenkins | Travis CI | CircleCI',
-      view: "Business View"
+      view: "Business Perspective"
     },
     {
       name: 'Data Analysis Tools',
@@ -436,7 +436,7 @@ export const getSkills = cache(async () => {
       imageUrl: '',
       description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
       points: 'Pandas | NumPy | SQL',
-      view: "Business View"
+      view: "Business Perspective"
     },
     {
       name: 'Big Data Technologies',
@@ -444,7 +444,7 @@ export const getSkills = cache(async () => {
       imageUrl: '',
       description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
       points: 'Hadoop | Spark | Kafka | Hive | HBase',
-      view: "Business View"
+      view: "Business Perspective"
     },
     {
       name: 'AI & Machine Learning Frameworks',
@@ -452,7 +452,7 @@ export const getSkills = cache(async () => {
       imageUrl: '',
       description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
       points: 'TensorFlow | PyTorch | Scikit-learn',
-      view: "Business View"
+      view: "Business Perspective"
     },
     {
       name: 'Business Intelligence',
@@ -460,7 +460,7 @@ export const getSkills = cache(async () => {
       imageUrl: '',
       description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
       points: 'OpenAI | IBM Watson | Microsoft Azure AI',
-      view: "Business View"
+      view: "Business Perspective"
     },
     {
       name: 'Security Protocols',
@@ -468,7 +468,7 @@ export const getSkills = cache(async () => {
       imageUrl: '',
       description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
       points: 'SSL/TLS | HTTPS',
-      view: "Business View"
+      view: "Business Perspective"
     },
     {
       name: 'Compliance Standards',
@@ -476,7 +476,7 @@ export const getSkills = cache(async () => {
       imageUrl: '',
       description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
       points: 'GDPR | HIPAA | PCI DSS',
-      view: "Business View"
+      view: "Business Perspective"
     },
     {
       name: 'Identity & Access Management',
@@ -484,7 +484,7 @@ export const getSkills = cache(async () => {
       imageUrl: '',
       description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
       points: 'OAuth | JWT',
-      view: "Business View"
+      view: "Business Perspective"
     },
     {
       name: 'Blockchain Applications',
@@ -492,7 +492,7 @@ export const getSkills = cache(async () => {
       imageUrl: '',
       description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
       points: 'Ethereum | Hyperledger Fabric',
-      view: "Business View"
+      view: "Business Perspective"
     },
     {
       name: 'AR/VR Solutions',
@@ -500,7 +500,7 @@ export const getSkills = cache(async () => {
       imageUrl: '',
       description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
       points: 'Unity | Unreal Engine | ARKit | ARCore',
-      view: "Business View"
+      view: "Business Perspective"
     },
   ]
   return [...techView, ...businessView];
@@ -530,13 +530,13 @@ export const getServices = cache(async () => {
 export const getProjects = cache(async () => {
   let response = [
       {
-        name: 'LMS Platform',
+        name: 'ALT Interiors',
         subtitle: 'VectorChat revolutionizes communication by enabling seamless interaction with PDF documents through vector data. Enhance collaboration and productivity with intuitive chat-based PDF interactions.',
-        category: 'Web App',
-        link: 'https://lms-platform-red.vercel.app/',
-        imageUrl: '/projects/lms-platform.png',
+        category: 'Ecommerce',
+        link: 'alt',
+        imageUrl: '/projects/alt-interiors.png',
         tags: ['LMS'],
-        view: "Business Prespective"
+        view: "Business Perspective"
       },
       {
         name: 'SkinEssence',
@@ -545,16 +545,7 @@ export const getProjects = cache(async () => {
         link: 'https://www.skinessence.ca/',
         imageUrl: '/projects/skin-essence.png',
         tags: ['LMS'],
-        view: "Business Prespective"
-      },
-      {
-        name: 'ALT Interiors',
-        subtitle: 'VectorChat revolutionizes communication by enabling seamless interaction with PDF documents through vector data. Enhance collaboration and productivity with intuitive chat-based PDF interactions.',
-        category: 'Ecommerce',
-        link: 'alt',
-        imageUrl: '/projects/alt-interiors.png',
-        tags: ['LMS'],
-        view: "Business Prespective"
+        view: "Business Perspective"
       },
       {
         name: 'Spades Brand',
@@ -563,7 +554,7 @@ export const getProjects = cache(async () => {
         link: 'https://www.spadesbrand.com/',
         imageUrl: '/projects/spades-brand.png',
         tags: ['LMS'],
-        view: "Business Prespective"
+        view: "Business Perspective"
       },
       {
         name: 'PPE Supply Canada',
@@ -572,7 +563,16 @@ export const getProjects = cache(async () => {
         link: 'https://www.ppe-supply.com/',
         imageUrl: '/projects/ppe-supply-canada.png',
         tags: ['LMS'],
-        view: "Business Prespective"
+        view: "Business Perspective"
+      },
+      {
+        name: 'LMS Platform',
+        subtitle: 'VectorChat revolutionizes communication by enabling seamless interaction with PDF documents through vector data. Enhance collaboration and productivity with intuitive chat-based PDF interactions.',
+        category: 'Web App',
+        link: 'https://lms-platform-red.vercel.app/',
+        imageUrl: '/projects/lms-platform.png',
+        tags: ['LMS'],
+        view: "Business Perspective"
       },
       {
         name: 'Karking',
@@ -581,7 +581,7 @@ export const getProjects = cache(async () => {
         link: 'https://karking.in/',
         imageUrl: '/projects/karking.png',
         tags: ['LMS'],
-        view: "Business Prespective"
+        view: "Business Perspective"
       },
       {
         name: 'Immunuts',
@@ -590,7 +590,7 @@ export const getProjects = cache(async () => {
         link: 'https://immunuts.in/',
         imageUrl: '/projects/immunuts.png',
         tags: ['LMS'],
-        view: "Business Prespective"
+        view: "Business Perspective"
       },
       {
         name: 'Norte-Damepavillion',
@@ -599,7 +599,7 @@ export const getProjects = cache(async () => {
         link: 'https://www.notre-damepavillionhospital.ca/',
         imageUrl: '/projects/notre-damepavillionhospital.png',
         tags: ['LMS'],
-        view: "Business Prespective"
+        view: "Business Perspective"
       },
       {
         name: 'Mitaz Consulting',
@@ -608,7 +608,7 @@ export const getProjects = cache(async () => {
         link: 'https://mitazconsulting.ca/',
         imageUrl: '/projects/mitazconsulting.png',
         tags: ['LMS'],
-        view: "Business Prespective"
+        view: "Business Perspective"
       },
       {
         name: 'Elkrest Farm',
@@ -617,7 +617,7 @@ export const getProjects = cache(async () => {
         link: 'https://elkrestsfarm.ca/',
         imageUrl: '/projects/elkrests-farm.png',
         tags: ['LMS'],
-        view: "Business Prespective"
+        view: "Business Perspective"
       },
       {
         name: 'Island National Medical Center',
@@ -626,7 +626,7 @@ export const getProjects = cache(async () => {
         link: 'https://inamc.ca/',
         imageUrl: '/projects/inamc.png',
         tags: ['LMS'],
-        view: "Business Prespective"
+        view: "Business Perspective"
       },
       {
         name: 'Market Farm',
@@ -635,7 +635,7 @@ export const getProjects = cache(async () => {
         link: 'https://marketfarm.ca/',
         imageUrl: '/projects/marketfarm.png',
         tags: ['LMS'],
-        view: "Business Prespective"
+        view: "Business Perspective"
       },
       {
         name: 'Placement Nursing',
@@ -644,7 +644,7 @@ export const getProjects = cache(async () => {
         link: 'https://www.placementnursing.ca/',
         imageUrl: '/projects/placementnursing.png',
         tags: ['LMS'],
-        view: "Business Prespective"
+        view: "Business Perspective"
       },
       {
         name: 'Learns Point',
@@ -653,7 +653,7 @@ export const getProjects = cache(async () => {
         link: 'https://learnerspoint.org/',
         imageUrl: '/projects/learnerspoint.png',
         tags: ['LMS'],
-        view: "Business Prespective"
+        view: "Business Perspective"
       },
       {
         name: 'RideRush - Cross-Platform Bike Taxi Booking App',
@@ -662,7 +662,7 @@ export const getProjects = cache(async () => {
         link: 'https://www.rtrix.in/',
         imageUrl: '/projects/rtrix.png',
         tags: ['LMS'],
-        view: "Business Prespective"
+        view: "Business Perspective"
       },
       {
         name: 'Nikeshh.com',
@@ -671,7 +671,7 @@ export const getProjects = cache(async () => {
         link: 'https://nikeshh.com/',
         imageUrl: '/projects/nikeshh.png',
         tags: ['LMS'],
-        view: "Business Prespective"
+        view: "Business Perspective"
       },
       {
         name: 'Digital Ecommerce',
@@ -680,7 +680,7 @@ export const getProjects = cache(async () => {
         link: 'https://digital-ecommerce-production.up.railway.app/',
         imageUrl: '/projects/digital-ecommerce.png',
         tags: ['LMS'],
-        view: "Business Prespective"
+        view: "Business Perspective"
       },
       {
         name: 'Learning Portal',
@@ -689,7 +689,7 @@ export const getProjects = cache(async () => {
         link: 'https://learning-portal-murex.vercel.app/',
         imageUrl: '/projects/learning-portal.png',
         tags: ['LMS'],
-        view: "Business Prespective"
+        view: "Business Perspective"
       },
       {
         name: 'Modern Ecommerce',
@@ -698,7 +698,7 @@ export const getProjects = cache(async () => {
         link: 'https://modern-ecommerce-tawny.vercel.app/',
         imageUrl: '/projects/modern-ecommerce.png',
         tags: ['LMS'],
-        view: "Business Prespective"
+        view: "Business Perspective"
       },
       {
         name: 'NikeshhCodes.com',
@@ -707,7 +707,7 @@ export const getProjects = cache(async () => {
         link: 'https://nikeshhcodes.com/',
         imageUrl: '/projects/nikeshhcodes.png',
         tags: ['LMS'],
-        view: "Business Prespective"
+        view: "Business Perspective"
       },
       {
         name: 'Ecommerce Marketplace',
@@ -716,7 +716,7 @@ export const getProjects = cache(async () => {
         link: 'https://ecommerce-marketplace-two.vercel.app/',
         imageUrl: '/projects/ecommerce-marketplace.png',
         tags: ['LMS'],
-        view: "Business Prespective"
+        view: "Business Perspective"
       },
       {
         name: 'Suzan Peltekian',
@@ -725,7 +725,7 @@ export const getProjects = cache(async () => {
         link: 'https://superchargewithsuzan.com/',
         imageUrl: '/projects/suzan-peltekian.png',
         tags: ['LMS'],
-        view: "Business Prespective"
+        view: "Business Perspective"
       },
       {
         name: 'Suzan Peltekian',
@@ -734,7 +734,7 @@ export const getProjects = cache(async () => {
         link: 'https://register.suzanpeltekian.com/manifest-millions',
         imageUrl: '/projects/suzan-peltekian-manifest-millions.png',
         tags: ['LMS'],
-        view: "Business Prespective"
+        view: "Business Perspective"
       },
       {
         name: 'DocGenius - Documentation Platform',
@@ -743,7 +743,7 @@ export const getProjects = cache(async () => {
         link: 'https://documentation-platform-production.up.railway.app/',
         imageUrl: '/projects/docgenius.png',
         tags: ['LMS'],
-        view: "Business Prespective"
+        view: "Business Perspective"
       },
       {
         name: 'FlowForge - SAAS Automation Builder',
@@ -752,7 +752,7 @@ export const getProjects = cache(async () => {
         link: 'https://saas-automation-builder.vercel.app/',
         imageUrl: '/projects/fuzzie.png',
         tags: ['LMS'],
-        view: "Business Prespective"
+        view: "Business Perspective"
       },
       {
         name: 'Glisten AI - AI-Powered Document Search and Website Customization',
@@ -761,7 +761,7 @@ export const getProjects = cache(async () => {
         link: 'https://glisten-ai-website.vercel.app/',
         imageUrl: '/projects/glisten-ai.png',
         tags: ['LMS'],
-        view: "Business Prespective"
+        view: "Business Perspective"
       },
       {
         name: 'NextNews - Newsletter Creation and Email Marketing Platform',
@@ -770,7 +770,7 @@ export const getProjects = cache(async () => {
         link: 'https://newsletter-platform.vercel.app/',
         imageUrl: '/projects/newsletter-platform.png',
         tags: ['LMS'],
-        view: "Business Prespective"
+        view: "Business Perspective"
       },
       {
         name: 'StaySpot - House Booking Platform',
@@ -779,7 +779,7 @@ export const getProjects = cache(async () => {
         link: 'https://house-booking-platform.vercel.app/',
         imageUrl: '/projects/stayspot.png',
         tags: ['LMS'],
-        view: "Business Prespective"
+        view: "Business Perspective"
       },
       {
         name: 'SiteSprint - SAAS Website Builder for Agencies',
@@ -788,7 +788,7 @@ export const getProjects = cache(async () => {
         link: 'https://saaswebsitebuilder.vercel.app/',
         imageUrl: '/projects/sitesprint.png',
         tags: ['LMS'],
-        view: "Business Prespective"
+        view: "Business Perspective"
       },
       {
         name: 'VectorChat - PDF Interaction Platform',
@@ -797,7 +797,7 @@ export const getProjects = cache(async () => {
         link: 'https://chat-pdf-lemon.vercel.app/',
         imageUrl: '/projects/vectorchat.png',
         tags: ['LMS'],
-        view: "Business Prespective"
+        view: "Business Perspective"
       },
     ]
     return response;
