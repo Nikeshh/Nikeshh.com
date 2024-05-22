@@ -535,7 +535,8 @@ export const getProjects = cache(async () => {
         category: 'Web App',
         link: 'https://lms-platform-red.vercel.app/',
         imageUrl: '/projects/lms-platform.png',
-        tags: ['LMS']
+        tags: ['LMS'],
+        view: "Business"
       },
       {
         name: 'SkinEssence',
@@ -543,7 +544,8 @@ export const getProjects = cache(async () => {
         category: 'Ecommerce',
         link: 'https://www.skinessence.ca/',
         imageUrl: '/projects/skin-essence.png',
-        tags: ['LMS']
+        tags: ['LMS'],
+        view: "Business"
       },
       {
         name: 'ALT Interiors',
@@ -551,7 +553,8 @@ export const getProjects = cache(async () => {
         category: 'Ecommerce',
         link: 'alt',
         imageUrl: '/projects/alt-interiors.png',
-        tags: ['LMS']
+        tags: ['LMS'],
+        view: "Business"
       },
       {
         name: 'Spades Brand',
@@ -559,7 +562,8 @@ export const getProjects = cache(async () => {
         category: 'Ecommerce',
         link: 'https://www.spadesbrand.com/',
         imageUrl: '/projects/spades-brand.png',
-        tags: ['LMS']
+        tags: ['LMS'],
+        view: "Business"
       },
       {
         name: 'PPE Supply Canada',
@@ -567,7 +571,8 @@ export const getProjects = cache(async () => {
         category: 'Ecommerce',
         link: 'https://www.ppe-supply.com/',
         imageUrl: '/projects/ppe-supply-canada.png',
-        tags: ['LMS']
+        tags: ['LMS'],
+        view: "Business"
       },
       {
         name: 'Karking',
@@ -575,7 +580,8 @@ export const getProjects = cache(async () => {
         category: 'Website',
         link: 'https://karking.in/',
         imageUrl: '/projects/karking.png',
-        tags: ['LMS']
+        tags: ['LMS'],
+        view: "Business"
       },
       {
         name: 'Immunuts',
@@ -583,7 +589,8 @@ export const getProjects = cache(async () => {
         category: 'Website',
         link: 'https://immunuts.in/',
         imageUrl: '/projects/immunuts.png',
-        tags: ['LMS']
+        tags: ['LMS'],
+        view: "Business"
       },
       {
         name: 'Norte-Damepavillion',
@@ -591,7 +598,8 @@ export const getProjects = cache(async () => {
         category: 'Website',
         link: 'https://www.notre-damepavillionhospital.ca/',
         imageUrl: '/projects/notre-damepavillionhospital.png',
-        tags: ['LMS']
+        tags: ['LMS'],
+        view: "Business"
       },
       {
         name: 'Mitaz Consulting',
@@ -599,7 +607,8 @@ export const getProjects = cache(async () => {
         category: 'Website',
         link: 'https://mitazconsulting.ca/',
         imageUrl: '/projects/mitazconsulting.png',
-        tags: ['LMS']
+        tags: ['LMS'],
+        view: "Business"
       },
       {
         name: 'Elkrest Farm',
@@ -607,7 +616,8 @@ export const getProjects = cache(async () => {
         category: 'Website',
         link: 'https://elkrestsfarm.ca/',
         imageUrl: '/projects/elkrests-farm.png',
-        tags: ['LMS']
+        tags: ['LMS'],
+        view: "Business"
       },
       {
         name: 'Island National Medical Center',
@@ -615,7 +625,8 @@ export const getProjects = cache(async () => {
         category: 'Website',
         link: 'https://inamc.ca/',
         imageUrl: '/projects/inamc.png',
-        tags: ['LMS']
+        tags: ['LMS'],
+        view: "Business"
       },
       {
         name: 'Market Farm',
@@ -623,7 +634,8 @@ export const getProjects = cache(async () => {
         category: 'Website',
         link: 'https://marketfarm.ca/',
         imageUrl: '/projects/marketfarm.png',
-        tags: ['LMS']
+        tags: ['LMS'],
+        view: "Business"
       },
       {
         name: 'Placement Nursing',
@@ -631,7 +643,8 @@ export const getProjects = cache(async () => {
         category: 'Website',
         link: 'https://www.placementnursing.ca/',
         imageUrl: '/projects/placementnursing.png',
-        tags: ['LMS']
+        tags: ['LMS'],
+        view: "Business"
       },
       {
         name: 'Learns Point',
@@ -639,7 +652,8 @@ export const getProjects = cache(async () => {
         category: 'Website',
         link: 'https://learnerspoint.org/',
         imageUrl: '/projects/learnerspoint.png',
-        tags: ['LMS']
+        tags: ['LMS'],
+        view: "Business"
       },
       {
         name: 'RideRush - Cross-Platform Bike Taxi Booking App',
@@ -647,7 +661,8 @@ export const getProjects = cache(async () => {
         category: 'Website',
         link: 'https://www.rtrix.in/',
         imageUrl: '/projects/rtrix.png',
-        tags: ['LMS']
+        tags: ['LMS'],
+        view: "Business"
       },
       {
         name: 'Nikeshh.com',
@@ -655,7 +670,8 @@ export const getProjects = cache(async () => {
         category: 'Web App',
         link: 'https://nikeshh.com/',
         imageUrl: '/projects/nikeshh.png',
-        tags: ['LMS']
+        tags: ['LMS'],
+        view: "Business"
       },
       {
         name: 'Digital Ecommerce',
@@ -663,7 +679,8 @@ export const getProjects = cache(async () => {
         category: 'Web App',
         link: 'https://digital-ecommerce-production.up.railway.app/',
         imageUrl: '/projects/digital-ecommerce.png',
-        tags: ['LMS']
+        tags: ['LMS'],
+        view: "Business"
       },
       {
         name: 'Learning Portal',
@@ -671,7 +688,8 @@ export const getProjects = cache(async () => {
         category: 'Web App',
         link: 'https://learning-portal-murex.vercel.app/',
         imageUrl: '/projects/learning-portal.png',
-        tags: ['LMS']
+        tags: ['LMS'],
+        view: "Business"
       },
       {
         name: 'Modern Ecommerce',
@@ -679,7 +697,8 @@ export const getProjects = cache(async () => {
         category: 'Web App',
         link: 'https://modern-ecommerce-tawny.vercel.app/',
         imageUrl: '/projects/modern-ecommerce.png',
-        tags: ['LMS']
+        tags: ['LMS'],
+        view: "Business"
       },
       {
         name: 'NikeshhCodes.com',
@@ -687,7 +706,8 @@ export const getProjects = cache(async () => {
         category: 'Web App',
         link: 'https://nikeshhcodes.com/',
         imageUrl: '/projects/nikeshhcodes.png',
-        tags: ['LMS']
+        tags: ['LMS'],
+        view: "Business"
       },
       {
         name: 'Ecommerce Marketplace',
@@ -695,7 +715,8 @@ export const getProjects = cache(async () => {
         category: 'Web App',
         link: 'https://ecommerce-marketplace-two.vercel.app/',
         imageUrl: '/projects/ecommerce-marketplace.png',
-        tags: ['LMS']
+        tags: ['LMS'],
+        view: "Business"
       },
       {
         name: 'Suzan Peltekian',
@@ -703,7 +724,8 @@ export const getProjects = cache(async () => {
         category: 'Wordpress',
         link: 'https://superchargewithsuzan.com/',
         imageUrl: '/projects/suzan-peltekian.png',
-        tags: ['LMS']
+        tags: ['LMS'],
+        view: "Business"
       },
       {
         name: 'Suzan Peltekian',
@@ -711,7 +733,8 @@ export const getProjects = cache(async () => {
         category: 'GHL',
         link: 'https://register.suzanpeltekian.com/manifest-millions',
         imageUrl: '/projects/suzan-peltekian-manifest-millions.png',
-        tags: ['LMS']
+        tags: ['LMS'],
+        view: "Business"
       },
       {
         name: 'DocGenius - Documentation Platform',
@@ -719,7 +742,8 @@ export const getProjects = cache(async () => {
         category: 'Web App',
         link: 'https://documentation-platform-production.up.railway.app/',
         imageUrl: '/projects/docgenius.png',
-        tags: ['LMS']
+        tags: ['LMS'],
+        view: "Business"
       },
       {
         name: 'FlowForge - SAAS Automation Builder',
@@ -727,7 +751,8 @@ export const getProjects = cache(async () => {
         category: 'Web App',
         link: 'https://saas-automation-builder.vercel.app/',
         imageUrl: '/projects/fuzzie.png',
-        tags: ['LMS']
+        tags: ['LMS'],
+        view: "Business"
       },
       {
         name: 'Glisten AI - AI-Powered Document Search and Website Customization',
@@ -735,7 +760,8 @@ export const getProjects = cache(async () => {
         category: 'Automation',
         link: 'https://glisten-ai-website.vercel.app/',
         imageUrl: '/projects/glisten-ai.png',
-        tags: ['LMS']
+        tags: ['LMS'],
+        view: "Business"
       },
       {
         name: 'NextNews - Newsletter Creation and Email Marketing Platform',
@@ -743,7 +769,8 @@ export const getProjects = cache(async () => {
         category: 'Web App',
         link: 'https://newsletter-platform.vercel.app/',
         imageUrl: '/projects/newsletter-platform.png',
-        tags: ['LMS']
+        tags: ['LMS'],
+        view: "Business"
       },
       {
         name: 'StaySpot - House Booking Platform',
@@ -751,7 +778,8 @@ export const getProjects = cache(async () => {
         category: 'Web App',
         link: 'https://house-booking-platform.vercel.app/',
         imageUrl: '/projects/stayspot.png',
-        tags: ['LMS']
+        tags: ['LMS'],
+        view: "Business"
       },
       {
         name: 'SiteSprint - SAAS Website Builder for Agencies',
@@ -759,7 +787,8 @@ export const getProjects = cache(async () => {
         category: 'Web App',
         link: 'https://saaswebsitebuilder.vercel.app/',
         imageUrl: '/projects/sitesprint.png',
-        tags: ['LMS']
+        tags: ['LMS'],
+        view: "Business"
       },
       {
         name: 'VectorChat - PDF Interaction Platform',
@@ -767,7 +796,8 @@ export const getProjects = cache(async () => {
         category: 'AI',
         link: 'https://chat-pdf-lemon.vercel.app/',
         imageUrl: '/projects/vectorchat.png',
-        tags: ['LMS']
+        tags: ['LMS'],
+        view: "Business"
       },
     ]
     return response;
