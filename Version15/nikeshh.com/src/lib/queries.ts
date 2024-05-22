@@ -540,7 +540,7 @@ export const getProjects = cache(async () => {
       {
         name: 'SkinEssence',
         subtitle: 'VectorChat revolutionizes communication by enabling seamless interaction with PDF documents through vector data. Enhance collaboration and productivity with intuitive chat-based PDF interactions.',
-        category: 'Shopify Website',
+        category: 'Ecommerce',
         link: 'https://www.skinessence.ca/',
         imageUrl: '/projects/skin-essence.png',
         tags: ['LMS']
@@ -548,7 +548,7 @@ export const getProjects = cache(async () => {
       {
         name: 'ALT Interiors',
         subtitle: 'VectorChat revolutionizes communication by enabling seamless interaction with PDF documents through vector data. Enhance collaboration and productivity with intuitive chat-based PDF interactions.',
-        category: 'Shopify Website',
+        category: 'Ecommerce',
         link: 'alt',
         imageUrl: '/projects/alt-interiors.png',
         tags: ['LMS']
@@ -556,7 +556,7 @@ export const getProjects = cache(async () => {
       {
         name: 'Spades Brand',
         subtitle: 'VectorChat revolutionizes communication by enabling seamless interaction with PDF documents through vector data. Enhance collaboration and productivity with intuitive chat-based PDF interactions.',
-        category: 'Shopify Website',
+        category: 'Ecommerce',
         link: 'https://www.spadesbrand.com/',
         imageUrl: '/projects/spades-brand.png',
         tags: ['LMS']
@@ -564,7 +564,7 @@ export const getProjects = cache(async () => {
       {
         name: 'PPE Supply Canada',
         subtitle: 'VectorChat revolutionizes communication by enabling seamless interaction with PDF documents through vector data. Enhance collaboration and productivity with intuitive chat-based PDF interactions.',
-        category: 'Shopify Website',
+        category: 'Ecommerce',
         link: 'https://www.ppe-supply.com/',
         imageUrl: '/projects/ppe-supply-canada.png',
         tags: ['LMS']

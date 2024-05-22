@@ -4,6 +4,7 @@ import { Badge } from '@/components/ui/badge';
 import { cn } from '@/lib/utils';
 import Link from 'next/link';
 import React, { useState } from 'react'
+import LoadingC from '@/components/global/loading'
 
 type Props = {
     projects: {
@@ -19,13 +20,17 @@ type Props = {
 
 const Projects = ({ projects, inlineElement } : Props) => {
 
+    const [loading, setLoading] = useState(false);
+
     // Projects
     const projectTags = projects.map(item => item.category).filter((value, index, self) => self.indexOf(value) === index);
     const [selectedProject, setSelectedProject] = useState(projectTags[0]);
     const [selectedProjects, setSelectedProjects] = useState(projects.filter(item => item.category == projectTags[0]));
     const updateSelectedProject = (project: string) => {
+        setLoading(true);
         setSelectedProject(project);
         setSelectedProjects(projects.filter(item => item.category == project));
+        setLoading(false);
     }
 
     if (projects && projects.length > 0 && projectTags) {
@@ -59,7 +64,7 @@ const Projects = ({ projects, inlineElement } : Props) => {
                     })}
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-x-7 gap-y-12 pt-9">
-                    {selectedProjects.map((a, index) => {
+                    {!loading ? selectedProjects.map((a, index) => {
                         return (
                             <Link href={`/projects/${a.name.toLowerCase().replace(/ /g, '-').replace(/\//g, '').replace(/\(/g, '').replace(/\)/g, '')}`} key={index} className="group block cursor-pointer">
                                 <div className="aspect-w-16 aspect-h-12 overflow-hidden bg-gray-100 rounded-2xl dark:bg-neutral-800">
@@ -86,7 +91,7 @@ const Projects = ({ projects, inlineElement } : Props) => {
                                 </div>
                             </Link>
                         );
-                    })}
+                    }) : <LoadingC />}
                 </div>
             </section>
         );
