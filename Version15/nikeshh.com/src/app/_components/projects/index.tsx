@@ -23,7 +23,7 @@ type Props = {
 const Projects = ({ projects, inlineElement } : Props) => {
 
     const [loading, setLoading] = useState(false);
-    const [view, setView] = useState("Business");
+    const [view, setView] = useState("Business Prespective");
 
     let filteredProjects = projects.filter(item => item.view == view);
     let projectTags = filteredProjects.map(item => item.category).filter((value, index, self) => self.indexOf(value) === index);
@@ -65,23 +65,23 @@ const Projects = ({ projects, inlineElement } : Props) => {
                     <div className="flex justify-center items-center">
                         <label className={cn(
                             'min-w-14 text-sm text-gray-500 me-3 dark:text-neutral-400',
-                            view == "Business" && 'dark:text-white',
-                        )}>Business</label>
+                            view == "Business Prespective" && 'dark:text-white',
+                        )}>Business Prespective</label>
 
                         <Switch onClick={() => {
-                            if (view == "Business") {
+                            if (view == "Business Prespective") {
                                 updateSelectedProject("WEB APP");
-                                updateView("Technical");
-                            } else if (view == "Technical") {
+                                updateView("Technical Prespective");
+                            } else if (view == "Technical Prespective") {
                                 updateSelectedProject("WEB APP");
-                                updateView("Business");
+                                updateView("Business Prespective");
                             }
-                        }} checked={view == "Technical"}/>
+                        }} checked={view == "Technical Prespective"}/>
                         <label className={cn(
                             'relative min-w-14 text-sm text-gray-500 ms-3 dark:text-neutral-400',
-                            view == "Technical" && 'dark:text-white',
+                            view == "Technical Prespective" && 'dark:text-white',
                         )}>
-                            Technical
+                            Technical Prespective
                             <span className="absolute -top-10 start-auto -end-[64px]">
                                 <span className="flex items-center">
                                     <svg className="w-14 h-8 -me-6" width="45" height="25" viewBox="0 0 45 25" fill="none" xmlns="http://www.w3.org/2000/svg">
