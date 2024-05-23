@@ -5,18 +5,22 @@ import { cache } from 'react'
 export const revalidate = 3600 // revalidate the data at most every hour
 
 export const getAuthUserDetails = async () => {
-    const user = await currentUser()
-    if (!user) {
-      return
+  const user = await currentUser()
+  if (!user) {
+    return
+  }
+
+  const userData = await db.user.findUnique({
+    where: {
+      email: user.emailAddresses[0].emailAddress,
     }
-  
-    const userData = await db.user.findUnique({
-      where: {
-        email: user.emailAddresses[0].emailAddress,
-      }
-    })
-  
-    return userData
+  })
+
+  return userData
+}
+
+export const getInfiniteProducts = async () => {
+  return [];
 }
 
 export const getTestimonials = cache(async () => {
