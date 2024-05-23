@@ -46,7 +46,7 @@ const Home = async () => {
             <h1 className="font-bold text-[70px] architect-font">
               I BUILD.
             </h1>
-            <p>Applications ◦ Automations ◦ Systems ◦ Software Products</p>
+            <p>Business Solutions ◦ Applications ◦ Software Products ◦ Automations ◦ Systems</p>
           </div>
           <p>
             👨‍💻 Lead Full Stack Developer and Digital Marketer with work spanning a decade.
