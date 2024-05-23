@@ -283,7 +283,7 @@ export const getSkills = cache(async () => {
 
   let businessView = [
     {
-      name: 'Web Development',
+      name: 'Web App Development',
       category: 'Development for Business Solutions',
       imageUrl: '',
       description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
@@ -291,7 +291,31 @@ export const getSkills = cache(async () => {
       view: "Business Perspective"
     },
     {
-      name: 'Mobile Development',
+      name: 'Website Development',
+      category: 'Development for Business Solutions',
+      imageUrl: '',
+      description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
+      points: 'Front-end: HTML5, CSS3, JavaScript (ES6+), React.js, Angular, Vue.js, Ember.js | Back-end: Python (Django, Flask), JavaScript (Node.js), Java (Spring Boot), Ruby (Ruby on Rails), PHP (Laravel), C# (ASP.NET Core)',
+      view: "Business Perspective"
+    },
+    {
+      name: 'Chatbot Development And Integration',
+      category: 'Development for Business Solutions',
+      imageUrl: '',
+      description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
+      points: 'Front-end: HTML5, CSS3, JavaScript (ES6+), React.js, Angular, Vue.js, Ember.js | Back-end: Python (Django, Flask), JavaScript (Node.js), Java (Spring Boot), Ruby (Ruby on Rails), PHP (Laravel), C# (ASP.NET Core)',
+      view: "Business Perspective"
+    },
+    {
+      name: 'Automation for various businesses',
+      category: 'Development for Business Solutions',
+      imageUrl: '',
+      description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
+      points: 'Front-end: HTML5, CSS3, JavaScript (ES6+), React.js, Angular, Vue.js, Ember.js | Back-end: Python (Django, Flask), JavaScript (Node.js), Java (Spring Boot), Ruby (Ruby on Rails), PHP (Laravel), C# (ASP.NET Core)',
+      view: "Business Perspective"
+    },
+    {
+      name: 'Mobile App Development',
       category: 'Development for Business Solutions',
       imageUrl: '',
       description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
