@@ -12,6 +12,7 @@ import Footer from "@/components/layout/footer";
 import TextReveal from "@/components/magicui/text-reveal";
 import { ChevronDown } from "lucide-react";
 import { Separator } from "@/components/ui/separator";
+import Image from 'next/image';
 
 const Page = async () => {
     console.log("👋 Hi! It looks like you are trying to explore the code. You can directly work with me on any of the listed projects. Feel free to submit your details through the contact form or directly mail me at nikeshhbaskaran01@gmail.com. Cheers 🍻");
@@ -54,13 +55,13 @@ const Page = async () => {
               {/*<div className="p-4">
                 <div className="bg-white dark:bg-black border dark:border-white rounded-sm max-w-md">
                   <div className="flex items-center px-4 py-3">
-                    <img className="h-8 w-8 rounded-full" src="https://picsum.photos/id/1027/150/150"/>
+                    <Image width={100} height={100} className="h-8 w-8 rounded-full" src="https://picsum.photos/id/1027/150/150"/>
                     <div className="ml-3 ">
                       <span className="text-sm font-semibold antialiased block leading-tight">Nikeshh Vijayabaskaran</span>
                       <span className="text-gray-600 text-xs block">Developer</span>
                     </div>
                   </div>
-                  <img src="https://picsum.photos/id/244/900/900"/>
+                  <Image width={100} height={100} src="https://picsum.photos/id/244/900/900"/>
                   <div className="flex items-center justify-between mx-4 mt-3 mb-2">
                     <div className="flex gap-5">
                       <svg fill="#ffffff" height="24" viewBox="0 0 48 48" width="24"><path d="M34.6 6.1c5.7 0 10.4 5.2 10.4 11.5 0 6.8-5.9 11-11.5 16S25 41.3 24 41.9c-1.1-.7-4.7-4-9.5-8.3-5.7-5-11.5-9.2-11.5-16C3 11.3 7.7 6.1 13.4 6.1c4.2 0 6.5 2 8.1 4.3 1.9 2.6 2.2 3.9 2.5 3.9.3 0 .6-1.3 2.5-3.9 1.6-2.3 3.9-4.3 8.1-4.3m0-3c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5.6 0 1.1-.2 1.6-.5 1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z"></path></svg>
@@ -78,7 +79,7 @@ const Page = async () => {
             <div className="bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-800 p-4 rounded-xl border max-w-xl">
               <div className="flex justify-between">
                 <div className="flex items-center">
-                  <img className="h-11 w-11 rounded-full" src="https://pbs.twimg.com/profile_images/1287562748562309122/4RLk5A_U_x96.jpg"/>
+                  <Image width={100} height={100} className="h-11 w-11 rounded-full" src="https://pbs.twimg.com/profile_images/1287562748562309122/4RLk5A_U_x96.jpg"/>
                   <div className="ml-1.5 text-sm leading-tight">
                     <span className="text-black dark:text-white font-bold block ">Visualize Value</span>
                     <span className="text-gray-500 dark:text-gray-400 font-normal block">@visualizevalue</span>
@@ -87,7 +88,7 @@ const Page = async () => {
                 <svg className="text-blue-400 dark:text-white h-6 w-auto inline-block fill-current" viewBox="0 0 24 24"><g><path d="M23.643 4.937c-.835.37-1.732.62-2.675.733.962-.576 1.7-1.49 2.048-2.578-.9.534-1.897.922-2.958 1.13-.85-.904-2.06-1.47-3.4-1.47-2.572 0-4.658 2.086-4.658 4.66 0 .364.042.718.12 1.06-3.873-.195-7.304-2.05-9.602-4.868-.4.69-.63 1.49-.63 2.342 0 1.616.823 3.043 2.072 3.878-.764-.025-1.482-.234-2.11-.583v.06c0 2.257 1.605 4.14 3.737 4.568-.392.106-.803.162-1.227.162-.3 0-.593-.028-.877-.082.593 1.85 2.313 3.198 4.352 3.234-1.595 1.25-3.604 1.995-5.786 1.995-.376 0-.747-.022-1.112-.065 2.062 1.323 4.51 2.093 7.14 2.093 8.57 0 13.255-7.098 13.255-13.254 0-.2-.005-.402-.014-.602.91-.658 1.7-1.477 2.323-2.41z"></path></g></svg>
               </div>
               <p className="text-black dark:text-white block text-xl leading-snug mt-3">“No one ever made a decision because of a number. They need a story.” — Daniel Kahneman</p>
-              <img className="mt-2 rounded-2xl border border-gray-100 dark:border-gray-700" src="https://pbs.twimg.com/media/EpkuplDXEAEjbFc?format=jpg&name=medium"/>
+              <Image width={100} height={100} className="mt-2 rounded-2xl border border-gray-100 dark:border-gray-700" src="https://pbs.twimg.com/media/EpkuplDXEAEjbFc?format=jpg&name=medium"/>
               <p className="text-gray-500 dark:text-gray-400 text-base py-1 my-0.5">10:05 AM · Dec 19, 2020</p>
               <div className="border-gray-200 dark:border-gray-600 border border-b-0 my-1"></div>
               <div className="text-gray-500 dark:text-gray-400 flex mt-3">

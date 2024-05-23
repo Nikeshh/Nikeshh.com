@@ -2,8 +2,6 @@
 
 import React, { useState } from 'react'
 import Image from 'next/image';
-import { UserIcon } from 'lucide-react';
-import { CgProfile } from 'react-icons/cg';
 
 type Props = {
     testimonials: { 
@@ -34,7 +32,7 @@ const Testimonials = ({ testimonials } : Props) => {
                                     <div className="flex-auto p-4 md:p-6">
                                         {testimonial.companyLogoUrl && (
                                             <div className="flex-shrink-0">
-                                                <img className="size-8 sm:h-[2.875rem] sm:w-[2.875rem] rounded-full" src={testimonial.companyLogoUrl} alt="Image Description" />
+                                                <Image width={100} height={100} className="size-8 sm:h-[2.875rem] sm:w-[2.875rem] rounded-full" src={testimonial.companyLogoUrl} alt="Image Description" />
                                             </div>
                                         )}
                                         <p className="text-base italic md:text-lg text-gray-800 dark:text-neutral-200">
@@ -46,7 +44,7 @@ const Testimonials = ({ testimonials } : Props) => {
                                         <div className="flex items-center">
                                             {testimonial.avatarUrl && (
                                                 <div className="flex-shrink-0">
-                                                    <img className="size-8 sm:h-[2.875rem] sm:w-[2.875rem] rounded-full" src={testimonial.avatarUrl} alt="Image Description" />
+                                                    <Image width={100} height={100} className="size-8 sm:h-[2.875rem] sm:w-[2.875rem] rounded-full" src={testimonial.avatarUrl} alt="Image Description" />
                                                 </div>
                                             )}
 

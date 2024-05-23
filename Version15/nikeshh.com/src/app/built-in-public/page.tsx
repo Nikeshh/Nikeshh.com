@@ -1,6 +1,7 @@
 import Footer from "@/components/layout/footer";
 import Navigation from "@/components/layout/navigation";
 import Link from "next/link";
+import Image from 'next/image';
 
 const Page = () => {
   return (
@@ -11,7 +12,9 @@ const Page = () => {
           <div className="py-12 grid grid-cols-2 gap-4 sm:gap-6 md:gap-8 lg:gap-12">
             <Link className="group block" href="/built-in-public/nikeshhcodes">
               <div className="aspect-w-16 aspect-h-12 overflow-hidden bg-gray-100 rounded-2xl dark:bg-neutral-800">
-                <img
+                <Image
+                  width={100}
+                  height={100}
                   className="group-hover:scale-105 transition-transform duration-500 ease-in-out object-cover rounded-2xl"
                   src="/nikeshhcodes-thumbnail.jpg"
                   alt="Image Description"
@@ -38,7 +41,9 @@ const Page = () => {
             </Link>
             <Link className="group block" href="/built-in-public/interconnect">
               <div className="aspect-w-16 aspect-h-12 overflow-hidden bg-gray-100 rounded-2xl dark:bg-neutral-800">
-                <img
+                <Image
+                  width={100}
+                  height={100}
                   className="group-hover:scale-105 transition-transform duration-500 ease-in-out object-cover rounded-2xl"
                   src="/interconnect.jpg"
                   alt="Image Description"

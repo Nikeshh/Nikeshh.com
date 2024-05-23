@@ -32,3 +32,5 @@ export function formatPrice(
     maximumFractionDigits: 2,
   }).format(numericPrice)
 }
+
+export const delay = (ms: number | undefined) => new Promise(res => setTimeout(res, ms));

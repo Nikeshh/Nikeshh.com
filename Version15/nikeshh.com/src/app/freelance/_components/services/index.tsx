@@ -4,11 +4,9 @@ import React, { useState } from 'react'
 import { useModal } from '@/providers/modal-provider';
 import { groupByKey } from '@/lib/utils';
 import { Badge } from '@/components/ui/badge';
-import { Command, CommandEmpty, CommandGroup, CommandInput, CommandItem, CommandList, CommandSeparator } from '@/components/ui/command';
-import CustomModal from '@/components/global/custom-modal';
 import Link from 'next/link';
-import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Services as ServicesType } from '@prisma/client';
+import Image from 'next/image';
 
 type Props = {
     services: {
@@ -85,7 +83,7 @@ const Services = ({ services } : Props) => {
                                                     </svg>
                                                 </Link>
                                             </div>
-                                            <img src="https://tailwindcss.com/_next/static/media/headlessui@75.c1d50bc1.jpg" alt="" className="mb-6 shadow-md rounded-lg bg-slate-50 w-full sm:w-[17rem] sm:mb-0 xl:mb-6 xl:w-full" width="1216" height="640" />
+                                            <Image width={100} height={100} src="https://tailwindcss.com/_next/static/media/headlessui@75.c1d50bc1.jpg" alt="" className="mb-6 shadow-md rounded-lg bg-slate-50 w-full sm:w-[17rem] sm:mb-0 xl:mb-6 xl:w-full" />
                                         </li>
                                     );
                                 })}

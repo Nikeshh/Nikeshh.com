@@ -1,12 +1,13 @@
 "use client"
 
 import { Badge } from '@/components/ui/badge';
-import { cn } from '@/lib/utils';
+import { cn, delay } from '@/lib/utils';
 import Link from 'next/link';
 import React, { useState } from 'react'
 import LoadingC from '@/components/global/loading'
 import { Switch } from '@/components/ui/switch';
 import { Info } from 'lucide-react';
+import Image from 'next/image';
 
 type Props = {
     projects: {
@@ -31,20 +32,22 @@ const Projects = ({ projects, inlineElement } : Props) => {
     const [selectedProject, setSelectedProject] = useState(projectTags[0]);
     const [selectedProjects, setSelectedProjects] = useState(filteredProjects.filter(item => item.category == projectTags[0]));
 
-    const updateView = (view: string) => {
+    const updateView = async (view: string) => {
         setLoading(true);
         setView(view);
         filteredProjects = projects.filter(item => item.view == view);
         projectTags = filteredProjects.map(item => item.category).filter((value, index, self) => self.indexOf(value) === index);
         setSelectedProject(projectTags[0]);
         setSelectedProjects(filteredProjects.filter(item => item.category == projectTags[0]));
+        await delay(1000);
         setLoading(false);
     }
 
-    const updateSelectedProject = (project: string) => {
+    const updateSelectedProject = async (project: string) => {
         setLoading(true);
         setSelectedProject(project);
         setSelectedProjects(filteredProjects.filter(item => item.category == project));
+        await delay(1000);
         setLoading(false);
     }
 
@@ -121,7 +124,7 @@ const Projects = ({ projects, inlineElement } : Props) => {
                         return (
                             <Link href={`/projects/${a.name.toLowerCase().replace(/ /g, '-').replace(/\//g, '').replace(/\(/g, '').replace(/\)/g, '')}`} key={index} className="group block cursor-pointer">
                                 <div className="aspect-w-16 aspect-h-12 overflow-hidden bg-gray-100 rounded-2xl dark:bg-neutral-800">
-                                    <img className="group-hover:scale-105 transition-transform duration-500 ease-in-out object-cover rounded-2xl" src={a.imageUrl} alt="Image Description" />
+                                    <Image width={720} height={468} className="group-hover:scale-105 transition-transform duration-500 ease-in-out object-cover rounded-2xl" src={a.imageUrl} alt="Image Description" />
                                 </div>
 
                                 <div className="pt-4">

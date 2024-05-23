@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from 'next/image';
 
 type Props = {
     headline: string,
@@ -14,7 +15,7 @@ const Certification = ({ headline, title, id, link, badges, imageUrl }: Props) =
         <div key={id} className="group rounded-xl overflow-hidden">
             <div className="sm:flex">
                 <div className="flex-shrink-0 relative rounded-xl overflow-hidden w-full sm:w-56 h-44">
-                    <img className="group-hover:scale-105 transition-transform duration-500 ease-in-out size-full absolute top-0 start-0 object-cover rounded-xl" src={imageUrl} alt="Image Description" />
+                    <Image width={100} height={100} className="group-hover:scale-105 transition-transform duration-500 ease-in-out size-full absolute top-0 start-0 object-cover rounded-xl" src={imageUrl} alt="Image Description" />
                 </div>
 
                 <div className="grow mt-4 sm:mt-0 sm:ms-6 px-4 sm:px-0">
