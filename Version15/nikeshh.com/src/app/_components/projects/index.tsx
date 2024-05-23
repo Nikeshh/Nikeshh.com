@@ -96,7 +96,7 @@ const Projects = ({ projects, inlineElement } : Props) => {
                     {view == "Development Showcase" && (
                         <div className='flex justify-center mt-4 text-sm gap-2 items-center'>
                             <Info />
-                            <p>Please note projects presented below are more technical in nature.</p>
+                            <p>Please note projects presented below are more technical in nature, especially in terms of language.</p>
                         </div>
                     )}
                 </div>
