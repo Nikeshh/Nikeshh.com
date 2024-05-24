@@ -3,8 +3,13 @@ import { Icons } from "./Icons";
 import MaxWidthWrapper from "./MaxWidthWrapper";
 import MobileNav from "./MobileNav";
 import NavItems from "./NavItems";
+import { UserButton, useAuth } from '@clerk/nextjs'
+import { buttonVariants } from "@/components/ui/button";
+import { currentUser } from '@clerk/nextjs/server';
 
-const Navbar = () => {
+const Navbar = async () => {
+    const user = await currentUser()
+
     return (
         <div className='bg-white sticky z-50 top-0 inset-x-0 h-16'>
             <header className='relative bg-white'>
@@ -25,7 +30,15 @@ const Navbar = () => {
 
                             <div className='ml-auto flex items-center'>
                                 <div className='hidden lg:flex lg:flex-1 lg:items-center lg:justify-end lg:space-x-6'>
-                                    
+                                    {user?.id ? <UserButton afterSignOutUrl="/" /> : (
+                                        <Link
+                                            href='/sign-in'
+                                            className={buttonVariants({
+                                                variant: 'default',
+                                            })}>
+                                                Sign in
+                                        </Link>
+                                    )}
                                 </div>
                             </div>
                         </div>

@@ -11,7 +11,7 @@
     "slicemachine": "start-slicemachine"
   },
   "dependencies": {
-    "@clerk/nextjs": "^4.29.7",
+    "@clerk/nextjs": "^5.1.2",
     "@clerk/themes": "^1.7.9",
     "@emailjs/browser": "^3.11.0",
     "@gsap/react": "^2.1.0",
