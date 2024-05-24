@@ -59,11 +59,11 @@ const Page = () => {
                                 </Button>
                             </div>
                         </div>
-                        {/*<ProductReel
+                        <ProductReel
                             query={{ sort: 'desc', limit: 4 }}
                             href='/products?sort=recent'
                             title='Brand new'
-                        />*/}
+                        />
                     </MaxWidthWrapper>
                     <section className='border-t border-gray-200 bg-gray-50'>
                         <MaxWidthWrapper className='py-20'>

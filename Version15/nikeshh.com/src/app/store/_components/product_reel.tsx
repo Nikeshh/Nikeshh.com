@@ -23,7 +23,7 @@ const ProductReel = async (props: ProductReelProps) => {
       console.log(apiProducts);
     };
 
-    await fetchProducts();
+    // await fetchProducts();
 
     let map: (Product | null)[] = []
     if (products && products.length) {
