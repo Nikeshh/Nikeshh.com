@@ -1,13 +1,13 @@
 import connectDB from "@/lib/connectDB";
 import { Product } from "@/app/store/models/Product";
-import { NextResponse } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 
-export async function GET() {
+export async function GET(req: NextRequest) {
     connectDB();
     try {
-        const products = await Product.find({});
-        return NextResponse.json(products);
+        const items = await Product.find({})
+        return NextResponse.json(items);
     } catch (err: any) {
-        return NextResponse.json({ error: err.message })
+        return NextResponse.json({ error: err.message }, { status: 400 })
     }
 }

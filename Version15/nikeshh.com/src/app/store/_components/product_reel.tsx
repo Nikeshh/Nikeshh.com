@@ -1,5 +1,5 @@
 import { TQueryValidator } from "@/lib/validators/query-validator"
-import { Product } from "../types"
+import { Product } from "../models/types"
 import Link from 'next/link'
 import ProductListing from './ProductListing'
 
@@ -10,20 +10,12 @@ interface ProductReelProps {
     query: TQueryValidator
 }
   
-const FALLBACK_LIMIT = 4;
-  
 const ProductReel = async (props: ProductReelProps) => {
     const { title, subtitle, href, query } = props;
 
+
+    const res = await fetch(`${process.env.NEXT_PUBLIC_URL}/api/products`, {cache: "no-store"});
     const products: string | any[] = [];
-
-    const fetchProducts = async () => {
-      const res = await fetch(`${process.env.NEXT_PUBLIC_URL}/api/products`);
-      const apiProducts = await res.json();
-      console.log(apiProducts);
-    };
-
-    await fetchProducts();
 
     let map: (Product | null)[] = []
     if (products && products.length) {

@@ -1,48 +1,62 @@
-import mongoose, {
-    InferSchemaType,
-    Model,
-    ObtainSchemaGeneric,
-    Schema,
-  } from "mongoose";
-  
-export interface IProduct extends Document {
-    name: string;
-    price: number;
-    description: string;
-}
+import mongoose from "mongoose";
 
-const productSchema: Schema = new mongoose.Schema(
-    {
-        name: {
-            type: String,
-            required: true
-        },
-        price: {
-            type: Number,
-            required: true
-        },
-        description: {
-            type: String
-        }
+const ObjectID = mongoose.Schema.Types.ObjectId
+
+const productSchema = new mongoose.Schema({
+    user: {
+        type: String,
+        required: true,
     },
-    {
-        timestamps: true,
-        collection: "products",
-    }
-);
+    name: {
+        type: String,
+        required: true,
+        trim: true
+    },
+    description: {
+        type: String,
+        required: true
+    },
+    price: {
+        type: Number,
+        required: true
+    },
+    category: {
+        type: String,
+        required: true
+    },
+    product_files : {
+        type: ObjectID,
+        required: true,
+        ref: 'ProductFile'
+    },
+    approvedForSale : {
+        type: String, 
+        enum: ["pending", "approved", "denied"],
+        required: false,
+    },
+    priceId: {
+        type: String,
+        required: false
+    },
+    stripeId: {
+        type: String,
+        required: false
+    },
+    images: [
+        {
+            image: {
+                type: String,
+                required: true
+            },
+            id: {
+                type: String,
+                required: false
+            },
+        }
+    ]
+}, {
+    timestamps: true,
+    collection: "products"
+})
 
-type GenericModel<TSchema extends Schema = any> = Model<
-    InferSchemaType<TSchema>,
-    ObtainSchemaGeneric<TSchema, "TQueryHelpers">,
-    ObtainSchemaGeneric<TSchema, "TInstanceMethods">,
-    ObtainSchemaGeneric<TSchema, "TVirtuals">,
-    TSchema
-> &
-ObtainSchemaGeneric<TSchema, "TStaticMethods">;
-
-
-type ProductModel = GenericModel<typeof productSchema>;
-
-export const Product =
-(mongoose.models.Product as ProductModel) ||
-mongoose.model("Product", productSchema);
+export const Product = mongoose.models.Product || mongoose.model('Product', productSchema)

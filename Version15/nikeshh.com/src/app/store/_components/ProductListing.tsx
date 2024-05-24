@@ -1,6 +1,6 @@
 'use client'
 
-import { Product } from '../types'
+import { Product } from '../models/types'
 import { useEffect, useState } from 'react'
 import { Skeleton } from '@/components/ui/skeleton'
 import Link from 'next/link'
