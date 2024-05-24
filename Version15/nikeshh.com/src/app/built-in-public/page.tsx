@@ -13,7 +13,7 @@ const Page = () => {
             <Link className="group block" href="/built-in-public/nikeshhcodes">
               <div className="aspect-w-16 aspect-h-12 overflow-hidden bg-gray-100 rounded-2xl dark:bg-neutral-800">
                 <Image
-                  width={100}
+                  width={640}
                   height={100}
                   className="group-hover:scale-105 transition-transform duration-500 ease-in-out object-cover rounded-2xl"
                   src="/nikeshhcodes-thumbnail.jpg"
@@ -42,7 +42,7 @@ const Page = () => {
             <Link className="group block" href="/built-in-public/interconnect">
               <div className="aspect-w-16 aspect-h-12 overflow-hidden bg-gray-100 rounded-2xl dark:bg-neutral-800">
                 <Image
-                  width={100}
+                  width={640}
                   height={100}
                   className="group-hover:scale-105 transition-transform duration-500 ease-in-out object-cover rounded-2xl"
                   src="/interconnect.jpg"

@@ -756,7 +756,7 @@ export const getProjects = cache(async () => {
         view: "Business Perspective"
       },
       {
-        name: 'Suzan Peltekian',
+        name: 'Suzan Peltekian - Manifest Millions',
         subtitle: 'VectorChat revolutionizes communication by enabling seamless interaction with PDF documents through vector data. Enhance collaboration and productivity with intuitive chat-based PDF interactions.',
         category: 'GHL',
         link: 'https://register.suzanpeltekian.com/manifest-millions',
