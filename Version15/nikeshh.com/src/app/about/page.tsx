@@ -51,60 +51,60 @@ const Page = async () => {
                 </p>
                 <br />
                 <p>
-                  Hey there! I'm Nikeshh Vijayabaskaran, and I'm all about
+                  Hey there! I&apos;m Nikeshh Vijayabaskaran, and I&apos;m all about
                   building and fixing software. With over 6 years of experience
                   leading teams as a Full Stack Engineer and 7 years of
-                  freelancing under my belt, I've developed a real knack for
+                  freelancing under my belt, I&apos;ve developed a real knack for
                   making things work
                 </p>
                 <p>
                   Every software application has its own unique story, and I
                   love diving into those stories and bringing them to life.
-                  Whether it's creating stunning websites or solving complex
-                  problems with a team, I'm always up for the challenge.
+                  Whether it&apos;s creating stunning websites or solving complex
+                  problems with a team, I&apos;m always up for the challenge.
                 </p>
                 <br />
-                <p>Here's a bit more about what I do:</p>
+                <p>Here&apos;s a bit more about what I do:</p>
                 <p>
-                  <strong>Web Development:</strong> I'm skilled in crafting
+                  <strong>Web Development:</strong> I&apos;m skilled in crafting
                   beautiful and functional websites using tools like ReactJS,
-                  NodeJS, and ExpressJS. From the frontend to the backend, I've
+                  NodeJS, and ExpressJS. From the frontend to the backend, I&apos;ve
                   got you covered.
                 </p>
                 <p>
                   <strong>Database Management:</strong> Need help storing and
-                  managing your data? No problem! I'm experienced with databases
+                  managing your data? No problem! I&apos;m experienced with databases
                   like MySQL, MongoDB, and PostgreSQL, ensuring your data is
                   secure and accessible.
                 </p>
                 <p>
-                  <strong>Cloud Services:</strong> I'm well-versed in cloud
+                  <strong>Cloud Services:</strong> I&apos;m well-versed in cloud
                   technologies like AWS and Azure, helping businesses leverage
                   the power of the cloud to scale and grow their applications.
                 </p>
                 <p>
-                  <strong>Programming Languages:</strong> Whether it's Python,
-                  Java, or C++, I'm comfortable writing code in multiple
+                  <strong>Programming Languages:</strong> Whether it&apos;s Python,
+                  Java, or C++, I&apos;m comfortable writing code in multiple
                   languages and always eager to learn more.
                 </p>
                 <br />
                 <p>
-                  But it's not just about writing code for me. I'm passionate
+                  But it&apos;s not just about writing code for me. I&apos;m passionate
                   about using technology to make a positive impact on the world.
-                  Whether it's building tools to help non-profits or
-                  contributing to open-source projects, I'm always looking for
+                  Whether it&apos;s building tools to help non-profits or
+                  contributing to open-source projects, I&apos;m always looking for
                   ways to give back.
                 </p>
                 <br />
                 <p>
-                  When I'm not coding, you can find me exploring new
+                  When I&apos;m not coding, you can find me exploring new
                   technologies, hiking in the great outdoors, or enjoying a good
-                  book. Oh, and I'm a big fan of coffee – it's the fuel that
+                  book. Oh, and I'm a big fan of coffee – it&apos;s the fuel that
                   keeps me going!
                 </p>
                 <br />
                 <p>
-                  If you're looking for someone who's not only passionate about
+                  If you&apos;re looking for someone who&apos;s not only passionate about
                   technology but also committed to delivering top-notch results,
                   look no further. Feel free to drop me a line at{" "}
                   <a
