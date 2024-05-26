@@ -1239,76 +1239,6 @@ export type EntitiesSlice = prismic.SharedSlice<
 >;
 
 /**
- * Primary content in *InsightsForge → Primary*
- */
-export interface InsightsForgeSliceDefaultPrimary {
-  /**
-   * Heading field in *InsightsForge → Primary*
-   *
-   * - **Field Type**: Rich Text
-   * - **Placeholder**: *None*
-   * - **API ID Path**: insights_forge.primary.heading
-   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
-   */
-  heading: prismic.RichTextField;
-
-  /**
-   * Body field in *InsightsForge → Primary*
-   *
-   * - **Field Type**: Rich Text
-   * - **Placeholder**: *None*
-   * - **API ID Path**: insights_forge.primary.body
-   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
-   */
-  body: prismic.RichTextField;
-}
-
-/**
- * Primary content in *InsightsForge → Items*
- */
-export interface InsightsForgeSliceDefaultItem {
-  /**
-   * Insight field in *InsightsForge → Items*
-   *
-   * - **Field Type**: Content Relationship
-   * - **Placeholder**: *None*
-   * - **API ID Path**: insights_forge.items[].insight
-   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
-   */
-  insight: prismic.ContentRelationshipField;
-}
-
-/**
- * Default variation for InsightsForge Slice
- *
- * - **API ID**: `default`
- * - **Description**: Default
- * - **Documentation**: https://prismic.io/docs/slice
- */
-export type InsightsForgeSliceDefault = prismic.SharedSliceVariation<
-  "default",
-  Simplify<InsightsForgeSliceDefaultPrimary>,
-  Simplify<InsightsForgeSliceDefaultItem>
->;
-
-/**
- * Slice variation for *InsightsForge*
- */
-type InsightsForgeSliceVariation = InsightsForgeSliceDefault;
-
-/**
- * InsightsForge Shared Slice
- *
- * - **API ID**: `insights_forge`
- * - **Description**: InsightsForge
- * - **Documentation**: https://prismic.io/docs/slice
- */
-export type InsightsForgeSlice = prismic.SharedSlice<
-  "insights_forge",
-  InsightsForgeSliceVariation
->;
-
-/**
  * Primary content in *Journeys → Primary*
  */
 export interface JourneysSliceDefaultPrimary {
@@ -1377,73 +1307,6 @@ export type JourneysSlice = prismic.SharedSlice<
   "journeys",
   JourneysSliceVariation
 >;
-
-/**
- * Primary content in *Pages → Primary*
- */
-export interface PagesSliceDefaultPrimary {
-  /**
-   * Heading field in *Pages → Primary*
-   *
-   * - **Field Type**: Rich Text
-   * - **Placeholder**: *None*
-   * - **API ID Path**: pages.primary.heading
-   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
-   */
-  heading: prismic.RichTextField;
-
-  /**
-   * Body field in *Pages → Primary*
-   *
-   * - **Field Type**: Rich Text
-   * - **Placeholder**: *None*
-   * - **API ID Path**: pages.primary.body
-   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
-   */
-  body: prismic.RichTextField;
-}
-
-/**
- * Primary content in *Pages → Items*
- */
-export interface PagesSliceDefaultItem {
-  /**
-   * Page field in *Pages → Items*
-   *
-   * - **Field Type**: Content Relationship
-   * - **Placeholder**: *None*
-   * - **API ID Path**: pages.items[].page
-   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
-   */
-  page: prismic.ContentRelationshipField;
-}
-
-/**
- * Default variation for Pages Slice
- *
- * - **API ID**: `default`
- * - **Description**: Default
- * - **Documentation**: https://prismic.io/docs/slice
- */
-export type PagesSliceDefault = prismic.SharedSliceVariation<
-  "default",
-  Simplify<PagesSliceDefaultPrimary>,
-  Simplify<PagesSliceDefaultItem>
->;
-
-/**
- * Slice variation for *Pages*
- */
-type PagesSliceVariation = PagesSliceDefault;
-
-/**
- * Pages Shared Slice
- *
- * - **API ID**: `pages`
- * - **Description**: Pages
- * - **Documentation**: https://prismic.io/docs/slice
- */
-export type PagesSlice = prismic.SharedSlice<"pages", PagesSliceVariation>;
 
 /**
  * Primary content in *ResearchHub → Primary*
@@ -1614,21 +1477,11 @@ declare module "@prismicio/client" {
       EntitiesSliceDefaultItem,
       EntitiesSliceVariation,
       EntitiesSliceDefault,
-      InsightsForgeSlice,
-      InsightsForgeSliceDefaultPrimary,
-      InsightsForgeSliceDefaultItem,
-      InsightsForgeSliceVariation,
-      InsightsForgeSliceDefault,
       JourneysSlice,
       JourneysSliceDefaultPrimary,
       JourneysSliceDefaultItem,
       JourneysSliceVariation,
       JourneysSliceDefault,
-      PagesSlice,
-      PagesSliceDefaultPrimary,
-      PagesSliceDefaultItem,
-      PagesSliceVariation,
-      PagesSliceDefault,
       ResearchHubSlice,
       ResearchHubSliceDefaultPrimary,
       ResearchHubSliceDefaultItem,
