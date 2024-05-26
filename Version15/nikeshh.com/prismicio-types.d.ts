@@ -4,111 +4,6 @@ import type * as prismic from "@prismicio/client";
 
 type Simplify<T> = { [KeyType in keyof T]: T[KeyType] };
 
-type AboutDocumentDataSlicesSlice = RichTextSlice;
-
-/**
- * Content for About documents
- */
-interface AboutDocumentData {
-  /**
-   * Title field in *About*
-   *
-   * - **Field Type**: Rich Text
-   * - **Placeholder**: *None*
-   * - **API ID Path**: about.title
-   * - **Tab**: Main
-   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
-   */
-  title: prismic.RichTextField;
-
-  /**
-   * Company field in *About*
-   *
-   * - **Field Type**: Rich Text
-   * - **Placeholder**: *None*
-   * - **API ID Path**: about.company
-   * - **Tab**: Main
-   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
-   */
-  company: prismic.RichTextField;
-
-  /**
-   * Description field in *About*
-   *
-   * - **Field Type**: Rich Text
-   * - **Placeholder**: *None*
-   * - **API ID Path**: about.description
-   * - **Tab**: Main
-   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
-   */
-  description: prismic.RichTextField;
-
-  /**
-   * Logo Image field in *About*
-   *
-   * - **Field Type**: Image
-   * - **Placeholder**: *None*
-   * - **API ID Path**: about.logo_image
-   * - **Tab**: Main
-   * - **Documentation**: https://prismic.io/docs/field#image
-   */
-  logo_image: prismic.ImageField<never>;
-
-  /**
-   * Slice Zone field in *About*
-   *
-   * - **Field Type**: Slice Zone
-   * - **Placeholder**: *None*
-   * - **API ID Path**: about.slices[]
-   * - **Tab**: Main
-   * - **Documentation**: https://prismic.io/docs/field#slices
-   */
-  slices: prismic.SliceZone<AboutDocumentDataSlicesSlice> /**
-   * Meta Description field in *About*
-   *
-   * - **Field Type**: Text
-   * - **Placeholder**: A brief summary of the page
-   * - **API ID Path**: about.meta_description
-   * - **Tab**: SEO & Metadata
-   * - **Documentation**: https://prismic.io/docs/field#key-text
-   */;
-  meta_description: prismic.KeyTextField;
-
-  /**
-   * Meta Image field in *About*
-   *
-   * - **Field Type**: Image
-   * - **Placeholder**: *None*
-   * - **API ID Path**: about.meta_image
-   * - **Tab**: SEO & Metadata
-   * - **Documentation**: https://prismic.io/docs/field#image
-   */
-  meta_image: prismic.ImageField<never>;
-
-  /**
-   * Meta Title field in *About*
-   *
-   * - **Field Type**: Text
-   * - **Placeholder**: A title of the page used for social media and search engines
-   * - **API ID Path**: about.meta_title
-   * - **Tab**: SEO & Metadata
-   * - **Documentation**: https://prismic.io/docs/field#key-text
-   */
-  meta_title: prismic.KeyTextField;
-}
-
-/**
- * About document from Prismic
- *
- * - **API ID**: `about`
- * - **Repeatable**: `false`
- * - **Documentation**: https://prismic.io/docs/custom-types
- *
- * @typeParam Lang - Language API ID of the document.
- */
-export type AboutDocument<Lang extends string = string> =
-  prismic.PrismicDocumentWithUID<Simplify<AboutDocumentData>, "about", Lang>;
-
 type BlogDocumentDataSlicesSlice = RichTextSlice;
 
 /**
@@ -1556,7 +1451,6 @@ export type SkillDocument<Lang extends string = string> =
   prismic.PrismicDocumentWithUID<Simplify<SkillDocumentData>, "skill", Lang>;
 
 export type AllDocumentTypes =
-  | AboutDocument
   | BlogDocument
   | BlogsDocument
   | EntitiesDocument
@@ -2042,9 +1936,6 @@ declare module "@prismicio/client" {
 
   namespace Content {
     export type {
-      AboutDocument,
-      AboutDocumentData,
-      AboutDocumentDataSlicesSlice,
       BlogDocument,
       BlogDocumentData,
       BlogDocumentDataSlicesSlice,
