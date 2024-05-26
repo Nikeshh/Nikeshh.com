@@ -99,7 +99,7 @@ const Page = async () => {
                 <p>
                   When I&apos;m not coding, you can find me exploring new
                   technologies, hiking in the great outdoors, or enjoying a good
-                  book. Oh, and I'm a big fan of coffee – it&apos;s the fuel that
+                  book. Oh, and I&apos;m a big fan of coffee – it&apos;s the fuel that
                   keeps me going!
                 </p>
                 <br />
@@ -140,7 +140,7 @@ const Page = async () => {
                   </a>
                   .{" "}
                 </p>
-                <p>Let's make something amazing together!</p>
+                <p>Let&apos;s make something amazing together!</p>
               </div>
             </div>
           </section>
