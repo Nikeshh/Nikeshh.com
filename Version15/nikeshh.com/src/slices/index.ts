@@ -5,6 +5,5 @@ import dynamic from "next/dynamic";
 export const components = {
   blogs: dynamic(() => import("./Blogs")),
   entities: dynamic(() => import("./Entities")),
-  research_hub: dynamic(() => import("./ResearchHub")),
   rich_text: dynamic(() => import("./RichText")),
 };

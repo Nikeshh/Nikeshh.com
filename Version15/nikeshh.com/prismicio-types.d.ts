@@ -504,191 +504,6 @@ export type ProjectDocument<Lang extends string = string> =
     Lang
   >;
 
-type ResearchDocumentDataSlicesSlice = RichTextSlice;
-
-/**
- * Content for Research documents
- */
-interface ResearchDocumentData {
-  /**
-   * title field in *Research*
-   *
-   * - **Field Type**: Rich Text
-   * - **Placeholder**: *None*
-   * - **API ID Path**: research.title
-   * - **Tab**: Main
-   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
-   */
-  title: prismic.RichTextField;
-
-  /**
-   * company field in *Research*
-   *
-   * - **Field Type**: Rich Text
-   * - **Placeholder**: *None*
-   * - **API ID Path**: research.company
-   * - **Tab**: Main
-   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
-   */
-  company: prismic.RichTextField;
-
-  /**
-   * description field in *Research*
-   *
-   * - **Field Type**: Rich Text
-   * - **Placeholder**: *None*
-   * - **API ID Path**: research.description
-   * - **Tab**: Main
-   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
-   */
-  description: prismic.RichTextField;
-
-  /**
-   * Logo Image field in *Research*
-   *
-   * - **Field Type**: Image
-   * - **Placeholder**: *None*
-   * - **API ID Path**: research.logo_image
-   * - **Tab**: Main
-   * - **Documentation**: https://prismic.io/docs/field#image
-   */
-  logo_image: prismic.ImageField<never>;
-
-  /**
-   * Slice Zone field in *Research*
-   *
-   * - **Field Type**: Slice Zone
-   * - **Placeholder**: *None*
-   * - **API ID Path**: research.slices[]
-   * - **Tab**: Main
-   * - **Documentation**: https://prismic.io/docs/field#slices
-   */
-  slices: prismic.SliceZone<ResearchDocumentDataSlicesSlice> /**
-   * Meta Description field in *Research*
-   *
-   * - **Field Type**: Text
-   * - **Placeholder**: A brief summary of the page
-   * - **API ID Path**: research.meta_description
-   * - **Tab**: SEO & Metadata
-   * - **Documentation**: https://prismic.io/docs/field#key-text
-   */;
-  meta_description: prismic.KeyTextField;
-
-  /**
-   * Meta Image field in *Research*
-   *
-   * - **Field Type**: Image
-   * - **Placeholder**: *None*
-   * - **API ID Path**: research.meta_image
-   * - **Tab**: SEO & Metadata
-   * - **Documentation**: https://prismic.io/docs/field#image
-   */
-  meta_image: prismic.ImageField<never>;
-
-  /**
-   * Meta Title field in *Research*
-   *
-   * - **Field Type**: Text
-   * - **Placeholder**: A title of the page used for social media and search engines
-   * - **API ID Path**: research.meta_title
-   * - **Tab**: SEO & Metadata
-   * - **Documentation**: https://prismic.io/docs/field#key-text
-   */
-  meta_title: prismic.KeyTextField;
-}
-
-/**
- * Research document from Prismic
- *
- * - **API ID**: `research`
- * - **Repeatable**: `true`
- * - **Documentation**: https://prismic.io/docs/custom-types
- *
- * @typeParam Lang - Language API ID of the document.
- */
-export type ResearchDocument<Lang extends string = string> =
-  prismic.PrismicDocumentWithUID<
-    Simplify<ResearchDocumentData>,
-    "research",
-    Lang
-  >;
-
-type ResearchhubDocumentDataSlicesSlice = ResearchHubSlice;
-
-/**
- * Content for ResearchHub documents
- */
-interface ResearchhubDocumentData {
-  /**
-   * title field in *ResearchHub*
-   *
-   * - **Field Type**: Rich Text
-   * - **Placeholder**: *None*
-   * - **API ID Path**: researchhub.title
-   * - **Tab**: Main
-   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
-   */
-  title: prismic.RichTextField;
-
-  /**
-   * Slice Zone field in *ResearchHub*
-   *
-   * - **Field Type**: Slice Zone
-   * - **Placeholder**: *None*
-   * - **API ID Path**: researchhub.slices[]
-   * - **Tab**: Main
-   * - **Documentation**: https://prismic.io/docs/field#slices
-   */
-  slices: prismic.SliceZone<ResearchhubDocumentDataSlicesSlice> /**
-   * Meta Description field in *ResearchHub*
-   *
-   * - **Field Type**: Text
-   * - **Placeholder**: A brief summary of the page
-   * - **API ID Path**: researchhub.meta_description
-   * - **Tab**: SEO & Metadata
-   * - **Documentation**: https://prismic.io/docs/field#key-text
-   */;
-  meta_description: prismic.KeyTextField;
-
-  /**
-   * Meta Image field in *ResearchHub*
-   *
-   * - **Field Type**: Image
-   * - **Placeholder**: *None*
-   * - **API ID Path**: researchhub.meta_image
-   * - **Tab**: SEO & Metadata
-   * - **Documentation**: https://prismic.io/docs/field#image
-   */
-  meta_image: prismic.ImageField<never>;
-
-  /**
-   * Meta Title field in *ResearchHub*
-   *
-   * - **Field Type**: Text
-   * - **Placeholder**: A title of the page used for social media and search engines
-   * - **API ID Path**: researchhub.meta_title
-   * - **Tab**: SEO & Metadata
-   * - **Documentation**: https://prismic.io/docs/field#key-text
-   */
-  meta_title: prismic.KeyTextField;
-}
-
-/**
- * ResearchHub document from Prismic
- *
- * - **API ID**: `researchhub`
- * - **Repeatable**: `false`
- * - **Documentation**: https://prismic.io/docs/custom-types
- *
- * @typeParam Lang - Language API ID of the document.
- */
-export type ResearchhubDocument<Lang extends string = string> =
-  prismic.PrismicDocumentWithUID<
-    Simplify<ResearchhubDocumentData>,
-    "researchhub",
-    Lang
-  >;
-
 type ServiceDocumentDataSlicesSlice = RichTextSlice;
 
 /**
@@ -909,8 +724,6 @@ export type AllDocumentTypes =
   | EntitiesDocument
   | EntityDocument
   | ProjectDocument
-  | ResearchDocument
-  | ResearchhubDocument
   | ServiceDocument
   | SkillDocument;
 
@@ -1052,76 +865,6 @@ export type EntitiesSlice = prismic.SharedSlice<
 >;
 
 /**
- * Primary content in *ResearchHub → Primary*
- */
-export interface ResearchHubSliceDefaultPrimary {
-  /**
-   * Heading field in *ResearchHub → Primary*
-   *
-   * - **Field Type**: Rich Text
-   * - **Placeholder**: *None*
-   * - **API ID Path**: research_hub.primary.heading
-   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
-   */
-  heading: prismic.RichTextField;
-
-  /**
-   * Body field in *ResearchHub → Primary*
-   *
-   * - **Field Type**: Rich Text
-   * - **Placeholder**: *None*
-   * - **API ID Path**: research_hub.primary.body
-   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
-   */
-  body: prismic.RichTextField;
-}
-
-/**
- * Primary content in *ResearchHub → Items*
- */
-export interface ResearchHubSliceDefaultItem {
-  /**
-   * Research field in *ResearchHub → Items*
-   *
-   * - **Field Type**: Content Relationship
-   * - **Placeholder**: *None*
-   * - **API ID Path**: research_hub.items[].research
-   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
-   */
-  research: prismic.ContentRelationshipField;
-}
-
-/**
- * Default variation for ResearchHub Slice
- *
- * - **API ID**: `default`
- * - **Description**: Default
- * - **Documentation**: https://prismic.io/docs/slice
- */
-export type ResearchHubSliceDefault = prismic.SharedSliceVariation<
-  "default",
-  Simplify<ResearchHubSliceDefaultPrimary>,
-  Simplify<ResearchHubSliceDefaultItem>
->;
-
-/**
- * Slice variation for *ResearchHub*
- */
-type ResearchHubSliceVariation = ResearchHubSliceDefault;
-
-/**
- * ResearchHub Shared Slice
- *
- * - **API ID**: `research_hub`
- * - **Description**: ResearchHub
- * - **Documentation**: https://prismic.io/docs/slice
- */
-export type ResearchHubSlice = prismic.SharedSlice<
-  "research_hub",
-  ResearchHubSliceVariation
->;
-
-/**
  * Primary content in *RichText → Primary*
  */
 export interface RichTextSliceDefaultPrimary {
@@ -1191,12 +934,6 @@ declare module "@prismicio/client" {
       ProjectDocument,
       ProjectDocumentData,
       ProjectDocumentDataSlicesSlice,
-      ResearchDocument,
-      ResearchDocumentData,
-      ResearchDocumentDataSlicesSlice,
-      ResearchhubDocument,
-      ResearchhubDocumentData,
-      ResearchhubDocumentDataSlicesSlice,
       ServiceDocument,
       ServiceDocumentData,
       ServiceDocumentDataSlicesSlice,
@@ -1214,11 +951,6 @@ declare module "@prismicio/client" {
       EntitiesSliceDefaultItem,
       EntitiesSliceVariation,
       EntitiesSliceDefault,
-      ResearchHubSlice,
-      ResearchHubSliceDefaultPrimary,
-      ResearchHubSliceDefaultItem,
-      ResearchHubSliceVariation,
-      ResearchHubSliceDefault,
       RichTextSlice,
       RichTextSliceDefaultPrimary,
       RichTextSliceVariation,
