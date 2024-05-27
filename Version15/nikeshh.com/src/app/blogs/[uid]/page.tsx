@@ -37,7 +37,7 @@ export default async function Page({ params }: { params: Params }) {
           </p>
           <Image 
             src="/nikeshhcodes-thumbnail.jpg" 
-            alt="About me image"
+            alt="blog image"
             width={640}
             height={300}
             className="rounded-lg"

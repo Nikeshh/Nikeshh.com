@@ -34,8 +34,8 @@ export default async function Page({ params }: { params: Params }) {
             {data.subtitle}
           </p>
           <Image 
-            src="/nikeshhcodes-thumbnail.jpg" 
-            alt="About me image"
+            src={data.imageUrl}
+            alt="product image"
             width={640}
             height={300}
             className="rounded-lg"
