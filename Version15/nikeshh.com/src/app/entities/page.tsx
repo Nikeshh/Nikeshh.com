@@ -6,7 +6,7 @@ import Link from "next/link";
 import { entities } from "./data";
 
 // Entity Types
-export const ENTITY_TYPES = [
+const ENTITY_TYPES = [
   "Agency",
   "Enterprise",
   "Education",
