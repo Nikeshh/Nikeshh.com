@@ -23,8 +23,8 @@ export default async function Page({ params }: { params: Params }) {
         <div className="relative grid place-items-center text-center">
           <h1 className="text-4xl font-medium">
             {data.name}
-            {data.tags.map((tag) => (
-              <p className="text-lg text-yellow-500">
+            {data.tags.map((tag, index) => (
+              <p key={index} className="text-lg text-yellow-500">
                 {tag}
               </p>
             ))}
