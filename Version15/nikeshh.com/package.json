@@ -48,6 +48,7 @@
     "esbuild": "^0.21.3",
     "framer-motion": "^11.1.7",
     "gsap": "^3.12.5",
+    "html-react-parser": "^5.1.10",
     "isomorphic-dompurify": "^2.4.0",
     "lucide-react": "^0.331.0",
     "mongoose": "^8.4.0",

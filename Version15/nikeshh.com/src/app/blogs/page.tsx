@@ -1,49 +1,68 @@
-import { Metadata } from "next";
-
-import { SliceZone } from "@prismicio/react";
-import * as prismic from "@prismicio/client";
-
-import { createClient } from "@/prismicio";
-import { components } from "@/slices";
 import Navigation from "@/components/layout/navigation";
 import Footer from "@/components/layout/footer";
+import Bounded from "@/components/Bounded";
+import Image from "next/image";
+import { blogs } from "./data";
+import Link from "next/link";
+import clsx from "clsx";
 
-/**
- * This component renders your homepage.
- *
- * Use Next's generateMetadata function to render page metadata.
- *
- * Use the SliceZone to render the content of the page.
- */
-
-export async function generateMetadata(): Promise<Metadata> {
-  const client = createClient();
-  const home = await client.getByUID("blogs", "blogs");
-
-  return {
-    title: prismic.asText(home.data.title),
-    description: home.data.meta_description,
-    openGraph: {
-      title: home.data.meta_title || undefined,
-      images: [
-        {
-          url: home.data.meta_image.url || "",
-        },
-      ],
-    },
-  };
-}
-
-export default async function Index() {
-  /**
-   * The client queries content from the Prismic API
-   */
-  const client = createClient();
-  const home = await client.getByUID("blogs", "blogs");
-
+const Page = () => {
   return <>
     <Navigation />
-    <SliceZone slices={home.data.slices} components={components} />
+    <Bounded>
+      <h2 className="max-w-2xl text-balance text-center text-5xl font-medium md:text-7xl">
+        Blogs
+      </h2>
+
+      <div className="mx-auto mt-6 max-w-md text-balance text-center text-slate-300">
+        Some of my writings!
+      </div>
+
+      <div className="mt-20 grid gap-16">
+        {blogs.map(
+          (blog, index) =>
+            blog && (
+              <div
+                key={blog.uid}
+                className="relative grid gap-4 opacity-85 transition-opacity duration-300 hover:cursor-pointer hover:opacity-100 md:grid-cols-2 md:gap-8 lg:grid-cols-3"
+              >
+                <div className="col-span-1 flex flex-col justify-center gap-4">
+                  <h3 className="text-4xl">
+                    {blog.title}
+                  </h3>
+                  <p className="text-lg text-yellow-500">
+                    {blog.tag}
+                  </p>
+                  <div className="max-w-md">
+                    {blog.description}
+                  </div>
+
+                  <Link
+                    href={`/blogs/${blog.uid}`}
+                    className="after:absolute after:inset-0 hover:underline"
+                  >
+                    Read more
+                  </Link>
+                </div>
+                <Image 
+                  src="/nikeshhcodes-thumbnail.jpg" 
+                  alt="blog image"
+                  width={640}
+                  height={340}
+                  quality={100}
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className={clsx(
+                    "rounded-xl lg:col-span-2",
+                    index % 2 && "md:-order-1",
+                  )}
+                />
+              </div>
+            ),
+        )}
+      </div>
+    </Bounded>
     <Footer />
   </>
 }
+
+export default Page;
