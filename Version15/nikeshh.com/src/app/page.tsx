@@ -138,7 +138,7 @@ const Home = async () => {
               width={240}
               className="rounded-tl-2xl rounded-tr-2xl border-2 border-muted"
             />
-            <span>Freelancer</span>
+            <span>Contractor</span>
           </Link>
           <Link
             href="https://www.spadesbrand.com/"
@@ -152,7 +152,7 @@ const Home = async () => {
               width={240}
               className="rounded-tl-2xl rounded-tr-2xl border-2 border-muted"
             />
-            <span>Freelancer</span>
+            <span>Contractor</span>
           </Link>
           <Link
             href="https://www.ppe-supply.com/"
@@ -166,7 +166,7 @@ const Home = async () => {
               width={240}
               className="rounded-tl-2xl rounded-tr-2xl border-2 border-muted"
             />
-            <span>Freelancer</span>
+            <span>Contractor</span>
           </Link>
           <Link
             href="https://www.skinessence.ca/"
@@ -180,7 +180,7 @@ const Home = async () => {
               width={240}
               className="rounded-tl-2xl rounded-tr-2xl border-2 border-muted"
             />
-            <span>Freelancer</span>
+            <span>Contractor</span>
           </Link>
           <Link
             href="https://superchargewithsuzan.com/"
@@ -194,7 +194,7 @@ const Home = async () => {
               width={240}
               className="rounded-tl-2xl rounded-tr-2xl border-2 border-muted"
             />
-            <span>Freelancer</span>
+            <span>Contractor</span>
           </Link>
         </div>
       </section>
