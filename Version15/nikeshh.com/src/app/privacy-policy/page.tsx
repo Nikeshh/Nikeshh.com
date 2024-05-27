@@ -23,7 +23,7 @@ const Page  = () => {
                             <p className="mb-5 dark:text-neutral-400">Creating an account at Nikeshh.com requires providing personal details such as your name, email address, and password, necessary for account setup and access.</p>
                         
                             <h2 className="text-lg font-semibold mb-2 dark:text-white">Payment Information</h2>
-                            <p className="mb-5 dark:text-neutral-400">For payment processing, we use Stripe (stripe.com). During transactions, Stripe may ask for personal details like your name, address, email, and credit card information. Stripe's privacy policy, available at Stripe's Privacy Terms, governs their data handling. Nikeshh.com is not responsible for Stripe's practices.</p>
+                            <p className="mb-5 dark:text-neutral-400">For payment processing, we use Stripe (stripe.com). During transactions, Stripe may ask for personal details like your name, address, email, and credit card information. Stripe&apos;s privacy policy, available at Stripe&apos;s Privacy Terms, governs their data handling. Nikeshh.com is not responsible for Stripe&apos;s practices.</p>
                         
                             <h2 className="text-lg font-semibold mb-2 dark:text-white">Usage Information</h2>
                             <p className="mb-5 dark:text-neutral-400">We collect data on user interactions with Nikeshh.com, including usage patterns and device information, to improve our platform.</p>
@@ -46,7 +46,7 @@ const Page  = () => {
                             <h2 className="text-lg font-semibold mb-2 dark:text-white">Security</h2>
                             <p className="mb-5 dark:text-neutral-400">We are committed to the security of your data, implementing encryption and regular security standards.</p>
 
-                            <h2 className="text-lg font-semibold mb-2 dark:text-white">Children's Privacy</h2>
+                            <h2 className="text-lg font-semibold mb-2 dark:text-white">Children&apos;s Privacy</h2>
                             <p className="mb-5 dark:text-neutral-400">Nikeshh.com is intended for use by individuals who have reached the legal age in their jurisdiction and reside in regions where such use is permissible. We do not knowingly collect data from individuals under the legal age.</p>
 
                             <h2 className="text-lg font-semibold mb-2 dark:text-white">Changes to Privacy Policy</h2>

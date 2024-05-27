@@ -15,7 +15,7 @@ const Page  = () => {
                 <div className="md:max-w-screen-sm lg:max-w-[992px] px-4 sm:px-6 lg:px-8 pb-12 md:pt-6 sm:pb-20 mx-auto">
                     <div className="grid gap-4 md:gap-8">
                         <div>
-                            <p className="mb-8 dark:text-neutral-400 text-xl">Nikeshh.com ("we", "us", or "our") uses cookies and similar tracking technologies to enhance your experience on our website. This Cookie Consent Policy explains what cookies are, how we use them, and how you can manage your cookie preferences.</p>
+                            <p className="mb-8 dark:text-neutral-400 text-xl">Nikeshh.com (&quot;we&quot;, &quot;us&quot;, or &quot;our&quot;) uses cookies and similar tracking technologies to enhance your experience on our website. This Cookie Consent Policy explains what cookies are, how we use them, and how you can manage your cookie preferences.</p>
 
                             <h2 className="text-lg font-semibold mb-2 dark:text-white">What Are Cookies?</h2>
                             <p className="mb-5 dark:text-neutral-400">Cookies are small text files that are stored on your device when you visit a website. They help the website remember your actions and preferences over a period of time, making your next visit easier and more useful to you.</p>
