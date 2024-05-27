@@ -1,22 +1,19 @@
-import { Metadata } from "next";
-import { notFound } from "next/navigation";
-import { PrismicText, SliceZone } from "@prismicio/react";
-import { createClient } from "@/prismicio";
-import { components } from "@/slices";
 import Bounded from "@/components/Bounded";
 import StarGrid from "@/components/StarGrid";
-import { PrismicNextImage } from "@prismicio/next";
-import { asText } from "@prismicio/client";
 import Navigation from "@/components/layout/navigation";
 import Footer from "@/components/layout/footer";
+import Image from "next/image";
+import parse from 'html-react-parser';
+import './style.css';
+import { getProject } from "@/lib/queries";
+import Link from "next/link";
 
 type Params = { uid: string };
 
 export default async function Page({ params }: { params: Params }) {
-  const client = createClient();
-  const page = await client
-    .getByUID("project", params.uid)
-    .catch(() => notFound());
+
+  const uid = params.uid;
+  const data = getProject(uid);
 
   return (
     <>
@@ -25,50 +22,33 @@ export default async function Page({ params }: { params: Params }) {
       <Bounded as="article">
         <div className="relative grid place-items-center text-center">
           <h1 className="text-4xl font-medium">
-            <PrismicText field={page.data.title} />
-            <p className="text-lg text-yellow-500">
-              <PrismicText field={page.data.company} />
-            </p>
+            {data.name}
+            {data.tags.map((tag) => (
+              <p className="text-lg text-yellow-500">
+                {tag}
+              </p>
+            ))}
+
           </h1>
           <p className="mb-4 mt-8 max-w-xl text-lg text-slate-300">
-            <PrismicText field={page.data.description} />
+            {data.subtitle}
           </p>
-          <PrismicNextImage
-            field={page.data.logo_image}
+          <Image 
+            src="/nikeshhcodes-thumbnail.jpg" 
+            alt="About me image"
+            width={640}
+            height={300}
             className="rounded-lg"
-            quality={100}
           />
         </div>
-        <div className="mx-auto ml-0">
-          <SliceZone slices={page.data.slices} components={components} />
+        <div className="flex justify-center mt-4">
+          <p>Check out: <Link href={data.link} target="_blank" className="underline hover:text-blue-500">Website</Link></p>
+        </div>
+        <div className="mx-auto ml-0 mt-4 rich-text">
+          {parse(data.content)}
         </div>
       </Bounded>
       <Footer />
     </>
   );
-}
-
-export async function generateMetadata({
-  params,
-}: {
-  params: Params;
-}): Promise<Metadata> {
-  const client = createClient();
-  const page = await client
-    .getByUID("project", params.uid)
-    .catch(() => notFound());
-
-  return {
-    title: `${page.data.meta_title || asText(page.data.title)}`,
-    description: page.data.meta_description,
-  };
-}
-
-export async function generateStaticParams() {
-  const client = createClient();
-  const pages = await client.getAllByType("project");
-
-  return pages.map((page) => {
-    return { uid: page.uid };
-  });
 }

@@ -19,11 +19,11 @@ export const getAuthUserDetails = async () => {
   return userData
 }
 
-export const getInfiniteProducts = async () => {
+export const getInfiniteProducts = () => {
   return [];
 }
 
-export const getTestimonials = cache(async () => {
+export const getTestimonials = cache(() => {
   let response = [
       {
         id: '1ebdc057-7cda-4536-bdec-269ae7ed4f84',
@@ -85,7 +85,7 @@ export const getTestimonials = cache(async () => {
   return response;
 })
 
-export const getSkills = cache(async () => {
+export const getSkills = cache(() => {
   let techView = [
     {
       name: 'Containerization and Orchestration',
@@ -555,283 +555,361 @@ export const getServices = cache(async () => {
   return response
 })
 
-export const getProjects = cache(async () => {
-  let response = [
-      {
-        name: 'ALT Interiors',
-        subtitle: 'VectorChat revolutionizes communication by enabling seamless interaction with PDF documents through vector data. Enhance collaboration and productivity with intuitive chat-based PDF interactions.',
-        category: 'Ecommerce',
-        link: 'alt',
-        imageUrl: '/projects/alt-interiors.png',
-        tags: ['LMS'],
-        view: "Business Perspective"
-      },
-      {
-        name: 'SkinEssence',
-        subtitle: 'VectorChat revolutionizes communication by enabling seamless interaction with PDF documents through vector data. Enhance collaboration and productivity with intuitive chat-based PDF interactions.',
-        category: 'Ecommerce',
-        link: 'https://www.skinessence.ca/',
-        imageUrl: '/projects/skin-essence.png',
-        tags: ['LMS'],
-        view: "Business Perspective"
-      },
-      {
-        name: 'Spades Brand',
-        subtitle: 'VectorChat revolutionizes communication by enabling seamless interaction with PDF documents through vector data. Enhance collaboration and productivity with intuitive chat-based PDF interactions.',
-        category: 'Ecommerce',
-        link: 'https://www.spadesbrand.com/',
-        imageUrl: '/projects/spades-brand.png',
-        tags: ['LMS'],
-        view: "Business Perspective"
-      },
-      {
-        name: 'PPE Supply Canada',
-        subtitle: 'VectorChat revolutionizes communication by enabling seamless interaction with PDF documents through vector data. Enhance collaboration and productivity with intuitive chat-based PDF interactions.',
-        category: 'Ecommerce',
-        link: 'https://www.ppe-supply.com/',
-        imageUrl: '/projects/ppe-supply-canada.png',
-        tags: ['LMS'],
-        view: "Business Perspective"
-      },
-      {
-        name: 'LMS Platform',
-        subtitle: 'VectorChat revolutionizes communication by enabling seamless interaction with PDF documents through vector data. Enhance collaboration and productivity with intuitive chat-based PDF interactions.',
-        category: 'Web App',
-        link: 'https://lms-platform-red.vercel.app/',
-        imageUrl: '/projects/lms-platform.png',
-        tags: ['LMS'],
-        view: "Business Perspective"
-      },
-      {
-        name: 'Karking',
-        subtitle: 'VectorChat revolutionizes communication by enabling seamless interaction with PDF documents through vector data. Enhance collaboration and productivity with intuitive chat-based PDF interactions.',
-        category: 'Website',
-        link: 'https://karking.in/',
-        imageUrl: '/projects/karking.png',
-        tags: ['LMS'],
-        view: "Business Perspective"
-      },
-      {
-        name: 'Immunuts',
-        subtitle: 'VectorChat revolutionizes communication by enabling seamless interaction with PDF documents through vector data. Enhance collaboration and productivity with intuitive chat-based PDF interactions.',
-        category: 'Website',
-        link: 'https://immunuts.in/',
-        imageUrl: '/projects/immunuts.png',
-        tags: ['LMS'],
-        view: "Business Perspective"
-      },
-      {
-        name: 'Norte-Damepavillion',
-        subtitle: 'VectorChat revolutionizes communication by enabling seamless interaction with PDF documents through vector data. Enhance collaboration and productivity with intuitive chat-based PDF interactions.',
-        category: 'Website',
-        link: 'https://www.notre-damepavillionhospital.ca/',
-        imageUrl: '/projects/notre-damepavillionhospital.png',
-        tags: ['LMS'],
-        view: "Business Perspective"
-      },
-      {
-        name: 'Mitaz Consulting',
-        subtitle: 'VectorChat revolutionizes communication by enabling seamless interaction with PDF documents through vector data. Enhance collaboration and productivity with intuitive chat-based PDF interactions.',
-        category: 'Website',
-        link: 'https://mitazconsulting.ca/',
-        imageUrl: '/projects/mitazconsulting.png',
-        tags: ['LMS'],
-        view: "Business Perspective"
-      },
-      {
-        name: 'Elkrest Farm',
-        subtitle: 'VectorChat revolutionizes communication by enabling seamless interaction with PDF documents through vector data. Enhance collaboration and productivity with intuitive chat-based PDF interactions.',
-        category: 'Website',
-        link: 'https://elkrestsfarm.ca/',
-        imageUrl: '/projects/elkrests-farm.png',
-        tags: ['LMS'],
-        view: "Business Perspective"
-      },
-      {
-        name: 'Island National Medical Center',
-        subtitle: 'VectorChat revolutionizes communication by enabling seamless interaction with PDF documents through vector data. Enhance collaboration and productivity with intuitive chat-based PDF interactions.',
-        category: 'Website',
-        link: 'https://inamc.ca/',
-        imageUrl: '/projects/inamc.png',
-        tags: ['LMS'],
-        view: "Business Perspective"
-      },
-      {
-        name: 'Market Farm',
-        subtitle: 'VectorChat revolutionizes communication by enabling seamless interaction with PDF documents through vector data. Enhance collaboration and productivity with intuitive chat-based PDF interactions.',
-        category: 'Website',
-        link: 'https://marketfarm.ca/',
-        imageUrl: '/projects/marketfarm.png',
-        tags: ['LMS'],
-        view: "Business Perspective"
-      },
-      {
-        name: 'Placement Nursing',
-        subtitle: 'VectorChat revolutionizes communication by enabling seamless interaction with PDF documents through vector data. Enhance collaboration and productivity with intuitive chat-based PDF interactions.',
-        category: 'Website',
-        link: 'https://www.placementnursing.ca/',
-        imageUrl: '/projects/placementnursing.png',
-        tags: ['LMS'],
-        view: "Business Perspective"
-      },
-      {
-        name: 'Learns Point',
-        subtitle: 'VectorChat revolutionizes communication by enabling seamless interaction with PDF documents through vector data. Enhance collaboration and productivity with intuitive chat-based PDF interactions.',
-        category: 'Website',
-        link: 'https://learnerspoint.org/',
-        imageUrl: '/projects/learnerspoint.png',
-        tags: ['LMS'],
-        view: "Business Perspective"
-      },
-      {
-        name: 'RideRush - Cross-Platform Bike Taxi Booking App',
-        subtitle: 'VectorChat revolutionizes communication by enabling seamless interaction with PDF documents through vector data. Enhance collaboration and productivity with intuitive chat-based PDF interactions.',
-        category: 'Website',
-        link: 'https://www.rtrix.in/',
-        imageUrl: '/projects/rtrix.png',
-        tags: ['LMS'],
-        view: "Business Perspective"
-      },
-      {
-        name: 'Nikeshh.com',
-        subtitle: 'VectorChat revolutionizes communication by enabling seamless interaction with PDF documents through vector data. Enhance collaboration and productivity with intuitive chat-based PDF interactions.',
-        category: 'Web App',
-        link: 'https://nikeshh.com/',
-        imageUrl: '/projects/nikeshh.png',
-        tags: ['LMS'],
-        view: "Business Perspective"
-      },
-      {
-        name: 'Digital Ecommerce',
-        subtitle: 'VectorChat revolutionizes communication by enabling seamless interaction with PDF documents through vector data. Enhance collaboration and productivity with intuitive chat-based PDF interactions.',
-        category: 'Web App',
-        link: 'https://digital-ecommerce-production.up.railway.app/',
-        imageUrl: '/projects/digital-ecommerce.png',
-        tags: ['LMS'],
-        view: "Business Perspective"
-      },
-      {
-        name: 'Learning Portal',
-        subtitle: 'VectorChat revolutionizes communication by enabling seamless interaction with PDF documents through vector data. Enhance collaboration and productivity with intuitive chat-based PDF interactions.',
-        category: 'Web App',
-        link: 'https://learning-portal-murex.vercel.app/',
-        imageUrl: '/projects/learning-portal.png',
-        tags: ['LMS'],
-        view: "Business Perspective"
-      },
-      {
-        name: 'Modern Ecommerce',
-        subtitle: 'VectorChat revolutionizes communication by enabling seamless interaction with PDF documents through vector data. Enhance collaboration and productivity with intuitive chat-based PDF interactions.',
-        category: 'Web App',
-        link: 'https://modern-ecommerce-tawny.vercel.app/',
-        imageUrl: '/projects/modern-ecommerce.png',
-        tags: ['LMS'],
-        view: "Business Perspective"
-      },
-      {
-        name: 'NikeshhCodes.com',
-        subtitle: 'VectorChat revolutionizes communication by enabling seamless interaction with PDF documents through vector data. Enhance collaboration and productivity with intuitive chat-based PDF interactions.',
-        category: 'Web App',
-        link: 'https://nikeshhcodes.com/',
-        imageUrl: '/projects/nikeshhcodes.png',
-        tags: ['LMS'],
-        view: "Business Perspective"
-      },
-      {
-        name: 'Ecommerce Marketplace',
-        subtitle: 'VectorChat revolutionizes communication by enabling seamless interaction with PDF documents through vector data. Enhance collaboration and productivity with intuitive chat-based PDF interactions.',
-        category: 'Web App',
-        link: 'https://ecommerce-marketplace-two.vercel.app/',
-        imageUrl: '/projects/ecommerce-marketplace.png',
-        tags: ['LMS'],
-        view: "Business Perspective"
-      },
-      {
-        name: 'Suzan Peltekian',
-        subtitle: 'VectorChat revolutionizes communication by enabling seamless interaction with PDF documents through vector data. Enhance collaboration and productivity with intuitive chat-based PDF interactions.',
-        category: 'Wordpress',
-        link: 'https://superchargewithsuzan.com/',
-        imageUrl: '/projects/suzan-peltekian.png',
-        tags: ['LMS'],
-        view: "Business Perspective"
-      },
-      {
-        name: 'Suzan Peltekian - Manifest Millions',
-        subtitle: 'VectorChat revolutionizes communication by enabling seamless interaction with PDF documents through vector data. Enhance collaboration and productivity with intuitive chat-based PDF interactions.',
-        category: 'GHL',
-        link: 'https://register.suzanpeltekian.com/manifest-millions',
-        imageUrl: '/projects/suzan-peltekian-manifest-millions.png',
-        tags: ['LMS'],
-        view: "Business Perspective"
-      },
-      {
-        name: 'DocGenius - Documentation Platform',
-        subtitle: 'VectorChat revolutionizes communication by enabling seamless interaction with PDF documents through vector data. Enhance collaboration and productivity with intuitive chat-based PDF interactions.',
-        category: 'Web App',
-        link: 'https://documentation-platform-production.up.railway.app/',
-        imageUrl: '/projects/docgenius.png',
-        tags: ['LMS'],
-        view: "Business Perspective"
-      },
-      {
-        name: 'FlowForge - SAAS Automation Builder',
-        subtitle: 'VectorChat revolutionizes communication by enabling seamless interaction with PDF documents through vector data. Enhance collaboration and productivity with intuitive chat-based PDF interactions.',
-        category: 'Web App',
-        link: 'https://saas-automation-builder.vercel.app/',
-        imageUrl: '/projects/fuzzie.png',
-        tags: ['LMS'],
-        view: "Business Perspective"
-      },
-      {
-        name: 'Glisten AI - AI-Powered Document Search and Website Customization',
-        subtitle: 'VectorChat revolutionizes communication by enabling seamless interaction with PDF documents through vector data. Enhance collaboration and productivity with intuitive chat-based PDF interactions.',
-        category: 'Automation',
-        link: 'https://glisten-ai-website.vercel.app/',
-        imageUrl: '/projects/glisten-ai.png',
-        tags: ['LMS'],
-        view: "Business Perspective"
-      },
-      {
-        name: 'NextNews - Newsletter Creation and Email Marketing Platform',
-        subtitle: 'VectorChat revolutionizes communication by enabling seamless interaction with PDF documents through vector data. Enhance collaboration and productivity with intuitive chat-based PDF interactions.',
-        category: 'Web App',
-        link: 'https://newsletter-platform.vercel.app/',
-        imageUrl: '/projects/newsletter-platform.png',
-        tags: ['LMS'],
-        view: "Business Perspective"
-      },
-      {
-        name: 'StaySpot - House Booking Platform',
-        subtitle: 'VectorChat revolutionizes communication by enabling seamless interaction with PDF documents through vector data. Enhance collaboration and productivity with intuitive chat-based PDF interactions.',
-        category: 'Web App',
-        link: 'https://house-booking-platform.vercel.app/',
-        imageUrl: '/projects/stayspot.png',
-        tags: ['LMS'],
-        view: "Business Perspective"
-      },
-      {
-        name: 'SiteSprint - SAAS Website Builder for Agencies',
-        subtitle: 'VectorChat revolutionizes communication by enabling seamless interaction with PDF documents through vector data. Enhance collaboration and productivity with intuitive chat-based PDF interactions.',
-        category: 'Web App',
-        link: 'https://saaswebsitebuilder.vercel.app/',
-        imageUrl: '/projects/sitesprint.png',
-        tags: ['LMS'],
-        view: "Business Perspective"
-      },
-      {
-        name: 'VectorChat - PDF Interaction Platform',
-        subtitle: 'VectorChat revolutionizes communication by enabling seamless interaction with PDF documents through vector data. Enhance collaboration and productivity with intuitive chat-based PDF interactions.',
-        category: 'AI',
-        link: 'https://chat-pdf-lemon.vercel.app/',
-        imageUrl: '/projects/vectorchat.png',
-        tags: ['LMS'],
-        view: "Business Perspective"
-      },
-    ]
-    return response;
+const businessPrespectiveProjects = [
+  {
+    id: "alt-interiors",
+    name: 'ALT Interiors',
+    subtitle: 'VectorChat revolutionizes communication by enabling seamless interaction with PDF documents through vector data. Enhance collaboration and productivity with intuitive chat-based PDF interactions.',
+    category: 'Ecommerce',
+    link: 'https://altinteriors.ca/',
+    imageUrl: '/projects/alt-interiors.png',
+    tags: ['LMS'],
+    view: "Business Perspective",
+    content: ""
+  },
+  {
+    id: "skinessence",
+    name: 'SkinEssence',
+    subtitle: 'VectorChat revolutionizes communication by enabling seamless interaction with PDF documents through vector data. Enhance collaboration and productivity with intuitive chat-based PDF interactions.',
+    category: 'Ecommerce',
+    link: 'https://www.skinessence.ca/',
+    imageUrl: '/projects/skin-essence.png',
+    tags: ['LMS'],
+    view: "Business Perspective",
+    content: ""
+  },
+  {
+    id: "spades-brand",
+    name: 'Spades Brand',
+    subtitle: 'VectorChat revolutionizes communication by enabling seamless interaction with PDF documents through vector data. Enhance collaboration and productivity with intuitive chat-based PDF interactions.',
+    category: 'Ecommerce',
+    link: 'https://www.spadesbrand.com/',
+    imageUrl: '/projects/spades-brand.png',
+    tags: ['LMS'],
+    view: "Business Perspective",
+    content: ""
+  },
+  {
+    id: "ppe-supply-canada",
+    name: 'PPE Supply Canada',
+    subtitle: 'VectorChat revolutionizes communication by enabling seamless interaction with PDF documents through vector data. Enhance collaboration and productivity with intuitive chat-based PDF interactions.',
+    category: 'Ecommerce',
+    link: 'https://www.ppe-supply.com/',
+    imageUrl: '/projects/ppe-supply-canada.png',
+    tags: ['LMS'],
+    view: "Business Perspective",
+    content: ""
+  },
+  {
+    id: "lms-platform",
+    name: 'LMS Platform',
+    subtitle: 'VectorChat revolutionizes communication by enabling seamless interaction with PDF documents through vector data. Enhance collaboration and productivity with intuitive chat-based PDF interactions.',
+    category: 'Web App',
+    link: 'https://lms-platform-red.vercel.app/',
+    imageUrl: '/projects/lms-platform.png',
+    tags: ['LMS'],
+    view: "Business Perspective",
+    content: ""
+  },
+  {
+    id: "karking",
+    name: 'Karking',
+    subtitle: 'VectorChat revolutionizes communication by enabling seamless interaction with PDF documents through vector data. Enhance collaboration and productivity with intuitive chat-based PDF interactions.',
+    category: 'Website',
+    link: 'https://karking.in/',
+    imageUrl: '/projects/karking.png',
+    tags: ['LMS'],
+    view: "Business Perspective",
+    content: ""
+  },
+  {
+    id: "immunuts",
+    name: 'Immunuts',
+    subtitle: 'VectorChat revolutionizes communication by enabling seamless interaction with PDF documents through vector data. Enhance collaboration and productivity with intuitive chat-based PDF interactions.',
+    category: 'Website',
+    link: 'https://immunuts.in/',
+    imageUrl: '/projects/immunuts.png',
+    tags: ['LMS'],
+    view: "Business Perspective",
+    content: ""
+  },
+  {
+    id: "norte-damepavillion",
+    name: 'Norte-Damepavillion',
+    subtitle: 'VectorChat revolutionizes communication by enabling seamless interaction with PDF documents through vector data. Enhance collaboration and productivity with intuitive chat-based PDF interactions.',
+    category: 'Website',
+    link: 'https://www.notre-damepavillionhospital.ca/',
+    imageUrl: '/projects/notre-damepavillionhospital.png',
+    tags: ['LMS'],
+    view: "Business Perspective",
+    content: ""
+  },
+  {
+    id: "mitaz-consulting",
+    name: 'Mitaz Consulting',
+    subtitle: 'VectorChat revolutionizes communication by enabling seamless interaction with PDF documents through vector data. Enhance collaboration and productivity with intuitive chat-based PDF interactions.',
+    category: 'Website',
+    link: 'https://mitazconsulting.ca/',
+    imageUrl: '/projects/mitazconsulting.png',
+    tags: ['LMS'],
+    view: "Business Perspective",
+    content: ""
+  },
+  {
+    id: "elkrest-farm",
+    name: 'Elkrest Farm',
+    subtitle: 'VectorChat revolutionizes communication by enabling seamless interaction with PDF documents through vector data. Enhance collaboration and productivity with intuitive chat-based PDF interactions.',
+    category: 'Website',
+    link: 'https://elkrestsfarm.ca/',
+    imageUrl: '/projects/elkrests-farm.png',
+    tags: ['LMS'],
+    view: "Business Perspective",
+    content: ""
+  },
+  {
+    id: "island-national-medical-center",
+    name: 'Island National Medical Center',
+    subtitle: 'VectorChat revolutionizes communication by enabling seamless interaction with PDF documents through vector data. Enhance collaboration and productivity with intuitive chat-based PDF interactions.',
+    category: 'Website',
+    link: 'https://inamc.ca/',
+    imageUrl: '/projects/inamc.png',
+    tags: ['LMS'],
+    view: "Business Perspective",
+    content: ""
+  },
+  {
+    id: "market-farm",
+    name: 'Market Farm',
+    subtitle: 'VectorChat revolutionizes communication by enabling seamless interaction with PDF documents through vector data. Enhance collaboration and productivity with intuitive chat-based PDF interactions.',
+    category: 'Website',
+    link: 'https://marketfarm.ca/',
+    imageUrl: '/projects/marketfarm.png',
+    tags: ['LMS'],
+    view: "Business Perspective",
+    content: ""
+  },
+  {
+    id: "placement-nursing",
+    name: 'Placement Nursing',
+    subtitle: 'VectorChat revolutionizes communication by enabling seamless interaction with PDF documents through vector data. Enhance collaboration and productivity with intuitive chat-based PDF interactions.',
+    category: 'Website',
+    link: 'https://www.placementnursing.ca/',
+    imageUrl: '/projects/placementnursing.png',
+    tags: ['LMS'],
+    view: "Business Perspective",
+    content: ""
+  },
+  {
+    id: "learns-point",
+    name: 'Learns Point',
+    subtitle: 'VectorChat revolutionizes communication by enabling seamless interaction with PDF documents through vector data. Enhance collaboration and productivity with intuitive chat-based PDF interactions.',
+    category: 'Website',
+    link: 'https://learnerspoint.org/',
+    imageUrl: '/projects/learnerspoint.png',
+    tags: ['LMS'],
+    view: "Business Perspective",
+    content: ""
+  },
+  {
+    id: "riderush---cross-platform-bike-taxi-booking-app",
+    name: 'RideRush - Cross-Platform Bike Taxi Booking App',
+    subtitle: 'VectorChat revolutionizes communication by enabling seamless interaction with PDF documents through vector data. Enhance collaboration and productivity with intuitive chat-based PDF interactions.',
+    category: 'Website',
+    link: 'https://www.rtrix.in/',
+    imageUrl: '/projects/rtrix.png',
+    tags: ['LMS'],
+    view: "Business Perspective",
+    content: ""
+  },
+  {
+    id: "nikeshh.com",
+    name: 'Nikeshh.com',
+    subtitle: 'VectorChat revolutionizes communication by enabling seamless interaction with PDF documents through vector data. Enhance collaboration and productivity with intuitive chat-based PDF interactions.',
+    category: 'Web App',
+    link: 'https://nikeshh.com/',
+    imageUrl: '/projects/nikeshh.png',
+    tags: ['LMS'],
+    view: "Business Perspective",
+    content: ""
+  },
+  {
+    id: "digital-ecommerce",
+    name: 'Digital Ecommerce',
+    subtitle: 'VectorChat revolutionizes communication by enabling seamless interaction with PDF documents through vector data. Enhance collaboration and productivity with intuitive chat-based PDF interactions.',
+    category: 'Web App',
+    link: 'https://digital-ecommerce-production.up.railway.app/',
+    imageUrl: '/projects/digital-ecommerce.png',
+    tags: ['LMS'],
+    view: "Business Perspective",
+    content: ""
+  },
+  {
+    id: "learning-portal",
+    name: 'Learning Portal',
+    subtitle: 'VectorChat revolutionizes communication by enabling seamless interaction with PDF documents through vector data. Enhance collaboration and productivity with intuitive chat-based PDF interactions.',
+    category: 'Web App',
+    link: 'https://learning-portal-murex.vercel.app/',
+    imageUrl: '/projects/learning-portal.png',
+    tags: ['LMS'],
+    view: "Business Perspective",
+    content: ""
+  },
+  {
+    id: "modern-ecommerce",
+    name: 'Modern Ecommerce',
+    subtitle: 'VectorChat revolutionizes communication by enabling seamless interaction with PDF documents through vector data. Enhance collaboration and productivity with intuitive chat-based PDF interactions.',
+    category: 'Web App',
+    link: 'https://modern-ecommerce-tawny.vercel.app/',
+    imageUrl: '/projects/modern-ecommerce.png',
+    tags: ['LMS'],
+    view: "Business Perspective",
+    content: ""
+  },
+  {
+    id: "nikeshhcodes.com",
+    name: 'NikeshhCodes.com',
+    subtitle: 'VectorChat revolutionizes communication by enabling seamless interaction with PDF documents through vector data. Enhance collaboration and productivity with intuitive chat-based PDF interactions.',
+    category: 'Web App',
+    link: 'https://nikeshhcodes.com/',
+    imageUrl: '/projects/nikeshhcodes.png',
+    tags: ['LMS'],
+    view: "Business Perspective",
+    content: ""
+  },
+  {
+    id: "ecommerce-marketplace",
+    name: 'Ecommerce Marketplace',
+    subtitle: 'VectorChat revolutionizes communication by enabling seamless interaction with PDF documents through vector data. Enhance collaboration and productivity with intuitive chat-based PDF interactions.',
+    category: 'Web App',
+    link: 'https://ecommerce-marketplace-two.vercel.app/',
+    imageUrl: '/projects/ecommerce-marketplace.png',
+    tags: ['LMS'],
+    view: "Business Perspective",
+    content: ""
+  },
+  {
+    id: "suzan-peltekian",
+    name: 'Suzan Peltekian',
+    subtitle: 'VectorChat revolutionizes communication by enabling seamless interaction with PDF documents through vector data. Enhance collaboration and productivity with intuitive chat-based PDF interactions.',
+    category: 'Wordpress',
+    link: 'https://superchargewithsuzan.com/',
+    imageUrl: '/projects/suzan-peltekian.png',
+    tags: ['LMS'],
+    view: "Business Perspective",
+    content: ""
+  },
+  {
+    id: "suzan-peltekian---manifest-millions",
+    name: 'Suzan Peltekian - Manifest Millions',
+    subtitle: 'VectorChat revolutionizes communication by enabling seamless interaction with PDF documents through vector data. Enhance collaboration and productivity with intuitive chat-based PDF interactions.',
+    category: 'GHL',
+    link: 'https://register.suzanpeltekian.com/manifest-millions',
+    imageUrl: '/projects/suzan-peltekian-manifest-millions.png',
+    tags: ['LMS'],
+    view: "Business Perspective",
+    content: ""
+  },
+  {
+    id: "docgenius---documentation-platform",
+    name: 'DocGenius - Documentation Platform',
+    subtitle: 'VectorChat revolutionizes communication by enabling seamless interaction with PDF documents through vector data. Enhance collaboration and productivity with intuitive chat-based PDF interactions.',
+    category: 'Web App',
+    link: 'https://documentation-platform-production.up.railway.app/',
+    imageUrl: '/projects/docgenius.png',
+    tags: ['LMS'],
+    view: "Business Perspective",
+    content: ""
+  },
+  {
+    id: "flowforge---saas-automation-builder",
+    name: 'FlowForge - SAAS Automation Builder',
+    subtitle: 'VectorChat revolutionizes communication by enabling seamless interaction with PDF documents through vector data. Enhance collaboration and productivity with intuitive chat-based PDF interactions.',
+    category: 'Web App',
+    link: 'https://saas-automation-builder.vercel.app/',
+    imageUrl: '/projects/fuzzie.png',
+    tags: ['LMS'],
+    view: "Business Perspective",
+    content: ""
+  },
+  {
+    id: "glisten-ai---ai-powered-document-search-and-website-customization",
+    name: 'Glisten AI - AI-Powered Document Search and Website Customization',
+    subtitle: 'VectorChat revolutionizes communication by enabling seamless interaction with PDF documents through vector data. Enhance collaboration and productivity with intuitive chat-based PDF interactions.',
+    category: 'Automation',
+    link: 'https://glisten-ai-website.vercel.app/',
+    imageUrl: '/projects/glisten-ai.png',
+    tags: ['LMS'],
+    view: "Business Perspective",
+    content: ""
+  },
+  {
+    id: "nextnews---newsletter-creation-and-email-marketing-platform",
+    name: 'NextNews - Newsletter Creation and Email Marketing Platform',
+    subtitle: 'VectorChat revolutionizes communication by enabling seamless interaction with PDF documents through vector data. Enhance collaboration and productivity with intuitive chat-based PDF interactions.',
+    category: 'Web App',
+    link: 'https://newsletter-platform.vercel.app/',
+    imageUrl: '/projects/newsletter-platform.png',
+    tags: ['LMS'],
+    view: "Business Perspective",
+    content: ""
+  },
+  {
+    id: "stayspot---house-booking-platform",
+    name: 'StaySpot - House Booking Platform',
+    subtitle: 'VectorChat revolutionizes communication by enabling seamless interaction with PDF documents through vector data. Enhance collaboration and productivity with intuitive chat-based PDF interactions.',
+    category: 'Web App',
+    link: 'https://house-booking-platform.vercel.app/',
+    imageUrl: '/projects/stayspot.png',
+    tags: ['LMS'],
+    view: "Business Perspective",
+    content: ""
+  },
+  {
+    id: "sitesprint---saas-website-builder-for-agencies",
+    name: 'SiteSprint - SAAS Website Builder for Agencies',
+    subtitle: 'VectorChat revolutionizes communication by enabling seamless interaction with PDF documents through vector data. Enhance collaboration and productivity with intuitive chat-based PDF interactions.',
+    category: 'Web App',
+    link: 'https://saaswebsitebuilder.vercel.app/',
+    imageUrl: '/projects/sitesprint.png',
+    tags: ['LMS'],
+    view: "Business Perspective",
+    content: ""
+  },
+  {
+    id: "vectorchat---pdf-interaction-platform",
+    name: 'VectorChat - PDF Interaction Platform',
+    subtitle: 'VectorChat revolutionizes communication by enabling seamless interaction with PDF documents through vector data. Enhance collaboration and productivity with intuitive chat-based PDF interactions.',
+    category: 'AI',
+    link: 'https://chat-pdf-lemon.vercel.app/',
+    imageUrl: '/projects/vectorchat.png',
+    tags: ['LMS'],
+    view: "Business Perspective",
+    content: ""
+  },
+]
+
+export const getProjects = cache(() => {
+  return [...businessPrespectiveProjects];
 })
 
-export const getBlogs = cache(async () => {
+export const getProject = (id: string) => {
+  const filteredProjects =  [...businessPrespectiveProjects].filter((project) => project.id == id);
+  if(filteredProjects && filteredProjects.length > 0) {
+    return filteredProjects[0];
+  }
+  return {
+    name: "Not found",
+    subtitle: "Not found",
+    category: "Not found",
+    link: "",
+    imageUrl: "",
+    tags: [],
+    view: "Business Perspective",
+    content: ""
+  };
+}
+
+export const getBlogs = cache(() => {
   let response = [
       {
         id: '0b5df545-cb7c-498c-81b1-71cdd5a5e83a',
