@@ -116,73 +116,6 @@ export type ProjectDocument<Lang extends string = string> =
 export type AllDocumentTypes = ProjectDocument;
 
 /**
- * Primary content in *Blogs → Primary*
- */
-export interface BlogsSliceDefaultPrimary {
-  /**
-   * Heading field in *Blogs → Primary*
-   *
-   * - **Field Type**: Rich Text
-   * - **Placeholder**: *None*
-   * - **API ID Path**: blogs.primary.heading
-   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
-   */
-  heading: prismic.RichTextField;
-
-  /**
-   * Body field in *Blogs → Primary*
-   *
-   * - **Field Type**: Rich Text
-   * - **Placeholder**: *None*
-   * - **API ID Path**: blogs.primary.body
-   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
-   */
-  body: prismic.RichTextField;
-}
-
-/**
- * Primary content in *Blogs → Items*
- */
-export interface BlogsSliceDefaultItem {
-  /**
-   * Blog field in *Blogs → Items*
-   *
-   * - **Field Type**: Content Relationship
-   * - **Placeholder**: *None*
-   * - **API ID Path**: blogs.items[].blog
-   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
-   */
-  blog: prismic.ContentRelationshipField;
-}
-
-/**
- * Default variation for Blogs Slice
- *
- * - **API ID**: `default`
- * - **Description**: Default
- * - **Documentation**: https://prismic.io/docs/slice
- */
-export type BlogsSliceDefault = prismic.SharedSliceVariation<
-  "default",
-  Simplify<BlogsSliceDefaultPrimary>,
-  Simplify<BlogsSliceDefaultItem>
->;
-
-/**
- * Slice variation for *Blogs*
- */
-type BlogsSliceVariation = BlogsSliceDefault;
-
-/**
- * Blogs Shared Slice
- *
- * - **API ID**: `blogs`
- * - **Description**: Blogs
- * - **Documentation**: https://prismic.io/docs/slice
- */
-export type BlogsSlice = prismic.SharedSlice<"blogs", BlogsSliceVariation>;
-
-/**
  * Primary content in *RichText → Primary*
  */
 export interface RichTextSliceDefaultPrimary {
@@ -241,11 +174,6 @@ declare module "@prismicio/client" {
       ProjectDocumentData,
       ProjectDocumentDataSlicesSlice,
       AllDocumentTypes,
-      BlogsSlice,
-      BlogsSliceDefaultPrimary,
-      BlogsSliceDefaultItem,
-      BlogsSliceVariation,
-      BlogsSliceDefault,
       RichTextSlice,
       RichTextSliceDefaultPrimary,
       RichTextSliceVariation,

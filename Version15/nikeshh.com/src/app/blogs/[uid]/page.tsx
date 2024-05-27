@@ -5,6 +5,7 @@ import Footer from "@/components/layout/footer";
 import { blogs } from "../data";
 import Image from "next/image";
 import parse from 'html-react-parser';
+import './style.css';
 
 type Params = { uid: string };
 
@@ -42,7 +43,7 @@ export default async function Page({ params }: { params: Params }) {
             className="rounded-lg"
           />
         </div>
-        <div className="mx-auto ml-0 mt-4">
+        <div className="mx-auto ml-0 mt-4 rich-text">
           {parse(data.content)}
         </div>
       </Bounded>
