@@ -19,13 +19,14 @@ type Props = {
         tags: Array<string>;
         view: string;
     }[],
-    inlineElement: boolean
+    inlineElement: boolean,
+    defaultView?: String
 }
 
-const Projects = ({ projects, inlineElement } : Props) => {
+const Projects = ({ projects, inlineElement, defaultView = "Business Perspective" } : Props) => {
 
     const [loading, setLoading] = useState(false);
-    const [view, setView] = useState("Business Perspective");
+    const [view, setView] = useState(defaultView);
 
     let filteredProjects = projects.filter(item => item.view == view);
     let projectTags = filteredProjects.map(item => item.category).filter((value, index, self) => self.indexOf(value) === index);
