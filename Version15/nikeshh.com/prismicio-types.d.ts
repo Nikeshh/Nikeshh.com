@@ -504,118 +504,12 @@ export type ProjectDocument<Lang extends string = string> =
     Lang
   >;
 
-type SkillDocumentDataSlicesSlice = RichTextSlice;
-
-/**
- * Content for Skill documents
- */
-interface SkillDocumentData {
-  /**
-   * Title field in *Skill*
-   *
-   * - **Field Type**: Rich Text
-   * - **Placeholder**: *None*
-   * - **API ID Path**: skill.title
-   * - **Tab**: Main
-   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
-   */
-  title: prismic.RichTextField;
-
-  /**
-   * Company field in *Skill*
-   *
-   * - **Field Type**: Rich Text
-   * - **Placeholder**: *None*
-   * - **API ID Path**: skill.company
-   * - **Tab**: Main
-   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
-   */
-  company: prismic.RichTextField;
-
-  /**
-   * Description field in *Skill*
-   *
-   * - **Field Type**: Rich Text
-   * - **Placeholder**: *None*
-   * - **API ID Path**: skill.description
-   * - **Tab**: Main
-   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
-   */
-  description: prismic.RichTextField;
-
-  /**
-   * Logo Image field in *Skill*
-   *
-   * - **Field Type**: Image
-   * - **Placeholder**: *None*
-   * - **API ID Path**: skill.logo_image
-   * - **Tab**: Main
-   * - **Documentation**: https://prismic.io/docs/field#image
-   */
-  logo_image: prismic.ImageField<never>;
-
-  /**
-   * Slice Zone field in *Skill*
-   *
-   * - **Field Type**: Slice Zone
-   * - **Placeholder**: *None*
-   * - **API ID Path**: skill.slices[]
-   * - **Tab**: Main
-   * - **Documentation**: https://prismic.io/docs/field#slices
-   */
-  slices: prismic.SliceZone<SkillDocumentDataSlicesSlice> /**
-   * Meta Description field in *Skill*
-   *
-   * - **Field Type**: Text
-   * - **Placeholder**: A brief summary of the page
-   * - **API ID Path**: skill.meta_description
-   * - **Tab**: SEO & Metadata
-   * - **Documentation**: https://prismic.io/docs/field#key-text
-   */;
-  meta_description: prismic.KeyTextField;
-
-  /**
-   * Meta Image field in *Skill*
-   *
-   * - **Field Type**: Image
-   * - **Placeholder**: *None*
-   * - **API ID Path**: skill.meta_image
-   * - **Tab**: SEO & Metadata
-   * - **Documentation**: https://prismic.io/docs/field#image
-   */
-  meta_image: prismic.ImageField<never>;
-
-  /**
-   * Meta Title field in *Skill*
-   *
-   * - **Field Type**: Text
-   * - **Placeholder**: A title of the page used for social media and search engines
-   * - **API ID Path**: skill.meta_title
-   * - **Tab**: SEO & Metadata
-   * - **Documentation**: https://prismic.io/docs/field#key-text
-   */
-  meta_title: prismic.KeyTextField;
-}
-
-/**
- * Skill document from Prismic
- *
- * - **API ID**: `skill`
- * - **Repeatable**: `true`
- * - **Documentation**: https://prismic.io/docs/custom-types
- *
- * @typeParam Lang - Language API ID of the document.
- */
-export type SkillDocument<Lang extends string = string> =
-  prismic.PrismicDocumentWithUID<Simplify<SkillDocumentData>, "skill", Lang>;
-
 export type AllDocumentTypes =
   | BlogDocument
   | BlogsDocument
   | EntitiesDocument
   | EntityDocument
-  | ProjectDocument
-  | SkillDocument;
+  | ProjectDocument;
 
 /**
  * Primary content in *Blogs → Primary*
@@ -824,9 +718,6 @@ declare module "@prismicio/client" {
       ProjectDocument,
       ProjectDocumentData,
       ProjectDocumentDataSlicesSlice,
-      SkillDocument,
-      SkillDocumentData,
-      SkillDocumentDataSlicesSlice,
       AllDocumentTypes,
       BlogsSlice,
       BlogsSliceDefaultPrimary,
