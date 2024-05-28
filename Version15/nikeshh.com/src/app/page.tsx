@@ -17,11 +17,11 @@ import StarGrid from '@/components/StarGrid';
 import TopSkills from './_components/top-skills';
 import Notification from "./_components/notification";
 
-const Home = async () => {
-  const testimonials = await getTestimonials();
-  const skills = await getSkills();
-  const projects = await getProjects();
-  const blogs = await getBlogs();
+const Home = () => {
+  const testimonials = getTestimonials();
+  const skills = getSkills();
+  const projects = getProjects();
+  const blogs = getBlogs();
 
   console.log("👋 Hi! It looks like you are trying to explore the code. You can directly work with me on any of the listed projects. Feel free to submit your details through the contact form or directly mail me at nikeshhbaskaran01@gmail.com. Cheers 🍻");
 
