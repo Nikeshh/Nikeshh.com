@@ -1017,35 +1017,170 @@ const businessPrespectiveProjects = [
   {
     id: "norte-damepavillion",
     name: 'Norte-Damepavillion',
-    subtitle: 'VectorChat revolutionizes communication by enabling seamless interaction with PDF documents through vector data. Enhance collaboration and productivity with intuitive chat-based PDF interactions.',
+    subtitle: 'Notre Dame Pavilion Hospital (NDPH) is a 44-bed healthcare facility located in Vitré. Serving approximately 50,000 Québec city residents and a large seasonal population of cottagers and tourists, NDPH offers a comprehensive array of acute care services.',
     category: 'Website',
     link: 'https://www.notre-damepavillionhospital.ca/',
     imageUrl: '/projects/notre-damepavillionhospital.png',
-    tags: ['LMS'],
+    tags: ['Shopify', 'Liquid', 'Stripe', 'Mongodb', 'ExpressJS'],
     view: "Business Perspective",
-    content: ""
+    content: `
+    <div className="container mx-auto p-6 shadow-lg">
+      <h1 className="text-3xl font-bold text-green-600 mb-6">Notre Dame Pavilion Hospital (NDPH)</h1>
+      <p className="mb-4"><strong>Notre Dame Pavilion Hospital (NDPH)</strong> is a 44-bed healthcare facility located in Vitré. Serving approximately 50,000 Québec city residents and a large seasonal population of cottagers and tourists, NDPH offers a comprehensive array of acute care services.</p>
+
+      <h2 className="text-2xl font-semibold text-green-500 mb-4">Key Technologies</h2>
+      <table className="table-auto w-full mb-6">
+          <thead>
+              <tr className="bg-gray-200 text-black">
+                  <th className="px-4 py-2">Technology</th>
+                  <th className="px-4 py-2">Description</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td className="border px-4 py-2">Shopify</td>
+                  <td className="border px-4 py-2">E-commerce platform used for managing hospital-related merchandise and services.</td>
+              </tr>
+              <tr>
+                  <td className="border px-4 py-2">Liquid</td>
+                  <td className="border px-4 py-2">Template language used to customize Shopify themes for the hospital's website.</td>
+              </tr>
+              <tr>
+                  <td className="border px-4 py-2">React</td>
+                  <td className="border px-4 py-2">Ensures a dynamic and responsive user interface for better user engagement.</td>
+              </tr>
+              <tr>
+                  <td className="border px-4 py-2">Node.js</td>
+                  <td className="border px-4 py-2">Backend server for handling data and transactions efficiently.</td>
+              </tr>
+              <tr>
+                  <td className="border px-4 py-2">MongoDB</td>
+                  <td className="border px-4 py-2">Database solution for storing patient information, service details, and transaction records.</td>
+              </tr>
+              <tr>
+                  <td className="border px-4 py-2">Stripe</td>
+                  <td className="border px-4 py-2">Secure payment processing for hospital donations and transactions.</td>
+              </tr>
+              <tr>
+                  <td className="border px-4 py-2">AWS</td>
+                  <td className="border px-4 py-2">Cloud services for hosting, ensuring high availability and scalability.</td>
+              </tr>
+          </tbody>
+      </table>
+  </div>
+    `
   },
   {
     id: "mitaz-consulting",
     name: 'Mitaz Consulting',
-    subtitle: 'VectorChat revolutionizes communication by enabling seamless interaction with PDF documents through vector data. Enhance collaboration and productivity with intuitive chat-based PDF interactions.',
+    subtitle: 'Mitaz Immigration Consulting is a premier firm dedicated to providing high-quality immigration services to clients globally who wish to study, work, live, or invest in Canada. We assist clients in creating their future and living their dream as temporary or permanent residents by keeping abreast of federal immigration laws and various Provincial Nominee Programs (PNPs).',
     category: 'Website',
     link: 'https://mitazconsulting.ca/',
     imageUrl: '/projects/mitazconsulting.png',
-    tags: ['LMS'],
+    tags: ['ReactJS', 'Stripe', 'Mongodb', 'ExpressJS'],
     view: "Business Perspective",
-    content: ""
+    content: `
+    <div className="container mx-auto p-6 shadow-lg">
+      <h1 className="text-3xl font-bold text-blue-600 mb-6">Mitaz Immigration Consulting</h1>
+      <p className="mb-4"><strong>Mitaz Immigration Consulting</strong> is a premier firm dedicated to providing high-quality immigration services to clients globally who wish to study, work, live, or invest in Canada. We assist clients in creating their future and living their dream as temporary or permanent residents by keeping abreast of federal immigration laws and various Provincial Nominee Programs (PNPs).</p>
+
+      <h2 className="text-2xl font-semibold text-blue-500 mb-4">Key Technologies</h2>
+      <table className="table-auto w-full mb-6">
+          <thead>
+              <tr className="bg-gray-200 text-black">
+                  <th className="px-4 py-2">Technology</th>
+                  <th className="px-4 py-2">Description</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td className="border px-4 py-2">Shopify</td>
+                  <td className="border px-4 py-2">Used for managing client interactions and service transactions.</td>
+              </tr>
+              <tr>
+                  <td className="border px-4 py-2">Liquid</td>
+                  <td className="border px-4 py-2">Template language for customizing the Shopify-based website.</td>
+              </tr>
+              <tr>
+                  <td className="border px-4 py-2">React</td>
+                  <td className="border px-4 py-2">Ensures a dynamic and responsive user interface for better engagement.</td>
+              </tr>
+              <tr>
+                  <td className="border px-4 py-2">Node.js</td>
+                  <td className="border px-4 py-2">Backend server for handling client data and transaction processes efficiently.</td>
+              </tr>
+              <tr>
+                  <td className="border px-4 py-2">MongoDB</td>
+                  <td className="border px-4 py-2">Database solution for storing client information and service details.</td>
+              </tr>
+              <tr>
+                  <td className="border px-4 py-2">Stripe</td>
+                  <td className="border px-4 py-2">Secure payment processing for service fees.</td>
+              </tr>
+              <tr>
+                  <td className="border px-4 py-2">AWS</td>
+                  <td className="border px-4 py-2">Cloud services for hosting, ensuring high availability and scalability.</td>
+              </tr>
+          </tbody>
+      </table>
+  </div>
+    `
   },
   {
     id: "elkrest-farm",
     name: 'Elkrest Farm',
-    subtitle: 'VectorChat revolutionizes communication by enabling seamless interaction with PDF documents through vector data. Enhance collaboration and productivity with intuitive chat-based PDF interactions.',
+    subtitle: 'Elkrest Farm has grown significantly over the past 18 years, expanding its land, quota, and building a Holstein thoroughbred herd along with a new barn. This growth has been supported by improved processes, including technological and mechanical advancements, driven by a desire for continuous improvement.',
     category: 'Website',
     link: 'https://elkrestsfarm.ca/',
     imageUrl: '/projects/elkrests-farm.png',
-    tags: ['LMS'],
+    tags: ['HTML', 'CSS', 'Javascript'],
     view: "Business Perspective",
-    content: ""
+    content: `
+    <div className="container mx-auto p-6 shadow-lg">
+    <h1 className="text-3xl font-bold text-green-600 mb-6">Elkrest Farm</h1>
+    <p className="mb-4"><strong>Elkrest Farm</strong> has grown significantly over the past 18 years, expanding its land, quota, and building a Holstein thoroughbred herd along with a new barn. This growth has been supported by improved processes, including technological and mechanical advancements, driven by a desire for continuous improvement.</p>
+
+    <h2 className="text-2xl font-semibold text-green-500 mb-4">Key Technologies</h2>
+    <table className="table-auto w-full mb-6">
+        <thead>
+            <tr className="bg-gray-200 text-black">
+                <th className="px-4 py-2">Technology</th>
+                <th className="px-4 py-2">Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td className="border px-4 py-2">Shopify</td>
+                <td className="border px-4 py-2">Manages e-commerce capabilities for product sales and client interactions.</td>
+            </tr>
+            <tr>
+                <td className="border px-4 py-2">Liquid</td>
+                <td className="border px-4 py-2">Template language for customizing the Shopify-based website.</td>
+            </tr>
+            <tr>
+                <td className="border px-4 py-2">React</td>
+                <td className="border px-4 py-2">Ensures a dynamic and responsive user interface for better engagement.</td>
+            </tr>
+            <tr>
+                <td className="border px-4 py-2">Node.js</td>
+                <td className="border px-4 py-2">Backend server for handling client data and transaction processes efficiently.</td>
+            </tr>
+            <tr>
+                <td className="border px-4 py-2">MongoDB</td>
+                <td className="border px-4 py-2">Database solution for storing client and livestock information.</td>
+            </tr>
+            <tr>
+                <td className="border px-4 py-2">Stripe</td>
+                <td className="border px-4 py-2">Secure payment processing for transactions.</td>
+            </tr>
+            <tr>
+                <td className="border px-4 py-2">AWS</td>
+                <td className="border px-4 py-2">Cloud services for hosting, ensuring high availability and scalability.</td>
+            </tr>
+        </tbody>
+    </table>
+  </div>
+    `
   },
   {
     id: "island-national-medical-center",
