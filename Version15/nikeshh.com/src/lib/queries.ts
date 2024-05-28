@@ -631,24 +631,74 @@ const businessPrespectiveProjects = [
   {
     id: "spades-brand",
     name: 'Spades Brand',
-    subtitle: 'VectorChat revolutionizes communication by enabling seamless interaction with PDF documents through vector data. Enhance collaboration and productivity with intuitive chat-based PDF interactions.',
+    subtitle: 'Spades Brand No. 15, a premium skincare brand created in Los Angeles and brought to life in Canada. After years of researching organic ingredients and using industry-leading extraction methods, they tested fourteen different prototypes to arrive at our unique and effective formulation, lucky No. 15.',
     category: 'Ecommerce',
     link: 'https://www.spadesbrand.com/',
     imageUrl: '/projects/spades-brand.png',
     tags: ['Shopify', 'Liquid', 'Ecommerce'],
     view: "Business Perspective",
-    content: ""
+    content: `
+    <div className="container mx-auto p-6 shadow-lg">
+      <h1 className="text-3xl font-bold text-purple-600 mb-6">Spades Brand No. 15</h1>
+      <p className="mb-4"><strong>Spades Brand No. 15</strong>, a premium skincare brand created in Los Angeles and brought to life in Canada. After years of researching organic ingredients and using industry-leading extraction methods, they tested fourteen different prototypes to arrive at our unique and effective formulation, lucky No. 15.</p>
+
+      <h2 className="text-2xl font-semibold text-purple-500 mb-4">Key Technologies</h2>
+      <table className="table-auto w-full mb-6">
+          <thead>
+              <tr className="bg-gray-200 text-black">
+                  <th className="px-4 py-2">Technology</th>
+                  <th className="px-4 py-2">Description</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td className="border px-4 py-2">Shopify</td>
+                  <td className="border px-4 py-2">The robust e-commerce platform that powers our online store, ensuring a seamless shopping experience.</td>
+              </tr>
+              <tr>
+                  <td className="border px-4 py-2">Liquid</td>
+                  <td className="border px-4 py-2">The flexible and powerful template language used to customize our Shopify themes and enhance website functionality.</td>
+              </tr>
+          </tbody>
+      </table>
+  </div>
+    `
   },
   {
     id: "ppe-supply-canada",
     name: 'PPE Supply Canada',
-    subtitle: 'VectorChat revolutionizes communication by enabling seamless interaction with PDF documents through vector data. Enhance collaboration and productivity with intuitive chat-based PDF interactions.',
+    subtitle: 'PPE Supply Canada is your go-to retailer for high-quality N95/KN95 masks and rapid test kits. Our team is dedicated to keeping communities in Canada and the US safe by providing reliable personal protective equipment.',
     category: 'Ecommerce',
     link: 'https://www.ppe-supply.com/',
     imageUrl: '/projects/ppe-supply-canada.png',
     tags: ['Shopify', 'Liquid', 'Ecommerce'],
     view: "Business Perspective",
-    content: ""
+    content: `
+      <div className="container mx-auto p-6 shadow-lg">
+        <h1 className="text-3xl font-bold text-blue-600 mb-6">PPE Supply Canada</h1>
+        <p className="mb-4"><strong>PPE Supply Canada</strong> is your go-to retailer for high-quality N95/KN95 masks and rapid test kits. Our team is dedicated to keeping communities in Canada and the US safe by providing reliable personal protective equipment.</p>
+
+        <h2 className="text-2xl font-semibold text-blue-500 mb-4">Key Technologies</h2>
+        <table className="table-auto w-full mb-6">
+            <thead>
+                <tr className="bg-gray-200 text-black">
+                    <th className="px-4 py-2">Technology</th>
+                    <th className="px-4 py-2">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td className="border px-4 py-2">Shopify</td>
+                    <td className="border px-4 py-2">The robust e-commerce platform that powers our online store, ensuring a seamless shopping experience.</td>
+                </tr>
+                <tr>
+                    <td className="border px-4 py-2">Liquid</td>
+                    <td className="border px-4 py-2">The flexible and powerful template language used to customize our Shopify themes and enhance website functionality.</td>
+                </tr>
+            </tbody>
+        </table>
+      </div>
+    `
   },
   {
     id: "learnify---lms-platform",
