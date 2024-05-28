@@ -14,6 +14,7 @@ import CookiesConsent from '@/components/cookies-consent';
 import PrelineScript from "@/components/PrelineScript";
 import Scroll from "@/components/scroll";
 import { ClerkProvider } from "@clerk/nextjs";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const font = DM_Sans({ subsets: ["latin"] });
 
@@ -71,6 +72,7 @@ export default async function RootLayout({
             <main className="w-full">
               {children}
             </main>
+            <SpeedInsights />
             <CookiesConsent />
             </ModalProvider>
           </ThemeProvider>
