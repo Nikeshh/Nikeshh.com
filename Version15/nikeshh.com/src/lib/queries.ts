@@ -559,11 +559,11 @@ const businessPrespectiveProjects = [
   {
     id: "alt-interiors",
     name: 'ALT Interiors',
-    subtitle: 'VectorChat revolutionizes communication by enabling seamless interaction with PDF documents through vector data. Enhance collaboration and productivity with intuitive chat-based PDF interactions.',
+    subtitle: 'ALT | Interiors specializes in award-winning interior design, expert home staging, and curated home furnishings. Their experienced team blends beauty and functionality to create personalized, impactful spaces. Trust them to elevate your home and ensure it stands out in the real estate market.',
     category: 'Ecommerce',
     link: 'https://altinteriors.ca/',
     imageUrl: '/projects/alt-interiors.png',
-    tags: ['LMS'],
+    tags: ['Shopify', 'Liquid', 'Ecommerce'],
     view: "Business Perspective",
     content: ""
   },
@@ -574,7 +574,7 @@ const businessPrespectiveProjects = [
     category: 'Ecommerce',
     link: 'https://www.skinessence.ca/',
     imageUrl: '/projects/skin-essence.png',
-    tags: ['LMS'],
+    tags: ['Shopify', 'Liquid', 'Ecommerce'],
     view: "Business Perspective",
     content: ""
   },
@@ -585,7 +585,7 @@ const businessPrespectiveProjects = [
     category: 'Ecommerce',
     link: 'https://www.spadesbrand.com/',
     imageUrl: '/projects/spades-brand.png',
-    tags: ['LMS'],
+    tags: ['Shopify', 'Liquid', 'Ecommerce'],
     view: "Business Perspective",
     content: ""
   },
@@ -596,20 +596,140 @@ const businessPrespectiveProjects = [
     category: 'Ecommerce',
     link: 'https://www.ppe-supply.com/',
     imageUrl: '/projects/ppe-supply-canada.png',
-    tags: ['LMS'],
+    tags: ['Shopify', 'Liquid', 'Ecommerce'],
     view: "Business Perspective",
     content: ""
   },
   {
-    id: "lms-platform",
-    name: 'LMS Platform',
-    subtitle: 'VectorChat revolutionizes communication by enabling seamless interaction with PDF documents through vector data. Enhance collaboration and productivity with intuitive chat-based PDF interactions.',
+    id: "learnify---lms-platform",
+    name: 'Learnify - LMS Platform',
+    subtitle: 'Learnify an advanced Learning Management System (LMS). Built with Nextjs and MySQL, platform stands out!',
     category: 'Web App',
     link: 'https://lms-platform-red.vercel.app/',
     imageUrl: '/projects/lms-platform.png',
-    tags: ['LMS'],
+    tags: ['LMS', 'Nextjs', 'React', 'Mux', 'MySQL'],
     view: "Business Perspective",
-    content: ""
+    content: `
+    <div className="container mx-auto p-6 shadow-lg">
+        <h1 className="text-3xl font-bold text-blue-600 mb-6">Learnify LMS Platform</h1>
+        <p className="mb-4">Learnify an advanced Learning Management System (LMS)</p>
+
+        <h2 className="text-2xl font-semibold text-blue-500 mb-4">Key Technologies</h2>
+        <table className="table-auto w-full mb-6">
+            <thead>
+                <tr className="bg-gray-200 text-black">
+                    <th className="px-4 py-2">Technology</th>
+                    <th className="px-4 py-2">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td className="border px-4 py-2">Next.js 13</td>
+                    <td className="border px-4 py-2">A modern React framework for optimal performance and scalability.</td>
+                </tr>
+                <tr>
+                    <td className="border px-4 py-2">Stripe</td>
+                    <td className="border px-4 py-2">Secure and easy-to-use payment processing.</td>
+                </tr>
+                <tr>
+                    <td className="border px-4 py-2">Mux</td>
+                    <td className="border px-4 py-2">High-quality video and data streaming.</td>
+                </tr>
+                <tr>
+                    <td className="border px-4 py-2">UploadThing</td>
+                    <td className="border px-4 py-2">Effortless uploading of multimedia content.</td>
+                </tr>
+                <tr>
+                    <td className="border px-4 py-2">TIDBCloud</td>
+                    <td className="border px-4 py-2">Robust and scalable database management.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2 className="text-2xl font-semibold text-blue-500 mb-4">Features Overview</h2>
+        <table className="table-auto w-full mb-6">
+            <thead>
+              <tr className="bg-gray-200 text-black">
+                    <th className="px-4 py-2">Category</th>
+                    <th className="px-4 py-2">Features</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td className="border px-4 py-2">Course Interaction</td>
+                    <td className="border px-4 py-2">
+                        <ul className="list-disc ml-6">
+                            <li>Browse & Filter Courses</li>
+                            <li>Purchase Courses using Stripe</li>
+                            <li>Mark Chapters as Completed or Uncompleted</li>
+                            <li>Progress Tracking</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td className="border px-4 py-2">Student Experience</td>
+                    <td className="border px-4 py-2">
+                        <ul className="list-disc ml-6">
+                            <li>Student Dashboard</li>
+                            <li>Progress Calculation</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td className="border px-4 py-2">Educator Tools</td>
+                    <td className="border px-4 py-2">
+                        <ul className="list-disc ml-6">
+                            <li>Teacher Mode</li>
+                            <li>Course Creation</li>
+                            <li>Drag & Drop Chapter Reordering</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td className="border px-4 py-2">Content Management</td>
+                    <td className="border px-4 py-2">
+                        <ul className="list-disc ml-6">
+                            <li>Multimedia Uploads</li>
+                            <li>Video Processing & Playback</li>
+                            <li>Rich Text Editor</li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2 className="text-2xl font-semibold text-blue-500 mb-4">Technical Infrastructure</h2>
+        <table className="table-auto w-full mb-6">
+            <thead>
+            <tr className="bg-gray-200 text-black">
+                    <th className="px-4 py-2">Component</th>
+                    <th className="px-4 py-2">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td className="border px-4 py-2">Authentication</td>
+                    <td className="border px-4 py-2">Secure login and user management with Clerk.</td>
+                </tr>
+                <tr>
+                    <td className="border px-4 py-2">ORM</td>
+                    <td className="border px-4 py-2">Simplified database interactions using Prisma.</td>
+                </tr>
+                <tr>
+                    <td className="border px-4 py-2">Database</td>
+                    <td className="border px-4 py-2">Reliable MySQL database managed by Planetscale.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2 className="text-2xl font-semibold text-blue-500 mb-4">Why Choose Learnify?</h2>
+        <ul className="list-disc ml-6 mb-6">
+            <li><strong>User-Centric Design</strong>: Built with the user in mind for an intuitive and engaging experience.</li>
+            <li><strong>Scalability</strong>: Designed to grow with your needs, supporting thousands of users seamlessly.</li>
+            <li><strong>Security</strong>: Top-tier security practices to protect your data and transactions.</li>
+            <li><strong>Performance</strong>: Optimized for speed and reliability to ensure a smooth user experience.</li>
+        </ul>
+    </div>`
   },
   {
     id: "karking",

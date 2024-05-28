@@ -23,7 +23,7 @@ const Page = () => {
           (blog, index) =>
             blog && (
               <div
-                key={blog.uid}
+                key={index}
                 className="relative grid gap-4 opacity-85 transition-opacity duration-300 hover:cursor-pointer hover:opacity-100 md:grid-cols-2 md:gap-8 lg:grid-cols-3"
               >
                 <div className="col-span-1 flex flex-col justify-center gap-4">

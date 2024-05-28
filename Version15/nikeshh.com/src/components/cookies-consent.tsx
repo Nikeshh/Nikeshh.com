@@ -1,15 +1,21 @@
 "use client"
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const CookiesConsent = () => {
   
-  const [firstShow, setFirstShow] = useState(localStorage.getItem("cookie-consent-not-shown") == "false" ? false : true ?? true);
+  const [firstShow, setFirstShow] = useState(false);
+
+  useEffect(() => {
+    setFirstShow(localStorage.getItem("cookie-consent-not-shown") == "false"
+    ? false
+    : true ?? true);
+  }, [firstShow]);
 
   const updateCookieConsent = () => {
     setFirstShow(false);
-    localStorage.setItem("cookie-consent-not-shown", "false")
-  }
+    window.localStorage.setItem("cookie-consent-not-shown", "false");
+  };
 
   if (firstShow) {
     return (

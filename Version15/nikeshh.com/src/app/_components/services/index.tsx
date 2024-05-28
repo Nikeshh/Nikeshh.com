@@ -80,10 +80,10 @@ const Services = ({ services } : Props) => {
                         <CommandInput placeholder="Type a command or search..." />
                         <CommandList>
                             <CommandEmpty>No results found.</CommandEmpty>
-                            {Object.keys(selectedServices).map((service) => {
+                            {Object.keys(selectedServices).map((service, index) => {
                                 const subServices = selectedServices[service];
                                 return (
-                                <div key={service}>
+                                <div key={index}>
                                     <CommandGroup heading={service}>
                                         {subServices.map((subService: ServicesType) => {
                                             return (

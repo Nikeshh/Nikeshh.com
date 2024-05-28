@@ -3,7 +3,6 @@ import "./globals.css";
 import { ThemeProvider } from "@/providers/theme-provider";
 import { DM_Sans } from "next/font/google";
 import { Toaster } from "@/components/ui/sonner"
-import ModalProvider from "@/providers/modal-provider";
 import { Analytics } from "@vercel/analytics/react";
 import localFont from 'next/font/local';
 import { PrismicPreview } from "@prismicio/next";
@@ -67,14 +66,12 @@ export default async function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
-            <ModalProvider>
             <NProgressBarProvider />
             <main className="w-full">
               {children}
             </main>
             <SpeedInsights />
             <CookiesConsent />
-            </ModalProvider>
           </ThemeProvider>
           <Toaster />
           <Analytics />

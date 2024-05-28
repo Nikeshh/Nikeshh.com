@@ -23,12 +23,14 @@ export default async function Page({ params }: { params: Params }) {
         <div className="relative grid place-items-center text-center">
           <h1 className="text-4xl font-medium">
             {data.name}
-            {data.tags.map((tag, index) => (
-              <p key={index} className="text-lg text-yellow-500">
-                {tag}
-              </p>
-            ))}
-
+            <p className="text-lg text-yellow-500">
+              {" ◦ "}
+              {data.tags.map((tag, index) => (
+                <span key={index}>
+                  {tag} {" ◦ "}
+                </span>
+              ))}
+            </p>
           </h1>
           <p className="mb-4 mt-8 max-w-xl text-lg text-slate-300">
             {data.subtitle}
@@ -44,8 +46,11 @@ export default async function Page({ params }: { params: Params }) {
         <div className="flex justify-center mt-4">
           <p>Check out: <Link href={data.link} target="_blank" className="underline hover:text-blue-500">Website</Link></p>
         </div>
-        <div className="mx-auto ml-0 mt-4 rich-text">
+        <div className="mt-4 rich-text flex justify-center">
           {parse(data.content)}
+        </div>
+        <div className="flex justify-center mt-4">
+          <p>Check out: <Link href={data.link} target="_blank" className="underline hover:text-blue-500">Website</Link></p>
         </div>
       </Bounded>
       <Footer />

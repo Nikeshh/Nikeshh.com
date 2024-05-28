@@ -58,10 +58,10 @@ const Services = ({ services } : Props) => {
                     })}
                 </div>
                 <div className="flex flex-wrap md:flex-nowrap justify-center gap-4 pt-9">
-                    {Object.keys(selectedServices).map((service) => {
+                    {Object.keys(selectedServices).map((service, index) => {
                         const subServices = selectedServices[service];
                         return (
-                            <ul key={subServices.id} className="grid grid-cols-1 xl:grid-cols-3 gap-y-10 gap-x-6 items-start p-8">
+                            <ul key={index} className="grid grid-cols-1 xl:grid-cols-3 gap-y-10 gap-x-6 items-start p-8">
                                 {subServices.map((subService: ServicesType) => {
                                     return (
                                         <li key={subService.id} className="relative flex flex-col sm:flex-row xl:flex-col items-start">
