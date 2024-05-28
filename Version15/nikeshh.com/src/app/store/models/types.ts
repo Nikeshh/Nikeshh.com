@@ -31,7 +31,7 @@ export interface User {
 }
 
 export interface Product {
-  id: string;
+  _id: string;
   user?: (string | null) | User;
   name: string;
   description?: string | null;

@@ -40,6 +40,7 @@
     "@types/uuid": "^9.0.8",
     "@uploadthing/react": "^6.2.4",
     "@vercel/analytics": "^1.2.2",
+    "axios": "^1.7.2",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "cmdk": "^0.2.1",

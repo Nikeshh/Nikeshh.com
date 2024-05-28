@@ -2,6 +2,7 @@ import { TQueryValidator } from "@/lib/validators/query-validator"
 import { Product } from "../models/types"
 import Link from 'next/link'
 import ProductListing from './ProductListing'
+import axios from 'axios'
 
 interface ProductReelProps {
     title: string
@@ -14,8 +15,14 @@ const ProductReel = async (props: ProductReelProps) => {
     const { title, subtitle, href, query } = props;
 
 
-    const res = await fetch(`${process.env.NEXT_PUBLIC_URL}/api/products`, {cache: "no-store"});
+    const res = await axios.get(`${process.env.NEXT_PUBLIC_URL}/api/products`);
     const products: string | any[] = [];
+
+    if (res && res.status == 200) {
+      res.data.map((product: any) => {
+        products.push(product);
+      })
+    }
 
     let map: (Product | null)[] = []
     if (products && products.length) {
