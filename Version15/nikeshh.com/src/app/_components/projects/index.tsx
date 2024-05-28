@@ -100,7 +100,7 @@ const Projects = ({ projects, inlineElement, defaultView = "Business Perspective
                     {view == "Development Showcase" && (
                         <div className='flex justify-center mt-4 text-sm gap-2 items-center'>
                             <Info />
-                            <p>Please note projects presented below are more technical in nature, especially in terms of language.</p>
+                            <p>This is not project project. It is more like components of the projects. More technical in nature.</p>
                         </div>
                     )}
                 </div>
