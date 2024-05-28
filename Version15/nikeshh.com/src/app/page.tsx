@@ -15,6 +15,7 @@ import Certification from './_components/certification';
 import Newsletter from './_components/newsletter';
 import StarGrid from '@/components/StarGrid';
 import TopSkills from './_components/top-skills';
+import Notification from "./_components/notification";
 
 const Home = async () => {
   const testimonials = await getTestimonials();
@@ -27,6 +28,7 @@ const Home = async () => {
   return (
     <>
       {/*<NotificationC />*/}
+      <Notification />
       <Navigation />
       <StarGrid />
       <section id="banner" className="container pt-24 md:pt-24 xl:pt-[5rem] relative flex items-center md:justify-center flex-wrap md:flex-nowrap gap-5">
