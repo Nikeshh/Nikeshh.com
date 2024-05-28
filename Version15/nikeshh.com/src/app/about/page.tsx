@@ -51,7 +51,7 @@ const Page = async () => {
                 <h2 className="text-lg font-semibold mb-2 dark:text-white">Is it? If not, go to <Link href={"https://nikeshh.com"} className="hover:text-blue-500">https://nikeshh.com/</Link></h2>
                 <p className="text-lg mb-5 dark:text-neutral-400">Okey, got it read below.</p>
                 <p className="text-lg mb-5 dark:text-neutral-400">First, I love to build softwares and scale them. Sometimes I also help business owners to get their brand up and running online as well promote them using my digital marketing skills.</p>
-                <p className="text-lg mb-5 dark:text-neutral-400">Mostly I love to code and explore new technologies. When I'm not coding, you can find me hiking in the great outdoors, or enjoying a good book. Oh, and I'm a big fan of coffee – it's the fuel that keeps me going!</p>
+                <p className="text-lg mb-5 dark:text-neutral-400">Mostly I love to code and explore new technologies. When I&apos;m not coding, you can find me hiking in the great outdoors, or enjoying a good book. Oh, and I&apos;m a big fan of coffee – it&apos;s the fuel that keeps me going!</p>
                 <p className="text-lg mb-5 dark:text-neutral-400">Some of my instagram posts:</p>
                 <div className="p-4 flex flex-wrap gap-2 justify-center text-lg mb-5">
                   {[
@@ -62,8 +62,8 @@ const Page = async () => {
                     '/instagram/instagram_5.jpg',
                     '/instagram/instagram_6.jpg',
                     '/instagram/instagram_7.jpg'
-                  ].map((i) => (
-                    <div className="bg-white border rounded-sm max-w-md">
+                  ].map((i, index) => (
+                    <div key={index} className="bg-white border rounded-sm max-w-md">
                       <div className="flex items-center px-4 py-3">
                         <Image 
                           src="/assets/myphoto3.png" 
@@ -105,8 +105,8 @@ const Page = async () => {
                   {[
                     '/instagram/instagram_food_1.jpg',
                     '/instagram/instagram_food_2.jpg'
-                  ].map((i) => (
-                    <div className="bg-white border rounded-sm max-w-md">
+                  ].map((i, index) => (
+                    <div key={index} className="bg-white border rounded-sm max-w-md">
                       <div className="flex items-center px-4 py-3">
                         <Image 
                           src="/assets/myphoto3.png" 
