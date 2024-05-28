@@ -834,24 +834,185 @@ const businessPrespectiveProjects = [
   {
     id: "karking",
     name: 'Karking',
-    subtitle: 'VectorChat revolutionizes communication by enabling seamless interaction with PDF documents through vector data. Enhance collaboration and productivity with intuitive chat-based PDF interactions.',
+    subtitle: 'Karking is India’s finest domestic parking sharing service company. They offer efficient parking solutions to people in all locations, enabling both users and landlords to benefit from our platform.',
     category: 'Website',
     link: 'https://karking.in/',
     imageUrl: '/projects/karking.png',
     tags: ['LMS'],
     view: "Business Perspective",
-    content: ""
+    content: `
+    <div className="container mx-auto p-6 shadow-lg">
+    <h1 className="text-3xl font-bold text-green-600 mb-6">Karking</h1>
+    <p className="mb-4"><strong>Karking</strong> is India’s finest domestic parking sharing service company. They offer efficient parking solutions to people in all locations, enabling both users and landlords to benefit from our platform.</p>
+
+    <h2 className="text-2xl font-semibold text-green-500 mb-4">Key Technologies</h2>
+    <table className="table-auto w-full mb-6">
+        <thead>
+            <tr className="bg-gray-200 text-black">
+                <th className="px-4 py-2">Technology</th>
+                <th className="px-4 py-2">Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td className="border px-4 py-2">React Native</td>
+                <td className="border px-4 py-2">Cross-platform mobile app development for both iOS and Android, ensuring a seamless user experience.</td>
+            </tr>
+            <tr>
+                <td className="border px-4 py-2">Node.js</td>
+                <td className="border px-4 py-2">Backend server for handling data and transactions efficiently.</td>
+            </tr>
+            <tr>
+                <td className="border px-4 py-2">MongoDB</td>
+                <td className="border px-4 py-2">Database solution for storing user data, parking slots, and transaction records.</td>
+            </tr>
+            <tr>
+                <td className="border px-4 py-2">Stripe</td>
+                <td className="border px-4 py-2">Secure and reliable payment processing for cashless transactions.</td>
+            </tr>
+            <tr>
+                <td className="border px-4 py-2">AWS</td>
+                <td className="border px-4 py-2">Cloud services for hosting, ensuring high availability and scalability.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2 className="text-2xl font-semibold text-green-500 mb-4">Key Features</h2>
+    <table className="table-auto w-full mb-6">
+        <thead>
+        <tr className="bg-gray-200 text-black">
+                <th className="px-4 py-2">Feature</th>
+                <th className="px-4 py-2">Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td className="border px-4 py-2">For Users</td>
+                <td className="border px-4 py-2">
+                    <ul className="list-disc ml-6">
+                        <li>Quick Parking: Find parking slots instantly in dense areas, saving time and reducing stress.</li>
+                        <li>Affordability: Avoid paying hefty prices for parking. Enjoy budget-friendly parking options.</li>
+                        <li>Cashless Transactions: Use the inbuilt wallet system for hassle-free payment processes.</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td className="border px-4 py-2">For Landlords</td>
+                <td className="border px-4 py-2">
+                    <ul className="list-disc ml-6">
+                        <li>Monetize Your Land: Start earning money with your unused lands by registering on the Karking app, even if the space is small.</li>
+                        <li>Passive Income: Earn money without any hard work. Let your empty spaces generate income for you.</li>
+                        <li>Easy Withdrawal: Withdraw the money earned by your space directly to your bank account without hassle.</li>
+                    </ul>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2 className="text-2xl font-semibold text-green-500 mb-4">Why Choose Karking?</h2>
+    <ul className="list-disc ml-6 mb-6">
+        <li><strong>Efficient Solutions</strong>: Quick and easy parking solutions for users, monetization opportunities for landlords.</li>
+        <li><strong>User-Friendly App</strong>: Seamless user experience with our cross-platform mobile app.</li>
+        <li><strong>Secure Payments</strong>: Reliable and secure payment processing with Stripe integration.</li>
+        <li><strong>Community Focus</strong>: Helping communities utilize their spaces efficiently and economically.</li>
+    </ul>
+</div>
+    `
   },
   {
     id: "immunuts",
     name: 'Immunuts',
-    subtitle: 'VectorChat revolutionizes communication by enabling seamless interaction with PDF documents through vector data. Enhance collaboration and productivity with intuitive chat-based PDF interactions.',
+    subtitle: 'Immunuts is dedicated to sourcing, manufacturing, and supplying the highest quality dried fruits. They bring families together through our fine food, crafted for your wellbeing.',
     category: 'Website',
     link: 'https://immunuts.in/',
     imageUrl: '/projects/immunuts.png',
     tags: ['LMS'],
     view: "Business Perspective",
-    content: ""
+    content: `
+      <div className="container mx-auto p-6 shadow-lg">
+      <h1 className="text-3xl font-bold text-green-600 mb-6">Immunuts</h1>
+      <p className="mb-4"><strong>Immunuts</strong> is dedicated to sourcing, manufacturing, and supplying the highest quality dried fruits. They bring families together through our fine food, crafted for your wellbeing.</p>
+
+      <h2 className="text-2xl font-semibold text-green-500 mb-4">Key Technologies</h2>
+      <table className="table-auto w-full mb-6">
+          <thead>
+              <tr className="bg-gray-200 text-black">
+                  <th className="px-4 py-2">Technology</th>
+                  <th className="px-4 py-2">Description</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td className="border px-4 py-2">Shopify</td>
+                  <td className="border px-4 py-2">Our robust e-commerce platform that powers our online store, ensuring a seamless shopping experience.</td>
+              </tr>
+              <tr>
+                  <td className="border px-4 py-2">Liquid</td>
+                  <td className="border px-4 py-2">The flexible and powerful template language used to customize our Shopify themes and enhance website functionality.</td>
+              </tr>
+              <tr>
+                  <td className="border px-4 py-2">React</td>
+                  <td className="border px-4 py-2">Provides a dynamic and responsive user interface for an engaging shopping experience.</td>
+              </tr>
+              <tr>
+                  <td className="border px-4 py-2">Node.js</td>
+                  <td className="border px-4 py-2">Backend server for efficient handling of data and transactions.</td>
+              </tr>
+              <tr>
+                  <td className="border px-4 py-2">MongoDB</td>
+                  <td className="border px-4 py-2">Database solution for storing product information, user data, and transaction records.</td>
+              </tr>
+              <tr>
+                  <td className="border px-4 py-2">Stripe</td>
+                  <td className="border px-4 py-2">Secure and reliable payment processing for smooth transactions.</td>
+              </tr>
+              <tr>
+                  <td className="border px-4 py-2">AWS</td>
+                  <td className="border px-4 py-2">Cloud services for hosting, ensuring high availability and scalability.</td>
+              </tr>
+          </tbody>
+      </table>
+
+      <h2 className="text-2xl font-semibold text-green-500 mb-4">Key Features</h2>
+      <table className="table-auto w-full mb-6">
+          <thead>
+            <tr className="bg-gray-200 text-black">
+                  <th className="px-4 py-2">Feature</th>
+                  <th className="px-4 py-2">Description</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td className="border px-4 py-2">High-Quality Dried Fruits</td>
+                  <td className="border px-4 py-2">
+                      <ul className="list-disc ml-6">
+                          <li>Superior Sourcing: We grow the fruit we dry and market, ensuring complete control over quality from the initial growing phase to the final packaging and delivery.</li>
+                          <li>Health Benefits: Our dried fruits are packed with nutritional benefits, offering a healthy snack option for everyone.</li>
+                          <li>Wide Variety: Offering a diverse selection of dried fruits to cater to different tastes and preferences.</li>
+                      </ul>
+                  </td>
+              </tr>
+              <tr>
+                  <td className="border px-4 py-2">Customer-Centric Services</td>
+                  <td className="border px-4 py-2">
+                      <ul className="list-disc ml-6">
+                          <li>Seamless Shopping Experience: Our user-friendly online store, powered by Shopify and enhanced with Liquid, ensures an enjoyable and hassle-free shopping experience.</li>
+                          <li>Secure Payments: Utilize Stripe for secure and smooth payment processes.</li>
+                          <li>Fast Delivery: Efficient delivery systems to ensure your dried fruits arrive fresh and on time.</li>
+                      </ul>
+                  </td>
+              </tr>
+          </tbody>
+      </table>
+
+      <h2 className="text-2xl font-semibold text-green-500 mb-4">Why Choose Immunuts?</h2>
+      <ul className="list-disc ml-6 mb-6">
+          <li><strong>Commitment to Quality</strong>: From growing to packaging, we ensure the highest quality dried fruits.</li>
+          <li><strong>Customer Focused</strong>: Dedicated to providing excellent service and high-quality products.</li>
+          <li><strong>Health Conscious</strong>: Offering products that are not only delicious but also beneficial for your health.</li>
+      </ul>
+  </div>
+    `
   },
   {
     id: "norte-damepavillion",
