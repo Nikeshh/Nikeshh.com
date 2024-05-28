@@ -838,7 +838,7 @@ const businessPrespectiveProjects = [
     category: 'Website',
     link: 'https://karking.in/',
     imageUrl: '/projects/karking.png',
-    tags: ['LMS'],
+    tags: ['ReactJS', 'Node.js', 'Mongodb', 'Stripe', 'AWS'],
     view: "Business Perspective",
     content: `
     <div className="container mx-auto p-6 shadow-lg">
@@ -926,7 +926,7 @@ const businessPrespectiveProjects = [
     category: 'Website',
     link: 'https://immunuts.in/',
     imageUrl: '/projects/immunuts.png',
-    tags: ['LMS'],
+    tags: ['Shopify', 'Liquid', 'Stripe', 'Mongodb', 'ExpressJS'],
     view: "Business Perspective",
     content: `
       <div className="container mx-auto p-6 shadow-lg">
