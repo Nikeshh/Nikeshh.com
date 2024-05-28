@@ -66,7 +66,7 @@ const TopSkills = () => {
                       and easy to use, and managing the whole process smoothly.
                     </p>
                     <Link
-                      href="/pages/full-stack-app-development"
+                      href="/full-stack-app-development"
                       className="text-sm underline mt-2 pointer-events-auto flex items-center"
                     >
                       Read More <ArrowRightIcon className="ml-2 h-2 w-2" />
@@ -102,7 +102,7 @@ const TopSkills = () => {
                       things.
                     </p>
                     <Link
-                      href="/pages/building-apps-from-start-to-finish"
+                      href="/building-apps-from-start-to-finish"
                       className="text-sm underline mt-2 pointer-events-auto flex items-center"
                     >
                       Read More <ArrowRightIcon className="ml-2 h-2 w-2" />
@@ -137,7 +137,7 @@ const TopSkills = () => {
                       to see what&apos;s working.
                     </p>
                     <Link
-                      href="/pages/getting-your-brand-noticed-online"
+                      href="/getting-your-brand-noticed-online"
                       className="text-sm underline mt-2 pointer-events-auto flex items-center"
                     >
                       Read More <ArrowRightIcon className="ml-2 h-2 w-2" />
@@ -174,7 +174,7 @@ const TopSkills = () => {
                       everything organized and moving forward.
                     </p>
                     <Link
-                      href="/pages/keeping-projects-on-track"
+                      href="/keeping-projects-on-track"
                       className="text-sm underline mt-2 pointer-events-auto flex items-center"
                     >
                       Read More <ArrowRightIcon className="ml-2 h-2 w-2" />
