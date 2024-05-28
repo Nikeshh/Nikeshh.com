@@ -589,45 +589,6 @@ const businessPrespectiveProjects = [
               </tr>
           </tbody>
       </table>
-
-      <h2 className="text-2xl font-semibold text-blue-500 mb-4">Key Services</h2>
-      <table className="table-auto w-full mb-6">
-          <thead>
-            <tr className="bg-gray-200 text-black">
-                  <th className="px-4 py-2">Service</th>
-                  <th className="px-4 py-2">Description</th>
-              </tr>
-          </thead>
-          <tbody>
-              <tr>
-                  <td className="border px-4 py-2">Interior Design</td>
-                  <td className="border px-4 py-2">
-                      <ul className="list-disc ml-6">
-                          <li>Expert Team: Our passionate, experienced designers bring a wealth of creativity and knowledge.</li>
-                          <li>Innovative Solutions: Blending aesthetics with functionality to reflect your personality and lifestyle.</li>
-                          <li>Award-Winning Designs: Numerous awards recognizing our high standards and customer satisfaction.</li>
-                      </ul>
-                  </td>
-              </tr>
-              <tr>
-                  <td className="border px-4 py-2">Home Staging</td>
-                  <td className="border px-4 py-2">
-                      <ul className="list-disc ml-6">
-                          <li>Competitive Edge: Top-tier staging solutions tailored to all property types and styles.</li>
-                          <li>Proven Success: Over a decade of experience ensuring properties attract potential buyers and achieve optimal results.</li>
-                          <li>Trusted by Many: Preferred choice for homeowners, developers, and realtors in the area.</li>
-                      </ul>
-                  </td>
-              </tr>
-          </tbody>
-      </table>
-
-      <h2 className="text-2xl font-semibold text-blue-500 mb-4">Why Choose ALT | Interiors?</h2>
-      <ul className="list-disc ml-6 mb-6">
-          <li><strong>Excellence in Design</strong>: Their history of excellence ensures each project meets the highest standards.</li>
-          <li><strong>Personalized Approach</strong>: They create spaces that resonate with your unique essence and lifestyle.</li>
-          <li><strong>Market Leadership</strong>: Established as the leading expert and preferred choice for home staging.</li>
-      </ul>
     </div>
     `
   },
@@ -664,63 +625,6 @@ const businessPrespectiveProjects = [
                 </tr>
             </tbody>
         </table>
-
-        <h2 className="text-2xl font-semibold text-green-500 mb-4">Key Services</h2>
-        <table className="table-auto w-full mb-6">
-            <thead>
-            <tr className="bg-gray-200 text-black">
-                    <th className="px-4 py-2">Service</th>
-                    <th className="px-4 py-2">Description</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td className="border px-4 py-2">Certified Organic</td>
-                    <td className="border px-4 py-2">
-                        <ul className="list-disc ml-6">
-                            <li>Highest Standards: Adhering to the highest standard of quality and purity in every aspect of our company.</li>
-                            <li>Organic Certification: Verified by independent organizations to ensure chemical-free farming, accurate labeling, and sustainable packaging.</li>
-                            <li>Health and Safety: Meeting and exceeding certification requirements to help people make the healthiest cosmetic choices.</li>
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td className="border px-4 py-2">Certifications</td>
-                    <td className="border px-4 py-2">
-                        <ul className="list-disc ml-6">
-                            <li>USDA & ECOCERT Organic: Proudly certified by ECOCERT and USDA.</li>
-                            <li>ECOCERT: Recognizes both organic plant ingredients and essential non-agricultural ingredients like Clay, Zinc, and Vitamin E.</li>
-                            <li>USDA: The most recognized organic certification program in North America, setting the benchmark for high-quality, sustainable products.</li>
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td className="border px-4 py-2">Considering the Planet</td>
-                    <td className="border px-4 py-2">
-                        <ul className="list-disc ml-6">
-                            <li>Sustainable Practices: Utilizing sustainable resources and reducing the use of environmentally damaging materials at every step of our manufacturing, packaging, and shipping process.</li>
-                            <li>Energy Efficiency: Our facility is equipped to ensure the lowest carbon footprint, creating a healthier world for future generations.</li>
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td className="border px-4 py-2">Packaging with the Environment in Mind</td>
-                    <td className="border px-4 py-2">
-                        <ul className="list-disc ml-6">
-                            <li>Recyclable Materials: Using recycled paper for packaging and shipping, originating from sustainable forests.</li>
-                            <li>Tinted Glass: Products are packaged in recyclable, eco-friendly glass that protects from UV rays and is non-toxic.</li>
-                        </ul>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-
-        <h2 className="text-2xl font-semibold text-green-500 mb-4">Why Choose Skin Essence Organics?</h2>
-        <ul className="list-disc ml-6 mb-6">
-            <li><strong>Over 25 Years of Excellence</strong>: Trusted expertise in organic skincare.</li>
-            <li><strong>Locally Produced</strong>: Small batch production for quality and freshness.</li>
-            <li><strong>Eco-Friendly</strong>: Dedicated to sustainable and environmentally friendly practices.</li>
-        </ul>
     </div>
     `
   },
