@@ -129,22 +129,20 @@ const Projects = ({ projects, inlineElement, defaultView = "Business Perspective
                                 </div>
 
                                 <div className="pt-4">
-                                <Link href={`/projects/${a.name.toLowerCase().replace(/ /g, '-').replace(/\//g, '').replace(/\(/g, '').replace(/\)/g, '')}`}>
                                     <h3 className="relative inline-block font-medium text-lg text-black before:absolute before:bottom-0.5 before:start-0 before:-z-[1] before:w-full before:h-1 before:bg-blue-400 before:transition before:origin-left before:scale-x-0 group-hover:before:scale-x-100 dark:text-white">
                                         {a.name}
                                     </h3>
-                                </Link>
-                                <p className="mt-1 text-gray-600 dark:text-neutral-400">
-                                    {a.subtitle}
-                                </p>
+                                    <p className="mt-1 text-gray-600 dark:text-neutral-400">
+                                        {a.subtitle}
+                                    </p>
 
-                                <div className="mt-3 flex flex-wrap gap-2">
-                                    {a.tags.map((tag, index) => (
-                                        <span key={index} className="py-1.5 px-3 bg-white text-gray-600 border border-gray-200 text-xs sm:text-sm rounded-xl dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400">
-                                            {tag}
-                                        </span>
-                                    ))}
-                                </div>
+                                    <div className="mt-3 flex flex-wrap gap-2">
+                                        {a.tags.map((tag, index) => (
+                                            <span key={index} className="py-1.5 px-3 bg-white text-gray-600 border border-gray-200 text-xs sm:text-sm rounded-xl dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400">
+                                                {tag}
+                                            </span>
+                                        ))}
+                                    </div>
                                 </div>
                             </Link>
                         );
