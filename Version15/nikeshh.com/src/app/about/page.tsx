@@ -99,6 +99,16 @@ const Page = async () => {
                 </div>
                 <p className="text-lg mb-5 dark:text-neutral-400">Also, I love to be productive. Suffered ADHD for a while (realized after a long time that I had one), I started developing systems and products that tackle them. Used my development skills to keep me focused and not get distracted from the outside world. Every now and then, I stumble upon people who lack focus and I help them to overcome using my techniques. Nothing much, have a schedule, focus on the top tasks and tackle them during the hyper focused hours. Simple but effective. </p>
                 <p className="text-lg mb-5 dark:text-neutral-400">“Don’t half bake things”, something I tell myself a lot of times. Nowadays, I  finish what I start, even if it takes months.</p>
+                <p className="text-lg mb-5">I have always tried to find out my ikigai. Kept searching, tried many things, failed multiple, finally found what I was really passionate about, Computers, Systems, Coding and Marketing.</p>
+                <div className="flex justify-center">
+                  <Image 
+                    src="/ikigai.png"
+                    alt="ikigai"
+                    width={500}
+                    height={500}
+                    className="mt-10 mb-[5rem] rounded-lg shadow-lg shadow-white"
+                  />
+                </div>
                 <p className="text-lg mb-5 dark:text-neutral-400">I have also started writing a lot. It really helps me to keeps things on track and narrow down my thoughts. If you lack focus, please start writing. Even if you get distracted you can come back and complete things.</p>
                 <p className="text-lg mb-5 dark:text-neutral-400">I love food. Good food, Good Mood. If you like food and like to explore multiple places for food, then you will gel well with me.</p>
                 <div className="p-4 flex flex-wrap gap-2 justify-center text-lg mb-5">
@@ -140,7 +150,7 @@ const Page = async () => {
                     </div>
                   ))}
                 </div>
-                <p className="text-lg mb-5 dark:text-neutral-400">I am also building <Link href="https://nikeshhcodes.com/" className="hover:text-blue-500">nikeshhcodes.com</Link>. I always wanted to teach others, my development skills. This website is my one way of doing it. Also, building a tool, to keep track of your side projects and focus on things. Every day, you will get a email, ting ting, you got to complete this. The project is yet to be deployed, will add it here once it is alteast half baked.</p>
+                <p className="text-lg mb-5 dark:text-neutral-400">I am also building <Link href="https://nikeshhcodes.com/" className="hover:text-blue-500">nikeshhcodes.com</Link>. I always wanted to teach others, my development skills. This website is my one way of doing it. Also, building a tool, to keep track of your side projects and focus on things. Every day, you will get a email, ting ting, you got to complete this. The project is in the starting phases, will add it here once it is alteast half baked.</p>
                 <p className="text-lg mb-5 dark:text-neutral-400">Okey! Enough of talking, below are some of the links, I thought might be useful to know more about you.</p>
                 <ul className="text-lg mb-5 dark:text-neutral-400">
                   <li>Projects: <Link href="https://nikeshh.com/#projects" className="hover:text-blue-500">https://nikeshh.com/#projects</Link></li>
