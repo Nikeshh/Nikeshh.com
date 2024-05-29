@@ -1225,7 +1225,7 @@ const businessPrespectiveProjects = [
     category: 'Website',
     link: 'https://marketfarm.ca/',
     imageUrl: '/projects/marketfarm.png',
-    tags: ['LMS'],
+    tags: ['HTML', 'CSS', 'Javascript'],
     view: "Business Perspective",
     content: `
     <div className="container mx-auto p-6 shadow-lg">
@@ -1261,13 +1261,64 @@ const businessPrespectiveProjects = [
   {
     id: "placement-nursing",
     name: 'Placement Nursing',
-    subtitle: 'VectorChat revolutionizes communication by enabling seamless interaction with PDF documents through vector data. Enhance collaboration and productivity with intuitive chat-based PDF interactions.',
+    subtitle: 'Nursing Placement Agency is a healthcare and patient support personnel selection and placement agency. This agency offers specialized and competent staff who are trained to respond to the requirements of the healthcare environment while considering the well-being of its employees. With over 12 years of experience, Nursing Placement Agency has established itself as a leading placement agency in Quebec, recognized for its effective service in Montreal and other regions.',
     category: 'Website',
     link: 'https://www.placementnursing.ca/',
     imageUrl: '/projects/placementnursing.png',
-    tags: ['LMS'],
+    tags: ['HTML', 'CSS', 'Javascript', 'PHP', 'MySQL', 'Managed Cloud Hosting'],
     view: "Business Perspective",
-    content: ""
+    content: `
+      <div className="container mx-auto px-4 py-8">
+        <h1 className="text-4xl font-bold text-center text-blue-600 mb-8">Nursing Placement Agency</h1>
+        <div className="shadow-md rounded-lg p-6 mb-8">
+            <h2 className="text-2xl font-semibold text-blue-700 mb-4">About Us</h2>
+            <p className="mb-4">
+                Nursing Placement Agency is a healthcare and patient support personnel selection and placement agency. 
+                This agency offers specialized and competent staff who are trained to respond to the requirements of the 
+                healthcare environment while considering the well-being of its employees. With over 12 years of experience, 
+                Nursing Placement Agency has established itself as a leading placement agency in Quebec, recognized for 
+                its effective service in Montreal and other regions.
+            </p>
+        </div>
+        <div className="shadow-md rounded-lg p-6 mb-8 border border-blue-300">
+            <h2 className="text-2xl font-semibold text-blue-700 mb-4">Technologies Used</h2>
+            <table className="min-w-full">
+                <thead>
+                    <tr>
+                        <th className="py-2">Technology</th>
+                        <th className="py-2">Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td className="border px-4 py-2">HTML</td>
+                        <td className="border px-4 py-2">Markup language for structuring web content.</td>
+                    </tr>
+                    <tr>
+                        <td className="border px-4 py-2">CSS</td>
+                        <td className="border px-4 py-2">Stylesheet language used for describing the presentation of a document.</td>
+                    </tr>
+                    <tr>
+                        <td className="border px-4 py-2">JavaScript</td>
+                        <td className="border px-4 py-2">Programming language for creating interactive web content.</td>
+                    </tr>
+                    <tr>
+                        <td className="border px-4 py-2">PHP</td>
+                        <td className="border px-4 py-2">Server-side scripting language for web development.</td>
+                    </tr>
+                    <tr>
+                        <td className="border px-4 py-2">MySQL</td>
+                        <td className="border px-4 py-2">Database management system for storing and retrieving data.</td>
+                    </tr>
+                    <tr>
+                        <td className="border px-4 py-2">Managed Cloud Hosting</td>
+                        <td className="border px-4 py-2">Hosting service that provides scalability and reliability.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    `
   },
   {
     id: "learns-point",
