@@ -1185,24 +1185,78 @@ const businessPrespectiveProjects = [
   {
     id: "island-national-medical-center",
     name: 'Island National Medical Center',
-    subtitle: 'VectorChat revolutionizes communication by enabling seamless interaction with PDF documents through vector data. Enhance collaboration and productivity with intuitive chat-based PDF interactions.',
+    subtitle: 'Island National Medical Center is a premier healthcare facility owned and operated by the Quebec Regional Health Authority. They are dedicated to providing the best health care to every person we serve. Through compassionate, timely, and quality health services, we aim to meet the needs of our patients, clients, and residents whenever and wherever they require care.',
     category: 'Website',
     link: 'https://inamc.ca/',
     imageUrl: '/projects/inamc.png',
-    tags: ['LMS'],
+    tags: ['Healthcare', 'Business website', 'HTML', 'CSS', 'Javascript'],
     view: "Business Perspective",
-    content: ""
+    content: `
+    <div className="container mx-auto p-6 shadow-lg">
+      <h1 className="text-3xl font-bold text-blue-600 mb-6">Island National Medical Center</h1>
+      <p className="mb-4"><strong>Island National Medical Center</strong> is a premier healthcare facility owned and operated by the Quebec Regional Health Authority. They are dedicated to providing the best health care to every person we serve. Through compassionate, timely, and quality health services, we aim to meet the needs of our patients, clients, and residents whenever and wherever they require care.</p>
+
+      <h2 className="text-2xl font-semibold text-blue-500 mb-4">Key Technologies</h2>
+      <table className="table-auto w-full mb-6">
+          <thead>
+              <tr className="bg-gray-200 text-black">
+                  <th className="px-4 py-2">Technology</th>
+                  <th className="px-4 py-2">Description</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td className="border px-4 py-2">React</td>
+                  <td className="border px-4 py-2">Ensures a dynamic and responsive user interface for better engagement.</td>
+              </tr>
+              <tr>
+                  <td className="border px-4 py-2">Node.js</td>
+                  <td className="border px-4 py-2">Backend server for handling patient data and appointment scheduling efficiently.</td>
+              </tr>
+          </tbody>
+      </table>
+  </div>
+    `
   },
   {
     id: "market-farm",
     name: 'Market Farm',
-    subtitle: 'VectorChat revolutionizes communication by enabling seamless interaction with PDF documents through vector data. Enhance collaboration and productivity with intuitive chat-based PDF interactions.',
+    subtitle: 'MarketFarm is a premier destination offering a wide range of services and fresh produce, all grown with sustainable and organic practices. Whether you are looking to pick your own fruits and flowers, create a beautiful bouquet, or get a head start on your gardening, MarketFarm has something for everyone.',
     category: 'Website',
     link: 'https://marketfarm.ca/',
     imageUrl: '/projects/marketfarm.png',
     tags: ['LMS'],
     view: "Business Perspective",
-    content: ""
+    content: `
+    <div className="container mx-auto p-6 shadow-lg">
+      <h1 className="text-3xl font-bold text-green-600 mb-6">MarketFarm</h1>
+      <p className="mb-4"><strong>MarketFarm</strong> is a premier destination offering a wide range of services and fresh produce, all grown with sustainable and organic practices. Whether you are looking to pick your own fruits and flowers, create a beautiful bouquet, or get a head start on your gardening, MarketFarm has something for everyone.</p>
+
+      <h2 className="text-2xl font-semibold text-green-500 mb-4">Key Technologies</h2>
+      <table className="table-auto w-full mb-6">
+          <thead>
+              <tr className="bg-gray-200 text-black">
+                  <th className="px-4 py-2">Technology</th>
+                  <th className="px-4 py-2">Description</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td className="border px-4 py-2">HTML</td>
+                  <td className="border px-4 py-2">Structure of our website, ensuring semantic and accessible content.</td>
+              </tr>
+              <tr>
+                  <td className="border px-4 py-2">CSS</td>
+                  <td className="border px-4 py-2">Styling and layout, providing a visually appealing and responsive design.</td>
+              </tr>
+              <tr>
+                  <td className="border px-4 py-2">JavaScript</td>
+                  <td className="border px-4 py-2">Enhancing user interactions and dynamic content on the website.</td>
+              </tr>
+          </tbody>
+      </table>
+    </div>
+    `
   },
   {
     id: "placement-nursing",
