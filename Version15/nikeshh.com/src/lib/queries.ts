@@ -1271,7 +1271,6 @@ const businessPrespectiveProjects = [
       <div className="container mx-auto px-4 py-8">
         <h1 className="text-4xl font-bold text-center text-blue-600 mb-8">Nursing Placement Agency</h1>
         <div className="shadow-md rounded-lg p-6 mb-8">
-            <h2 className="text-2xl font-semibold text-blue-700 mb-4">About Us</h2>
             <p className="mb-4">
                 Nursing Placement Agency is a healthcare and patient support personnel selection and placement agency. 
                 This agency offers specialized and competent staff who are trained to respond to the requirements of the 
@@ -1323,24 +1322,134 @@ const businessPrespectiveProjects = [
   {
     id: "learns-point",
     name: 'Learns Point',
-    subtitle: 'VectorChat revolutionizes communication by enabling seamless interaction with PDF documents through vector data. Enhance collaboration and productivity with intuitive chat-based PDF interactions.',
+    subtitle: "Learners Point Academy is one of Dubai's leading training institutes. With technology and automation transforming industries and creating new job opportunities, we aim for the evolution of professional training education in the MENA region. Guided by a strong purpose and desire, we help professionals unlock their true potential.",
     category: 'Website',
     link: 'https://learnerspoint.org/',
     imageUrl: '/projects/learnerspoint.png',
-    tags: ['LMS'],
+    tags: ['HTML', 'CSS', 'Javascript'],
     view: "Business Perspective",
-    content: ""
+    content: `
+    <div className="container mx-auto px-4 py-8">
+      <h1 className="text-4xl font-bold text-center text-blue-600 mb-8">Learners Point Academy</h1>
+      <div className="shadow-md rounded-lg p-6 mb-8">
+          <p className="mb-4">
+              Learners Point Academy is one of Dubai's leading training institutes. With technology and automation 
+              transforming industries and creating new job opportunities, they aim for the evolution of professional 
+              training education in the MENA region. Guided by a strong purpose and desire, they help professionals unlock 
+              their true potential.
+          </p>
+          <p className="mb-4">
+              Founded in 2001, Learners Point has been offering customized training solutions to individuals and 
+              corporates to build skills that can help them become successful in today's dynamic and competitive world. 
+              As a KHDA-accredited training institute located in the heart of Dubai, we are one of the leading providers 
+              of certified courses and have been pioneering the professional training industry for more than two decades. 
+              We pride ourselves on our long-standing relationships with our clients and partners, and on being the top 
+              providers of innovative and diversified training courses in the MENA region.
+          </p>
+      </div>
+      <div className="shadow-md rounded-lg p-6 mb-8 border border-white">
+          <h2 className="text-2xl font-semibold text-white-700 mb-4">Technologies Used</h2>
+          <table className="min-w-full">
+              <thead>
+                  <tr>
+                      <th className="py-2">Technology</th>
+                      <th className="py-2">Description</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td className="border px-4 py-2">HTML</td>
+                      <td className="border px-4 py-2">Markup language for structuring web content.</td>
+                  </tr>
+                  <tr>
+                      <td className="border px-4 py-2">CSS</td>
+                      <td className="border px-4 py-2">Stylesheet language used for describing the presentation of a document.</td>
+                  </tr>
+                  <tr>
+                      <td className="border px-4 py-2">JavaScript</td>
+                      <td className="border px-4 py-2">Programming language for creating interactive web content.</td>
+                  </tr>
+                  <tr>
+                      <td className="border px-4 py-2">React.js</td>
+                      <td className="border px-4 py-2">JavaScript library for building user interfaces.</td>
+                  </tr>
+                  <tr>
+                      <td className="border px-4 py-2">MongoDB</td>
+                      <td className="border px-4 py-2">Database management system for storing and retrieving data.</td>
+                  </tr>
+                  <tr>
+                      <td className="border px-4 py-2">AWS Cloud</td>
+                      <td className="border px-4 py-2">Hosting service that provides scalability and reliability.</td>
+                  </tr>
+              </tbody>
+          </table>
+      </div>
+  </div>
+    `
   },
   {
     id: "riderush---cross-platform-bike-taxi-booking-app",
     name: 'RideRush - Cross-Platform Bike Taxi Booking App',
-    subtitle: 'VectorChat revolutionizes communication by enabling seamless interaction with PDF documents through vector data. Enhance collaboration and productivity with intuitive chat-based PDF interactions.',
+    subtitle: 'R-TRIX is an innovative network providing the best quality service in the area of e-mobility, promoting green mobility, and encouraging public involvement in sustainable transportation through our renting scheme. Our mission is to establish a significant impact in promoting e-vehicles, ensuring that every individual can contribute to a better tomorrow.',
     category: 'Website',
     link: 'https://www.rtrix.in/',
     imageUrl: '/projects/rtrix.png',
-    tags: ['LMS'],
+    tags: ['E-Bike', 'HTML', 'CSS', 'Javascript'],
     view: "Business Perspective",
-    content: ""
+    content: `
+    <div className="container mx-auto px-4 py-8">
+      <h1 className="text-4xl font-bold text-center text-green-600 mb-8">R-TRIX</h1>
+      <div className="shadow-md rounded-lg p-6 mb-8">
+          <p className="mb-4">
+              R-TRIX is an innovative network providing the best quality service in the area of e-mobility, promoting green 
+              mobility, and encouraging public involvement in sustainable transportation through our renting scheme. Our mission 
+              is to establish a significant impact in promoting e-vehicles, ensuring that every individual can contribute to a 
+              better tomorrow.
+          </p>
+      </div>
+      <div className="shadow-md rounded-lg p-6 mb-8 border border-white">
+          <h2 className="text-2xl font-semibold text-white-700 mb-4">Technologies Used</h2>
+          <table className="min-w-full">
+              <thead>
+                  <tr>
+                      <th className="py-2">Technology</th>
+                      <th className="py-2">Description</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td className="border px-4 py-2">HTML</td>
+                      <td className="border px-4 py-2">Markup language for structuring web content.</td>
+                  </tr>
+                  <tr>
+                      <td className="border px-4 py-2">CSS</td>
+                      <td className="border px-4 py-2">Stylesheet language used for describing the presentation of a document.</td>
+                  </tr>
+                  <tr>
+                      <td className="border px-4 py-2">JavaScript</td>
+                      <td className="border px-4 py-2">Programming language for creating interactive web content.</td>
+                  </tr>
+                  <tr>
+                      <td className="border px-4 py-2">React.js</td>
+                      <td className="border px-4 py-2">JavaScript library for building user interfaces.</td>
+                  </tr>
+                  <tr>
+                      <td className="border px-4 py-2">Node.js</td>
+                      <td className="border px-4 py-2">JavaScript runtime built on Chrome's V8 JavaScript engine.</td>
+                  </tr>
+                  <tr>
+                      <td className="border px-4 py-2">MongoDB</td>
+                      <td className="border px-4 py-2">Database management system for storing and retrieving data.</td>
+                  </tr>
+                  <tr>
+                      <td className="border px-4 py-2">AWS Cloud</td>
+                      <td className="border px-4 py-2">Hosting service that provides scalability and reliability.</td>
+                  </tr>
+              </tbody>
+          </table>
+      </div>
+  </div>
+    `
   },
   {
     id: "nikeshh.com",
