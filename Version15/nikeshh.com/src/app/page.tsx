@@ -333,7 +333,7 @@ const Home = () => {
               badges={["Google", "Project Management"]}
               imageUrl='/google_logo.jpg'
             />
-            <Certification
+            {/*<Certification
               headline='Issued: July 2022'
               title='NLP with Python for Machine Learning Essential Training'
               id='AeihXv3ISiAX1xnxqu9pX5w01VId'
@@ -364,7 +364,7 @@ const Home = () => {
               link='https://www.udemy.com/certificate/UC-H95OPLWW/'
               badges={["AI"]}
               imageUrl='/udemy_logo.jpg'
-            />
+            />*/}
           </div>
         </div>
       </section>
