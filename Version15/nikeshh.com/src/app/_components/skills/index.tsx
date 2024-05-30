@@ -115,9 +115,7 @@ const Skills = ({ skills, inlineElement } : Props) => {
                             <h2 className="text-3xl text-gray-800 font-bold lg:text-4xl dark:text-white">
                                 {selectedSkill}
                             </h2>
-                            <p className="mt-3 text-gray-800 dark:text-neutral-400">
-                                We help businesses bring ideas to life in the digital world, by designing and implementing the technology tools that they need to win.
-                            </p>
+                            <p className="mt-3 text-gray-800 dark:text-neutral-400"></p>
                             <p className="mt-5">
                                 <Link className="inline-flex items-center gap-x-1 font-medium text-blue-600 dark:text-blue-500" href="#">
                                     Read More

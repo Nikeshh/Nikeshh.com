@@ -286,32 +286,32 @@ export const getSkills = cache(() => {
       name: 'Web App Development',
       category: 'Development for Business Solutions',
       imageUrl: '',
-      description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
-      points: 'Front-end: HTML5, CSS3, JavaScript (ES6+), React.js, Angular, Vue.js, Ember.js | Back-end: Python (Django, Flask), JavaScript (Node.js), Java (Spring Boot), Ruby (Ruby on Rails), PHP (Laravel), C# (ASP.NET Core)',
+      description: 'I transform your ideas into dynamic and user-friendly web applications tailored to meet your business needs.',
+      points: 'Technologies I use: | Front-end: HTML5, CSS3, JavaScript (ES6+), React.js, Angular, Vue.js | Back-end: Python (Django, Flask), JavaScript (Node.js), Java (Spring Boot), Ruby (Ruby on Rails), PHP (Laravel)',
       view: "Business Perspective"
     },
     {
-      name: 'Website Development',
+      name: 'Website Development (Landing / Static websites)',
       category: 'Development for Business Solutions',
       imageUrl: '',
-      description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
-      points: 'Front-end: HTML5, CSS3, JavaScript (ES6+), React.js, Angular, Vue.js, Ember.js | Back-end: Python (Django, Flask), JavaScript (Node.js), Java (Spring Boot), Ruby (Ruby on Rails), PHP (Laravel), C# (ASP.NET Core)',
+      description: "I create responsive and visually appealing websites that provide an engaging user experience and reflect your brand's identity.",
+      points: 'Technologies I use: | Front-end: HTML5, CSS3, JavaScript (ES6+), React.js, Angular, Vue.js | Back-end: PHP (WordPress, Laravel), Python (Django, Flask), JavaScript (Node.js), Ruby (Ruby on Rails)',
       view: "Business Perspective"
     },
     {
       name: 'Chatbot Development And Integration',
       category: 'Development for Business Solutions',
       imageUrl: '',
-      description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
-      points: 'Front-end: HTML5, CSS3, JavaScript (ES6+), React.js, Angular, Vue.js, Ember.js | Back-end: Python (Django, Flask), JavaScript (Node.js), Java (Spring Boot), Ruby (Ruby on Rails), PHP (Laravel), C# (ASP.NET Core)',
+      description: 'I develop intelligent chatbots that enhance customer interaction and streamline your business processes.',
+      points: 'Technologies I use: | Languages & Frameworks: Python (NLTK, Rasa), JavaScript (Node.js), Microsoft Bot Framework | Platforms: Dialogflow, IBM Watson, Amazon Lex, Microsoft Azure Bot Services',
       view: "Business Perspective"
     },
     {
       name: 'Automation for various businesses',
       category: 'Development for Business Solutions',
       imageUrl: '',
-      description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
-      points: 'Front-end: HTML5, CSS3, JavaScript (ES6+), React.js, Angular, Vue.js, Ember.js | Back-end: Python (Django, Flask), JavaScript (Node.js), Java (Spring Boot), Ruby (Ruby on Rails), PHP (Laravel), C# (ASP.NET Core)',
+      description: 'I implement automation solutions that optimize workflows, reduce operational costs, and increase productivity for your business.',
+      points: 'Technologies I use: | Tools & Frameworks: Python (Selenium, Automation Anywhere), RPA (UiPath, Blue Prism), JavaScript (Puppeteer), Bash/Shell scripting | Platforms: Zapier, Integromat, Microsoft Power Automate',
       view: "Business Perspective"
     },
     {
