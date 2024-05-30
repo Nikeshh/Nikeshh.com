@@ -1,6 +1,8 @@
 import { Preview } from '@/components/preview';
 import { Separator } from '@/components/ui/separator';
 import React from 'react';
+import projects_data from '@/app/built-in-public/projects_data';
+import parse from 'html-react-parser';
 
 export default async function ChapterIdPage({
     params,
@@ -11,19 +13,8 @@ export default async function ChapterIdPage({
     }
   }) {
 
-    const chapter = {
-        id: "fb8b5eb9-11fc-4655-87e7-37a07bf2285c",
-        title: "Introduction",
-        description: "<style>.purple { color: purple }</style><p className='purple'>This is a chapter</p>",
-        videoUrl:
-          "https://utfs.io/f/d2d269ef-20f7-4bd8-ba53-b173bf97fd1d-ifdqzr.mp4",
-        position: 1,
-        isPublished: true,
-        isFree: true,
-        courseId: "fe015b36-fefc-432e-9fb9-d28ba67ecb58",
-        createdAt: "2024-05-15T21:06:23.912Z",
-        updatedAt: "2024-05-15T21:07:57.705Z",
-    }
+    const project = projects_data.filter((project) => project.id == params.projectId)[0];
+    const chapter = project.chapters.filter((chapter) => chapter.id == params.chapterId)[0];
 
     return (
         <div>
@@ -36,7 +27,8 @@ export default async function ChapterIdPage({
                     <Separator />
 
                     <div>
-                        <Preview value={chapter.description!} />
+                        {/*<Preview value={chapter.description!} />*/}
+                        {parse(chapter.description)}
                     </div>
                 </div>
             </div>
