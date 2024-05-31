@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { ModeToggle } from "../../global/mode-toggle";
 import { Badge } from "@/components/ui/badge"
+import ShinyButton from "@/components/magicui/shiny-button";
 
 const Navigation = () => {
     return (
@@ -29,7 +30,9 @@ const Navigation = () => {
                     <Link href={'/'} className="hover:text-blue-600">Home</Link>
                     <Link href={'/skills'} className="hover:text-blue-600">Skills & Services</Link>
                     <Link href={'/projects'} className="hover:text-blue-600">Projects</Link>
-                    <Link href={'/about'} className="hover:text-blue-600">About Me</Link>
+                    <Link href={'/about'} className="hover:text-blue-600">
+                        <ShinyButton text="About Me" />
+                    </Link>
                 </ul>
             </nav>
             <aside className="flex gap-2 items-center">
