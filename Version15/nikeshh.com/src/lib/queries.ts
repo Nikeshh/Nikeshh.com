@@ -286,7 +286,7 @@ export const getSkills = cache(() => {
       name: 'Web App Development',
       category: 'Development for Business Solutions',
       imageUrl: '',
-      description: 'I transform your ideas into dynamic and user-friendly web applications tailored to meet your business needs.',
+      description: 'I can transform your ideas into dynamic and user-friendly web applications tailored to meet your business needs.',
       points: 'Technologies I use: | Front-end: HTML5, CSS3, JavaScript (ES6+), React.js, Angular, Vue.js | Back-end: Python (Django, Flask), JavaScript (Node.js), Java (Spring Boot), Ruby (Ruby on Rails), PHP (Laravel)',
       view: "Business Perspective"
     },
@@ -294,7 +294,7 @@ export const getSkills = cache(() => {
       name: 'Website Development (Landing / Static websites)',
       category: 'Development for Business Solutions',
       imageUrl: '',
-      description: "I create responsive and visually appealing websites that provide an engaging user experience and reflect your brand's identity.",
+      description: "I can create responsive and visually appealing websites that provide an engaging user experience and reflect your brand's identity.",
       points: 'Technologies I use: | Front-end: HTML5, CSS3, JavaScript (ES6+), React.js, Angular, Vue.js | Back-end: PHP (WordPress, Laravel), Python (Django, Flask), JavaScript (Node.js), Ruby (Ruby on Rails)',
       view: "Business Perspective"
     },
@@ -302,7 +302,7 @@ export const getSkills = cache(() => {
       name: 'Chatbot Development And Integration',
       category: 'Development for Business Solutions',
       imageUrl: '',
-      description: 'I develop intelligent chatbots that enhance customer interaction and streamline your business processes.',
+      description: 'I can develop intelligent chatbots that enhance customer interaction and streamline your business processes.',
       points: 'Technologies I use: | Languages & Frameworks: Python (NLTK, Rasa), JavaScript (Node.js), Microsoft Bot Framework | Platforms: Dialogflow, IBM Watson, Amazon Lex, Microsoft Azure Bot Services',
       view: "Business Perspective"
     },
@@ -310,7 +310,7 @@ export const getSkills = cache(() => {
       name: 'Automation for various businesses',
       category: 'Development for Business Solutions',
       imageUrl: '',
-      description: 'I implement automation solutions that optimize workflows, reduce operational costs, and increase productivity for your business.',
+      description: 'I can implement automation solutions that optimize workflows, reduce operational costs, and increase productivity for your business.',
       points: 'Technologies I use: | Tools & Frameworks: Python (Selenium, Automation Anywhere), RPA (UiPath, Blue Prism), JavaScript (Puppeteer), Bash/Shell scripting | Platforms: Zapier, Integromat, Microsoft Power Automate',
       view: "Business Perspective"
     },
@@ -318,48 +318,24 @@ export const getSkills = cache(() => {
       name: 'Mobile App Development',
       category: 'Development for Business Solutions',
       imageUrl: '',
-      description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
-      points: 'Android: Java, Kotlin | iOS: Swift, Objective-C | Cross-platform: React Native, Flutter, Xamarin',
+      description: 'I can design and develop mobile apps that deliver a seamless and engaging user experience on both iOS and Android platforms.',
+      points: 'Technologies I Use: | Languages & Frameworks: Swift, Objective-C (iOS), Kotlin, Java (Android), React Native, Flutter, Xamarin | Development Tools: Xcode, Android Studio, Visual Studio Code',
       view: "Business Perspective"
     },
     {
       name: 'API Integration',
       category: 'Development for Business Solutions',
       imageUrl: '',
-      description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
-      points: 'RESTful APIs | GraphQL',
-      view: "Business Perspective"
-    },
-    {
-      name: 'Design Tools',
-      category: 'Product Design and User Experience',
-      imageUrl: '',
-      description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
-      points: 'Adobe XD | Sketch | Figma | InVision',
-      view: "Business Perspective"
-    },
-    {
-      name: 'Prototyping & Wireframing',
-      category: 'Product Design and User Experience',
-      imageUrl: '',
-      description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
-      points: 'Proto.io | Axure RP | Balsamiq',
-      view: "Business Perspective"
-    },
-    {
-      name: 'User Research & Testing',
-      category: 'Product Design and User Experience',
-      imageUrl: '',
-      description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
-      points: 'Usability testing tools | UserZoom | Optimal Workshop',
+      description: 'I specialize in integrating APIs to enhance functionality, streamline processes, and enable seamless data exchange across your applications.',
+      points: 'Technologies I Use: | Languages & Tools: Python (Requests, Flask), JavaScript (Axios, Express), Java (Spring Boot, Retrofit), PHP (Guzzle) | API Standards: REST, GraphQL, SOAP',
       view: "Business Perspective"
     },
     {
       name: 'Search Engine Optimization (SEO)',
       category: 'Digital Marketing',
       imageUrl: '',
-      description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
-      points: "On-Page SEO: Optimization of website content, HTML, and structure to improve rankings in search engine results. | Off-Page SEO: Building backlinks and promoting content to improve the site's authority. | Technical SEO: Ensuring the website meets technical requirements for search engines like fast load times, mobile friendliness, and secure connections (HTTPS).",
+      description: 'I optimize your website to improve search engine rankings, increase organic traffic, and enhance online visibility.',
+      points: "Techniques I Use: | On-Page SEO: Keyword research, Meta tags optimization, Content optimization, Internal linking | Off-Page SEO: Link building, Social media marketing, Guest blogging | Technical SEO: Site speed optimization, Mobile-friendliness, XML sitemaps, Structured data (Schema markup)",
       view: "Business Perspective"
     },
     {
@@ -374,16 +350,16 @@ export const getSkills = cache(() => {
       name: 'Content Marketing',
       category: 'Digital Marketing',
       imageUrl: '',
-      description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
-      points: "Blogging: Writing and publishing articles that provide value to the target audience and improve SEO. | Video Marketing: Creating videos for platforms like YouTube or social media to engage users. | Infographics and Visual Content: Designing visually appealing content to convey information effectively. | E-books and Whitepapers: Producing in-depth content to establish thought leadership and generate leads.",
+      description: 'I create and promote high-quality content that engages your audience, builds brand authority, and drives organic traffic.',
+      points: "Strategies I Use: | Content Creation: Blog posts, Articles, Infographics, Videos, E-books | Content Promotion: Social media marketing, Email marketing, Influencer outreach | SEO Integration: Keyword optimization, Content structuring, Meta descriptions, Link building",
       view: "Business Perspective"
     },
     {
       name: 'Social Media Marketing',
       category: 'Digital Marketing',
       imageUrl: '',
-      description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
-      points: "Profile Management: Creating and maintaining social media profiles on platforms like Facebook, Instagram, Twitter, LinkedIn, etc. | Content Creation and Posting: Regular posting of relevant content to engage the audience. | Community Management: Interacting with followers, responding to comments, and managing brand reputation. | Social Media Analytics: Monitoring and analyzing performance metrics to refine strategies.",
+      description: 'I can sdevelop and execute social media strategies that increase brand awareness, engage your audience, and drive conversions.',
+      points: "Platforms I Use: | Major Platforms: Facebook, Instagram, Twitter, LinkedIn, TikTok | Techniques: Content creation and curation, Social media advertising, Community management, Analytics and reporting",
       view: "Business Perspective"
     },
     {
@@ -432,102 +408,6 @@ export const getSkills = cache(() => {
       imageUrl: '',
       description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
       points: "Review Monitoring: Keeping track of customer reviews and responding appropriately. | Crisis Management: Handling negative publicity or social media crises to protect brand image. | Positive Promotion: Encouraging satisfied customers to leave positive reviews and testimonials.",
-      view: "Business Perspective"
-    },
-    {
-      name: 'Project Management Tools',
-      category: 'Project and Team Management',
-      imageUrl: '',
-      description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
-      points: 'Jira | Trello | Asana',
-      view: "Business Perspective"
-    },
-    {
-      name: 'Collaboration Tools',
-      category: 'Project and Team Management',
-      imageUrl: '',
-      description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
-      points: 'Slack | Microsoft Teams',
-      view: "Business Perspective"
-    },
-    {
-      name: 'Version Control & CI/CD',
-      category: 'Project and Team Management',
-      imageUrl: '',
-      description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
-      points: 'Git | GitHub | GitLab | Bitbucket | Jenkins | Travis CI | CircleCI',
-      view: "Business Perspective"
-    },
-    {
-      name: 'Data Analysis Tools',
-      category: 'Data-Driven Decision Making',
-      imageUrl: '',
-      description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
-      points: 'Pandas | NumPy | SQL',
-      view: "Business Perspective"
-    },
-    {
-      name: 'Big Data Technologies',
-      category: 'Data-Driven Decision Making',
-      imageUrl: '',
-      description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
-      points: 'Hadoop | Spark | Kafka | Hive | HBase',
-      view: "Business Perspective"
-    },
-    {
-      name: 'AI & Machine Learning Frameworks',
-      category: 'Data-Driven Decision Making',
-      imageUrl: '',
-      description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
-      points: 'TensorFlow | PyTorch | Scikit-learn',
-      view: "Business Perspective"
-    },
-    {
-      name: 'Business Intelligence',
-      category: 'Data-Driven Decision Making',
-      imageUrl: '',
-      description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
-      points: 'OpenAI | IBM Watson | Microsoft Azure AI',
-      view: "Business Perspective"
-    },
-    {
-      name: 'Security Protocols',
-      category: 'Security and Compliance',
-      imageUrl: '',
-      description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
-      points: 'SSL/TLS | HTTPS',
-      view: "Business Perspective"
-    },
-    {
-      name: 'Compliance Standards',
-      category: 'Security and Compliance',
-      imageUrl: '',
-      description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
-      points: 'GDPR | HIPAA | PCI DSS',
-      view: "Business Perspective"
-    },
-    {
-      name: 'Identity & Access Management',
-      category: 'Security and Compliance',
-      imageUrl: '',
-      description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
-      points: 'OAuth | JWT',
-      view: "Business Perspective"
-    },
-    {
-      name: 'Blockchain Applications',
-      category: 'Emerging Business Technologies',
-      imageUrl: '',
-      description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
-      points: 'Ethereum | Hyperledger Fabric',
-      view: "Business Perspective"
-    },
-    {
-      name: 'AR/VR Solutions',
-      category: 'Emerging Business Technologies',
-      imageUrl: '',
-      description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
-      points: 'Unity | Unreal Engine | ARKit | ARCore',
       view: "Business Perspective"
     },
   ]
