@@ -60,10 +60,10 @@ const Page = () => {
 
                 <div className="mt-3 flex flex-wrap gap-2">
                   <span className="py-1.5 px-3 bg-white text-gray-600 border border-gray-200 text-xs sm:text-sm rounded-xl dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400">
-                    Programming
+                    Business Connectivity
                   </span>
                   <span className="py-1.5 px-3 bg-white text-gray-600 border border-gray-200 text-xs sm:text-sm rounded-xl dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400">
-                    Education
+                    Easy to use
                   </span>
                 </div>
               </div>

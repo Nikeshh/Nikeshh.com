@@ -342,8 +342,8 @@ export const getSkills = cache(() => {
       name: 'Pay-Per-Click (PPC) Advertising',
       category: 'Digital Marketing',
       imageUrl: '',
-      description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
-      points: "Google Ads: Creating and managing ads that appear in Google search results and on partner websites. | Social Media Ads: Advertising on platforms like Facebook, Instagram, LinkedIn, and Twitter. | Display Ads: Banner ads on various websites to increase brand visibility and drive traffic.",
+      description: 'I create and manage targeted PPC campaigns to drive immediate traffic, increase conversions, and maximize your advertising ROI.',
+      points: "Platforms I Use: | Advertising Networks: Google Ads, Bing Ads, Facebook Ads, Instagram Ads, LinkedIn Ads | Techniques: Keyword research, Ad copywriting, Bid management, A/B testing, Performance analytics",
       view: "Business Perspective"
     },
     {
@@ -358,7 +358,7 @@ export const getSkills = cache(() => {
       name: 'Social Media Marketing',
       category: 'Digital Marketing',
       imageUrl: '',
-      description: 'I can sdevelop and execute social media strategies that increase brand awareness, engage your audience, and drive conversions.',
+      description: 'I can develop and execute social media strategies that increase brand awareness, engage your audience, and drive conversions.',
       points: "Platforms I Use: | Major Platforms: Facebook, Instagram, Twitter, LinkedIn, TikTok | Techniques: Content creation and curation, Social media advertising, Community management, Analytics and reporting",
       view: "Business Perspective"
     },
@@ -366,48 +366,48 @@ export const getSkills = cache(() => {
       name: 'Email Marketing',
       category: 'Digital Marketing',
       imageUrl: '',
-      description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
-      points: "Campaign Creation: Designing and sending targeted email campaigns to subscribers. | Automation: Setting up automated email sequences for lead nurturing and customer retention. | List Management: Growing and segmenting email lists to improve targeting. | Analytics: Tracking open rates, click-through rates, and conversions to optimize campaigns.",
+      description: 'I craft and implement email campaigns that nurture leads, engage customers, and drive conversions.',
+      points: "Techniques I Use: | Campaign Types: Newsletters, Promotional emails, Automated drip campaigns, Transactional emails | Tools & Platforms: Mailchimp, SendGrid, Constant Contact, HubSpot, ActiveCampaign | Strategies: List segmentation, Personalization, A/B testing, Performance analytics",
       view: "Business Perspective"
     },
     {
       name: 'Affiliate Marketing',
       category: 'Digital Marketing',
       imageUrl: '',
-      description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
-      points: "Program Setup: Establishing affiliate programs where partners promote products/services for a commission. | Partner Management: Recruiting and managing affiliates to ensure productive partnerships. | Tracking and Reporting: Monitoring affiliate performance and managing payouts.",
+      description: 'I manage affiliate marketing programs that expand your reach, increase sales, and build strong partnerships.',
+      points: "Strategies I Use: | Program Management: Recruiting and onboarding affiliates, Affiliate communication, Performance tracking | Tools & Platforms: ShareASale, CJ Affiliate, Rakuten Marketing, Impact Radius, Amazon Associates | Techniques: Commission structuring, Promotional support, Analytics and reporting, Compliance monitoring",
       view: "Business Perspective"
     },
     {
       name: 'Conversion Rate Optimization (CRO)',
       category: 'Digital Marketing',
       imageUrl: '',
-      description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
-      points: "A/B Testing: Testing different versions of webpages or ads to determine which performs better. | User Experience (UX) Design: Improving the usability and functionality of websites to enhance user experience. | Landing Page Optimization: Creating and refining landing pages to increase conversion rates.",
+      description: 'I optimize your website and marketing strategies to increase conversions and maximize ROI.',
+      points: "Techniques I Use: | Data Analysis: User behavior analytics, Heatmaps, A/B testing, Funnel analysis | User Experience (UX): Landing page optimization, User interface improvements, Simplified navigation, Mobile optimization | Content Strategy: Persuasive copywriting, Call-to-action (CTA) enhancement, Trust-building elements, Testimonials and reviews",
       view: "Business Perspective"
     },
     {
       name: 'Web Analytics and Reporting',
       category: 'Digital Marketing',
       imageUrl: '',
-      description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
-      points: "Data Analysis: Using tools like Google Analytics to track and analyze website traffic and user behavior. | Performance Reporting: Creating reports to measure the effectiveness of digital marketing campaigns. | Insight Generation: Providing actionable insights based on data analysis to inform future strategies.",
+      description: 'I provide in-depth web analytics and reporting to track performance, understand user behavior, and guide data-driven decisions.',
+      points: "Tools I Use: | Analytics Platforms: Google Analytics, Adobe Analytics, Matomo, Mixpanel | Reporting Tools: Google Data Studio, Tableau, Power BI | Techniques: KPI tracking, Custom dashboards, Conversion tracking, Traffic source analysis",
       view: "Business Perspective"
     },
     {
       name: 'Influencer Marketing',
       category: 'Digital Marketing',
       imageUrl: '',
-      description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
-      points: "Campaign Planning: Identifying and collaborating with influencers to promote products or services. | Content Coordination: Ensuring influencers create content that aligns with brand messaging. | Performance Tracking: Monitoring the impact of influencer campaigns on brand awareness and sales.",
+      description: 'I connect your brand with influential voices to amplify your message, reach target audiences, and drive engagement.',
+      points: "Strategies I Use: | Influencer Identification: Research and vetting, Audience alignment, Authenticity assessment | Campaign Management: Partnership negotiation, Content collaboration, Performance tracking | Platforms & Tools: Instagram, YouTube, TikTok, Influencer marketing platforms (e.g., AspireIQ, Upfluence)",
       view: "Business Perspective"
     },
     {
       name: 'Online Reputation Management',
       category: 'Digital Marketing',
       imageUrl: '',
-      description: 'Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.',
-      points: "Review Monitoring: Keeping track of customer reviews and responding appropriately. | Crisis Management: Handling negative publicity or social media crises to protect brand image. | Positive Promotion: Encouraging satisfied customers to leave positive reviews and testimonials.",
+      description: "I manage and improve your online reputation to build trust, address concerns, and enhance your brand's image.",
+      points: "Techniques I Use: | Monitoring & Analysis: Social media monitoring, Review tracking, Sentiment analysis | Engagement & Response: Addressing negative feedback, Promoting positive reviews, Engaging with customers | Content Strategy: Positive content creation, SEO for reputation management, Crisis management plans",
       view: "Business Perspective"
     },
   ]
