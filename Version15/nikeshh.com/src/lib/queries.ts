@@ -1454,7 +1454,7 @@ const businessPrespectiveProjects = [
   {
     id: "nikeshh.com",
     name: 'Nikeshh.com',
-    subtitle: 'Need to write content',
+    subtitle: 'Need to write content. Thanks for checking.',
     category: 'Web App',
     link: 'https://nikeshh.com/',
     imageUrl: '/projects/nikeshh.png',
@@ -1465,7 +1465,7 @@ const businessPrespectiveProjects = [
   {
     id: "digital-ecommerce",
     name: 'Digital Ecommerce',
-    subtitle: 'Need to write content',
+    subtitle: 'Need to write content. Thanks for checking.',
     category: 'Web App',
     link: 'https://digital-ecommerce-production.up.railway.app/',
     imageUrl: '/projects/digital-ecommerce.png',
@@ -1476,7 +1476,7 @@ const businessPrespectiveProjects = [
   {
     id: "learning-portal",
     name: 'Learning Portal',
-    subtitle: 'Need to write content',
+    subtitle: 'Need to write content. Thanks for checking.',
     category: 'Web App',
     link: 'https://learning-portal-murex.vercel.app/',
     imageUrl: '/projects/learning-portal.png',
@@ -1487,7 +1487,7 @@ const businessPrespectiveProjects = [
   {
     id: "modern-ecommerce",
     name: 'Modern Ecommerce',
-    subtitle: 'Need to write content',
+    subtitle: 'Need to write content. Thanks for checking.',
     category: 'Web App',
     link: 'https://modern-ecommerce-tawny.vercel.app/',
     imageUrl: '/projects/modern-ecommerce.png',
@@ -1498,7 +1498,7 @@ const businessPrespectiveProjects = [
   {
     id: "nikeshhcodes.com",
     name: 'NikeshhCodes.com',
-    subtitle: 'Need to write content',
+    subtitle: 'Need to write content. Thanks for checking.',
     category: 'Web App',
     link: 'https://nikeshhcodes.com/',
     imageUrl: '/projects/nikeshhcodes.png',
@@ -1509,7 +1509,7 @@ const businessPrespectiveProjects = [
   {
     id: "ecommerce-marketplace",
     name: 'Ecommerce Marketplace',
-    subtitle: 'Need to write content',
+    subtitle: 'Need to write content. Thanks for checking.',
     category: 'Web App',
     link: 'https://ecommerce-marketplace-two.vercel.app/',
     imageUrl: '/projects/ecommerce-marketplace.png',
@@ -1656,7 +1656,7 @@ const businessPrespectiveProjects = [
   {
     id: "docgenius---documentation-platform",
     name: 'DocGenius - Documentation Platform',
-    subtitle: 'Need to write content',
+    subtitle: 'Need to write content. Thanks for checking.',
     category: 'Web App',
     link: 'https://documentation-platform-production.up.railway.app/',
     imageUrl: '/projects/docgenius.png',
@@ -1667,7 +1667,7 @@ const businessPrespectiveProjects = [
   {
     id: "flowforge---saas-automation-builder",
     name: 'FlowForge - SAAS Automation Builder',
-    subtitle: 'Need to write content',
+    subtitle: 'Need to write content. Thanks for checking.',
     category: 'Web App',
     link: 'https://saas-automation-builder.vercel.app/',
     imageUrl: '/projects/fuzzie.png',
@@ -1678,7 +1678,7 @@ const businessPrespectiveProjects = [
   {
     id: "glisten-ai---ai-powered-document-search-and-website-customization",
     name: 'Glisten AI - AI-Powered Document Search and Website Customization',
-    subtitle: 'Need to write content',
+    subtitle: 'Need to write content. Thanks for checking.',
     category: 'Automation',
     link: 'https://glisten-ai-website.vercel.app/',
     imageUrl: '/projects/glisten-ai.png',
@@ -1689,7 +1689,7 @@ const businessPrespectiveProjects = [
   {
     id: "nextnews---newsletter-creation-and-email-marketing-platform",
     name: 'NextNews - Newsletter Creation and Email Marketing Platform',
-    subtitle: 'Need to write content',
+    subtitle: 'Need to write content. Thanks for checking.',
     category: 'Web App',
     link: 'https://newsletter-platform.vercel.app/',
     imageUrl: '/projects/newsletter-platform.png',
@@ -1700,7 +1700,7 @@ const businessPrespectiveProjects = [
   {
     id: "stayspot---house-booking-platform",
     name: 'StaySpot - House Booking Platform',
-    subtitle: 'Need to write content',
+    subtitle: 'Need to write content. Thanks for checking.',
     category: 'Web App',
     link: 'https://house-booking-platform.vercel.app/',
     imageUrl: '/projects/stayspot.png',
@@ -1711,7 +1711,7 @@ const businessPrespectiveProjects = [
   {
     id: "sitesprint---saas-website-builder-for-agencies",
     name: 'SiteSprint - SAAS Website Builder for Agencies',
-    subtitle: 'Need to write content',
+    subtitle: 'Need to write content. Thanks for checking.',
     category: 'Web App',
     link: 'https://saaswebsitebuilder.vercel.app/',
     imageUrl: '/projects/sitesprint.png',
@@ -1722,7 +1722,7 @@ const businessPrespectiveProjects = [
   {
     id: "vectorchat---pdf-interaction-platform",
     name: 'VectorChat - PDF Interaction Platform',
-    subtitle: 'Need to write content',
+    subtitle: 'Need to write content. Thanks for checking.',
     category: 'AI',
     link: 'https://chat-pdf-lemon.vercel.app/',
     imageUrl: '/projects/vectorchat.png',

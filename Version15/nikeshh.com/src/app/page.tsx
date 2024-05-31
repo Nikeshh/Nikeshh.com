@@ -28,7 +28,7 @@ const Home = () => {
   return (
     <>
       {/*<NotificationC />*/}
-      <Notification />
+      {/*<Notification />*/}
       <Navigation />
       <StarGrid />
       <section id="banner" className="container pt-24 md:pt-24 xl:pt-[5rem] relative flex items-center md:justify-center flex-wrap md:flex-nowrap gap-5">
