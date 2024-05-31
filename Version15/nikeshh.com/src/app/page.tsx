@@ -48,7 +48,8 @@ const Home = () => {
             <h1 className="font-bold text-[70px] architect-font">
               I BUILD.
             </h1>
-            <span className='py-2 text-white'><Link href="/business-solutions" className='underline hover:text-blue-700'>Business Solutions</Link> ◦ <Link href="/applications" className='underline hover:text-blue-700'>Applications</Link> ◦ <Link href="/software-products" className='underline hover:text-blue-700'>Software Products</Link> ◦ <Link href="/automations" className='underline hover:text-blue-700'>Automations</Link> ◦ <Link href="/systems-to-scale" className='underline hover:text-blue-700'>Systems to scale</Link></span>
+            {/*<span className='py-2 text-white'><Link href="/business-solutions" className='underline hover:text-blue-700'>Business Solutions</Link> ◦ <Link href="/applications" className='underline hover:text-blue-700'>Applications</Link> ◦ <Link href="/software-products" className='underline hover:text-blue-700'>Software Products</Link> ◦ <Link href="/automations" className='underline hover:text-blue-700'>Automations</Link> ◦ <Link href="/systems-to-scale" className='underline hover:text-blue-700'>Systems to scale</Link></span>*/}
+            <span className='py-2 text-white'>Business Solutions ◦ Applications ◦ Software Products ◦ Automations ◦ Systems to scale</span>
           </div>
           <p>
             👨‍💻 Lead Full Stack Developer and Digital Marketer with work spanning a decade.

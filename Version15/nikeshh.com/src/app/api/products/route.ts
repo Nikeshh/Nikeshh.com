@@ -3,7 +3,7 @@ import { Product } from "@/app/store/models/Product";
 import { NextRequest, NextResponse } from "next/server";
 
 export async function GET(req: NextRequest) {
-    connectDB();
+    await connectDB();
     try {
         const items = await Product.find({})
         return NextResponse.json(items);
