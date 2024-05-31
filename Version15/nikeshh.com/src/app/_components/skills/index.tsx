@@ -115,13 +115,13 @@ const Skills = ({ skills, inlineElement } : Props) => {
                             <h2 className="text-3xl text-gray-800 font-bold lg:text-4xl dark:text-white">
                                 {selectedSkill}
                             </h2>
-                            <p className="mt-3 text-gray-800 dark:text-neutral-400"></p>
-                            <p className="mt-5">
+                            {/*<p className="mt-3 text-gray-800 dark:text-neutral-400"></p>*/}
+                            {/*<p className="mt-5">
                                 <Link className="inline-flex items-center gap-x-1 font-medium text-blue-600 dark:text-blue-500" href="#">
                                     Read More
                                     <svg className="flex-shrink-0 size-4 transition ease-in-out group-hover:translate-x-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m9 18 6-6-6-6"/></svg>
                                 </Link>
-                            </p>
+                            </p>*/}
                         </div>
 
                         <div className="space-y-6 lg:space-y-10">
@@ -143,12 +143,12 @@ const Skills = ({ skills, inlineElement } : Props) => {
                                                     <li key={index}>{point}</li>
                                                 ))}
                                             </ul>
-                                            <p className="mt-2">
+                                            {/*<p className="mt-2">
                                                 <Link className="inline-flex items-center gap-x-1 font-medium text-blue-600 dark:text-blue-500 text-sm" href={`/skills/${skill.name.toLowerCase().replace(/ /g, '-').replace(/\//g, '').replace(/\(/g, '').replace(/\)/g, '').replace(/\&/g, '-')}`}>
                                                     Read More
                                                     <svg className="flex-shrink-0 size-4 transition ease-in-out group-hover:translate-x-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m9 18 6-6-6-6"/></svg>
                                                 </Link>
-                                            </p>
+                                            </p>*/}
                                         </div>
                                     </div>
                                 );

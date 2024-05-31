@@ -65,12 +65,12 @@ const TopSkills = () => {
                       I love creating cool stuff online, making it look great
                       and easy to use, and managing the whole process smoothly.
                     </p>
-                    <Link
+                    {/*<Link
                       href="/full-stack-app-development"
                       className="text-sm underline mt-2 pointer-events-auto flex items-center"
                     >
                       Read More <ArrowRightIcon className="ml-2 h-2 w-2" />
-                    </Link>
+                    </Link>*/}
                   </div>
                 </div>
 
@@ -101,12 +101,12 @@ const TopSkills = () => {
                       React and Node.js, to make your ideas into real digital
                       things.
                     </p>
-                    <Link
+                    {/*<Link
                       href="/building-apps-from-start-to-finish"
                       className="text-sm underline mt-2 pointer-events-auto flex items-center"
                     >
                       Read More <ArrowRightIcon className="ml-2 h-2 w-2" />
-                    </Link>
+                    </Link>*/}
                   </div>
                 </div>
 
@@ -136,12 +136,12 @@ const TopSkills = () => {
                       ads on social media, and using tools like Google Analytics
                       to see what&apos;s working.
                     </p>
-                    <Link
+                    {/*<Link
                       href="/getting-your-brand-noticed-online"
                       className="text-sm underline mt-2 pointer-events-auto flex items-center"
                     >
                       Read More <ArrowRightIcon className="ml-2 h-2 w-2" />
-                    </Link>
+                    </Link>*/}
                   </div>
                 </div>
 
@@ -173,12 +173,12 @@ const TopSkills = () => {
                       manage projects) and tools like Trello and Jira to keep
                       everything organized and moving forward.
                     </p>
-                    <Link
+                    {/*<Link
                       href="/keeping-projects-on-track"
                       className="text-sm underline mt-2 pointer-events-auto flex items-center"
                     >
                       Read More <ArrowRightIcon className="ml-2 h-2 w-2" />
-                    </Link>
+                    </Link>*/}
                   </div>
                 </div>
               </div>
