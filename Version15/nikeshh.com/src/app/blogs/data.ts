@@ -2,6 +2,7 @@ export const blogs = [
   {
     uid: "top-7-no-code-ai-platforms-that-are-making-ml-accessible",
     tag: "AI",
+    imageUrl: "/blogs/blog1.png",
     title: "Top 7 No-Code AI Platforms That Are Making ML Accessible",
     description: "No-code AI platforms are a hot trend that can be leveraged by businesses to help them automate tasks and...",
     content: `
@@ -11,6 +12,7 @@ export const blogs = [
   {
     uid: "edge-ai-for-secure-ai-applications-that-are-highly-important",
     tag: "AI",
+    imageUrl: "/blogs/blog2.png",
     title: "Edge AI for Secure AI Applications That are highly important",
     description: "Edge AI is the future of artificial intelligence. This blog post will explore what Edge AI is and why it and why it could be...",
     content: `
@@ -20,6 +22,7 @@ export const blogs = [
   {
     uid: "geospatial-ai-a-data-centric-approach-for-growth---development",
     tag: "AI",
+    imageUrl: "/blogs/blog3.png",
     title: "Geospatial AI: A Data-Centric Approach for Growth & Development",
     description: "GeospatialAI or GeoAI is an evolving field aiming to help organize, process, and analyze spatial big data with...",
     content: `
