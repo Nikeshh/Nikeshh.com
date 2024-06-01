@@ -15,6 +15,7 @@ type Props = {
         subtitle: string;
         category: string;
         link: string;
+        linkType: string;
         imageUrl: string;
         tags: Array<string>;
         view: string;

@@ -4,7 +4,7 @@ import Navigation from "@/components/layout/navigation";
 import Footer from "@/components/layout/footer";
 import Image from "next/image";
 import parse from 'html-react-parser';
-import './style.css';
+import '../style.css';
 import { getProject } from "@/lib/queries";
 import Link from "next/link";
 
@@ -44,13 +44,13 @@ export default async function Page({ params }: { params: Params }) {
           />
         </div>
         <div className="flex justify-center mt-4">
-          <p>Check out: <Link href={data.link} target="_blank" className="underline hover:text-blue-500">Website</Link></p>
+          <p>Check out: <Link href={data.link} target="_blank" className="underline hover:text-blue-500">{data.linkType}</Link></p>
         </div>
         <div className="mt-4 rich-text flex justify-center">
           {parse(data.content)}
         </div>
         <div className="flex justify-center mt-4">
-          <p>Check out: <Link href={data.link} target="_blank" className="underline hover:text-blue-500">Website</Link></p>
+          <p>Check out: <Link href={data.link} target="_blank" className="underline hover:text-blue-500">{data.linkType}</Link></p>
         </div>
       </Bounded>
       <Footer />
