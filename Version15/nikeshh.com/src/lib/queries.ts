@@ -1159,6 +1159,76 @@ const businessPrespectiveProjects = [
     `,
   },
   {
+    id: "suzan-peltekian",
+    name: "Suzan Peltekian",
+    subtitle:
+      "A super passionate lover of life, suzan helps people to supercharge their life.",
+    category: "Website",
+    link: "https://superchargewithsuzan.com/",
+    linkType: "Website",
+    imageUrl: "/projects/suzan-peltekian.png",
+    tags: ["Wordpress", "Elementor", "Yoast SEO"],
+    view: "Business Perspective",
+    content: `
+      <div className="container mx-auto px-4 py-8">
+        <h1 className="text-4xl font-bold text-center text-green-600 mb-8">Supercharge with SuZan</h1>
+        <div className="shadow-md rounded-lg p-6 mb-8">
+            <p className="mb-4">
+                A super passionate lover of life, suzan helps people to supercharge their life.
+            </p>
+            <p className="mb-4">
+                An avid reader, a fast learner, and a dedicated personal/professional development junkie, I’ve done it all—from Fire-walker to a 10-day silent meditation retreat (yes, I couldn’t open my mouth for 10 FULL days & it was torture). From Real Estate Coaching & NLP to Spiritual Healing and everything in between, I am committed to your success and to serving you become your best self. I study it all and bring you the very best every single day so you can dive into your divine living, loving the life you live fiercely and passionately.
+            </p>
+        </div>
+        <div className="shadow-md rounded-lg p-6 mb-8 border border-white">
+            <h2 className="text-2xl font-semibold text-white-700 mb-4">Technologies Used</h2>
+            <table className="min-w-full">
+                <thead>
+                    <tr>
+                        <th className="py-2">Technology</th>
+                        <th className="py-2">Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td className="border px-4 py-2">HTML</td>
+                        <td className="border px-4 py-2">Markup language for structuring web content.</td>
+                    </tr>
+                    <tr>
+                        <td className="border px-4 py-2">CSS</td>
+                        <td className="border px-4 py-2">Stylesheet language used for describing the presentation of a document.</td>
+                    </tr>
+                    <tr>
+                        <td className="border px-4 py-2">JavaScript</td>
+                        <td className="border px-4 py-2">Programming language for creating interactive web content.</td>
+                    </tr>
+                    <tr>
+                        <td className="border px-4 py-2">WordPress</td>
+                        <td className="border px-4 py-2">CMS used for building and managing the website.</td>
+                    </tr>
+                    <tr>
+                        <td className="border px-4 py-2">Elementor</td>
+                        <td className="border px-4 py-2">WordPress plugin for building custom page layouts.</td>
+                    </tr>
+                    <tr>
+                        <td className="border px-4 py-2">Yoast SEO</td>
+                        <td className="border px-4 py-2">WordPress plugin for optimizing SEO.</td>
+                    </tr>
+                    <tr>
+                        <td className="border px-4 py-2">WooCommerce</td>
+                        <td className="border px-4 py-2">WordPress plugin for e-commerce functionality.</td>
+                    </tr>
+                    <tr>
+                        <td className="border px-4 py-2">Bluehost</td>
+                        <td className="border px-4 py-2">Hosting service for the website.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    `,
+  },
+  {
     id: "island-national-medical-center",
     name: "Island National Medical Center",
     subtitle:
@@ -1237,6 +1307,18 @@ const businessPrespectiveProjects = [
       </table>
     </div>
     `,
+  },
+  {
+    id: "glisten-cms-document-search-and-website-customization",
+    name: "Glisten CMS Document Search and Website Customization",
+    subtitle: "Need to write content. Thanks for checking.",
+    category: "Website",
+    link: "https://glisten-ai-website.vercel.app/",
+    linkType: "Website",
+    imageUrl: "/projects/glisten-ai.png",
+    tags: ["LMS"],
+    view: "Business Perspective",
+    content: "",
   },
   {
     id: "placement-nursing",
@@ -1445,6 +1527,76 @@ const businessPrespectiveProjects = [
     `,
   },
   {
+    id: "suzan-peltekian---manifest-millions",
+    name: "Suzan Peltekian - Manifest Millions",
+    subtitle:
+      "A super passionate lover of life, suzan helps people to supercharge their life.",
+    category: "Website",
+    link: "https://register.suzanpeltekian.com/manifest-millions",
+    linkType: "Website",
+    imageUrl: "/projects/suzan-peltekian-manifest-millions.png",
+    tags: ["GHL"],
+    view: "Business Perspective",
+    content: `
+    <div className="container mx-auto px-4 py-8">
+      <h1 className="text-4xl font-bold text-center text-green-600 mb-8">Supercharge with SuZan</h1>
+      <div className="shadow-md rounded-lg p-6 mb-8">
+          <p className="mb-4">
+              A super passionate lover of life, suzan helps people to supercharge their life.
+          </p>
+          <p className="mb-4">
+              An avid reader, a fast learner, and a dedicated personal/professional development junkie, I’ve done it all—from Fire-walker to a 10-day silent meditation retreat (yes, I couldn’t open my mouth for 10 FULL days & it was torture). From Real Estate Coaching & NLP to Spiritual Healing and everything in between, I am committed to your success and to serving you become your best self. I study it all and bring you the very best every single day so you can dive into your divine living, loving the life you live fiercely and passionately.
+          </p>
+      </div>
+      <div className="shadow-md rounded-lg p-6 mb-8 border border-white">
+          <h2 className="text-2xl font-semibold text-white-700 mb-4">Technologies Used</h2>
+          <table className="min-w-full">
+              <thead>
+                  <tr>
+                      <th className="py-2">Technology</th>
+                      <th className="py-2">Description</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td className="border px-4 py-2">HTML</td>
+                      <td className="border px-4 py-2">Markup language for structuring web content.</td>
+                  </tr>
+                  <tr>
+                      <td className="border px-4 py-2">CSS</td>
+                      <td className="border px-4 py-2">Stylesheet language used for describing the presentation of a document.</td>
+                  </tr>
+                  <tr>
+                      <td className="border px-4 py-2">JavaScript</td>
+                      <td className="border px-4 py-2">Programming language for creating interactive web content.</td>
+                  </tr>
+                  <tr>
+                      <td className="border px-4 py-2">WordPress</td>
+                      <td className="border px-4 py-2">CMS used for building and managing the website.</td>
+                  </tr>
+                  <tr>
+                      <td className="border px-4 py-2">Elementor</td>
+                      <td className="border px-4 py-2">WordPress plugin for building custom page layouts.</td>
+                  </tr>
+                  <tr>
+                      <td className="border px-4 py-2">Yoast SEO</td>
+                      <td className="border px-4 py-2">WordPress plugin for optimizing SEO.</td>
+                  </tr>
+                  <tr>
+                      <td className="border px-4 py-2">WooCommerce</td>
+                      <td className="border px-4 py-2">WordPress plugin for e-commerce functionality.</td>
+                  </tr>
+                  <tr>
+                      <td className="border px-4 py-2">Bluehost</td>
+                      <td className="border px-4 py-2">Hosting service for the website.</td>
+                  </tr>
+              </tbody>
+          </table>
+      </div>
+    </div>
+    `,
+  },
+  {
     id: "nikeshh.com",
     name: "Nikeshh.com",
     subtitle: "Need to write content. Thanks for checking.",
@@ -1517,146 +1669,6 @@ const businessPrespectiveProjects = [
     content: "",
   },
   {
-    id: "suzan-peltekian",
-    name: "Suzan Peltekian",
-    subtitle:
-      "A super passionate lover of life, suzan helps people to supercharge their life.",
-    category: "Wordpress",
-    link: "https://superchargewithsuzan.com/",
-    linkType: "Website",
-    imageUrl: "/projects/suzan-peltekian.png",
-    tags: ["Wordpress", "Elementor", "Yoast SEO"],
-    view: "Business Perspective",
-    content: `
-      <div className="container mx-auto px-4 py-8">
-        <h1 className="text-4xl font-bold text-center text-green-600 mb-8">Supercharge with SuZan</h1>
-        <div className="shadow-md rounded-lg p-6 mb-8">
-            <p className="mb-4">
-                A super passionate lover of life, suzan helps people to supercharge their life.
-            </p>
-            <p className="mb-4">
-                An avid reader, a fast learner, and a dedicated personal/professional development junkie, I’ve done it all—from Fire-walker to a 10-day silent meditation retreat (yes, I couldn’t open my mouth for 10 FULL days & it was torture). From Real Estate Coaching & NLP to Spiritual Healing and everything in between, I am committed to your success and to serving you become your best self. I study it all and bring you the very best every single day so you can dive into your divine living, loving the life you live fiercely and passionately.
-            </p>
-        </div>
-        <div className="shadow-md rounded-lg p-6 mb-8 border border-white">
-            <h2 className="text-2xl font-semibold text-white-700 mb-4">Technologies Used</h2>
-            <table className="min-w-full">
-                <thead>
-                    <tr>
-                        <th className="py-2">Technology</th>
-                        <th className="py-2">Description</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td className="border px-4 py-2">HTML</td>
-                        <td className="border px-4 py-2">Markup language for structuring web content.</td>
-                    </tr>
-                    <tr>
-                        <td className="border px-4 py-2">CSS</td>
-                        <td className="border px-4 py-2">Stylesheet language used for describing the presentation of a document.</td>
-                    </tr>
-                    <tr>
-                        <td className="border px-4 py-2">JavaScript</td>
-                        <td className="border px-4 py-2">Programming language for creating interactive web content.</td>
-                    </tr>
-                    <tr>
-                        <td className="border px-4 py-2">WordPress</td>
-                        <td className="border px-4 py-2">CMS used for building and managing the website.</td>
-                    </tr>
-                    <tr>
-                        <td className="border px-4 py-2">Elementor</td>
-                        <td className="border px-4 py-2">WordPress plugin for building custom page layouts.</td>
-                    </tr>
-                    <tr>
-                        <td className="border px-4 py-2">Yoast SEO</td>
-                        <td className="border px-4 py-2">WordPress plugin for optimizing SEO.</td>
-                    </tr>
-                    <tr>
-                        <td className="border px-4 py-2">WooCommerce</td>
-                        <td className="border px-4 py-2">WordPress plugin for e-commerce functionality.</td>
-                    </tr>
-                    <tr>
-                        <td className="border px-4 py-2">Bluehost</td>
-                        <td className="border px-4 py-2">Hosting service for the website.</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
-    `,
-  },
-  {
-    id: "suzan-peltekian---manifest-millions",
-    name: "Suzan Peltekian - Manifest Millions",
-    subtitle:
-      "A super passionate lover of life, suzan helps people to supercharge their life.",
-    category: "GHL",
-    link: "https://register.suzanpeltekian.com/manifest-millions",
-    linkType: "Website",
-    imageUrl: "/projects/suzan-peltekian-manifest-millions.png",
-    tags: ["GHL"],
-    view: "Business Perspective",
-    content: `
-    <div className="container mx-auto px-4 py-8">
-      <h1 className="text-4xl font-bold text-center text-green-600 mb-8">Supercharge with SuZan</h1>
-      <div className="shadow-md rounded-lg p-6 mb-8">
-          <p className="mb-4">
-              A super passionate lover of life, suzan helps people to supercharge their life.
-          </p>
-          <p className="mb-4">
-              An avid reader, a fast learner, and a dedicated personal/professional development junkie, I’ve done it all—from Fire-walker to a 10-day silent meditation retreat (yes, I couldn’t open my mouth for 10 FULL days & it was torture). From Real Estate Coaching & NLP to Spiritual Healing and everything in between, I am committed to your success and to serving you become your best self. I study it all and bring you the very best every single day so you can dive into your divine living, loving the life you live fiercely and passionately.
-          </p>
-      </div>
-      <div className="shadow-md rounded-lg p-6 mb-8 border border-white">
-          <h2 className="text-2xl font-semibold text-white-700 mb-4">Technologies Used</h2>
-          <table className="min-w-full">
-              <thead>
-                  <tr>
-                      <th className="py-2">Technology</th>
-                      <th className="py-2">Description</th>
-                  </tr>
-              </thead>
-              <tbody>
-                  <tr>
-                      <td className="border px-4 py-2">HTML</td>
-                      <td className="border px-4 py-2">Markup language for structuring web content.</td>
-                  </tr>
-                  <tr>
-                      <td className="border px-4 py-2">CSS</td>
-                      <td className="border px-4 py-2">Stylesheet language used for describing the presentation of a document.</td>
-                  </tr>
-                  <tr>
-                      <td className="border px-4 py-2">JavaScript</td>
-                      <td className="border px-4 py-2">Programming language for creating interactive web content.</td>
-                  </tr>
-                  <tr>
-                      <td className="border px-4 py-2">WordPress</td>
-                      <td className="border px-4 py-2">CMS used for building and managing the website.</td>
-                  </tr>
-                  <tr>
-                      <td className="border px-4 py-2">Elementor</td>
-                      <td className="border px-4 py-2">WordPress plugin for building custom page layouts.</td>
-                  </tr>
-                  <tr>
-                      <td className="border px-4 py-2">Yoast SEO</td>
-                      <td className="border px-4 py-2">WordPress plugin for optimizing SEO.</td>
-                  </tr>
-                  <tr>
-                      <td className="border px-4 py-2">WooCommerce</td>
-                      <td className="border px-4 py-2">WordPress plugin for e-commerce functionality.</td>
-                  </tr>
-                  <tr>
-                      <td className="border px-4 py-2">Bluehost</td>
-                      <td className="border px-4 py-2">Hosting service for the website.</td>
-                  </tr>
-              </tbody>
-          </table>
-      </div>
-    </div>
-    `,
-  },
-  {
     id: "docgenius---documentation-platform",
     name: "DocGenius - Documentation Platform",
     subtitle: "Need to write content. Thanks for checking.",
@@ -1676,18 +1688,6 @@ const businessPrespectiveProjects = [
     link: "https://saas-automation-builder.vercel.app/",
     linkType: "Website",
     imageUrl: "/projects/fuzzie.png",
-    tags: ["LMS"],
-    view: "Business Perspective",
-    content: "",
-  },
-  {
-    id: "glisten-ai---ai-powered-document-search-and-website-customization",
-    name: "Glisten AI - AI-Powered Document Search and Website Customization",
-    subtitle: "Need to write content. Thanks for checking.",
-    category: "Automation",
-    link: "https://glisten-ai-website.vercel.app/",
-    linkType: "Website",
-    imageUrl: "/projects/glisten-ai.png",
     tags: ["LMS"],
     view: "Business Perspective",
     content: "",
