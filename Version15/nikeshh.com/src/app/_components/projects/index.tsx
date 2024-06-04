@@ -131,7 +131,7 @@ const Projects = ({ projects, inlineElement, defaultView = "Business Perspective
                                 </div>
                             </Link>
                         );
-                    }) : <LoadingC />}
+                    }) : <div className='flex justify-center'><LoadingC /></div>}
                 </div>
                 </Tabs>
             </section>
