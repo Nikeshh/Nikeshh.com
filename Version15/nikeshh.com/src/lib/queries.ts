@@ -1309,16 +1309,41 @@ const businessPrespectiveProjects = [
     `,
   },
   {
-    id: "glisten-cms-document-search-and-website-customization",
-    name: "Glisten CMS Document Search and Website Customization",
-    subtitle: "Need to write content. Thanks for checking.",
+    id: "glisten-cms",
+    name: "Glisten CMS",
+    subtitle: "Glisten CMS is a experiment to try to out different CMS platforms like Prismic, Contentful etc.",
     category: "Website",
     link: "https://glisten-ai-website.vercel.app/",
     linkType: "Website",
     imageUrl: "/projects/glisten-ai.png",
-    tags: ["LMS"],
+    tags: ["CMS", "Nextjs", "Prismic"],
     view: "Business Perspective",
-    content: "",
+    content: `
+    <div className="container mx-auto p-6 shadow-lg">
+      <h1 className="text-3xl font-bold text-green-600 mb-6">Glisten CMS</h1>
+      <p className="mb-4"><strong>Glisten CMS</strong> is a experiment to try to out different CMS platforms like Prismic, Contentful etc. The whole website can be structured, destructed and content can be changed on the fly with any change in the code. Very powerful isn&apos;t it.</p>
+
+      <h2 className="text-2xl font-semibold text-green-500 mb-4">Key Technologies</h2>
+      <table className="table-auto w-full mb-6">
+          <thead>
+              <tr className="bg-gray-200 text-black">
+                  <th className="px-4 py-2">Technology</th>
+                  <th className="px-4 py-2">Description</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td className="border px-4 py-2">Nextjs</td>
+                  <td className="border px-4 py-2">Built with popular Reactjs framework.</td>
+              </tr>
+              <tr>
+                  <td className="border px-4 py-2">Prismic</td>
+                  <td className="border px-4 py-2">Entire website is built with different blocks (known as slices) using prismic. Very useful, if the content team has to change the data on the fly.</td>
+              </tr>
+          </tbody>
+      </table>
+    </div>
+    `,
   },
   {
     id: "placement-nursing",
