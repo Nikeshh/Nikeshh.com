@@ -68,7 +68,7 @@ const Projects = ({ projects, inlineElement, defaultView = "Business Perspective
                         PROJECTS
                     </h2>
                 </div>
-                <Tabs defaultValue={defaultView == "Business Perspective" ? "business-perspective" : "development-showcase"}>
+                <Tabs className='w-full flex flex-col items-center' defaultValue={defaultView == "Business Perspective" ? "business-perspective" : "development-showcase"}>
                 <div className="w-full px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
                     <div className="flex justify-center items-center">
                         <TabsList className='shadow-lg shadow-indigo-500/100'>
@@ -131,7 +131,7 @@ const Projects = ({ projects, inlineElement, defaultView = "Business Perspective
                                 </div>
                             </Link>
                         );
-                    }) : <div className='flex justify-center'><LoadingC /></div>}
+                    }) : <LoadingC />}
                 </div>
                 </Tabs>
             </section>
