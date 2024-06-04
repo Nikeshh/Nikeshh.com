@@ -1756,14 +1756,47 @@ const businessPrespectiveProjects = [
   {
     id: "vectorchat---pdf-interaction-platform",
     name: "VectorChat - PDF Interaction Platform",
-    subtitle: "Need to write content. Thanks for checking.",
+    subtitle: "Vector chat is an advanced platform that allows users to interact with PDF documents using AI-powered chat functionality. This platform can help users query, annotate, and extract information from PDF documents efficiently.",
     category: "AI",
     link: "https://chat-pdf-lemon.vercel.app/",
     linkType: "Website",
     imageUrl: "/projects/vectorchat.png",
-    tags: ["LMS"],
+    tags: ["AI", "Vector chat", "Interact with PDF"],
     view: "Business Perspective",
-    content: "",
+    content: `
+    <div className="container mx-auto p-6 shadow-lg">
+      <h1 className="text-3xl font-bold text-green-600 mb-6">Vector Chat</h1>
+      <p className="mb-4"><strong>Vector Chat</strong> an advanced platform that allows users to interact with PDF documents using AI-powered chat functionality. This platform can help users query, annotate, and extract information from PDF documents efficiently.</p>
+
+      <h2 className="text-2xl font-semibold text-green-500 mb-4">Key Technologies</h2>
+      <table className="table-auto w-full mb-6">
+          <thead>
+              <tr className="bg-gray-200 text-black">
+                  <th className="px-4 py-2">Technology</th>
+                  <th className="px-4 py-2">Description</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td className="border px-4 py-2">Nextjs</td>
+                  <td className="border px-4 py-2">Framework for building a responsive and user-friendly interface.</td>
+              </tr>
+              <tr>
+                  <td className="border px-4 py-2">Nodejs</td>
+                  <td className="border px-4 py-2">Framework for server-side logic and API endpoints.</td>
+              </tr>
+              <tr>
+                  <td className="border px-4 py-2">Mongodb</td>
+                  <td className="border px-4 py-2">NoSQL database used for storing user data, document metadata, and annotations.</td>
+              </tr>
+              <tr>
+                <td className="border px-4 py-2">AI/ML</td>
+                <td className="border px-4 py-2">Natural Language Processing (NLP) models to understand and respond to user queries.</td>
+              </tr>
+          </tbody>
+      </table>
+    </div>
+    `,
   },
 ];
 
