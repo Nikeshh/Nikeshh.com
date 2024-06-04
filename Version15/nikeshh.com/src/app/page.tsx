@@ -13,7 +13,6 @@ import Educations from './_components/educations';
 import Globe from '@/components/magicui/globe';
 import Certification from './_components/certification';
 import Newsletter from './_components/newsletter';
-import StarGrid from '@/components/StarGrid';
 import TopSkills from './_components/top-skills';
 import Notification from "./_components/notification";
 
@@ -30,7 +29,6 @@ const Home = () => {
       {/*<NotificationC />*/}
       {/*<Notification />*/}
       <Navigation />
-      <StarGrid />
       <section id="banner" className="container pt-24 md:pt-24 xl:pt-[5rem] relative flex items-center md:justify-center flex-wrap md:flex-nowrap gap-5">
         <div className="flex justify-center relative flex-col flex-wrap gap-2 md:gap-4 lg:flex-2">
           <Link href="/built-in-public">
