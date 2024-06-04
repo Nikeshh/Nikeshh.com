@@ -10,7 +10,6 @@ import { repositoryName } from "@/prismicio";
 import { NProgressBarProvider } from '@/providers/nprogress-bar-provider'
 import Script from "next/script";
 import CookiesConsent from '@/components/cookies-consent';
-import PrelineScript from "@/components/PrelineScript";
 import Scroll from "@/components/scroll";
 import { ClerkProvider } from "@clerk/nextjs";
 import { SpeedInsights } from "@vercel/speed-insights/next"
@@ -77,7 +76,6 @@ export default async function RootLayout({
           <Analytics />
           <PrismicPreview repositoryName={repositoryName} />
         </body>
-        <PrelineScript />
       </html>
     </ClerkProvider>
   );
