@@ -15,6 +15,7 @@ import Certification from './_components/certification';
 import Newsletter from './_components/newsletter';
 import TopSkills from './_components/top-skills';
 import Notification from "./_components/notification";
+import ShinyButton from '@/components/magicui/shiny-button';
 
 const Home = () => {
   const testimonials = getTestimonials();
@@ -61,14 +62,12 @@ const Home = () => {
           <p>🤖 Artificial Intelligence, Automation and Blockchain Enthusiast</p>
           <p>📞 +1 (416)-834-5350 (or) 📨 nikeshhbaskaran01@gmail.com</p>
           <p>🟢 Available for full time / contract / freelancing work</p>
-          <div className="flex flex-wrap gap-2">
+          <div className="flex flex-wrap gap-2 items-center">
             <Link href={"#worked-with"} className="cursor-pointer">
-              <Button className="w-fit dark:border-white" variant="outline">
-                Explore Me
-              </Button>
+              <ShinyButton text="Explore Me" />
             </Link>
             <Link href="https://nikeshh.substack.com/" className="cursor-pointer">
-              <Button className="w-fit dark:border-white" variant="outline">
+              <Button className="w-fit" variant="outline">
                 My Writings!
               </Button>
             </Link>
