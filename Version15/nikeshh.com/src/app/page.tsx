@@ -16,6 +16,7 @@ import Newsletter from './_components/newsletter';
 import TopSkills from './_components/top-skills';
 import Notification from "./_components/notification";
 import ShinyButton from '@/components/magicui/shiny-button';
+import SparklesText from "@/components/magicui/sparkles-text";
 
 const Home = () => {
   const testimonials = getTestimonials();
@@ -73,7 +74,7 @@ const Home = () => {
             </Link>
           </div>
         </div>
-        <div className="flex justify-center items-center relative md:mt-[-70px] lg:flex-1">
+        <div className="flex justify-center items-center relative mt-8 md:mt-[-70px] lg:flex-1">
           {/*<div className="bottom-0 top-[2%] bg-gradient-to-b dark:from-background left-0 right-0 absolute z-10"></div>*/}
           <Image
             priority={false}
@@ -83,6 +84,7 @@ const Home = () => {
             width={600}
             className="rounded-tl-2xl rounded-tr-2xl border-2 border-muted"
           />
+          <SparklesText text="Full Stack Developer & Digital Marketer" sparklesCount={3} className="absolute z-50 bottom-[50px] left-auto right-auto font-thin text-sm border border-white rounded-full px-4 py-2 dark:bg-white" />
           <div className="bottom-0 top-[50%] bg-gradient-to-t dark:from-background left-0 right-0 absolute z-10"></div>
         </div>
       </section>    
