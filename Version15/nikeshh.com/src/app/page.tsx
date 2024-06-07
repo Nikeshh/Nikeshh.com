@@ -331,6 +331,22 @@ const Home = () => {
               badges={["Google", "Project Management"]}
               imageUrl='/google_logo.jpg'
             />
+            <Certification
+              headline=''
+              title='Bachelor of Engineering in Computer Science'
+              id=''
+              link=''
+              badges={["Undergraduate", "Engineering"]}
+              imageUrl='/under-graduation.jpg'
+            />
+            <Certification
+              headline=''
+              title='Bachelor of Engineering in Computer Science'
+              id=''
+              link=''
+              badges={["Postgraduate", "Artificial Intelligence and Machine Learning"]}
+              imageUrl='/post-graduation.jpg'
+            />
             {/*<Certification
               headline='Issued: July 2022'
               title='NLP with Python for Machine Learning Essential Training'
