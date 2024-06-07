@@ -341,7 +341,7 @@ const Home = () => {
             />
             <Certification
               headline=''
-              title='Bachelor of Engineering in Computer Science'
+              title='Post graduation in Artificial Intelligence and Machine Learning'
               id=''
               link=''
               badges={["Postgraduate", "Artificial Intelligence and Machine Learning"]}
