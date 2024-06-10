@@ -60,7 +60,7 @@ const Home = () => {
           <p>
             ⚡ A developer who built skills with a great passion for technologies and creating impact for the end users.
           </p>
-          <p>🤖 Artificial Intelligence, Automation and Blockchain Enthusiast</p>
+          <p>🤖 AI, Web3 and Automation Enthusiast</p>
           <p>📞 +1 (416)-834-5350 (or) 📨 nikeshhbaskaran01@gmail.com</p>
           <p>🟢 Available for full time / contract / freelancing work</p>
           <div className="flex flex-wrap gap-2 items-center">
