@@ -27,7 +27,16 @@ const About = ({ activeNavbar }: { activeNavbar: string }) => {
         </p>
 
         <p>I love to work in AI, Web3 and Automation space. You can check out my works in the portfolio section. I am a developer who built skills with a great passion for technologies and creating impact for the end users.</p>
-        <p>More info about me:<Link href="https://nikeshh.com/about" className="hover:text-blue-500 inline"> Click here</Link></p>
+        <div className="mt-6 flex justify-center">
+          <div>
+            <Link
+              href="https://nikeshh.com/about"
+              className="hover:text-blue-500 text-sm"
+            >
+              More info about me
+            </Link>
+          </div>
+        </div>
       </section>
 
       <section className="service">
@@ -431,6 +440,18 @@ const About = ({ activeNavbar }: { activeNavbar: string }) => {
             </a>
           </li>
         </ul>
+      </section>
+
+      <section className="mt-12 flex justify-center">
+        <div>
+          <Link
+            href="https://nikeshh.com/portfolio"
+            className="hover:text-blue-500 text-sm"
+            target="_blank"
+          >
+            Also, check out extensive version of website
+          </Link>
+        </div>
       </section>
     </article>
   );

@@ -1962,11 +1962,11 @@ textarea.form-input::-webkit-resizer {
 
   .sidebar {
     position: sticky;
-    height: 90vh;
+    height: max-content;
     max-height: max-content;
     top: 60px;
     margin-bottom: 0;
-    padding-top: 60px;
+    padding-top: 30px;
     z-index: 1;
   }
 

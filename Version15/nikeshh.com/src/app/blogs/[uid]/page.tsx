@@ -1,6 +1,6 @@
 import Navigation from "@/components/layout/navigation";
 import Footer from "@/components/layout/footer";
-import { blogs } from "../data";
+import { getBlogs } from '@/lib/queries';
 import Image from "next/image";
 import parse from 'html-react-parser';
 import './style.css';
@@ -10,6 +10,7 @@ type Params = { uid: string };
 export default async function Page({ params }: { params: Params }) {
 
   const uid = params.uid;
+  const blogs = getBlogs();
   const datas = blogs.filter((e) => e.uid == uid);
   if (!datas || datas.length < 1) {
     return (

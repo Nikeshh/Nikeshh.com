@@ -2,32 +2,20 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
-import CustomModal from "@/components/global/custom-modal";
-import { useModal } from "@/providers/modal-provider";
-import { Button } from "@/components/ui/button";
-import {
-  Card,
-  CardContent,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { Eye, User2 } from "lucide-react";
 import Link from "next/link";
 
 type Props = {
   blogs: {
-    id: string;
-    title: string;
-    subtitle: string;
+    uid: string;
+    tag: string;
     imageUrl: string;
+    title: string;
+    description: string;
+    content: string;
   }[];
 };
 
 const Blogs = ({ blogs }: Props) => {
-  const { setOpen } = useModal();
-
   if (blogs && blogs.length > 0) {
     return (
       <section
@@ -65,7 +53,7 @@ const Blogs = ({ blogs }: Props) => {
                   </h3>
 
                   <p className="mt-2 line-clamp-3 text-sm/relaxed text-gray-500 dark:text-gray-400">
-                    {blog.subtitle}
+                    {blog.description}
                   </p>
                   <Link
                     href={`/blogs/${blog.title.toLowerCase().replace(/ /g, "-").replace(/\//g, "").replace(/\(/g, "").replace(/\)/g, "").replace(/\:/g, "").replace(/\&/g, "-")}`}
