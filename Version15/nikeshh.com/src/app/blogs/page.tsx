@@ -2,11 +2,14 @@ import Navigation from "@/components/layout/navigation";
 import Footer from "@/components/layout/footer";
 import Bounded from "@/components/Bounded";
 import Image from "next/image";
-import { blogs } from "./data";
+import { getBlogs } from "@/lib/queries";
 import Link from "next/link";
 import clsx from "clsx";
 
 const Page = () => {
+
+  const blogs = getBlogs();
+
   return <>
     <Navigation />
     <Bounded>
