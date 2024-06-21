@@ -19,6 +19,7 @@ const About = ({ activeNavbar, testimonials }: Props) => {
   const [open, setOpen] = useState(false);
   const [profileImage, setProfileImage] = useState("");
   const [name, setName] = useState("");
+  const [designation, setDesignation] = useState("");
   const [date, setDate] = useState("");
   const [testimonial, setTestimonial] = useState("");
 
@@ -222,6 +223,7 @@ const About = ({ activeNavbar, testimonials }: Props) => {
               setOpen(true);
               setProfileImage(`/assets/images/avatar-${index % 4 + 1}.png`);
               setName(testimonial.name);
+              setDesignation(testimonial.designation);
               setDate(`July ${index % 30 + 1}, 2023`);
               setTestimonial(testimonial.content);
             }}>
@@ -239,7 +241,7 @@ const About = ({ activeNavbar, testimonials }: Props) => {
                   className="h4 testimonials-item-title"
                   data-testimonials-title
                 >
-                  {testimonial.name}
+                  {testimonial.name} <span className="text-xs text-gray-500 dark:text-neutral-400">{testimonial.designation}</span>
                 </h4>
 
                 <div className="testimonials-text" data-testimonials-text>
@@ -276,9 +278,9 @@ const About = ({ activeNavbar, testimonials }: Props) => {
 
           <div className="modal-content">
             <h4 className="h3 modal-title" data-modal-title>
-              {name}
+              {name} <span className="text-xs text-gray-500 dark:text-neutral-400">{designation}</span>
             </h4>
-
+            
             <time dateTime="2021-06-14">{date}</time>
 
             <div data-modal-text>
