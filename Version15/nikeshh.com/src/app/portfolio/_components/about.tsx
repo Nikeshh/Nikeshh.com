@@ -2,7 +2,19 @@ import { X } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
 
-const About = ({ activeNavbar }: { activeNavbar: string }) => {
+type Props = {
+  activeNavbar: string,
+  testimonials: { 
+    id: string;
+    name: string;
+    content: string;
+    avatarUrl: string;
+    designation: string;
+    companyLogoUrl: string;
+  }[]
+}
+
+const About = ({ activeNavbar, testimonials }: Props) => {
 
   const [open, setOpen] = useState(false);
   const [profileImage, setProfileImage] = useState("");
@@ -136,11 +148,6 @@ const About = ({ activeNavbar }: { activeNavbar: string }) => {
 
             <div className="service-content-box">
               <h4 className="h4 service-item-title">Post graduation in Artificial Intelligence and Machine Learning</h4>
-
-              <p className="service-item-text">
-                The most modern and high-quality design made at a professional
-                level.
-              </p>
             </div>
           </li>
 
@@ -155,10 +162,6 @@ const About = ({ activeNavbar }: { activeNavbar: string }) => {
 
             <div className="service-content-box">
               <h4 className="h4 service-item-title">Bachelor of Engineering in Computer Science</h4>
-
-              <p className="service-item-text">
-                High-quality development of sites at the professional level.
-              </p>
             </div>
           </li>
 
@@ -209,196 +212,83 @@ const About = ({ activeNavbar }: { activeNavbar: string }) => {
         </ul>
       </section>
 
-      <section className="testimonials">
+      {testimonials && (
+        <section className="testimonials">
         <h3 className="h3 testimonials-title">Testimonials</h3>
 
         <ul className="testimonials-list has-scrollbar">
-          <li className="testimonials-item" onClick={() => {
-            setOpen(true);
-            setProfileImage("./assets/images/avatar-1.png");
-            setName("Daniel lewis");
-            setDate("July 12, 2022");
-            setTestimonial("I am very happy with the template. It looks professional and intuitive. I can't wait to start using it in my next project. Thank you. ");
-          }}>
-            <div className="content-card" data-testimonials-item>
-              <figure className="testimonials-avatar-box">
-                <img
-                  src="./assets/images/avatar-1.png"
-                  alt="Daniel lewis"
-                  width="60"
-                  data-testimonials-avatar
-                />
-              </figure>
+          {testimonials.map((testimonial, index) => (
+            <li className="testimonials-item" key={index} onClick={() => {
+              setOpen(true);
+              setProfileImage(`/assets/images/avatar-${index % 4 + 1}.png`);
+              setName(testimonial.name);
+              setDate(`July ${index % 30 + 1}, 2023`);
+              setTestimonial(testimonial.content);
+            }}>
+              <div className="content-card" data-testimonials-item>
+                <figure className="testimonials-avatar-box">
+                  <img
+                    src={`./assets/images/avatar-${index % 4 + 1}.png`}
+                    alt={testimonial.name}
+                    width="60"
+                    data-testimonials-avatar
+                  />
+                </figure>
 
-              <h4
-                className="h4 testimonials-item-title"
-                data-testimonials-title
-              >
-                Daniel lewis
-              </h4>
+                <h4
+                  className="h4 testimonials-item-title"
+                  data-testimonials-title
+                >
+                  {testimonial.name}
+                </h4>
 
-              <div className="testimonials-text" data-testimonials-text>
-                <p>
-                  Richard was hired to create a corporate identity. We were very
-                  pleased with the work done. She has a lot of experience and is
-                  very concerned about the needs of client. Lorem ipsum dolor
-                  sit amet, ullamcous cididt consectetur adipiscing elit, seds
-                  do et eiusmod tempor incididunt ut laborels dolore magnarels
-                  alia.
-                </p>
+                <div className="testimonials-text" data-testimonials-text>
+                  <p>
+                    {testimonial.content}
+                  </p>
+                </div>
               </div>
-            </div>
-          </li>
-
-          <li className="testimonials-item" onClick={() => {
-            setOpen(true);
-            setProfileImage("./assets/images/avatar-2.png");
-            setName("Jessica miller");
-            setDate("May 28, 2022");
-            setTestimonial("I am very happy with the template. It looks professional and intuitive. I can't wait to start using it in my next project. Thank you. ");
-          }}>
-            <div className="content-card" data-testimonials-item>
-              <figure className="testimonials-avatar-box">
-                <img
-                  src="./assets/images/avatar-2.png"
-                  alt="Jessica miller"
-                  width="60"
-                  data-testimonials-avatar
-                />
-              </figure>
-
-              <h4
-                className="h4 testimonials-item-title"
-                data-testimonials-title
-              >
-                Jessica miller
-              </h4>
-
-              <div className="testimonials-text" data-testimonials-text>
-                <p>
-                  Richard was hired to create a corporate identity. We were very
-                  pleased with the work done. She has a lot of experience and is
-                  very concerned about the needs of client. Lorem ipsum dolor
-                  sit amet, ullamcous cididt consectetur adipiscing elit, seds
-                  do et eiusmod tempor incididunt ut laborels dolore magnarels
-                  alia.
-                </p>
-              </div>
-            </div>
-          </li>
-
-          <li className="testimonials-item" onClick={() => {
-            setOpen(true);
-            setProfileImage("./assets/images/avatar-3.png");
-            setName("Emily evans");
-            setDate("March 12, 2022");
-            setTestimonial("I am very happy with the template. It looks professional and intuitive. I can't wait to start using it in my next project. Thank you. ");
-          }}>
-            <div className="content-card" data-testimonials-item>
-              <figure className="testimonials-avatar-box">
-                <img
-                  src="./assets/images/avatar-3.png"
-                  alt="Emily evans"
-                  width="60"
-                  data-testimonials-avatar
-                />
-              </figure>
-
-              <h4
-                className="h4 testimonials-item-title"
-                data-testimonials-title
-              >
-                Emily evans
-              </h4>
-
-              <div className="testimonials-text" data-testimonials-text>
-                <p>
-                  Richard was hired to create a corporate identity. We were very
-                  pleased with the work done. She has a lot of experience and is
-                  very concerned about the needs of client. Lorem ipsum dolor
-                  sit amet, ullamcous cididt consectetur adipiscing elit, seds
-                  do et eiusmod tempor incididunt ut laborels dolore magnarels
-                  alia.
-                </p>
-              </div>
-            </div>
-          </li>
-
-          <li className="testimonials-item" onClick={() => {
-            setOpen(true);
-            setProfileImage("./assets/images/avatar-4.png");
-            setName("Henry william");
-            setDate("June 14, 2022");
-            setTestimonial("I am very happy with the template. It looks professional and intuitive. I can't wait to start using it in my next project. Thank you. ");
-          }}>
-            <div className="content-card" data-testimonials-item>
-              <figure className="testimonials-avatar-box">
-                <img
-                  src="./assets/images/avatar-4.png"
-                  alt="Henry william"
-                  width="60"
-                  data-testimonials-avatar
-                />
-              </figure>
-
-              <h4
-                className="h4 testimonials-item-title"
-                data-testimonials-title
-              >
-                Henry william
-              </h4>
-
-              <div className="testimonials-text" data-testimonials-text>
-                <p>
-                  Richard was hired to create a corporate identity. We were very
-                  pleased with the work done. She has a lot of experience and is
-                  very concerned about the needs of client. Lorem ipsum dolor
-                  sit amet, ullamcous cididt consectetur adipiscing elit, seds
-                  do et eiusmod tempor incididunt ut laborels dolore magnarels
-                  alia.
-                </p>
-              </div>
-            </div>
-          </li>
+            </li>
+          ))}
         </ul>
-      </section>
+        </section>
+      )}
+      <div className={`modal-container ${open ? "active" : ""}`} data-modal-container>
+        <div className={`overlay ${open ? "active" : ""}`} data-overlay></div>
 
-        <div className={`modal-container ${open ? "active" : ""}`} data-modal-container>
-          <div className={`overlay ${open ? "active" : ""}`} data-overlay></div>
+        <section className="testimonials-modal">
+          <button className="modal-close-btn" data-modal-close-btn>
+            <X onClick={() => setOpen(false)} />
+          </button>
 
-          <section className="testimonials-modal">
-            <button className="modal-close-btn" data-modal-close-btn>
-              <X onClick={() => setOpen(false)} />
-            </button>
+          <div className="modal-img-wrapper">
+            <figure className="modal-avatar-box">
+              <img
+                src={profileImage}
+                alt={name}
+                width="80"
+                data-modal-img
+              />
+            </figure>
 
-            <div className="modal-img-wrapper">
-              <figure className="modal-avatar-box">
-                <img
-                  src={profileImage}
-                  alt={name}
-                  width="80"
-                  data-modal-img
-                />
-              </figure>
+            <img src="./assets/images/icon-quote.svg" alt="quote icon" />
+          </div>
 
-              <img src="./assets/images/icon-quote.svg" alt="quote icon" />
+          <div className="modal-content">
+            <h4 className="h3 modal-title" data-modal-title>
+              {name}
+            </h4>
+
+            <time dateTime="2021-06-14">{date}</time>
+
+            <div data-modal-text>
+              <p>
+                {testimonial}
+              </p>
             </div>
-
-            <div className="modal-content">
-              <h4 className="h3 modal-title" data-modal-title>
-                {name}
-              </h4>
-
-              <time dateTime="2021-06-14">{date}</time>
-
-              <div data-modal-text>
-                <p>
-                  {testimonial}
-                </p>
-              </div>
-            </div>
-          </section>
-        </div>
+          </div>
+        </section>
+      </div>
 
       <section className="clients">
         <h3 className="h3 clients-title">Clients</h3>
