@@ -1,4 +1,5 @@
 import { X } from "lucide-react";
+import Link from "next/link";
 import { useState } from "react";
 
 const About = ({ activeNavbar }: { activeNavbar: string }) => {
@@ -17,19 +18,16 @@ const About = ({ activeNavbar }: { activeNavbar: string }) => {
 
       <section className="about-text">
         <p>
-          I&apos;m Creative Director and UI/UX Designer from Sydney, Australia,
-          working in web development and print media. I enjoy turning complex
-          problems into simple, beautiful and intuitive designs.
+        I'm a Lead Full Stack Developer and Digital Marketer with over 10 years of experience, primarily working in software, web app development, and digital media. I enjoy turning complex problems into simple, beautiful, and intuitive <span className="underline inline">functional</span> software applications.
         </p>
 
         <p>
-          My job is to build your website so that it is functional and
-          user-friendly but at the same time attractive. Moreover, I add
-          personal touch to your product and make sure that is eye-catching and
-          easy to use. My aim is to bring across your message and identity in
-          the most creative way. I created web design for many famous brand
-          companies.
+          I specialize in building intuitive web applications, softwares or websites. I make sure that the product is eye-catching, functional and
+          easy to use.
         </p>
+
+        <p>I love to work in AI, Web3 and Automation space. You can check out my works in the portfolio section. I am a developer who built skills with a great passion for technologies and creating impact for the end users.</p>
+        <p>More info about me:<Link href="https://nikeshh.com/about" className="hover:text-blue-500 inline"> Click here</Link></p>
       </section>
 
       <section className="service">
@@ -47,10 +45,10 @@ const About = ({ activeNavbar }: { activeNavbar: string }) => {
             </div>
 
             <div className="service-content-box">
-              <h4 className="h4 service-item-title">Web design</h4>
+              <h4 className="h4 service-item-title">Web App Development</h4>
 
               <p className="service-item-text">
-                The most modern and high-quality design made at a professional
+                The most modern and high-quality websites and applications made at a professional
                 level.
               </p>
             </div>
@@ -66,10 +64,10 @@ const About = ({ activeNavbar }: { activeNavbar: string }) => {
             </div>
 
             <div className="service-content-box">
-              <h4 className="h4 service-item-title">Web development</h4>
+              <h4 className="h4 service-item-title">Mobile App Development</h4>
 
               <p className="service-item-text">
-                High-quality development of sites at the professional level.
+                Professional development of applications for iOS and Android.
               </p>
             </div>
           </li>
@@ -84,10 +82,10 @@ const About = ({ activeNavbar }: { activeNavbar: string }) => {
             </div>
 
             <div className="service-content-box">
-              <h4 className="h4 service-item-title">Mobile apps</h4>
+              <h4 className="h4 service-item-title">Digital Marketing</h4>
 
               <p className="service-item-text">
-                Professional development of applications for iOS and Android.
+                Promoting your product or service online through social media, SEO, and, more.
               </p>
             </div>
           </li>
@@ -108,6 +106,95 @@ const About = ({ activeNavbar }: { activeNavbar: string }) => {
                 I make high-quality photos of any category at a professional
                 level.
               </p>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section className="service">
+        <h3 className="h3 service-title">Education & Certifications</h3>
+
+        <ul className="service-list">
+          <li className="service-item">
+            <div className="service-icon-box">
+              <img
+                src="./assets/images/icon-design.svg
+                "
+                alt="design icon"
+                width="40"
+              />
+            </div>
+
+            <div className="service-content-box">
+              <h4 className="h4 service-item-title">Post graduation in Artificial Intelligence and Machine Learning</h4>
+
+              <p className="service-item-text">
+                The most modern and high-quality design made at a professional
+                level.
+              </p>
+            </div>
+          </li>
+
+          <li className="service-item">
+            <div className="service-icon-box">
+              <img
+                src="./assets/images/icon-dev.svg"
+                alt="Web development icon"
+                width="40"
+              />
+            </div>
+
+            <div className="service-content-box">
+              <h4 className="h4 service-item-title">Bachelor of Engineering in Computer Science</h4>
+
+              <p className="service-item-text">
+                High-quality development of sites at the professional level.
+              </p>
+            </div>
+          </li>
+
+          <li className="service-item">
+            <div className="service-icon-box">
+              <img
+                src="./assets/images/icon-dev.svg"
+                alt="Web development icon"
+                width="40"
+              />
+            </div>
+
+            <div className="service-content-box">
+              <h4 className="h4 service-item-title">Google Data Analytics Professional Certificate</h4>
+
+              <p className="service-item-text">
+                Issued: Nov 2021
+              </p>
+              <Link href="https://www.credly.com/badges/39aaaa1e-6676-4854-b8e6-1fe8aab100c0/linked_in_profile" target="_blank" className="mt-4 inline-flex items-center gap-x-1 text-blue-600 decoration-2 hover:underline text-sm">
+                  Check Credential
+                  <svg className="flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+              </Link>
+            </div>
+          </li>
+
+          <li className="service-item">
+            <div className="service-icon-box">
+              <img
+                src="./assets/images/icon-dev.svg"
+                alt="Web development icon"
+                width="40"
+              />
+            </div>
+
+            <div className="service-content-box">
+              <h4 className="h4 service-item-title">Google Project Management: Professional Certificate</h4>
+
+              <p className="service-item-text">
+                Issued: Nov 2021
+              </p>
+
+              <Link href="https://www.credly.com/badges/adc3e6e6-4072-4154-92a8-777c1abc2dc4/linked_in_profile" target="_blank" className="mt-4 inline-flex items-center gap-x-1 text-blue-600 decoration-2 hover:underline text-sm">
+                  Check Credential
+                  <svg className="flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+              </Link>
             </div>
           </li>
         </ul>
