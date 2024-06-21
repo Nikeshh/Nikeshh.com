@@ -31,7 +31,7 @@ const About = ({ activeNavbar, testimonials }: Props) => {
 
       <section className="about-text">
         <p>
-        I'm a Lead Full Stack Developer and Digital Marketer with over 10 years of experience, primarily working in software, web app development, and digital media. I enjoy turning complex problems into simple, beautiful, and intuitive <span className="underline inline">functional</span> software applications.
+        I&apos;m a Lead Full Stack Developer and Digital Marketer with over 10 years of experience, primarily working in software, web app development, and digital media. I enjoy turning complex problems into simple, beautiful, and intuitive <span className="underline inline">functional</span> software applications.
         </p>
 
         <p>
@@ -280,7 +280,7 @@ const About = ({ activeNavbar, testimonials }: Props) => {
             <h4 className="h3 modal-title" data-modal-title>
               {name} <span className="text-xs text-gray-500 dark:text-neutral-400">{designation}</span>
             </h4>
-            
+
             <time dateTime="2021-06-14">{date}</time>
 
             <div data-modal-text>
