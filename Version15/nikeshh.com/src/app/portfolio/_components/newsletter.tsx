@@ -18,7 +18,7 @@ import {
 import { Input } from '@/components/ui/input'
 import { Button } from '@/components/ui/button'
 import Loading from '@/components/global/loading'
-import { onCreateNewPageInDatabase } from "../_connections/notion-connection";
+import { onCreateNewPageInDatabase } from "../../_connections/notion-connection";
 
 const Newsletter = () => {
     // Newsletter

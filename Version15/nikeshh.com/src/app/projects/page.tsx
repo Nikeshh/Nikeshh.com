@@ -1,6 +1,6 @@
 import Footer from "@/components/layout/footer";
 import Navigation from "@/components/layout/navigation";
-import Projects from "../_components/projects";
+import Projects from "../portfolio/_components/projects";
 import { getProjects } from "@/lib/queries";
 
 export default async function Page() {

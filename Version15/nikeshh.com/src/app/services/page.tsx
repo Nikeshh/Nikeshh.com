@@ -1,6 +1,6 @@
 import Footer from "@/components/layout/footer";
 import Navigation from "@/components/layout/navigation";
-import Skills from "../_components/skills";
+import Skills from "../portfolio/_components/skills";
 import { getSkills } from "@/lib/queries";
 
 export default async function Page() {
