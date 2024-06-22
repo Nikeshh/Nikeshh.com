@@ -32,9 +32,13 @@ const Portfolio = ({ activeNavbar, projects }: Props) => {
   // State for the currently selected project
   const [selectedProject, setSelectedProject] = useState<typeof projects[0] | null>(null);
 
+  // State for the visibility of the filter select dropdown
+  const [dropdownOpen, setDropdownOpen] = useState<boolean>(false);
+
   // Handle filter button click
   const handleFilterClick = (filter: string) => {
     setSelectedFilter(filter);
+    setDropdownOpen(false); // Close dropdown after selecting a filter
   };
 
   // Handle project click
@@ -45,6 +49,11 @@ const Portfolio = ({ activeNavbar, projects }: Props) => {
   // Handle back button click
   const handleBackClick = () => {
     setSelectedProject(null);
+  };
+
+  // Handle dropdown toggle
+  const toggleDropdown = () => {
+    setDropdownOpen(!dropdownOpen);
   };
 
   // Determine which projects to display based on the selected filter
@@ -100,7 +109,7 @@ const Portfolio = ({ activeNavbar, projects }: Props) => {
 
             {/* Filter Select Box */}
             <div className="filter-select-box">
-              <button className="filter-select" data-select>
+              <button className={`filter-select ${dropdownOpen ? 'active' : ''}`} data-select onClick={toggleDropdown}>
                 <div className="select-value" data-select-value>
                   {selectedFilter}
                 </div>
