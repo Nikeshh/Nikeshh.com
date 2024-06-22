@@ -4,6 +4,14 @@ import { useState } from "react";
 
 type Props = {
   activeNavbar: string,
+  skills: {
+    name: string;
+    category: string;
+    imageUrl: string;
+    description: string;
+    points: string;
+    view: string;
+  }[],
   testimonials: { 
     id: string;
     name: string;
@@ -14,7 +22,7 @@ type Props = {
   }[]
 }
 
-const About = ({ activeNavbar, testimonials }: Props) => {
+const About = ({ activeNavbar, skills, testimonials }: Props) => {
 
   const [open, setOpen] = useState(false);
   const [profileImage, setProfileImage] = useState("");
@@ -22,6 +30,8 @@ const About = ({ activeNavbar, testimonials }: Props) => {
   const [designation, setDesignation] = useState("");
   const [date, setDate] = useState("");
   const [testimonial, setTestimonial] = useState("");
+
+  const filteredSkills = skills.filter(skill => skill.category !== 'Digital Marketing' && skill.view !== 'Technical Perspective');
 
   return (
     <article className={`about ${activeNavbar == "About" ? "active" : ''}`} data-page="about">
@@ -56,43 +66,28 @@ const About = ({ activeNavbar, testimonials }: Props) => {
         <h3 className="h3 service-title">What i&apos;m doing</h3>
 
         <ul className="service-list">
-          <li className="service-item">
-            <div className="service-icon-box">
-              <img
-                src="./assets/images/icon-design.svg
-                "
-                alt="design icon"
-                width="40"
-              />
-            </div>
-
-            <div className="service-content-box">
-              <h4 className="h4 service-item-title">Web App Development</h4>
-
-              <p className="service-item-text">
-                The most modern and high-quality websites and applications made at a professional
-                level.
-              </p>
-            </div>
-          </li>
-
-          <li className="service-item">
-            <div className="service-icon-box">
-              <img
-                src="./assets/images/icon-dev.svg"
-                alt="Web development icon"
-                width="40"
-              />
-            </div>
-
-            <div className="service-content-box">
-              <h4 className="h4 service-item-title">Mobile App Development</h4>
-
-              <p className="service-item-text">
-                Professional development of applications for iOS and Android.
-              </p>
-            </div>
-          </li>
+          {filteredSkills.map((skill, index) => {
+            return (
+              <li className="service-item">
+                <div className="service-icon-box">
+                  <img
+                    src="./assets/images/icon-design.svg
+                    "
+                    alt="design icon"
+                    width="40"
+                  />
+                </div>
+    
+                <div className="service-content-box">
+                  <h4 className="h4 service-item-title">{skill.name}</h4>
+    
+                  <p className="service-item-text">
+                    {skill.description}
+                  </p>
+                </div>
+              </li>
+            );
+          })}
 
           <li className="service-item">
             <div className="service-icon-box">
@@ -108,25 +103,6 @@ const About = ({ activeNavbar, testimonials }: Props) => {
 
               <p className="service-item-text">
                 Promoting your product or service online through social media, SEO, and, more.
-              </p>
-            </div>
-          </li>
-
-          <li className="service-item">
-            <div className="service-icon-box">
-              <img
-                src="./assets/images/icon-photo.svg"
-                alt="camera icon"
-                width="40"
-              />
-            </div>
-
-            <div className="service-content-box">
-              <h4 className="h4 service-item-title">Photography</h4>
-
-              <p className="service-item-text">
-                I make high-quality photos of any category at a professional
-                level.
               </p>
             </div>
           </li>

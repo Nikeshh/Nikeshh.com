@@ -1,13 +1,14 @@
 import './style.css';
-import { getTestimonials } from '@/lib/queries';
+import { getSkills, getTestimonials } from '@/lib/queries';
 import Main from './main';
 
 const Page = () => {
 
+    const skills = getSkills();
     const testimonials = getTestimonials();
 
     return (
-        <Main testimonials={testimonials} />
+        <Main skills={skills} testimonials={testimonials} />
     )
 }
 

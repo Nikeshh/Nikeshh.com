@@ -11,6 +11,14 @@ import Contact from './_components/contact';
 import './style.css';
 
 type Props = {
+    skills: {
+        name: string;
+        category: string;
+        imageUrl: string;
+        description: string;
+        points: string;
+        view: string;
+    }[],
     testimonials: {
         id: string;
         name: string;
@@ -21,7 +29,7 @@ type Props = {
     }[]
 }
 
-const Main = ({ testimonials } : Props) => {
+const Main = ({ skills, testimonials } : Props) => {
 
     const [activeNavbar, setActiveNavbar] = useState("About");
     const [activeSidebar, setActiveSidebar] = useState(false);
@@ -31,7 +39,7 @@ const Main = ({ testimonials } : Props) => {
             <Sidebar activeSidebar={activeSidebar} setActiveSidebar={setActiveSidebar} />
             <div className="main-content">
                 <Navbar activeNavbar={activeNavbar} setActiveNavbar={setActiveNavbar} />
-                <About activeNavbar={activeNavbar} testimonials={testimonials} />
+                <About activeNavbar={activeNavbar} skills={skills} testimonials={testimonials} />
                 <Resume activeNavbar={activeNavbar} />
                 <Portfolio activeNavbar={activeNavbar} />
                 <Blog activeNavbar={activeNavbar} />

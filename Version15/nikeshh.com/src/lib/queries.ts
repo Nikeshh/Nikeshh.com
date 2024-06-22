@@ -337,7 +337,7 @@ export const getSkills = cache(() => {
       view: "Business Perspective",
     },
     {
-      name: "Website Development (Landing / Static websites)",
+      name: "Full fledged Website Development (Landing / Static / Dynamic websites)",
       category: "Development for Business Solutions",
       imageUrl: "",
       description:
@@ -488,27 +488,6 @@ export const getSkills = cache(() => {
     },
   ];
   return [...techView, ...businessView];
-});
-
-export const getServices = cache(async () => {
-  let response: any[] = [];
-  if (process.env.QUERY_FROM_DB) {
-    response = await db.services.findMany({
-      select: {
-        id: true,
-        name: true,
-        subtitle: true,
-        category: true,
-        subcategory: true,
-      },
-      orderBy: {
-        category: "asc",
-      },
-    });
-  } else {
-    response = [];
-  }
-  return response;
 });
 
 const businessPrespectiveProjects = [
