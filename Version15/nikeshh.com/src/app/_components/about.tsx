@@ -474,7 +474,6 @@ const About = ({ activeNavbar, skills, testimonials }: Props) => {
               <li>Twitter: <Link href="https://x.com/NikeshhV" className="hover:text-blue-500 inline">https://x.com/NikeshhV</Link></li>
               <li>Github: <Link href="https://github.com/Nikeshh" className="hover:text-blue-500 inline">https://github.com/Nikeshh</Link></li>
               <li>Dribbble: <Link href="https://dribbble.com/nikeshh" className="hover:text-blue-500 inline">https://dribbble.com/nikeshh</Link></li>
-
             </ul>
           </div>
         </section>

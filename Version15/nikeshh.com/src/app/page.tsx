@@ -10,7 +10,9 @@ const Page = () => {
     const testimonials = getTestimonials();
 
     return (
-        <Main skills={skills} projects={projects} blogs={blogs} testimonials={testimonials} />
+        <main className="w-full">
+            <Main skills={skills} projects={projects} blogs={blogs} testimonials={testimonials} />
+        </main>
     )
 }
 

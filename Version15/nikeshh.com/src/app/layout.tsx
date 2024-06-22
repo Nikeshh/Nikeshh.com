@@ -5,11 +5,7 @@ import { DM_Sans } from "next/font/google";
 import { Toaster } from "@/components/ui/sonner"
 import { Analytics } from "@vercel/analytics/react";
 import localFont from 'next/font/local';
-import { PrismicPreview } from "@prismicio/next";
-import { repositoryName } from "@/prismicio";
-import { NProgressBarProvider } from '@/providers/nprogress-bar-provider'
 import Script from "next/script";
-import CookiesConsent from '@/components/cookies-consent';
 import Scroll from "@/components/scroll";
 import { ClerkProvider } from "@clerk/nextjs";
 import { SpeedInsights } from "@vercel/speed-insights/next"
@@ -65,16 +61,11 @@ export default async function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
-            <NProgressBarProvider />
-            <main className="w-full">
-              {children}
-            </main>
+            {children}
             <SpeedInsights />
-            <CookiesConsent />
           </ThemeProvider>
           <Toaster />
           <Analytics />
-          <PrismicPreview repositoryName={repositoryName} />
         </body>
       </html>
     </ClerkProvider>

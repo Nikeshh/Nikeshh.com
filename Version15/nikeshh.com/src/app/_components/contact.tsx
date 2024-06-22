@@ -159,7 +159,7 @@ const Contact = ({ activeNavbar }: { activeNavbar: string }) => {
             <span>Send Message</span>
           </button>
         </form>
-        <span className="my-6 text-sm text-slate-500">-- or --</span>
+        <span className="my-6 text-sm text-slate-500 text-center">-- or --</span>
         <InlineWidget url="https://calendly.com/nikeshhv/15min" styles={{ width: '100%', height: '1000px', background: 'hsla(0,0%,13%,1)' }} />
       </section>
     </article>
