@@ -31,6 +31,14 @@ type Props = {
         view: string;
         content: string;
     }[],
+    blogs: {
+        uid: string;
+        tag: string;
+        imageUrl: string;
+        title: string;
+        description: string;
+        content: string;
+    }[],
     testimonials: {
         id: string;
         name: string;
@@ -41,7 +49,7 @@ type Props = {
     }[]
 }
 
-const Main = ({ skills, projects, testimonials } : Props) => {
+const Main = ({ skills, projects, blogs, testimonials } : Props) => {
 
     const [activeNavbar, setActiveNavbar] = useState("About");
     const [activeSidebar, setActiveSidebar] = useState(false);
@@ -54,7 +62,7 @@ const Main = ({ skills, projects, testimonials } : Props) => {
                 <About activeNavbar={activeNavbar} skills={skills} testimonials={testimonials} />
                 <Resume activeNavbar={activeNavbar} />
                 <Portfolio activeNavbar={activeNavbar} projects={projects} />
-                <Blog activeNavbar={activeNavbar} />
+                <Blog activeNavbar={activeNavbar} blogs={blogs} />
                 <Contact activeNavbar={activeNavbar} />
             </div>
         </main>

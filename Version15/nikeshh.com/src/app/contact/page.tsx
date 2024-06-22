@@ -35,6 +35,18 @@ const Page = () => {
                 "Email": {
                     "email": values.email
                 },
+                "Phone Number": {
+                    "phone_number": values.phoneNumber
+                },
+                "Details": {
+                    "type": "rich_text",
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": { "content": values.details }
+                      }
+                    ]
+                },
                 "Tags": {
                     "type": "multi_select",
                     "multi_select": [

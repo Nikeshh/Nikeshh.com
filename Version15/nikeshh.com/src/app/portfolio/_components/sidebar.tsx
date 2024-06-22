@@ -31,6 +31,7 @@ const Sidebar = ({ activeSidebar, setActiveSidebar }: {activeSidebar: boolean, s
             Nikeshh Vijayabaskaran
           </h1>
           <p className="title">Lead Full Stack Developer</p>
+          <p className="title !mt-2">Digital Marketer</p>
         </div>
 
         <button className="info_more-btn" data-sidebar-btn onClick={() => setActiveSidebar(!activeSidebar)}>

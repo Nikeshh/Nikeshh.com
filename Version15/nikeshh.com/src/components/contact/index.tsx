@@ -37,6 +37,8 @@ const ContactForm = ({ apiCall, subTitle, title, width, contactFormRef }: Props)
     defaultValues: {
       name: '',
       email: '',
+      phoneNumber: '',
+      details: '',
     },
   })
   const isLoading = form.formState.isLoading
@@ -82,6 +84,41 @@ const ContactForm = ({ apiCall, subTitle, title, width, contactFormRef }: Props)
                     <Input
                       type="email"
                       placeholder="Email"
+                      {...field}
+                    />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+            <FormField
+              disabled={isLoading}
+              control={form.control}
+              name="phoneNumber"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel>Phone Number</FormLabel>
+                  <FormControl>
+                    <Input
+                      type="tel"
+                      placeholder="Phone Number"
+                      {...field}
+                    />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+            <FormField
+              disabled={isLoading}
+              control={form.control}
+              name="details"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel>Message</FormLabel>
+                  <FormControl>
+                    <Input
+                      placeholder="Details"
                       {...field}
                     />
                   </FormControl>

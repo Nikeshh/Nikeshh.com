@@ -273,39 +273,60 @@ const About = ({ activeNavbar, skills, testimonials }: Props) => {
 
         <ul className="clients-list has-scrollbar">
           <li className="clients-item">
-            <a href="#">
-              <img src="./assets/images/logo-1-color.png" alt="client logo" />
-            </a>
+            <Link
+              href="https://altinteriors.ca/"
+              target='_blank'
+            >
+              <img src="./assets/clients/altinteriors.png" alt="client logo" />
+            </Link>
           </li>
-
           <li className="clients-item">
-            <a href="#">
-              <img src="./assets/images/logo-2-color.png" alt="client logo" />
-            </a>
+            <Link
+              href="https://www.spadesbrand.com/"
+              target='_blank'
+            >
+              <img src="./assets/clients/spadesbrand.png" alt="client logo" />
+            </Link>
           </li>
-
           <li className="clients-item">
-            <a href="#">
-              <img src="./assets/images/logo-3-color.png" alt="client logo" />
-            </a>
+            <Link
+              href="https://www.ppe-supply.com/"
+              target='_blank'
+            >
+              <img src="./assets/clients/ppesupply.png" alt="client logo" />
+            </Link>
           </li>
-
           <li className="clients-item">
-            <a href="#">
-              <img src="./assets/images/logo-4-color.png" alt="client logo" />
-            </a>
+            <Link
+              href="https://www.rbcroyalbank.com/"
+              target='_blank'
+            >
+              <img src="./assets/clients/rbc.jpeg" alt="client logo" />
+            </Link>
           </li>
-
           <li className="clients-item">
-            <a href="#">
-              <img src="./assets/images/logo-5-color.png" alt="client logo" />
-            </a>
+            <Link
+              href="https://www.temenos.com/"
+              target='_blank'
+            >
+              <img src="./assets/clients/temenos.svg" alt="client logo" />
+            </Link>
           </li>
-
           <li className="clients-item">
-            <a href="#">
-              <img src="./assets/images/logo-6-color.png" alt="client logo" />
-            </a>
+            <Link
+              href="https://www.skinessence.ca/"
+              target='_blank'
+            >
+              <img src="./assets/clients/skinessence.png" alt="client logo" />
+            </Link>
+          </li>
+          <li className="clients-item">
+            <Link
+              href="https://superchargewithsuzan.com/"
+              target='_blank'
+            >
+              <img src="./assets/clients/suzan-peltekian.png" alt="client logo" />
+            </Link>
           </li>
         </ul>
       </section>

@@ -7,7 +7,9 @@ export const NewsletterUserFormSchema = z.object({
 
 export const ContactUserFormSchema = z.object({
     name: z.string().min(1, 'Required'),
-    email: z.string().email(),
+    email: z.string().email().min(1, 'Required'),
+    phoneNumber: z.string().min(10, 'Minimum 10 characters required'),
+    details: z.string().min(10, 'Minimum 10 characters required'),
 })
 
 export interface FooterItem {

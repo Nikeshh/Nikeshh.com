@@ -1,5 +1,5 @@
 import { ChevronDown, Eye, ArrowLeft } from "lucide-react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import parse from 'html-react-parser';
 
 type Props = {
@@ -18,45 +18,45 @@ type Props = {
   }[]
 };
 
+const Loader = () => (
+  <div className="loader-container">
+    <div className="spinner"></div>
+  </div>
+);
+
 const Portfolio = ({ activeNavbar, projects }: Props) => {
-  // Filter projects based on view
-  const filteredProjects = projects.filter(project => project.view !== 'Development Showcase');
-  const developmentShowcaseProjects = projects.filter(project => project.view === 'Development Showcase');
-
-  // Get unique categories for filtering
-  const projectTags = Array.from(new Set(filteredProjects.map(item => item.category)));
-
-  // State for the currently selected filter
+  const [loading, setLoading] = useState(false);
   const [selectedFilter, setSelectedFilter] = useState<string>('All');
-
-  // State for the currently selected project
   const [selectedProject, setSelectedProject] = useState<typeof projects[0] | null>(null);
-
-  // State for the visibility of the filter select dropdown
   const [dropdownOpen, setDropdownOpen] = useState<boolean>(false);
 
-  // Handle filter button click
+  const filteredProjects = projects.filter(project => project.view !== 'Development Showcase');
+  const developmentShowcaseProjects = projects.filter(project => project.view === 'Development Showcase');
+  const projectTags = Array.from(new Set(filteredProjects.map(item => item.category)));
+
   const handleFilterClick = (filter: string) => {
+    setLoading(true);
     setSelectedFilter(filter);
-    setDropdownOpen(false); // Close dropdown after selecting a filter
+    setDropdownOpen(false);
+    setTimeout(() => setLoading(false), 1000);
   };
 
-  // Handle project click
   const handleProjectClick = (project: typeof projects[0]) => {
+    setLoading(true);
     setSelectedProject(project);
+    setTimeout(() => setLoading(false), 1000);
   };
 
-  // Handle back button click
   const handleBackClick = () => {
+    setLoading(true);
     setSelectedProject(null);
+    setTimeout(() => setLoading(false), 1000);
   };
 
-  // Handle dropdown toggle
   const toggleDropdown = () => {
     setDropdownOpen(!dropdownOpen);
   };
 
-  // Determine which projects to display based on the selected filter
   const displayedProjects = selectedFilter === 'All' 
     ? [...filteredProjects, ...developmentShowcaseProjects]
     : selectedFilter === 'Development Showcase'
@@ -117,7 +117,7 @@ const Portfolio = ({ activeNavbar, projects }: Props) => {
                   <ChevronDown />
                 </div>
               </button>
-              <ul className="select-list">
+              <ul className={`select-list ${dropdownOpen ? 'open' : ''}`}>
                 <li className="select-item">
                   <button data-select-item onClick={() => handleFilterClick('All')}>All</button>
                 </li>
@@ -134,33 +134,36 @@ const Portfolio = ({ activeNavbar, projects }: Props) => {
               </ul>
             </div>
 
-            {/* Project List */}
-            <ul className="project-list">
-              {displayedProjects.map(project => (
-                <li
-                  className="project-item active"
-                  data-filter-item
-                  data-category={project.category.toLowerCase()}
-                  key={project.id}
-                  onClick={() => handleProjectClick(project)}
-                >
-                  <div className="project-content-wrapper">
-                    <figure className="project-img">
-                      <div className="project-item-icon-box">
-                        <Eye />
-                      </div>
-                      <img
-                        src={project.imageUrl}
-                        alt={project.name}
-                        loading="lazy"
-                      />
-                    </figure>
-                    <h3 className="project-title">{project.name}</h3>
-                    <p className="project-category">{project.category}</p>
-                  </div>
-                </li>
-              ))}
-            </ul>
+            {loading ? (
+              <Loader />
+            ) : (
+              <ul className="project-list">
+                {displayedProjects.map(project => (
+                  <li
+                    className="project-item active"
+                    data-filter-item
+                    data-category={project.category.toLowerCase()}
+                    key={project.id}
+                    onClick={() => handleProjectClick(project)}
+                  >
+                    <div className="project-content-wrapper">
+                      <figure className="project-img">
+                        <div className="project-item-icon-box">
+                          <Eye />
+                        </div>
+                        <img
+                          src={project.imageUrl}
+                          alt={project.name}
+                          loading="lazy"
+                        />
+                      </figure>
+                      <h3 className="project-title">{project.name}</h3>
+                      <p className="project-category">{project.category}</p>
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            )}
           </section>
         </>
       )}
