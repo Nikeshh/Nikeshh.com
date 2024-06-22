@@ -1,281 +1,160 @@
-import { ChevronDown, Eye } from "lucide-react";
+import { ChevronDown, Eye, ArrowLeft } from "lucide-react";
+import { useState } from "react";
+import parse from 'html-react-parser';
 
-const Portfolio = ({ activeNavbar }: { activeNavbar: string }) => {
+type Props = {
+  activeNavbar: string;
+  projects: {
+    id: string;
+    name: string;
+    subtitle: string;
+    category: string;
+    link: string;
+    linkType: string;
+    imageUrl: string;
+    tags: string[];
+    view: string;
+    content: string;
+  }[]
+};
+
+const Portfolio = ({ activeNavbar, projects }: Props) => {
+  // Filter projects based on view
+  const filteredProjects = projects.filter(project => project.view !== 'Development Showcase');
+  const developmentShowcaseProjects = projects.filter(project => project.view === 'Development Showcase');
+
+  // Get unique categories for filtering
+  const projectTags = Array.from(new Set(filteredProjects.map(item => item.category)));
+
+  // State for the currently selected filter
+  const [selectedFilter, setSelectedFilter] = useState<string>('All');
+
+  // State for the currently selected project
+  const [selectedProject, setSelectedProject] = useState<typeof projects[0] | null>(null);
+
+  // Handle filter button click
+  const handleFilterClick = (filter: string) => {
+    setSelectedFilter(filter);
+  };
+
+  // Handle project click
+  const handleProjectClick = (project: typeof projects[0]) => {
+    setSelectedProject(project);
+  };
+
+  // Handle back button click
+  const handleBackClick = () => {
+    setSelectedProject(null);
+  };
+
+  // Determine which projects to display based on the selected filter
+  const displayedProjects = selectedFilter === 'All' 
+    ? [...filteredProjects, ...developmentShowcaseProjects]
+    : selectedFilter === 'Development Showcase'
+    ? developmentShowcaseProjects
+    : filteredProjects.filter(project => project.category === selectedFilter);
+
   return (
-    <article className={`portfolio ${activeNavbar == "Portfolio" ? "active" : ''}`} data-page="portfolio">
-      <header>
-        <h2 className="h2 article-title">Portfolio</h2>
-      </header>
-
-      <section className="projects">
-        <ul className="filter-list">
-          <li className="filter-item">
-            <button className="active" data-filter-btn>
-              All
-            </button>
-          </li>
-
-          <li className="filter-item">
-            <button data-filter-btn>Web design</button>
-          </li>
-
-          <li className="filter-item">
-            <button data-filter-btn>Applications</button>
-          </li>
-
-          <li className="filter-item">
-            <button data-filter-btn>Web development</button>
-          </li>
-        </ul>
-
-        <div className="filter-select-box">
-          <button className="filter-select" data-select>
-            <div className="select-value" data-selecct-value>
-              Select category
-            </div>
-
-            <div className="select-icon">
-              <ChevronDown />
-            </div>
+    <article className={`portfolio ${activeNavbar === "Portfolio" ? "active" : ''}`} data-page="portfolio">
+      {selectedProject ? (
+        <section className="project-details">
+          <button className="back-button" onClick={handleBackClick}>
+            <ArrowLeft />
+            Back to Projects
           </button>
+          <img src={selectedProject.imageUrl} alt={selectedProject.name} />
+          <div className="mt-4 rich-text flex justify-center">
+            {parse(selectedProject.content)}
+          </div>
+          <a href={selectedProject.link} target={selectedProject.linkType} className="text-center mt-4">
+            Visit Project
+          </a>
+        </section>
+      ) : (
+        <>
+          <header>
+            <h2 className="h2 article-title">Portfolio</h2>
+          </header>
 
-          <ul className="select-list">
-            <li className="select-item">
-              <button data-select-item>All</button>
-            </li>
+          <section className="projects">
+            {/* Filter List */}
+            <ul className="filter-list">
+              <li className="filter-item">
+                <button className={selectedFilter === 'All' ? 'active' : ''} onClick={() => handleFilterClick('All')} data-filter-btn>
+                  All
+                </button>
+              </li>
 
-            <li className="select-item">
-              <button data-select-item>Web design</button>
-            </li>
+              {projectTags.map((tag, index) => (
+                <li className="filter-item" key={index}>
+                  <button className={selectedFilter === tag ? 'active' : ''} onClick={() => handleFilterClick(tag)} data-filter-btn>{tag}</button>
+                </li>
+              ))}
 
-            <li className="select-item">
-              <button data-select-item>Applications</button>
-            </li>
+              {developmentShowcaseProjects.length > 0 && (
+                <li className="filter-item">
+                  <button className={selectedFilter === 'Development Showcase' ? 'active' : ''} onClick={() => handleFilterClick('Development Showcase')} data-filter-btn>Development Showcase</button>
+                </li>
+              )}
+            </ul>
 
-            <li className="select-item">
-              <button data-select-item>Web development</button>
-            </li>
-          </ul>
-        </div>
-
-        <ul className="project-list">
-          <li
-            className="project-item  active"
-            data-filter-item
-            data-category="web development"
-          >
-            <a href="#">
-              <figure className="project-img">
-                <div className="project-item-icon-box">
-                  <Eye />
+            {/* Filter Select Box */}
+            <div className="filter-select-box">
+              <button className="filter-select" data-select>
+                <div className="select-value" data-select-value>
+                  {selectedFilter}
                 </div>
-
-                <img
-                  src="./assets/images/project-1.jpg"
-                  alt="finance"
-                  loading="lazy"
-                />
-              </figure>
-
-              <h3 className="project-title">Finance</h3>
-
-              <p className="project-category">Web development</p>
-            </a>
-          </li>
-
-          <li
-            className="project-item  active"
-            data-filter-item
-            data-category="web development"
-          >
-            <a href="#">
-              <figure className="project-img">
-                <div className="project-item-icon-box">
-                  <Eye />
+                <div className="select-icon">
+                  <ChevronDown />
                 </div>
+              </button>
+              <ul className="select-list">
+                <li className="select-item">
+                  <button data-select-item onClick={() => handleFilterClick('All')}>All</button>
+                </li>
+                {projectTags.map((tag, index) => (
+                  <li className="select-item" key={index}>
+                    <button data-select-item onClick={() => handleFilterClick(tag)}>{tag}</button>
+                  </li>
+                ))}
+                {developmentShowcaseProjects.length > 0 && (
+                  <li className="select-item">
+                    <button data-select-item onClick={() => handleFilterClick('Development Showcase')}>Development Showcase</button>
+                  </li>
+                )}
+              </ul>
+            </div>
 
-                <img
-                  src="./assets/images/project-2.png"
-                  alt="orizon"
-                  loading="lazy"
-                />
-              </figure>
-
-              <h3 className="project-title">Orizon</h3>
-
-              <p className="project-category">Web development</p>
-            </a>
-          </li>
-
-          <li
-            className="project-item  active"
-            data-filter-item
-            data-category="web design"
-          >
-            <a href="#">
-              <figure className="project-img">
-                <div className="project-item-icon-box">
-                  <Eye />
-                </div>
-
-                <img
-                  src="./assets/images/project-3.jpg"
-                  alt="fundo"
-                  loading="lazy"
-                />
-              </figure>
-
-              <h3 className="project-title">Fundo</h3>
-
-              <p className="project-category">Web design</p>
-            </a>
-          </li>
-
-          <li
-            className="project-item  active"
-            data-filter-item
-            data-category="applications"
-          >
-            <a href="#">
-              <figure className="project-img">
-                <div className="project-item-icon-box">
-                  <Eye />
-                </div>
-
-                <img
-                  src="./assets/images/project-4.png"
-                  alt="brawlhalla"
-                  loading="lazy"
-                />
-              </figure>
-
-              <h3 className="project-title">Brawlhalla</h3>
-
-              <p className="project-category">Applications</p>
-            </a>
-          </li>
-
-          <li
-            className="project-item  active"
-            data-filter-item
-            data-category="web design"
-          >
-            <a href="#">
-              <figure className="project-img">
-                <div className="project-item-icon-box">
-                  <Eye />
-                </div>
-
-                <img
-                  src="./assets/images/project-5.png"
-                  alt="dsm."
-                  loading="lazy"
-                />
-              </figure>
-
-              <h3 className="project-title">DSM.</h3>
-
-              <p className="project-category">Web design</p>
-            </a>
-          </li>
-
-          <li
-            className="project-item  active"
-            data-filter-item
-            data-category="web design"
-          >
-            <a href="#">
-              <figure className="project-img">
-                <div className="project-item-icon-box">
-                  <Eye />
-                </div>
-
-                <img
-                  src="./assets/images/project-6.png"
-                  alt="metaspark"
-                  loading="lazy"
-                />
-              </figure>
-
-              <h3 className="project-title">MetaSpark</h3>
-
-              <p className="project-category">Web design</p>
-            </a>
-          </li>
-
-          <li
-            className="project-item  active"
-            data-filter-item
-            data-category="web development"
-          >
-            <a href="#">
-              <figure className="project-img">
-                <div className="project-item-icon-box">
-                  <Eye />
-                </div>
-
-                <img
-                  src="./assets/images/project-7.png"
-                  alt="summary"
-                  loading="lazy"
-                />
-              </figure>
-
-              <h3 className="project-title">Summary</h3>
-
-              <p className="project-category">Web development</p>
-            </a>
-          </li>
-
-          <li
-            className="project-item  active"
-            data-filter-item
-            data-category="applications"
-          >
-            <a href="#">
-              <figure className="project-img">
-                <div className="project-item-icon-box">
-                  <Eye />
-                </div>
-
-                <img
-                  src="./assets/images/project-8.jpg"
-                  alt="task manager"
-                  loading="lazy"
-                />
-              </figure>
-
-              <h3 className="project-title">Task Manager</h3>
-
-              <p className="project-category">Applications</p>
-            </a>
-          </li>
-
-          <li
-            className="project-item  active"
-            data-filter-item
-            data-category="web development"
-          >
-            <a href="#">
-              <figure className="project-img">
-                <div className="project-item-icon-box">
-                  <Eye />
-                </div>
-
-                <img
-                  src="./assets/images/project-9.png"
-                  alt="arrival"
-                  loading="lazy"
-                />
-              </figure>
-
-              <h3 className="project-title">Arrival</h3>
-
-              <p className="project-category">Web development</p>
-            </a>
-          </li>
-        </ul>
-      </section>
+            {/* Project List */}
+            <ul className="project-list">
+              {displayedProjects.map(project => (
+                <li
+                  className="project-item active"
+                  data-filter-item
+                  data-category={project.category.toLowerCase()}
+                  key={project.id}
+                  onClick={() => handleProjectClick(project)}
+                >
+                  <div className="project-content-wrapper">
+                    <figure className="project-img">
+                      <div className="project-item-icon-box">
+                        <Eye />
+                      </div>
+                      <img
+                        src={project.imageUrl}
+                        alt={project.name}
+                        loading="lazy"
+                      />
+                    </figure>
+                    <h3 className="project-title">{project.name}</h3>
+                    <p className="project-category">{project.category}</p>
+                  </div>
+                </li>
+              ))}
+            </ul>
+          </section>
+        </>
+      )}
     </article>
   );
 };
