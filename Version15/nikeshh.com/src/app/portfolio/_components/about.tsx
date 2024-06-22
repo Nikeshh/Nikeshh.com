@@ -68,7 +68,7 @@ const About = ({ activeNavbar, skills, testimonials }: Props) => {
         <ul className="service-list">
           {filteredSkills.map((skill, index) => {
             return (
-              <li className="service-item">
+              <li className="service-item" key={index}>
                 <div className="service-icon-box">
                   <img
                     src="./assets/images/icon-design.svg
