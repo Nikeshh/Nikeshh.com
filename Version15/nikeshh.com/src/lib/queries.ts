@@ -969,7 +969,7 @@ const businessPrespectiveProjects = [
     subtitle:
       "Notre Dame Pavilion Hospital (NDPH) is a 44-bed healthcare facility located in Vitré. Serving approximately 50,000 Québec city residents and a large seasonal population of cottagers and tourists, NDPH offers a comprehensive array of acute care services.",
     category: "Website",
-    link: "https://www.notre-damepavillionhospital.ca/",
+    link: "https://www.notre-damepavillionhospital.ca/index.html",
     linkType: "Website",
     imageUrl: "/projects/notre-damepavillionhospital.png",
     tags: ["Shopify", "Liquid", "Stripe", "Mongodb", "ExpressJS"],
@@ -1763,6 +1763,14 @@ const businessPrespectiveProjects = [
               <tr>
                   <td className="border px-4 py-2">Nextjs</td>
                   <td className="border px-4 py-2">Framework for building a responsive and user-friendly interface.</td>
+              </tr>
+              <tr>
+                  <td className="border px-4 py-2">Pinecone DB</td>
+                  <td className="border px-4 py-2">Vector database to store vector embeddings.</td>
+              </tr>
+              <tr>
+                  <td className="border px-4 py-2">Clerk</td>
+                  <td className="border px-4 py-2">Authentication and authorization system.</td>
               </tr>
               <tr>
                   <td className="border px-4 py-2">Nodejs</td>
