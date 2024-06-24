@@ -1800,12 +1800,18 @@ const developmentShowcaseProjects = [
     name: "MongoDB CRUD - Nextjs",
     subtitle: "Implementation of CRUD operation using MongoDB and Nextjs",
     category: "MongoDB",
-    link: "https://github.com/Nikeshh/CRUD-Mongodb",
+    link: "",
     linkType: "Github",
     imageUrl: "/projects/development_showcase/crud-mongodb.png",
     tags: ["MongoDB", "CRUD", "Nextjs"],
     view: "Development Showcase",
-    content: "",
+    content: `
+      <div className="container mx-auto p-6 shadow-lg">
+        <div className="flex justify-center">
+          <a href="https://github.com/Nikeshh/CRUD-Mongodb" target="_blank" className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">View Source Code</a>
+        </div>
+      </div>
+    `,
   },
 ]
 
