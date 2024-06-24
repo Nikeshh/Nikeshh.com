@@ -1,6 +1,7 @@
 import { ChevronDown, Eye, ArrowLeft } from "lucide-react";
 import { useState, useEffect } from "react";
 import parse from 'html-react-parser';
+import Link from "next/link";
 
 type Props = {
   activeNavbar: string;
@@ -75,9 +76,11 @@ const Portfolio = ({ activeNavbar, projects }: Props) => {
           <div className="mt-4 rich-text flex justify-center">
             {parse(selectedProject.content)}
           </div>
-          <a href={selectedProject.link} target={selectedProject.linkType} className="text-center mt-4">
-            Visit Project
-          </a>
+          {selectedProject.link && (
+            <div className="flex justify-center mt-4">
+              <p>Check out: <Link href={selectedProject.link} target="_blank" className="underline hover:text-blue-500">{selectedProject.linkType}</Link></p>
+            </div>
+          )}
         </section>
       ) : (
         <>

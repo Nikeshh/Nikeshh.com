@@ -43,15 +43,19 @@ export default async function Page({ params }: { params: Params }) {
             className="rounded-lg"
           />
         </div>
-        <div className="flex justify-center mt-4">
-          <p>Check out: <Link href={data.link} target="_blank" className="underline hover:text-blue-500">{data.linkType}</Link></p>
-        </div>
+        {data.link && (
+          <div className="flex justify-center mt-4">
+            <p>Check out: <Link href={data.link} target="_blank" className="underline hover:text-blue-500">{data.linkType}</Link></p>
+          </div>
+        )}
         <div className="mt-4 rich-text flex justify-center">
           {parse(data.content)}
         </div>
-        <div className="flex justify-center mt-4">
-          <p>Check out: <Link href={data.link} target="_blank" className="underline hover:text-blue-500">{data.linkType}</Link></p>
-        </div>
+        {data.link && (
+          <div className="flex justify-center mt-4">
+            <p>Check out: <Link href={data.link} target="_blank" className="underline hover:text-blue-500">{data.linkType}</Link></p>
+          </div>
+        )}
       </Bounded>
       <Footer />
     </>
