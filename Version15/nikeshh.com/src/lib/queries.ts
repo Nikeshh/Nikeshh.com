@@ -1747,6 +1747,10 @@ const businessPrespectiveProjects = [
       <h1 className="text-3xl font-bold text-green-600 mb-6">Vector Chat</h1>
       <p className="mb-4"><strong>Vector Chat</strong> an advanced platform that allows users to interact with PDF documents using AI-powered chat functionality. This platform can help users query, annotate, and extract information from PDF documents efficiently.</p>
 
+      <div className="w-full my-4 flex justify-center">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/1-KRuj767Uo?si=7un8gGDfUKp8p-OP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+
       <h2 className="text-2xl font-semibold text-green-500 mb-4">Key Technologies</h2>
       <table className="table-auto w-full mb-6">
           <thead>
@@ -1774,6 +1778,9 @@ const businessPrespectiveProjects = [
               </tr>
           </tbody>
       </table>
+      <div className="flex justify-center">
+        <a href="https://github.com/Nikeshh/VectorChat/" className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">View Source Code</a>
+      </div>
     </div>
     `,
   },
