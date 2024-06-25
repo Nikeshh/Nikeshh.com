@@ -659,6 +659,10 @@ const businessPrespectiveProjects = [
         <h1 className="text-3xl font-bold text-blue-600 mb-6">Learnify LMS Platform</h1>
         <p className="mb-4">Learnify an advanced Learning Management System (LMS)</p>
 
+      <div className="w-full my-4 flex justify-center">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/jH3fE4to3Dg?si=8smYFhHUffEtG4Jz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+
         <h2 className="text-2xl font-semibold text-blue-500 mb-4">Key Technologies</h2>
         <table className="table-auto w-full mb-6">
             <thead>
@@ -774,6 +778,9 @@ const businessPrespectiveProjects = [
             <li><strong>Security</strong>: Top-tier security practices to protect your data and transactions.</li>
             <li><strong>Performance</strong>: Optimized for speed and reliability to ensure a smooth user experience.</li>
         </ul>
+        <div className="flex justify-center">
+          <a href="https://github.com/Nikeshh/LMS-Platform" target="_blank" className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">View Source Code</a>
+        </div>
     </div>`,
   },
   {
