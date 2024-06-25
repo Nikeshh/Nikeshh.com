@@ -1617,7 +1617,60 @@ const businessPrespectiveProjects = [
     imageUrl: "/projects/nikeshh.png",
     tags: ["LMS"],
     view: "Business Perspective",
-    content: "",
+    content: `
+      <div className="container mx-auto p-6 shadow-lg">
+        <h1 className="text-3xl font-bold text-blue-600 mb-6">Nikeshh.com</h1>
+        <p className="mb-4">My personal website that you are currently looking at. I have perfecting this portfolio for last 5-7 years. Created multiple versions and finally stumbled upon a simple and easy to navigate website. There is one more variant of my website, <a href="https://nikeshh.com/portfolio" className="text-blue-500 hover:text-blue-600 cursor-pointer inline" target="_blank">Check here</a></p>
+
+        <h2 className="text-2xl font-semibold text-blue-500 mb-4">Key Technologies</h2>
+        <table className="table-auto w-full mb-6">
+            <thead>
+                <tr className="bg-gray-200 text-black">
+                    <th className="px-4 py-2">Technology</th>
+                    <th className="px-4 py-2">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td className="border px-4 py-2">Next.js 13</td>
+                    <td className="border px-4 py-2">A modern React framework for optimal performance and scalability.</td>
+                </tr>
+                <tr>
+                    <td className="border px-4 py-2">TIDBCloud (MySQL)</td>
+                    <td className="border px-4 py-2">Robust and scalable database management.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2 className="text-2xl font-semibold text-blue-500 mb-4">Technical Infrastructure</h2>
+        <table className="table-auto w-full mb-6">
+            <thead>
+            <tr className="bg-gray-200 text-black">
+                    <th className="px-4 py-2">Component</th>
+                    <th className="px-4 py-2">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td className="border px-4 py-2">Authentication</td>
+                    <td className="border px-4 py-2">Secure login and user management with Clerk.</td>
+                </tr>
+                <tr>
+                    <td className="border px-4 py-2">ORM</td>
+                    <td className="border px-4 py-2">Simplified database interactions using Prisma.</td>
+                </tr>
+                <tr>
+                    <td className="border px-4 py-2">Database</td>
+                    <td className="border px-4 py-2">Reliable MySQL database managed by TIDBCloud.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div className="flex justify-center">
+          <a href="https://github.com/Nikeshh/Nikeshh.com" target="_blank" className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">View Source Code</a>
+        </div>
+      </div>
+    `,
   },
   {
     id: "digital-ecommerce",
