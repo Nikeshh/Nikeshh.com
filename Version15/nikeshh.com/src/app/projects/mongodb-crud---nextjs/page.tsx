@@ -541,7 +541,7 @@ export default Admin;
           />
         </div>
         <div className="flex justify-center mt-4">
-          <p>Check out: <Link href={data.link} target="_blank" className="underline hover:text-blue-500">{data.linkType}</Link></p>
+          <p>Check out: <Link href={data.link} target="_blank" className="underline hover:text-blue-500 inline">{data.linkType}</Link></p>
         </div>
         <div className="mt-4 flex flex-col flex-wrap justify-start gap-4">
           <p className="dark:text-neutral-400 text-xl underline">Steps to implement CRUD operation using MongoDB and Nextjs</p>
@@ -656,7 +656,7 @@ export default Admin;
           {parse(data.content)}
         </div>
         <div className="flex justify-center mt-4">
-          <p>Check out: <Link href={data.link} target="_blank" className="underline hover:text-blue-500">{data.linkType}</Link></p>
+          <p>Check out: <Link href={data.link} target="_blank" className="underline hover:text-blue-500 inline">{data.linkType}</Link></p>
         </div>
       </Bounded>
       <Footer />

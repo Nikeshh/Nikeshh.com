@@ -78,7 +78,7 @@ const Portfolio = ({ activeNavbar, projects }: Props) => {
           </div>
           {selectedProject.link && (
             <div className="flex justify-center mt-4">
-              <p>Check out: <Link href={selectedProject.link} target="_blank" className="underline hover:text-blue-500">{selectedProject.linkType}</Link></p>
+              <p>Check out: <Link href={selectedProject.link} target="_blank" className="underline hover:text-blue-500 inline">{selectedProject.linkType}</Link></p>
             </div>
           )}
         </section>

@@ -45,7 +45,7 @@ export default async function Page({ params }: { params: Params }) {
         </div>
         {data.link && (
           <div className="flex justify-center mt-4">
-            <p>Check out: <Link href={data.link} target="_blank" className="underline hover:text-blue-500">{data.linkType}</Link></p>
+            <p>Check out: <Link href={data.link} target="_blank" className="underline hover:text-blue-500 inline">{data.linkType}</Link></p>
           </div>
         )}
         <div className="mt-4 rich-text flex justify-center">
@@ -53,7 +53,7 @@ export default async function Page({ params }: { params: Params }) {
         </div>
         {data.link && (
           <div className="flex justify-center mt-4">
-            <p>Check out: <Link href={data.link} target="_blank" className="underline hover:text-blue-500">{data.linkType}</Link></p>
+            <p>Check out: <Link href={data.link} target="_blank" className="underline hover:text-blue-500 inline">{data.linkType}</Link></p>
           </div>
         )}
       </Bounded>
