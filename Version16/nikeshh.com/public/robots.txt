@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /entities
+Disallow: /entities/*
+
+User-agent: *
+Allow: /
+
+Sitemap: https://www.nikeshh.com/sitemap.xml
