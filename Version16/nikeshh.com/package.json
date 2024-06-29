@@ -7,8 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "postinstall": "prisma generate",
-    "slicemachine": "start-slicemachine"
+    "postinstall": "prisma generate"
   },
   "dependencies": {
     "@clerk/nextjs": "^5.1.2",
@@ -80,7 +79,6 @@
     "zod": "^3.22.4"
   },
   "devDependencies": {
-    "@slicemachine/adapter-next": "latest",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
@@ -93,7 +91,6 @@
     "postcss": "^8",
     "prisma": "^5.13.0",
     "react-spring": "^9.7.3",
-    "slice-machine-ui": "latest",
     "tailwindcss": "^3.3.0",
     "typescript": "^5"
   }

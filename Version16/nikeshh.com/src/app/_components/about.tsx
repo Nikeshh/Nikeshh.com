@@ -332,18 +332,6 @@ const About = ({ activeNavbar, skills, testimonials }: Props) => {
               </li>
             </ul>
           </section>
-
-          <section className="mt-12 flex justify-center">
-            <div>
-              <Link
-                href="/portfolio"
-                className="hover:text-blue-500 text-sm"
-                target="_blank"
-              >
-                Also, check out extensive version of website
-              </Link>
-            </div>
-          </section>
         </>
       ) : (
         <section className="more-info about-text">

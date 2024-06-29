@@ -1620,7 +1620,7 @@ const businessPrespectiveProjects = [
     content: `
       <div className="container mx-auto p-6 shadow-lg">
         <h1 className="text-3xl font-bold text-blue-600 mb-6">Nikeshh.com</h1>
-        <p className="mb-4">My personal website that you are currently looking at. I have been perfecting this portfolio for last 5-7 years. Created multiple versions and finally stumbled upon a simple and easy to navigate website. There is one more live variant of my website, <a href="https://nikeshh.com/portfolio" className="text-blue-500 hover:text-blue-600 cursor-pointer inline" target="_blank">Check here</a></p>
+        <p className="mb-4">My personal website that you are currently looking at. I have been perfecting this portfolio for last 5-7 years. Created multiple versions and finally stumbled upon a simple and easy to navigate website. You can check other variants, in my <a href="https://github.com/Nikeshh/Nikeshh.com" className="text-blue-500 hover:text-blue-600 cursor-pointer inline" target="_blank">Github</a> under old versions</p>
 
         <h2 className="text-2xl font-semibold text-blue-500 mb-4">Key Technologies</h2>
         <table className="table-auto w-full mb-6">
