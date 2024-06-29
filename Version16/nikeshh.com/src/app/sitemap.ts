@@ -15,7 +15,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         priority: 1,
     },
     {
-        url: 'https://nikeshh.com/about',
+        url: 'https://nikeshh.com/freelance',
         lastModified: new Date(),
         changeFrequency: 'daily',
         priority: 1,
