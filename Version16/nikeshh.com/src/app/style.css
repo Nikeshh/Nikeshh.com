@@ -535,6 +535,113 @@ main {
   margin-bottom: 15px;
 }
 
+/* Industries Section */
+.industries-title {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.industries-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.industry-item {
+  background-color: #121212;
+  padding: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: flex;
+  align-items: center;
+}
+
+.industry-item:hover {
+  background-color: #0b1425;
+}
+
+.industry-icon-box {
+  margin-right: 1rem;
+}
+
+.industry-content-box {
+  flex-grow: 1;
+}
+
+.industry-item-title {
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+/* Solutions Section */
+.solutions {
+  margin-top: 2rem;
+}
+
+.solutions-title {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.solutions-list {
+  list-style: none;
+  padding: 0;
+}
+
+.solution-item {
+  margin-bottom: 1rem;
+}
+
+.solution-item-title {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.solution-item-text {
+  margin: 0;
+}
+
+/* Service Section */
+.service {
+  margin-top: 2rem;
+}
+
+.service-title {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.service-list {
+  list-style: none;
+  padding: 0;
+}
+
+.service-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+}
+
+.service-icon-box {
+  margin-right: 1rem;
+}
+
+.service-content-box {
+  flex-grow: 1;
+}
+
+.service-item-title {
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+.service-item-text {
+  margin: 0.5rem 0 0 0;
+}
+
 /**
    * #service 
    */
@@ -1500,7 +1607,7 @@ textarea.form-input::-webkit-resizer {
   }
 
   .about-text {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
 
   /* service */

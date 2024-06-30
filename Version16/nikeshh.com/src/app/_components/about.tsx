@@ -3,6 +3,8 @@ import Link from "next/link";
 import { useState } from "react";
 import { ArrowLeft } from "lucide-react";
 import Image from "next/image";
+import { Code, Briefcase } from 'lucide-react';
+import { FaIndustry, FaNotesMedical } from "react-icons/fa";
 
 type Props = {
   activeNavbar: string,
@@ -24,6 +26,28 @@ type Props = {
   }[]
 }
 
+const industries = [
+  {
+    name: "Real Estate",
+    icon: <FaIndustry />,
+    solutions: [
+      { name: "CRM for Real Estate", description: "Manage customer relationships seamlessly.", icon: <FaIndustry /> },
+      { name: "Property Listing Management", description: "Easily manage property listings.", icon: <Code /> }
+    ]
+  },
+  {
+    name: "Healthcare",
+    icon: <Briefcase />,
+    solutions: [
+      { name: "Patient Management System", description: "Efficiently manage patient data.", icon: <Briefcase /> },
+      { name: "Telemedicine Platform", description: "Connect with patients remotely.", icon: <FaNotesMedical /> }
+    ]
+  },
+  // Add more industries and solutions as needed
+];
+
+type Industry = { name: string; icon: JSX.Element; solutions: { name: string; description: string; icon: JSX.Element }[]; };
+
 const About = ({ activeNavbar, skills, testimonials }: Props) => {
   const [open, setOpen] = useState(false);
   const [profileImage, setProfileImage] = useState("");
@@ -32,6 +56,7 @@ const About = ({ activeNavbar, skills, testimonials }: Props) => {
   const [date, setDate] = useState("");
   const [testimonial, setTestimonial] = useState("");
   const [showMoreInfo, setShowMoreInfo] = useState(false);
+  const [selectedIndustry, setSelectedIndustry] = useState<Industry | null>(null);
 
   const filteredSkills = skills.filter(skill => skill.category !== 'Digital Marketing' && skill.view !== 'Technical Perspective');
 
@@ -65,6 +90,36 @@ const About = ({ activeNavbar, skills, testimonials }: Props) => {
               </div>
             </div>
           </section>
+
+          <section className="industries">
+            <h3 className="h3 industries-title">I build solutions for different industries</h3>
+            <ul className="industries-list">
+              {industries.map((industry, index) => (
+                <li className="industry-item" key={index} onClick={() => setSelectedIndustry(industry)}>
+                  <div className="industry-icon-box">
+                    {industry.icon}
+                  </div>
+                  <div className="industry-content-box">
+                    <h4 className="h4 industry-item-title">{industry.name}</h4>
+                  </div>
+                </li>
+              ))}
+            </ul>
+          </section>
+
+          {selectedIndustry && (
+            <div>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                {selectedIndustry.solutions.map((solution, index) => (
+                  <div key={index} className="border p-4 rounded shadow">
+                    <div className="text-3xl">{solution.icon}</div>
+                    <h3 className="text-xl font-bold mt-2">{solution.name}</h3>
+                    <p>{solution.description}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
 
           <section className="service">
             <h3 className="h3 service-title">What i&apos;m doing</h3>
