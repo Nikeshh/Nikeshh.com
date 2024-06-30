@@ -536,6 +536,11 @@ main {
 }
 
 /* Industries Section */
+.industries {
+  margin-top: 2rem;
+  margin-bottom: 2.2rem;
+}
+
 .industries-title {
   font-size: 1.75rem;
   margin-bottom: 1rem;
@@ -1607,7 +1612,8 @@ textarea.form-input::-webkit-resizer {
   }
 
   .about-text {
-    margin-bottom: 20px;
+    margin-top: 2rem;
+    margin-bottom: 2.2rem;
   }
 
   /* service */

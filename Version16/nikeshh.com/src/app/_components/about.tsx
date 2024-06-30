@@ -48,7 +48,14 @@ const industries = [
 
 type Industry = { name: string; icon: JSX.Element; solutions: { name: string; description: string; icon: JSX.Element }[]; };
 
+const Loader = () => (
+  <div className="loader-container">
+    <div className="spinner"></div>
+  </div>
+);
+
 const About = ({ activeNavbar, skills, testimonials }: Props) => {
+  const [loading, setLoading] = useState(false);
   const [open, setOpen] = useState(false);
   const [profileImage, setProfileImage] = useState("");
   const [name, setName] = useState("");
@@ -60,8 +67,35 @@ const About = ({ activeNavbar, skills, testimonials }: Props) => {
 
   const filteredSkills = skills.filter(skill => skill.category !== 'Digital Marketing' && skill.view !== 'Technical Perspective');
 
+  const handleBackClick = () => {
+    setLoading(true);
+    setSelectedIndustry(null);
+    setTimeout(() => setLoading(false), 1000);
+  };
+
   return (
     <article className={`about ${activeNavbar == "About" ? "active" : ''}`} data-page="about">
+      {selectedIndustry ? (
+        <section className="project-details">
+          <button className="back-button" onClick={handleBackClick}>
+            <ArrowLeft />
+            Back to About
+          </button>
+          <div className="flex justify-center text-2xl underline">
+            <h1>{selectedIndustry.name}</h1>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
+            {selectedIndustry.solutions.map((solution, index) => (
+              <div key={index} className="border p-4 rounded shadow">
+                <div className="text-3xl">{solution.icon}</div>
+                <h3 className="text-xl font-bold mt-2">{solution.name}</h3>
+                <p>{solution.description}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+      ) : (
+        <>
       {!showMoreInfo ? (
         <>
           <header>
@@ -106,20 +140,6 @@ const About = ({ activeNavbar, skills, testimonials }: Props) => {
               ))}
             </ul>
           </section>
-
-          {selectedIndustry && (
-            <div>
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                {selectedIndustry.solutions.map((solution, index) => (
-                  <div key={index} className="border p-4 rounded shadow">
-                    <div className="text-3xl">{solution.icon}</div>
-                    <h3 className="text-xl font-bold mt-2">{solution.name}</h3>
-                    <p>{solution.description}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-          )}
 
           <section className="service">
             <h3 className="h3 service-title">What i&apos;m doing</h3>
@@ -520,6 +540,8 @@ const About = ({ activeNavbar, skills, testimonials }: Props) => {
             </ul>
           </div>
         </section>
+      )}
+      </>
       )}
     </article>
   );

@@ -2,11 +2,11 @@ import './style.css';
 import { getBlogs, getProjects, getSkills, getTestimonials } from '@/lib/queries';
 import Main from './main';
 
-const Page = () => {
+const Page = async () => {
 
     const skills = getSkills();
     const projects = getProjects();
-    const blogs = getBlogs();
+    const blogs = await getBlogs();
     const testimonials = getTestimonials();
 
     return (

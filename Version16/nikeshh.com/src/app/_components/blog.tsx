@@ -4,25 +4,17 @@ import React, { useEffect, useState } from 'react';
 import { ArrowLeft } from "lucide-react";
 import parse from 'html-react-parser';
 import { FaFacebook, FaTwitter, FaLinkedin } from 'react-icons/fa';
-
-type BlogType = {
-  uid: string;
-  tag: string;
-  imageUrl: string;
-  title: string;
-  description: string;
-  content: string;
-};
+import { BlogPostWithCategoriesAndComments } from '@/lib/queries';
 
 type Props = {
   activeNavbar: string;
-  blogs: BlogType[];
+  blogs: BlogPostWithCategoriesAndComments[];
 };
 
 const Blog: React.FC<Props> = ({ activeNavbar, blogs }) => {
-  const [selectedBlog, setSelectedBlog] = useState<BlogType | null>(null);
+  const [selectedBlog, setSelectedBlog] = useState<BlogPostWithCategoriesAndComments | null>(null);
 
-  const handleBlogClick = (blog: BlogType) => {
+  const handleBlogClick = (blog: BlogPostWithCategoriesAndComments) => {
     setSelectedBlog(blog);
   };
 
@@ -47,7 +39,7 @@ const Blog: React.FC<Props> = ({ activeNavbar, blogs }) => {
   };
 
   const shareOnLinkedIn = () => {
-    const linkedinUrl = `https://www.linkedin.com/shareArticle?mini=true&url=${encodeURIComponent(shareUrl)}&title=${encodeURIComponent(selectedBlog?.title || '')}&summary=${encodeURIComponent(selectedBlog?.description || '')}`;
+    const linkedinUrl = `https://www.linkedin.com/shareArticle?mini=true&url=${encodeURIComponent(shareUrl)}&title=${encodeURIComponent(selectedBlog?.title || '')}&summary=${encodeURIComponent(parse(selectedBlog?.content?.substring(0, 100) + "..." || '').toString())}`;
     window.open(linkedinUrl, '_blank');
   };
 
@@ -66,16 +58,20 @@ const Blog: React.FC<Props> = ({ activeNavbar, blogs }) => {
             </button>
             <h3 className="h3 blog-item-title">{selectedBlog.title}</h3>
             <figure className="blog-banner-box">
-              <img src={selectedBlog.imageUrl} alt={selectedBlog.title} loading="lazy" />
+              <img src="/blogs/blog1.png" alt={selectedBlog.title} loading="lazy" />
             </figure>
             <div className="blog-content">
-              <div className="blog-meta">
-                <p className="blog-category">{selectedBlog.tag}</p>
+              <div className="blog-meta flex">
+                {selectedBlog.categories.map((category, index) => (
+                  <p key={index} className="blog-category">
+                    {category.name}
+                  </p>
+                ))}
                 <span className="dot"></span>
                 <time dateTime="2022-02-23">Fab 23, 2022</time>
               </div>
               <div className="mt-4 rich-text flex justify-center">
-                {parse(selectedBlog.content)}
+                <div dangerouslySetInnerHTML={{ __html: selectedBlog.content ?? "" }}></div>
               </div>
               <div className="share-buttons mt-4 flex justify-center space-x-4">
                 <span>Share via:</span>
@@ -94,11 +90,11 @@ const Blog: React.FC<Props> = ({ activeNavbar, blogs }) => {
         ) : (
           <ul className="blog-posts-list">
             {blogs.map(blog => (
-              <li key={blog.uid} className="blog-post-item" onClick={() => handleBlogClick(blog)}>
+              <li key={blog.id} className="blog-post-item" onClick={() => handleBlogClick(blog)}>
                 <a href="#">
                   <figure className="blog-banner-box">
                     <img
-                      src={blog.imageUrl}
+                      src="/blogs/blog1.png"
                       alt={blog.title}
                       loading="lazy"
                     />
@@ -106,7 +102,11 @@ const Blog: React.FC<Props> = ({ activeNavbar, blogs }) => {
 
                   <div className="blog-content">
                     <div className="blog-meta">
-                      <p className="blog-category">{blog.tag}</p>
+                      {blog.categories.map((category, index) => (
+                        <p key={index} className="blog-category">
+                          {category.name}
+                        </p>
+                      ))}
                       <span className="dot"></span>
                       <time dateTime="2023-02-23">Feb 23, 2023</time>
                     </div>
@@ -116,7 +116,7 @@ const Blog: React.FC<Props> = ({ activeNavbar, blogs }) => {
                     </h3>
 
                     <p className="blog-text">
-                      {blog.description}
+                      {parse(blog.content?.substring(0, 100) + "..." || '')}
                     </p>
                   </div>
                 </a>

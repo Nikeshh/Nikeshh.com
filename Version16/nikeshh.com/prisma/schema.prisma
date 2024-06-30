@@ -8,108 +8,42 @@ datasource db {
   relationMode = "prisma"
 }
 
-model User {
-  id        String   @id @default(uuid())
-  name      String
-  avatarUrl String   @db.Text
-  email     String   @unique
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
-  role      Role     @default(USER)
-
-  @@index([id])
+model BlogPost {
+  id               Int                @id @default(autoincrement())
+  title            String
+  content          String?            @db.LongText
+  published        Boolean            @default(false)
+  authorId         String
+  comments         BlogComment[]
+  categories       BlogCategory[]     @relation("BlogPostCategories")
+  createdAt        DateTime           @default(now())
+  updatedAt        DateTime           @updatedAt
+  blogPostCategory BlogPostCategory[]
 }
 
-model Testimonials {
-  id             String   @id @default(uuid())
-  content        String   @db.Text
-  avatarUrl      String   @db.Text
-  name           String   @db.Text
-  designation    String   @db.Text
-  featured       Boolean  @default(false)
-  companyLogoUrl String   @db.Text
-  createdAt      DateTime @default(now())
-  updatedAt      DateTime @updatedAt
-}
-
-model Blogs {
-  id        String   @id @default(uuid())
-  title     String   @db.Text
-  subtitle  String   @db.Text
-  category  String   @db.Text
-  featured  Boolean  @default(false)
-  likes     Int      @default(0)
-  dislikes  Int      @default(0)
-  imageUrl  String   @db.Text
-  content   String   @db.Text
-  tags      String   @default("[]")
+model BlogComment {
+  id        Int      @id @default(autoincrement())
+  content   String
+  postId    Int
+  post      BlogPost @relation(fields: [postId], references: [id])
+  authorId  String
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 }
 
-model Skills {
-  id        String   @id @default(uuid())
-  name      String   @db.Text
-  title     String   @db.Text
-  category  String   @db.Text
-  imageUrl  String   @db.Text
-  content   String   @db.Text
-  points    String   @default("[]")
-  tags      String   @default("[]")
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
+model BlogCategory {
+  id               Int                @id @default(autoincrement())
+  name             String             @unique
+  posts            BlogPost[]         @relation("BlogPostCategories")
+  blogPostCategory BlogPostCategory[]
 }
 
-model Services {
-  id          String   @id @default(uuid())
-  name        String   @db.Text
-  title       String   @db.Text
-  subtitle    String   @db.Text
-  category    String   @db.Text
-  subcategory String   @db.Text
-  imageUrl    String   @db.Text
-  content     String   @db.Text
-  tags        String   @default("[]")
-  createdAt   DateTime @default(now())
-  updatedAt   DateTime @updatedAt
-}
+// Join table to establish many-to-many relationship. A single blog post can have multiple categories and a single category can have multiple blog posts
+model BlogPostCategory {
+  postId     Int
+  categoryId Int
+  post       BlogPost     @relation(fields: [postId], references: [id])
+  category   BlogCategory @relation(fields: [categoryId], references: [id])
 
-model Projects {
-  id        String   @id @default(uuid())
-  name      String   @db.Text
-  title     String   @db.Text
-  subtitle  String   @db.Text
-  category  String   @db.Text
-  imageUrl  String   @db.Text
-  content   String   @db.Text
-  tags      String   @default("[]")
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
-}
-
-enum Role {
-  SUPER_ADMIN
-  ADMIN
-  USER
-}
-
-model Newsletter {
-  id         String   @id @default(uuid())
-  name       String
-  email      String
-  newsletter String
-  createdAt  DateTime @default(now())
-  updatedAt  DateTime @updatedAt
-
-  @@index([id])
-}
-
-model Contact {
-  id         String   @id @default(uuid())
-  name       String
-  email      String
-  createdAt  DateTime @default(now())
-  updatedAt  DateTime @updatedAt
-
-  @@index([id])
+  @@id([postId, categoryId])
 }

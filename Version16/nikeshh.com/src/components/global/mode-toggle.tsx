@@ -15,6 +15,11 @@ import {
 export function ModeToggle() {
   const { setTheme } = useTheme()
 
+  React.useEffect(() => {
+   // Defaulting the theme to "dark"
+   setTheme("dark");
+  }, [setTheme])
+
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>

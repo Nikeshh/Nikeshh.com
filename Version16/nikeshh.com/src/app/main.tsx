@@ -9,6 +9,7 @@ import Resume from './_components/resume';
 import Sidebar from './_components/sidebar';
 import Contact from './_components/contact';
 import './style.css';
+import { BlogPostWithCategoriesAndComments } from '@/lib/queries';
 
 type Props = {
     skills: {
@@ -31,14 +32,7 @@ type Props = {
         view: string;
         content: string;
     }[],
-    blogs: {
-        uid: string;
-        tag: string;
-        imageUrl: string;
-        title: string;
-        description: string;
-        content: string;
-    }[],
+    blogs: BlogPostWithCategoriesAndComments[],
     testimonials: {
         id: string;
         name: string;

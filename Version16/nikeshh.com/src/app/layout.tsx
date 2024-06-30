@@ -1,14 +1,17 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { ThemeProvider } from "@/providers/theme-provider";
 import { DM_Sans } from "next/font/google";
-import { Toaster } from "@/components/ui/sonner"
+import { Toaster } from "@/components/ui/sonner";
+import { ToastProvider } from '@/providers/toaster-provider'
+import { ConfettiProvider } from '@/providers/confetti-provider'
+import { NProgressBarProvider } from '@/providers/nprogress-bar-provider'
 import { Analytics } from "@vercel/analytics/react";
 import localFont from 'next/font/local';
 import Script from "next/script";
 import Scroll from "@/components/scroll";
 import { ClerkProvider } from "@clerk/nextjs";
 import { SpeedInsights } from "@vercel/speed-insights/next"
+import { ThemeProvider } from "@/components/global/theme-provider";
 
 const font = DM_Sans({ subsets: ["latin"] });
 
@@ -32,7 +35,6 @@ export default async function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <ClerkProvider>
       <html lang="en" suppressHydrationWarning={true}>
         <Scroll />
         <Script
@@ -61,13 +63,17 @@ export default async function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
-            {children}
-            <SpeedInsights />
+            <ClerkProvider>
+              <NProgressBarProvider />
+              <ConfettiProvider />
+              <ToastProvider />
+              {children}
+              <SpeedInsights />
+            </ClerkProvider>
           </ThemeProvider>
           <Toaster />
           <Analytics />
         </body>
       </html>
-    </ClerkProvider>
   );
 }
