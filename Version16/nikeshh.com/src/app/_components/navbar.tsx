@@ -1,3 +1,5 @@
+import { Badge } from "@/components/ui/badge";
+
 type Props = {
   activeNavbar: string,
   setActiveNavbar: React.Dispatch<React.SetStateAction<string>>
@@ -33,7 +35,7 @@ const Navbar = ({ activeNavbar, setActiveNavbar } : Props) => {
 
         <li className="navbar-item">
           <button className={`navbar-link ${activeNavbar === 'Contact' ? 'active' : ''}`} data-nav-link onClick={() => setActiveNavbar('Contact')}>
-            Contact
+            <Badge>Contact Me</Badge>
           </button>
         </li>
       </ul>

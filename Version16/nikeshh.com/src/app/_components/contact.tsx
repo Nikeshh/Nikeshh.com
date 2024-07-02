@@ -108,7 +108,7 @@ const Contact = ({ activeNavbar }: { activeNavbar: string }) => {
       </section>
 
       <section className="contact-form">
-        <h3 className="h3 form-title">Contact Form</h3>
+        <h3 className="h3 form-title">Contact Me</h3>
 
         <form ref={contactFormRef} onSubmit={handleSubmit(onContactFormSubmit)} className="form" data-form>
           <div className="input-wrapper">

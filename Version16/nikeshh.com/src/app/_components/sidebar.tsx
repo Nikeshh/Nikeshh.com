@@ -30,7 +30,8 @@ const Sidebar = ({ activeSidebar, setActiveSidebar }: {activeSidebar: boolean, s
           <h1 className="name text-center" title="Nikeshh Vijayabaskaran">
             Nikeshh Vijayabaskaran
           </h1>
-          <p className="title">Lead Full Stack Developer</p>
+          <p className="title">Tech Consultant</p>
+          <p className="title !mt-2">Lead Full Stack Developer</p>
           <p className="title !mt-2">Digital Marketer</p>
         </div>
 
