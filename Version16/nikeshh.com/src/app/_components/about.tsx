@@ -474,8 +474,6 @@ const About = ({ activeNavbar, skills, testimonials }: Props) => {
             <p className="mb-5 dark:text-neutral-400">Also, I love to be productive. Suffered ADHD for a while (realized after a long time that I had one), I started developing systems and products that tackle them. Used my development skills to keep me focused and not get distracted from the outside world. Every now and then, I stumble upon people who lack focus and I help them to overcome using my techniques. Nothing much, have a schedule, focus on the top tasks and tackle them during the hyper focused hours. Simple but effective. </p>
             <p className="mb-5 dark:text-neutral-400">“Don’t half bake things”, something I tell myself a lot of times. Nowadays, I  finish what I start, even if it takes months.</p>
             <p className="mb-5">I have always tried to find out my ikigai. Kept searching, tried many things, failed multiple, finally found what I was really passionate about, Computers, Systems, Coding and Marketing.</p>
-            <p className="mb-5 dark:text-neutral-400">I have also started writing a lot. It really helps me to keeps things on track and narrow down my thoughts. If you lack focus, please start writing. Even if you get distracted you can come back and complete things.</p>
-            <p className="mb-5 dark:text-neutral-400">I love food. Good food, Good Mood. If you like food and like to explore multiple places for food, then you will gel well with me.</p>
             <div className="flex justify-center">
               <Image 
                 src="/ikigai.png"
@@ -485,6 +483,8 @@ const About = ({ activeNavbar, skills, testimonials }: Props) => {
                 className="mt-10 mb-[5rem] rounded-lg shadow-lg shadow-white"
               />
             </div>
+            <p className="mb-5 dark:text-neutral-400">I have also started writing a lot. It really helps me to keeps things on track and narrow down my thoughts. If you lack focus, please start writing. Even if you get distracted you can come back and complete things.</p>
+            <p className="mb-5 dark:text-neutral-400">I love food. Good food, Good Mood. If you like food and like to explore multiple places for food, then you will gel well with me.</p>
             <div className="p-4 flex flex-wrap gap-2 justify-center mb-5">
               {[
                 '/instagram/instagram_food_1.jpg',
