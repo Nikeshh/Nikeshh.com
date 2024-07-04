@@ -91,35 +91,33 @@ const Blog: React.FC<Props> = ({ activeNavbar, blogs }) => {
           <ul className="blog-posts-list">
             {blogs.map(blog => (
               <li key={blog.id} className="blog-post-item" onClick={() => handleBlogClick(blog)}>
-                <a href="#">
-                  <figure className="blog-banner-box">
-                    <img
-                      src="/blogs/blog1.png"
-                      alt={blog.title}
-                      loading="lazy"
-                    />
-                  </figure>
+                <figure className="blog-banner-box">
+                  <img
+                    src="/blogs/blog1.png"
+                    alt={blog.title}
+                    loading="lazy"
+                  />
+                </figure>
 
-                  <div className="blog-content">
-                    <div className="blog-meta">
-                      {blog.categories.map((category, index) => (
-                        <p key={index} className="blog-category">
-                          {category.name}
-                        </p>
-                      ))}
-                      <span className="dot"></span>
-                      <time dateTime="2023-02-23">Feb 23, 2023</time>
-                    </div>
-
-                    <h3 className="h3 blog-item-title">
-                      {blog.title}
-                    </h3>
-
-                    <p className="blog-text">
-                      {parse(blog.content?.substring(0, 100) + "..." || '')}
-                    </p>
+                <div className="blog-content">
+                  <div className="blog-meta">
+                    {blog.categories.map((category, index) => (
+                      <p key={index} className="blog-category">
+                        {category.name}
+                      </p>
+                    ))}
+                    <span className="dot"></span>
+                    <time dateTime="2023-02-23">Feb 23, 2023</time>
                   </div>
-                </a>
+
+                  <h3 className="h3 blog-item-title">
+                    {blog.title}
+                  </h3>
+
+                  <p className="blog-text">
+                    {parse(blog.content?.substring(0, 100) + "..." || '')}
+                  </p>
+                </div>
               </li>
             ))}
           </ul>

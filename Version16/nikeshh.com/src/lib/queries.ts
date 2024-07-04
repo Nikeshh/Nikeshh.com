@@ -484,7 +484,7 @@ const businessPrespectiveProjects = [
     category: "Ecommerce",
     link: "https://altinteriors.ca/",
     linkType: "Website",
-    imageUrl: "/projects/alt-interiors.png",
+    imageUrl: "/projects/alt-interiors-2.png",
     tags: ["Shopify", "Liquid", "Ecommerce"],
     view: "Business Perspective",
     content: `
@@ -1600,9 +1600,49 @@ const businessPrespectiveProjects = [
     link: "https://house-booking-platform.vercel.app/",
     linkType: "Website",
     imageUrl: "/projects/stayspot.png",
-    tags: ["LMS"],
+    tags: ["ReactJS", "NodeJS", "ExpressJS", "MongoDB", "Prisma", "TailwindCSS"],
     view: "Business Perspective",
-    content: "",
+    content: `
+    <div className="container mx-auto p-6 shadow-lg">
+    <h1 className="text-3xl font-bold text-green-600 mb-6">StaySpot</h1>
+    <p className="mb-4"><strong>StaySpot</strong> is a house booking platform that helps you find and book your next stay.</p>
+
+    <h2 className="text-2xl font-semibold text-green-500 mb-4">Key Technologies</h2>
+    <table className="table-auto w-full mb-6">
+        <thead>
+            <tr className="bg-gray-200 text-black">
+                <th className="px-4 py-2">Technology</th>
+                <th className="px-4 py-2">Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td className="border px-4 py-2">ReactJS</td>
+                <td className="border px-4 py-2">Popular frontend library for building user interfaces.</td>
+            </tr>
+            <tr>
+                <td className="border px-4 py-2">Node.js</td>
+                <td className="border px-4 py-2">Backend server for handling data and transactions efficiently.</td>
+            </tr>
+            <tr>
+                <td className="border px-4 py-2">MongoDB</td>
+                <td className="border px-4 py-2">Database solution for storing user data, parking slots, and transaction records.</td>
+            </tr>
+            <tr>
+                <td className="border px-4 py-2">Stripe</td>
+                <td className="border px-4 py-2">Secure and reliable payment processing for cashless transactions.</td>
+            </tr>
+            <tr>
+                <td className="border px-4 py-2">AWS</td>
+                <td className="border px-4 py-2">Cloud services for hosting, ensuring high availability and scalability.</td>
+            </tr>
+        </tbody>
+    </table>
+      <div className="flex justify-center">
+        <a href="https://github.com/Nikeshh/House-Booking-Platform" target="_blank" className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">View Source Code</a>
+      </div>
+  </div>
+    `,
   },
   {
     id: "nikeshh.com",
