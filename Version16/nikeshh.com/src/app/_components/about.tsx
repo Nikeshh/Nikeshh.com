@@ -125,7 +125,7 @@ const About = ({ activeNavbar, skills, testimonials }: Props) => {
             </div>
           </section>
 
-          <section className="industries">
+          {/*<section className="industries">
             <h3 className="h3 industries-title">I build solutions for different industries</h3>
             <ul className="industries-list">
               {industries.map((industry, index) => (
@@ -139,7 +139,7 @@ const About = ({ activeNavbar, skills, testimonials }: Props) => {
                 </li>
               ))}
             </ul>
-          </section>
+          </section>*/}
 
           <section className="service">
             <h3 className="h3 service-title">What i&apos;m doing</h3>
