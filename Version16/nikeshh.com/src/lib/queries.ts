@@ -1283,7 +1283,7 @@ const businessPrespectiveProjects = [
     id: "glisten-cms",
     name: "Glisten CMS",
     subtitle: "Glisten CMS is a experiment to try to out different CMS platforms like Prismic, Contentful etc.",
-    category: "Website",
+    category: "Web App",
     link: "https://glisten-ai-website.vercel.app/",
     linkType: "Website",
     imageUrl: "/projects/glisten-ai.png",
