@@ -1292,7 +1292,7 @@ const businessPrespectiveProjects = [
     content: `
     <div className="container mx-auto p-6 shadow-lg">
       <h1 className="text-3xl font-bold text-green-600 mb-6">Glisten CMS</h1>
-      <p className="mb-4"><strong>Glisten CMS</strong> is a experiment to try to out different CMS platforms like Prismic, Contentful etc. The whole website can be structured, destructed and content can be changed on the fly with any change in the code. Very powerful isn&apos;t it.</p>
+      <p className="mb-4"><strong>Glisten CMS</strong> is a experiment to try to out different CMS platforms like Prismic, Contentful etc. The whole website can be structured, destructed and content can be changed on the fly without any change in the code. Very powerful isn&apos;t it.</p>
 
       <h2 className="text-2xl font-semibold text-green-500 mb-4">Key Technologies</h2>
       <table className="table-auto w-full mb-6">
