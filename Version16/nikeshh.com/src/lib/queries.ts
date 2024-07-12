@@ -1600,6 +1600,62 @@ const businessPrespectiveProjects = [
     `,
   },
   {
+    id: "ecommerce-app---cross-platform",
+    name: "Ecommerce App - Cross-Platform",
+    subtitle: "Need to write content. Thanks for checking.",
+    category: "Mobile App",
+    link: "https://ecommerce-app-cross-platform-admin.vercel.app/",
+    linkType: "Website",
+    imageUrl: "/projects/ecommerce-app.png",
+    tags: ["ReactJS", "NodeJS", "ExpressJS", "MongoDB", "Prisma", "TailwindCSS"],
+    view: "Business Perspective",
+    content: `
+    <div className="container mx-auto p-6 shadow-lg">
+    <h1 className="text-3xl font-bold text-green-600 mb-6">Ecommerce App - Cross-Platform</h1>
+    <p className="mb-4"><strong>Ecommerce App</strong> is a cross-platform application for selling products online.</p>
+
+    <div className="w-full my-4 flex justify-center">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/g2j5_Z3N-u0?si=ViMwo4qIZmEGmvVH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+    <h2 className="text-2xl font-semibold text-green-500 mb-4">Key Technologies</h2>
+    <table className="table-auto w-full mb-6">
+        <thead>
+            <tr className="bg-gray-200 text-black">
+                <th className="px-4 py-2">Technology</th>
+                <th className="px-4 py-2">Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td className="border px-4 py-2">Flutter</td>
+                <td className="border px-4 py-2">Cross-platform mobile app development framework.</td>
+            </tr>
+            <tr>
+                <td className="border px-4 py-2">Node.js</td>
+                <td className="border px-4 py-2">Backend server for handling data and transactions efficiently.</td>
+            </tr>
+            <tr>
+                <td className="border px-4 py-2">MongoDB</td>
+                <td className="border px-4 py-2">Database solution for storing user data, parking slots, and transaction records.</td>
+            </tr>
+            <tr>
+                <td className="border px-4 py-2">Stripe</td>
+                <td className="border px-4 py-2">Secure and reliable payment processing for cashless transactions.</td>
+            </tr>
+            <tr>
+                <td className="border px-4 py-2">AWS</td>
+                <td className="border px-4 py-2">Cloud services for hosting, ensuring high availability and scalability.</td>
+            </tr>
+        </tbody>
+    </table>
+      <div className="flex justify-center">
+        <a href="https://github.com/Nikeshh/Ecommerce-App---Cross-Platform" target="_blank" className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">View Source Code</a>
+      </div>
+  </div>
+    `,
+  },
+  {
     id: "stayspot---house-booking-platform",
     name: "StaySpot - House Booking Platform",
     subtitle: "Need to write content. Thanks for checking.",
@@ -1798,7 +1854,7 @@ const developmentShowcaseProjects = [
         <div className="flex justify-center">
           <a href="https://www.nikeshhcodes.com/blog/30001" target="_blank" className="underline hover:text-blue-500 cursor-pointer">Learn how to implement MongoDB CRUD operation using Nextjs in this blog</a>
         </div>
-        <div className="flex justify-center">
+        <div className="flex justify-center mt-2">
           <a href="https://github.com/Nikeshh/CRUD-Mongodb" target="_blank" className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">View Source Code</a>
         </div>
       </div>
