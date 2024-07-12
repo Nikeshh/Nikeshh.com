@@ -1294,6 +1294,10 @@ const businessPrespectiveProjects = [
       <h1 className="text-3xl font-bold text-green-600 mb-6">Glisten CMS</h1>
       <p className="mb-4"><strong>Glisten CMS</strong> is a experiment to try to out different CMS platforms like Prismic, Contentful etc. The whole website can be structured, destructed and content can be changed on the fly without any change in the code. Very powerful isn&apos;t it.</p>
 
+      <div className="w-full my-4 flex justify-center">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/8YJ4KvQ-MlU?si=WRos39rRhFdNZSsS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+
       <h2 className="text-2xl font-semibold text-green-500 mb-4">Key Technologies</h2>
       <table className="table-auto w-full mb-6">
           <thead>
@@ -1313,6 +1317,9 @@ const businessPrespectiveProjects = [
               </tr>
           </tbody>
       </table>
+      <div className="flex justify-center">
+        <a href="https://github.com/Nikeshh/glisten-ai-website" target="_blank" className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">View Source Code</a>
+      </div>
     </div>
     `,
   },
@@ -1606,6 +1613,10 @@ const businessPrespectiveProjects = [
     <div className="container mx-auto p-6 shadow-lg">
     <h1 className="text-3xl font-bold text-green-600 mb-6">StaySpot</h1>
     <p className="mb-4"><strong>StaySpot</strong> is a house booking platform that helps you find and book your next stay.</p>
+
+    <div className="w-full my-4 flex justify-center">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/8NRK6EAcJCg?si=FKiudjRDCHEIkWrN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
 
     <h2 className="text-2xl font-semibold text-green-500 mb-4">Key Technologies</h2>
     <table className="table-auto w-full mb-6">
