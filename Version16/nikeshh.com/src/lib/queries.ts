@@ -1796,6 +1796,7 @@ const developmentShowcaseProjects = [
     content: `
       <div className="container mx-auto p-6 shadow-lg">
         <div className="flex justify-center">
+          <a href="https://www.nikeshhcodes.com/blog/30001" target="_blank">Learn how to implement MongoDB CRUD operation using Nextjs in this blog</a>
           <a href="https://github.com/Nikeshh/CRUD-Mongodb" target="_blank" className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">View Source Code</a>
         </div>
       </div>
